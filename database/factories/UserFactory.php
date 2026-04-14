@@ -57,4 +57,12 @@ class UserFactory extends Factory
             'two_factor_confirmed_at' => now(),
         ]);
     }
+
+    /**
+     * Indicate that the user has paid.
+     */
+    public function paid(): static
+    {
+        return $this->state(fn () => ['paid_at' => now()]);
+    }
 }
