@@ -9,6 +9,7 @@ Route::inertia('/', 'welcome', [
 ])->name('home');
 
 Route::post('/pruefungssimulation/start', [ExamController::class, 'start'])->name('exam.start');
+Route::get('/pruefungssimulation/{attempt}', [ExamController::class, 'show'])->name('exam.show');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');

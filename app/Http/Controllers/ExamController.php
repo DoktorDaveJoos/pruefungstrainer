@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
+use App\Services\ExamScorer;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Inertia\Response;
 
 class ExamController extends Controller
 {
@@ -58,5 +60,56 @@ class ExamController extends Controller
         }
 
         return $response;
+    }
+
+    public function show(Request $request, int $attempt): Response|RedirectResponse
+    {
+        $examAttempt = $this->finder->find($request, $attempt);
+
+        if ($examAttempt === null) {
+            abort(404);
+        }
+
+        if ($examAttempt->isSubmitted() || $examAttempt->hasExpired()) {
+            $this->autoSubmitIfNeeded($examAttempt);
+
+            return redirect("/pruefungssimulation/{$examAttempt->id}/ergebnis");
+        }
+
+        $examAttempt->load(['examAnswers.question.answers']);
+
+        $questions = $examAttempt->examAnswers
+            ->sortBy('position')
+            ->values()
+            ->map(fn ($ea) => [
+                'position' => $ea->position,
+                'question_id' => $ea->question_id,
+                'text' => $ea->question->text,
+                'options' => $ea->question->answers
+                    ->shuffle()
+                    ->map(fn ($a) => ['id' => $a->id, 'text' => $a->text])
+                    ->values(),
+                'selected_option_ids' => $ea->selected_option_ids ?? [],
+                'flagged' => $ea->flagged,
+            ]);
+
+        return inertia('exam/question', [
+            'attempt' => [
+                'id' => $examAttempt->id,
+                'timer_expires_at' => $examAttempt->timer_expires_at->toIso8601String(),
+                'total_questions' => $examAttempt->total_questions,
+            ],
+            'questions' => $questions,
+        ]);
+    }
+
+    private function autoSubmitIfNeeded(ExamAttempt $attempt): void
+    {
+        if ($attempt->isSubmitted()) {
+            return;
+        }
+
+        app(ExamScorer::class)->score($attempt);
+        $attempt->update(['submitted_at' => now()]);
     }
 }
