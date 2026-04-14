@@ -136,6 +136,19 @@ class ExamController extends Controller
         return response()->json(['saved' => true]);
     }
 
+    public function submit(Request $request, int $attempt): RedirectResponse
+    {
+        $examAttempt = $this->finder->find($request, $attempt);
+
+        if ($examAttempt === null) {
+            abort(404);
+        }
+
+        $this->autoSubmitIfNeeded($examAttempt);
+
+        return redirect("/pruefungssimulation/{$examAttempt->id}/ergebnis");
+    }
+
     private function autoSubmitIfNeeded(ExamAttempt $attempt): void
     {
         if ($attempt->isSubmitted()) {
