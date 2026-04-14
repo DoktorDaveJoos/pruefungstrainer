@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SaveAnswerRequest;
 use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
 use App\Services\ExamScorer;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
@@ -101,6 +103,37 @@ class ExamController extends Controller
             ],
             'questions' => $questions,
         ]);
+    }
+
+    public function saveAnswer(SaveAnswerRequest $request, int $attempt, int $position): JsonResponse
+    {
+        $examAttempt = $this->finder->find($request, $attempt);
+
+        if ($examAttempt === null) {
+            abort(404);
+        }
+
+        if ($examAttempt->isSubmitted()) {
+            abort(409, 'Attempt already submitted');
+        }
+
+        if ($examAttempt->hasExpired()) {
+            $this->autoSubmitIfNeeded($examAttempt);
+            abort(409, 'Timer expired');
+        }
+
+        $examAnswer = $examAttempt->examAnswers()->where('position', $position)->first();
+
+        if ($examAnswer === null) {
+            abort(404);
+        }
+
+        $examAnswer->update([
+            'selected_option_ids' => $request->input('selected_option_ids'),
+            'flagged' => $request->boolean('flagged'),
+        ]);
+
+        return response()->json(['saved' => true]);
     }
 
     private function autoSubmitIfNeeded(ExamAttempt $attempt): void
