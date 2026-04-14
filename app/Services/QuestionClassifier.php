@@ -5,9 +5,31 @@ namespace App\Services;
 use App\Enums\BsiTopic;
 use App\Enums\QuestionDifficulty;
 use App\Models\Question;
+use Illuminate\Support\Facades\Http;
 
 class QuestionClassifier
 {
+    private const SYSTEM_PROMPT = <<<'TEXT'
+You classify German BSI IT-Grundschutz-Praktiker exam questions by curriculum topic and difficulty.
+
+Topics (choose exactly one):
+- methodik: IT-Grundschutz methodology, process phases, planning
+- bausteine: specific Bausteine (SYS.x, APP.x, NET.x, INF.x, OPS.x, ORP.x, CON.x, IND.x) and their application
+- risikoanalyse: risk analysis methodology, BSI-Standard 200-3
+- modellierung: modeling, scope definition, asset mapping, Informationsverbund
+- check: IT-Grundschutz-Check, audit mechanics, Grundschutz-Test-Kriterien
+- standards: BSI-Standards 100-x / 200-x themselves, certification framework, legal/compliance context
+- notfall: Notfallmanagement, BCM, recovery strategies, BSI-Standard 200-4
+- siem: SIEM, monitoring, logging, SOC patterns
+
+Difficulty (choose exactly one):
+- basis: fundamental concepts, definitions, basic methodology
+- experte: edge cases, cross-cutting scenarios, advanced application, detailed analysis
+
+Respond with valid JSON only: {"topic":"<value>","difficulty":"<value>"}
+No explanation, no preamble, no markdown fences.
+TEXT;
+
     public function __construct(
         private readonly string $apiKey,
         private readonly string $model,
@@ -33,6 +55,38 @@ class QuestionClassifier
         }
 
         return implode("\n", $parts);
+    }
+
+    /**
+     * @return array{topic: BsiTopic, difficulty: QuestionDifficulty}|null
+     */
+    public function classify(Question $question): ?array
+    {
+        $response = Http::withHeaders([
+            'x-api-key' => $this->apiKey,
+            'anthropic-version' => '2023-06-01',
+            'content-type' => 'application/json',
+        ])->post($this->baseUrl.'/messages', [
+            'model' => $this->model,
+            'max_tokens' => 100,
+            'temperature' => 0,
+            'system' => [
+                [
+                    'type' => 'text',
+                    'text' => self::SYSTEM_PROMPT,
+                    'cache_control' => ['type' => 'ephemeral'],
+                ],
+            ],
+            'messages' => [
+                ['role' => 'user', 'content' => $this->buildUserPrompt($question)],
+            ],
+        ]);
+
+        if (! $response->successful()) {
+            return null;
+        }
+
+        return $this->parseResponse($response->json('content.0.text'));
     }
 
     /**
