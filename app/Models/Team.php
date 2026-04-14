@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-#[Fillable(['name', 'slug', 'is_personal'])]
+#[Fillable(['name', 'slug'])]
 class Team extends Model
 {
     /** @use HasFactory<TeamFactory> */
@@ -67,9 +67,7 @@ class Team extends Model
      */
     protected function casts(): array
     {
-        return [
-            'is_personal' => 'boolean',
-        ];
+        return [];
     }
 
     /**
