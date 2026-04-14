@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Concerns\GeneratesUniqueTeamSlugs;
 use App\Enums\TeamRole;
 use Database\Factories\TeamFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
@@ -12,31 +11,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-#[Fillable(['name', 'slug', 'is_personal'])]
+#[Fillable(['name', 'slug'])]
 class Team extends Model
 {
     /** @use HasFactory<TeamFactory> */
-    use GeneratesUniqueTeamSlugs, HasFactory, SoftDeletes;
-
-    /**
-     * Bootstrap the model and its traits.
-     */
-    protected static function boot(): void
-    {
-        parent::boot();
-
-        static::creating(function (Team $team) {
-            if (empty($team->slug)) {
-                $team->slug = static::generateUniqueTeamSlug($team->name);
-            }
-        });
-
-        static::updating(function (Team $team) {
-            if ($team->isDirty('name')) {
-                $team->slug = static::generateUniqueTeamSlug($team->name, $team->id);
-            }
-        });
-    }
+    use HasFactory, SoftDeletes;
 
     /**
      * Get the team owner.
@@ -88,9 +67,7 @@ class Team extends Model
      */
     protected function casts(): array
     {
-        return [
-            'is_personal' => 'boolean',
-        ];
+        return [];
     }
 
     /**
