@@ -1,5 +1,7 @@
 <?php
 
+use App\Enums\BsiTopic;
+use App\Enums\QuestionDifficulty;
 use App\Models\Module;
 use App\Models\Question;
 use App\Services\QuestionClassifier;
@@ -43,4 +45,47 @@ it('omits quote and source sections when they are null', function () {
         ->toContain('Minimal explanation.')
         ->not->toContain('Zitat:')
         ->not->toContain('Quelle:');
+});
+
+it('parses a valid JSON response into enum values', function () {
+    $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
+
+    $result = $classifier->parseResponse('{"topic":"bausteine","difficulty":"basis"}');
+
+    expect($result)->toBe([
+        'topic' => BsiTopic::Bausteine,
+        'difficulty' => QuestionDifficulty::Basis,
+    ]);
+});
+
+it('tolerates surrounding whitespace', function () {
+    $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
+
+    $result = $classifier->parseResponse('  {"topic":"methodik","difficulty":"experte"}  ');
+
+    expect($result['topic'])->toBe(BsiTopic::Methodik)
+        ->and($result['difficulty'])->toBe(QuestionDifficulty::Experte);
+});
+
+it('returns null for invalid JSON', function () {
+    $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
+
+    expect($classifier->parseResponse('not json'))->toBeNull()
+        ->and($classifier->parseResponse(''))->toBeNull()
+        ->and($classifier->parseResponse(null))->toBeNull();
+});
+
+it('returns null for unknown enum values', function () {
+    $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
+
+    expect($classifier->parseResponse('{"topic":"quantum","difficulty":"basis"}'))->toBeNull()
+        ->and($classifier->parseResponse('{"topic":"bausteine","difficulty":"nightmare"}'))->toBeNull();
+});
+
+it('returns null when required keys are missing', function () {
+    $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
+
+    expect($classifier->parseResponse('{"topic":"bausteine"}'))->toBeNull()
+        ->and($classifier->parseResponse('{"difficulty":"basis"}'))->toBeNull()
+        ->and($classifier->parseResponse('{}'))->toBeNull();
 });
