@@ -29,10 +29,12 @@ export default function ExamResults({
     attempt,
     topicBreakdown,
     pricing,
+    hasAccess,
 }: {
     attempt: Attempt;
     topicBreakdown: TopicBreakdown;
     pricing: Pricing;
+    hasAccess: boolean;
 }) {
     const priceLabel = `${pricing.amount_eur} €`;
 
@@ -72,7 +74,7 @@ export default function ExamResults({
                     </section>
 
                     <section>
-                        <LockedPreview priceLabel={priceLabel} attemptId={attempt.id}>
+                        <LockedPreview priceLabel={priceLabel} attemptId={attempt.id} hasAccess={hasAccess}>
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-col gap-2">
                                     <div className="text-sm font-medium">

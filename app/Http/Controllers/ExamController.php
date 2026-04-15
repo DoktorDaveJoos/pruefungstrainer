@@ -184,6 +184,7 @@ class ExamController extends Controller
             ],
             'topicBreakdown' => app(ExamScorer::class)->topicBreakdown($examAttempt),
             'pricing' => app(Pricing::class)->currentPrice(),
+            'hasAccess' => (bool) $request->user()?->hasActiveAccess(),
         ]);
     }
 

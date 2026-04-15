@@ -11,14 +11,29 @@ type Props = {
     children: ReactNode;
     priceLabel: string;
     attemptId?: number;
+    hasAccess?: boolean;
 };
 
 type PageProps = {
     auth?: { user?: unknown };
 };
 
-export function LockedPreview({ children, priceLabel, attemptId }: Props) {
+export function LockedPreview({ children, priceLabel, attemptId, hasAccess = false }: Props) {
     const { auth } = usePage<PageProps>().props;
+
+    if (hasAccess) {
+        return (
+            <Card>
+                <CardHeader>
+                    <CardTitle>Review der falschen Antworten</CardTitle>
+                    <CardDescription>
+                        Jede falsch beantwortete Frage mit Erklärung und BSI-Originalquelle.
+                    </CardDescription>
+                </CardHeader>
+                <CardContent>{children}</CardContent>
+            </Card>
+        );
+    }
 
     const cta = (
         <Button size="lg">
