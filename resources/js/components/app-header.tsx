@@ -46,7 +46,7 @@ export function AppHeader({ breadcrumbs = [] }: Props) {
 
     const mainNavItems: NavItem[] = [
         {
-            title: 'Dashboard',
+            title: 'Startseite',
             href: dashboardUrl,
             icon: LayoutGrid,
         },

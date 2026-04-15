@@ -300,7 +300,7 @@ home.form = homeForm
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 export const accessStatus = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -315,7 +315,7 @@ accessStatus.definition = {
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 accessStatus.url = (options?: RouteQueryOptions) => {
@@ -324,7 +324,7 @@ accessStatus.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 accessStatus.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -334,7 +334,7 @@ accessStatus.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 accessStatus.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -344,7 +344,7 @@ accessStatus.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 const accessStatusForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -354,7 +354,7 @@ const accessStatusForm = (options?: RouteQueryOptions): RouteFormDefinition<'get
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 accessStatusForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -364,7 +364,7 @@ accessStatusForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'>
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:32
+* @see app/Http/Controllers/CheckoutController.php:43
 * @route '/api/access-status'
 */
 accessStatusForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

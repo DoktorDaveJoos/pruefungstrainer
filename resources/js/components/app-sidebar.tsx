@@ -19,7 +19,7 @@ import type { NavItem } from '@/types';
 export function AppSidebar() {
     const mainNavItems: NavItem[] = [
         {
-            title: 'Dashboard',
+            title: 'Startseite',
             href: dashboard(),
             icon: LayoutGrid,
         },

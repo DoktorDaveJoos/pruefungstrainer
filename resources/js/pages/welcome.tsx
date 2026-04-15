@@ -27,7 +27,7 @@ export default function Welcome() {
                         <nav className="flex items-center gap-4 text-sm">
                             {auth?.user ? (
                                 <Link href="/dashboard" className="text-foreground hover:underline">
-                                    Dashboard
+                                    Startseite
                                 </Link>
                             ) : (
                                 <>
