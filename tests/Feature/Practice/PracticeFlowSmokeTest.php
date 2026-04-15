@@ -19,7 +19,7 @@ beforeEach(function () {
 });
 
 it('walks a paid user through 3 practice questions and tracks progress', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $excludeId = 0;
 
     for ($i = 0; $i < 3; $i++) {

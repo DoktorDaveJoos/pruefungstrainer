@@ -13,7 +13,7 @@ beforeEach(function () {
 });
 
 it('renders the practice page with a question for a paid user', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $q = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
     Answer::factory()->for($q)->count(4)->create();
 
@@ -32,7 +32,7 @@ it('renders the practice page with a question for a paid user', function () {
 });
 
 it('passes wrongOnly query param through to props', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $q = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
     Answer::factory()->for($q)->correct()->create();
     PracticeAnswer::factory()->for($user)->for($q)->incorrect([1])->create();
@@ -46,7 +46,7 @@ it('passes wrongOnly query param through to props', function () {
 });
 
 it('honors exclude query param', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $a = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
     $b = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
     Answer::factory()->for($a)->count(2)->create();
@@ -58,7 +58,7 @@ it('honors exclude query param', function () {
 });
 
 it('renders an empty state when no question is available', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
 
     $response = $this->actingAs($user)->get('/freies-lernen?wrong_only=1');
