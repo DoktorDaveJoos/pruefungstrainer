@@ -21,6 +21,10 @@ Route::patch('/pruefungssimulation/{attempt}/answer/{position}', [ExamController
 Route::post('/pruefungssimulation/{attempt}/submit', [ExamController::class, 'submit'])->name('exam.submit');
 Route::get('/pruefungssimulation/{attempt}/ergebnis', [ExamController::class, 'results'])->name('exam.results');
 
+Route::inertia('/agb', 'legal/agb')->name('legal.agb');
+Route::inertia('/datenschutz', 'legal/datenschutz')->name('legal.datenschutz');
+Route::inertia('/impressum', 'legal/impressum')->name('legal.impressum');
+
 Route::post('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
 Route::post('/webhooks/polar', [CheckoutController::class, 'webhook'])->name('webhooks.polar');
