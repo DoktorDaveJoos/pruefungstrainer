@@ -26,8 +26,11 @@ class CheckoutController extends Controller
             'Checkout ist noch nicht eingerichtet. Bitte setze POLAR_PRODUCT_FOUNDER und POLAR_PRODUCT_STANDARD in deiner .env.',
         );
 
-        return $user->checkout([$productId])
-            ->withSuccessUrl(route('checkout.processing').'?checkout_id={CHECKOUT_ID}');
+        $url = $user->checkout([$productId])
+            ->withSuccessUrl(route('checkout.processing').'?checkout_id={CHECKOUT_ID}')
+            ->url();
+
+        return Inertia::location($url);
     }
 
     public function processing(Request $request): Response
