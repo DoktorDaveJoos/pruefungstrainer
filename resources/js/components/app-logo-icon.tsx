@@ -10,10 +10,10 @@ export default function AppLogoIcon(props: SVGAttributes<SVGElement>) {
             <rect width="32" height="32" rx="6" fill="#000" />
             <text
                 x="16"
-                y="22.5"
+                y="21"
                 fontFamily="'Space Grotesk', 'Instrument Sans', sans-serif"
                 fontWeight="700"
-                fontSize="18"
+                fontSize="14"
                 fill="#fff"
                 textAnchor="middle"
             >
