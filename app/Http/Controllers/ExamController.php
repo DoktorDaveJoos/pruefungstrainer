@@ -7,7 +7,6 @@ use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
 use App\Services\ExamScorer;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
@@ -105,7 +104,7 @@ class ExamController extends Controller
         ]);
     }
 
-    public function saveAnswer(SaveAnswerRequest $request, int $attempt, int $position): JsonResponse
+    public function saveAnswer(SaveAnswerRequest $request, int $attempt, int $position): RedirectResponse
     {
         $examAttempt = $this->finder->find($request, $attempt);
 
@@ -133,7 +132,7 @@ class ExamController extends Controller
             'flagged' => $request->boolean('flagged'),
         ]);
 
-        return response()->json(['saved' => true]);
+        return back();
     }
 
     public function submit(Request $request, int $attempt): RedirectResponse

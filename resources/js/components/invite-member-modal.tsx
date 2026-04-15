@@ -20,8 +20,8 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
-import { store as storeInvitation } from '@/routes/teams/invitations';
 import type { RoleOption, Team } from '@/types';
+import { store as storeInvitation } from '@/routes/teams/invitations';
 
 type Props = {
     team: Team;
@@ -52,7 +52,7 @@ export default function InviteMemberModal({
                 <Form
                     key={String(open)}
                     {...storeInvitation.form(team.slug)}
-                    className="space-y-6"
+                    className="flex flex-col gap-6"
                     onSuccess={() => onOpenChange(false)}
                 >
                     {({ errors, processing }) => (

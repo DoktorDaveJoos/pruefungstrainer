@@ -1,4 +1,5 @@
 import { Form, Head } from '@inertiajs/react';
+import AuthStatusAlert from '@/components/auth-status-alert';
 import InputError from '@/components/input-error';
 import PasswordInput from '@/components/password-input';
 import TextLink from '@/components/text-link';
@@ -73,7 +74,7 @@ export default function Login({
                                 <InputError message={errors.password} />
                             </div>
 
-                            <div className="flex items-center space-x-3">
+                            <div className="flex items-center gap-2">
                                 <Checkbox
                                     id="remember"
                                     name="remember"
@@ -106,11 +107,7 @@ export default function Login({
                 )}
             </Form>
 
-            {status && (
-                <div className="mb-4 text-center text-sm font-medium text-green-600">
-                    {status}
-                </div>
-            )}
+            <AuthStatusAlert status={status} />
         </>
     );
 }

@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils';
 import { Clock } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
 
 export function ExamTimer({ expiresAt, className }: { expiresAt: string; className?: string }) {
     const [remaining, setRemaining] = useState(() =>
@@ -12,6 +12,7 @@ export function ExamTimer({ expiresAt, className }: { expiresAt: string; classNa
             setRemaining(Math.max(0, Math.floor((new Date(expiresAt).getTime() - Date.now()) / 1000)));
         tick();
         const interval = setInterval(tick, 1000);
+
         return () => clearInterval(interval);
     }, [expiresAt]);
 

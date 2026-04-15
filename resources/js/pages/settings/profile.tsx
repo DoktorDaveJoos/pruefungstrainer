@@ -1,5 +1,6 @@
 import { Form, Head, Link, usePage } from '@inertiajs/react';
 import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
+import AuthStatusAlert from '@/components/auth-status-alert';
 import DeleteUser from '@/components/delete-user';
 import Heading from '@/components/heading';
 import InputError from '@/components/input-error';
@@ -24,7 +25,7 @@ export default function Profile({
 
             <h1 className="sr-only">Profile settings</h1>
 
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
                 <Heading
                     variant="small"
                     title="Profile information"
@@ -36,7 +37,7 @@ export default function Profile({
                     options={{
                         preserveScroll: true,
                     }}
-                    className="space-y-6"
+                    className="flex flex-col gap-6"
                 >
                     {({ processing, errors }) => (
                         <>
@@ -81,26 +82,26 @@ export default function Profile({
 
                             {mustVerifyEmail &&
                                 auth.user.email_verified_at === null && (
-                                    <div>
+                                    <div className="flex flex-col gap-2">
                                         <p className="-mt-4 text-sm text-muted-foreground">
                                             Your email address is unverified.{' '}
                                             <Link
                                                 href={send()}
                                                 as="button"
-                                                className="text-foreground underline decoration-neutral-300 underline-offset-4 transition-colors duration-300 ease-out hover:decoration-current! dark:decoration-neutral-500"
+                                                className="text-foreground underline underline-offset-4 transition-colors hover:text-foreground/80"
                                             >
                                                 Click here to resend the
                                                 verification email.
                                             </Link>
                                         </p>
 
-                                        {status ===
-                                            'verification-link-sent' && (
-                                            <div className="mt-2 text-sm font-medium text-green-600">
-                                                A new verification link has been
-                                                sent to your email address.
-                                            </div>
-                                        )}
+                                        <AuthStatusAlert
+                                            status={
+                                                status === 'verification-link-sent'
+                                                    ? 'A new verification link has been sent to your email address.'
+                                                    : undefined
+                                            }
+                                        />
                                     </div>
                                 )}
 

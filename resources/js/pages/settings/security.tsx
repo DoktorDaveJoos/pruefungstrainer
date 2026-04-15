@@ -55,7 +55,7 @@ export default function Security({
 
             <h1 className="sr-only">Security settings</h1>
 
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
                 <Heading
                     variant="small"
                     title="Update password"
@@ -82,7 +82,7 @@ export default function Security({
                             currentPasswordInput.current?.focus();
                         }
                     }}
-                    className="space-y-6"
+                    className="flex flex-col gap-6"
                 >
                     {({ errors, processing }) => (
                         <>
@@ -150,14 +150,14 @@ export default function Security({
             </div>
 
             {canManageTwoFactor && (
-                <div className="space-y-6">
+                <div className="flex flex-col gap-6">
                     <Heading
                         variant="small"
                         title="Two-factor authentication"
                         description="Manage your two-factor authentication settings"
                     />
                     {twoFactorEnabled ? (
-                        <div className="flex flex-col items-start justify-start space-y-4">
+                        <div className="flex flex-col items-start justify-start gap-4">
                             <p className="text-sm text-muted-foreground">
                                 You will be prompted for a secure, random pin
                                 during login, which you can retrieve from the
@@ -185,7 +185,7 @@ export default function Security({
                             />
                         </div>
                     ) : (
-                        <div className="flex flex-col items-start justify-start space-y-4">
+                        <div className="flex flex-col items-start justify-start gap-4">
                             <p className="text-sm text-muted-foreground">
                                 When you enable two-factor authentication, you
                                 will be prompted for a secure pin during login.

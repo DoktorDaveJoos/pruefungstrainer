@@ -48,19 +48,22 @@ it('walks an anonymous user through start → answer 50 → submit → results',
         $firstOptionId = Answer::where('question_id', $examAnswer->question_id)->first()->id;
 
         $this->withHeader('Cookie', ExamAttemptFinder::SESSION_COOKIE.'='.$sessionUuid)
-            ->patchJson("/pruefungssimulation/{$attemptId}/answer/{$examAnswer->position}", [
+            ->withHeaders(['X-Inertia' => 'true', 'X-Requested-With' => 'XMLHttpRequest'])
+            ->patch("/pruefungssimulation/{$attemptId}/answer/{$examAnswer->position}", [
                 'selected_option_ids' => [$firstOptionId],
                 'flagged' => false,
             ])
-            ->assertStatus(200);
+            ->assertStatus(303);
     }
 
     // Submit
-    $submitResponse = $this->withHeader('Cookie', ExamAttemptFinder::SESSION_COOKIE.'='.$sessionUuid)
+    $this->flushHeaders();
+    $submitResponse = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $sessionUuid)
         ->post("/pruefungssimulation/{$attemptId}/submit");
     $submitResponse->assertRedirect("/pruefungssimulation/{$attemptId}/ergebnis");
 
     // View results
+    $this->flushHeaders();
     $resultsResponse = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $sessionUuid)
         ->get("/pruefungssimulation/{$attemptId}/ergebnis");
     $resultsResponse->assertStatus(200);

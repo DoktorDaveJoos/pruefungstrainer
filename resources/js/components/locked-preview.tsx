@@ -1,9 +1,9 @@
+import { Lock } from 'lucide-react';
+import type { ReactNode } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { getCsrfToken } from '@/lib/utils';
-import { Lock } from 'lucide-react';
-import { ReactNode } from 'react';
 
 export function LockedPreview({
     children,

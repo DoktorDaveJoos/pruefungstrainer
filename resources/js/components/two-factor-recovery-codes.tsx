@@ -10,6 +10,7 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
 import { regenerateRecoveryCodes } from '@/routes/two-factor';
 
 type Props = {
@@ -103,7 +104,7 @@ export default function TwoFactorRecoveryCodes({
                     className={`relative overflow-hidden transition-all duration-300 ${codesAreVisible ? 'h-auto opacity-100' : 'h-0 opacity-0'}`}
                     aria-hidden={!codesAreVisible}
                 >
-                    <div className="mt-3 space-y-3">
+                    <div className="mt-3 flex flex-col gap-3">
                         {errors?.length ? (
                             <AlertError errors={errors} />
                         ) : (
@@ -126,15 +127,15 @@ export default function TwoFactorRecoveryCodes({
                                         ))
                                     ) : (
                                         <div
-                                            className="space-y-2"
+                                            className="flex flex-col gap-2"
                                             aria-label="Loading recovery codes"
                                         >
                                             {Array.from(
                                                 { length: 8 },
                                                 (_, index) => (
-                                                    <div
+                                                    <Skeleton
                                                         key={index}
-                                                        className="h-4 animate-pulse rounded bg-muted-foreground/20"
+                                                        className="h-4"
                                                         aria-hidden="true"
                                                     />
                                                 ),

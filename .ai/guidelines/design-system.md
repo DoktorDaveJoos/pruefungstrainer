@@ -20,8 +20,54 @@ Do not override these via `className`. Use the semantic Tailwind utilities that 
 - **UI body (dashboard, settings, nav):** `text-sm` (14px) — shadcn default.
 - **Exam question stems:** `text-lg` (18px) + `leading-relaxed`. Reading 50 German technical stems over 60 minutes needs breathing room.
 - **Exam option labels:** `text-base` (16px).
-- **Score & major stats (results screen):** `text-4xl` or larger with `font-bold` (weight 700). Only place weight 700 is used.
-- **Max content width on exam/result screens:** `max-w-2xl` (≈42rem) centered. Keeps question line length under ~75 characters for readability.
+- **Max content width on exam screens:** `max-w-2xl` (≈42rem) centered. Keeps question line length under ~75 characters for readability.
+
+### Heading scale (compact · documenty)
+
+| Element                  | Class                                       |
+| ------------------------ | ------------------------------------------- |
+| Page H1                  | `text-2xl font-semibold tracking-tight`     |
+| Section H2               | `text-xl font-semibold tracking-tight`      |
+| Subsection H3 / Card title | `text-base font-semibold`                 |
+| Body                     | `text-sm`                                   |
+| Muted body               | `text-sm text-muted-foreground`             |
+
+**Two named exceptions** — the only places larger sizes are allowed:
+
+- **Welcome hero H1:** `text-4xl font-semibold tracking-tight`
+- **Results score number:** `text-5xl font-bold tabular-nums`
+
+`font-bold` (weight 700) is reserved for the results score number. Everywhere else use `font-semibold` (600) or lighter.
+
+## Spacing scale
+
+Use `2 / 4 / 6 / 8` for padding, gap, and margin between adjacent elements. **Do not use `10` or `12`** — they produce ad-hoc rhythm. Larger values (`16`, `24`) are reserved for landing-page section breaks.
+
+| Surface                              | Class                              |
+| ------------------------------------ | ---------------------------------- |
+| Page container                       | `px-4 sm:px-6 py-8`                |
+| Default Card (settings, dashboard)   | shadcn default (`p-6` distributed) |
+| Focal Card (exam question, results hero) | `py-8` + `px-8` on sub-blocks   |
+| Section gap (siblings)               | `gap-6`                            |
+| Major page section gap               | `gap-8`                            |
+| Form field row gap                   | `gap-4`                            |
+| Label → Input gap                    | `gap-2`                            |
+| Landing-page section padding         | `py-16`                            |
+
+## Shadows
+
+A near-invisible 1px lift separates content from the page background. No custom tokens — Tailwind's built-in scale.
+
+| Surface                                | Class       |
+| -------------------------------------- | ----------- |
+| `Card`                                 | `shadow-xs` |
+| `Alert`                                | `shadow-xs` |
+| `AnswerOption`, `AnswerReviewRow`, `TopicBreakdownRow` | `shadow-xs` |
+| `Button` (all variants)                | `shadow-xs` |
+| `Popover`                              | shadcn default (`shadow-md`) |
+| `Dialog` / `AlertDialog` / `Sheet`     | shadcn default (`shadow-lg`) |
+
+Never add a stronger shadow to a Card to "make it pop." If a surface needs more emphasis, use the focal-Card padding rule, not shadow.
 
 ## Numeric display — always use tabular figures
 
@@ -64,9 +110,23 @@ Never invent your own pass/fail colors. Never use raw Tailwind palette colors (`
 
 ## Layout conventions
 
-- **Exam screens:** centered column, `max-w-2xl`, question `Card` with generous `p-8` or `p-10`. Timer is fixed top-center or top-right, always visible.
-- **Results screen:** `max-w-3xl`. Score hero at top, topic breakdown below (list of Progress bars or Chart), locked-preview Card below that, upgrade CTA last.
-- **Dashboard / list screens:** follow shadcn defaults — standard `p-4` / `gap-4`, no custom width clamps.
+Per page-type max-width, centered with `mx-auto`:
+
+| Page                          | Max-width    |
+| ----------------------------- | ------------ |
+| Exam question                 | `max-w-2xl`  |
+| Exam results                  | `max-w-2xl`  |
+| Freies Lernen                 | `max-w-2xl`  |
+| Auth (login, reset, 2FA)      | `max-w-md`   |
+| Checkout success              | `max-w-md`   |
+| Welcome (landing)             | `max-w-3xl`  |
+| Legal (Impressum, AGB, etc.)  | `max-w-3xl`  |
+| Settings (sidebar + content)  | sidebar `w-48` + content `max-w-2xl` |
+| Dashboard / list screens      | shadcn defaults — no custom clamps |
+
+- **Exam screens:** focal Card (`py-8` / `px-8`). Timer fixed top-center or top-right, always visible.
+- **Results screen:** Score hero at top, topic breakdown below, locked-preview Card below that, upgrade CTA last.
+- **Auth screens:** all use `max-w-md` (no `max-w-sm`). Card uses default shadcn padding.
 
 ## What we will *not* do
 

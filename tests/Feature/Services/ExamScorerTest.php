@@ -109,8 +109,19 @@ it('computes a topic breakdown of correct / total per topic', function () {
     ExamAnswer::factory()->for($attempt, 'examAttempt')->for($q2)->create(['selected_option_ids' => null, 'is_correct' => false, 'position' => 2]);
     ExamAnswer::factory()->for($attempt, 'examAttempt')->for($q3)->create(['selected_option_ids' => [$q3->answers->firstWhere('is_correct', true)->id], 'is_correct' => true, 'position' => 3]);
 
-    $breakdown = (new ExamScorer)->topicBreakdown($attempt->fresh());
+    $breakdown = collect((new ExamScorer)->topicBreakdown($attempt->fresh()))
+        ->keyBy('key');
 
-    expect($breakdown[BsiTopic::Bausteine->value])->toBe(['correct' => 1, 'total' => 2]);
-    expect($breakdown[BsiTopic::Methodik->value])->toBe(['correct' => 1, 'total' => 1]);
+    expect($breakdown[BsiTopic::Bausteine->value])->toMatchArray([
+        'key' => BsiTopic::Bausteine->value,
+        'label' => BsiTopic::Bausteine->label(),
+        'correct' => 1,
+        'total' => 2,
+    ]);
+    expect($breakdown[BsiTopic::Methodik->value])->toMatchArray([
+        'key' => BsiTopic::Methodik->value,
+        'label' => BsiTopic::Methodik->label(),
+        'correct' => 1,
+        'total' => 1,
+    ]);
 });

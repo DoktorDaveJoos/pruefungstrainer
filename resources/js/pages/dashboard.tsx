@@ -1,9 +1,9 @@
-import AppLayout from '@/layouts/app-layout';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { getCsrfToken } from '@/lib/utils';
 import { Head, Link } from '@inertiajs/react';
 import { FileCheck, GraduationCap } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import AppLayout from '@/layouts/app-layout';
+import { getCsrfToken } from '@/lib/utils';
 
 export default function Dashboard() {
     return (

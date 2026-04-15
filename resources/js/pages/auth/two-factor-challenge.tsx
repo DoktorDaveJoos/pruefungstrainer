@@ -53,10 +53,10 @@ export default function TwoFactorChallenge() {
         <>
             <Head title="Two-factor authentication" />
 
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
                 <Form
                     {...store.form()}
-                    className="space-y-4"
+                    className="flex flex-col gap-4"
                     resetOnError
                     resetOnSuccess={!showRecoveryInput}
                 >
@@ -76,7 +76,7 @@ export default function TwoFactorChallenge() {
                                     />
                                 </>
                             ) : (
-                                <div className="flex flex-col items-center justify-center space-y-3 text-center">
+                                <div className="flex flex-col items-center justify-center gap-4 text-center">
                                     <div className="flex w-full items-center justify-center">
                                         <InputOTP
                                             name="code"
@@ -115,7 +115,7 @@ export default function TwoFactorChallenge() {
                                 <span>or you can </span>
                                 <button
                                     type="button"
-                                    className="cursor-pointer text-foreground underline decoration-neutral-300 underline-offset-4 transition-colors duration-300 ease-out hover:decoration-current! dark:decoration-neutral-500"
+                                    className="cursor-pointer text-foreground underline underline-offset-4 transition-colors hover:text-foreground/80"
                                     onClick={() =>
                                         toggleRecoveryMode(clearErrors)
                                     }

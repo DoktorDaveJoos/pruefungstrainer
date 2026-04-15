@@ -26,30 +26,30 @@ class ExamScorer
     }
 
     /**
-     * @return array<string, array{correct: int, total: int}>
+     * @return list<array{key: string, label: string, correct: int, total: int}>
      */
     public function topicBreakdown(ExamAttempt $attempt): array
     {
         $attempt->load('examAnswers.question');
 
-        $breakdown = [];
+        $tally = [];
 
         foreach ($attempt->examAnswers as $examAnswer) {
-            $topic = $examAnswer->question->topic?->value;
+            $topic = $examAnswer->question->topic;
 
             if ($topic === null) {
                 continue;
             }
 
-            $breakdown[$topic] ??= ['correct' => 0, 'total' => 0];
-            $breakdown[$topic]['total']++;
+            $tally[$topic->value] ??= ['key' => $topic->value, 'label' => $topic->label(), 'correct' => 0, 'total' => 0];
+            $tally[$topic->value]['total']++;
 
             if ($examAnswer->is_correct) {
-                $breakdown[$topic]['correct']++;
+                $tally[$topic->value]['correct']++;
             }
         }
 
-        return $breakdown;
+        return array_values($tally);
     }
 
     private function isAnswerCorrect(ExamAnswer $examAnswer): bool

@@ -1,9 +1,9 @@
+import { Head, Link, usePage } from '@inertiajs/react';
+import { Check, ChevronRight, Clock, FileCheck, Lock } from 'lucide-react';
 import { SiteFooter } from '@/components/site-footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { getCsrfToken } from '@/lib/utils';
-import { Head, Link, usePage } from '@inertiajs/react';
-import { Check, Clock, FileCheck, Lock } from 'lucide-react';
 
 type Pricing = {
     amount_eur: number;
@@ -21,8 +21,8 @@ export default function Welcome() {
 
             <div className="min-h-screen bg-background">
                 <header className="border-b border-border">
-                    <div className="mx-auto flex max-w-6xl items-center justify-between p-6">
-                        <div className="text-lg font-semibold tracking-tight">Prüfungstrainer</div>
+                    <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+                        <div className="text-base font-semibold tracking-tight">Prüfungstrainer</div>
                         <nav className="flex items-center gap-4 text-sm">
                             {auth?.user ? (
                                 <Link href="/dashboard" className="text-foreground hover:underline">
@@ -43,13 +43,13 @@ export default function Welcome() {
                 </header>
 
                 <main>
-                    <section className="mx-auto max-w-3xl px-6 py-24">
-                        <h1 className="text-5xl font-bold tracking-tight">BSI IT-Grundschutz-Praktiker</h1>
-                        <p className="mt-4 text-xl text-muted-foreground leading-relaxed">
+                    <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+                        <h1 className="text-4xl font-semibold tracking-tight">BSI IT-Grundschutz-Praktiker</h1>
+                        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
                             Realistische Prüfungssimulation. 50 Fragen, 60 Minuten, 60 % Bestehensgrenze — genau wie die echte BSI-Prüfung.
                         </p>
 
-                        <div className="mt-10 flex items-center gap-4">
+                        <div className="mt-8 flex items-center gap-4">
                             <form method="POST" action="/pruefungssimulation/start">
                                 <input
                                     type="hidden"
@@ -63,7 +63,7 @@ export default function Welcome() {
                             <span className="text-sm text-muted-foreground">kostenlos · kein Login nötig</span>
                         </div>
 
-                        <div className="mt-16 grid gap-6 md:grid-cols-3">
+                        <div className="mt-12 grid gap-6 md:grid-cols-3">
                             <Card>
                                 <CardHeader>
                                     <FileCheck className="size-6 text-muted-foreground" />
@@ -88,14 +88,14 @@ export default function Welcome() {
                         </div>
                     </section>
 
-                    <section className="border-t border-border bg-muted/30 py-20">
-                        <div className="mx-auto max-w-3xl px-6">
-                            <h2 className="text-center text-3xl font-bold tracking-tight">Lifetime-Zugang</h2>
-                            <p className="mt-2 text-center text-muted-foreground">
+                    <section className="border-t border-border bg-muted/30 py-16">
+                        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+                            <h2 className="text-center text-xl font-semibold tracking-tight">Lifetime-Zugang</h2>
+                            <p className="mt-2 text-center text-sm text-muted-foreground">
                                 Einmal zahlen. Kein Abo. Für immer üben.
                             </p>
 
-                            <Card className="mt-10 mx-auto max-w-md border-border">
+                            <Card className="mx-auto mt-8 max-w-md">
                                 <CardHeader className="items-center text-center">
                                     {pricing.is_founder_price && (
                                         <div className="text-xs font-medium uppercase tracking-wider text-warning">
@@ -106,10 +106,10 @@ export default function Welcome() {
                                     {pricing.is_founder_price && (
                                         <div className="text-sm text-muted-foreground line-through tabular-nums">{pricing.standard_price_eur} €</div>
                                     )}
-                                    <CardTitle className="mt-4 text-base font-medium">Lifetime-Zugang</CardTitle>
+                                    <CardTitle className="mt-2 text-base font-medium">Lifetime-Zugang</CardTitle>
                                 </CardHeader>
-                                <CardContent className="space-y-4">
-                                    <ul className="space-y-2 text-sm">
+                                <CardContent className="flex flex-col gap-4">
+                                    <ul className="flex flex-col gap-2 text-sm">
                                         <li className="flex items-start gap-2">
                                             <Check className="mt-0.5 size-4 shrink-0 text-success" />
                                             <span>Unbegrenzte 50-Fragen-Prüfungssimulationen</span>
@@ -147,7 +147,7 @@ export default function Welcome() {
                                 </CardContent>
                             </Card>
 
-                            <p className="mt-8 text-center text-xs text-muted-foreground">
+                            <p className="mt-6 text-center text-xs text-muted-foreground">
                                 BSI-Prüfung kostet{' '}
                                 <a href="https://www.bsi.bund.de/" className="underline" target="_blank" rel="noopener noreferrer">
                                     €245–450 pro Versuch
@@ -157,10 +157,10 @@ export default function Welcome() {
                         </div>
                     </section>
 
-                    <section className="mx-auto max-w-3xl px-6 py-20">
-                        <h2 className="text-3xl font-bold tracking-tight">Häufige Fragen</h2>
+                    <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+                        <h2 className="text-xl font-semibold tracking-tight">Häufige Fragen</h2>
 
-                        <div className="mt-8 space-y-6">
+                        <div className="mt-6 flex flex-col gap-4">
                             <FaqItem
                                 q="Stimmt die Prüfungssimulation exakt mit dem BSI-Original überein?"
                                 a="Format und Bewertung mirroren das BSI-Original (50 Fragen, 60 Minuten, 60 % Bestehensgrenze, Mehrfachauswahl mit Alles-oder-Nichts-Bewertung). Die Basis/Experte-Einteilung der Fragen basiert auf eigener Klassifikation, da BSI die offizielle Verteilung nicht veröffentlicht."
@@ -197,14 +197,14 @@ export default function Welcome() {
 
 function FaqItem({ q, a }: { q: string; a: string }) {
     return (
-        <details className="group rounded-md border border-border p-4">
-            <summary className="cursor-pointer list-none font-medium [&::-webkit-details-marker]:hidden">
+        <details className="group rounded-md border border-border p-4 shadow-xs">
+            <summary className="cursor-pointer list-none text-sm font-medium [&::-webkit-details-marker]:hidden">
                 <span className="inline-flex items-center gap-2">
-                    <span className="text-muted-foreground transition-transform group-open:rotate-90">›</span>
+                    <ChevronRight className="size-4 text-muted-foreground transition-transform group-open:rotate-90" />
                     {q}
                 </span>
             </summary>
-            <p className="mt-3 pl-5 text-sm leading-relaxed text-muted-foreground">{a}</p>
+            <p className="mt-2 pl-6 text-sm leading-relaxed text-muted-foreground">{a}</p>
         </details>
     );
 }

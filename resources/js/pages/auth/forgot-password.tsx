@@ -1,11 +1,12 @@
 // Components
 import { Form, Head } from '@inertiajs/react';
-import { LoaderCircle } from 'lucide-react';
+import AuthStatusAlert from '@/components/auth-status-alert';
 import InputError from '@/components/input-error';
 import TextLink from '@/components/text-link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Spinner } from '@/components/ui/spinner';
 import { login } from '@/routes';
 import { email } from '@/routes/password';
 
@@ -14,13 +15,9 @@ export default function ForgotPassword({ status }: { status?: string }) {
         <>
             <Head title="Forgot password" />
 
-            {status && (
-                <div className="mb-4 text-center text-sm font-medium text-green-600">
-                    {status}
-                </div>
-            )}
+            <AuthStatusAlert status={status} />
 
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
                 <Form {...email.form()}>
                     {({ processing, errors }) => (
                         <>
@@ -44,9 +41,7 @@ export default function ForgotPassword({ status }: { status?: string }) {
                                     disabled={processing}
                                     data-test="email-password-reset-link-button"
                                 >
-                                    {processing && (
-                                        <LoaderCircle className="h-4 w-4 animate-spin" />
-                                    )}
+                                    {processing && <Spinner />}
                                     Email password reset link
                                 </Button>
                             </div>
@@ -54,7 +49,7 @@ export default function ForgotPassword({ status }: { status?: string }) {
                     )}
                 </Form>
 
-                <div className="space-x-1 text-center text-sm text-muted-foreground">
+                <div className="flex items-center justify-center gap-1 text-center text-sm text-muted-foreground">
                     <span>Or, return to</span>
                     <TextLink href={login()}>log in</TextLink>
                 </div>

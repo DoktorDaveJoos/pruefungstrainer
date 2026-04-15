@@ -1,12 +1,22 @@
-import { ExamTimer } from '@/components/exam-timer';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import { getCsrfToken } from '@/lib/utils';
 import { Head, router } from '@inertiajs/react';
 import { ChevronLeft, ChevronRight, Flag, FlagOff } from 'lucide-react';
 import { useState } from 'react';
+import ExamController from '@/actions/App/Http/Controllers/ExamController';
+import { AnswerOption } from '@/components/exam/answer-option';
+import { ExamTimer } from '@/components/exam-timer';
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+} from '@/components/ui/alert-dialog';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 type Option = { id: number; text: string };
 type Question = {
@@ -24,13 +34,26 @@ type Attempt = {
     total_questions: number;
 };
 
-export default function ExamQuestion({ attempt, questions }: { attempt: Attempt; questions: Question[] }) {
+export default function ExamQuestion({
+    attempt,
+    questions,
+}: {
+    attempt: Attempt;
+    questions: Question[];
+}) {
     const [currentPosition, setCurrentPosition] = useState(1);
     const [state, setState] = useState(() =>
-        questions.reduce<Record<number, { selected: number[]; flagged: boolean }>>((acc, q) => {
-            acc[q.position] = { selected: q.selected_option_ids, flagged: q.flagged };
-            return acc;
-        }, {}),
+        questions.reduce<Record<number, { selected: number[]; flagged: boolean }>>(
+            (acc, q) => {
+                acc[q.position] = {
+                    selected: q.selected_option_ids,
+                    flagged: q.flagged,
+                };
+
+                return acc;
+            },
+            {},
+        ),
     );
 
     const current = questions.find((q) => q.position === currentPosition)!;
@@ -38,7 +61,10 @@ export default function ExamQuestion({ attempt, questions }: { attempt: Attempt;
 
     const save = (nextSelected: number[], nextFlagged: boolean) => {
         router.patch(
-            `/pruefungssimulation/${attempt.id}/answer/${currentPosition}`,
+            ExamController.saveAnswer.url({
+                attempt: attempt.id,
+                position: currentPosition,
+            }),
             { selected_option_ids: nextSelected, flagged: nextFlagged },
             { preserveScroll: true, preserveState: true, only: [] },
         );
@@ -49,32 +75,29 @@ export default function ExamQuestion({ attempt, questions }: { attempt: Attempt;
             ? currentState.selected.filter((id) => id !== optionId)
             : [...currentState.selected, optionId];
 
-        setState({ ...state, [currentPosition]: { ...currentState, selected: nextSelected } });
+        setState({
+            ...state,
+            [currentPosition]: { ...currentState, selected: nextSelected },
+        });
         save(nextSelected, currentState.flagged);
     };
 
     const toggleFlag = () => {
         const nextFlagged = !currentState.flagged;
-        setState({ ...state, [currentPosition]: { ...currentState, flagged: nextFlagged } });
+        setState({
+            ...state,
+            [currentPosition]: { ...currentState, flagged: nextFlagged },
+        });
         save(currentState.selected, nextFlagged);
     };
 
     const submit = () => {
-        if (!confirm('Prüfung endgültig abschicken? Danach kannst du keine Antworten mehr ändern.')) return;
-
-        const form = document.createElement('form');
-        form.method = 'POST';
-        form.action = `/pruefungssimulation/${attempt.id}/submit`;
-        const tokenInput = document.createElement('input');
-        tokenInput.type = 'hidden';
-        tokenInput.name = '_token';
-        tokenInput.value = getCsrfToken();
-        form.appendChild(tokenInput);
-        document.body.appendChild(form);
-        form.submit();
+        router.post(ExamController.submit.url({ attempt: attempt.id }));
     };
 
-    const answeredCount = Object.values(state).filter((s) => s.selected.length > 0).length;
+    const answeredCount = Object.values(state).filter(
+        (s) => s.selected.length > 0,
+    ).length;
 
     return (
         <>
@@ -82,75 +105,115 @@ export default function ExamQuestion({ attempt, questions }: { attempt: Attempt;
 
             <div className="min-h-screen bg-background">
                 <header className="sticky top-0 z-10 border-b border-border bg-background/95 backdrop-blur">
-                    <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
-                        <div className="text-sm tabular-nums text-muted-foreground">
-                            Frage {currentPosition} / {attempt.total_questions}
-                            <span className="ml-3">· {answeredCount} beantwortet</span>
+                    <div className="mx-auto flex max-w-2xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+                        <div className="flex items-center gap-3 text-sm tabular-nums text-muted-foreground">
+                            <span>
+                                Frage {currentPosition} / {attempt.total_questions}
+                            </span>
+                            <span>·</span>
+                            <span>{answeredCount} beantwortet</span>
                         </div>
                         <ExamTimer expiresAt={attempt.timer_expires_at} />
                     </div>
                 </header>
 
-                <main className="mx-auto max-w-3xl px-6 py-8">
-                    <Card className="border-border">
-                        <CardHeader>
+                <main className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-8 sm:px-6">
+                    <Card className="py-8">
+                        <CardHeader className="px-8">
                             <div className="flex items-start justify-between gap-4">
-                                <div className="text-lg leading-relaxed">{current.text}</div>
+                                <div className="text-lg leading-relaxed">
+                                    {current.text}
+                                </div>
                                 <Button
                                     type="button"
-                                    variant={currentState.flagged ? 'default' : 'outline'}
+                                    variant={
+                                        currentState.flagged ? 'default' : 'outline'
+                                    }
                                     size="sm"
                                     onClick={toggleFlag}
-                                    aria-label={currentState.flagged ? 'Markierung entfernen' : 'Frage markieren'}
+                                    aria-label={
+                                        currentState.flagged
+                                            ? 'Markierung entfernen'
+                                            : 'Frage markieren'
+                                    }
                                 >
                                     {currentState.flagged ? (
-                                        <Flag data-icon="inline-start" className="size-4" />
+                                        <Flag className="size-4" />
                                     ) : (
-                                        <FlagOff data-icon="inline-start" className="size-4" />
+                                        <FlagOff className="size-4" />
                                     )}
                                 </Button>
                             </div>
                         </CardHeader>
-                        <CardContent className="flex flex-col gap-3">
+                        <CardContent className="flex flex-col gap-3 px-8">
                             {current.options.map((option) => (
-                                <Label
+                                <AnswerOption
                                     key={option.id}
-                                    className="flex cursor-pointer items-start gap-3 rounded-md border border-border p-3 hover:bg-muted"
-                                >
-                                    <Checkbox
-                                        checked={currentState.selected.includes(option.id)}
-                                        onCheckedChange={() => toggleOption(option.id)}
-                                    />
-                                    <span className="text-base leading-relaxed">{option.text}</span>
-                                </Label>
+                                    id={option.id}
+                                    text={option.text}
+                                    checked={currentState.selected.includes(
+                                        option.id,
+                                    )}
+                                    onCheckedChange={() => toggleOption(option.id)}
+                                />
                             ))}
                         </CardContent>
                     </Card>
 
-                    <p className="mt-3 text-xs text-muted-foreground">
-                        Mehrfachauswahl möglich. Alle richtigen Optionen ankreuzen — ein falsch angekreuztes Feld reicht, damit die Frage als falsch gewertet wird.
+                    <p className="text-xs text-muted-foreground">
+                        Mehrfachauswahl möglich. Alle richtigen Optionen
+                        ankreuzen — ein falsch angekreuztes Feld reicht, damit
+                        die Frage als falsch gewertet wird.
                     </p>
 
-                    <div className="mt-8 flex items-center justify-between">
+                    <div className="flex items-center justify-between">
                         <Button
                             type="button"
                             variant="outline"
                             disabled={currentPosition === 1}
                             onClick={() => setCurrentPosition(currentPosition - 1)}
                         >
-                            <ChevronLeft data-icon="inline-start" className="size-4" />
+                            <ChevronLeft className="size-4" />
                             Zurück
                         </Button>
 
                         {currentPosition < attempt.total_questions ? (
-                            <Button type="button" onClick={() => setCurrentPosition(currentPosition + 1)}>
+                            <Button
+                                type="button"
+                                onClick={() =>
+                                    setCurrentPosition(currentPosition + 1)
+                                }
+                            >
                                 Weiter
-                                <ChevronRight data-icon="inline-end" className="size-4" />
+                                <ChevronRight className="size-4" />
                             </Button>
                         ) : (
-                            <Button type="button" onClick={submit}>
-                                Prüfung abschicken
-                            </Button>
+                            <AlertDialog>
+                                <AlertDialogTrigger asChild>
+                                    <Button type="button">
+                                        Prüfung abschicken
+                                    </Button>
+                                </AlertDialogTrigger>
+                                <AlertDialogContent>
+                                    <AlertDialogHeader>
+                                        <AlertDialogTitle>
+                                            Prüfung endgültig abschicken?
+                                        </AlertDialogTitle>
+                                        <AlertDialogDescription>
+                                            Danach kannst du keine Antworten
+                                            mehr ändern.
+                                        </AlertDialogDescription>
+                                    </AlertDialogHeader>
+                                    <AlertDialogFooter>
+                                        <AlertDialogCancel>
+                                            Abbrechen
+                                        </AlertDialogCancel>
+                                        <AlertDialogAction onClick={submit}>
+                                            Abschicken
+                                        </AlertDialogAction>
+                                    </AlertDialogFooter>
+                                </AlertDialogContent>
+                            </AlertDialog>
                         )}
                     </div>
                 </main>
