@@ -32,5 +32,9 @@
         <env name="PULSE_ENABLED" value="false"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
         <env name="NIGHTWATCH_ENABLED" value="false"/>
+        <env name="POLAR_ACCESS_TOKEN" value="test_token"/>
+        <env name="POLAR_WEBHOOK_SECRET" value="test_secret"/>
+        <env name="POLAR_PRODUCT_FOUNDER" value="prod_test_founder"/>
+        <env name="POLAR_PRODUCT_STANDARD" value="prod_test_standard"/>
     </php>
 </phpunit>

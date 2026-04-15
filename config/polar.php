@@ -78,4 +78,17 @@ return [
     |
     */
     'currency_locale' => env('POLAR_CURRENCY_LOCALE', 'en'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Product IDs
+    |--------------------------------------------------------------------------
+    |
+    | The Polar product IDs for the Prüfungstrainer access tiers.
+    |
+    */
+    'products' => [
+        'founder'  => env('POLAR_PRODUCT_FOUNDER'),
+        'standard' => env('POLAR_PRODUCT_STANDARD'),
+    ],
 ];
