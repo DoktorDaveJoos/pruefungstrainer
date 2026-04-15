@@ -22,6 +22,7 @@ Route::inertia('/impressum', 'legal/impressum')->name('legal.impressum');
 Route::middleware('auth')->group(function () {
     Route::get('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
     Route::get('/checkout/processing', [CheckoutController::class, 'processing'])->name('checkout.processing');
+    Route::get('/api/access-status', [CheckoutController::class, 'accessStatus'])->name('access-status');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {

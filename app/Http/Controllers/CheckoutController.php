@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\Pricing;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -26,5 +27,10 @@ class CheckoutController extends Controller
         return Inertia::render('checkout/processing', [
             'hasAccess' => (bool) $request->user()?->hasActiveAccess(),
         ]);
+    }
+
+    public function accessStatus(Request $request): JsonResponse
+    {
+        return response()->json(['hasAccess' => (bool) $request->user()?->hasActiveAccess()]);
     }
 }
