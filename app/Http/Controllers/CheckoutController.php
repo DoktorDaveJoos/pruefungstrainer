@@ -8,6 +8,7 @@ use App\Services\PolarWebhookProcessor;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Inertia\Response as InertiaResponse;
 use RuntimeException;
 
 class CheckoutController extends Controller
@@ -40,6 +41,17 @@ class CheckoutController extends Controller
         }
 
         return redirect()->away($url);
+    }
+
+    public function success(Request $request): InertiaResponse
+    {
+        $user = $request->user();
+
+        return inertia('checkout/success', [
+            'isAuthenticated' => $user !== null,
+            'isPaid' => $user?->isPaid() ?? false,
+            'checkoutId' => $request->query('checkout_id'),
+        ]);
     }
 
     public function webhook(Request $request): Response
