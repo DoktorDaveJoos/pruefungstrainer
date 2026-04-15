@@ -18,7 +18,15 @@ class CheckoutController extends Controller
             return redirect()->intended(config('fortify.home'));
         }
 
-        return $user->checkout([$pricing->currentProductId()])
+        $productId = $pricing->currentProductId();
+
+        abort_if(
+            $productId === null,
+            503,
+            'Checkout ist noch nicht eingerichtet. Bitte setze POLAR_PRODUCT_FOUNDER und POLAR_PRODUCT_STANDARD in deiner .env.',
+        );
+
+        return $user->checkout([$productId])
             ->withSuccessUrl(route('checkout.processing').'?checkout_id={CHECKOUT_ID}');
     }
 

@@ -32,7 +32,7 @@ class Pricing
         ];
     }
 
-    public function currentProductId(): string
+    public function currentProductId(): ?string
     {
         return $this->currentPrice()['is_founder_price']
             ? config('polar.products.founder')
