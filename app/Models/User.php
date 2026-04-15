@@ -2,29 +2,29 @@
 
 namespace App\Models;
 
-use Database\Factories\UserFactory;
+use Danestves\LaravelPolar\Billable;
+use Danestves\LaravelPolar\Order;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
-use Illuminate\Database\Eloquent\Attributes\Hidden;
+use Illuminate\Database\Eloquent\Concerns\HasTimestamps;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 
-#[Fillable(['name', 'email', 'password', 'paid_at', 'polar_customer_id'])]
-#[Hidden(['password', 'two_factor_secret', 'two_factor_recovery_codes', 'remember_token'])]
-class User extends Authenticatable
+#[Fillable(['name', 'email', 'password'])]
+class User extends Authenticatable implements MustVerifyEmail
 {
-    /** @use HasFactory<UserFactory> */
-    use HasFactory, Notifiable, TwoFactorAuthenticatable;
+    use Billable, HasFactory, HasTimestamps, Notifiable, TwoFactorAuthenticatable;
+
+    protected $hidden = ['password', 'remember_token', 'two_factor_recovery_codes', 'two_factor_secret'];
 
     protected function casts(): array
     {
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
-            'two_factor_confirmed_at' => 'datetime',
-            'paid_at' => 'datetime',
         ];
     }
 
@@ -38,8 +38,17 @@ class User extends Authenticatable
         return $this->hasMany(PracticeAnswer::class);
     }
 
-    public function isPaid(): bool
+    public function hasActiveAccess(): bool
     {
-        return $this->paid_at !== null;
+        return Order::query()
+            ->where('billable_id', $this->id)
+            ->where('billable_type', self::class)
+            ->whereIn('product_id', [
+                config('polar.products.founder'),
+                config('polar.products.standard'),
+            ])
+            ->whereNull('refunded_at')
+            ->where('ordered_at', '>=', now()->subYear())
+            ->exists();
     }
 }
