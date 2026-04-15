@@ -43,7 +43,7 @@ export default function Dashboard() {
                             <GraduationCap className="size-7 text-primary" />
                             <CardTitle className="mt-3">Freies Lernen</CardTitle>
                             <CardDescription>
-                                Fragen einzeln mit sofortigem Feedback und Quellen-Zitat. Kommt bald.
+                                Fragen einzeln mit sofortigem Feedback und Quellen-Zitat.
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
