@@ -7,6 +7,7 @@ use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
 use App\Services\ExamScorer;
+use App\Services\Pricing;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
@@ -180,6 +181,7 @@ class ExamController extends Controller
                 'is_claimed' => $examAttempt->user_id !== null,
             ],
             'topicBreakdown' => app(ExamScorer::class)->topicBreakdown($examAttempt),
+            'pricing' => app(Pricing::class)->currentPrice(),
         ]);
     }
 

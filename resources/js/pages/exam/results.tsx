@@ -32,9 +32,9 @@ export default function ExamResults({
 }: {
     attempt: Attempt;
     topicBreakdown: TopicBreakdown;
-    pricing?: Pricing;
+    pricing: Pricing;
 }) {
-    const priceLabel = pricing ? `${pricing.amount_eur} €` : '29 €';
+    const priceLabel = `${pricing.amount_eur} €`;
 
     return (
         <>
