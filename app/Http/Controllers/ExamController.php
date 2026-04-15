@@ -27,7 +27,9 @@ class ExamController extends Controller
         $user = $request->user();
         $sessionUuid = $user ? null : (string) Str::uuid();
 
-        $questions = $this->examDraw->draw(userId: $user?->id, total: 50);
+        // Local dev shortcut: 3 questions instead of 50 so we can test faster.
+        $total = app()->environment('local') ? 3 : 50;
+        $questions = $this->examDraw->draw(userId: $user?->id, total: $total);
 
         $attempt = DB::transaction(function () use ($user, $sessionUuid, $questions) {
             $startedAt = now();
