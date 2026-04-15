@@ -1,60 +1,54 @@
 <?php
 
-use App\Models\User;
 use App\Services\Pricing;
+use Danestves\LaravelPolar\Order;
 
-it('returns Founders Price (29 EUR) when fewer than 100 users have paid', function () {
-    User::factory()->paid()->count(50)->create();
-
-    $price = (new Pricing)->currentPrice();
-
-    expect($price)->toBe([
-        'amount_eur' => 29,
-        'standard_price_eur' => 49,
-        'is_founder_price' => true,
-        'spots_remaining' => 50,
-    ]);
+beforeEach(function () {
+    $this->pricing = app(Pricing::class);
 });
 
-it('returns standard price (49 EUR) when 100 paid users reached', function () {
-    User::factory()->paid()->count(100)->create();
+it('returns founder price with all 100 spots remaining when no orders exist', function () {
+    $price = $this->pricing->currentPrice();
 
-    $price = (new Pricing)->currentPrice();
-
-    expect($price)->toBe([
-        'amount_eur' => 49,
-        'standard_price_eur' => 49,
-        'is_founder_price' => false,
-        'spots_remaining' => 0,
-    ]);
+    expect($price['amount_eur'])->toBe(29);
+    expect($price['standard_price_eur'])->toBe(49);
+    expect($price['is_founder_price'])->toBeTrue();
+    expect($price['spots_remaining'])->toBe(100);
 });
 
-it('returns Founders Price for empty user pool', function () {
-    $price = (new Pricing)->currentPrice();
+it('returns founder price with 1 spot remaining when 99 founder orders exist', function () {
+    Order::factory()->count(99)->create(['product_id' => config('polar.products.founder')]);
 
-    expect($price)->toBe([
-        'amount_eur' => 29,
-        'standard_price_eur' => 49,
-        'is_founder_price' => true,
-        'spots_remaining' => 100,
-    ]);
+    $price = $this->pricing->currentPrice();
+
+    expect($price['is_founder_price'])->toBeTrue();
+    expect($price['spots_remaining'])->toBe(1);
 });
 
-it('counts only paid users (ignores unpaid registrations)', function () {
-    User::factory()->paid()->count(30)->create();
-    User::factory()->count(50)->create();
+it('returns standard price once 100 founder orders exist', function () {
+    Order::factory()->count(100)->create(['product_id' => config('polar.products.founder')]);
 
-    $price = (new Pricing)->currentPrice();
+    $price = $this->pricing->currentPrice();
 
-    expect($price['spots_remaining'])->toBe(70);
+    expect($price['amount_eur'])->toBe(49);
+    expect($price['is_founder_price'])->toBeFalse();
+    expect($price['spots_remaining'])->toBe(0);
+});
+
+it('does not count refunded founder orders toward the cap', function () {
+    Order::factory()->count(100)->create(['product_id' => config('polar.products.founder'), 'refunded_at' => now()]);
+
+    $price = $this->pricing->currentPrice();
+
     expect($price['is_founder_price'])->toBeTrue();
 });
 
-it('returns standard price even when 101+ users have paid (over the cap)', function () {
-    User::factory()->paid()->count(101)->create();
+it('returns the founder product id when below the cap', function () {
+    expect($this->pricing->currentProductId())->toBe(config('polar.products.founder'));
+});
 
-    $price = (new Pricing)->currentPrice();
+it('returns the standard product id at the cap', function () {
+    Order::factory()->count(100)->create(['product_id' => config('polar.products.founder')]);
 
-    expect($price['amount_eur'])->toBe(49);
-    expect($price['spots_remaining'])->toBe(0);
+    expect($this->pricing->currentProductId())->toBe(config('polar.products.standard'));
 });
