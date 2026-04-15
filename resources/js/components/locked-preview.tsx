@@ -1,17 +1,32 @@
 import { Lock } from 'lucide-react';
 import type { ReactNode } from 'react';
+import { usePage } from '@inertiajs/react';
+import { CheckoutSheet } from '@/components/checkout-sheet';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { getCsrfToken } from '@/lib/utils';
+import { start } from '@/routes/checkout';
 
-export function LockedPreview({
-    children,
-    ctaText = 'Lifetime-Zugang freischalten · 29 €',
-}: {
+type Props = {
     children: ReactNode;
-    ctaText?: string;
-}) {
+    priceLabel: string;
+    attemptId?: number;
+};
+
+type PageProps = {
+    auth?: { user?: unknown };
+};
+
+export function LockedPreview({ children, priceLabel, attemptId }: Props) {
+    const { auth } = usePage<PageProps>().props;
+
+    const cta = (
+        <Button size="lg">
+            <Lock className="mr-2 size-4" />
+            12 Monate Zugang freischalten · {priceLabel}
+        </Button>
+    );
+
     return (
         <Card className="relative overflow-hidden">
             <CardHeader>
@@ -29,16 +44,13 @@ export function LockedPreview({
             <CardContent className="relative">
                 <div className="pointer-events-none select-none opacity-30 blur-sm">{children}</div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <form method="POST" action="/checkout/start">
-                        <input
-                            type="hidden"
-                            name="_token"
-                            value={getCsrfToken()}
-                        />
-                        <Button size="lg" type="submit">
-                            {ctaText}
-                        </Button>
-                    </form>
+                    {auth?.user ? (
+                        <a href={start.url()}>{cta}</a>
+                    ) : attemptId !== undefined ? (
+                        <CheckoutSheet trigger={cta} attemptId={attemptId} priceLabel={priceLabel} />
+                    ) : (
+                        <a href={start.url()}>{cta}</a>
+                    )}
                 </div>
             </CardContent>
         </Card>

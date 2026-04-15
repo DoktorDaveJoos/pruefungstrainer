@@ -21,13 +21,21 @@ type TopicBreakdown = Array<{
     total: number;
 }>;
 
+type Pricing = {
+    amount_eur: number;
+};
+
 export default function ExamResults({
     attempt,
     topicBreakdown,
+    pricing,
 }: {
     attempt: Attempt;
     topicBreakdown: TopicBreakdown;
+    pricing?: Pricing;
 }) {
+    const priceLabel = pricing ? `${pricing.amount_eur} €` : '29 €';
+
     return (
         <>
             <Head
@@ -64,7 +72,7 @@ export default function ExamResults({
                     </section>
 
                     <section>
-                        <LockedPreview>
+                        <LockedPreview priceLabel={priceLabel} attemptId={attempt.id}>
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-col gap-2">
                                     <div className="text-sm font-medium">
