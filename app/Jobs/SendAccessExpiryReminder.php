@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Mail\AccessExpiryReminderMail;
 use App\Models\User;
 use Carbon\CarbonInterface;
 use Illuminate\Bus\Queueable;
@@ -9,6 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Mail;
 
 class SendAccessExpiryReminder implements ShouldQueue
 {
@@ -18,6 +20,19 @@ class SendAccessExpiryReminder implements ShouldQueue
 
     public function handle(): void
     {
-        // TODO Task 14: send the mail
+        $newerOrderExists = $this->user->orders()
+            ->where('ordered_at', '>', $this->originalOrderedAt)
+            ->whereNull('refunded_at')
+            ->exists();
+
+        if ($newerOrderExists) {
+            return;
+        }
+
+        Mail::to($this->user->email)
+            ->queue(new AccessExpiryReminderMail(
+                $this->user,
+                $this->originalOrderedAt->addYear()
+            ));
     }
 }
