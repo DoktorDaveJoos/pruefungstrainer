@@ -28,9 +28,16 @@ export function LockedPreview({
             <CardContent className="relative">
                 <div className="pointer-events-none select-none opacity-30 blur-sm">{children}</div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <Button asChild size="lg">
-                        <a href="/checkout">{ctaText}</a>
-                    </Button>
+                    <form method="POST" action="/checkout/start">
+                        <input
+                            type="hidden"
+                            name="_token"
+                            value={(document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement | null)?.content ?? ''}
+                        />
+                        <Button size="lg" type="submit">
+                            {ctaText}
+                        </Button>
+                    </form>
                 </div>
             </CardContent>
         </Card>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\PracticeController;
 use App\Http\Middleware\EnsurePaid;
@@ -15,6 +16,10 @@ Route::get('/pruefungssimulation/{attempt}', [ExamController::class, 'show'])->n
 Route::patch('/pruefungssimulation/{attempt}/answer/{position}', [ExamController::class, 'saveAnswer'])->name('exam.save-answer');
 Route::post('/pruefungssimulation/{attempt}/submit', [ExamController::class, 'submit'])->name('exam.submit');
 Route::get('/pruefungssimulation/{attempt}/ergebnis', [ExamController::class, 'results'])->name('exam.results');
+
+Route::post('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
+Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
+Route::post('/webhooks/polar', [CheckoutController::class, 'webhook'])->name('webhooks.polar');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
