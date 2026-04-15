@@ -59,10 +59,34 @@ class UserFactory extends Factory
     }
 
     /**
-     * Indicate that the user has paid.
+     * Indicate that the user has active access (within 90-day subscription window).
      */
-    public function paid(): static
+    public function hasActiveAccess(): static
     {
-        return $this->state(fn () => ['paid_at' => now()]);
+        return $this->afterCreating(function (User $user) {
+            $productId = config('polar.products.founder');
+
+            \Danestves\LaravelPolar\Order::factory()->for($user, 'billable')->create([
+                'product_id' => $productId ?? $this->faker->uuid(),
+                'ordered_at' => now()->subDays(30),
+                'refunded_at' => null,
+            ]);
+        });
+    }
+
+    /**
+     * Indicate that the user has expired access (beyond 90-day subscription window).
+     */
+    public function hasExpiredAccess(): static
+    {
+        return $this->afterCreating(function (User $user) {
+            $productId = config('polar.products.founder');
+
+            \Danestves\LaravelPolar\Order::factory()->for($user, 'billable')->create([
+                'product_id' => $productId ?? $this->faker->uuid(),
+                'ordered_at' => now()->subDays(400),
+                'refunded_at' => null,
+            ]);
+        });
     }
 }
