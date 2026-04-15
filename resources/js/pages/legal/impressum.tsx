@@ -1,28 +1,9 @@
-import { SiteFooter } from '@/components/site-footer';
-import { Head, Link } from '@inertiajs/react';
+import LegalLayout from '@/layouts/legal-layout';
 
 export default function Impressum() {
     return (
-        <>
-            <Head title="Impressum · Prüfungstrainer" />
-
-            <div className="min-h-screen bg-background">
-                <header className="border-b border-border">
-                    <div className="mx-auto flex max-w-3xl items-center justify-between p-6">
-                        <Link href="/" className="text-lg font-semibold tracking-tight">
-                            Prüfungstrainer
-                        </Link>
-                        <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-                            Zurück zur Startseite
-                        </Link>
-                    </div>
-                </header>
-
-                <main className="mx-auto max-w-3xl px-6 py-16">
-                    <h1 className="text-3xl font-bold tracking-tight">Impressum</h1>
-
-                    <div className="mt-8 space-y-8 text-sm leading-relaxed">
-                        <section>
+        <LegalLayout title="Impressum" headTitle="Impressum · Prüfungstrainer">
+            <section>
                             <h2 className="text-lg font-semibold">Angaben gemäß § 5 TMG</h2>
                             <p className="mt-2 text-muted-foreground">
                                 [TODO: Vollständiger Name des Anbieters]
@@ -102,14 +83,9 @@ export default function Impressum() {
                             <p className="mt-2 text-muted-foreground">
                                 Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
                                 allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist
-                                jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
-                            </p>
-                        </section>
-                    </div>
-                </main>
-
-                <SiteFooter />
-            </div>
-        </>
+                    jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
+                </p>
+            </section>
+        </LegalLayout>
     );
 }

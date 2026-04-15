@@ -1,17 +1,19 @@
 import { SiteFooter } from '@/components/site-footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { getCsrfToken } from '@/lib/utils';
 import { Head, Link, usePage } from '@inertiajs/react';
 import { Check, Clock, FileCheck, Lock } from 'lucide-react';
 
 type Pricing = {
     amount_eur: number;
+    standard_price_eur: number;
     is_founder_price: boolean;
     spots_remaining: number;
 };
 
 export default function Welcome() {
-    const { auth, pricing } = usePage().props as { auth?: { user?: unknown }; pricing: Pricing };
+    const { auth, pricing } = usePage<{ pricing: Pricing }>().props;
 
     return (
         <>
@@ -52,7 +54,7 @@ export default function Welcome() {
                                 <input
                                     type="hidden"
                                     name="_token"
-                                    value={(document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement | null)?.content ?? ''}
+                                    value={getCsrfToken()}
                                 />
                                 <Button size="lg" type="submit">
                                     Prüfungssimulation starten
@@ -102,7 +104,7 @@ export default function Welcome() {
                                     )}
                                     <div className="mt-2 text-5xl font-bold tabular-nums">{pricing.amount_eur} €</div>
                                     {pricing.is_founder_price && (
-                                        <div className="text-sm text-muted-foreground line-through tabular-nums">49 €</div>
+                                        <div className="text-sm text-muted-foreground line-through tabular-nums">{pricing.standard_price_eur} €</div>
                                     )}
                                     <CardTitle className="mt-4 text-base font-medium">Lifetime-Zugang</CardTitle>
                                 </CardHeader>
@@ -133,7 +135,7 @@ export default function Welcome() {
                                         <input
                                             type="hidden"
                                             name="_token"
-                                            value={(document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement | null)?.content ?? ''}
+                                            value={getCsrfToken()}
                                         />
                                         <Button type="submit" size="lg" className="w-full">
                                             Lifetime-Zugang freischalten

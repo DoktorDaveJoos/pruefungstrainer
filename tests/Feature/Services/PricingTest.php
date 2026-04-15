@@ -10,6 +10,7 @@ it('returns Founders Price (29 EUR) when fewer than 100 users have paid', functi
 
     expect($price)->toBe([
         'amount_eur' => 29,
+        'standard_price_eur' => 49,
         'is_founder_price' => true,
         'spots_remaining' => 50,
     ]);
@@ -22,6 +23,7 @@ it('returns standard price (49 EUR) when 100 paid users reached', function () {
 
     expect($price)->toBe([
         'amount_eur' => 49,
+        'standard_price_eur' => 49,
         'is_founder_price' => false,
         'spots_remaining' => 0,
     ]);
@@ -32,6 +34,7 @@ it('returns Founders Price for empty user pool', function () {
 
     expect($price)->toBe([
         'amount_eur' => 29,
+        'standard_price_eur' => 49,
         'is_founder_price' => true,
         'spots_remaining' => 100,
     ]);

@@ -2,18 +2,12 @@
 
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ExamController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PracticeController;
 use App\Http\Middleware\EnsurePaid;
-use App\Services\Pricing;
 use Illuminate\Support\Facades\Route;
-use Laravel\Fortify\Features;
 
-Route::get('/', function () {
-    return inertia('welcome', [
-        'canRegister' => Features::enabled(Features::registration()),
-        'pricing' => app(Pricing::class)->currentPrice(),
-    ]);
-})->name('home');
+Route::get('/', HomeController::class)->name('home');
 
 Route::post('/pruefungssimulation/start', [ExamController::class, 'start'])->name('exam.start');
 Route::get('/pruefungssimulation/{attempt}', [ExamController::class, 'show'])->name('exam.show');

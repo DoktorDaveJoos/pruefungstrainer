@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
-import { cn } from '@/lib/utils';
+import { cn, getCsrfToken } from '@/lib/utils';
 import { Head, router } from '@inertiajs/react';
 import axios from 'axios';
 import { CheckCircle2, XCircle } from 'lucide-react';
@@ -55,7 +55,7 @@ export default function FreiesLernen({
         if (!question || submitting) return;
         setSubmitting(true);
         try {
-            const csrf = (document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement | null)?.content ?? '';
+            const csrf = getCsrfToken();
             const res = await axios.post(
                 '/freies-lernen/answer',
                 { question_id: question.id, selected_option_ids: selected },

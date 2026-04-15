@@ -1,6 +1,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { getCsrfToken } from '@/lib/utils';
 import { Lock } from 'lucide-react';
 import { ReactNode } from 'react';
 
@@ -32,7 +33,7 @@ export function LockedPreview({
                         <input
                             type="hidden"
                             name="_token"
-                            value={(document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement | null)?.content ?? ''}
+                            value={getCsrfToken()}
                         />
                         <Button size="lg" type="submit">
                             {ctaText}

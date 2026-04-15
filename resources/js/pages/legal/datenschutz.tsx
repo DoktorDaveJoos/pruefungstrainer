@@ -1,28 +1,9 @@
-import { SiteFooter } from '@/components/site-footer';
-import { Head, Link } from '@inertiajs/react';
+import LegalLayout from '@/layouts/legal-layout';
 
 export default function Datenschutz() {
     return (
-        <>
-            <Head title="Datenschutz · Prüfungstrainer" />
-
-            <div className="min-h-screen bg-background">
-                <header className="border-b border-border">
-                    <div className="mx-auto flex max-w-3xl items-center justify-between p-6">
-                        <Link href="/" className="text-lg font-semibold tracking-tight">
-                            Prüfungstrainer
-                        </Link>
-                        <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-                            Zurück zur Startseite
-                        </Link>
-                    </div>
-                </header>
-
-                <main className="mx-auto max-w-3xl px-6 py-16">
-                    <h1 className="text-3xl font-bold tracking-tight">Datenschutzerklärung</h1>
-
-                    <div className="mt-8 space-y-8 text-sm leading-relaxed">
-                        <section>
+        <LegalLayout title="Datenschutzerklärung" headTitle="Datenschutz · Prüfungstrainer">
+            <section>
                             <h2 className="text-lg font-semibold">1. Verantwortlicher</h2>
                             <p className="mt-2 text-muted-foreground">
                                 Verantwortlicher im Sinne der DSGVO ist [TODO: Name + vollständige Anschrift,
@@ -135,14 +116,9 @@ export default function Datenschutz() {
                             </ul>
                         </section>
 
-                        <p className="text-xs text-muted-foreground">
-                            Stand: [TODO: Datum der letzten Aktualisierung einsetzen]
-                        </p>
-                    </div>
-                </main>
-
-                <SiteFooter />
-            </div>
-        </>
+            <p className="text-xs text-muted-foreground">
+                Stand: [TODO: Datum der letzten Aktualisierung einsetzen]
+            </p>
+        </LegalLayout>
     );
 }

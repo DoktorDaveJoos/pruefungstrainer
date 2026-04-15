@@ -1,6 +1,7 @@
 import AppLayout from '@/layouts/app-layout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { getCsrfToken } from '@/lib/utils';
 import { Head, Link } from '@inertiajs/react';
 import { FileCheck, GraduationCap } from 'lucide-react';
 
@@ -29,7 +30,7 @@ export default function Dashboard() {
                                 <input
                                     type="hidden"
                                     name="_token"
-                                    value={(document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement | null)?.content ?? ''}
+                                    value={getCsrfToken()}
                                 />
                                 <Button type="submit" className="w-full">
                                     Simulation starten
