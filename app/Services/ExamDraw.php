@@ -52,6 +52,7 @@ class ExamDraw
         }
 
         $unseen = Question::query()
+            ->with('answers')
             ->where('difficulty', $difficulty)
             ->whereNotNull('topic')
             ->whereNotIn('id', $seenQuestionIds)
@@ -66,6 +67,7 @@ class ExamDraw
         $remaining = $target - $unseen->count();
 
         $fallback = Question::query()
+            ->with('answers')
             ->where('difficulty', $difficulty)
             ->whereNotNull('topic')
             ->whereIn('id', $seenQuestionIds)

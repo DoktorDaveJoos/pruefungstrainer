@@ -2,7 +2,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 
 export const ANSWER_OPTION_BASE =
-    'flex cursor-pointer items-start gap-3 rounded-md border p-4 shadow-xs';
+    'flex cursor-pointer items-center gap-3 rounded-md border p-4 shadow-xs';
 
 export function AnswerOption({
     id,

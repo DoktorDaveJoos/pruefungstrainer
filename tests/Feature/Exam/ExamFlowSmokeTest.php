@@ -78,3 +78,18 @@ it('walks an anonymous user through start → answer 50 → submit → results',
     expect($fresh->submitted_at)->not->toBeNull();
     expect($fresh->score)->toBeInt();
 });
+
+it('preserves answer option order across repeated show requests', function () {
+    $startResponse = $this->post('/pruefungssimulation/start');
+    $sessionUuid = $startResponse->getCookie(ExamAttemptFinder::SESSION_COOKIE)->getValue();
+    $attemptUrl = $startResponse->headers->get('Location');
+
+    $extractOrder = fn ($response) => collect($response->viewData('page')['props']['questions'])
+        ->map(fn ($q) => collect($q['options'])->pluck('id')->all())
+        ->all();
+
+    $first = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $sessionUuid)->get($attemptUrl);
+    $second = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $sessionUuid)->get($attemptUrl);
+
+    expect($extractOrder($first))->toBe($extractOrder($second));
+});

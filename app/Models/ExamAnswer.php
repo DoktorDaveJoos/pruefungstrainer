@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
     'exam_attempt_id',
     'question_id',
     'selected_option_ids',
+    'options_order',
     'is_correct',
     'flagged',
     'position',
@@ -25,6 +26,7 @@ class ExamAnswer extends Model
     {
         return [
             'selected_option_ids' => 'array',
+            'options_order' => 'array',
             'is_correct' => 'boolean',
             'flagged' => 'boolean',
             'position' => 'integer',

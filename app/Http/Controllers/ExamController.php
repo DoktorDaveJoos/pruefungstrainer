@@ -44,6 +44,7 @@ class ExamController extends Controller
                 $attempt->examAnswers()->create([
                     'question_id' => $question->id,
                     'position' => $i + 1,
+                    'options_order' => $question->answers->pluck('id')->shuffle()->values()->all(),
                 ]);
             }
 
@@ -82,17 +83,20 @@ class ExamController extends Controller
         $questions = $examAttempt->examAnswers
             ->sortBy('position')
             ->values()
-            ->map(fn ($ea) => [
-                'position' => $ea->position,
-                'question_id' => $ea->question_id,
-                'text' => $ea->question->text,
-                'options' => $ea->question->answers
-                    ->shuffle()
-                    ->map(fn ($a) => ['id' => $a->id, 'text' => $a->text])
-                    ->values(),
-                'selected_option_ids' => $ea->selected_option_ids ?? [],
-                'flagged' => $ea->flagged,
-            ]);
+            ->map(function ($ea) {
+                $answersById = $ea->question->answers->keyBy('id');
+
+                return [
+                    'position' => $ea->position,
+                    'question_id' => $ea->question_id,
+                    'text' => $ea->question->text,
+                    'options' => collect($ea->options_order)
+                        ->map(fn ($id) => ['id' => $id, 'text' => $answersById[$id]->text])
+                        ->all(),
+                    'selected_option_ids' => $ea->selected_option_ids ?? [],
+                    'flagged' => $ea->flagged,
+                ];
+            });
 
         return inertia('exam/question', [
             'attempt' => [
