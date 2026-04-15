@@ -20,6 +20,10 @@ class SendAccessExpiryReminder implements ShouldQueue
 
     public function handle(): void
     {
+        if (! $this->user->hasActiveAccess()) {
+            return;
+        }
+
         $newerOrderExists = $this->user->orders()
             ->where('ordered_at', '>', $this->originalOrderedAt)
             ->whereNull('refunded_at')

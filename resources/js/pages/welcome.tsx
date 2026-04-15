@@ -129,7 +129,7 @@ export default function Welcome() {
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <Check className="mt-0.5 size-4 shrink-0 text-success" />
-                                            <span>Lebenslanger Zugang — keine Abos</span>
+                                            <span>12 Monate Zugang — keine automatische Verlängerung</span>
                                         </li>
                                     </ul>
                                     <a href={start.url()}>

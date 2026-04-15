@@ -299,6 +299,87 @@ homeForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 home.form = homeForm
 
 /**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+export const accessStatus = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
+    url: accessStatus.url(options),
+    method: 'get',
+})
+
+accessStatus.definition = {
+    methods: ["get","head"],
+    url: '/api/access-status',
+} satisfies RouteDefinition<["get","head"]>
+
+/**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+accessStatus.url = (options?: RouteQueryOptions) => {
+    return accessStatus.definition.url + queryParams(options)
+}
+
+/**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+accessStatus.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
+    url: accessStatus.url(options),
+    method: 'get',
+})
+
+/**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+accessStatus.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
+    url: accessStatus.url(options),
+    method: 'head',
+})
+
+/**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+const accessStatusForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+    action: accessStatus.url(options),
+    method: 'get',
+})
+
+/**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+accessStatusForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+    action: accessStatus.url(options),
+    method: 'get',
+})
+
+/**
+* @see \App\Http\Controllers\CheckoutController::accessStatus
+* @see app/Http/Controllers/CheckoutController.php:32
+* @route '/api/access-status'
+*/
+accessStatusForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+    action: accessStatus.url({
+        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+            _method: 'HEAD',
+            ...(options?.query ?? options?.mergeQuery ?? {}),
+        }
+    }),
+    method: 'get',
+})
+
+accessStatus.form = accessStatusForm
+
+/**
 * @see \Inertia\Controller::__invoke
 * @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
 * @route '/dashboard'

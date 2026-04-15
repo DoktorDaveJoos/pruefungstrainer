@@ -8,6 +8,12 @@ use Danestves\LaravelPolar\Events\OrderCreated;
 use Danestves\LaravelPolar\Events\OrderUpdated;
 use Illuminate\Support\Facades\Mail;
 
+/**
+ * No `ShouldQueue` here on purpose: the package's `ProcessWebhook` job
+ * (Spatie webhook-client) is what actually queues. By the time we run, the
+ * webhook ack has already been sent. This handler only dispatches further
+ * jobs/mails, which queue themselves.
+ */
 class PolarEventListener
 {
     public function handleOrderCreated(OrderCreated $event): void
