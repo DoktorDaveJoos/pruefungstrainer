@@ -22,6 +22,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::middleware(['auth', 'verified', EnsurePaid::class])->group(function () {
     Route::get('/freies-lernen', [PracticeController::class, 'show'])->name('practice.show');
+    Route::post('/freies-lernen/answer', [PracticeController::class, 'saveAnswer'])->name('practice.save-answer');
 });
 
 require __DIR__.'/settings.php';

@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SavePracticeAnswerRequest;
+use App\Models\PracticeAnswer;
+use App\Models\Question;
 use App\Services\PracticeDraw;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Inertia\Response;
 
@@ -28,6 +32,35 @@ class PracticeController extends Controller
             ],
             'wrongOnly' => $wrongOnly,
             'progress' => $this->practiceDraw->progressFor($user->id),
+        ]);
+    }
+
+    public function saveAnswer(SavePracticeAnswerRequest $request): JsonResponse
+    {
+        $user = $request->user();
+        $question = Question::with('answers')->findOrFail($request->integer('question_id'));
+        $selected = collect($request->input('selected_option_ids', []));
+
+        $correctIds = $question->answers->where('is_correct', true)->pluck('id');
+        $incorrectIds = $question->answers->where('is_correct', false)->pluck('id');
+
+        $missingCorrect = $correctIds->diff($selected);
+        $tickedIncorrect = $selected->intersect($incorrectIds);
+        $isCorrect = $missingCorrect->isEmpty() && $tickedIncorrect->isEmpty() && $selected->isNotEmpty();
+
+        PracticeAnswer::create([
+            'user_id' => $user->id,
+            'question_id' => $question->id,
+            'selected_option_ids' => $selected->values()->all(),
+            'is_correct' => $isCorrect,
+        ]);
+
+        return response()->json([
+            'is_correct' => $isCorrect,
+            'correct_option_ids' => $correctIds->values()->all(),
+            'explanation' => $question->explanation,
+            'quote' => $question->quote,
+            'source' => $question->source,
         ]);
     }
 }
