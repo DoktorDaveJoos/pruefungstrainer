@@ -4,7 +4,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PracticeController;
-use App\Http\Middleware\EnsurePaid;
+use App\Http\Middleware\EnsureActiveAccess;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
@@ -27,7 +27,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
 });
 
-Route::middleware(['auth', 'verified', EnsurePaid::class])->group(function () {
+Route::middleware(['auth', 'verified', EnsureActiveAccess::class])->group(function () {
     Route::get('/freies-lernen', [PracticeController::class, 'show'])->name('practice.show');
     Route::post('/freies-lernen/answer', [PracticeController::class, 'saveAnswer'])->name('practice.save-answer');
 });
