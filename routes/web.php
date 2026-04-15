@@ -18,6 +18,7 @@ Route::post('/pruefungssimulation/{attempt}/submit', [ExamController::class, 'su
 Route::get('/pruefungssimulation/{attempt}/ergebnis', [ExamController::class, 'results'])->name('exam.results');
 
 Route::post('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
+Route::post('/webhooks/polar', [CheckoutController::class, 'webhook'])->name('webhooks.polar');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
