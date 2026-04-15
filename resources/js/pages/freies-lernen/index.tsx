@@ -8,7 +8,6 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
-import AppLayout from '@/layouts/app-layout';
 import { cn, getCsrfToken } from '@/lib/utils';
 
 type Option = { id: number; text: string };
@@ -132,9 +131,7 @@ export default function FreiesLernen({
     };
 
     return (
-        <AppLayout
-            breadcrumbs={[{ title: 'Freies Lernen', href: '/freies-lernen' }]}
-        >
+        <>
             <Head title="Freies Lernen" />
 
             <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6">
@@ -268,6 +265,6 @@ export default function FreiesLernen({
                     </>
                 )}
             </div>
-        </AppLayout>
+        </>
     );
 }

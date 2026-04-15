@@ -2,12 +2,11 @@ import { Head, Link } from '@inertiajs/react';
 import { FileCheck, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import AppLayout from '@/layouts/app-layout';
 import { getCsrfToken } from '@/lib/utils';
 
 export default function Dashboard() {
     return (
-        <AppLayout breadcrumbs={[{ title: 'Dashboard', href: '/dashboard' }]}>
+        <>
             <Head title="Dashboard" />
 
             <div className="mx-auto max-w-4xl px-6 py-8">
@@ -55,6 +54,6 @@ export default function Dashboard() {
                     </Card>
                 </div>
             </div>
-        </AppLayout>
+        </>
     );
 }
