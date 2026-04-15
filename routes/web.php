@@ -4,18 +4,26 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\PracticeController;
 use App\Http\Middleware\EnsurePaid;
+use App\Services\Pricing;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
-Route::inertia('/', 'welcome', [
-    'canRegister' => Features::enabled(Features::registration()),
-])->name('home');
+Route::get('/', function () {
+    return inertia('welcome', [
+        'canRegister' => Features::enabled(Features::registration()),
+        'pricing' => app(Pricing::class)->currentPrice(),
+    ]);
+})->name('home');
 
 Route::post('/pruefungssimulation/start', [ExamController::class, 'start'])->name('exam.start');
 Route::get('/pruefungssimulation/{attempt}', [ExamController::class, 'show'])->name('exam.show');
 Route::patch('/pruefungssimulation/{attempt}/answer/{position}', [ExamController::class, 'saveAnswer'])->name('exam.save-answer');
 Route::post('/pruefungssimulation/{attempt}/submit', [ExamController::class, 'submit'])->name('exam.submit');
 Route::get('/pruefungssimulation/{attempt}/ergebnis', [ExamController::class, 'results'])->name('exam.results');
+
+Route::inertia('/agb', 'legal/agb')->name('legal.agb');
+Route::inertia('/datenschutz', 'legal/datenschutz')->name('legal.datenschutz');
+Route::inertia('/impressum', 'legal/impressum')->name('legal.impressum');
 
 Route::post('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
