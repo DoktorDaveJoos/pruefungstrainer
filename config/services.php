@@ -41,13 +41,4 @@ return [
         'base_url' => env('ANTHROPIC_BASE_URL', 'https://api.anthropic.com/v1'),
     ],
 
-    'polar' => [
-        'api_key' => env('POLAR_API_KEY'),
-        'product_id' => env('POLAR_PRODUCT_ID'),
-        'webhook_secret' => env('POLAR_WEBHOOK_SECRET'),
-        'organization_id' => env('POLAR_ORGANIZATION_ID'),
-        'base_url' => env('POLAR_BASE_URL', 'https://api.polar.sh/v1'),
-        'success_url' => env('POLAR_SUCCESS_URL', 'http://localhost:8000/checkout/success'),
-    ],
-
 ];
