@@ -149,6 +149,37 @@ class ExamController extends Controller
         return redirect("/pruefungssimulation/{$examAttempt->id}/ergebnis");
     }
 
+    public function results(Request $request, int $attempt): Response|RedirectResponse
+    {
+        $examAttempt = $this->finder->find($request, $attempt);
+
+        if ($examAttempt === null) {
+            abort(404);
+        }
+
+        if (! $examAttempt->isSubmitted() && ! $examAttempt->hasExpired()) {
+            return redirect("/pruefungssimulation/{$examAttempt->id}");
+        }
+
+        $this->autoSubmitIfNeeded($examAttempt);
+
+        $total = $examAttempt->total_questions;
+        $score = $examAttempt->score ?? 0;
+        $passed = $total > 0 && ($score / $total) >= 0.60;
+
+        return inertia('exam/results', [
+            'attempt' => [
+                'id' => $examAttempt->id,
+                'score' => $score,
+                'total_questions' => $total,
+                'passed' => $passed,
+                'submitted_at' => $examAttempt->submitted_at?->toIso8601String(),
+                'is_claimed' => $examAttempt->user_id !== null,
+            ],
+            'topicBreakdown' => app(ExamScorer::class)->topicBreakdown($examAttempt),
+        ]);
+    }
+
     private function autoSubmitIfNeeded(ExamAttempt $attempt): void
     {
         if ($attempt->isSubmitted()) {
