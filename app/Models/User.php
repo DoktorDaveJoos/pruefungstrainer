@@ -40,6 +40,12 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function hasActiveAccess(): bool
     {
+        // Local dev shortcut: skip the paywall entirely so we don't need a
+        // tunnelled webhook to test the post-purchase UX.
+        if (app()->environment('local')) {
+            return true;
+        }
+
         return Order::query()
             ->where('billable_id', $this->id)
             ->where('billable_type', self::class)
