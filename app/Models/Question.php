@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-#[Fillable(['module_id', 'text', 'explanation', 'quote', 'source', 'topic', 'difficulty'])]
+#[Fillable(['module_id', 'text', 'explanation', 'quote', 'source', 'topic', 'difficulty', 'is_free_tier'])]
 class Question extends Model
 {
     /** @use HasFactory<QuestionFactory> */
@@ -22,6 +22,7 @@ class Question extends Model
         return [
             'topic' => BsiTopic::class,
             'difficulty' => QuestionDifficulty::class,
+            'is_free_tier' => 'boolean',
         ];
     }
 

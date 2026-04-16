@@ -106,7 +106,7 @@ function TwoFactorSetupStep({
                     <div className="relative flex w-full items-center justify-center">
                         <Separator className="absolute inset-0 top-1/2" />
                         <span className="relative bg-card px-2 py-1 text-sm text-muted-foreground">
-                            or, enter the code manually
+                            oder Code manuell eingeben
                         </span>
                     </div>
 
@@ -128,7 +128,7 @@ function TwoFactorSetupStep({
                                     variant="outline"
                                     size="icon"
                                     onClick={() => copy(manualSetupKey)}
-                                    aria-label="Copy setup key"
+                                    aria-label="Einrichtungsschlüssel kopieren"
                                 >
                                     <IconComponent className="size-4" />
                                 </Button>
@@ -212,7 +212,7 @@ function TwoFactorVerificationStep({
                                 onClick={onBack}
                                 disabled={processing}
                             >
-                                Back
+                                Zurück
                             </Button>
                             <Button
                                 type="submit"
@@ -221,7 +221,7 @@ function TwoFactorVerificationStep({
                                     processing || code.length < OTP_MAX_LENGTH
                                 }
                             >
-                                Confirm
+                                Bestätigen
                             </Button>
                         </div>
                     </div>
@@ -264,27 +264,27 @@ export default function TwoFactorSetupModal({
     }>(() => {
         if (twoFactorEnabled) {
             return {
-                title: 'Two-factor authentication enabled',
+                title: 'Zwei-Faktor-Authentifizierung aktiviert',
                 description:
-                    'Two-factor authentication is now enabled. Scan the QR code or enter the setup key in your authenticator app.',
-                buttonText: 'Close',
+                    'Die Zwei-Faktor-Authentifizierung ist jetzt aktiv. Scanne den QR-Code oder gib den Einrichtungsschlüssel in deiner Authenticator-App ein.',
+                buttonText: 'Schließen',
             };
         }
 
         if (showVerificationStep) {
             return {
-                title: 'Verify authentication code',
+                title: 'Authentifizierungscode bestätigen',
                 description:
-                    'Enter the 6-digit code from your authenticator app',
-                buttonText: 'Continue',
+                    'Gib den sechsstelligen Code aus deiner Authenticator-App ein',
+                buttonText: 'Weiter',
             };
         }
 
         return {
-            title: 'Enable two-factor authentication',
+            title: 'Zwei-Faktor-Authentifizierung aktivieren',
             description:
-                'To finish enabling two-factor authentication, scan the QR code or enter the setup key in your authenticator app',
-            buttonText: 'Continue',
+                'Um die Einrichtung abzuschließen, scanne den QR-Code oder gib den Einrichtungsschlüssel in deiner Authenticator-App ein',
+            buttonText: 'Weiter',
         };
     }, [twoFactorEnabled, showVerificationStep]);
 

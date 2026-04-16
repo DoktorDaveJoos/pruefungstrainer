@@ -1,9 +1,8 @@
-import { Form } from '@inertiajs/react';
+import { Form, Link } from '@inertiajs/react';
 import { Lock } from 'lucide-react';
 import { useState } from 'react';
 import InputError from '@/components/input-error';
 import PasswordInput from '@/components/password-input';
-import TextLink from '@/components/text-link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -107,50 +106,14 @@ export function CheckoutSheet({ trigger, attemptId, priceLabel }: Props) {
                     </TabsContent>
 
                     <TabsContent value="login" className="mt-4">
-                        <Form
-                            {...loginStore.form(intentQuery)}
-                            resetOnSuccess={['password']}
-                            disableWhileProcessing
-                            className="flex flex-col gap-4"
-                        >
-                            {({ processing, errors }) => (
-                                <>
-                                    <div className="grid gap-4">
-                                        <div className="grid gap-2">
-                                            <Label htmlFor="login-email">E-Mail</Label>
-                                            <Input
-                                                id="login-email"
-                                                type="email"
-                                                name="email"
-                                                autoComplete="email"
-                                                required
-                                            />
-                                            <InputError message={errors.email} />
-                                        </div>
-
-                                        <div className="grid gap-2">
-                                            <Label htmlFor="login-password">Passwort</Label>
-                                            <PasswordInput
-                                                id="login-password"
-                                                name="password"
-                                                autoComplete="current-password"
-                                                required
-                                            />
-                                            <InputError message={errors.password} />
-                                        </div>
-                                    </div>
-
-                                    <Button type="submit" className="w-full" disabled={processing}>
-                                        {processing && <Spinner />}
-                                        Anmelden und weiter zur Zahlung
-                                    </Button>
-
-                                    <TextLink href="/forgot-password" className="text-center text-sm">
-                                        Passwort vergessen?
-                                    </TextLink>
-                                </>
-                            )}
-                        </Form>
+                        <div className="flex flex-col gap-4">
+                            <p className="text-sm text-muted-foreground">
+                                Du hast schon ein Konto? Melde dich an und setze den Kauf fort.
+                            </p>
+                            <Button asChild className="w-full">
+                                <Link href={loginStore.url(intentQuery)}>Zum Login</Link>
+                            </Button>
+                        </div>
                     </TabsContent>
                 </Tabs>
             </SheetContent>

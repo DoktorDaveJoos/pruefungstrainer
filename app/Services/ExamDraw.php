@@ -3,23 +3,22 @@
 namespace App\Services;
 
 use App\Enums\QuestionDifficulty;
+use App\Exceptions\InsufficientFreeTierQuestionsException;
 use App\Models\ExamAnswer;
 use App\Models\Question;
 use Illuminate\Support\Collection;
 
 class ExamDraw
 {
-    public function draw(?int $userId, int $total = 50): Collection
+    public function drawForUser(int $userId, int $total = 50): Collection
     {
         $basisTarget = (int) round($total * 0.75);
         $experteTarget = $total - $basisTarget;
 
-        $seenQuestionIds = $userId
-            ? ExamAnswer::whereHas('examAttempt', fn ($q) => $q->where('user_id', $userId))
-                ->pluck('question_id')
-                ->unique()
-                ->all()
-            : [];
+        $seenQuestionIds = ExamAnswer::whereHas('examAttempt', fn ($q) => $q->where('user_id', $userId))
+            ->pluck('question_id')
+            ->unique()
+            ->all();
 
         $basis = $this->drawBucket(QuestionDifficulty::Basis, $basisTarget, $seenQuestionIds);
         $experte = $this->drawBucket(QuestionDifficulty::Experte, $experteTarget, $seenQuestionIds);
@@ -40,6 +39,20 @@ class ExamDraw
         }
 
         return $basis->merge($experte)->shuffle()->values();
+    }
+
+    public function drawForGuest(): Collection
+    {
+        $questions = Question::query()
+            ->with('answers')
+            ->where('is_free_tier', true)
+            ->get();
+
+        if ($questions->isEmpty()) {
+            throw InsufficientFreeTierQuestionsException::noQuestionsFlagged();
+        }
+
+        return $questions->shuffle()->values();
     }
 
     /**

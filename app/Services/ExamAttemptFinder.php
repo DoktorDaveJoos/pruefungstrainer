@@ -21,16 +21,30 @@ class ExamAttemptFinder
             return $request->user()?->id === $attempt->user_id ? $attempt : null;
         }
 
-        // Handle both normal cookies and cookies sent via header (for JSON test requests)
-        $cookie = $request->cookie(self::SESSION_COOKIE);
-        if ($cookie === null) {
-            $cookieHeader = $request->header('Cookie');
-            if ($cookieHeader !== null && str_contains($cookieHeader, self::SESSION_COOKIE)) {
-                preg_match('/'.preg_quote(self::SESSION_COOKIE).'=([^;]+)/', $cookieHeader, $matches);
-                $cookie = $matches[1] ?? null;
-            }
-        }
+        $cookie = self::readSessionCookie($request);
 
         return $cookie !== null && $cookie === $attempt->session_uuid ? $attempt : null;
+    }
+
+    /**
+     * Read `pt_exam_session` from the request. Falls back to the raw `Cookie`
+     * header so JSON test requests (which bypass Laravel's cookie parser) still work.
+     */
+    public static function readSessionCookie(Request $request): ?string
+    {
+        $value = $request->cookie(self::SESSION_COOKIE);
+
+        if ($value !== null) {
+            return $value;
+        }
+
+        $header = $request->header('Cookie');
+        if ($header !== null && str_contains($header, self::SESSION_COOKIE)) {
+            preg_match('/'.preg_quote(self::SESSION_COOKIE).'=([^;]+)/', $header, $matches);
+
+            return $matches[1] ?? null;
+        }
+
+        return null;
     }
 }

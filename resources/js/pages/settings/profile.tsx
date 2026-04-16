@@ -21,15 +21,15 @@ export default function Profile({
 
     return (
         <>
-            <Head title="Profile settings" />
+            <Head title="Profil-Einstellungen" />
 
-            <h1 className="sr-only">Profile settings</h1>
+            <h1 className="sr-only">Profil-Einstellungen</h1>
 
             <div className="flex flex-col gap-6">
                 <Heading
                     variant="small"
-                    title="Profile information"
-                    description="Update your name and email address"
+                    title="Profilinformationen"
+                    description="Aktualisiere deinen Namen und deine E-Mail-Adresse"
                 />
 
                 <Form
@@ -51,7 +51,7 @@ export default function Profile({
                                     name="name"
                                     required
                                     autoComplete="name"
-                                    placeholder="Full name"
+                                    placeholder="Vollständiger Name"
                                 />
 
                                 <InputError
@@ -61,7 +61,7 @@ export default function Profile({
                             </div>
 
                             <div className="grid gap-2">
-                                <Label htmlFor="email">Email address</Label>
+                                <Label htmlFor="email">E-Mail-Adresse</Label>
 
                                 <Input
                                     id="email"
@@ -71,7 +71,7 @@ export default function Profile({
                                     name="email"
                                     required
                                     autoComplete="username"
-                                    placeholder="Email address"
+                                    placeholder="E-Mail-Adresse"
                                 />
 
                                 <InputError
@@ -84,21 +84,24 @@ export default function Profile({
                                 auth.user.email_verified_at === null && (
                                     <div className="flex flex-col gap-2">
                                         <p className="-mt-4 text-sm text-muted-foreground">
-                                            Your email address is unverified.{' '}
+                                            Deine E-Mail-Adresse ist noch nicht
+                                            bestätigt.{' '}
                                             <Link
                                                 href={send()}
                                                 as="button"
                                                 className="text-foreground underline underline-offset-4 transition-colors hover:text-foreground/80"
                                             >
-                                                Click here to resend the
-                                                verification email.
+                                                Hier klicken, um die
+                                                Bestätigungs-E-Mail erneut zu
+                                                senden.
                                             </Link>
                                         </p>
 
                                         <AuthStatusAlert
                                             status={
-                                                status === 'verification-link-sent'
-                                                    ? 'A new verification link has been sent to your email address.'
+                                                status ===
+                                                'verification-link-sent'
+                                                    ? 'Ein neuer Bestätigungslink wurde an deine E-Mail-Adresse gesendet.'
                                                     : undefined
                                             }
                                         />
@@ -110,7 +113,7 @@ export default function Profile({
                                     disabled={processing}
                                     data-test="update-profile-button"
                                 >
-                                    Save
+                                    Speichern
                                 </Button>
                             </div>
                         </>
@@ -126,7 +129,7 @@ export default function Profile({
 Profile.layout = {
     breadcrumbs: [
         {
-            title: 'Profile settings',
+            title: 'Profil-Einstellungen',
             href: edit(),
         },
     ],

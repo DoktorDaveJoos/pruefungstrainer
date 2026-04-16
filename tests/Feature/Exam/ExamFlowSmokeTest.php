@@ -13,8 +13,9 @@ beforeEach(function () {
 
     Question::factory()
         ->for($module)
-        ->count(60)
+        ->count(50)
         ->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)
+        ->freeTier()
         ->has(Answer::factory()->count(2)->correct(), 'answers')
         ->has(Answer::factory()->count(2)->incorrect(), 'answers')
         ->create();

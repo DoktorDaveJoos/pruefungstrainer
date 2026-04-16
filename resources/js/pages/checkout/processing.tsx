@@ -1,15 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { CheckCircle2, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 
-type Props = { hasAccess: boolean };
+type Props = { hasAccess: boolean; redirectTo: string | null };
 
-export default function Processing({ hasAccess: initial }: Props) {
-    const [hasAccess, setHasAccess] = useState(initial);
+export default function Processing({ hasAccess: initialAccess, redirectTo: initialRedirectTo }: Props) {
+    const [redirectTo, setRedirectTo] = useState<string | null>(initialAccess ? (initialRedirectTo ?? '/') : null);
     const [gaveUp, setGaveUp] = useState(false);
+    const hasNavigated = useRef(false);
 
     useEffect(() => {
-        if (hasAccess) return;
+        if (redirectTo && !hasNavigated.current) {
+            hasNavigated.current = true;
+            window.location.href = redirectTo;
+            return;
+        }
+        if (redirectTo) return;
+
         let cancelled = false;
         let count = 0;
         const tick = async () => {
@@ -22,7 +29,7 @@ export default function Processing({ hasAccess: initial }: Props) {
             if (cancelled) return;
             const json = await res.json();
             if (json.hasAccess) {
-                setHasAccess(true);
+                setRedirectTo(json.redirectTo ?? '/');
                 return;
             }
             setTimeout(tick, 500);
@@ -31,23 +38,11 @@ export default function Processing({ hasAccess: initial }: Props) {
         return () => {
             cancelled = true;
         };
-    }, [hasAccess]);
+    }, [redirectTo]);
 
     return (
         <div className="mx-auto flex min-h-screen max-w-2xl items-center justify-center p-4">
-            {hasAccess ? (
-                <Alert variant="success">
-                    <CheckCircle2 />
-                    <AlertTitle>Zugang aktiviert</AlertTitle>
-                    <AlertDescription>
-                        Dein Zugang läuft für 12 Monate.{' '}
-                        <a href="/" className="underline">
-                            Zur Startseite
-                        </a>
-                        .
-                    </AlertDescription>
-                </Alert>
-            ) : gaveUp ? (
+            {gaveUp ? (
                 <Alert>
                     <AlertTitle>Zahlung wird verarbeitet</AlertTitle>
                     <AlertDescription>

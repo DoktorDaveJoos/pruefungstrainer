@@ -10,25 +10,28 @@ import { send } from '@/routes/verification';
 export default function VerifyEmail({ status }: { status?: string }) {
     const sentMessage =
         status === 'verification-link-sent'
-            ? 'A new verification link has been sent to the email address you provided during registration.'
+            ? 'Ein neuer Bestätigungslink wurde an die bei der Registrierung angegebene E-Mail-Adresse gesendet.'
             : undefined;
 
     return (
         <>
-            <Head title="Email verification" />
+            <Head title="E-Mail-Adresse bestätigen" />
 
             <AuthStatusAlert status={sentMessage} />
 
-            <Form {...send.form()} className="flex flex-col items-center gap-6 text-center">
+            <Form
+                {...send.form()}
+                className="flex flex-col items-center gap-6 text-center"
+            >
                 {({ processing }) => (
                     <>
                         <Button disabled={processing} variant="secondary">
                             {processing && <Spinner />}
-                            Resend verification email
+                            Bestätigungs-E-Mail erneut senden
                         </Button>
 
                         <TextLink href={logout()} className="text-sm">
-                            Log out
+                            Abmelden
                         </TextLink>
                     </>
                 )}
@@ -38,7 +41,7 @@ export default function VerifyEmail({ status }: { status?: string }) {
 }
 
 VerifyEmail.layout = {
-    title: 'Verify email',
+    title: 'E-Mail-Adresse bestätigen',
     description:
-        'Please verify your email address by clicking on the link we just emailed to you.',
+        'Bitte bestätige deine E-Mail-Adresse, indem du auf den Link in der E-Mail klickst, die wir dir gerade gesendet haben.',
 };

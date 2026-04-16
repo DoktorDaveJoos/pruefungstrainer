@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\ClaimGuestAttempt;
+use App\Models\ExamAttempt;
+use App\Models\User;
 use App\Services\Pricing;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -10,6 +13,8 @@ use Inertia\Response;
 
 class CheckoutController extends Controller
 {
+    public function __construct(private readonly ClaimGuestAttempt $claimGuestAttempt) {}
+
     public function start(Request $request, Pricing $pricing)
     {
         $user = $request->user();
@@ -35,13 +40,41 @@ class CheckoutController extends Controller
 
     public function processing(Request $request): Response
     {
+        $user = $request->user();
+        ($this->claimGuestAttempt)($user, $request);
+
+        $hasAccess = (bool) $user->hasActiveAccess();
+
         return Inertia::render('checkout/processing', [
-            'hasAccess' => (bool) $request->user()?->hasActiveAccess(),
+            'hasAccess' => $hasAccess,
+            'redirectTo' => $hasAccess ? $this->resolveRedirectTo($user) : null,
         ]);
     }
 
     public function accessStatus(Request $request): JsonResponse
     {
-        return response()->json(['hasAccess' => (bool) $request->user()?->hasActiveAccess()]);
+        $user = $request->user();
+        ($this->claimGuestAttempt)($user, $request);
+
+        $hasAccess = (bool) $user->hasActiveAccess();
+
+        return response()->json([
+            'hasAccess' => $hasAccess,
+            'redirectTo' => $hasAccess ? $this->resolveRedirectTo($user) : null,
+        ]);
+    }
+
+    private function resolveRedirectTo(User $user): string
+    {
+        $attemptId = ExamAttempt::query()
+            ->where('user_id', $user->id)
+            ->whereNotNull('claimed_at')
+            ->whereNotNull('submitted_at')
+            ->latest('claimed_at')
+            ->value('id');
+
+        return $attemptId
+            ? route('exam.results', $attemptId, absolute: false)
+            : config('fortify.home');
     }
 }

@@ -1,5 +1,6 @@
 import { Head, Link, usePage } from '@inertiajs/react';
 import { Check, ChevronRight, Clock, FileCheck, Lock } from 'lucide-react';
+import { CheckoutSheet } from '@/components/checkout-sheet';
 import { SiteFooter } from '@/components/site-footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -13,8 +14,13 @@ type Pricing = {
     spots_remaining: number;
 };
 
+type FreeTier = {
+    status: 'available' | 'resume' | 'already_done';
+    lastAttemptId: number | null;
+};
+
 export default function Welcome() {
-    const { auth, pricing } = usePage<{ pricing: Pricing }>().props;
+    const { auth, pricing, freeTier } = usePage<{ pricing: Pricing; freeTier: FreeTier }>().props;
 
     return (
         <>
@@ -50,19 +56,48 @@ export default function Welcome() {
                             Realistische Prüfungssimulation. 50 Fragen, 60 Minuten, 60 % Bestehensgrenze — genau wie die echte BSI-Prüfung.
                         </p>
 
-                        <div className="mt-8 flex items-center gap-4">
-                            <form method="POST" action="/pruefungssimulation/start">
-                                <input
-                                    type="hidden"
-                                    name="_token"
-                                    value={getCsrfToken()}
-                                />
-                                <Button size="lg" type="submit">
-                                    Prüfungssimulation starten
-                                </Button>
-                            </form>
-                            <span className="text-sm text-muted-foreground">kostenlos · kein Login nötig</span>
-                        </div>
+                        {freeTier.status === 'already_done' && freeTier.lastAttemptId !== null ? (
+                            <Card className="mt-8 max-w-md">
+                                <CardHeader>
+                                    <CardTitle className="text-base">Deinen kostenlosen Testlauf hast du schon absolviert</CardTitle>
+                                    <CardDescription>
+                                        Schalte den 12 Monate Zugang frei, um dein Ergebnis und alle Erklärungen zu sehen.
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex flex-col gap-2 sm:flex-row [&>*]:flex-1">
+                                    <Button variant="outline" asChild>
+                                        <Link href={`/pruefungssimulation/${freeTier.lastAttemptId}/ergebnis`}>
+                                            Zum Ergebnis
+                                        </Link>
+                                    </Button>
+                                    <CheckoutSheet
+                                        trigger={<Button>Zugang freischalten</Button>}
+                                        attemptId={freeTier.lastAttemptId}
+                                        priceLabel={`${pricing.amount_eur} €`}
+                                    />
+                                </CardContent>
+                            </Card>
+                        ) : (
+                            <div className="mt-8 flex items-center gap-4">
+                                <form method="POST" action="/pruefungssimulation/start">
+                                    <input
+                                        type="hidden"
+                                        name="_token"
+                                        value={getCsrfToken()}
+                                    />
+                                    <Button size="lg" type="submit">
+                                        {freeTier.status === 'resume'
+                                            ? 'Prüfung fortsetzen'
+                                            : 'Prüfungssimulation starten'}
+                                    </Button>
+                                </form>
+                                <span className="text-sm text-muted-foreground">
+                                    {freeTier.status === 'resume'
+                                        ? 'Dein Testlauf läuft noch'
+                                        : 'kostenlos · kein Login nötig'}
+                                </span>
+                            </div>
+                        )}
 
                         <div className="mt-12 grid gap-6 md:grid-cols-3">
                             <Card>

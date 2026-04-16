@@ -8,6 +8,8 @@ use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
 use App\Services\ExamScorer;
+use App\Services\GuestStartGuard;
+use App\Services\GuestStartStatus;
 use App\Services\Pricing;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -18,19 +20,39 @@ use Inertia\Response;
 
 class ExamController extends Controller
 {
+    private const FREE_RUN_COOKIE_TTL_MINUTES = 60 * 24 * 365;
+
     public function __construct(
         private readonly ExamDraw $examDraw,
         private readonly ExamAttemptFinder $finder,
+        private readonly GuestStartGuard $guestStartGuard,
     ) {}
 
     public function start(Request $request): RedirectResponse
     {
         $user = $request->user();
+
+        if ($user === null) {
+            $state = $this->guestStartGuard->inspect($request);
+
+            if ($state->status === GuestStartStatus::Resume) {
+                return redirect(route('exam.show', $state->attemptId));
+            }
+
+            if ($state->status === GuestStartStatus::AlreadyDone) {
+                return redirect(route('home'));
+            }
+        }
+
         $sessionUuid = $user ? null : (string) Str::uuid();
 
-        // Local dev shortcut: 3 questions instead of 50 so we can test faster.
-        $total = app()->environment('local') ? 3 : 50;
-        $questions = $this->examDraw->draw(userId: $user?->id, total: $total);
+        if ($user) {
+            // Local dev shortcut: 3 questions instead of 50 so we can test faster.
+            $total = app()->environment('local') ? 3 : 50;
+            $questions = $this->examDraw->drawForUser(userId: $user->id, total: $total);
+        } else {
+            $questions = $this->examDraw->drawForGuest();
+        }
 
         $attempt = DB::transaction(function () use ($user, $sessionUuid, $questions) {
             $startedAt = now();
@@ -55,7 +77,7 @@ class ExamController extends Controller
             return $attempt;
         });
 
-        $response = redirect("/pruefungssimulation/{$attempt->id}");
+        $response = redirect(route('exam.show', $attempt->id));
 
         if ($sessionUuid !== null) {
             $response->withCookie(Cookie::make(
@@ -79,7 +101,7 @@ class ExamController extends Controller
         if ($examAttempt->isSubmitted() || $examAttempt->hasExpired()) {
             $this->autoSubmitIfNeeded($examAttempt);
 
-            return redirect("/pruefungssimulation/{$examAttempt->id}/ergebnis");
+            return redirect(route('exam.results', $examAttempt->id));
         }
 
         $examAttempt->load(['examAnswers.question.answers']);
@@ -153,7 +175,18 @@ class ExamController extends Controller
 
         $this->autoSubmitIfNeeded($examAttempt);
 
-        return redirect("/pruefungssimulation/{$examAttempt->id}/ergebnis");
+        $response = redirect(route('exam.results', $examAttempt->id));
+
+        if ($examAttempt->session_uuid !== null) {
+            // Extend the guest cookie so the "already done" block survives beyond the 24 h start TTL.
+            $response->withCookie(Cookie::make(
+                ExamAttemptFinder::SESSION_COOKIE,
+                $examAttempt->session_uuid,
+                minutes: self::FREE_RUN_COOKIE_TTL_MINUTES,
+            ));
+        }
+
+        return $response;
     }
 
     public function results(Request $request, int $attempt): Response|RedirectResponse
@@ -165,7 +198,7 @@ class ExamController extends Controller
         }
 
         if (! $examAttempt->isSubmitted() && ! $examAttempt->hasExpired()) {
-            return redirect("/pruefungssimulation/{$examAttempt->id}");
+            return redirect(route('exam.show', $examAttempt->id));
         }
 
         $this->autoSubmitIfNeeded($examAttempt);

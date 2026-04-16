@@ -39,4 +39,9 @@ class QuestionFactory extends Factory
             'difficulty' => $difficulty,
         ]);
     }
+
+    public function freeTier(): static
+    {
+        return $this->state(fn () => ['is_free_tier' => true]);
+    }
 }

@@ -1,0 +1,14 @@
+{
+    "Profile updated.": "Profil aktualisiert.",
+    "Password updated.": "Passwort aktualisiert.",
+    "This invitation was sent to a different email address.": "Diese Einladung wurde an eine andere E-Mail-Adresse gesendet.",
+    "This invitation has already been accepted.": "Diese Einladung wurde bereits angenommen.",
+    "This invitation has expired.": "Diese Einladung ist abgelaufen.",
+    "You've been invited to join :teamName": "Du wurdest eingeladen, :teamName beizutreten",
+    ":inviterName has invited you to join the :teamName team.": ":inviterName hat dich eingeladen, dem Team :teamName beizutreten.",
+    "Accept invitation": "Einladung annehmen",
+    "This team name is reserved and cannot be used.": "Dieser Teamname ist reserviert und kann nicht verwendet werden.",
+    "This user is already a member of the team.": "Dieser Nutzer ist bereits Mitglied des Teams.",
+    "An invitation has already been sent to this email address.": "An diese E-Mail-Adresse wurde bereits eine Einladung gesendet.",
+    "The team name does not match.": "Der Teamname stimmt nicht überein."
+}

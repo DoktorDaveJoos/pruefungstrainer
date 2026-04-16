@@ -23,18 +23,17 @@ export default function TwoFactorChallenge() {
     }>(() => {
         if (showRecoveryInput) {
             return {
-                title: 'Recovery code',
+                title: 'Wiederherstellungscode',
                 description:
-                    'Please confirm access to your account by entering one of your emergency recovery codes.',
-                toggleText: 'login using an authentication code',
+                    'Bestätige den Zugriff auf dein Konto, indem du einen deiner Wiederherstellungscodes eingibst.',
+                toggleText: 'mit einem Authentifizierungscode anmelden',
             };
         }
 
         return {
-            title: 'Authentication code',
-            description:
-                'Enter the authentication code provided by your authenticator application.',
-            toggleText: 'login using a recovery code',
+            title: 'Authentifizierungscode',
+            description: 'Gib den Code aus deiner Authenticator-App ein.',
+            toggleText: 'mit einem Wiederherstellungscode anmelden',
         };
     }, [showRecoveryInput]);
 
@@ -51,7 +50,7 @@ export default function TwoFactorChallenge() {
 
     return (
         <>
-            <Head title="Two-factor authentication" />
+            <Head title="Zwei-Faktor-Authentifizierung" />
 
             <div className="flex flex-col gap-6">
                 <Form
@@ -67,7 +66,7 @@ export default function TwoFactorChallenge() {
                                     <Input
                                         name="recovery_code"
                                         type="text"
-                                        placeholder="Enter recovery code"
+                                        placeholder="Wiederherstellungscode eingeben"
                                         autoFocus={showRecoveryInput}
                                         required
                                     />
@@ -108,11 +107,11 @@ export default function TwoFactorChallenge() {
                                 className="w-full"
                                 disabled={processing}
                             >
-                                Continue
+                                Weiter
                             </Button>
 
                             <div className="text-center text-sm text-muted-foreground">
-                                <span>or you can </span>
+                                <span>oder </span>
                                 <button
                                     type="button"
                                     className="cursor-pointer text-foreground underline underline-offset-4 transition-colors hover:text-foreground/80"

@@ -10,7 +10,8 @@ use App\Services\ExamAttemptFinder;
 
 beforeEach(function () {
     $module = Module::factory()->create(['slug' => 'm2-bsi-grundschutz']);
-    Question::factory()->for($module)->count(80)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
+    Question::factory()->for($module)->count(50)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->freeTier()->create();
+    Question::factory()->for($module)->count(30)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
     Question::factory()->for($module)->count(30)->tagged(BsiTopic::Methodik, QuestionDifficulty::Experte)->create();
 });
 
