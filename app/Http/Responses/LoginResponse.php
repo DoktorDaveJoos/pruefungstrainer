@@ -2,21 +2,29 @@
 
 namespace App\Http\Responses;
 
+use App\Actions\ClaimGuestAttempt;
 use Illuminate\Http\RedirectResponse;
 use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
 
 class LoginResponse implements LoginResponseContract
 {
+    public function __construct(private readonly ClaimGuestAttempt $claimGuestAttempt) {}
+
     public function toResponse($request): RedirectResponse
     {
-        if ($request->query('intent') === 'checkout') {
-            $user = $request->user();
+        $user = $request->user();
+        $claimed = ($this->claimGuestAttempt)($user, $request);
 
-            if ($user && $user->hasActiveAccess()) {
+        if ($claimed?->isSubmitted()) {
+            return redirect(route('exam.results', $claimed));
+        }
+
+        if ($request->query('intent') === 'checkout') {
+            if ($user->hasActiveAccess()) {
                 return redirect()->intended(config('fortify.home'));
             }
 
-            return redirect('/checkout/start');
+            return redirect(route('checkout.start', absolute: false));
         }
 
         return redirect()->intended(config('fortify.home'));
