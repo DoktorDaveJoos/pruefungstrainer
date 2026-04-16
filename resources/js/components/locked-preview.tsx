@@ -3,15 +3,39 @@ import type { ReactNode } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { getCsrfToken } from '@/lib/utils';
+import { UpgradeCtaButton } from '@/components/upgrade-cta-button';
+
+type Props = {
+    children: ReactNode;
+    priceLabel: string;
+    attemptId?: number;
+    hasAccess?: boolean;
+    title?: string;
+    lockedDescription?: string;
+    unlockedDescription?: string;
+};
 
 export function LockedPreview({
     children,
-    ctaText = 'Lifetime-Zugang freischalten · 29 €',
-}: {
-    children: ReactNode;
-    ctaText?: string;
-}) {
+    priceLabel,
+    attemptId,
+    hasAccess = false,
+    title = 'Review der falschen Antworten',
+    lockedDescription = 'Jede falsch beantwortete Frage mit Erklärung und BSI-Originalquelle — gezielt lernen, wo du schwach bist.',
+    unlockedDescription = 'Jede falsch beantwortete Frage mit Erklärung und BSI-Originalquelle.',
+}: Props) {
+    if (hasAccess) {
+        return (
+            <Card>
+                <CardHeader>
+                    <CardTitle>{title}</CardTitle>
+                    <CardDescription>{unlockedDescription}</CardDescription>
+                </CardHeader>
+                <CardContent>{children}</CardContent>
+            </Card>
+        );
+    }
+
     return (
         <Card className="relative overflow-hidden">
             <CardHeader>
@@ -21,24 +45,18 @@ export function LockedPreview({
                         Paid
                     </Badge>
                 </div>
-                <CardTitle className="mt-2">Review der falschen Antworten</CardTitle>
-                <CardDescription>
-                    Jede falsch beantwortete Frage mit Erklärung und BSI-Originalquelle — gezielt lernen, wo du schwach bist.
-                </CardDescription>
+                <CardTitle className="mt-2">{title}</CardTitle>
+                <CardDescription>{lockedDescription}</CardDescription>
             </CardHeader>
             <CardContent className="relative">
                 <div className="pointer-events-none select-none opacity-30 blur-sm">{children}</div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <form method="POST" action="/checkout/start">
-                        <input
-                            type="hidden"
-                            name="_token"
-                            value={getCsrfToken()}
-                        />
-                        <Button size="lg" type="submit">
-                            {ctaText}
+                    <UpgradeCtaButton priceLabel={priceLabel} attemptId={attemptId}>
+                        <Button size="lg">
+                            <Lock className="mr-2 size-4" />
+                            12 Monate Zugang freischalten · {priceLabel}
                         </Button>
-                    </form>
+                    </UpgradeCtaButton>
                 </div>
             </CardContent>
         </Card>

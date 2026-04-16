@@ -24,10 +24,18 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
-        return User::create([
+        $user = User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => $input['password'],
         ]);
+
+        // Local dev shortcut: skip the email verification round-trip so we
+        // don't need a working mailer to test the rest of the flow.
+        if (app()->environment('local')) {
+            $user->forceFill(['email_verified_at' => now()])->save();
+        }
+
+        return $user;
     }
 }

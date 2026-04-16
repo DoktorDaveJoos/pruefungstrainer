@@ -2,16 +2,17 @@
 
 namespace App\Http\Responses;
 
-use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Laravel\Fortify\Contracts\RegisterResponse as RegisterResponseContract;
-use Symfony\Component\HttpFoundation\Response;
 
 class RegisterResponse implements RegisterResponseContract
 {
-    public function toResponse($request): Response
+    public function toResponse($request): RedirectResponse
     {
-        return $request->wantsJson()
-            ? new JsonResponse(['two_factor' => false], 201)
-            : redirect()->intended(route('dashboard'));
+        if ($request->query('intent') === 'checkout') {
+            return redirect('/checkout/start');
+        }
+
+        return redirect()->intended(config('fortify.home'));
     }
 }

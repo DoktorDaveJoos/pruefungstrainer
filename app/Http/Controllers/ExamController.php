@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SaveAnswerRequest;
+use App\Models\ExamAnswer;
 use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
 use App\Services\ExamScorer;
+use App\Services\Pricing;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
@@ -26,7 +28,9 @@ class ExamController extends Controller
         $user = $request->user();
         $sessionUuid = $user ? null : (string) Str::uuid();
 
-        $questions = $this->examDraw->draw(userId: $user?->id, total: 50);
+        // Local dev shortcut: 3 questions instead of 50 so we can test faster.
+        $total = app()->environment('local') ? 3 : 50;
+        $questions = $this->examDraw->draw(userId: $user?->id, total: $total);
 
         $attempt = DB::transaction(function () use ($user, $sessionUuid, $questions) {
             $startedAt = now();
@@ -169,18 +173,73 @@ class ExamController extends Controller
         $total = $examAttempt->total_questions;
         $score = $examAttempt->score ?? 0;
         $passed = $total > 0 && ($score / $total) >= 0.60;
+        $hasAccess = (bool) $request->user()?->hasActiveAccess();
 
         return inertia('exam/results', [
             'attempt' => [
                 'id' => $examAttempt->id,
-                'score' => $score,
+                'score' => $hasAccess ? $score : null,
                 'total_questions' => $total,
                 'passed' => $passed,
                 'submitted_at' => $examAttempt->submitted_at?->toIso8601String(),
                 'is_claimed' => $examAttempt->user_id !== null,
             ],
-            'topicBreakdown' => app(ExamScorer::class)->topicBreakdown($examAttempt),
+            'topicBreakdown' => $hasAccess
+                ? app(ExamScorer::class)->topicBreakdown($examAttempt)
+                : null,
+            'pricing' => app(Pricing::class)->currentPrice(),
+            'hasAccess' => $hasAccess,
+            'reviewItems' => $hasAccess ? $this->buildReviewItems($examAttempt) : null,
         ]);
+    }
+
+    /**
+     * @return array<int, array{
+     *     number: int,
+     *     topic: string,
+     *     stem: string,
+     *     explanation: string,
+     *     quote: string|null,
+     *     source: string|null,
+     *     options: array<int, array{text: string, isCorrect: bool, isUserChoice: bool}>,
+     * }>
+     */
+    private function buildReviewItems(ExamAttempt $examAttempt): array
+    {
+        $examAttempt->loadMissing(['examAnswers.question.answers']);
+
+        return $examAttempt->examAnswers
+            ->where('is_correct', false)
+            ->sortBy('position')
+            ->values()
+            ->map(function (ExamAnswer $ea): array {
+                $question = $ea->question;
+                $answersById = $question->answers->keyBy('id');
+                $selected = $ea->selected_option_ids ?? [];
+
+                $options = collect($ea->options_order)
+                    ->map(function ($id) use ($answersById, $selected): array {
+                        $answer = $answersById[$id];
+
+                        return [
+                            'text' => $answer->text,
+                            'isCorrect' => (bool) $answer->is_correct,
+                            'isUserChoice' => in_array($id, $selected, true),
+                        ];
+                    })
+                    ->all();
+
+                return [
+                    'number' => $ea->position,
+                    'topic' => $question->topic->label(),
+                    'stem' => $question->text,
+                    'explanation' => $question->explanation,
+                    'quote' => $question->quote,
+                    'source' => $question->source,
+                    'options' => $options,
+                ];
+            })
+            ->all();
     }
 
     private function autoSubmitIfNeeded(ExamAttempt $attempt): void

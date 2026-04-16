@@ -2,75 +2,46 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\ExamAttemptFinder;
-use App\Services\PolarCheckout;
-use App\Services\PolarWebhookProcessor;
-use Illuminate\Http\RedirectResponse;
+use App\Services\Pricing;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Inertia\Response as InertiaResponse;
-use RuntimeException;
+use Inertia\Inertia;
+use Inertia\Response;
 
 class CheckoutController extends Controller
 {
-    public function __construct(
-        private readonly PolarCheckout $polarCheckout,
-        private readonly PolarWebhookProcessor $webhookProcessor,
-    ) {}
-
-    public function start(Request $request): RedirectResponse
+    public function start(Request $request, Pricing $pricing)
     {
         $user = $request->user();
-        $metadata = [];
 
-        if ($user) {
-            $metadata['user_id'] = $user->id;
-            $email = $user->email;
-        } else {
-            $sessionUuid = $request->cookie(ExamAttemptFinder::SESSION_COOKIE);
-            if ($sessionUuid !== null) {
-                $metadata['session_uuid'] = $sessionUuid;
-            }
-            $email = null;
+        if ($user->hasActiveAccess()) {
+            return redirect()->intended(config('fortify.home'));
         }
 
-        try {
-            $url = $this->polarCheckout->createSession($metadata, $email);
-        } catch (RuntimeException $e) {
-            abort(503, 'Checkout temporarily unavailable: '.$e->getMessage());
-        }
+        $productId = $pricing->currentProductId();
 
-        return redirect()->away($url);
+        abort_if(
+            $productId === null,
+            503,
+            'Checkout ist noch nicht eingerichtet. Bitte setze POLAR_PRODUCT_FOUNDER und POLAR_PRODUCT_STANDARD in deiner .env.',
+        );
+
+        $url = $user->checkout([$productId])
+            ->withSuccessUrl(route('checkout.processing').'?checkout_id={CHECKOUT_ID}')
+            ->url();
+
+        return Inertia::location($url);
     }
 
-    public function success(Request $request): InertiaResponse
+    public function processing(Request $request): Response
     {
-        $user = $request->user();
-
-        return inertia('checkout/success', [
-            'isAuthenticated' => $user !== null,
-            'isPaid' => $user?->isPaid() ?? false,
-            'checkoutId' => $request->query('checkout_id'),
+        return Inertia::render('checkout/processing', [
+            'hasAccess' => (bool) $request->user()?->hasActiveAccess(),
         ]);
     }
 
-    public function webhook(Request $request): Response
+    public function accessStatus(Request $request): JsonResponse
     {
-        $payload = $request->getContent();
-        $signature = $request->header('webhook-signature');
-
-        if ($signature === null || ! $this->webhookProcessor->verifySignature($payload, $signature)) {
-            abort(401, 'Invalid signature');
-        }
-
-        $decoded = json_decode($payload, true);
-
-        if (! is_array($decoded)) {
-            abort(400, 'Malformed payload');
-        }
-
-        $this->webhookProcessor->process($decoded);
-
-        return response('', 200);
+        return response()->json(['hasAccess' => (bool) $request->user()?->hasActiveAccess()]);
     }
 }

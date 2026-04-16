@@ -4,7 +4,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PracticeController;
-use App\Http\Middleware\EnsurePaid;
+use App\Http\Middleware\EnsureActiveAccess;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
@@ -19,15 +19,17 @@ Route::inertia('/agb', 'legal/agb')->name('legal.agb');
 Route::inertia('/datenschutz', 'legal/datenschutz')->name('legal.datenschutz');
 Route::inertia('/impressum', 'legal/impressum')->name('legal.impressum');
 
-Route::post('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
-Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
-Route::post('/webhooks/polar', [CheckoutController::class, 'webhook'])->name('webhooks.polar');
+Route::middleware('auth')->group(function () {
+    Route::get('/checkout/start', [CheckoutController::class, 'start'])->name('checkout.start');
+    Route::get('/checkout/processing', [CheckoutController::class, 'processing'])->name('checkout.processing');
+    Route::get('/api/access-status', [CheckoutController::class, 'accessStatus'])->name('access-status');
+});
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
 });
 
-Route::middleware(['auth', 'verified', EnsurePaid::class])->group(function () {
+Route::middleware(['auth', 'verified', EnsureActiveAccess::class])->group(function () {
     Route::get('/freies-lernen', [PracticeController::class, 'show'])->name('practice.show');
     Route::post('/freies-lernen/answer', [PracticeController::class, 'saveAnswer'])->name('practice.save-answer');
 });

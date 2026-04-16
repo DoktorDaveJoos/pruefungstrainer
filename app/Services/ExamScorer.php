@@ -30,7 +30,7 @@ class ExamScorer
      */
     public function topicBreakdown(ExamAttempt $attempt): array
     {
-        $attempt->load('examAnswers.question');
+        $attempt->loadMissing('examAnswers.question');
 
         $tally = [];
 

@@ -69,8 +69,9 @@ it('walks an anonymous user through start → answer 50 → submit → results',
     $resultsResponse->assertStatus(200);
     $resultsResponse->assertInertia(fn ($page) => $page
         ->component('exam/results')
-        ->has('attempt.score')
-        ->has('topicBreakdown')
+        ->where('hasAccess', false)
+        ->where('attempt.score', null)
+        ->where('topicBreakdown', null)
     );
 
     // Attempt is submitted, score populated

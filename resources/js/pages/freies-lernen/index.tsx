@@ -1,6 +1,6 @@
-import { Head, router } from '@inertiajs/react';
+import { Head, Link, router } from '@inertiajs/react';
 import axios from 'axios';
-import { Check, CheckCircle2, X, XCircle } from 'lucide-react';
+import { ArrowLeft, Check, CheckCircle2, X, XCircle } from 'lucide-react';
 import { useState } from 'react';
 import { ANSWER_OPTION_BASE } from '@/components/exam/answer-option';
 import { Button } from '@/components/ui/button';
@@ -8,8 +8,8 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
-import AppLayout from '@/layouts/app-layout';
 import { cn, getCsrfToken } from '@/lib/utils';
+import { dashboard } from '@/routes';
 
 type Option = { id: number; text: string };
 type Question = {
@@ -132,12 +132,18 @@ export default function FreiesLernen({
     };
 
     return (
-        <AppLayout
-            breadcrumbs={[{ title: 'Freies Lernen', href: '/freies-lernen' }]}
-        >
+        <>
             <Head title="Freies Lernen" />
 
             <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6">
+                <Link
+                    href={dashboard()}
+                    className="mb-4 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+                >
+                    <ArrowLeft className="size-4" />
+                    Dashboard
+                </Link>
+
                 <header className="flex items-center justify-between gap-4">
                     <div className="text-sm text-muted-foreground tabular-nums">
                         {progress.seen} von {progress.total} gesehen ·{' '}
@@ -268,6 +274,6 @@ export default function FreiesLernen({
                     </>
                 )}
             </div>
-        </AppLayout>
+        </>
     );
 }

@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\User;
+use Danestves\LaravelPolar\Order;
 
 it('passes current pricing to the welcome Inertia view', function () {
-    User::factory()->paid()->count(20)->create();
+    Order::factory()->count(20)->create(['product_id' => config('polar.products.founder')]);
 
     $response = $this->get('/');
 
@@ -17,7 +17,7 @@ it('passes current pricing to the welcome Inertia view', function () {
 });
 
 it('shows standard price when founder cap reached', function () {
-    User::factory()->paid()->count(100)->create();
+    Order::factory()->count(100)->create(['product_id' => config('polar.products.founder')]);
 
     $response = $this->get('/');
 

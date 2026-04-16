@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/site-footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { getCsrfToken } from '@/lib/utils';
+import { start } from '@/routes/checkout';
 
 type Pricing = {
     amount_eur: number;
@@ -26,7 +27,7 @@ export default function Welcome() {
                         <nav className="flex items-center gap-4 text-sm">
                             {auth?.user ? (
                                 <Link href="/dashboard" className="text-foreground hover:underline">
-                                    Dashboard
+                                    Startseite
                                 </Link>
                             ) : (
                                 <>
@@ -90,7 +91,7 @@ export default function Welcome() {
 
                     <section className="border-t border-border bg-muted/30 py-16">
                         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-                            <h2 className="text-center text-xl font-semibold tracking-tight">Lifetime-Zugang</h2>
+                            <h2 className="text-center text-xl font-semibold tracking-tight">12 Monate Zugang</h2>
                             <p className="mt-2 text-center text-sm text-muted-foreground">
                                 Einmal zahlen. Kein Abo. Für immer üben.
                             </p>
@@ -106,7 +107,7 @@ export default function Welcome() {
                                     {pricing.is_founder_price && (
                                         <div className="text-sm text-muted-foreground line-through tabular-nums">{pricing.standard_price_eur} €</div>
                                     )}
-                                    <CardTitle className="mt-2 text-base font-medium">Lifetime-Zugang</CardTitle>
+                                    <CardTitle className="mt-2 text-base font-medium">12 Monate Zugang</CardTitle>
                                 </CardHeader>
                                 <CardContent className="flex flex-col gap-4">
                                     <ul className="flex flex-col gap-2 text-sm">
@@ -128,19 +129,14 @@ export default function Welcome() {
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <Check className="mt-0.5 size-4 shrink-0 text-success" />
-                                            <span>Lebenslanger Zugang — keine Abos</span>
+                                            <span>12 Monate Zugang — keine automatische Verlängerung</span>
                                         </li>
                                     </ul>
-                                    <form method="POST" action="/checkout/start">
-                                        <input
-                                            type="hidden"
-                                            name="_token"
-                                            value={getCsrfToken()}
-                                        />
-                                        <Button type="submit" size="lg" className="w-full">
-                                            Lifetime-Zugang freischalten
+                                    <a href={start.url()}>
+                                        <Button size="lg" className="w-full">
+                                            12 Monate Zugang freischalten
                                         </Button>
-                                    </form>
+                                    </a>
                                     <p className="text-center text-xs text-muted-foreground">
                                         Sichere Zahlung über Polar.sh · 14 Tage Widerrufsrecht (siehe AGB)
                                     </p>
@@ -152,7 +148,7 @@ export default function Welcome() {
                                 <a href="https://www.bsi.bund.de/" className="underline" target="_blank" rel="noopener noreferrer">
                                     €245–450 pro Versuch
                                 </a>{' '}
-                                — der Lifetime-Zugang ist eine günstige Versicherung.
+                                — 12 Monate Zugang ist eine günstige Versicherung.
                             </p>
                         </div>
                     </section>
@@ -167,11 +163,11 @@ export default function Welcome() {
                             />
                             <FaqItem
                                 q="Kann ich die Simulation vor dem Kauf testen?"
-                                a="Ja. Die Prüfungssimulation ist kostenlos und ohne Login zugänglich. Nach Abschluss siehst du dein Ergebnis. Erst die Antwort-Erklärungen, das Themen-Feedback und das Freie Lernen sind im Lifetime-Zugang enthalten."
+                                a="Ja. Die Prüfungssimulation ist kostenlos und ohne Login zugänglich. Nach Abschluss siehst du dein Ergebnis. Erst die Antwort-Erklärungen, das Themen-Feedback und das Freie Lernen sind im 12 Monate Zugang enthalten."
                             />
                             <FaqItem
                                 q="Was passiert mit meinem Probelauf, wenn ich später kaufe?"
-                                a="Sobald du den Lifetime-Zugang freischaltest, wird dein anonymer Probelauf automatisch deinem Konto zugeordnet. Du siehst sofort die Erklärungen zu allen Fragen aus genau diesem Lauf."
+                                a="Sobald du den 12 Monate Zugang freischaltest, wird dein anonymer Probelauf automatisch deinem Konto zugeordnet. Du siehst sofort die Erklärungen zu allen Fragen aus genau diesem Lauf."
                             />
                             <FaqItem
                                 q="Wie viele Fragen sind im Pool?"

@@ -18,7 +18,7 @@ beforeEach(function () {
 });
 
 it('records a practice answer and returns is_correct + correct option ids + explanation', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $response = $this->actingAs($user)->postJson('/freies-lernen/answer', [
         'question_id' => $this->question->id,
@@ -39,7 +39,7 @@ it('records a practice answer and returns is_correct + correct option ids + expl
 });
 
 it('marks wrong when only some correct options are ticked', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $extraCorrect = Answer::factory()->for($this->question)->correct()->create();
 
     $response = $this->actingAs($user)->postJson('/freies-lernen/answer', [
@@ -52,7 +52,7 @@ it('marks wrong when only some correct options are ticked', function () {
 });
 
 it('marks wrong when a wrong option is ticked alongside correct', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $response = $this->actingAs($user)->postJson('/freies-lernen/answer', [
         'question_id' => $this->question->id,
@@ -63,7 +63,7 @@ it('marks wrong when a wrong option is ticked alongside correct', function () {
 });
 
 it('marks wrong when no options are ticked', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $response = $this->actingAs($user)->postJson('/freies-lernen/answer', [
         'question_id' => $this->question->id,
@@ -83,7 +83,7 @@ it('returns 403 for an unpaid user', function () {
 });
 
 it('returns 422 for non-existent question', function () {
-    $user = User::factory()->paid()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $this->actingAs($user)->postJson('/freies-lernen/answer', [
         'question_id' => 999999,
