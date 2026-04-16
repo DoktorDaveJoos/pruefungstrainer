@@ -27,13 +27,15 @@ function createUserWithActiveAccess(): User
     return $user;
 }
 
-it('renders score + pass status + topic breakdown for a submitted attempt', function () {
+it('renders score + topic breakdown for a submitted attempt when the user has access', function () {
+    $user = createUserWithActiveAccess();
+
     $q1 = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
     $q2 = Question::factory()->for($this->module)->tagged(BsiTopic::Bausteine, QuestionDifficulty::Basis)->create();
     Answer::factory()->for($q1)->correct()->create();
     Answer::factory()->for($q2)->correct()->create();
 
-    $attempt = ExamAttempt::factory()->create(['session_uuid' => 'abc-123', 'total_questions' => 2]);
+    $attempt = ExamAttempt::factory()->for($user)->create(['total_questions' => 2]);
     ExamAnswer::factory()
         ->for($attempt, 'examAttempt')
         ->for($q1)
@@ -49,16 +51,66 @@ it('renders score + pass status + topic breakdown for a submitted attempt', func
 
     $attempt->update(['score' => 1, 'submitted_at' => now()]);
 
+    $response = $this->actingAs($user)->get("/pruefungssimulation/{$attempt->id}/ergebnis");
+
+    $response->assertStatus(200);
+    $response->assertInertia(fn ($page) => $page
+        ->component('exam/results')
+        ->where('hasAccess', true)
+        ->where('attempt.score', 1)
+        ->where('attempt.total_questions', 2)
+        ->where('attempt.passed', false)
+        ->has('topicBreakdown')
+    );
+});
+
+it('hides score and topic breakdown for a free (no-access) user', function () {
+    $q = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
+    Answer::factory()->for($q)->correct()->create();
+
+    $attempt = ExamAttempt::factory()->create([
+        'session_uuid' => 'abc-123',
+        'total_questions' => 1,
+        'score' => 1,
+        'submitted_at' => now(),
+    ]);
+    ExamAnswer::factory()->for($attempt, 'examAttempt')->for($q)->create(['position' => 1, 'is_correct' => true]);
+
     $response = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, 'abc-123')
         ->get("/pruefungssimulation/{$attempt->id}/ergebnis");
 
     $response->assertStatus(200);
     $response->assertInertia(fn ($page) => $page
         ->component('exam/results')
-        ->where('attempt.score', 1)
-        ->where('attempt.total_questions', 2)
+        ->where('hasAccess', false)
+        ->where('attempt.score', null)
+        ->where('attempt.total_questions', 1)
+        ->where('attempt.passed', true)
+        ->where('topicBreakdown', null)
+    );
+});
+
+it('exposes passed=false for a no-access user whose score is below 60%', function () {
+    $q = Question::factory()->for($this->module)->tagged(BsiTopic::Methodik, QuestionDifficulty::Basis)->create();
+    Answer::factory()->for($q)->correct()->create();
+
+    $attempt = ExamAttempt::factory()->create([
+        'session_uuid' => 'abc-123',
+        'total_questions' => 50,
+        'score' => 20,
+        'submitted_at' => now(),
+    ]);
+    ExamAnswer::factory()->for($attempt, 'examAttempt')->for($q)->create(['position' => 1, 'is_correct' => false]);
+
+    $response = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, 'abc-123')
+        ->get("/pruefungssimulation/{$attempt->id}/ergebnis");
+
+    $response->assertStatus(200);
+    $response->assertInertia(fn ($page) => $page
+        ->component('exam/results')
+        ->where('hasAccess', false)
+        ->where('attempt.score', null)
         ->where('attempt.passed', false)
-        ->has('topicBreakdown')
     );
 });
 
@@ -146,7 +198,7 @@ it('passes reviewItems for wrong answers only when the user has active access', 
     );
 });
 
-it('passes reviewItems as null when the user has no active access', function () {
+it('passes reviewItems, score, and topicBreakdown as null when the user has no active access', function () {
     $attempt = ExamAttempt::factory()->submitted(30)->create(['session_uuid' => 'abc-123']);
 
     $response = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, 'abc-123')
@@ -156,6 +208,8 @@ it('passes reviewItems as null when the user has no active access', function () 
     $response->assertInertia(fn ($page) => $page
         ->where('hasAccess', false)
         ->where('reviewItems', null)
+        ->where('attempt.score', null)
+        ->where('topicBreakdown', null)
     );
 });
 

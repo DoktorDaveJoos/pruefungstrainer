@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { Form } from '@inertiajs/react';
 import { Lock } from 'lucide-react';
+import { useState } from 'react';
 import InputError from '@/components/input-error';
 import PasswordInput from '@/components/password-input';
 import TextLink from '@/components/text-link';
@@ -10,8 +10,8 @@ import { Label } from '@/components/ui/label';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Spinner } from '@/components/ui/spinner';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { store as registerStore } from '@/routes/register';
 import { store as loginStore } from '@/routes/login';
+import { store as registerStore } from '@/routes/register';
 
 type Props = {
     trigger: React.ReactNode;
@@ -35,7 +35,7 @@ export function CheckoutSheet({ trigger, attemptId, priceLabel }: Props) {
                     </SheetTitle>
                 </SheetHeader>
 
-                <Tabs defaultValue="register" className="mt-6">
+                <Tabs defaultValue="register" className="mt-2 px-4 pb-4">
                     <TabsList className="grid w-full grid-cols-2">
                         <TabsTrigger value="register">Neu hier</TabsTrigger>
                         <TabsTrigger value="login">Schon Konto</TabsTrigger>

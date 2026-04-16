@@ -7,11 +7,14 @@ export function ScoreHero({
     total,
     passed,
 }: {
-    score: number;
+    score: number | null;
     total: number;
     passed: boolean;
 }) {
-    const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
+    const locked = score === null;
+    const percentage =
+        !locked && total > 0 ? Math.round((score / total) * 100) : 0;
+    const blurClass = locked ? 'pointer-events-none select-none blur-sm' : '';
 
     return (
         <Card>
@@ -19,11 +22,15 @@ export function ScoreHero({
                 <CardTitle className="text-base font-medium text-muted-foreground">
                     Dein Ergebnis
                 </CardTitle>
-                <div className="text-5xl font-bold tabular-nums">
-                    {score} / {total}
+                <div
+                    className={`text-5xl font-bold tabular-nums ${blurClass}`}
+                >
+                    {locked ? '??' : score} / {total}
                 </div>
-                <div className="text-xl tabular-nums text-muted-foreground">
-                    {percentage} %
+                <div
+                    className={`text-xl tabular-nums text-muted-foreground ${blurClass}`}
+                >
+                    {locked ? '??' : percentage} %
                 </div>
                 <Badge
                     variant={passed ? 'success' : 'warning'}

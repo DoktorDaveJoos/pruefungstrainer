@@ -178,13 +178,15 @@ class ExamController extends Controller
         return inertia('exam/results', [
             'attempt' => [
                 'id' => $examAttempt->id,
-                'score' => $score,
+                'score' => $hasAccess ? $score : null,
                 'total_questions' => $total,
                 'passed' => $passed,
                 'submitted_at' => $examAttempt->submitted_at?->toIso8601String(),
                 'is_claimed' => $examAttempt->user_id !== null,
             ],
-            'topicBreakdown' => app(ExamScorer::class)->topicBreakdown($examAttempt),
+            'topicBreakdown' => $hasAccess
+                ? app(ExamScorer::class)->topicBreakdown($examAttempt)
+                : null,
             'pricing' => app(Pricing::class)->currentPrice(),
             'hasAccess' => $hasAccess,
             'reviewItems' => $hasAccess ? $this->buildReviewItems($examAttempt) : null,

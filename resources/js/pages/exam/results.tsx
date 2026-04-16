@@ -1,6 +1,7 @@
-import { Head, Link } from '@inertiajs/react';
+import { Head, Link, usePage } from '@inertiajs/react';
 import { ArrowLeft, ChevronLeft, ChevronRight, CheckCheck } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
+import { ResultsUpgradeCallout } from '@/components/exam/results-upgrade-callout';
 import { ReviewItemCard } from '@/components/exam/review-item-card';
 import type { ReviewItem } from '@/components/exam/review-item-card';
 import { ScoreHero } from '@/components/exam/score-hero';
@@ -19,7 +20,7 @@ import { dashboard } from '@/routes';
 
 type Attempt = {
     id: number;
-    score: number;
+    score: number | null;
     total_questions: number;
     passed: boolean;
     submitted_at: string | null;
@@ -32,6 +33,13 @@ type TopicBreakdown = Array<{
     correct: number;
     total: number;
 }>;
+
+const LOCKED_TOPIC_TEASER: TopicBreakdown = [
+    { key: 'bausteine', label: 'Bausteine', correct: 8, total: 12 },
+    { key: 'gefaehrdungen', label: 'Gefährdungen', correct: 6, total: 10 },
+    { key: 'umsetzung', label: 'Umsetzung', correct: 9, total: 14 },
+    { key: 'standards', label: 'BSI-Standards', correct: 7, total: 14 },
+];
 
 type Pricing = {
     amount_eur: number;
@@ -129,29 +137,48 @@ export default function ExamResults({
     reviewItems,
 }: {
     attempt: Attempt;
-    topicBreakdown: TopicBreakdown;
+    topicBreakdown: TopicBreakdown | null;
     pricing: Pricing;
     hasAccess: boolean;
     reviewItems: ReviewItem[] | null;
 }) {
+    const { auth } = usePage().props;
     const priceLabel = `${pricing.amount_eur} €`;
     const showEmptyState = reviewItems !== null && reviewItems.length === 0;
+    const headTitle =
+        attempt.score !== null
+            ? `Ergebnis: ${attempt.score} / ${attempt.total_questions}`
+            : 'Ergebnis';
+    const topicRows = topicBreakdown ?? LOCKED_TOPIC_TEASER;
+
+    const topicSection = (
+        <div className="flex flex-col gap-2">
+            {topicRows.map(({ key, label, correct, total }) => (
+                <TopicBreakdownRow
+                    key={key}
+                    label={label}
+                    correct={correct}
+                    total={total}
+                />
+            ))}
+        </div>
+    );
 
     return (
         <>
-            <Head
-                title={`Ergebnis: ${attempt.score} / ${attempt.total_questions}`}
-            />
+            <Head title={headTitle} />
 
             <div className="min-h-screen bg-background">
                 <main className="mx-auto flex max-w-2xl flex-col gap-8 px-4 py-8 sm:px-6">
-                    <Link
-                        href={dashboard()}
-                        className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
-                    >
-                        <ArrowLeft className="size-4" />
-                        Dashboard
-                    </Link>
+                    {auth?.user && (
+                        <Link
+                            href={dashboard()}
+                            className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+                        >
+                            <ArrowLeft className="size-4" />
+                            Dashboard
+                        </Link>
+                    )}
 
                     <ScoreHero
                         score={attempt.score}
@@ -159,26 +186,36 @@ export default function ExamResults({
                         passed={attempt.passed}
                     />
 
-                    <section className="flex flex-col gap-4">
-                        <Heading
-                            variant="small"
-                            title="Themen-Übersicht"
-                            description="Wo bist du stark, wo schwach?"
+                    {!hasAccess && (
+                        <ResultsUpgradeCallout
+                            passed={attempt.passed}
+                            priceLabel={priceLabel}
+                            attemptId={attempt.id}
                         />
+                    )}
 
-                        <div className="flex flex-col gap-2">
-                            {topicBreakdown.map(
-                                ({ key, label, correct, total }) => (
-                                    <TopicBreakdownRow
-                                        key={key}
-                                        label={label}
-                                        correct={correct}
-                                        total={total}
-                                    />
-                                ),
-                            )}
-                        </div>
-                    </section>
+                    {topicBreakdown !== null ? (
+                        <section className="flex flex-col gap-4">
+                            <Heading
+                                variant="small"
+                                title="Themen-Übersicht"
+                                description="Wo bist du stark, wo schwach?"
+                            />
+
+                            {topicSection}
+                        </section>
+                    ) : (
+                        <section>
+                            <LockedPreview
+                                priceLabel={priceLabel}
+                                attemptId={attempt.id}
+                                title="Themen-Übersicht"
+                                lockedDescription="Sieh, wo du stark bist und wo du schwach bist — aufgeschlüsselt nach BSI-Themengebieten."
+                            >
+                                {topicSection}
+                            </LockedPreview>
+                        </section>
+                    )}
 
                     <section>
                         <LockedPreview
