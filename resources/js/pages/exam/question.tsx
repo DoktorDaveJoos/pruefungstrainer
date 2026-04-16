@@ -1,5 +1,5 @@
 import { Head, router } from '@inertiajs/react';
-import { ChevronLeft, ChevronRight, Flag, FlagOff } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Flag, FlagOff } from 'lucide-react';
 import { useState } from 'react';
 import ExamController from '@/actions/App/Http/Controllers/ExamController';
 import { AnswerOption } from '@/components/exam/answer-option';
@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/alert-dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { dashboard } from '@/routes';
 
 type Option = { id: number; text: string };
 type Question = {
@@ -107,6 +108,46 @@ export default function ExamQuestion({
                 <header className="sticky top-0 z-10 border-b border-border bg-background/95 backdrop-blur">
                     <div className="mx-auto flex max-w-2xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
                         <div className="flex items-center gap-3 text-sm tabular-nums text-muted-foreground">
+                            <AlertDialog>
+                                <AlertDialogTrigger asChild>
+                                    <Button
+                                        type="button"
+                                        variant="ghost"
+                                        size="sm"
+                                        className="gap-1 text-muted-foreground"
+                                    >
+                                        <ArrowLeft className="size-4" />
+                                        <span className="hidden sm:inline">Dashboard</span>
+                                    </Button>
+                                </AlertDialogTrigger>
+                                <AlertDialogContent>
+                                    <AlertDialogHeader>
+                                        <AlertDialogTitle>
+                                            Prüfung verlassen?
+                                        </AlertDialogTitle>
+                                        <AlertDialogDescription>
+                                            Der Timer läuft weiter. Deine
+                                            bisherigen Antworten sind
+                                            gespeichert und du kannst die
+                                            Prüfung wieder aufnehmen, solange
+                                            die Zeit nicht abgelaufen ist.
+                                        </AlertDialogDescription>
+                                    </AlertDialogHeader>
+                                    <AlertDialogFooter>
+                                        <AlertDialogCancel>
+                                            Weiter bearbeiten
+                                        </AlertDialogCancel>
+                                        <AlertDialogAction
+                                            onClick={() =>
+                                                router.visit(dashboard())
+                                            }
+                                        >
+                                            Zum Dashboard
+                                        </AlertDialogAction>
+                                    </AlertDialogFooter>
+                                </AlertDialogContent>
+                            </AlertDialog>
+                            <span>·</span>
                             <span>
                                 Frage {currentPosition} / {attempt.total_questions}
                             </span>

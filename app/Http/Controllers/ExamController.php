@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SaveAnswerRequest;
+use App\Models\ExamAnswer;
 use App\Models\ExamAttempt;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
@@ -172,6 +173,7 @@ class ExamController extends Controller
         $total = $examAttempt->total_questions;
         $score = $examAttempt->score ?? 0;
         $passed = $total > 0 && ($score / $total) >= 0.60;
+        $hasAccess = (bool) $request->user()?->hasActiveAccess();
 
         return inertia('exam/results', [
             'attempt' => [
@@ -184,8 +186,58 @@ class ExamController extends Controller
             ],
             'topicBreakdown' => app(ExamScorer::class)->topicBreakdown($examAttempt),
             'pricing' => app(Pricing::class)->currentPrice(),
-            'hasAccess' => (bool) $request->user()?->hasActiveAccess(),
+            'hasAccess' => $hasAccess,
+            'reviewItems' => $hasAccess ? $this->buildReviewItems($examAttempt) : null,
         ]);
+    }
+
+    /**
+     * @return array<int, array{
+     *     number: int,
+     *     topic: string,
+     *     stem: string,
+     *     explanation: string,
+     *     quote: string|null,
+     *     source: string|null,
+     *     options: array<int, array{text: string, isCorrect: bool, isUserChoice: bool}>,
+     * }>
+     */
+    private function buildReviewItems(ExamAttempt $examAttempt): array
+    {
+        $examAttempt->loadMissing(['examAnswers.question.answers']);
+
+        return $examAttempt->examAnswers
+            ->where('is_correct', false)
+            ->sortBy('position')
+            ->values()
+            ->map(function (ExamAnswer $ea): array {
+                $question = $ea->question;
+                $answersById = $question->answers->keyBy('id');
+                $selected = $ea->selected_option_ids ?? [];
+
+                $options = collect($ea->options_order)
+                    ->map(function ($id) use ($answersById, $selected): array {
+                        $answer = $answersById[$id];
+
+                        return [
+                            'text' => $answer->text,
+                            'isCorrect' => (bool) $answer->is_correct,
+                            'isUserChoice' => in_array($id, $selected, true),
+                        ];
+                    })
+                    ->all();
+
+                return [
+                    'number' => $ea->position,
+                    'topic' => $question->topic->label(),
+                    'stem' => $question->text,
+                    'explanation' => $question->explanation,
+                    'quote' => $question->quote,
+                    'source' => $question->source,
+                    'options' => $options,
+                ];
+            })
+            ->all();
     }
 
     private function autoSubmitIfNeeded(ExamAttempt $attempt): void
