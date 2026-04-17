@@ -1,10 +1,49 @@
-import { Head, Link } from '@inertiajs/react';
-import { FileCheck, GraduationCap } from 'lucide-react';
+import { Head, Link, router } from '@inertiajs/react';
+import { ChevronRight, FileCheck, GraduationCap } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from '@/components/ui/empty';
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from '@/components/ui/table';
 import { getCsrfToken } from '@/lib/utils';
+import exam from '@/routes/exam';
 
-export default function Dashboard() {
+type ExamAttemptRow = {
+    id: number;
+    score: number;
+    total_questions: number;
+    passed: boolean;
+    submitted_at: string | null;
+};
+
+type DashboardProps = {
+    attempts: ExamAttemptRow[];
+    runningAttemptId: number | null;
+};
+
+const dateFormatter = new Intl.DateTimeFormat('de-DE', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+});
+
+function formatSubmittedAt(iso: string | null): string {
+    if (iso === null) {
+        return '—';
+    }
+    return dateFormatter.format(new Date(iso));
+}
+
+export default function Dashboard({ attempts, runningAttemptId }: DashboardProps) {
     return (
         <>
             <Head title="Startseite" />
@@ -25,16 +64,24 @@ export default function Dashboard() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <form method="POST" action="/pruefungssimulation/start">
-                                <input
-                                    type="hidden"
-                                    name="_token"
-                                    value={getCsrfToken()}
-                                />
-                                <Button type="submit" className="w-full">
-                                    Simulation starten
+                            {runningAttemptId !== null ? (
+                                <Button asChild className="w-full">
+                                    <Link href={exam.show.url(runningAttemptId)}>
+                                        Prüfung fortsetzen
+                                    </Link>
                                 </Button>
-                            </form>
+                            ) : (
+                                <form method="POST" action={exam.start.url()}>
+                                    <input
+                                        type="hidden"
+                                        name="_token"
+                                        value={getCsrfToken()}
+                                    />
+                                    <Button type="submit" className="w-full">
+                                        Simulation starten
+                                    </Button>
+                                </form>
+                            )}
                         </CardContent>
                     </Card>
 
@@ -53,6 +100,66 @@ export default function Dashboard() {
                         </CardContent>
                     </Card>
                 </div>
+
+                <section className="mt-8">
+                    <h2 className="text-xl font-semibold tracking-tight">
+                        Deine Prüfungsversuche
+                    </h2>
+
+                    {attempts.length === 0 ? (
+                        <Empty className="mt-4">
+                            <EmptyHeader>
+                                <EmptyTitle>Noch keine abgeschlossenen Versuche</EmptyTitle>
+                                <EmptyDescription>
+                                    Starte deine erste Prüfungssimulation, um deinen Fortschritt hier zu sehen.
+                                </EmptyDescription>
+                            </EmptyHeader>
+                        </Empty>
+                    ) : (
+                        <Card className="mt-4 overflow-hidden p-0">
+                            <Table>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead>Datum</TableHead>
+                                        <TableHead>Ergebnis</TableHead>
+                                        <TableHead>Status</TableHead>
+                                        <TableHead className="w-10" />
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {attempts.map((attempt) => {
+                                        const href = exam.results.url(attempt.id);
+
+                                        return (
+                                            <TableRow
+                                                key={attempt.id}
+                                                onClick={() => router.visit(href)}
+                                                className="cursor-pointer"
+                                            >
+                                                <TableCell>
+                                                    {formatSubmittedAt(attempt.submitted_at)}
+                                                </TableCell>
+                                                <TableCell className="tabular-nums">
+                                                    {attempt.score} / {attempt.total_questions}
+                                                </TableCell>
+                                                <TableCell>
+                                                    <Badge
+                                                        variant={attempt.passed ? 'success' : 'warning'}
+                                                    >
+                                                        {attempt.passed ? 'Bestanden' : 'Nicht bestanden'}
+                                                    </Badge>
+                                                </TableCell>
+                                                <TableCell className="text-right text-muted-foreground">
+                                                    <ChevronRight className="ml-auto size-4" />
+                                                </TableCell>
+                                            </TableRow>
+                                        );
+                                    })}
+                                </TableBody>
+                            </Table>
+                        </Card>
+                    )}
+                </section>
             </div>
         </>
     );
