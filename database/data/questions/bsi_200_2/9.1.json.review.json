@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Five questions on Sichtung der Untersuchungsergebnisse (section 9.1). All correct answers directly supported by source. All distractors are correctly marked false. Quotes verified clean. Topic 'methodik' is correct for ISMS process/implementation content. Question 005 page_start=159 is correct (the referenced text is on page 159). Schema correct (baustein_id and anforderung_type both null).",
+    "results": [
+        {
+            "external_id": "bsi-200-2-9.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.1-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

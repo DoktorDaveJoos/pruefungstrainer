@@ -1,0 +1,75 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "8.2",
+        "chapter_title": "Schutzbedarfsfeststellung",
+        "page_start": 130,
+        "page_end": 130
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-8.2-001",
+            "text": "Welche Tätigkeiten nennt der Aktionspunktkatalog zu 8.2.8 für die Schutzbedarfsfeststellung bei Kommunikationsverbindungen?",
+            "explanation": "Laut Aktionspunkten zu 8.2.8 sind Außenverbindungen zu erfassen und zu dokumentieren, Verbindungen mit kritischen Informationen zu identifizieren und alle kritischen Kommunikationsverbindungen tabellarisch oder grafisch festzuhalten. Die Erhebung von IT-Systemen gehört zur Strukturanalyse und nicht zur Schutzbedarfsfeststellung der Verbindungen.",
+            "quote": "Außenverbindungen erfassen und in tabellarischer oder grafischer Form dokumentieren • Verbindungen, über die kritische Informationen übertragen werden, identifizieren • Alle kritischen Kommunikationsverbindungen in tabellarischer oder grafischer Form dokumen tieren",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Aktionspunkte zur Schutzbedarfsfeststellung für Kommunikationsverbindungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 130,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Außenverbindungen erfassen und in tabellarischer oder grafischer Form dokumentieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Verbindungen, über die kritische Informationen übertragen werden, identifizieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle kritischen Kommunikationsverbindungen in tabellarischer oder grafischer Form dokumentieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine vollständige Liste aller IT-Systeme mit eindeutigen Kürzeln erstellen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.2-002",
+            "text": "In welcher Form sind laut Aktionspunkten die Außenverbindungen und kritischen Kommunikationsverbindungen zu dokumentieren?",
+            "explanation": "Die Aktionspunkte schreiben für Außenverbindungen sowie für alle kritischen Kommunikationsverbindungen ausdrücklich eine tabellarische oder grafische Dokumentationsform vor. Rein textliche Fließtexte, eine mündliche Darstellung oder ausschließlich Netzpläne mit Routing-Details werden nicht genannt.",
+            "quote": "Außenverbindungen erfassen und in tabellarischer oder grafischer Form dokumentieren • Verbindungen, über die kritische Informationen übertragen werden, identifizieren • Alle kritischen Kommunikationsverbindungen in tabellarischer oder grafischer Form dokumen tieren",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die geforderte Dokumentationsform kritischer Kommunikationsverbindungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 130,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In tabellarischer oder grafischer Form",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich als Fließtext in der Sicherheitsleitlinie",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich mündlich im Rahmen von Leitungsterminen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich als Netzplan mit Routing-Details",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

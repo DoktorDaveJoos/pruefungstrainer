@@ -1,0 +1,165 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "7.4",
+        "chapter_title": "Aufrechterhaltung der Informationssicherheit",
+        "page_start": 30,
+        "page_end": 31
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-7.4-001",
+            "text": "Wie charakterisiert der BSI-Standard 200-1 die Schaffung von Informationssicherheit zeitlich?",
+            "explanation": "Informationssicherheit ist kein zeitlich begrenztes Projekt, sondern ein kontinuierlicher Prozess. Die Darstellung als einmaliges Projekt oder als Aufgabe nur bei Vorfällen widerspricht dieser Vorgabe.",
+            "quote": "Die Schaffung von Informationssicherheit ist kein zeitlich begrenztes Projekt, sondern ein kontinuierlicher Prozess.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Informationssicherheit als kontinuierlichen Prozess einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Als kontinuierlicher Prozess, nicht als zeitlich begrenztes Projekt.", "is_correct": true },
+                { "text": "Als einmaliges Einführungsprojekt mit Abschlussbericht.", "is_correct": false },
+                { "text": "Als Aufgabe, die nur nach Sicherheitsvorfällen zu bearbeiten ist.", "is_correct": false },
+                { "text": "Als jährliches Audit, das außerhalb davon ruht.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-002",
+            "text": "Was muss zur Aufrechterhaltung der Informationssicherheit regelmäßig überprüft werden?",
+            "explanation": "Die Angemessenheit und Wirksamkeit aller Elemente des Managementsystems für die Informationssicherheit müssen regelmäßig überprüft werden. Eine Beschränkung auf technische Maßnahmen oder Policies unterschlägt die Pflicht zur Prüfung der gesamten ISMS-Elemente.",
+            "quote": "Die Angemessenheit und Wirksamkeit aller Elemente des Managementsystems für die Informationssicherheit müssen regelmäßig überprüft werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Gegenstand der regelmäßigen ISMS-Überprüfung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Angemessenheit und Wirksamkeit aller Elemente des ISMS.", "is_correct": true },
+                { "text": "Nur die technischen Sicherheitsmaßnahmen.", "is_correct": false },
+                { "text": "Ausschließlich die schriftlichen Policies.", "is_correct": false },
+                { "text": "Nur die Funktionsfähigkeit der Firewall.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-003",
+            "text": "Wozu dienen interne Audits neben der Überprüfung der Umsetzung von Sicherheitsmaßnahmen?",
+            "explanation": "Interne Audits dienen auch dazu, die Erfahrungen aus der täglichen Praxis zusammenzutragen und auszuwerten. Eine primär kommerzielle oder Marketing-orientierte Nutzung nennt der Standard nicht.",
+            "quote": "Die Umsetzung der Sicherheitsmaßnahmen sollte in regelmäßigen Abständen mithilfe von internen Audits ausgewertet werden. Diese dienen auch dazu, die Erfahrungen aus der täglichen Praxis zusammenzutragen und auszuwerten.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den zusätzlichen Zweck interner Audits beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie sammeln und werten Erfahrungen aus der täglichen Praxis aus.", "is_correct": true },
+                { "text": "Sie ersetzen jährliche Managementbewertungen.", "is_correct": false },
+                { "text": "Sie dienen dem Marketing gegenüber Kunden.", "is_correct": false },
+                { "text": "Sie sind ausschließlich für die Beantragung von Zertifikaten bestimmt.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-004",
+            "text": "Warum sind Übungen und Sensibilisierungsmaßnahmen neben Audits notwendig?",
+            "explanation": "Nur durch Übungen und Sensibilisierungsmaßnahmen kann festgestellt werden, ob alle vorgesehenen Abläufe und das Verhalten in Notfallsituationen auch tatsächlich funktionieren. Reine Dokumentationskontrollen oder gesetzliche Pflichten werden im Passus nicht als Begründung angeführt.",
+            "quote": "Neben Audits ist die Durchführung von Übungen und Sensibilisierungsmaßnahmen notwendig, da nur so festgestellt werden kann, ob alle vorgesehenen Abläufe und das Verhalten in Notfallsituationen auch tatsächlich funktionieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck von Übungen und Sensibilisierungsmaßnahmen erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Nur so lässt sich prüfen, ob Abläufe und Verhalten in Notfallsituationen tatsächlich funktionieren.", "is_correct": true },
+                { "text": "Sie ersetzen die Dokumentation der Sicherheitsmaßnahmen.", "is_correct": false },
+                { "text": "Sie sind eine gesetzliche Pflicht nach der DSGVO.", "is_correct": false },
+                { "text": "Sie dienen der Akquise neuer Kunden durch Schulungsnachweise.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-005",
+            "text": "Welche Konsequenz fordert der Standard bei Erkenntnissen über Schwachstellen und Verbesserungsmöglichkeiten?",
+            "explanation": "Erkenntnisse über Schwachstellen und Verbesserungsmöglichkeiten müssen ohne Ausnahme zu Konsequenzen in der Sicherheitsorganisation führen. Ein reines Ablegen im Archiv oder eine Prüfung erst beim nächsten Audit reicht nicht aus.",
+            "quote": "Erkenntnisse über Schwachstellen und Verbesserungsmöglichkeiten müssen ohne Ausnahme zu Konsequenzen",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die verpflichtende Reaktion auf Schwachstellenerkenntnisse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": 31,
+            "answers": [
+                { "text": "Sie müssen ohne Ausnahme zu Konsequenzen in der Sicherheitsorganisation führen.", "is_correct": true },
+                { "text": "Sie werden archiviert und erst beim nächsten Audit erneut betrachtet.", "is_correct": false },
+                { "text": "Sie sind nur relevant, wenn sie extern berichtet werden.", "is_correct": false },
+                { "text": "Sie müssen nur dann bearbeitet werden, wenn sie Kundenbeziehungen betreffen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-006",
+            "text": "Wie muss sich der ISB bei absehbaren Änderungen in Geschäftsprozessen oder Organisationsstrukturen verhalten?",
+            "explanation": "Der ISB muss proaktiv tätig werden und soll nicht darauf warten, planmäßig eingebunden zu werden, sondern sich rechtzeitig eigenständig in die entsprechenden Prozesse einmischen. Ein rein reaktives Verhalten oder die Delegation an externe Dienstleister widerspricht dem Standard.",
+            "quote": "Der ISB muss auch proaktiv tätig werden: Auch wenn die Einbindung des Informationssicherheitsmanagements in den Organisationsverfügungen vorgesehen ist, sollte dieses nicht darauf warten, dass es wie geplant involviert wird, sondern sich rechtzeitig eigenständig in die entsprechenden Prozesse einmischen.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die proaktive Rolle des ISB bei organisatorischen Veränderungen erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 31,
+            "page_end": null,
+            "answers": [
+                { "text": "Er muss proaktiv tätig werden und sich rechtzeitig eigenständig einmischen.", "is_correct": true },
+                { "text": "Er wartet ab, bis er wie in den Organisationsverfügungen geplant eingebunden wird.", "is_correct": false },
+                { "text": "Er delegiert die Prüfung vollständig an einen externen Dienstleister.", "is_correct": false },
+                { "text": "Er reagiert erst nach dem nächsten internen Audit.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-007",
+            "text": "Welche personelle Vorgabe ist bei der Durchführung von Audits zu beachten?",
+            "explanation": "Audits sollten nicht von denjenigen durchgeführt werden, die an der Planung oder Konzeption von Sicherheitsvorgaben beteiligt waren, da es schwierig ist, eigene Fehler zu finden. Eine Besetzung ausschließlich durch den Ersteller oder den ISB persönlich widerspricht dieser Unabhängigkeitsforderung.",
+            "quote": "Bei allen Audits sollte darauf geachtet werden, dass sie nicht von denjenigen durchgeführt werden, die an der Planung oder Konzeption von Sicherheitsvorgaben beteiligt waren, da es schwierig ist, eigene Fehler zu finden.",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Das Unabhängigkeitsprinzip bei Audits erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 31,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie dürfen nicht von denjenigen durchgeführt werden, die die Sicherheitsvorgaben geplant oder konzipiert haben.", "is_correct": true },
+                { "text": "Sie müssen ausschließlich vom Ersteller der Sicherheitsvorgaben durchgeführt werden.", "is_correct": false },
+                { "text": "Sie dürfen nur vom ISB persönlich durchgeführt werden.", "is_correct": false },
+                { "text": "Sie sind zwingend von externen Prüfern mit Zertifikat durchzuführen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.4-008",
+            "text": "Was muss im Rahmen der jährlichen Managementbewertung durch die oberste Leitungsebene geprüft werden?",
+            "explanation": "Im Rahmen der jährlichen Managementbewertung muss die oberste Leitungsebene prüfen, ob es neue gesetzliche Vorgaben gibt, die beachtet werden müssen, oder ob sich sonstige Rahmenbedingungen geändert haben. Technische Konfigurationen oder Einzelmaßnahmen sind laut Standard hier nicht im Fokus.",
+            "quote": "Im Rahmen der jährlichen Managementbewertung muss von der obersten Leitungsebene auch überprüft werden, ob es neue gesetzliche Vorgaben gibt, die beachtet werden müssen, oder ob sich sonstige Rahmenbedingungen geändert haben.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Prüfpunkte der jährlichen Managementbewertung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 31,
+            "page_end": null,
+            "answers": [
+                { "text": "Ob neue gesetzliche Vorgaben zu beachten sind oder sich Rahmenbedingungen geändert haben.", "is_correct": true },
+                { "text": "Die konkrete Konfiguration jeder einzelnen Firewall-Regel.", "is_correct": false },
+                { "text": "Das Passwortverhalten jedes einzelnen Mitarbeiters.", "is_correct": false },
+                { "text": "Die Protokolldateien aller Server des Vorjahres.", "is_correct": false }
+            ]
+        }
+    ]
+}

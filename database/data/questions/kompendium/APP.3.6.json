@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.3.6",
+        "chapter_title": "DNS-Server",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.3.6-001",
+            "text": "Was MÜSSEN Advertising DNS-Server und Resolving DNS-Server laut APP.3.6 hinsichtlich ihrer Trennung erfüllen?",
+            "explanation": "Anforderung APP.3.6.A3 verlangt, dass Advertising DNS-Server und Resolving DNS-Server serverseitig getrennt sein müssen. Die Resolver der internen IT-Systeme dürfen nur die internen Resolving DNS-Server verwenden. Eine gemeinsame Nutzung auf demselben Server widerspricht dieser Anforderung.",
+            "quote": "Advertising DNS-Server und Resolving DNS-Server MÜSSEN serverseitig getrennt sein. Die Resolver der internen IT-Systeme DÜRFEN NUR die internen Resolving DNS-Server verwenden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Trennungsanforderung zwischen Advertising und Resolving DNS-Servern benennen.",
+            "baustein_id": "APP.3.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen serverseitig getrennt sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die internen Resolver dürfen nur die internen Resolving DNS-Server verwenden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen auf demselben physischen Server betrieben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Interne IT-Systeme dürfen externe DNS-Server direkt verwenden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.6-002",
+            "text": "Wie MÜSSEN Advertising DNS-Server laut APP.3.6 ausgelegt werden?",
+            "explanation": "Anforderung APP.3.6.A2 verlangt, dass Advertising DNS-Server redundant ausgelegt werden müssen. Für jeden Advertising DNS-Server muss es mindestens einen zusätzlichen Secondary DNS-Server geben. Ein einzelner DNS-Server ohne Redundanz genügt nicht.",
+            "quote": "Advertising DNS-Server MÜSSEN redundant ausgelegt werden. Für jeden Advertising DNS-Server MUSS es mindestens einen zusätzlichen Secondary DNS-Server geben.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Redundanzanforderung für Advertising DNS-Server benennen.",
+            "baustein_id": "APP.3.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Redundant, mit mindestens einem zusätzlichen Secondary DNS-Server",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein einzelner Server ohne Redundanz ist ausreichend",
+                    "is_correct": false
+                },
+                {
+                    "text": "Redundanz ist nur eine optionale Empfehlung bei erhöhtem Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es genügt ein Backup des DNS-Servers auf einem USB-Datenträger",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.6-003",
+            "text": "Was MUSS laut APP.3.6 bei der Konfiguration von Zonentransfers beachtet werden?",
+            "explanation": "Anforderung APP.3.6.A4 verlangt, dass Zonentransfers nur zwischen Primary und Secondary DNS-Servern möglich sein dürfen und auf bestimmte IP-Adressen beschränkt werden müssen. Die Version des DNS-Server-Produktes muss verborgen werden. Unbeschränkte Zonentransfers an alle Hosts sind nicht zulässig.",
+            "quote": "Zonentransfers MÜSSEN so konfiguriert werden, dass diese nur zwischen Primary und Secondary DNS-Servern möglich sind. Zonentransfers MÜSSEN auf bestimmte IP-Adressen beschränkt werden. Die Version des verwendeten DNS-Server-Produktes MUSS verborgen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Konfigurationsanforderungen für DNS-Zonentransfers benennen.",
+            "baustein_id": "APP.3.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zonentransfers dürfen nur zwischen Primary und Secondary DNS-Servern möglich sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zonentransfers müssen auf bestimmte IP-Adressen beschränkt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zonentransfers müssen für alle Hosts im Netzwerk zugänglich sein",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die DNS-Server-Version muss öffentlich sichtbar angezeigt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.6-004",
+            "text": "Was SOLLTE laut APP.3.6 in eine P-A-P-Struktur integriert werden und wo SOLLTEN die DNS-Server platziert sein?",
+            "explanation": "Anforderung APP.3.6.A16 empfiehlt die Integration in eine Paketfilter-Application-Level-Gateway-Paketfilter-Struktur. Der Advertising DNS-Server sollte in einer DMZ des äußeren Paketfilters angesiedelt sein, der Resolving DNS-Server in einer DMZ des inneren Paketfilters. Dies gewährleistet eine angemessene Netzsegmentierung.",
+            "quote": "Die DNS-Server SOLLTEN in eine „Paketfilter – Application-Level-Gateway – Paketfilter\"-(P-A-P)-Struktur integriert werden. Der Advertising DNS-Server SOLLTE in diesem Fall in einer demilitarisierten Zone (DMZ) des äußeren Paketfilters angesiedelt sein. Der Resolving DNS-Server SOLLTE in einer DMZ des inneren Paketfilters aufgestellt sein.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlene Platzierung von DNS-Servern in einer P-A-P-Struktur erläutern.",
+            "baustein_id": "APP.3.6",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der Advertising DNS-Server sollte in der DMZ des äußeren Paketfilters stehen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Resolving DNS-Server sollte in der DMZ des inneren Paketfilters stehen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Beide DNS-Server sollten direkt im internen Netz ohne Paketfilter stehen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Resolving DNS-Server sollte direkt im Internet platziert werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

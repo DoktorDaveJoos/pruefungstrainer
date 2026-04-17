@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.9",
+        "chapter_title": "Terminalserver",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.9-001",
+            "text": "Was DARF laut SYS.1.9.A3 auf Terminalservern NICHT verwendet werden, wenn es gegen interne Regelungen oder Lizenzbedingungen verstößt?",
+            "explanation": "SYS.1.9.A3 verbietet die Verwendung von Sammelkonten auf Terminalservern, wenn dies gegen interne Regelungen oder Lizenzbedingungen verstößt. Dies ist wichtig, da bei Sammelkonten ausgeführte Aktionen nicht konkreten Personen zugeordnet werden können.",
+            "quote": "Auf Terminalservern DÜRFEN KEINE Sammelkonten verwendet werden, wenn dies gegen interne Regelungen oder Lizenzbedingungen verstößt.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Verbot von Sammelkonten auf Terminalservern gemäß SYS.1.9.A3 benennen.",
+            "baustein_id": "SYS.1.9",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sammelkonten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Administrationskonten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dienstkonten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Gastkonten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.9-002",
+            "text": "In welchen Netzsegmenten MUSS der Terminalserver laut SYS.1.9.A8 positioniert werden?",
+            "explanation": "SYS.1.9.A8 fordert als Basis-Anforderung, dass der Terminalserver in dedizierten Netzsegmenten oder in Client-Netzsegmenten positioniert werden muss. Innerhalb von Client-Netzsegmenten müssen Terminalserver identifizierbar sein. Eine bestehende Netztrennung darf nicht über einen Terminalserver umgangen werden können.",
+            "quote": "Der Terminalserver MUSS in dedizierten Netzsegmenten oder in Client-Netzsegmenten positioniert werden. Innerhalb von Client-Netzsegmenten MÜSSEN Terminalserver identifizierbar sein. Eine bestehende Netztrennung DARF NICHT über einen Terminalserver umgangen werden können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Netzsegment-Anforderungen für Terminalserver gemäß SYS.1.9.A8 wiedergeben.",
+            "baustein_id": "SYS.1.9",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In dedizierten Netzsegmenten oder in Client-Netzsegmenten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich in der demilitarisierten Zone (DMZ)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Im gleichen Netzsegment wie die Datenbankserver",
+                    "is_correct": false
+                },
+                {
+                    "text": "In einem beliebigen verfügbaren Netzsegment",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.9-003",
+            "text": "Was SOLLTE laut SYS.1.9.A12 mit inaktiven Sitzungen auf Terminalservern geschehen?",
+            "explanation": "SYS.1.9.A12 empfiehlt, dass inaktive Sitzungen nach einem vordefinierten Zeitraum beendet werden sollten. Der Zeitraum sollte abhängig von der jeweiligen Benutzendengruppe festgelegt werden. Falls eine Sitzung beendet wird, sollte auch der Benutzende automatisch abgemeldet werden.",
+            "quote": "Inaktive Sitzungen auf Terminalservern SOLLTEN nach einem vordefinierten Zeitraum beendet werden. Der Zeitraum, während dessen eine Sitzung maximal aktiv bleiben soll, SOLLTE abhängig von der jeweiligen Benutzendengruppe festgelegt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Umgang mit inaktiven Sitzungen auf Terminalservern gemäß SYS.1.9.A12 beschreiben.",
+            "baustein_id": "SYS.1.9",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie sollten nach einem vordefinierten Zeitraum beendet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie sollten dauerhaft aktiv gehalten werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie sollten an einen anderen Terminalserver weitergeleitet werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie sollten auf einen Thin Client migriert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.9-004",
+            "text": "Was SOLLTE laut SYS.1.9.A22 bei erhöhtem Schutzbedarf auf Terminalservern deaktiviert werden?",
+            "explanation": "SYS.1.9.A22 empfiehlt bei erhöhtem Schutzbedarf, dass der Transfer von Anwendungsdaten zwischen Client und Terminalserver deaktiviert werden sollte, einschließlich des Transfers der Zwischenablage. Dies verhindert unkontrollierten Datenabfluss.",
+            "quote": "Der Transfer von Anwendungsdaten zwischen dem Client und dem Terminalserver SOLLTE deaktiviert werden. Auch der Transfer der Zwischenablage SOLLTE deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die bei erhöhtem Schutzbedarf zu deaktivierenden Datentransfers gemäß SYS.1.9.A22 benennen.",
+            "baustein_id": "SYS.1.9",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der Transfer von Anwendungsdaten zwischen Client und Terminalserver",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Transfer der Zwischenablage",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Netzwerkverbindung zwischen Client und Server",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Bildschirmausgabe am Client",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

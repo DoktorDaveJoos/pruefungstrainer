@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.3.3",
+        "chapter_title": "VPN",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.3.3-001",
+            "text": "Was MUSS laut NET.3.3 bei der Planung des VPN-Einsatzes festgelegt werden?",
+            "explanation": "NET.3.3.A1 fordert eine sorgfältige Planung, bei der die Verantwortlichkeiten für den VPN-Betrieb, Benutzendengruppen mit ihren Berechtigungen sowie die Dokumentation von Zugriffsberechtigungen festgelegt werden müssen.",
+            "quote": "Die Einführung eines VPN MUSS sorgfältig geplant werden. Dabei MÜSSEN die Verantwortlichkeiten für den VPN-Betrieb festgelegt werden. Es MÜSSEN für das VPN zudem Benutzendengruppen und deren Berechtigungen geplant werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Planungsanforderungen für den VPN-Einsatz gemäß NET.3.3 benennen.",
+            "baustein_id": "NET.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Verantwortlichkeiten für den VPN-Betrieb sowie Benutzendengruppen und deren Berechtigungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur die technische Verschlüsselungsstärke des VPN-Tunnels",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich die Hardware-Anforderungen der VPN-Endgeräte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Auswahl des Internet-Service-Providers für das VPN",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.3-002",
+            "text": "Was MUSS laut NET.3.3 regelmäßig für VPN-Zugänge geprüft werden?",
+            "explanation": "NET.3.3.A5 fordert, dass regelmäßig geprüft wird, ob ausschließlich berechtigte IT-Systeme und Benutzende auf das VPN zugreifen können. Nicht mehr benötigte Zugänge müssen zeitnah deaktiviert und der Zugriff auf benötigte Benutzungszeiten beschränkt werden.",
+            "quote": "Es MUSS regelmäßig geprüft werden, ob ausschließlich berechtigte IT-Systeme und Benutzende auf das VPN zugreifen können. Nicht mehr benötigte VPN-Zugänge MÜSSEN zeitnah deaktiviert werden. Der VPN-Zugriff MUSS auf die benötigten Benutzungszeiten beschränkt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Prüf- und Sperrpflichten für VPN-Zugänge gemäß NET.3.3 beschreiben.",
+            "baustein_id": "NET.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ob ausschließlich berechtigte IT-Systeme und Benutzende zugreifen können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ob nicht mehr benötigte Zugänge zeitnah deaktiviert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ob die VPN-Bandbreite für alle Benutzenden ausreicht",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ob die VPN-Software auf dem neuesten Stand ist",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.3-003",
+            "text": "Wohin SOLLTEN laut NET.3.3 die VPN-Komponenten integriert werden?",
+            "explanation": "NET.3.3.A13 empfiehlt, die VPN-Komponenten in die Firewall zu integrieren. Dies sollte dokumentiert werden.",
+            "quote": "Die VPN-Komponenten SOLLTEN in die Firewall integriert werden. Dies SOLLTE dokumentiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene Integration von VPN-Komponenten in die Firewall gemäß NET.3.3 benennen.",
+            "baustein_id": "NET.3.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In die Firewall",
+                    "is_correct": true
+                },
+                {
+                    "text": "In einen dedizierten VPN-Server im internen Netz",
+                    "is_correct": false
+                },
+                {
+                    "text": "In das Active Directory",
+                    "is_correct": false
+                },
+                {
+                    "text": "In die DMZ ohne Firewall-Anbindung",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

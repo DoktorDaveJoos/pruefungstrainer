@@ -1,0 +1,61 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "Section 9.3 has a systematic quote rendering issue: soft-hyphen line breaks in the source were rendered as spaces in the quotes rather than being joined. This affects questions 9.3-002 ('Verein barungen' vs 'Vereinbarungen'), 9.3-003 ('Zu griffsberechtigungen' vs 'Zugriffsberechtigungen'), 9.3-004 ('aus gehen' vs 'ausgehen'), 9.3-005 ('Bedro hungsanalysen' vs 'Bedrohungsanalysen'), and 9.3-006 ('IT-Syste me' vs 'IT-Systeme'). After applying the rubric's normalization rules, these quote fragments are not verbatim substrings of the normalized source because the source normalizes the soft-hyphen breaks to joined words while the quotes preserve the space. The correct answers are all fully supported by the source text. Question 9.3-004 labeled 'experte' is appropriate as it requires understanding a nuanced boundary condition. All other questions are well-formed and accurate in substance.",
+    "results": [
+        {
+            "external_id": "bsi-200-3-9.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.3-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote has 'Verein barungen' (space) but normalized source reads 'Vereinbarungen' (soft-hyphen joined). Correct answer is still supported."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote has 'Zu griffsberechtigungen' (space) but normalized source reads 'Zugriffsberechtigungen' (soft-hyphen joined). Correct answer is still supported."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote fragment 2 has 'aus gehen' (space) but normalized source reads 'ausgehen' (soft-hyphen joined). Correct answer is still supported."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote has 'Bedro hungsanalysen' (space) but normalized source reads 'Bedrohungsanalysen' (soft-hyphen joined). Correct answer is still supported."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-006",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote has 'IT-Syste me' (space) but normalized source reads 'IT-Systeme' (soft-hyphen joined). Correct answer is still supported."
+                }
+            ]
+        }
+    ]
+}

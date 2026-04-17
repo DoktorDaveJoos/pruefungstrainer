@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.3.2",
+        "chapter_title": "Webserver",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.3.2-001",
+            "text": "Was MUSS laut APP.3.2 bei der sicheren Grundkonfiguration eines Webservers beachtet werden?",
+            "explanation": "Anforderung APP.3.2.A1 verlangt, dass der Webserver-Prozess einem Konto mit minimalen Rechten zugewiesen wird und in einer gekapselten Umgebung ausgeführt werden muss, sofern das Betriebssystem dies unterstützt. Nicht benötigte Module und Funktionen müssen deaktiviert und nicht notwendige Schreibberechtigungen entzogen werden.",
+            "quote": "Dazu MUSS er insbesondere den Webserver-Prozess einem Konto mit minimalen Rechten zuweisen. Der Webserver MUSS in einer gekapselten Umgebung ausgeführt werden, sofern dies vom Betriebssystem unterstützt wird. • Nicht benötigte Module und Funktionen des Webservers MÜSSEN deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderungen für die sichere Grundkonfiguration eines Webservers benennen.",
+            "baustein_id": "APP.3.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der Webserver-Prozess muss einem Konto mit minimalen Rechten zugewiesen werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nicht benötigte Module und Funktionen müssen deaktiviert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Webserver soll mit Administratorrechten ausgeführt werden, um maximale Leistung zu erzielen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle verfügbaren Module müssen aktiviert werden, um maximale Kompatibilität zu gewährleisten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.2-002",
+            "text": "Was MUSS laut APP.3.2 hinsichtlich der Dateien auf dem Webserver sichergestellt werden?",
+            "explanation": "Anforderung APP.3.2.A2 verlangt, dass alle Dateien auf dem Webserver vor unbefugtem Lesen und Ändern geschützt werden müssen. Webanwendungen dürfen nur auf einen definierten Verzeichnisbaum zugreifen (WWW-Wurzelverzeichnis) und der Webserver darf nur Dateien innerhalb dieses Verzeichnisses ausliefern. Funktionen, die Verzeichnisse auflisten, müssen deaktiviert werden.",
+            "quote": "Der IT-Betrieb MUSS alle Dateien auf dem Webserver, insbesondere Skripte und Konfigurationsdateien, so schützen, dass sie nicht unbefugt gelesen und geändert werden können. • Der Webserver MUSS so konfiguriert sein, dass er nur Dateien ausliefert, die sich innerhalb des WWW-Wurzelverzeichnisses befinden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen zum Schutz der Webserver-Dateien gemäß APP.3.2 benennen.",
+            "baustein_id": "APP.3.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Dateien müssen vor unbefugtem Lesen und Ändern geschützt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Webserver darf nur Dateien innerhalb des WWW-Wurzelverzeichnisses ausliefern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Dateien sollen öffentlich lesbar sein, um Transparenz zu gewährleisten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Konfigurationsdateien müssen im öffentlichen Verzeichnis abgelegt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.2-003",
+            "text": "Welche Ereignisse MUSS ein Webserver laut APP.3.2 mindestens protokollieren?",
+            "explanation": "Anforderung APP.3.2.A4 verlangt die Protokollierung von mindestens drei Kategorien: erfolgreiche Zugriffe auf Ressourcen, fehlgeschlagene Zugriffe aufgrund mangelnder Berechtigung, nicht vorhandener Ressourcen und Server-Fehler, sowie allgemeine Fehlermeldungen.",
+            "quote": "Der Webserver MUSS mindestens folgende Ereignisse protokollieren: erfolgreiche Zugriffe auf Ressourcen, fehlgeschlagene Zugriffe auf Ressourcen aufgrund von mangelnder Berechtigung, nicht vorhandenen Ressourcen und Server-Fehlern sowie allgemeine Fehlermeldungen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestanforderungen an die Protokollierung von Webserver-Ereignissen benennen.",
+            "baustein_id": "APP.3.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Erfolgreiche Zugriffe auf Ressourcen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Fehlgeschlagene Zugriffe aufgrund mangelnder Berechtigung oder nicht vorhandener Ressourcen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Tastatureingaben der Benutzenden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die vollständige HTTP-Body-Inhalte aller Anfragen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.2-004",
+            "text": "Was MUSS laut APP.3.2 bei der Verschlüsselung über TLS für Webserver gelten?",
+            "explanation": "Anforderung APP.3.2.A11 verlangt, dass der Webserver für alle Verbindungen durch nicht vertrauenswürdige Netze eine sichere Verschlüsselung über TLS anbieten muss (HTTPS). Bei einer HTTPS-Verbindung müssen alle Inhalte über HTTPS ausgeliefert werden und sogenannter Mixed Content darf nicht verwendet werden.",
+            "quote": "Der Webserver MUSS für alle Verbindungen durch nicht vertrauenswürdige Netze eine sichere Verschlüsselung über TLS anbieten (HTTPS). • Wenn eine HTTPS-Verbindung genutzt wird, MÜSSEN alle Inhalte über HTTPS ausgeliefert werden. Sogenannter Mixed Content DARF NICHT verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die TLS-Verschlüsselung bei Webservern benennen.",
+            "baustein_id": "APP.3.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Alle Verbindungen durch nicht vertrauenswürdige Netze müssen über TLS (HTTPS) verschlüsselt sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mixed Content darf nicht verwendet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "TLS ist nur für externe Verbindungen erforderlich, intern genügt HTTP",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mixed Content ist akzeptabel, solange die Hauptseite über HTTPS geladen wird",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

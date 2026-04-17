@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Enums\BsiTopic;
 use App\Enums\QuestionDifficulty;
+use App\Enums\SourceDocument;
 use App\Models\Module;
 use App\Models\Question;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -18,15 +19,19 @@ class QuestionFactory extends Factory
     public function definition(): array
     {
         return [
+            'external_id' => 'test-'.fake()->unique()->uuid(),
             'module_id' => Module::factory(),
             'text' => fake()->sentence(12).'?',
             'explanation' => fake()->paragraph(),
-            'quote' => fake()->optional()->sentence(20),
-            'source' => fake()->optional()->randomElement([
-                'BSI-Standard 200-1, Kapitel 2, S. 8',
-                'BSI-Standard 200-2, Kapitel 4, S. 17',
-                'IT-Grundschutz-Kompendium, SYS.1.1',
-            ]),
+            'quote' => fake()->sentence(20),
+            'learning_objective' => null,
+            'source_document' => SourceDocument::Bsi2002,
+            'source_chapter' => '4.2',
+            'source_chapter_title' => 'Schutzbedarfsfeststellung',
+            'source_page_start' => fake()->numberBetween(10, 200),
+            'source_page_end' => null,
+            'source_baustein_id' => null,
+            'source_anforderung_type' => null,
             'topic' => null,
             'difficulty' => null,
         ];

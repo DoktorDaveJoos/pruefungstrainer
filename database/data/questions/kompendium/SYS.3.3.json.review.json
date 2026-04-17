@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three Mobiltelefon questions from A3/A6/A12. All pass cleanly.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.3.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.3.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.3.3-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

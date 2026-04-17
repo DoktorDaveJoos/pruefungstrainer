@@ -1,0 +1,40 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Seven questions on the IT-Grundschutz-Kompendium application section. Five pass cleanly. Questions 001 and 006 have page_start=17 which is below the manifest section page_start=18, caused by the same manifest boundary artifact seen in other chapters. Their quotes are verbatim in the full source and the content is semantically correct for chapter 2.7. Question 004 is labeled 'experte' for identifying RFC 2119 and DIN 820-2 as the basis for Modalverben definitions -- this is pure recall of two references from a single sentence rather than synthesis, flagged as borderline difficulty. All correct answers are source-supported; all distractors are clearly wrong. Topic assignments are well-chosen: 'modellierung' for requirements interpretation content, 'bausteine' for Umsetzungshinweise and Baukastenprinzip.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-2.7-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=17 is below section manifest page_start=18. Quote is found in the 2.6 char range overlap but content is semantically correct for chapter 2.7."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-2.7-002", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.7-003", "verdict": "pass", "issues": [] },
+        {
+            "external_id": "bsi-200-2-2.7-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "detail": "Labeled 'experte' but the question asks for two reference names (RFC 2119, DIN 820-2) stated in a single sentence. This is one-step recall, not synthesis. More consistent with 'basis' difficulty."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-2.7-005", "verdict": "pass", "issues": [] },
+        {
+            "external_id": "bsi-200-2-2.7-006",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=17 is below section manifest page_start=18. Same manifest boundary artifact. Content is correct for chapter 2.7."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-2.7-007", "verdict": "pass", "issues": [] }
+    ]
+}

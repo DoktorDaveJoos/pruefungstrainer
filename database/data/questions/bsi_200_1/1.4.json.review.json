@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T00:00:00Z",
+    "critic_notes": "Solid section. All six quotes normalize cleanly to verbatim substrings of the source (Q003 is a bullet list joined with ' • '; each fragment appears individually in the normalized source). Correct answers are directly supported and distractors are clearly wrong. Topic assignments are sensible: the two ISMS-definition items (Q001, Q002) carry 'methodik', the BSI-document/Kompendium-scope items (Q003–Q006) carry 'standards'. Difficulty labels ('basis') are appropriate for one-step paraphrases. Schema is correct for a Standards doc; page numbers fall inside 7..8.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-1.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.4-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.4-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.4-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.4-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

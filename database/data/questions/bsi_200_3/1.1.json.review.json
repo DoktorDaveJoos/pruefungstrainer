@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All six questions in section 1.1 are well-constructed and accurately reflect the Versionshistorie. Quotes are verbatim after normalization (soft-hyphen line breaks in the source produce correct joined words). Topic 'standards' is appropriate since this section describes the document's own history. All questions are 'basis' difficulty, which is appropriate for straightforward recall from a table. Schema fields (baustein_id, anforderung_type both null) are correct for a Standards document.",
+    "results": [
+        {
+            "external_id": "bsi-200-3-1.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.1-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

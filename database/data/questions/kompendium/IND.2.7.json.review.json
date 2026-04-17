@@ -1,0 +1,49 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "IND.2.7 Safety Instrumented Systems (SIS): 3 questions on SIS purpose, SIL (Sicherheits-Integritätslevel), and component-integrity scope. All quotes in full source but outside the manifest range — IND.* manifest drift. Two questions (001, 002) have null anforderung_type. Topic `bausteine` fits. Correct answers faithful to source; distractors unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-ind.2.7-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `SIS werden eingesetzt, um Gefahren für technische Anlagen, die Umwelt und Personen abzuweh...` found in full source but outside manifest range + buffer — manifest boundaries significantly misaligned with actual chapter content."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.7-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Das Maß an Zuverlässigkeit wird mit Hilfe des vierstufigen Sicherheits-Integritätslevels (...` found in full source but outside manifest range + buffer — manifest boundaries significantly misaligned with actual chapter content."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.7-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Hard- und Softwarekomponenten, die zum SIS gehören oder im Zusammenhang mit diesem gen...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        }
+    ]
+}

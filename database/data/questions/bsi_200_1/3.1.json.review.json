@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 3.1 is clean: all five questions are single-quote, one-step paraphrases drawn verbatim from the two short paragraphs on pages 16-17 about Sicherheitsstrategie, Leitlinie, Sicherheitsorganisation and Sicherheitskonzept. Correct answers are supported word-for-word, distractors are unambiguously wrong, topic methodik fits (ISMS governance roles), basis difficulty is appropriate, page_start 16 is inside range, and schema null/null is correct for a Standards doc.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-3.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-3.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-3.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-3.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-3.1-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

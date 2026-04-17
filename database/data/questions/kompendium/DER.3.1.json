@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "DER.3.1",
+        "chapter_title": "Audits und Revisionen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-der.3.1-001",
+            "text": "Was MUSS laut DER.3.1.A1 die Institutionsleitung bei Audits und Revisionen tun?",
+            "explanation": "Die Institutionsleitung muss eine Person benennen, die dafür zuständig ist, Audits bzw. Revisionen zu planen und zu initiieren. Dabei muss darauf geachtet werden, dass keine Interessenkonflikte entstehen.",
+            "quote": "Die Institutionsleitung MUSS eine Person benennen, die dafür zuständig ist, Audits bzw. Revisionen zu planen und zu initiieren. Dabei MUSS die Institutionsleitung darauf achten, dass keine Interessenkonflikte entstehen.",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Die Verantwortlichkeiten der Institutionsleitung bei Audits nach DER.3.1.A1 benennen.",
+            "baustein_id": "DER.3.1.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine zuständige Person benennen und auf die Vermeidung von Interessenkonflikten achten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Audits selbst durchführen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Audits nur bei konkretem Verdacht auf Sicherheitsmängel anordnen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Ergebnisse der Audits vertraulich behandeln und nicht weiterleiten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.3.1-002",
+            "text": "Was unterscheidet laut DER.3.1 ein Audit von einer Revision?",
+            "explanation": "Ein Audit ist eine systematische, unabhängige Prüfung gegen definierte Anforderungen. Eine Revision muss nicht unbedingt unabhängig erfolgen und kann auch die Nachbesserung umfassen.",
+            "quote": "Als Audit wird eine systematische, unabhängige Prüfung von Aktivitäten und deren Ergebnissen bezeichnet. • Im Gegensatz zum Audit muss die Revision nicht unbedingt unabhängig erfolgen. Zudem kann die Revision im Sinne einer Wartung auch bereits die Nachbesserung umfassen.",
+            "topic": "check",
+            "difficulty": "experte",
+            "learning_objective": "Den Unterschied zwischen Audit und Revision nach DER.3.1 differenzieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein Audit ist unabhängig, eine Revision muss nicht unabhängig sein und kann Nachbesserung umfassen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein Audit prüft nur technische Aspekte, eine Revision nur organisatorische",
+                    "is_correct": false
+                },
+                {
+                    "text": "Audits werden intern, Revisionen immer extern durchgeführt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es gibt keinen wesentlichen Unterschied, die Begriffe sind synonym",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.3.1-003",
+            "text": "Welche Arten von Audits behandelt der Baustein DER.3.1 laut seiner Abgrenzung?",
+            "explanation": "DER.3.1 behandelt interne Audits (Erstparteien-Audits) und Audits bei Dienstleistenden (Zweitparteien-Audits). Zertifizierungsaudits (Drittparteien-Audits) werden nicht berücksichtigt.",
+            "quote": "Das betrifft interne Audits (Erstparteien-Audits) und Revisionen sowie Audits bei Dienstleistenden der Institution (Zweitparteien-Audits) oder anderen Institutionen, mit denen die Institution eine Partnerschaft eingegangen ist. Zertifizierungsaudits (Drittparteien-Audits) werden in diesem Baustein nicht berücksichtigt.",
+            "topic": "check",
+            "difficulty": "experte",
+            "learning_objective": "Den Anwendungsbereich von DER.3.1 hinsichtlich der Audit-Arten abgrenzen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Erstparteien-Audits (intern) und Zweitparteien-Audits (bei Dienstleistenden), nicht aber Zertifizierungsaudits",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich Zertifizierungsaudits (Drittparteien-Audits)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle drei Audit-Arten einschließlich Zertifizierungsaudits",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur externe Audits durch Behörden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

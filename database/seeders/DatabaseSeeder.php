@@ -10,11 +10,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             ModuleSeeder::class,
-            SampleQuestionsSeeder::class,
-            BsiStandard2001QuestionsSeeder::class,
-            BsiStandard2002QuestionsSeeder::class,
-            BsiStandard2003QuestionsSeeder::class,
-            ItGrundschutzKompendiumQuestionsSeeder::class,
+            QuestionSeeder::class,
         ]);
     }
 }

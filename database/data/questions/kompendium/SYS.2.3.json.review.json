@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Linux/Unix client questions from A1/A3/A4/A11. All pass cleanly.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.2.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.3-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.3-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

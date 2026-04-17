@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.6",
+        "chapter_title": "Containerisierung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.6-001",
+            "text": "Was MUSS laut SYS.1.6.A6 für alle verwendeten Container-Images sichergestellt sein?",
+            "explanation": "SYS.1.6.A6 fordert als Basis-Anforderung, dass sämtliche verwendeten Images nur aus vertrauenswürdigen Quellen stammen müssen und es eindeutig identifizierbar sein muss, wer das Image erstellt hat. Die verwendete Version von Basis-Images darf nicht abgekündigt (deprecated) sein.",
+            "quote": "Es MUSS sichergestellt sein, dass sämtliche verwendeten Images nur aus vertrauenswürdigen Quellen stammen. Es MUSS eindeutig identifizierbar sein, wer das Image erstellt hat. • Die verwendete Version von Basis-Images DARF NICHT abgekündigt (\u201edeprecated\u201c) sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an Container-Images gemäß SYS.1.6.A6 benennen.",
+            "baustein_id": "SYS.1.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie dürfen nur aus vertrauenswürdigen Quellen stammen", "is_correct": true },
+                { "text": "Der Ersteller des Images muss eindeutig identifizierbar sein", "is_correct": true },
+                { "text": "Sie müssen auf dem neuesten Betriebssystem basieren", "is_correct": false },
+                { "text": "Sie müssen mindestens zwei Container-Runtimes unterstützen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.6-002",
+            "text": "Wo MUSS laut SYS.1.6.A7 die Speicherung der Protokollierungsdaten der Container mindestens erfolgen?",
+            "explanation": "SYS.1.6.A7 fordert als Basis-Anforderung, dass die Speicherung der Protokollierungsdaten der Container außerhalb des Containers, mindestens auf dem Container-Host, erfolgen muss. Dies stellt sicher, dass Protokolldaten auch nach einem Container-Ausfall verfügbar bleiben.",
+            "quote": "Die Speicherung der Protokollierungsdaten der Container MUSS außerhalb des Containers, mindestens auf dem Container-Host, erfolgen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Speicherort für Container-Protokollierungsdaten gemäß SYS.1.6.A7 benennen.",
+            "baustein_id": "SYS.1.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Außerhalb des Containers, mindestens auf dem Container-Host", "is_correct": true },
+                { "text": "Innerhalb des Containers in einem geschützten Verzeichnis", "is_correct": false },
+                { "text": "Auf einem externen Cloud-Speicher", "is_correct": false },
+                { "text": "Auf einem separaten Datenbankserver", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.6-003",
+            "text": "Welche Zugangsdaten MÜSSEN laut SYS.1.6.A8 bei Containern besonders sicher gespeichert werden?",
+            "explanation": "SYS.1.6.A8 listet explizit vier Arten von Zugangsdaten auf, die sicher gespeichert werden müssen: Passwörter jeglicher Accounts, API-Keys, Schlüssel für symmetrische Verschlüsselungen sowie private Schlüssel bei Public-Key-Authentisierung. Zugangsdaten dürfen nicht in den Images liegen.",
+            "quote": "Mindestens die folgenden Zugangsdaten MÜSSEN sicher gespeichert werden: • Passwörter jeglicher Accounts, • API-Keys für von der Anwendung genutzte Dienste, • Schlüssel für symmetrische Verschlüsselungen sowie • private Schlüssel bei Public-Key-Authentisierung.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die gemäß SYS.1.6.A8 sicher zu speichernden Zugangsdaten bei Containern identifizieren.",
+            "baustein_id": "SYS.1.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Passwörter jeglicher Accounts und API-Keys", "is_correct": true },
+                { "text": "Schlüssel für symmetrische Verschlüsselungen und private Schlüssel bei Public-Key-Authentisierung", "is_correct": true },
+                { "text": "Öffentliche Schlüssel und Zertifikate der Container-Runtime", "is_correct": false },
+                { "text": "IP-Adressen und DNS-Einträge der Container", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.6-004",
+            "text": "Welche zwei Typen von Containern werden im Baustein SYS.1.6 unterschieden?",
+            "explanation": "Der Baustein SYS.1.6 unterscheidet zwischen Applikations-Containern (z. B. nach OCI-Spezifikation) und System-Containern (z. B. FreeBSD Jails, Solaris Zones, LXC, LXD). System-Container stellen eine betriebssystemähnliche Umgebung bereit, während Applikations-Container für eine einzelne Anwendung gedacht sind.",
+            "quote": "Es findet eine Unterscheidung zwischen Applikations-Containern (z. B. nach der Spezifikation der Open Container Initiative / OCI) und System-Containern statt. System-Container sind der älteste Typ von Containern, wie z. B. FreeBSD Jails, Solaris Zones, OpenVZ, LXC und LXD. • Applikations-Container hingegen sind speziell für den Fall gedacht, eine einzelne Anwendung auszuführen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die zwei Container-Typen gemäß Baustein SYS.1.6 unterscheiden.",
+            "baustein_id": "SYS.1.6",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Applikations-Container und System-Container", "is_correct": true },
+                { "text": "Produktions-Container und Entwicklungs-Container", "is_correct": false },
+                { "text": "Virtuelle Container und physische Container", "is_correct": false },
+                { "text": "Cloud-Container und On-Premise-Container", "is_correct": false }
+            ]
+        }
+    ]
+}

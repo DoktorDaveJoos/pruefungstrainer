@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "8.3",
+        "chapter_title": "Modellierung eines Informationsverbunds",
+        "page_start": 144,
+        "page_end": 144
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-8.3-001",
+            "text": "Welche Eigenschaften werden im Rahmen der Modellierung als Bewertungskriterien für Sicherheitsmaßnahmen genannt?",
+            "explanation": "Der Abschnitt nennt Eignung, Praktikabilität, Akzeptanz und Wirtschaftlichkeit als Kriterien, die Sicherheitsmaßnahmen erfüllen sollen. „Normkonformität“ als eigenständiges Kriterium wird in diesem Abschnitt nicht aufgeführt.",
+            "quote": "Eignung: Sie müssen in der Praxis tatsächlich umsetzbar sein, dürfen also z. B. nicht die Organisa tionsabläufe zu stark behindern oder andere Sicherheitsmaßnahmen aushebeln. • Praktikabilität: Sie sollen leicht verständlich, einfach anzuwenden und wenig fehleranfällig sein. • Akzeptanz: Sie müssen für alle Benutzer anwendbar (barrierefrei) sein und dürfen niemanden dis kriminieren oder beeinträchtigen. • Wirtschaftlichkeit: Mit den eingesetzten Mitteln sollte ein möglichst gutes Ergebnis erreicht wer den.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Qualitätskriterien für Sicherheitsmaßnahmen im Rahmen der Modellierung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 144,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eignung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Praktikabilität",
+                    "is_correct": true
+                },
+                {
+                    "text": "Akzeptanz",
+                    "is_correct": true
+                },
+                {
+                    "text": "Normkonformität",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.3-002",
+            "text": "Was bedeutet das Kriterium „Akzeptanz“ für Sicherheitsmaßnahmen?",
+            "explanation": "Laut Text müssen Sicherheitsmaßnahmen für alle Benutzer anwendbar (barrierefrei) sein und dürfen niemanden diskriminieren oder beeinträchtigen. Kostengünstigkeit ist dem Kriterium Wirtschaftlichkeit zugeordnet, Fehlerarmut der Praktikabilität, und Umsetzbarkeit ohne Störung der Abläufe der Eignung.",
+            "quote": "Akzeptanz: Sie müssen für alle Benutzer anwendbar (barrierefrei) sein und dürfen niemanden dis kriminieren oder beeinträchtigen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Das Kriterium Akzeptanz für Sicherheitsmaßnahmen definieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 144,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Maßnahme muss für alle Benutzer anwendbar (barrierefrei) sein und darf niemanden diskriminieren oder beeinträchtigen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Maßnahme muss möglichst kostengünstig sein",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Maßnahme muss leicht verständlich und wenig fehleranfällig sein",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Maßnahme darf die Organisationsabläufe nicht zu stark behindern",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.3-003",
+            "text": "Wie wird das Kriterium „Wirtschaftlichkeit“ für Sicherheitsmaßnahmen im Abschnitt 8.3 konkretisiert?",
+            "explanation": "Wirtschaftliche Sicherheitsmaßnahmen sollen das Risiko bestmöglich minimieren und in geeignetem Verhältnis zu den zu schützenden Werten stehen – nicht maximal teuer, nicht von einer Mindestzertifizierung abhängig und nicht maximal technikintensiv sein.",
+            "quote": "Wirtschaftlichkeit: Mit den eingesetzten Mitteln sollte ein möglichst gutes Ergebnis erreicht wer den. Die Sicherheitsmaßnahmen sollten also einerseits das Risiko bestmöglich minimieren und an dererseits in geeignetem Verhältnis zu den zu schützenden Werten stehen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Das Kriterium Wirtschaftlichkeit bei Sicherheitsmaßnahmen erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 144,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das Risiko bestmöglich minimieren und in geeignetem Verhältnis zu den zu schützenden Werten stehen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich Maßnahmen mit gültiger Herstellerzertifizierung einsetzen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Maximale Technikinvestitionen vor allen organisatorischen Maßnahmen bevorzugen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das höchstmögliche Budget für alle Maßnahmen einplanen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.3-004",
+            "text": "Welche Eigenschaft fordert das Kriterium „Praktikabilität“ für Sicherheitsmaßnahmen?",
+            "explanation": "Praktikable Maßnahmen sollen leicht verständlich, einfach anzuwenden und wenig fehleranfällig sein. Die anderen Optionen gehören zu Akzeptanz (barrierefrei), Eignung (keine Aushebelung anderer Maßnahmen) und Wirtschaftlichkeit (Verhältnis zu Werten).",
+            "quote": "Praktikabilität: Sie sollen leicht verständlich, einfach anzuwenden und wenig fehleranfällig sein.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Das Kriterium Praktikabilität für Sicherheitsmaßnahmen beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 144,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Leicht verständlich, einfach anzuwenden und wenig fehleranfällig",
+                    "is_correct": true
+                },
+                {
+                    "text": "Barrierefrei und diskriminierungsfrei für alle Benutzer",
+                    "is_correct": false
+                },
+                {
+                    "text": "Hebelt keine anderen Sicherheitsmaßnahmen aus",
+                    "is_correct": false
+                },
+                {
+                    "text": "Steht in geeignetem Verhältnis zu den zu schützenden Werten",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

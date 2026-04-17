@@ -1,0 +1,43 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Five Allgemeiner Client questions. Q002/Q004/Q005 pass cleanly. Q001 (A42 Cloud- und Online-Funktionen) and Q003 (A1 Authentisierung) flag for non-contiguous splicing: the quote concatenates two sentences from the source while omitting an intermediate sentence, without marking the join with ` • `. Each concatenated sentence IS verbatim in the source — the factual claims and correct answers are supported — but the rubric requires every fragment between ` • ` to be a single verbatim substring. Generator should have split these with ` • ` or included the intermediate sentence.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.2.1-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Es DÜRFEN NUR zwingend notwendige Cloud- und Online-Funktion...` — non-contiguous sentences (each traces to source but intermediate text was omitted without ` • ` separator)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.1-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Um den Client zu nutzen, MÜSSEN sich die Benutzenden gegenüb...` — non-contiguous sentences (each traces to source but intermediate text was omitted without ` • ` separator)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.1-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

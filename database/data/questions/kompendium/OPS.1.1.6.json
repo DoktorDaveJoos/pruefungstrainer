@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.6",
+        "chapter_title": "Software-Tests und -Freigaben",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.6-001",
+            "text": "Was MUSS laut OPS.1.1.6.A4 nach erfolgreichen Software-Tests dokumentiert werden?",
+            "explanation": "Die Freigabe muss in Form einer Freigabeerkl\u00e4rung dokumentiert werden. Die fachlich zust\u00e4ndige Organisationseinheit muss die Software freigeben.",
+            "quote": "Die fachlich zust\u00e4ndige Organisationseinheit MUSS die Software freigeben, sobald die Software-Tests erfolgreich durchgef\u00fchrt wurden. Die Freigabe MUSS in Form einer Freigabeerkl\u00e4rung dokumentiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Freigabeprozess nach erfolgreichen Software-Tests gem\u00e4\u00df OPS.1.1.6.A4 beschreiben.",
+            "baustein_id": "OPS.1.1.6.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Die Freigabe muss in Form einer Freigabeerkl\u00e4rung dokumentiert werden", "is_correct": true},
+                {"text": "Es reicht eine m\u00fcndliche Best\u00e4tigung durch den IT-Betrieb", "is_correct": false},
+                {"text": "Die Dokumentation ist nur bei Individualsoftware erforderlich", "is_correct": false},
+                {"text": "Die Testenden geben die Software selbst frei", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.6-002",
+            "text": "Was MUSS laut OPS.1.1.6.A11 geschehen, wenn Produktivdaten mit Personenbezug f\u00fcr Tests verwendet werden?",
+            "explanation": "Testdaten mit personenbezogenen Informationen m\u00fcssen mindestens pseudonymisiert werden. Falls m\u00f6glich, sollten sie vollst\u00e4ndig anonymisiert werden.",
+            "quote": "Enthalten diese Daten personenbezogene Informationen, dann M\u00dcSSEN diese Daten mindestens pseudonymisiert werden. Falls m\u00f6glich, SOLLTEN die Testdaten mit Personenbezug vollst\u00e4ndig anonymisiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an den Umgang mit personenbezogenen Testdaten nach OPS.1.1.6.A11 wiedergeben.",
+            "baustein_id": "OPS.1.1.6.A11",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Die Daten m\u00fcssen mindestens pseudonymisiert, besser noch vollst\u00e4ndig anonymisiert werden", "is_correct": true},
+                {"text": "Produktivdaten d\u00fcrfen unter keinen Umst\u00e4nden f\u00fcr Tests verwendet werden", "is_correct": false},
+                {"text": "Es gen\u00fcgt eine Einwilligung der betroffenen Personen", "is_correct": false},
+                {"text": "Die Daten d\u00fcrfen unver\u00e4ndert verwendet werden, sofern der Test intern stattfindet", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.6-003",
+            "text": "Was MUSS laut OPS.1.1.6.A2 bei funktionalen Software-Tests gew\u00e4hrleistet sein?",
+            "explanation": "Die funktionalen Software-Tests m\u00fcssen so durchgef\u00fchrt werden, dass sie den Produktivbetrieb nicht beeinflussen.",
+            "quote": "Die funktionalen Software-Tests M\u00dcSSEN so durchgef\u00fchrt werden, dass sie den Produktivbetrieb nicht beeinflussen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die Durchf\u00fchrung funktionaler Software-Tests nach OPS.1.1.6.A2 benennen.",
+            "baustein_id": "OPS.1.1.6.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Sie d\u00fcrfen den Produktivbetrieb nicht beeinflussen", "is_correct": true},
+                {"text": "Sie m\u00fcssen immer im Produktivsystem durchgef\u00fchrt werden", "is_correct": false},
+                {"text": "Sie d\u00fcrfen nur von externen Testenden durchgef\u00fchrt werden", "is_correct": false},
+                {"text": "Sie m\u00fcssen innerhalb von 24 Stunden abgeschlossen sein", "is_correct": false}
+            ]
+        }
+    ]
+}

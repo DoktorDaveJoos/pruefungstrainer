@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.8",
+        "chapter_title": "IS-Koordinierungsausschuss",
+        "page_start": 46,
+        "page_end": 47
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.8-001",
+            "text": "Welchen organisatorischen Charakter hat der IS-Koordinierungsausschuss in der Regel?",
+            "explanation": "Der IS-Koordinierungsausschuss ist in der Regel keine Dauereinrichtung, sondern wird bei Bedarf einberufen (z. B. zur Planung größerer Projekte). Eine permanente Einrichtung oder ein externes Gremium ist er nicht.",
+            "quote": "Der IS-Koordinierungsausschuss ist in der Regel keine Dauereinrichtung in einer Institution, sondern wird bei Bedarf (z. B. zur Planung größerer Projekte) einberufen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Ad-hoc-Charakter des IS-Koordinierungsausschusses erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Er ist in der Regel keine Dauereinrichtung und wird bei Bedarf einberufen", "is_correct": true },
+                { "text": "Er ist eine permanente Dauereinrichtung mit Vollzeitpersonal", "is_correct": false },
+                { "text": "Er ist ein externes Gremium, das vom BSI gestellt wird", "is_correct": false },
+                { "text": "Er tagt verpflichtend jeden Arbeitstag", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.8-002",
+            "text": "Welche Koordinierungsaufgabe hat der IS-Koordinierungsausschuss?",
+            "explanation": "Er koordiniert das Zusammenspiel zwischen dem IS-Management-Team, den Fachverantwortlichen, dem Sicherheitsbeauftragten und der Behörden- bzw. Unternehmensleitung. Eine technische Administration oder externe Zertifizierungstätigkeit ist nicht gemeint.",
+            "quote": "Er hat die Aufgabe, das Zusammenspiel zwischen dem IS-Management-Team, den Fachverantwortlichen, dem Sicherheitsbeauftragten und der Behörden- bzw. Unternehmensleitung zu koordinieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Koordinierungsaufgabe des IS-Koordinierungsausschusses benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Zusammenspiel zwischen IS-Management-Team, Fachverantwortlichen, Sicherheitsbeauftragtem und Leitungsebene zu koordinieren", "is_correct": true },
+                { "text": "Die technische Administration der Firewall-Infrastruktur der Institution", "is_correct": false },
+                { "text": "Die Durchführung externer Zertifizierungsaudits", "is_correct": false },
+                { "text": "Die Personalauswahl für den gesamten IT-Betrieb", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.8-003",
+            "text": "Was empfiehlt der Standard hinsichtlich des IS- und des IT-Koordinierungsausschusses?",
+            "explanation": "Die Passage empfiehlt, beide Ausschüsse, soweit möglich, zusammenarbeiten zu lassen und auch personell weitgehend identisch zu besetzen. Eine strikte Trennung oder Abschaffung beider Gremien ist nicht vorgesehen.",
+            "quote": "Es bietet sich an, die beiden Koordinierungsausschüsse, insoweit dies möglich ist, zusammenarbeiten zu lassen und sie auch personell weitgehend identisch zu besetzen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Zusammenspiel von IS- und IT-Koordinierungsausschuss beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie sollten zusammenarbeiten und personell weitgehend identisch besetzt werden", "is_correct": true },
+                { "text": "Sie sollten strikt personell getrennt sein", "is_correct": false },
+                { "text": "Der IT-Koordinierungsausschuss sollte zugunsten des IS-Koordinierungsausschusses aufgelöst werden", "is_correct": false },
+                { "text": "Beide sollten an einen externen Dienstleister ausgelagert werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.8-004",
+            "text": "Welche Rollen sollten laut Passage mindestens im IS-Koordinierungsausschuss vertreten sein?",
+            "explanation": "Die Passage nennt als Mindestbesetzung: ein IT-Verantwortlicher, der Informationssicherheitsbeauftragte und Vertreter der Anwender. Ein externer Wirtschaftsprüfer oder der Pressesprecher gehören nicht zur Mindestbesetzung.",
+            "quote": "Im IS-Koordinierungsausschuss sollten mindestens folgende Rollen vertreten sein: ein IT-Verantwortlicher, der Informationssicherheitsbeauftragte und Vertreter der Anwender.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestbesetzung des IS-Koordinierungsausschusses benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein IT-Verantwortlicher", "is_correct": true },
+                { "text": "Der Informationssicherheitsbeauftragte", "is_correct": true },
+                { "text": "Vertreter der Anwender", "is_correct": true },
+                { "text": "Ein externer Wirtschaftsprüfer", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.8-005",
+            "text": "Warum sollte der Datenschutzbeauftragte nach Auffassung des Standards Mitglied des IS-Koordinierungsausschusses sein?",
+            "explanation": "Die Passage begründet dies damit, dass häufig auch personenbezogene Daten betroffen sind. Eine gesetzliche Vorschrift speziell für den IS-Koordinierungsausschuss wird nicht genannt, ebensowenig eine Vertretung der Aktionäre.",
+            "quote": "Da häufig auch personenbezogene Daten betroffen sind, sollte der Datenschutzbeauftragte ebenfalls Mitglied des IS-Koordinierungsausschusses sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle des Datenschutzbeauftragten im IS-Koordinierungsausschuss einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": null,
+            "answers": [
+                { "text": "Weil häufig auch personenbezogene Daten betroffen sind", "is_correct": true },
+                { "text": "Weil das IT-Sicherheitsgesetz eine solche Mitgliedschaft zwingend vorschreibt", "is_correct": false },
+                { "text": "Weil der Datenschutzbeauftragte die Aktionäre vertritt", "is_correct": false },
+                { "text": "Weil der Datenschutzbeauftragte das Gremium leitet", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.8-006",
+            "text": "Was empfiehlt der Standard, wenn in einer Institution bereits ein ähnliches Gremium existiert?",
+            "explanation": "Die Passage empfiehlt, dessen Aufgaben entsprechend zu erweitern. Eine zwingende Auflösung des bestehenden Gremiums oder eine vollständige Neugründung wird nicht gefordert; der Standard betont aber, dass zur Unterstreichung der Bedeutung der Informationssicherheit ein IS-Koordinierungsausschuss eingerichtet werden sollte.",
+            "quote": "Gibt es in der Institution bereits ein ähnliches Gremium, könnten dessen Aufgaben entsprechend erweitert werden. Um die Bedeutung der Informationssicherheit zu unterstreichen, ist es jedoch ratsam, einen IS-Koordinierungsausschuss einzurichten und diesen regelmäßig einzuberufen.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Umgang mit bestehenden Gremien bei der Einrichtung des IS-Koordinierungsausschusses abwägen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Aufgaben des bestehenden Gremiums können entsprechend erweitert werden", "is_correct": true },
+                { "text": "Es bleibt dennoch ratsam, einen IS-Koordinierungsausschuss einzurichten und regelmäßig einzuberufen", "is_correct": true },
+                { "text": "Das bestehende Gremium muss zwingend aufgelöst und durch einen IS-Koordinierungsausschuss ersetzt werden", "is_correct": false },
+                { "text": "Ein IS-Koordinierungsausschuss ist bei bestehenden Gremien grundsätzlich überflüssig", "is_correct": false }
+            ]
+        }
+    ]
+}

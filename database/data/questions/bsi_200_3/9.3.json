@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "9.3",
+        "chapter_title": "Ermittlung zusätzlicher Gefährdungen",
+        "page_start": 50,
+        "page_end": 51
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-9.3-001",
+            "text": "Welche Fragestellung soll laut BSI-Standard 200-3 bei der Ermittlung zusätzlicher Gefährdungen zur höheren Gewalt geklärt werden?",
+            "explanation": "Zur Kategorie „höhere Gewalt“ fordert der Standard, zu klären, von welchen Ereignissen besondere Gefahr für den Informationsverbund droht. Die anderen Optionen betreffen organisatorische Mängel, menschliche Fehlhandlungen oder Außentäter und gehören zu anderen Fragekategorien.",
+            "quote": "Von welchen Ereignissen aus dem Bereich höhere Gewalt droht besondere Gefahr",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Leitfrage zur Gefährdungskategorie „höhere Gewalt“ wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Von welchen Ereignissen aus dem Bereich höhere Gewalt droht besondere Gefahr für den Informationsverbund?", "is_correct": true },
+                { "text": "Welche organisatorischen Mängel müssen vermieden werden, um die Informationssicherheit zu gewährleisten?", "is_correct": false },
+                { "text": "Welche menschlichen Fehlhandlungen können die Sicherheit der Informationen besonders beeinträchtigen?", "is_correct": false },
+                { "text": "Welche besondere Gefahr droht durch vorsätzliche Angriffe von Außentätern?", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-002",
+            "text": "Wie definiert der BSI-Standard 200-3 im Rahmen der zusätzlichen Gefährdungen den Begriff „Außentäter“?",
+            "explanation": "Der Standard definiert Außentäter als Personen, die nicht der eigenen Institution angehören und auch nicht durch besondere Vereinbarungen Zugang oder Zugriff auf interne Ressourcen haben. Die anderen Optionen widersprechen dieser Definition (z. B. ehemalige Mitarbeiter mit Rest-Rechten, Dienstleister mit Vereinbarung, Innentäter).",
+            "quote": "die nicht der eigenen Institution angehören und auch nicht durch besondere Verein barungen Zugang zu oder Zugriff auf interne Ressourcen haben.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Definition des Begriffs „Außentäter“ im BSI-Standard 200-3 wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Personen, die nicht der eigenen Institution angehören und auch nicht durch besondere Vereinbarungen Zugang zu oder Zugriff auf interne Ressourcen haben", "is_correct": true },
+                { "text": "Ehemalige Mitarbeiter mit verbleibenden Zugriffsrechten auf interne Systeme", "is_correct": false },
+                { "text": "Externe Dienstleister, die über Vereinbarungen Zugang zu internen Ressourcen haben", "is_correct": false },
+                { "text": "Mitarbeiter, die ihre Zugangsberechtigungen vorsätzlich missbrauchen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-003",
+            "text": "Welche besondere Gefahr geht laut BSI-Standard 200-3 typischerweise von Innentätern aus?",
+            "explanation": "Der Standard betont, dass von Innentätern durch vorhandene Zugangs- und Zugriffsberechtigungen sowie durch Insiderwissen oft besondere Gefahr droht. Die anderen Optionen (DDoS-Angriffe, höhere Gewalt, rein technisches Versagen) sind nicht die charakteristische Innentäter-Gefahr im Sinne des Textes.",
+            "quote": "Durch vorhandene Zugangs- und Zu griffsberechtigungen sowie durch Insiderwissen droht hier oft besondere Gefahr.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die besondere Gefährdungslage durch Innentäter im BSI-Standard 200-3 beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Vorhandene Zugangs- und Zugriffsberechtigungen sowie Insiderwissen", "is_correct": true },
+                { "text": "Ausschließlich DDoS-Angriffe auf öffentliche Dienste", "is_correct": false },
+                { "text": "Ereignisse aus dem Bereich höhere Gewalt", "is_correct": false },
+                { "text": "Rein technisches Versagen ohne menschliches Zutun", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-004",
+            "text": "Welche Konsequenz zieht der BSI-Standard 200-3 aus der Definition des betrachteten Informationsverbunds für die Risikoanalyse?",
+            "explanation": "Der Standard stellt klar, dass die Definition zwar den Untersuchungsgegenstand festlegt, dies aber nicht dazu führen darf, dass Gefahren außerhalb des Informationsverbunds bei der Risikoanalyse vernachlässigt werden. Die anderen Optionen widersprechen dem Text.",
+            "quote": "Die Definition des betrachteten Informationsverbunds dient • dazu, den Untersuchungsgegenstand für die Sicherheitskonzeption festzulegen. Dies darf jedoch nicht dazu führen, dass Gefahren, die von außerhalb des betrachteten Informationsverbunds aus gehen, bei der Risikoanalyse vernachlässigt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "experte",
+            "learning_objective": "Die Rolle der Informationsverbund-Definition im Verhältnis zu externen Gefahren bewerten.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": 51,
+            "answers": [
+                { "text": "Gefahren, die von außerhalb des Informationsverbunds ausgehen, dürfen bei der Risikoanalyse nicht vernachlässigt werden", "is_correct": true },
+                { "text": "Gefahren außerhalb des Informationsverbunds werden bewusst ausgeklammert, da sie nicht zum Untersuchungsgegenstand zählen", "is_correct": false },
+                { "text": "Die Definition des Informationsverbunds ersetzt die Risikoanalyse für externe Objekte", "is_correct": false },
+                { "text": "Externe Objekte werden erst betrachtet, wenn sie in den Informationsverbund aufgenommen wurden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-005",
+            "text": "Welche Quellen nennt der BSI-Standard 200-3 ausdrücklich zur Ermittlung zusätzlicher Gefährdungen?",
+            "explanation": "Der Standard führt die Dokumentation des Herstellers, Warn- und Informationsdienste von CERTs (wie CERT-Bund), Publikationen über Schwachstellen im Internet (z. B. Threat Intelligence Feeds) sowie eigene Bedrohungsanalysen auf. Horoskope und anonyme Forenbeiträge werden nicht genannt.",
+            "quote": "die Dokumentation des Herstellers, • Warn- und Informationsdienste von Computer Emergency Response Teams (CERTs), wie dem des BSI unter https://www.cert-bund.de, • Publikationen über Schwachstellen im Internet (z. B. Threat Intelligence Feeds) und eigene Bedro hungsanalysen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vom BSI-Standard 200-3 genannten Quellen für zusätzliche Gefährdungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 51,
+            "page_end": null,
+            "answers": [
+                { "text": "Dokumentation des Herstellers und Warn-/Informationsdienste von CERTs", "is_correct": true },
+                { "text": "Publikationen über Schwachstellen im Internet und eigene Bedrohungsanalysen", "is_correct": true },
+                { "text": "Anonyme Forenbeiträge ohne Quellenangabe", "is_correct": false },
+                { "text": "Astrologische Prognosen und Horoskope", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.3-006",
+            "text": "Welche Arten externer Objekte nennt der BSI-Standard 200-3 als Beispiele für Quellen besonderer Gefahren von außerhalb des Informationsverbunds?",
+            "explanation": "Als externe Objekte nennt der Standard beispielsweise fremde Anwendungen, IT-Systeme oder bauliche Gegebenheiten. Körperliche Fitness der Mitarbeiter oder Wetterprognosen der Vorwoche sind keine genannten Beispiele.",
+            "quote": "Solche externen Objekte können beispielsweise fremde Anwendungen, IT-Syste me oder bauliche Gegebenheiten sein.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Beispiele für externe Objekte im Sinne des BSI-Standards 200-3 nennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Fremde Anwendungen, IT-Systeme oder bauliche Gegebenheiten", "is_correct": true },
+                { "text": "Körperliche Fitness der Mitarbeiter", "is_correct": false },
+                { "text": "Wetterprognosen der Vorwoche", "is_correct": false },
+                { "text": "Interne Geschäftsprozesse des betrachteten Informationsverbunds", "is_correct": false }
+            ]
+        }
+    ]
+}

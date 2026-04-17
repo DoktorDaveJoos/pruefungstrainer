@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 5 questions are well-constructed and factually correct. They cover the transition from Basis-Absicherung to follow-up approaches. Topic methodik is appropriate. Quotes are verbatim. No issues.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-6.5-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.5-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.5-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.5-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.5-005",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

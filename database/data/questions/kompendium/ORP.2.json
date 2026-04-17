@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "ORP.2",
+        "chapter_title": "Personal",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-orp.2-001",
+            "text": "Was MUSS laut ORP.2.A2 beim Weggang von Mitarbeitenden sichergestellt werden?",
+            "explanation": "Beim Weggang von Mitarbeitenden muss laut ORP.2.A2 der Nachfolgende rechtzeitig eingewiesen werden. Alle erhaltenen Unterlagen, Schlüssel, Geräte sowie Ausweise und Zutrittsberechtigungen müssen eingezogen werden. Vor der Verabschiedung muss auf Verschwiegenheitsverpflichtungen hingewiesen werden.",
+            "quote": "Außerdem MÜSSEN von ausscheidenden Mitarbeitenden alle im Rahmen ihrer Tätigkeit erhaltenen Unterlagen, Schlüssel und Geräte sowie Ausweise und Zutrittsberechtigungen eingezogen werden. Vor der Verabschiedung MUSS noch einmal auf Verschwiegenheitsverpflichtungen hingewiesen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichten beim Ausscheiden von Mitarbeitenden benennen.",
+            "baustein_id": "ORP.2.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Unterlagen, Schlüssel, Geräte und Zutrittsberechtigungen müssen eingezogen werden", "is_correct": true },
+                { "text": "Auf Verschwiegenheitsverpflichtungen muss hingewiesen werden", "is_correct": true },
+                { "text": "Der ausscheidende Mitarbeitende muss eine Abschlussprüfung ablegen", "is_correct": false },
+                { "text": "Die bisherigen Passwörter des Mitarbeitenden dürfen beibehalten werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.2-002",
+            "text": "Was MUSS laut ORP.2.A5 vor dem Zugang externer Personen zu vertraulichen Informationen geschehen?",
+            "explanation": "Laut ORP.2.A5 müssen vor dem Zugang zu vertraulichen Informationen schriftliche Vertraulichkeitsvereinbarungen geschlossen werden, die alle wichtigen Aspekte zum Schutz institutionsinterner Informationen berücksichtigen.",
+            "quote": "Bevor externe Personen Zugang und Zugriff zu vertraulichen Informationen erhalten, MÜSSEN mit ihnen Vertraulichkeitsvereinbarungen in schriftlicher Form geschlossen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zu schriftlichen Vertraulichkeitsvereinbarungen bei Fremdpersonal erklären.",
+            "baustein_id": "ORP.2.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Schriftliche Vertraulichkeitsvereinbarungen müssen geschlossen werden", "is_correct": true },
+                { "text": "Eine mündliche Belehrung durch den Vorgesetzten reicht aus", "is_correct": false },
+                { "text": "Es genügt ein allgemeiner Hinweis im Arbeitsvertrag", "is_correct": false },
+                { "text": "Externe Personen benötigen nur eine Sicherheitsüberprüfung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.2-003",
+            "text": "Was MUSS laut ORP.2.A3 bei den Vertretungsregelungen sichergestellt werden?",
+            "explanation": "Laut ORP.2.A3 müssen die Vorgesetzten sicherstellen, dass es für alle wesentlichen Geschäftsprozesse und Aufgaben praktikable Vertretungsregelungen gibt. Der Aufgabenumfang der Vertretung muss im Vorfeld klar definiert werden und die Vertretung muss über das nötige Wissen verfügen.",
+            "quote": "Die Vorgesetzten MÜSSEN dafür sorgen, dass im laufenden Betrieb Vertretungsregelungen umgesetzt werden. Dafür MUSS sichergestellt werden, dass es für alle wesentlichen Geschäftsprozesse und Aufgaben praktikable Vertretungsregelungen gibt. Bei diesen Regelungen MUSS der Aufgabenumfang der Vertretung im Vorfeld klar definiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an Vertretungsregelungen im Baustein ORP.2 erläutern.",
+            "baustein_id": "ORP.2.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Für alle wesentlichen Geschäftsprozesse müssen praktikable Vertretungsregelungen existieren", "is_correct": true },
+                { "text": "Vertretungsregelungen müssen nur für die Geschäftsleitung definiert werden", "is_correct": false },
+                { "text": "Der Aufgabenumfang der Vertretung kann nachträglich festgelegt werden", "is_correct": false },
+                { "text": "Vertretungsregelungen sind nur bei Abwesenheiten länger als zwei Wochen erforderlich", "is_correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 4.2 (Kommunikation und Wissen) has eight solid multi-correct questions covering Kommunikation, Managementberichte, Klassifikationsschema, Dokumentation (Pflicht, drei Arten, formale Anforderungen, schutzbeduerftige Dokumentationen) und externe Informationsquellen. All quote fragments (including the soft-hyphen artifacts 'Informationssicher heit', 'un abdingbar', 'Ent scheidungen') are verbatim substrings of the normalized source. Correct answers map directly onto source sentences; distractors (only in Planung, rein technische Dokumente, Marketingunterlagen, Papierpflicht, einmalige Erstellung, freie Zugaenglichkeit, reine Herstellerquellen) are unambiguously wrong. Topic methodik fits (communication/documentation governance), difficulty basis fits (one-step paraphrases), pages 22-24 are within range, schema null/null correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-4.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-007",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.2-008",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.3.2.4",
+        "chapter_title": "Android",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.3.2.4-001",
+            "text": "Welche Standard-Anforderung stellt SYS.3.2.4 f\u00fcr Android-basierte Ger\u00e4te hinsichtlich des Entwicklermodus?",
+            "explanation": "SYS.3.2.4.A2 empfiehlt, den Entwicklermodus auf allen Android-basierten Ger\u00e4ten zu deaktivieren. Der Entwicklermodus erm\u00f6glicht u. a. USB-Debugging und andere Funktionen, die ein Sicherheitsrisiko darstellen k\u00f6nnen.",
+            "quote": "In allen Android-basierten Ger\u00e4ten SOLLTE der Entwicklermodus deaktiviert sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an den Entwicklermodus auf Android-Ger\u00e4ten benennen.",
+            "baustein_id": "SYS.3.2.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Der Entwicklermodus sollte auf allen Android-Ger\u00e4ten deaktiviert sein.", "is_correct": true },
+                { "text": "Der Entwicklermodus sollte f\u00fcr alle Benutzenden aktiviert bleiben.", "is_correct": false },
+                { "text": "Der Entwicklermodus muss dauerhaft im Bootloader gesperrt werden.", "is_correct": false },
+                { "text": "Der Entwicklermodus ist nur bei erh\u00f6htem Schutzbedarf zu deaktivieren.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.4-002",
+            "text": "Was passiert laut SYS.3.2.4 beim Entsperren des Bootloaders auf Android-Ger\u00e4ten?",
+            "explanation": "Laut der Gef\u00e4hrdungslage (2.1) wird beim Entsperren des Bootloaders die Vertrauenskette unterbrochen, sodass ein ver\u00e4ndertes Betriebssystem starten kann. Das Android-Sicherheitskonzept wird dadurch umgangen oder au\u00dfer Kraft gesetzt, was neue Gef\u00e4hrdungen schafft.",
+            "quote": "Beim Entsperren des Bootloaders wird diese Vertrauenskette unterbrochen, so dass ein ver\u00e4ndertes Betriebssystem starten kann. \u2022 Das Android-Sicherheitskonzept wird hierbei umgangen oder au\u00dfer Kraft gesetzt und es entstehen neue Gef\u00e4hrdungen, die anderweitig abgesichert werden m\u00fcssen.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Auswirkungen des Entsperrens des Bootloaders auf die Sicherheit von Android erkl\u00e4ren.",
+            "baustein_id": "SYS.3.2.4",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Vertrauenskette wird unterbrochen und ein ver\u00e4ndertes Betriebssystem kann starten.", "is_correct": true },
+                { "text": "Die Ger\u00e4tegarantie verl\u00e4ngert sich automatisch.", "is_correct": false },
+                { "text": "Das Ger\u00e4t erh\u00e4lt automatisch die neuesten Sicherheitsupdates.", "is_correct": false },
+                { "text": "Der Google Play Store wird deaktiviert, wodurch keine Apps mehr installiert werden k\u00f6nnen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.4-003",
+            "text": "Was SOLLTE laut SYS.3.2.4 bei den erweiterten Sicherheitseinstellungen auf Android-Ger\u00e4ten beachtet werden?",
+            "explanation": "SYS.3.2.4.A5 empfiehlt, dass nur freigegebene Sicherheits-Apps Rechte zur Ger\u00e4teadministration bekommen oder sich als Trust Agents eintragen lassen d\u00fcrfen. Dies sollte regelm\u00e4\u00dfig \u00fcberpr\u00fcft werden. Nur erlaubten Apps sollte der Zugriff auf Nutzungsdaten und Benachrichtigungen m\u00f6glich sein.",
+            "quote": "Es SOLLTEN nur freigegebene Sicherheits-Apps Rechte zur Ger\u00e4teadministration bekommen oder sich als \u201eTrust Agents\u201c eintragen lassen. Dies SOLLTE regelm\u00e4\u00dfig \u00fcberpr\u00fcft werden. \u2022 Weiterhin SOLLTE es nur erlaubten Apps m\u00f6glich sein, auf Nutzungsdaten und auf Benachrichtigungen zuzugreifen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die erweiterten Sicherheitseinstellungen f\u00fcr Android-Ger\u00e4te beschreiben.",
+            "baustein_id": "SYS.3.2.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Nur freigegebene Sicherheits-Apps sollten Rechte zur Ger\u00e4teadministration erhalten.", "is_correct": true },
+                { "text": "Alle Apps sollten standardm\u00e4\u00dfig Administratorrechte erhalten.", "is_correct": false },
+                { "text": "Trust Agents sollten f\u00fcr alle installierten Apps aktiviert werden.", "is_correct": false },
+                { "text": "Der Zugriff auf Nutzungsdaten ist f\u00fcr alle Apps ohne Einschr\u00e4nkung freizugeben.", "is_correct": false }
+            ]
+        }
+    ]
+}

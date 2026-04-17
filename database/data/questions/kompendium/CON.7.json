@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.7",
+        "chapter_title": "Informationssicherheit auf Auslandsreisen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.7-001",
+            "text": "Warum ist die Bedrohungslage auf Auslandsreisen laut CON.7 besonders erhöht?",
+            "explanation": "Laut der Einleitung von CON.7 ergibt sich die erhöhte Bedrohungslage auf Reisen u. a. aus der Kommunikation über öffentliche Netze, die nicht unter der Kontrolle der eigenen Institution stehen. Das Risiko ist im Ausland abhängig vom Zielland oftmals deutlich höher als bei Reisen im Inland.",
+            "quote": "Die Bedrohungslage ist auf Reisen besonders erhöht. Dies ergibt sich z. B. aus der Kommunikation über öffentliche Netze, die nicht unter der Kontrolle der eigenen Institution stehen. • Hinzu kommt, dass das Risiko auf Auslandsreisen abhängig vom Zielland oftmals deutlich höher ist als bei Reisen im Inland.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gründe für die erhöhte Bedrohungslage auf Auslandsreisen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Kommunikation über öffentliche Netze, die nicht unter eigener Kontrolle stehen", "is_correct": true },
+                { "text": "Geringere Bandbreite des Internets im Ausland", "is_correct": false },
+                { "text": "Höhere Kosten für IT-Infrastruktur im Ausland", "is_correct": false },
+                { "text": "Fehlende Sprachkenntnisse der IT-Mitarbeitenden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.7-002",
+            "text": "Was schützt der Baustein CON.7 laut seiner Zielsetzung?",
+            "explanation": "Laut der Zielsetzung beschreibt CON.7 den Schutz aller Informationen, die auf Auslandsreisen sowohl in elektronischer als auch in physischer Form mitgeführt werden, in Bezug auf Vertraulichkeit, Integrität und Verfügbarkeit. Auch vertrauliche Informationen, die Reisende im Kopf mitführen, sind Gegenstand des Bausteins.",
+            "quote": "Dieser Baustein beschreibt den Schutz aller Informationen, die auf Auslandsreisen sowohl in elektronischer als auch in physischer Form mitgeführt werden, in Bezug auf Vertraulichkeit, Integrität und Verfügbarkeit. Vertrauliche Informationen, die reisende Mitarbeitende im Kopf mitführen, sind ebenfalls Gegenstand dieses Bausteines.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Den Schutzumfang des Bausteins CON.7 einschließlich nicht-materieller Informationen erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Alle Informationen in elektronischer und physischer Form auf Auslandsreisen", "is_correct": true },
+                { "text": "Vertrauliche Informationen, die Reisende im Kopf mitführen", "is_correct": true },
+                { "text": "Nur die auf Laptops gespeicherten Firmendaten", "is_correct": false },
+                { "text": "Nur die physische Sicherheit der Reisenden selbst", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.7-003",
+            "text": "Welche Faktoren spielen laut CON.7 eine maßgebliche Rolle für die individuellen Anforderungen an die Informationssicherheit auf Reisen?",
+            "explanation": "Laut der Einleitung von CON.7 spielen politische, gesellschaftliche, religiöse, geografische, klimatische, gesetzliche und regulatorische Besonderheiten einzelner Reiseziele eine maßgebliche Rolle für die individuellen Sicherheitsanforderungen.",
+            "quote": "Politische, gesellschaftliche, religiöse, geografische, klimatische, gesetzliche und regulatorische Besonderheiten einzelner Reiseziele spielen hier eine maßgebliche Rolle.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die relevanten Faktoren für Informationssicherheit auf Auslandsreisen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Politische, gesellschaftliche, religiöse, geografische, klimatische, gesetzliche und regulatorische Besonderheiten", "is_correct": true },
+                { "text": "Ausschließlich die technische Infrastruktur des Ziellandes", "is_correct": false },
+                { "text": "Nur die Entfernung zum Heimatstandort", "is_correct": false },
+                { "text": "Die Größe der Reisegruppe und das Reisebudget", "is_correct": false }
+            ]
+        }
+    ]
+}

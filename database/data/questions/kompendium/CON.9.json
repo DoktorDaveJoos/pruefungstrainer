@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.9",
+        "chapter_title": "Informationsaustausch",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.9-001",
+            "text": "Was MUSS laut CON.9.A1 vor dem Austausch von Informationen sichergestellt werden?",
+            "explanation": "Laut CON.9.A1 müssen alle Beteiligten vor dem Austausch von Informationen sicherstellen, dass die empfangende Stelle die notwendigen Berechtigungen für den Erhalt und die Weiterverarbeitung der Informationen besitzt.",
+            "quote": "Alle Beteiligten MÜSSEN vor dem Austausch von Informationen sicherstellen, dass die empfangende Stelle die notwendigen Berechtigungen für den Erhalt und die Weiterverarbeitung der Informationen besitzt.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Prüfpflicht der Empfangsberechtigung vor dem Informationsaustausch benennen.",
+            "baustein_id": "CON.9.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Dass die empfangende Stelle die notwendigen Berechtigungen besitzt", "is_correct": true },
+                { "text": "Dass die empfangende Stelle ein ISO-27001-Zertifikat besitzt", "is_correct": false },
+                { "text": "Dass die Übertragungsgeschwindigkeit mindestens 100 Mbit/s beträgt", "is_correct": false },
+                { "text": "Dass die empfangende Stelle dieselbe Software einsetzt", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.9-002",
+            "text": "Was MUSS die Institution laut CON.9.A2 vor dem Informationsaustausch festlegen?",
+            "explanation": "Laut CON.9.A2 muss die Institution vor dem Austausch festlegen, wie schutzbedürftig die Informationen sind, und wie die Informationen bei der Übertragung zu schützen sind.",
+            "quote": "Bevor Informationen ausgetauscht werden, MUSS die Institution festlegen, wie schutzbedürftig die Informationen sind. Sie MUSS festlegen, wie die Informationen bei der Übertragung zu schützen sind.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Festlegung des Schutzbedarfs vor dem Informationsaustausch erklären.",
+            "baustein_id": "CON.9.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Wie schutzbedürftig die Informationen sind und wie sie bei der Übertragung zu schützen sind", "is_correct": true },
+                { "text": "Welche Mitarbeitenden die Informationen erstellt haben", "is_correct": false },
+                { "text": "Wie lange die Übertragung maximal dauern darf", "is_correct": false },
+                { "text": "Welcher Cloud-Dienst für die Übertragung verwendet wird", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.9-003",
+            "text": "Was SOLLTE laut CON.9.A5 vor der Weitergabe von Dokumenten und Dateien überprüft werden?",
+            "explanation": "Laut CON.9.A5 sollte jede Datei und jedes Dokument vor der Weitergabe auf unerwünschte Restinformationen überprüft werden. Unerwünschte Restinformationen sollten vor der Weitergabe entfernt werden.",
+            "quote": "Jede Datei und jedes Dokument SOLLTE vor der Weitergabe auf unerwünschte Restinformationen überprüft werden. Unerwünschte Restinformationen SOLLTEN vor der Weitergabe aus Dokumenten und Dateien entfernt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Entfernung von Restinformationen vor der Weitergabe erklären.",
+            "baustein_id": "CON.9.A5",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Ob sie unerwünschte Restinformationen enthalten", "is_correct": true },
+                { "text": "Ob sie im richtigen Dateiformat vorliegen", "is_correct": false },
+                { "text": "Ob sie eine maximale Dateigröße von 10 MB nicht überschreiten", "is_correct": false },
+                { "text": "Ob sie mit der neuesten Software-Version erstellt wurden", "is_correct": false }
+            ]
+        }
+    ]
+}

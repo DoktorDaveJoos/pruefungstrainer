@@ -1,0 +1,39 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Baustein INF.5: 3 questions reviewed. 0 pass, 3 flag, 0 fail. 3 schema note(s) where anforderung_type is null. No factual errors or unsupported correct answers were found; all correct answers trace to Anforderungen in the Baustein and distractors are unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-inf.5-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.5-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.5-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        }
+    ]
+}

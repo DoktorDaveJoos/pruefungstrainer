@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.5",
+        "chapter_title": "Virtualisierung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.5-001",
+            "text": "Was MUSS laut SYS.1.5.A7 für die Systemzeit aller produktiv eingesetzten virtuellen IT-Systeme gelten?",
+            "explanation": "SYS.1.5.A7 fordert als Basis-Anforderung, dass die Systemzeit aller produktiv eingesetzten virtuellen IT-Systeme immer synchron sein muss. Dies ist wichtig für konsistente Protokollierung und Fehlerbehebung in virtuellen Infrastrukturen.",
+            "quote": "Die Systemzeit aller produktiv eingesetzten virtuellen IT-Systeme MUSS immer synchron sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die Zeitsynchronisation virtueller IT-Systeme gemäß SYS.1.5.A7 benennen.",
+            "baustein_id": "SYS.1.5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Systemzeit muss immer synchron sein", "is_correct": true },
+                { "text": "Die Systemzeit darf maximal fünf Minuten abweichen", "is_correct": false },
+                { "text": "Die Zeitsynchronisation ist nur für Produktivsysteme empfohlen", "is_correct": false },
+                { "text": "Jedes virtuelle System darf eine eigene Zeitzone verwenden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.5-002",
+            "text": "Was DÜRFEN Gast-Systeme laut SYS.1.5.A3 grundsätzlich NICHT tun?",
+            "explanation": "SYS.1.5.A3 verbietet grundsätzlich den Zugriff von Gast-Systemen auf Geräte und Schnittstellen des Virtualisierungsservers. Wenn eine solche Verbindung notwendig ist, muss sie exklusiv zugeteilt werden und darf nur für die notwendige Dauer hergestellt werden.",
+            "quote": "Gast-Systeme DÜRFEN NICHT auf Geräte und Schnittstellen des Virtualisierungsservers zugreifen. Ist eine solche Verbindung jedoch notwendig, MUSS diese exklusiv zugeteilt werden. Sie DARF NUR für die notwendige Dauer von den Administrierenden des Host-Systems hergestellt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zugriffsbeschränkungen für Gast-Systeme gemäß SYS.1.5.A3 wiedergeben.",
+            "baustein_id": "SYS.1.5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Auf Geräte und Schnittstellen des Virtualisierungsservers zugreifen", "is_correct": true },
+                { "text": "Netzwerkverbindungen zu anderen Gast-Systemen aufbauen", "is_correct": false },
+                { "text": "Eigene Protokolldateien erstellen", "is_correct": false },
+                { "text": "Mehr als einen Dienst bereitstellen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.5-003",
+            "text": "Was SOLLTE laut SYS.1.5.A16 bei virtuellen Maschinen als Standard-Anforderung deaktiviert sein?",
+            "explanation": "SYS.1.5.A16 empfiehlt als Standard-Anforderung, dass die Funktionen Kopieren und Einfügen von Informationen zwischen virtuellen Maschinen deaktiviert sein sollten. Dies dient der Kapselung der virtuellen Maschinen voneinander.",
+            "quote": "Die Funktionen \u201eKopieren\u201c und \u201eEinfügen\u201c von Informationen zwischen virtuellen Maschinen SOLLTEN deaktiviert sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Kapselungsanforderung für virtuelle Maschinen gemäß SYS.1.5.A16 benennen.",
+            "baustein_id": "SYS.1.5",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Funktionen Kopieren und Einfügen von Informationen zwischen virtuellen Maschinen", "is_correct": true },
+                { "text": "Die Snapshot-Funktion", "is_correct": false },
+                { "text": "Die Live-Migration", "is_correct": false },
+                { "text": "Die Netzwerkanbindung der virtuellen Maschinen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.5-004",
+            "text": "Welche Gefährdung entsteht laut Baustein SYS.1.5 durch die Nutzung von Snapshots?",
+            "explanation": "Der Baustein SYS.1.5 beschreibt, dass bei der Wiederherstellung eines Snapshots alle in der Zwischenzeit vorgenommenen Änderungen verloren gehen, wodurch auch bereits gepatchte Sicherheitslücken wieder offen sein können. Außerdem kann der Inhalt des Hauptspeichers bei Angriffen missbraucht werden, da er im Snapshot gesichert wird.",
+            "quote": "Wird ein solcher Snapshot zu einem späteren Zeitpunkt wiederhergestellt, gehen alle in der Zwischenzeit vorgenommenen Änderungen verloren. Dadurch können auch bereits gepatchte Sicherheitslücken wieder offen sein. • Außerdem können Snapshots bei Angriffen dazu missbraucht werden, um unberechtigt auf die Daten eines virtuellen IT-Systems zuzugreifen.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Gefährdungen durch Snapshots in virtualisierten Umgebungen gemäß SYS.1.5 erläutern.",
+            "baustein_id": "SYS.1.5",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Bereits gepatchte Sicherheitslücken können nach Wiederherstellung wieder offen sein", "is_correct": true },
+                { "text": "Snapshots können bei Angriffen missbraucht werden, um auf Daten zuzugreifen", "is_correct": true },
+                { "text": "Snapshots führen automatisch zu einer Verdoppelung aller Netzwerkverbindungen", "is_correct": false },
+                { "text": "Snapshots deaktivieren die Verschlüsselung der virtuellen Festplatten", "is_correct": false }
+            ]
+        }
+    ]
+}

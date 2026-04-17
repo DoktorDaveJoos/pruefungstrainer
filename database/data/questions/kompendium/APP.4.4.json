@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.4.4",
+        "chapter_title": "Kubernetes",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.4.4-001",
+            "text": "Welcher Baustein MUSS immer zusammen mit APP.4.4 Kubernetes angewendet werden?",
+            "explanation": "Im Abschnitt 1.3 Abgrenzung und Modellierung wird klar festgelegt, dass der Baustein APP.4.4 Kubernetes immer zusammen mit dem Baustein SYS.1.6 Containerisierung anzuwenden ist. SYS.1.5 Virtualisierung und APP.4.3 Relationale Datenbanken werden in diesem Kontext nicht als zwingend genannt.",
+            "quote": "Der Baustein APP.4.4 Kubernetes ist immer zusammen mit dem Baustein SYS.1.6 Containerisierung anzuwenden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den zwingend zusammen mit dem Kubernetes-Baustein anzuwendenden Baustein benennen.",
+            "baustein_id": "APP.4.4",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "SYS.1.6 Containerisierung",
+                    "is_correct": true
+                },
+                {
+                    "text": "SYS.1.5 Virtualisierung",
+                    "is_correct": false
+                },
+                {
+                    "text": "APP.4.3 Relationale Datenbanken",
+                    "is_correct": false
+                },
+                {
+                    "text": "NET.1.1 Netzarchitektur und -design",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.4-002",
+            "text": "Was MUSS die Datensicherung eines Kubernetes-Clusters umfassen?",
+            "explanation": "Anforderung APP.4.4.A5 listet detailliert auf, was die Datensicherung des Clusters umfassen muss: Festspeicher (Persistent Volumes), Konfigurationsdateien von Kubernetes und der Control Plane, den aktuellen Zustand des Clusters inklusive Erweiterungen, Datenbanken der Konfiguration (namentlich etcd), alle Infrastrukturanwendungen und die Datenhaltung der Code und Image Registries.",
+            "quote": "Die Datensicherung MUSS umfassen: • Festspeicher (Persistent Volumes), • Konfigurationsdateien von Kubernetes und den weiteren Programmen der Control Plane, • den aktuellen Zustand des Kubernetes-Clusters inklusive der Erweiterungen, • Datenbanken der Konfiguration, namentlich hier etcd, • alle Infrastrukturanwendungen, die zum Betrieb des Clusters und der darin befindlichen Dienste notwendig sind und • die Datenhaltung der Code und Image Registries.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Pflichtbestandteile der Datensicherung eines Kubernetes-Clusters aufzählen.",
+            "baustein_id": "APP.4.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Persistent Volumes, Konfigurationsdateien und die Konfigurationsdatenbank etcd",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Infrastrukturanwendungen und die Datenhaltung der Code und Image Registries",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die laufenden Container-Images",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Logdateien der einzelnen Pods",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.4-003",
+            "text": "Was MUSS der Betriebssystem-Kernel der Kubernetes-Nodes zur Separierung von Pods bereitstellen?",
+            "explanation": "Anforderung APP.4.4.A4 verlangt, dass der Betriebssystem-Kernel der Nodes über Isolationsmechanismen zur Beschränkung von Sichtbarkeit und Ressourcennutzung der Pods untereinander verfügen muss. Die Trennung muss dabei mindestens IDs von Prozessen sowie Benutzenden, Inter-Prozess-Kommunikation, Dateisystem und Netz inklusive Hostname umfassen.",
+            "quote": "Der Betriebssystem-Kernel der Nodes MUSS über Isolationsmechanismen zur Beschränkung von Sichtbarkeit und Ressourcennutzung der Pods untereinander verfügen (vergleiche Linux Namespaces und cgroups). Die Trennung MUSS dabei mindestens IDs von Prozessen sowie Benutzenden, Inter-Prozess-Kommunikation, Dateisystem und Netz inklusive Hostname umfassen.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Pflicht-Isolationsmechanismen des Betriebssystem-Kernels für die Pod-Separierung benennen.",
+            "baustein_id": "APP.4.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Isolationsmechanismen zur Beschränkung von Sichtbarkeit und Ressourcennutzung, mindestens für Prozess-IDs, Inter-Prozess-Kommunikation, Dateisystem und Netz",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur eine physische Trennung der Hardware je Pod",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine vollständige Virtualisierung jedes Pods auf eigener VM",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich Netzwerksegmentierung ohne Dateisystemtrennung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.4-004",
+            "text": "Wie SOLLTEN Pods hinsichtlich des default-Service-Accounts konfiguriert werden?",
+            "explanation": "Anforderung APP.4.4.A9 besagt, dass Pods NICHT den default-Service-Account nutzen sollten und diesem keine Rechte eingeräumt werden sollten. Pods für unterschiedliche Anwendungen sollten jeweils unter eigenen Service-Accounts laufen. Pods, die keinen Service-Account benötigen, sollten diesen nicht einsehen können.",
+            "quote": "Pods SOLLTEN NICHT den „default“-Service-Account nutzen. Dem „default“-Service-Account SOLLTEN keine Rechte eingeräumt werden. Pods für unterschiedliche Anwendungen SOLLTEN jeweils unter eigenen Service-Accounts laufen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Vorgaben zur Nutzung von Service-Accounts in Kubernetes-Pods erläutern.",
+            "baustein_id": "APP.4.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Pods sollten nicht den default-Service-Account nutzen und dieser sollte keine Rechte erhalten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Pods sollten den default-Service-Account gemeinsam nutzen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der default-Service-Account sollte mit vollen Administrationsrechten ausgestattet werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur Pods der Control Plane sollten den default-Service-Account nutzen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

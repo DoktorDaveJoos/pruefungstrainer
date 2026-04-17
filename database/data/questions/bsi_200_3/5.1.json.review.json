@@ -1,0 +1,51 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "Seven of eight questions are solid. Question 5.1-007 has a truncated quote that ends at 'ka' (mid-word, cut off at a soft-hyphen line break before 'tastrophales Ausmaß erreichen'). After normalization, the quote fragment is not a verbatim substring of the normalized source because 'katastrophales' is one word. The correct answer is still accurately supported. All other quotes, answers, and distractors are correct. Topic 'risikoanalyse' is appropriate. All basis difficulty is fitting. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-5.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-5.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-5.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-5.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-5.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-5.1-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-5.1-007",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote is truncated mid-word at 'ka' (soft-hyphen line break before 'tastrophales Ausmaß erreichen'). After normalization the source reads 'katastrophales' as one word, so the truncated fragment is not a verbatim substring. The correct answer is still fully supported by the source."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-008",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

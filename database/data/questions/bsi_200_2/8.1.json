@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "8.1",
+        "chapter_title": "Strukturanalyse",
+        "page_start": 100,
+        "page_end": 100
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-8.1-001",
+            "text": "Welche Tätigkeiten gehören laut den Aktionspunkten zu 8.1.5–8.1.7 zur Erhebung der IT-, ICS- und IoT-Systeme?",
+            "explanation": "Laut den Aktionspunkten zu 8.1.5–8.1.7 sind sowohl vernetzte als auch nicht vernetzte IT-, IoT- und ICS-Geräte aufzulisten, die Systeme mit eindeutigen Nummern oder Kürzeln zu kennzeichnen und die Anwendungen den Systemen zuzuordnen. Eine Schutzbedarfsfeststellung gehört nicht zur Strukturanalyse, sondern zum Kapitel 8.2.",
+            "quote": "Liste der vernetzten und nicht vernetzten IT-Systeme, IoT- und ICS-Geräte erstellen beziehungs weise aktualisieren und vervollständigen • IT-, ICS-, IoT-Systeme beziehungsweise Systemgruppen mit eindeutigen Nummern oder Kürzeln kennzeichnen • Die Anwendungen den IT-, ICS-, IoT-Systemen (Servern, Clients, Netzkoppelelementen usw.) zu ordnen, die für ihre Ausführung benötigt werden",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Aktionspunkte zur Erhebung der IT-, ICS- und IoT-Systeme in der Strukturanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 100,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Liste der vernetzten und nicht vernetzten IT-Systeme, IoT- und ICS-Geräte erstellen bzw. aktualisieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "IT-, ICS-, IoT-Systeme mit eindeutigen Nummern oder Kürzeln kennzeichnen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Anwendungen den IT-, ICS-, IoT-Systemen zuordnen, die für ihre Ausführung benötigt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Den Schutzbedarf der erfassten Systeme bestimmen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.1-002",
+            "text": "Was soll laut den Aktionspunkten zur Strukturanalyse zunächst geprüft werden, bevor die IT-, ICS- und IoT-Systeme erhoben werden?",
+            "explanation": "Als erster Aktionspunkt ist zu prüfen, ob existierende Datenbanken oder Übersichten über die vorhandenen oder geplanten IT-, ICS-Systeme sowie die sonstigen Geräte als Ausgangsbasis für die weitere Vorgehensweise geeignet sind. Eine Risikoanalyse, Modellierung oder ein IT-Grundschutz-Check sind Arbeitsschritte späterer Kapitel.",
+            "quote": "Prüfen, ob existierende Datenbanken oder Übersichten über die vorhandenen oder geplanten IT-, ICS-Systeme sowie die sonstigen Geräte als Ausgangsbasis für die weitere Vorgehensweise ge eignet sind",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Einstieg in die Erhebung von IT-, ICS- und IoT-Systemen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 100,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ob existierende Datenbanken oder Übersichten als Ausgangsbasis geeignet sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ob eine vollständige Risikoanalyse nach BSI-Standard 200-3 bereits vorliegt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ob die Modellierung des Informationsverbunds bereits abgeschlossen ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ob der IT-Grundschutz-Check durchgeführt wurde",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.1-003",
+            "text": "Worauf bezieht sich laut den Aktionspunkten der Strukturanalyse die Zuordnung in der Erhebung der Systeme?",
+            "explanation": "Die Anwendungen sollen den IT-, ICS- und IoT-Systemen (Servern, Clients, Netzkoppelelementen usw.) zugeordnet werden, die für ihre Ausführung benötigt werden. Es geht also um die Verknüpfung von Anwendungen mit den Systemen, nicht um die Zuordnung zu Räumen, Mitarbeitern oder Bausteinen.",
+            "quote": "Die Anwendungen den IT-, ICS-, IoT-Systemen (Servern, Clients, Netzkoppelelementen usw.) zu ordnen, die für ihre Ausführung benötigt werden",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuordnung von Anwendungen zu IT-, ICS- und IoT-Systemen in der Strukturanalyse erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 100,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Anwendungen werden den IT-, ICS-, IoT-Systemen zugeordnet, die für ihre Ausführung benötigt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Anwendungen werden den Räumen zugeordnet, in denen sie genutzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Anwendungen werden einzelnen Mitarbeitern als Benutzer zugeordnet",
+                    "is_correct": false
+                },
+                {
+                    "text": "Anwendungen werden den passenden IT-Grundschutz-Bausteinen zugeordnet",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

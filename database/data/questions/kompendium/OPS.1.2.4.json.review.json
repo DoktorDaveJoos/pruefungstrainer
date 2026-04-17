@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Section OPS.1.2.4 (3 questions: 0 pass, 3 flag, 0 fail). 3 question(s) flagged with quote_mismatch/warning — fragments verbatim in the full kompendium but outside the manifest slice for this chapter (boundary artifact) or require eliding an inline parenthetical; content is correct per manual inspection. 1 question(s) have anforderung_type=null — acceptable for scope/Abgrenzung/Gefährdungslage/role/definition content not tied to a specific Basis/Standard/Hoch Anforderung. Correct answers are supported by the quoted passages; distractors are clearly wrong per source; topic assignments fit; difficulty labels plausible.",
+    "results": [
+        {
+            "external_id": "kompendium-ops.1.2.4-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment found in kompendium but outside manifest slice for this chapter, or requires elision of inline parenthetical (boundary / paraphrase artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.4-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment found in kompendium but outside manifest slice for this chapter, or requires elision of inline parenthetical (boundary / paraphrase artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.4-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment found in kompendium but outside manifest slice for this chapter, or requires elision of inline parenthetical (boundary / paraphrase artifact; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for non-Anforderung content (role, scope, Abgrenzung/Modellierung, Gefährdungslage, definition); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        }
+    ]
+}

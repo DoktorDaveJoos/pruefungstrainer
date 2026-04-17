@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three MDM questions from A1/A4/A7. All pass cleanly.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.3.2.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.3.2.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.3.2.2-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

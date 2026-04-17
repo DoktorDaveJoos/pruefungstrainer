@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.3.1",
+        "chapter_title": "Router und Switches",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.3.1-001",
+            "text": "Welche Ereignisse MUSS ein Router oder Switch laut NET.3.1 mindestens protokollieren?",
+            "explanation": "NET.3.1.A7 listet fünf Ereigniskategorien auf, die mindestens protokolliert werden müssen: Konfigurationsänderungen, Reboot, Systemfehler, Statusänderungen pro Interface/System/Netzsegment und Login-Fehler.",
+            "quote": "Ein Router oder Switch MUSS so konfiguriert werden, dass er unter anderem folgende Ereignisse protokolliert: • Konfigurationsänderungen (möglichst automatisch), • Reboot, • Systemfehler, • Statusänderungen pro Interface, System und Netzsegment sowie • Login-Fehler",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindest-Protokollierungsereignisse für Router und Switches gemäß NET.3.1 benennen.",
+            "baustein_id": "NET.3.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Konfigurationsänderungen, Reboot und Systemfehler",
+                    "is_correct": true
+                },
+                {
+                    "text": "Statusänderungen pro Interface, System und Netzsegment sowie Login-Fehler",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle erfolgreichen Datenübertragungen und deren Volumen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nutzungsdauer pro verbundenem Endgerät",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.1-002",
+            "text": "Was MUSS laut NET.3.1 mit nicht benutzten Netzports an Switches geschehen?",
+            "explanation": "NET.3.1.A1 fordert, dass unbenutzte Netzports nach Möglichkeit deaktiviert oder zumindest einem dafür eingerichteten Unassigned-VLAN zugeordnet werden müssen.",
+            "quote": "Unbenutzte Netzports MÜSSEN nach Möglichkeit deaktiviert oder zumindest einem dafür eingerichteten Unassigned-VLAN zugeordnet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Umgang mit unbenutzten Netzports an Switches gemäß NET.3.1 beschreiben.",
+            "baustein_id": "NET.3.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen deaktiviert oder einem Unassigned-VLAN zugeordnet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen physisch verschlossen werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie dürfen unverändert in der Standardkonfiguration verbleiben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen dem Management-VLAN zugeordnet werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.1-003",
+            "text": "In welchen Netzbereichen DÜRFEN laut NET.3.1 dynamische Routing-Protokolle NICHT eingesetzt werden?",
+            "explanation": "NET.3.1.A20 legt fest, dass dynamische Routing-Protokolle nicht in demilitarisierten Zonen (DMZs) eingesetzt werden dürfen. Stattdessen sollen dort statische Routen eingetragen werden.",
+            "quote": "Dynamische Routing-Protokolle SOLLTEN ausschließlich in sicheren Netzen verwendet werden. Sie DÜRFEN NICHT in demilitarisierten Zonen (DMZs) eingesetzt werden. In DMZs SOLLTEN stattdessen statische Routen eingetragen werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Einschränkungen dynamischer Routing-Protokolle in DMZs gemäß NET.3.1 erklären.",
+            "baustein_id": "NET.3.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In demilitarisierten Zonen (DMZs)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Im internen LAN",
+                    "is_correct": false
+                },
+                {
+                    "text": "Im Management-Netz",
+                    "is_correct": false
+                },
+                {
+                    "text": "In allen Netzbereichen außer dem WAN",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.1-004",
+            "text": "Was ist laut NET.3.1 bei der Beschaffung von Routern und Switches für erhöhten Schutzbedarf bezüglich Zertifizierung zu beachten?",
+            "explanation": "NET.3.1.A28 empfiehlt für erhöhten Schutzbedarf den Einsatz von Geräten mit einer Sicherheitsevaluierung nach Common Criteria, mindestens mit der Stufe EAL4.",
+            "quote": "Es SOLLTEN Router und Switches mit einer Sicherheitsevaluierung nach Common Criteria eingesetzt werden, mindestens mit der Stufe EAL4.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Zertifizierungsanforderung für Router und Switches bei erhöhtem Schutzbedarf benennen.",
+            "baustein_id": "NET.3.1",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sicherheitsevaluierung nach Common Criteria, mindestens EAL4",
+                    "is_correct": true
+                },
+                {
+                    "text": "ISO 27001-Zertifizierung des Herstellers",
+                    "is_correct": false
+                },
+                {
+                    "text": "BSI-Grundschutz-Zertifikat für das Gerät",
+                    "is_correct": false
+                },
+                {
+                    "text": "Common Criteria Stufe EAL2 ist ausreichend",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

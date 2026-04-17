@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "DER.1",
+        "chapter_title": "Detektion von sicherheitsrelevanten Ereignissen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-der.1-001",
+            "text": "Was MUSS laut DER.1.A3 für sicherheitsrelevante Ereignisse festgelegt und dokumentiert werden?",
+            "explanation": "Für sicherheitsrelevante Ereignisse müssen geeignete Melde- und Alarmierungswege festgelegt und dokumentiert werden. Es muss bestimmt werden, welche Stellen wann zu informieren sind.",
+            "quote": "Für sicherheitsrelevante Ereignisse MÜSSEN geeignete Melde- und Alarmierungswege festgelegt und dokumentiert werden. Es MUSS bestimmt werden, welche Stellen wann zu informieren sind.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an Meldewege für sicherheitsrelevante Ereignisse nach DER.1.A3 benennen.",
+            "baustein_id": "DER.1.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Geeignete Melde- und Alarmierungswege, einschließlich welche Stellen wann zu informieren sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die E-Mail-Adresse des IT-Leiters",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Kontaktdaten des Herstellers der Detektionssysteme",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Kosten der Alarmierungskette pro Vorfall",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.1-002",
+            "text": "Was MÜSSEN laut DER.1.A4 alle Benutzenden bei Ereignismeldungen ihrer Clients tun?",
+            "explanation": "Benutzende dürfen Ereignismeldungen nicht einfach ignorieren oder schließen, sondern müssen sie gemäß den Alarmierungswegen an das Incident Management weitergeben.",
+            "quote": "Alle Benutzenden MÜSSEN dahingehend sensibilisiert werden, dass sie Ereignismeldungen ihrer Clients nicht einfach ignorieren oder schließen. Sie MÜSSEN die Meldungen entsprechend der Alarmierungswege an das verantwortliche Incident Management weitergeben.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichten der Benutzenden bei Ereignismeldungen nach DER.1.A4 benennen.",
+            "baustein_id": "DER.1.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Meldungen nicht ignorieren, sondern über Alarmierungswege an das Incident Management weitergeben",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Meldungen selbstständig analysieren und beheben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Meldungen per Screenshot archivieren und monatlich berichten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Den Client sofort ausschalten und den Vorgesetzten informieren",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.1-003",
+            "text": "Was MUSS laut DER.1.A5 geprüft werden, wenn IT-Systeme Detektionsfunktionen besitzen?",
+            "explanation": "Falls IT-Systeme oder Anwendungen über Funktionen zur Detektion verfügen, müssen diese aktiviert und benutzt werden. Zusätzlich muss geprüft werden, ob zusätzliche Schadcodescanner auf zentralen IT-Systemen installiert werden sollen.",
+            "quote": "Falls eingesetzte IT-Systeme oder Anwendungen über Funktionen verfügen, mit denen sich sicherheitsrelevante Ereignisse detektieren lassen, dann MÜSSEN diese aktiviert und benutzt werden. • Es MUSS geprüft werden, ob zusätzliche Schadcodescanner auf zentralen IT-Systemen installiert werden sollen.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an den Einsatz mitgelieferter Systemfunktionen zur Detektion nach DER.1.A5 beschreiben.",
+            "baustein_id": "DER.1.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Funktionen müssen aktiviert werden und es muss geprüft werden, ob zusätzliche Schadcodescanner nötig sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Funktionen dürfen aus Performance-Gründen deaktiviert bleiben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur kommerzielle Detektionssysteme dürfen eingesetzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die mitgelieferten Funktionen müssen durch Drittprodukte ersetzt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.1-004",
+            "text": "Was MUSS laut DER.1.A2 bei der Auswertung von Protokollierungsdaten eingehalten werden?",
+            "explanation": "Es müssen die Bestimmungen aus den Datenschutzgesetzen eingehalten und die Persönlichkeitsrechte bzw. Mitbestimmungsrechte der Mitarbeitendenvertretungen gewahrt werden.",
+            "quote": "Wenn Protokollierungsdaten ausgewertet werden, dann MÜSSEN dabei die Bestimmungen aus den aktuellen Gesetzen zum Bundes- und Landesdatenschutz eingehalten werden. Wenn Detektionssysteme eingesetzt werden, dann MÜSSEN die Persönlichkeitsrechte bzw. Mitbestimmungsrechte der Mitarbeitendenvertretungen gewahrt werden.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die datenschutzrechtlichen Anforderungen bei der Auswertung von Protokollierungsdaten nach DER.1.A2 benennen.",
+            "baustein_id": "DER.1.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Datenschutzgesetze müssen eingehalten und Persönlichkeits- bzw. Mitbestimmungsrechte gewahrt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Daten dürfen ohne Einschränkungen ausgewertet werden, sofern ein Sicherheitsvorfall vorliegt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur der ISB darf Protokollierungsdaten einsehen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Auswertung ist nur durch externe Forensiker zulässig",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

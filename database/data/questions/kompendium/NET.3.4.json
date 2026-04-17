@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.3.4",
+        "chapter_title": "Network Access Control",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.3.4-001",
+            "text": "Welche Komponenten umfasst eine NAC-Lösung nach IEEE 802.1X laut NET.3.4?",
+            "explanation": "NET.3.4 listet vier Komponenten einer NAC-Lösung nach IEEE 802.1X auf: Authentication Server (RADIUS-Server), Supplicant auf dem Endgerät, Authenticator auf einem Access-Switch oder WLAN-Komponente und eine zentrale NAC-Identitätsverwaltung.",
+            "quote": "Eine NAC-Lösung nach IEEE 802.1X umfasst also folgende Komponenten: • Authentication Server oder RADIUS-Server • Supplicant auf einem Endgerät • Authenticator auf einem Access-Switch oder einer WLAN-Komponente (WLAN Access Point oder WLAN Controller) • zentrale NAC-Identitätsverwaltung, die als integrierte Identitätsverwaltung auf dem Server realisiert sein kann oder auf bestehende Verzeichnisdienste zurückgreift",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Komponenten einer NAC-Lösung nach IEEE 802.1X aufzählen.",
+            "baustein_id": "NET.3.4",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "RADIUS-Server und Supplicant auf dem Endgerät",
+                    "is_correct": true
+                },
+                {
+                    "text": "Authenticator auf Access-Switch oder WLAN-Komponente sowie zentrale NAC-Identitätsverwaltung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Firewall und Intrusion Detection System",
+                    "is_correct": false
+                },
+                {
+                    "text": "VPN-Gateway und Proxy-Server",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.4-002",
+            "text": "Wie SOLLTEN laut NET.3.4 Endgeräte behandelt werden, die nur über MAC-Adress-Authentisierung identifiziert werden?",
+            "explanation": "NET.3.4.A14 empfiehlt, dass Endgeräte mit MAC-Adress-Authentisierung nicht als vertrauenswürdige Endgeräte eingestuft und deren Netzzugang auf das notwendige Minimum beschränkt werden sollte.",
+            "quote": "Endgeräte, die nicht über eine sichere EAP-Methode authentisiert werden können und anhand ihrer MAC-Adresse identifiziert werden, SOLLTEN NICHT als vertrauenswürdige Endgeräte eingestuft werden. Der Netzzugang SOLLTE auf das notwendige Minimum beschränkt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Den Umgang mit MAC-authentisierten Endgeräten in NAC-Lösungen beschreiben.",
+            "baustein_id": "NET.3.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie sollten nicht als vertrauenswürdig eingestuft werden und nur minimalen Netzzugang erhalten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie dürfen uneingeschränkt auf alle Netzsegmente zugreifen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen vom Netz vollständig ausgeschlossen werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie erhalten automatisch den gleichen Zugang wie zertifikatsbasiert authentisierte Geräte",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.3.4-003",
+            "text": "Wo SOLLTE laut NET.3.4 der RADIUS-Server positioniert werden?",
+            "explanation": "NET.3.4.A17 empfiehlt die Positionierung des RADIUS-Servers in einem geschützten Netzsegment innerhalb des Management-Bereichs. Der RADIUS-Server sollte nicht direkt mit Endgeräten kommunizieren.",
+            "quote": "Der RADIUS-Server SOLLTE in einem geschützten Netzsegment innerhalb des Management-Bereichs (siehe NET.1.1 Netzarchitektur und -design) positioniert werden. • Der RADIUS-Server SOLLTE NICHT direkt mit Endgeräten kommunizieren, sondern ausschließlich über den Authenticator auf den Access-Switches.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die korrekte Netzpositionierung des RADIUS-Servers gemäß NET.3.4 beschreiben.",
+            "baustein_id": "NET.3.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In einem geschützten Netzsegment innerhalb des Management-Bereichs",
+                    "is_correct": true
+                },
+                {
+                    "text": "In der DMZ, damit er von außen erreichbar ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Im selben Netzsegment wie die Endgeräte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf dem Access-Switch selbst",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

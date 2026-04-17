@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Section 7.2 is clean. All five quotes verify verbatim. The three Grundregeln (Leitungsebene, ISB, Mitarbeiter-Eigenverantwortung) and the Stabsstellen-Positionierung are each mapped to focused MCQs with correct single-answer keys. Distractors are clearly wrong per the passage. All items are topic=methodik (roles/governance) at basis difficulty, which fits. Page ranges (30) conform to the manifest. Schema correct for Standards doc.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-7.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.2-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

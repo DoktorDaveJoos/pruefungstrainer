@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.7",
+        "chapter_title": "Systemmanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.7-001",
+            "text": "Was MUSS laut OPS.1.1.7.A4 gelten, wenn Systemmanagement-L\u00f6sung und verwaltete Systeme \u00fcber die produktive Infrastruktur kommunizieren?",
+            "explanation": "Es m\u00fcssen sichere Protokolle verwendet werden. Falls keine sicheren Protokolle m\u00f6glich sind, muss ein Administrationsnetz (Out-of-Band-Management) verwendet werden.",
+            "quote": "Sobald die Systemmanagement-L\u00f6sung und die zu verwaltenden Systeme \u00fcber die produktive Infrastruktur kommunizieren, M\u00dcSSEN daf\u00fcr sichere Protokolle verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Absicherung der Systemmanagement-Kommunikation nach OPS.1.1.7.A4 benennen.",
+            "baustein_id": "OPS.1.1.7.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Es m\u00fcssen sichere Protokolle verwendet werden", "is_correct": true},
+                {"text": "Die Kommunikation darf ausschlie\u00dflich \u00fcber das Internet erfolgen", "is_correct": false},
+                {"text": "Unverschl\u00fcsselte Protokolle sind ausreichend, wenn ein VPN vorhanden ist", "is_correct": false},
+                {"text": "Die Kommunikation muss immer physisch getrennt erfolgen", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.7-002",
+            "text": "Was MUSS laut OPS.1.1.7.A5 f\u00fcr die Authentisierung zwischen Systemmanagement-L\u00f6sung und verwalteten Systemen gelten?",
+            "explanation": "Die Authentisierung muss in beide Richtungen (gegenseitig) erfolgen und mittels sicherer Protokolle umgesetzt werden.",
+            "quote": "Die Authentisierung zwischen Systemmanagement-L\u00f6sung und zu verwaltenden Systemen MUSS in beide Richtungen erfolgen. \u2022 Die Authentisierung MUSS mittels sicherer Protokolle erfolgen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die gegenseitige Authentisierung im Systemmanagement nach OPS.1.1.7.A5 erl\u00e4utern.",
+            "baustein_id": "OPS.1.1.7.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Die Authentisierung muss gegenseitig (in beide Richtungen) und mittels sicherer Protokolle erfolgen", "is_correct": true},
+                {"text": "Nur die verwalteten Systeme m\u00fcssen sich gegen\u00fcber der Systemmanagement-L\u00f6sung authentisieren", "is_correct": false},
+                {"text": "Eine einfache Passwort-Authentisierung in eine Richtung ist ausreichend", "is_correct": false},
+                {"text": "Die Authentisierung ist nur bei erhöhtem Schutzbedarf erforderlich", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.7-003",
+            "text": "Was MUSS laut OPS.1.1.7.A3 f\u00fcr alle Komponenten der Systemmanagement-L\u00f6sung gelten?",
+            "explanation": "Alle Komponenten, inklusive der zu verwaltenden Systeme, m\u00fcssen eine synchrone Uhrzeit nutzen. Die Systemzeit muss \u00fcber geeignete Protokolle synchronisiert werden.",
+            "quote": "Alle Komponenten der Systemmanagement-L\u00f6sung, inklusive der zu verwaltenden Systeme, M\u00dcSSEN eine synchrone Uhrzeit nutzen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zeitsynchronisationsanforderung im Systemmanagement nach OPS.1.1.7.A3 benennen.",
+            "baustein_id": "OPS.1.1.7.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Alle Komponenten m\u00fcssen eine synchrone Uhrzeit nutzen", "is_correct": true},
+                {"text": "Nur die zentralen Server m\u00fcssen synchronisiert werden", "is_correct": false},
+                {"text": "Eine Abweichung von bis zu 5 Minuten ist zul\u00e4ssig", "is_correct": false},
+                {"text": "Die Zeitsynchronisation erfolgt ausschlie\u00dflich manuell", "is_correct": false}
+            ]
+        }
+    ]
+}

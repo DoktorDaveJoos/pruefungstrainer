@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.3.3",
+        "chapter_title": "Mobiltelefon",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.3.3-001",
+            "text": "Was MUSS laut SYS.3.3 bei Verlust eines Mobiltelefons geschehen?",
+            "explanation": "SYS.3.3.A2 fordert, dass bei Verlust die SIM-Karte zeitnah gesperrt werden muss. Vorhandene Mechanismen zum Diebstahlschutz wie Fernl\u00f6schung oder -sperrung sollten genutzt werden. Alle notwendigen Informationen zur Sperrung m\u00fcssen unmittelbar griffbereit sein.",
+            "quote": "Bei Verlust eines Mobiltelefons MUSS die darin verwendete SIM-Karte zeitnah gesperrt werden. \u2022 Alle notwendigen Informationen zur Sperrung von SIM-Karte und Mobiltelefon M\u00dcSSEN unmittelbar griffbereit sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderungen bei Verlust eines Mobiltelefons benennen.",
+            "baustein_id": "SYS.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die SIM-Karte muss zeitnah gesperrt werden.", "is_correct": true },
+                { "text": "Informationen zur Sperrung m\u00fcssen unmittelbar griffbereit sein.", "is_correct": true },
+                { "text": "Es gen\u00fcgt, den Verlust beim n\u00e4chsten regularen Meeting zu melden.", "is_correct": false },
+                { "text": "Eine neue SIM-Karte muss vor der Sperrung der alten bestellt werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.3-002",
+            "text": "Was MUSS laut SYS.3.3 vor der Entsorgung von Mobiltelefonen geschehen?",
+            "explanation": "SYS.3.3.A4 fordert, dass Mobiltelefone vor der Entsorgung auf den Werkszustand zur\u00fcckgesetzt werden m\u00fcssen. Es muss \u00fcberpr\u00fcft werden, ob alle Daten gel\u00f6scht wurden. Werden Mobiltelefone sp\u00e4ter oder in gr\u00f6\u00dferer Anzahl entsorgt, m\u00fcssen die gesammelten Ger\u00e4te vor unberechtigtem Zugriff gesch\u00fctzt werden.",
+            "quote": "Mobiltelefone M\u00dcSSEN vor der Entsorgung auf den Werkszustand zur\u00fcckgesetzt werden. Es MUSS \u00fcberpr\u00fcft werden, ob alle Daten gel\u00f6scht wurden. \u2022 Falls die Mobiltelefone und Speicherkarten erst zu einem sp\u00e4teren Zeitpunkt beziehungsweise in gr\u00f6\u00dferer Anzahl entsorgt werden, M\u00dcSSEN die gesammelten Mobiltelefone und Speicherkarten vor unberechtigtem Zugriff gesch\u00fctzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die ordnungsgem\u00e4\u00dfe Entsorgung von Mobiltelefonen beschreiben.",
+            "baustein_id": "SYS.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Mobiltelefon muss auf den Werkszustand zur\u00fcckgesetzt und die L\u00f6schung \u00fcberpr\u00fcft werden.", "is_correct": true },
+                { "text": "Es reicht, die SIM-Karte zu entfernen, ohne die Daten auf dem Ger\u00e4t zu l\u00f6schen.", "is_correct": false },
+                { "text": "Die Entsorgung darf ohne vorherige Datenl\u00f6schung erfolgen, wenn das Ger\u00e4t defekt ist.", "is_correct": false },
+                { "text": "Mobiltelefone d\u00fcrfen direkt im Hausm\u00fcll entsorgt werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.3-003",
+            "text": "Wie SOLLTE laut SYS.3.3 die SIM-Karte eines Mobiltelefons gesch\u00fctzt werden?",
+            "explanation": "SYS.3.3.A5 empfiehlt, die SIM-Karte durch eine sichere PIN zu sch\u00fctzen und das Mobiltelefon durch einen Ger\u00e4te-Code abzusichern. Falls m\u00f6glich, sollte das Ger\u00e4t an die SIM-Karte gebunden werden (SIM-Lock). Die Super-PIN/PUK sollte nur von Zust\u00e4ndigen im Rahmen definierter Prozesse benutzt werden.",
+            "quote": "Die SIM-Karte SOLLTE durch eine sichere PIN gesch\u00fctzt werden. Die Super-PIN/PUK SOLLTE nur im Rahmen der definierten Prozesse von den Zust\u00e4ndigen benutzt werden. Das Mobiltelefon SOLLTE durch einen Ger\u00e4te-Code gesch\u00fctzt werden. Falls m\u00f6glich, SOLLTE das Ger\u00e4t an die SIM-Karte gebunden werden (SIM-Lock).",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlungen zum Schutz der SIM-Karte und des Mobiltelefons beschreiben.",
+            "baustein_id": "SYS.3.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die SIM-Karte sollte durch eine sichere PIN gesch\u00fctzt werden.", "is_correct": true },
+                { "text": "Falls m\u00f6glich, sollte das Ger\u00e4t an die SIM-Karte gebunden werden (SIM-Lock).", "is_correct": true },
+                { "text": "Die PIN der SIM-Karte sollte deaktiviert werden, um die Bedienung zu erleichtern.", "is_correct": false },
+                { "text": "Die Super-PIN/PUK sollte allen Mitarbeitenden bekannt gegeben werden.", "is_correct": false }
+            ]
+        }
+    ]
+}

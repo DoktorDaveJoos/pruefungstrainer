@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.4.2",
+        "chapter_title": "SAP-ERP-System",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.4.2-001",
+            "text": "Was MUSS direkt nach der Installation eines SAP-ERP-Systems mit den SAP-Standard-Konten geschehen?",
+            "explanation": "Die Anforderung APP.4.2.A4 verlangt, dass direkt nach der Installation die voreingestellten Passwörter der SAP-Standard-Konten geändert werden müssen. Außerdem müssen die Konten durch geeignete Maßnahmen abgesichert werden. Die anderen Optionen sind falsch: Standard-Konten dürfen nicht für RFC-Verbindungen benutzt werden, und ein vollständiges Löschen ist nicht gefordert.",
+            "quote": "Direkt nach der Installation eines SAP-ERP-Systems MÜSSEN die voreingestellten Passwörter der SAP-Standard-Konten geändert werden. Auch MÜSSEN die eingerichteten SAP-Standard-Konten mithilfe geeigneter Maßnahmen abgesichert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtmaßnahmen zur Absicherung von SAP-Standard-Konten nach Installation benennen.",
+            "baustein_id": "APP.4.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die voreingestellten Passwörter müssen geändert und die Konten abgesichert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Standard-Konten müssen vollständig gelöscht werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Standard-Konten sollen für RFC-Verbindungen verwendet werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Standard-Konten dürfen ohne Änderung im Produktivbetrieb genutzt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.2-002",
+            "text": "Welche Prinzipien MÜSSEN beim Konten- und Berechtigungskonzept für SAP-ERP-Systeme berücksichtigt werden?",
+            "explanation": "Anforderung APP.4.2.A6 listet eine Reihe von Prinzipien auf, darunter das Identitätsprinzip, Minimalprinzip, Stellenprinzip, Funktionstrennungsprinzip (Segregation of Duties) und weitere. Das Maximum-Prinzip ist eine Erfindung und widerspricht dem Minimalprinzip.",
+            "quote": "Identitätsprinzip, Minimalprinzip, Stellenprinzip, Belegprinzip der Buchhaltung, Belegprinzip der Berechtigungsverwaltung, Funktionstrennungsprinzip (Segregation of Duties, SoD), Genehmigungsprinzip, Standardprinzip, Schriftformprinzip und Kontrollprinzip MÜSSEN berücksichtigt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Prinzipien des Konten- und Berechtigungskonzepts für SAP-ERP-Systeme aufzählen.",
+            "baustein_id": "APP.4.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Identitätsprinzip, Minimalprinzip und Stellenprinzip",
+                    "is_correct": true
+                },
+                {
+                    "text": "Funktionstrennungsprinzip (Segregation of Duties), Genehmigungsprinzip und Kontrollprinzip",
+                    "is_correct": true
+                },
+                {
+                    "text": "Maximum-Prinzip und Prinzip der vollständigen Berechtigung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Delegationsprinzip und Automatisierungsprinzip",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.2-003",
+            "text": "Welche Gefährdung entsteht durch ein fehlendes SAP-Berechtigungskonzept?",
+            "explanation": "Die Gefährdungslage (2.3) beschreibt, dass bei fehlendem Berechtigungskonzept Konten oft mehr Berechtigungen als notwendig erhalten. Diese Konten könnten das SAP-ERP-System dann vorsätzlich manipulieren oder versehentlich beschädigen, wodurch Integrität, Vertraulichkeit und Verfügbarkeit gefährdet sind.",
+            "quote": "Fehlt jedoch ein durchdachtes Berechtigungskonzept, werden z. B. Konten oft mehr Berechtigungen als notwendig zugewiesen. Diese Konten könnten dann das SAP-ERP-System vorsätzlich manipulieren oder versehentlich beschädigen. Somit ist die Integrität, Vertraulichkeit und Verfügbarkeit gefährdet.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch ein fehlendes SAP-Berechtigungskonzept beschreiben.",
+            "baustein_id": "APP.4.2",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Konten erhalten mehr Berechtigungen als notwendig und können das System manipulieren oder beschädigen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Das System wird automatisch abgeschaltet",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die SAP-Lizenz wird ungültig",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Netzwerkverbindung zum SAP-Router bricht ab",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.2-004",
+            "text": "Welche Bereiche MÜSSEN sich abstimmen, um Sicherheitslücken bei der Netzsicherheit des SAP-ERP-Systems zu vermeiden?",
+            "explanation": "Anforderung APP.4.2.A3 verlangt, dass sich die Bereiche IT-Betrieb, Firewall-Betrieb, Portalbetrieb und SAP-Betrieb miteinander abstimmen müssen, um Fehlinterpretationen oder Missverständnisse zu vermeiden. Externes Consulting und Datenschutzbeauftragte werden in diesem Kontext nicht erwähnt.",
+            "quote": "Um Sicherheitslücken aufgrund von Fehlinterpretationen oder Missverständnissen zu vermeiden, MÜSSEN sich die Bereiche IT-Betrieb, Firewall-Betrieb, Portalbetrieb und SAP-Betrieb miteinander abstimmen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Bereiche benennen, die sich für die Netzsicherheit eines SAP-ERP-Systems abstimmen müssen.",
+            "baustein_id": "APP.4.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "IT-Betrieb, Firewall-Betrieb, Portalbetrieb und SAP-Betrieb",
+                    "is_correct": true
+                },
+                {
+                    "text": "Geschäftsführung, Personalabteilung und Einkauf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur der SAP-Betrieb und externes Consulting",
+                    "is_correct": false
+                },
+                {
+                    "text": "IT-Betrieb und Datenschutzbeauftragter",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.2-005",
+            "text": "Welche SAP-Profile SOLLTEN laut Baustein im Produktivsystem NICHT vergeben werden?",
+            "explanation": "Anforderung APP.4.2.A14 besagt, dass die SAP-Profile SAP_ALL und SAP_NEW* sowie das Berechtigungsobjekt S_DEVELOP (mit Änderungsberechtigungen ACTVT 01 und 02) im Produktivsystem nicht vergeben werden sollten. Notfall-Konten sind von dieser Vorgabe ausgeschlossen. SAP_DISPLAY ist keine der genannten Einschränkungen.",
+            "quote": "Die SAP-Profile SAP_ALL und SAP_NEW* sowie das SAP-Berechtigungsobjekt S_DEVELOP (mit Änderungsberechtigungen ACTVT 01 und 02) SOLLTEN im Produktivsystem nicht vergeben werden. Notfall-Konten SOLLTEN von dieser Vorgabe ausgeschlossen sein.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Kritische SAP-Berechtigungen identifizieren, die im Produktivsystem nicht vergeben werden sollten.",
+            "baustein_id": "APP.4.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "SAP_ALL und SAP_NEW*",
+                    "is_correct": true
+                },
+                {
+                    "text": "S_DEVELOP mit Änderungsberechtigungen ACTVT 01 und 02",
+                    "is_correct": true
+                },
+                {
+                    "text": "SAP_DISPLAY und SAP_READ",
+                    "is_correct": false
+                },
+                {
+                    "text": "SAP_ALL und SAP_DISPLAY",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

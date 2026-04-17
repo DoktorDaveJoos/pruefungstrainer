@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.8",
+        "chapter_title": "Speicherlösungen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.8-001",
+            "text": "Was MUSS laut SYS.1.8.A1 bei der Aufstellung von Speichersystemen sichergestellt sein?",
+            "explanation": "SYS.1.8.A1 fordert als Basis-Anforderung, dass die IT-Komponenten von Speicherlösungen in verschlossenen Räumen aufgestellt werden müssen, zu denen nur Berechtigte Zutritt haben. Zudem muss eine sichere Stromversorgung sichergestellt sein und die Herstellervorgaben zu Umgebungstemperatur und Luftfeuchte eingehalten werden.",
+            "quote": "Die IT-Komponenten von Speicherlösungen MÜSSEN in verschlossenen Räumen aufgestellt werden. Zu diesen Räumen DÜRFEN NUR Berechtigte Zutritt haben. Zudem MUSS eine sichere Stromversorgung sichergestellt sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Aufstellung von Speichersystemen gemäß SYS.1.8.A1 wiedergeben.",
+            "baustein_id": "SYS.1.8",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Aufstellung in verschlossenen Räumen mit Zutritt nur für Berechtigte",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sichere Stromversorgung muss sichergestellt sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Aufstellung in klimatisierten Großraumbüros",
+                    "is_correct": false
+                },
+                {
+                    "text": "Platzierung in frei zugänglichen Serverregalen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.8-002",
+            "text": "Welche Gefährdung beschreibt der Baustein SYS.1.8 im Zusammenhang mit WWN-Spoofing?",
+            "explanation": "Der Baustein beschreibt, dass World Wide Names (WWNs) in einem FC-SAN geändert werden können, wodurch unberechtigt auf Daten zugegriffen werden kann. Insbesondere bei mandantenfähigen Speichersystemen können Unberechtigte so auf Informationen anderer Mandanten zugreifen.",
+            "quote": "Mittels Programmen, die durch das herstellende Unternehmen der Host Bus Adapter (HBA) zur Verfügung gestellt werden, kann der WWN eines HBAs geändert werden. Dadurch kann unberechtigt auf Daten zugegriffen werden. • Insbesondere im Zusammenhang mit mandantenfähigen Speichersystemen können Unberechtigte auf die Informationen anderer Mandanten zugreifen.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Gefährdung durch WWN-Spoofing bei Speicherlösungen gemäß SYS.1.8 erläutern.",
+            "baustein_id": "SYS.1.8",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Unberechtigte können durch Änderung des WWN auf Daten anderer Mandanten zugreifen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Speicherkapazität wird durch WWN-Spoofing verdoppelt",
+                    "is_correct": false
+                },
+                {
+                    "text": "WWN-Spoofing führt zur automatischen Verschlüsselung aller Daten",
+                    "is_correct": false
+                },
+                {
+                    "text": "WWN-Spoofing deaktiviert die Netzwerksegmentierung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.8-003",
+            "text": "Was SOLLTE laut SYS.1.8.A26 bei erhöhtem Schutzbedarf zur Segmentierung eines SANs eingesetzt werden?",
+            "explanation": "SYS.1.8.A26 empfiehlt bei erhöhtem Schutzbedarf den Einsatz von Hard-Zoning zur Segmentierung von SANs. Dies bietet einen stärkeren Schutz als Soft-Zoning, da die Trennung auf Hardware-Ebene erfolgt.",
+            "quote": "Um SANs zu segmentieren, SOLLTE Hard-Zoning eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlene SAN-Segmentierungsmethode bei erhöhtem Schutzbedarf gemäß SYS.1.8.A26 benennen.",
+            "baustein_id": "SYS.1.8",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Hard-Zoning",
+                    "is_correct": true
+                },
+                {
+                    "text": "Soft-Zoning",
+                    "is_correct": false
+                },
+                {
+                    "text": "VLAN-Segmentierung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Firewall-basierte Trennung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.8-004",
+            "text": "Was SOLLTE laut SYS.1.8.A15 zum Trennen von Mandanten im Block-Storage-Umfeld eingesetzt werden?",
+            "explanation": "SYS.1.8.A15 empfiehlt, im Block-Storage-Umfeld LUN Masking einzusetzen, um Mandanten voneinander zu trennen. In Fileservice-Umgebungen sollte mit virtuellen Fileservern gearbeitet werden, wobei jedem Mandanten ein eigener Fileservice zugeordnet wird.",
+            "quote": "Im Block-Storage-Umfeld SOLLTE LUN Masking eingesetzt werden, um Mandanten voneinander zu trennen. In Fileservice-Umgebungen SOLLTE es möglich sein, mit virtuellen Fileservern zu agieren.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Mandantentrennungsmethoden bei Speicherlösungen gemäß SYS.1.8.A15 unterscheiden.",
+            "baustein_id": "SYS.1.8",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "LUN Masking",
+                    "is_correct": true
+                },
+                {
+                    "text": "VLAN-Tagging",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dateisystem-Verschlüsselung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Netzwerk-Segmentierung mit Firewalls",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

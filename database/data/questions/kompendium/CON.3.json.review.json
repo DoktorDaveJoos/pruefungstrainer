@@ -1,0 +1,49 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.3 Datensicherungskonzept: 4 questions on CON.3.A15/A12/A1 plus one chapter-intro (003) with null baustein_id. Quotes match after dehyphenation; 003 is in the buffer zone (boundary drift). Correct answers align with CON.3 requirements; the RAID-vs-backup distinction (003) is unambiguous. `experte` on 003/004 requires conceptual synthesis — appropriate.",
+    "results": [
+        {
+            "external_id": "kompendium-con.3-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Es MUSS regelmäßig getestet werden, ob die Datensicherungen wie gewünscht funktionieren, v...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.3-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Speichermedien für die Datensicherung MÜSSEN räumlich getrennt von den gesicherten IT-...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Dem gegenüber werden Datenspiegelungen über RAID-Systeme nicht als Datensicherung verstand...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.3-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

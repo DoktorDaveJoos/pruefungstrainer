@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.10 Webanwendungen: 4 questions on CON.10.A8/A9/A14/A3. Quote 001 (`Die Entwickelnden MÜSSEN ... Session-IDs, MÜSSEN serverseitig validiert`) and quote 003 (HTTP-Header list with `Content-Security-Policy`) both render in source with `-\\n` compound-hyphen artifacts — only match under aggressive normalization. This is a PDF extraction ambiguity, not fabricated content. Correct answers supported; distractors (clientside-only validation, dynamic SQL strings, wrong-header names) unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-con.10-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Entwickelnden MÜSSEN sämtliche an eine Webanwendung übergebenen Daten als potenziell g...` matches source only under aggressive normalization (ignoring hyphens). PDF extracts compound words like `Content-Security-Policy` as `Content-Security-\\nPolicy`; hyphen-newline is ambiguous between word-break and compound-hyphen."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.10-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-con.10-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Es SOLLTEN mindestens die folgenden HTTP-Header verwendet werden: Content-Security-Policy,...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.10-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

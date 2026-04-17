@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "IND.2.1 Allgemeine ICS-Komponenten: 3 questions on ICS hardening (default passwords, ICS/Office-IT separation, disable unused services). Quotes found in source near manifest range (buffer zone — manifest drift). Correct answers unambiguously supported; distractors (leave defaults, merge ICS with Office-IT, enable all interfaces) clearly wrong. Topic `bausteine` fits. Schema uses chapter-level baustein_id — acceptable.",
+    "results": [
+        {
+            "external_id": "kompendium-ind.2.1-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Standardmäßig eingerichtete bzw. vom herstellenden Unternehmen gesetzte Passwörter MÜSSEN ...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.1-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `ICS-Komponenten MÜSSEN von der Office-IT getrennt werden....` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `ICS-Komponenten SOLLTEN so wenig wie möglich mit anderen ICS-Komponenten kommunizieren....` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.1-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Alle nicht genutzten Dienste, Funktionen und Schnittstellen der ICS-Komponenten MÜSSEN dea...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        }
+    ]
+}

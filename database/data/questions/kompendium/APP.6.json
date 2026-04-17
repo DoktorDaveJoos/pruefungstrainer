@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.6",
+        "chapter_title": "Allgemeine Software",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.6-001",
+            "text": "Was MUSS die Institution entscheiden, bevor sie eine neue Software einführt?",
+            "explanation": "Anforderung APP.6.A1 listet auf, dass die Institution vor Einführung einer neuen Software entscheiden muss, wofür die Software genutzt wird, wie Benutzende beteiligt werden, wie die Software an andere Systeme angebunden wird, auf welchen IT-Systemen sie läuft und ob eine Abhängigkeit zum Hersteller entsteht. Dabei müssen bereits Sicherheitsaspekte berücksichtigt werden.",
+            "quote": "Bevor eine Institution eine (neue) Software einführt, MUSS sie entscheiden, • wofür die Software genutzt und welche Informationen damit verarbeitet werden sollen, • wie die Benutzenden bei der Anforderungserhebung beteiligt und bei der Einführung unterstützt werden sollen, • wie die Software an weitere Anwendungen und IT-Systeme über welche Schnittstellen angebunden wird, • auf welchen IT-Systemen die Software ausgeführt werden soll und welche Ressourcen zur Ausführung der Software erforderlich sind, sowie • ob sich die Institution in Abhängigkeit zu einem Hersteller oder einer Herstellerin begibt, wenn sie diese Software einsetzt.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtentscheidungen vor der Einführung neuer Software benennen.",
+            "baustein_id": "APP.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Wofür die Software genutzt wird, wie Benutzende beteiligt werden und wie die Anbindung an andere Systeme erfolgt",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf welchen IT-Systemen die Software läuft und ob eine Herstellerabhängigkeit entsteht",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche Marketingstrategie für die Software verwendet wird",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ob die Software als Open Source veröffentlicht werden kann",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.6-002",
+            "text": "Wie MUSS die Installation und Konfiguration von Software geregelt werden?",
+            "explanation": "Anforderung APP.6.A4 verlangt, dass Software nur mit dem geringsten notwendigen Funktionsumfang installiert und ausgeführt wird, mit den geringsten möglichen Berechtigungen läuft, die datensparsamsten Einstellungen konfiguriert werden und alle relevanten Sicherheitsupdates installiert sind, bevor die Software produktiv eingesetzt wird.",
+            "quote": "Die Installation und Konfiguration der Software MUSS durch den IT-Betrieb so geregelt werden, dass • die Software nur mit dem geringsten notwendigen Funktionsumfang installiert und ausgeführt wird, • die Software mit den geringsten möglichen Berechtigungen ausgeführt wird, • die datensparsamsten Einstellungen (in Bezug auf die Verarbeitung von personenbezogenen Daten) konfiguriert werden sowie • alle relevanten Sicherheitsupdates und -patches installiert sind, bevor die Software produktiv eingesetzt wird.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtregelungen für Installation und Konfiguration von Software beschreiben.",
+            "baustein_id": "APP.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Nur mit dem geringsten notwendigen Funktionsumfang und den geringsten möglichen Berechtigungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mit den datensparsamsten Einstellungen und nach Installation aller relevanten Sicherheitsupdates",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mit dem maximalen Funktionsumfang, um spätere Nachinstallationen zu vermeiden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ohne Berücksichtigung von Sicherheitsupdates, da diese später eingespielt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.6-003",
+            "text": "Welche Gefährdung entsteht durch den Bezug von Software aus unzuverlässigen Quellen?",
+            "explanation": "Die Gefährdungslage (2.3) beschreibt, dass beim Bezug aus unzuverlässigen Quellen nicht sichergestellt ist, dass eine unveränderte Originalversion eingesetzt wird. Stattdessen könnte eine defekte oder kompromittierte Version bezogen worden sein, wodurch Schadcode in der Institution verteilt werden kann.",
+            "quote": "Wird Software aus unzuverlässigen Quellen bezogen, ist nicht sichergestellt, dass eine unveränderte Originalversion der Software eingesetzt wird. Anstelle dessen könnte eine defekte oder kompromittierte Version der Software bezogen worden sein. • Wird kompromittierte Software installiert, kann Schadcode in der Institution verteilt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch den Bezug von Software aus unzuverlässigen Quellen beschreiben.",
+            "baustein_id": "APP.6",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es könnte eine defekte oder kompromittierte Version bezogen werden, die Schadcode verteilt",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Software läuft automatisch langsamer als die Originalversion",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Lizenz der Software wird automatisch ungültig",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Betriebssystem verweigert die Installation",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.6-004",
+            "text": "Was MUSS im Anforderungskatalog für Software erhoben werden?",
+            "explanation": "Anforderung APP.6.A2 verlangt, dass der Anforderungskatalog die grundlegenden funktionalen Anforderungen umfassen muss. Darüber hinaus müssen die nichtfunktionalen Anforderungen und insbesondere die Sicherheitsanforderungen integriert werden. Es müssen sowohl Anforderungen der Fachverantwortlichen als auch des IT-Betriebs berücksichtigt werden.",
+            "quote": "Auf Basis der Ergebnisse der Planung MÜSSEN die Anforderungen an die Software in einem Anforderungskatalog erhoben werden. Der Anforderungskatalog MUSS dabei die grundlegenden funktionalen Anforderungen umfassen. Darüber hinaus MÜSSEN die nichtfunktionalen Anforderungen und hier insbesondere die Sicherheitsanforderungen in den Anforderungskatalog integriert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtinhalte eines Software-Anforderungskatalogs benennen.",
+            "baustein_id": "APP.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Funktionale Anforderungen sowie nichtfunktionale und insbesondere Sicherheitsanforderungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die Kosten und Lizenzmodelle",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die technischen Hardwareanforderungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Marktanalyse aller verfügbaren Softwareprodukte",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

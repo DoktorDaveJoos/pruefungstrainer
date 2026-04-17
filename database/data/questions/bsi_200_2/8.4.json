@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "8.4",
+        "chapter_title": "IT-Grundschutz-Check",
+        "page_start": 150,
+        "page_end": 150
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-8.4-001",
+            "text": "Welche Tätigkeiten gehören laut Abschnitt 8.4.1 zu den organisatorischen Vorarbeiten des IT-Grundschutz-Checks?",
+            "explanation": "Der Aktionspunktkatalog zu 8.4.1 nennt das Sichten hausinterner Dokumente, das Festlegen des Umfangs externer Beteiligung, die Benennung von Hauptansprechpartnern je Baustein, die Abstimmung eines Terminplans und die Zusammenstellung eines Interview-Teams. Eine Risikoanalyse für sämtliche Zielobjekte gehört nicht zu den organisatorischen Vorarbeiten des Checks.",
+            "quote": "Hausinterne Dokumente mit Verfügungen und Regelungen sichten und Zuständigkeiten für diese Unterlagen klären • Feststellen, in welchem Umfang externe Stellen beteiligt werden müssen • Hauptansprechpartner für jeden in der Modellierung angewandten Baustein festlegen • Terminplan für Interviews abstimmen • Team für Interviews zusammenstellen",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Die organisatorischen Vorarbeiten des IT-Grundschutz-Checks benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 150,
+            "page_end": null,
+            "answers": [
+                { "text": "Hausinterne Dokumente mit Verfügungen und Regelungen sichten", "is_correct": true },
+                { "text": "Hauptansprechpartner für jeden in der Modellierung angewandten Baustein festlegen", "is_correct": true },
+                { "text": "Terminplan für Interviews abstimmen und Interview-Team zusammenstellen", "is_correct": true },
+                { "text": "Eine vollständige Risikoanalyse für sämtliche Zielobjekte nach BSI-Standard 200-3 durchführen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.4-002",
+            "text": "Für wen muss laut organisatorischer Vorarbeiten des IT-Grundschutz-Checks ein Hauptansprechpartner festgelegt werden?",
+            "explanation": "Der Aktionspunkt fordert explizit, für jeden in der Modellierung angewandten Baustein einen Hauptansprechpartner zu benennen. Es geht nicht um Zielobjekte, Räume oder einzelne Mitarbeiter.",
+            "quote": "Hauptansprechpartner für jeden in der Modellierung angewandten Baustein festlegen",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Die Benennung der Hauptansprechpartner für den IT-Grundschutz-Check beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 150,
+            "page_end": null,
+            "answers": [
+                { "text": "Für jeden in der Modellierung angewandten Baustein", "is_correct": true },
+                { "text": "Für jedes einzelne Zielobjekt der Strukturanalyse", "is_correct": false },
+                { "text": "Für jeden Raum des Informationsverbunds", "is_correct": false },
+                { "text": "Für jeden Mitarbeiter der Institution", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.4-003",
+            "text": "Was sollte im Rahmen der organisatorischen Vorarbeiten in Bezug auf externe Stellen geklärt werden?",
+            "explanation": "Der Aktionspunkt verlangt festzustellen, in welchem Umfang externe Stellen beteiligt werden müssen. Er sieht weder einen kompletten Verzicht auf externe Beteiligung vor noch pauschale Beauftragungen externer Prüfer für alle Bausteine oder die primäre Durchführung des Checks durch Externe.",
+            "quote": "Feststellen, in welchem Umfang externe Stellen beteiligt werden müssen",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Die Klärung der Einbindung externer Stellen im IT-Grundschutz-Check erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 150,
+            "page_end": null,
+            "answers": [
+                { "text": "In welchem Umfang externe Stellen beteiligt werden müssen", "is_correct": true },
+                { "text": "Dass externe Stellen grundsätzlich nicht beteiligt werden dürfen", "is_correct": false },
+                { "text": "Dass externe Prüfer für jeden Baustein beauftragt werden müssen", "is_correct": false },
+                { "text": "Dass der IT-Grundschutz-Check immer durch Externe durchgeführt werden muss", "is_correct": false }
+            ]
+        }
+    ]
+}

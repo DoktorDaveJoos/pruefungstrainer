@@ -1,0 +1,75 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All eight questions are factually correct and well-supported by the source text. However, several questions cite page_start values (40 or 41) that fall outside the manifest-declared range for section 4.4 (pages 42-43). This appears to be because section 4.4's content in the markdown begins well before page 42, with the subsection heading at roughly page 40 in the source. The questions accurately reflect where the cited text appears in the document; the manifest page range is the likely culprit. One quote (4.4-005) contains a residual soft-hyphen artifact ('Aufga ben' instead of 'Aufgaben'). The 'experte' difficulty on 4.4-007 is justified: the question requires understanding the nuanced role conflict between administrator and ISB, which is a multi-layered reasoning task.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-4.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.4-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 40 but manifest declares section 4.4 range as pages 42-43. The cited text does appear on page 40 of the document; the manifest range may be too narrow."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 40 but manifest declares section 4.4 range as pages 42-43."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 40 but manifest declares section 4.4 range as pages 42-43."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 40 but manifest declares section 4.4 range as pages 42-43."
+                },
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote contains 'Aufga ben' with a residual space; normalized source reads 'Aufgaben'. The intended passage is clearly identifiable."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.4-007",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.4-008",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 41 but manifest declares section 4.4 range as pages 42-43."
+                }
+            ]
+        }
+    ]
+}

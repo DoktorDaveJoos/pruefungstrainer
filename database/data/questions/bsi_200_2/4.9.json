@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.9",
+        "chapter_title": "Der Datenschutzbeauftragte",
+        "page_start": 47,
+        "page_end": 48
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.9-001",
+            "text": "Welche organisatorischen Merkmale sollte der Datenschutzbeauftragte laut Passage aufweisen?",
+            "explanation": "Der Datenschutzbeauftragte arbeitet eng mit dem ISB zusammen, gehört zum IS-Koordinierungsausschuss, ist weisungsunabhängig und berichtet direkt der Behörden- bzw. Unternehmensleitung. Eine Unterstellung unter den Leiter IT oder den Betriebsrat wäre nicht konfliktfrei.",
+            "quote": "In dieser Funktion arbeitet er eng mit dem Informationssicherheitsbeauftragten zusammen, gehört zum IS-Koordinierungsausschuss, ist weisungsunabhängig und berichtet direkt der Behörden- bzw. Unternehmensleitung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die organisatorische Stellung des Datenschutzbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": null,
+            "answers": [
+                { "text": "Er arbeitet eng mit dem ISB zusammen und gehört zum IS-Koordinierungsausschuss", "is_correct": true },
+                { "text": "Er ist weisungsunabhängig und berichtet direkt der Behörden- bzw. Unternehmensleitung", "is_correct": true },
+                { "text": "Er ist dem Leiter IT fachlich unterstellt", "is_correct": false },
+                { "text": "Er berichtet ausschließlich an den Betriebsrat", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-002",
+            "text": "Welches Problem kann entstehen, wenn die Aufgaben des Datenschutzbeauftragten Personen übertragen werden, die bereits eine andere Rolle innehaben?",
+            "explanation": "Laut Passage kann eine Interessenkollision entstehen, indem sich die betreffende Person in ihrer ursprünglichen Funktion selbst kontrolliert (Beispiel im Text: Leiter IT). Eine Verdoppelung des Gehalts oder automatische Haftungsentlastung ist nicht gemeint.",
+            "quote": "Oft werden die Aufgaben des Datenschutzbeauftragten Personen übertragen, die bereits eine andere Rolle innehaben, mit der in der neuen Funktion auch eine Interessenkollision auftreten kann, indem sie sich beispielsweise in ihrer ursprünglichen Funktion selbst kontrollieren (z. B. Leiter IT).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Risiko einer Interessenkollision bei Doppelrollen des Datenschutzbeauftragten erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine Interessenkollision, weil die Person sich in ihrer ursprünglichen Funktion selbst kontrolliert", "is_correct": true },
+                { "text": "Eine automatische Verdoppelung des Gehalts für die Doppelrolle", "is_correct": false },
+                { "text": "Eine gesetzlich vorgeschriebene Haftungsentlastung", "is_correct": false },
+                { "text": "Eine sofortige Zertifizierungspflicht durch das BSI", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-003",
+            "text": "Welche Kenntnisse muss der Datenschutzbeauftragte zur Aufgabenerfüllung besitzen?",
+            "explanation": "Laut Passage gehören zur Aufgabenerfüllung technische, organisatorische und rechtliche Kenntnisse. Er muss die jeweiligen gesetzlichen Regelungen (z. B. BDSG, DSGVO) kennen und anwenden können. Eine Berufsausbildung zum Informatiker oder ein juristisches Staatsexamen werden nicht zwingend gefordert.",
+            "quote": "Zur Aufgabenerfüllung gehören technische, organisatorische und rechtliche Kenntnisse. • Der Datenschutzbeauftragte muss die jeweiligen gesetzlichen Regelungen, bereichsspezifische datenschutzrechtliche Regelungen und die für die Institution einschlägigen Spezialvorschriften kennen und sicher anwenden können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Anforderungsprofil des Datenschutzbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": 48,
+            "answers": [
+                { "text": "Technische, organisatorische und rechtliche Kenntnisse", "is_correct": true },
+                { "text": "Kenntnis der jeweiligen gesetzlichen Regelungen und einschlägigen Spezialvorschriften", "is_correct": true },
+                { "text": "Zwingend ein erfolgreich absolviertes juristisches Staatsexamen", "is_correct": false },
+                { "text": "Eine abgeschlossene Berufsausbildung als Informatiker", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-004",
+            "text": "Welche Methodik empfehlen laut Passage die deutschen Datenschutzaufsichtsbehörden zur Aufgabenerfüllung?",
+            "explanation": "Die Passage verweist explizit auf das Standard-Datenschutzmodell [SDM]. ITIL, COBIT oder ISO 27005 werden nicht als empfohlene Methodik für den Datenschutzbeauftragten genannt.",
+            "quote": "Als Methodik zur effektiven und vollständigen Aufgabenerfüllung empfehlen die deutschen Datenschutzaufsichtsbehörden die Anwendung des Standard-Datenschutzmodells [SDM].",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene Methodik für den Datenschutzbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 47,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Standard-Datenschutzmodell [SDM]", "is_correct": true },
+                { "text": "ITIL v4", "is_correct": false },
+                { "text": "COBIT 2019", "is_correct": false },
+                { "text": "ISO/IEC 27005", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-005",
+            "text": "Welche Aussage zur Zusammenlegung der Funktionen ISB und Datenschutzbeauftragter entspricht der Passage?",
+            "explanation": "Die Passage nennt die Zusammenlegung der Funktionen Datenschutzbeauftragter und ISB ausdrücklich als Möglichkeit (mit Verweis auf Kapitel 4.4). Ein generelles Verbot, ein gesetzlicher Zwang oder die Beschränkung auf Behörden werden nicht genannt.",
+            "quote": "Möglich ist auch die Zusammenlegung der Funktionen des Datenschutzbeauftragten mit denen des Informationssicherheitsbeauftragten (zu den Rahmenbedingungen siehe auch Kapitel 4.4 Der Informationssicherheitsbeauftragte).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Option der Zusammenlegung von DSB- und ISB-Funktion einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 48,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine Zusammenlegung der Funktionen von Datenschutzbeauftragtem und ISB ist möglich", "is_correct": true },
+                { "text": "Eine Zusammenlegung ist generell verboten", "is_correct": false },
+                { "text": "Eine Zusammenlegung ist gesetzlich in jeder Institution vorgeschrieben", "is_correct": false },
+                { "text": "Eine Zusammenlegung ist nur in Behörden, nicht in Unternehmen zulässig", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-006",
+            "text": "Welches Recht hat der Datenschutzbeauftragte laut Passage gegenüber der Leitungsebene?",
+            "explanation": "Er muss das direkte und jederzeitige Vortragsrecht bei der Behörden- bzw. Unternehmensleitung haben und ist umfassend und frühzeitig zu unterrichten. Ein Weisungsrecht gegenüber der Leitung oder ein Vetorecht bei Geschäftsentscheidungen wird nicht genannt.",
+            "quote": "Der Datenschutzbeauftragte muss das direkte und jederzeitige Vortragsrecht bei der Behörden- bzw. Unternehmensleitung haben und über das Geschehen in der Behörde bzw. im Unternehmen, soweit es einen Bezug zu seiner Tätigkeit hat, umfassend und frühzeitig unterrichtet werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Einbeziehungspflicht gegenüber dem Datenschutzbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 48,
+            "page_end": null,
+            "answers": [
+                { "text": "Das direkte und jederzeitige Vortragsrecht bei der Behörden- bzw. Unternehmensleitung", "is_correct": true },
+                { "text": "Ein umfassendes Weisungsrecht gegenüber der Behörden- bzw. Unternehmensleitung", "is_correct": false },
+                { "text": "Ein generelles Vetorecht bei Geschäftsentscheidungen", "is_correct": false },
+                { "text": "Das Recht, die Leitungsebene jederzeit abzuberufen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-007",
+            "text": "Wie nimmt der Datenschutzbeauftragte laut Passage seine Aufgaben im Wesentlichen wahr?",
+            "explanation": "Die Passage stellt fest: Er nimmt seine Aufgaben im Wesentlichen durch Beratung und Kontrollen wahr, wobei die vorrangige Aufgabe die Beratung ist. Sanktionen gegen Mitarbeiter oder technische Administration gehören nicht zu seinen Kernaufgaben.",
+            "quote": "Er nimmt seine Aufgaben im Wesentlichen durch Beratung und Kontrollen wahr. Seine vorrangige Aufgabe ist die Beratung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Kernaufgaben des Datenschutzbeauftragten beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 48,
+            "page_end": null,
+            "answers": [
+                { "text": "Durch Beratung und Kontrollen, wobei die Beratung vorrangig ist", "is_correct": true },
+                { "text": "Durch Verhängung disziplinarischer Sanktionen gegen Mitarbeiter", "is_correct": false },
+                { "text": "Durch eigene technische Administration der Datenbank-Zugriffsrechte", "is_correct": false },
+                { "text": "Durch ausschließliche Vertretung der Institution vor Gericht", "is_correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Smartphones/Tablets questions. Q001/Q003/Q004 pass cleanly. Q002 (A8 Installation von Apps) flags for non-contiguous splicing: the quote joins two MUSS sentences while omitting an intermediate SOLLTEN sentence. Each concatenated sentence is verbatim in the source; claims are correct.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.3.2.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.3.2.1-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Institution MUSS regeln, ob, wie und welche Apps Benutze...` — non-contiguous sentences (each traces to source but intermediate text was omitted without ` • ` separator)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.3.2.1-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Five questions on Realisierungsbegleitende Maßnahmen and the Aktionspunkte zu 9 (section 9.5). All correct answers directly supported by source. Question 003 has a line-break space artifact in 'Si cherheitsmaßnahmen'. Question 004 contains the OCR artifact 'dazur' (should be 'dazu') inherited from the source document itself, so the quote matches the source as-is. All distractors correctly marked false. Topic 'methodik' correct. Schema and pages correct. page_start=163 for questions 003-005 is within the section range (162-164 based on manifest page_end for next section).",
+    "results": [
+        {
+            "external_id": "bsi-200-2-9.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.5-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'Si cherheitsmaßnahmen' should be 'Sicherheitsmaßnahmen'. Soft-hyphen line-break artifact -- matches under no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.5-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.5-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

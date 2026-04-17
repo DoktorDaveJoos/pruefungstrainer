@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three Client-Virtualisierung questions from A1/A2/A6. All pass cleanly.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.2.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.5-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

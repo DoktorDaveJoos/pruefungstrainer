@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "DER.2.1",
+        "chapter_title": "Behandlung von Sicherheitsvorfällen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-der.2.1-001",
+            "text": "Was MUSS laut DER.2.1.A1 in einer Institution klar definiert sein?",
+            "explanation": "Es muss klar definiert sein, was ein Sicherheitsvorfall ist. Dieser muss von Störungen im Tagesbetrieb abgegrenzt werden, und alle Beteiligten müssen die Definition kennen.",
+            "quote": "In einer Institution MUSS klar definiert sein, was ein Sicherheitsvorfall ist. Ein Sicherheitsvorfall MUSS so weit wie möglich von Störungen im Tagesbetrieb abgegrenzt sein.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die Definition eines Sicherheitsvorfalls nach DER.2.1.A1 benennen.",
+            "baustein_id": "DER.2.1.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Was ein Sicherheitsvorfall ist und wie er sich von Störungen im Tagesbetrieb abgrenzt",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche IT-Systeme als besonders kritisch eingestuft werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Wie hoch das Budget für Sicherheitsvorfälle sein darf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Welche Versicherungen für Sicherheitsvorfälle abgeschlossen werden müssen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.2.1-002",
+            "text": "Was MUSS laut DER.2.1.A6 nach einem Sicherheitsvorfall mit den betroffenen Komponenten geschehen?",
+            "explanation": "Betroffene Komponenten müssen vom Netz genommen und alle Daten gesichert werden, die Aufschluss über Art und Ursache geben. Originaldaten müssen von schreibgeschützten Datenträgern wieder eingespielt werden.",
+            "quote": "Nach einem Sicherheitsvorfall MÜSSEN die betroffenen Komponenten vom Netz genommen werden. Zudem MÜSSEN alle erforderlichen Daten gesichert werden, die Aufschluss über die Art und Ursache des Problems geben könnten.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Maßnahmen zur Wiederherstellung der Betriebsumgebung nach Sicherheitsvorfällen gemäß DER.2.1.A6 beschreiben.",
+            "baustein_id": "DER.2.1.A6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Vom Netz nehmen, Beweisdaten sichern und Originaldaten von schreibgeschützten Datenträgern einspielen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sofort weiter betreiben und den Vorfall später analysieren",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Daten löschen und das System neu aufsetzen ohne Analyse",
+                    "is_correct": false
+                },
+                {
+                    "text": "Den Hersteller kontaktieren und auf dessen Anweisung warten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.2.1-003",
+            "text": "Welche Rolle ist laut DER.2.1 grundsätzlich zuständig für die Behandlung von Sicherheitsvorfällen?",
+            "explanation": "Der oder die Informationssicherheitsbeauftragte (ISB) ist grundsätzlich zuständig. Weitere Zuständigkeiten haben IT-Betrieb, Institutionsleitung, Fachverantwortliche, Datenschutzbeauftragte und Notfallbeauftragte.",
+            "quote": "Grundsätzlich zuständig Informationssicherheitsbeauftragte (ISB)",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die grundsätzliche Zuständigkeit für die Behandlung von Sicherheitsvorfällen nach DER.2.1 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der oder die Informationssicherheitsbeauftragte (ISB)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Institutionsleitung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Datenschutzbeauftragte",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

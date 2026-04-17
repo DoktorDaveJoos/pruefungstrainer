@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four questions on Allgemeiner Server. All quotes are verbatim substrings of the actual SYS.1.1 content in the source markdown; correct answers are directly derivable from the cited A-numbers (A1, A6, A10, A30). Topic `bausteine` is correct, schema sanity (baustein_id + anforderung_type) is intact. Note: manifest char_start=1455094 but the chapter actual content begins at ~1432889, so critic used detected bounds; this is a systemic manifest issue for all SYS.* chapters, not a per-question concern.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.1-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

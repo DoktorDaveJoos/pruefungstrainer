@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Four questions on Festlegung der Aufgaben und Verantwortung (section 9.4). All correct answers directly supported by source text. Question 004 has two fragments with line-break space artifacts ('Sicherheits konzept' and 'Betriebs kosten'). All distractors are plausible but correctly not in the source. Topic 'methodik' correct. Schema and pages correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-9.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.4-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.4-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragments contain line-break space artifacts: 'Sicherheits konzept' -> 'Sicherheitskonzept', 'Betriebs kosten' -> 'Betriebskosten'. Match under no-space normalization."
+                }
+            ]
+        }
+    ]
+}

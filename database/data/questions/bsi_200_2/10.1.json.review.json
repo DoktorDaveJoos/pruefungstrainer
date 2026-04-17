@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Six questions on Überprüfung des Informationssicherheitsprozesses (section 10.1). All correct answers well-supported by the source. Question 004 on Reifegrad 3 is directly from the table in source. Question 005 (difficulty 'experte') genuinely requires synthesis across multiple source sentences about ISMS/Projektmanagement/Störungsmanagement interdependencies -- appropriate difficulty. Question 006 references the IS-Revision Leitfaden; the quote contains OCR artifact 'ffr' (= 'für') inherited from the source itself, so it matches. All quotes verified. Topic 'methodik' correct for ISMS governance/process content. Schema and pages correct. Note: page_start=166 for all questions; the manifest section spans pages 166-167, but much of the content (Kennzahlen, Reifegrad, IS-Revision) is spread across pages 164-167 from the broader 10.1 section. The manifest char range starts later, but the questions correctly reference content found in the broader section.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-10.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-10.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-10.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-10.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-10.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-10.1-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All seven questions accurately reflect section 9.2 (Moderation der Risikoanalyse). Quotes match after normalization. Correct answers are directly supported. Distractors are clearly wrong. Topic 'risikoanalyse' is appropriate since these cover the practical conduct of risk analysis sessions. All basis difficulty is fitting for straightforward recall. Page_start values (49-50) are within the manifest range of 49-50. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-9.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.2-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.2-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.2-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

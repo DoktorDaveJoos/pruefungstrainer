@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.2.3",
+        "chapter_title": "Nutzung von Outsourcing",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.2.3-001",
+            "text": "Auf welchen Informationsverbund ist der Baustein OPS.2.3 laut Kompendium anzuwenden?",
+            "explanation": "Der Baustein OPS.2.3 ist immer dann auf einen Outsourcing-Prozess anzuwenden, wenn eine Institution Arbeits-, Produktions- oder Gesch\u00e4ftsprozesse ganz oder teilweise zu externen Dienstleistenden auslagert.",
+            "quote": "Beim Outsourcing werden Arbeits-, Produktions- oder Gesch\u00e4ftsprozesse einer Institution ganz oder teilweise zu externen Dienstleistenden ausgelagert.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Anwendungsbereich des Bausteins OPS.2.3 Nutzung von Outsourcing benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Wenn Arbeits-, Produktions- oder Gesch\u00e4ftsprozesse ganz oder teilweise zu externen Dienstleistenden ausgelagert werden", "is_correct": true},
+                {"text": "Nur wenn IT-Systeme physisch an einen anderen Standort verlagert werden", "is_correct": false},
+                {"text": "Ausschlie\u00dflich bei der Nutzung von Cloud-Diensten", "is_correct": false},
+                {"text": "Nur bei Outsourcing in L\u00e4nder au\u00dferhalb der EU", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.2.3-002",
+            "text": "Welche besondere Gef\u00e4hrdung beschreibt OPS.2.3 im Kontext der Abh\u00e4ngigkeit von Dienstleistenden?",
+            "explanation": "Durch Outsourcing entsteht eine Abh\u00e4ngigkeit von Dienstleistenden, die dazu f\u00fchren kann, dass Gesch\u00e4ftsprozesse und Informationen nicht mehr vollst\u00e4ndig kontrolliert werden k\u00f6nnen. Bei Insolvenz oder Ausfall drohen erhebliche Betriebsunterbrechungen.",
+            "quote": "Beim Outsourcing werden Arbeits-, Produktions- oder Gesch\u00e4ftsprozesse einer Institution ganz oder teilweise zu externen Dienstleistenden ausgelagert. Dies ist ein etablierter Bestandteil heutiger Organisationsstrategien.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Abh\u00e4ngigkeitsrisiken bei Outsourcing nach OPS.2.3 beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Kontrollverlust \u00fcber ausgelagerte Prozesse und Risiko bei Ausfall des Dienstleistenden", "is_correct": true},
+                {"text": "Outsourcing f\u00fchrt immer zu niedrigeren Sicherheitsstandards", "is_correct": false},
+                {"text": "Die eigenen Mitarbeitenden verlieren sofort alle Berechtigungen", "is_correct": false},
+                {"text": "Die Institution haftet nicht mehr f\u00fcr Sicherheitsvorf\u00e4lle", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.2.3-003",
+            "text": "Was ist laut OPS.2.2 bei Cloud-Diensten hinsichtlich der Anwendung des Outsourcing-Bausteins zu beachten?",
+            "explanation": "Cloud-Dienste stellen eine Sonderform des Outsourcings dar, aber der Baustein OPS.2.3 ist nicht auf Cloud-Dienste anzuwenden, da deren Besonderheiten in OPS.2.2 behandelt werden.",
+            "quote": "Cloud-Dienste eine Sonderform des Outsourcings dar. \u2022 Der Baustein OPS.2.3 Nutzung von Outsourcing ist daher nicht auf Cloud-Dienste anzuwenden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Abgrenzung von Outsourcing und Cloud-Nutzung in der Modellierung nach IT-Grundschutz differenzieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "OPS.2.3 ist nicht auf Cloud-Dienste anzuwenden, obwohl sie eine Sonderform des Outsourcings darstellen", "is_correct": true},
+                {"text": "OPS.2.3 muss zus\u00e4tzlich zu OPS.2.2 auf Cloud-Dienste angewendet werden", "is_correct": false},
+                {"text": "Cloud-Dienste gelten nicht als Outsourcing und sind daher von beiden Bausteinen ausgenommen", "is_correct": false},
+                {"text": "Bei Cloud-Diensten entf\u00e4llt jegliche Verantwortung der nutzenden Institution", "is_correct": false}
+            ]
+        }
+    ]
+}

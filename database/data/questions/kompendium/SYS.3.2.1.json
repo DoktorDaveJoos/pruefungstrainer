@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.3.2.1",
+        "chapter_title": "Allgemeine Smartphones und Tablets",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.3.2.1-001",
+            "text": "Welche Anforderung stellt SYS.3.2.1 an den Zugriffsschutz von Smartphones und Tablets?",
+            "explanation": "SYS.3.2.1.A4 fordert einen angemessen komplexen Gerätesperrcode und die Nutzung der Bildschirmsperre. Die Anzeige vertraulicher Informationen auf dem Sperrbildschirm muss deaktiviert sein. Die Bildschirmsperre muss nach einer angemessen kurzen Zeitspanne automatisch aktiviert werden.",
+            "quote": "Smartphones und Tablets MÜSSEN mit einem angemessen komplexen Gerätesperrcode geschützt werden. Die Bildschirmsperre MUSS genutzt werden. Die Anzeige von vertraulichen Informationen auf dem Sperrbildschirm MUSS deaktiviert sein. Alle mobilen Geräte MÜSSEN nach einer angemessen kurzen Zeitspanne selbsttätig die Bildschirmsperre aktivieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderungen an den Zugriffsschutz von Smartphones und Tablets benennen.",
+            "baustein_id": "SYS.3.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein angemessen komplexer Gerätesperrcode muss eingerichtet sein.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Anzeige vertraulicher Informationen auf dem Sperrbildschirm muss deaktiviert sein.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein einfacher vierstelliger PIN-Code reicht in jedem Fall aus.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Vertrauliche Informationen dürfen auf dem Sperrbildschirm angezeigt werden, sofern das Gerät verschlüsselt ist.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.1-002",
+            "text": "Was MUSS laut SYS.3.2.1 bei der Installation von Apps auf Smartphones und Tablets geregelt werden?",
+            "explanation": "SYS.3.2.1.A8 fordert, dass die Institution regeln muss, ob, wie und welche Apps Benutzende selbst installieren dürfen. Es muss festgelegt werden, aus welchen Quellen Apps installiert werden dürfen, und die Installation aus nicht zugelassenen Quellen muss unterbunden werden.",
+            "quote": "Die Institution MUSS regeln, ob, wie und welche Apps Benutzende selbst auf ihren Geräten installieren dürfen. Die Institution MUSS festlegen, aus welchen Quellen Apps installiert werden dürfen. Es MUSS unterbunden werden, dass sich Apps aus nicht zugelassenen Quellen installieren lassen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die App-Installation auf mobilen Geräten beschreiben.",
+            "baustein_id": "SYS.3.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es muss geregelt werden, welche Apps aus welchen Quellen installiert werden dürfen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Apps aus nicht zugelassenen Quellen müssen technisch unterbunden werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Benutzende dürfen ohne Einschränkung alle Apps aus beliebigen Quellen installieren.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die IT-Abteilung darf Apps direkt auf dem Gerät installieren.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.1-003",
+            "text": "Welche Empfehlung gibt SYS.3.2.1 zur Einbindung mobiler Geräte in die Infrastruktur?",
+            "explanation": "SYS.3.2.1.A22 empfiehlt, mobile Endgeräte nur mittels eines VPN in die Infrastruktur der Institution zu integrieren. Statt durch Passwörter sollten sich die Geräte über Zertifikate gegenüber der internen Infrastruktur authentisieren.",
+            "quote": "Mobile Endgeräte SOLLTEN nur mittels eines VPN in die Infrastruktur der Institution integriert werden. • Statt durch Passwörter SOLLTEN sich die Geräte über Zertifikate gegenüber der internen Infrastruktur authentisieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur VPN-Einbindung mobiler Geräte beschreiben.",
+            "baustein_id": "SYS.3.2.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mobile Geräte sollten nur mittels VPN in die Infrastruktur integriert werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Authentisierung sollte über Zertifikate statt über Passwörter erfolgen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mobile Geräte sollten direkt über öffentliche WLAN-Netze auf das Firmennetz zugreifen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Passwort-Authentisierung reicht für die VPN-Verbindung aus.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.1-004",
+            "text": "Was SOLLTE laut SYS.3.2.1 bei erhöhtem Schutzbedarf für die Trennung dienstlicher und privater Daten eingesetzt werden?",
+            "explanation": "SYS.3.2.1.A25 empfiehlt bei erlaubter Privatnutzung dienstlicher Geräte Lösungen für getrennte Arbeitsumgebungen. SYS.3.2.1.A26 empfiehlt alternativ PIM-Container zur Kapselung von Informationen. Dienstliche Daten sollten ausschließlich in der dienstlichen Umgebung verbleiben.",
+            "quote": "Ist es den Mitarbeitenden erlaubt, dienstliche Geräte auch privat zu nutzen, SOLLTEN Lösungen für getrennte Arbeitsumgebungen auf dem Endgerät eingesetzt werden. • Dienstliche Daten SOLLTEN ausschließlich in der dienstlichen Umgebung verbleiben.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Anforderungen an getrennte Arbeitsumgebungen bei erhöhtem Schutzbedarf beschreiben.",
+            "baustein_id": "SYS.3.2.1",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Lösungen für getrennte Arbeitsumgebungen (z. B. Container-Lösungen)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine einfache Ordnerstruktur mit getrennten Verzeichnissen für privat und dienstlich",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die vollständige Unterbindung jeglicher Privatnutzung ohne technische Trennung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Nutzung von zwei separaten SIM-Karten im selben Gerät",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

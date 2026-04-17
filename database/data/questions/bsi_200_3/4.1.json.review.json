@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All six questions accurately reflect section 4.1. Quotes match after normalization (soft-hyphen line breaks produce correct joined words like 'einwirken', 'Grundschutz-Kompendiums'). Correct answers are directly supported. Distractors are clearly wrong. Topic 'risikoanalyse' is appropriate throughout. All basis difficulty is fitting. Note: manifest lists this section as pages 22-24 but the actual source content (per printed page markers in the markdown) spans pages 16-22. The question page_start values (16-18) align with the actual printed pages, not the manifest. This is a manifest calibration issue. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-4.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.1-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

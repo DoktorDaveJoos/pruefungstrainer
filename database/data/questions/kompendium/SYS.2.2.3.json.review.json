@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Windows-Clients questions. Q002/Q004 pass cleanly. Q001 (A4 Telemetrie) and Q003 (A6 Integration von Online-Konten) flag for PDF line-break artifacts: the source has `Telemetrie-\\nLevel` and `Online-\\nKonten` which normalize to `TelemetrieLevel`/`OnlineKonten` (no hyphen) while the quote retains the hyphen — matches under aggressive no-hyphen-no-space normalization. Content is faithful.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.2.2.3-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Um die Übertragung von Diagnose- und Nutzungsdaten an Micros...` — PDF line-break artifact (hyphen/whitespace drift); matches under aggressive no-hyphen-no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.2.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.2.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Online-Konten zur Anmeldung, etwa ein Microsoft-Konto oder K...` — PDF line-break artifact (hyphen/whitespace drift); matches under aggressive no-hyphen-no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.2.3-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "1.2",
+        "chapter_title": "Zielsetzung",
+        "page_start": 5,
+        "page_end": 6
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-1.2-001",
+            "text": "Worauf basiert das im BSI-Standard 200-3 vorgestellte Vorgehen zur Risikosteuerung?",
+            "explanation": "Das Vorgehen basiert auf den elementaren Gefährdungen, die im IT-Grundschutz-Kompendium beschrieben sind und auf deren Basis auch die IT-Grundschutz-Bausteine erstellt werden. Eine Basis in ISO 31000-Schritten, Datenschutz-Folgenabschätzungen oder CVSS-Scoring wird in der Zielsetzung nicht erwähnt.",
+            "quote": "Das Vorgehen basiert auf den elementaren Gefährdungen, die im IT-Grundschutz-Kompendium beschrieben sind und auf deren Basis auch die IT-Grundschutz-Bausteine erstellt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die methodische Grundlage des BSI-Standards 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Auf den elementaren Gefährdungen aus dem IT-Grundschutz-Kompendium",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf den Schritten der ISO 31000 zur Risikoidentifikation",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf Datenschutz-Folgenabschätzungen der DSGVO",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf CVSS-Scoring für einzelne Schwachstellen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.2-002",
+            "text": "Für welchen Schutzbedarf nimmt das BSI bei der Erstellung der IT-Grundschutz-Bausteine implizit eine Risikobewertung vor?",
+            "explanation": "Laut Zielsetzung führt das BSI bei der Erstellung der IT-Grundschutz-Bausteine implizit eine Risikobewertung für Bereiche mit normalem Schutzbedarf durch. Hoher oder sehr hoher Schutzbedarf erfordert hingegen eine explizite Risikoanalyse (siehe 1.3).",
+            "quote": "In der Vorgehensweise nach IT-Grundschutz wird bei der Erstellung der IT-Grundschutz-Bausteine implizit eine Risikobewertung für Bereiche mit normalem Schutzbedarf vom BSI durchgeführt.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Schutzbedarfsbereich der impliziten Risikobewertung durch das BSI benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Normaler Schutzbedarf",
+                    "is_correct": true
+                },
+                {
+                    "text": "Hoher Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sehr hoher Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Jeder Schutzbedarf unabhängig von der Stufe",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.2-003",
+            "text": "Welche Kriterien erfüllen Gefährdungen, die das BSI bei der impliziten Risikobewertung für Bausteine berücksichtigt?",
+            "explanation": "Laut Zielsetzung betrachtet das BSI nur solche Gefährdungen, die eine so hohe Eintrittshäufigkeit oder so einschneidende Auswirkungen haben, dass Sicherheitsmaßnahmen ergriffen werden müssen. Eine ausschließliche Betrachtung von Zero-Day-Schwachstellen oder ausschließlich finanziellen Schäden ist damit nicht gemeint.",
+            "quote": "Hierbei werden nur solche Gefährdungen betrachtet, die eine so hohe Eintrittshäufigkeit oder so einschneidende Auswirkungen haben, dass Sicherheitsmaßnahmen ergriffen werden müssen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Auswahlkriterien des BSI für berücksichtigte Gefährdungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine so hohe Eintrittshäufigkeit, dass Sicherheitsmaßnahmen ergriffen werden müssen",
+                    "is_correct": true
+                },
+                {
+                    "text": "So einschneidende Auswirkungen, dass Sicherheitsmaßnahmen ergriffen werden müssen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich Zero-Day-Schwachstellen aktueller Software",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich Gefährdungen mit rein finanziellem Schaden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.2-004",
+            "text": "Welche Beispiele werden für typische Gefährdungen genannt, gegen die sich jeder schützen muss?",
+            "explanation": "Die Zielsetzung führt als typische Beispiele Schäden durch Feuer, Wasser, Einbrecher, Schadsoftware oder Hardware-Defekte auf. Advanced Persistent Threats, Insider-Angriffe und staatlich gelenkte Spionage werden an dieser Stelle nicht als typische Beispiele genannt.",
+            "quote": "Typische Gefährdungen, gegen die sich jeder schützen muss, sind z. B. Schäden durch Feuer, Wasser, Einbrecher, Schadsoftware oder Hardware-Defekte.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Typische Gefährdungsbeispiele der impliziten BSI-Risikobewertung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Feuer, Wasser und Einbrecher",
+                    "is_correct": true
+                },
+                {
+                    "text": "Schadsoftware und Hardware-Defekte",
+                    "is_correct": true
+                },
+                {
+                    "text": "Advanced Persistent Threats und Insider-Angriffe",
+                    "is_correct": false
+                },
+                {
+                    "text": "Staatlich gelenkte Spionage",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.2-005",
+            "text": "Welcher Vorteil ergibt sich laut Zielsetzung für Anwender des IT-Grundschutzes aus der vorab vom BSI durchgeführten Bewertung?",
+            "explanation": "Laut Text müssen Anwender für einen Großteil des Informationsverbundes keine individuelle Bedrohungs- und Schwachstellenanalyse durchführen, weil diese bereits vorab vom BSI durchgeführt wurde. Eine vollständige Zertifizierungsbefreiung, automatische Risikoakzeptanz oder rechtliche Haftungsbefreiung wird nicht genannt.",
+            "quote": "Dieser Ansatz hat den Vorteil, dass Anwender des IT-Grundschutzes für einen Großteil des Informationsverbundes keine individuelle Bedrohungs- und Schwachstellenanalyse durchführen müssen, weil diese bereits vorab vom BSI durchgeführt wurde.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Nutzen der vorab durch das BSI geleisteten Bedrohungs- und Schwachstellenanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Für einen Großteil des Informationsverbundes entfällt die individuelle Bedrohungs- und Schwachstellenanalyse.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es ist keine Zertifizierung durch ein Audit mehr nötig.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Risiken gelten automatisch als akzeptiert.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Institution wird von rechtlicher Haftung freigestellt.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.2-006",
+            "text": "Wie beschreibt die Zielsetzung das vom BSI mit dem Standard 200-3 zur Verfügung gestellte Vorgehen?",
+            "explanation": "Das BSI stellt mit dem Standard 200-3 ein leicht anzuwendendes und anerkanntes Vorgehen zur Verfügung, mit dem Institutionen ihre Informationssicherheitsrisiken angemessen und zielgerichtet steuern können. Eine Charakterisierung als rein mathematisch, ausschließlich für Großunternehmen oder als verpflichtend für alle Institutionen findet sich nicht.",
+            "quote": "Mit dem BSI-Standard 200-3 stellt das BSI ein leicht anzuwendendes und anerkanntes Vorgehen zur Verfügung, mit dem Institutionen ihre Informationssicherheitsrisiken angemessen und zielgerichtet steuern können.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Selbstbeschreibung des Vorgehens nach BSI-Standard 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein leicht anzuwendendes und anerkanntes Vorgehen zur Steuerung von Informationssicherheitsrisiken",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein rein mathematisches Modell mit quantitativer Schadenserwartung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein Verfahren, das ausschließlich für Großunternehmen gedacht ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein für alle Institutionen verpflichtendes Vorgehen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

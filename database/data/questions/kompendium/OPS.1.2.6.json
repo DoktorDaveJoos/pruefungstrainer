@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.2.6",
+        "chapter_title": "NTP-Zeitsynchronisation",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.2.6-001",
+            "text": "Was MUSS laut OPS.1.2.6.A4 f\u00fcr alle NTP-Clients konfiguriert werden?",
+            "explanation": "Alle NTP-Clients m\u00fcssen so konfiguriert werden, dass sie Zeitinformationen verwerfen, die sie unaufgefordert von anderen IT-Systemen erhalten.",
+            "quote": "Der IT-Betrieb MUSS alle NTP-Clients so konfigurieren, dass sie Zeitinformationen verwerfen, die sie unaufgefordert von anderen IT-Systemen erhalten.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Konfigurationsanforderung f\u00fcr NTP-Clients bez\u00fcglich unaufgeforderter Zeitinformationen nach OPS.1.2.6.A4 benennen.",
+            "baustein_id": "OPS.1.2.6.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Sie m\u00fcssen unaufgefordert empfangene Zeitinformationen verwerfen", "is_correct": true},
+                {"text": "Sie m\u00fcssen jede empfangene Zeitinformation sofort \u00fcbernehmen", "is_correct": false},
+                {"text": "Sie d\u00fcrfen nur Zeitinformationen von GPS-Empf\u00e4ngern akzeptieren", "is_correct": false},
+                {"text": "Sie m\u00fcssen ihre lokale Zeit ohne externe Quellen beibehalten", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.6-002",
+            "text": "Was MUSS laut OPS.1.2.6.A2 bei der Nutzung externer Zeitquellen beurteilt werden?",
+            "explanation": "Falls Zeitinformationen von einem NTP-Server au\u00dferhalb des Netzes bezogen werden, muss beurteilt werden, ob der NTP-Server hinreichend verl\u00e4sslich ist. Nur als verl\u00e4sslich eingestufte Server d\u00fcrfen verwendet werden.",
+            "quote": "Falls Zeitinformationen von einem NTP-Server au\u00dferhalb des Netzes der Institution bezogen werden, dann MUSS der IT-Betrieb beurteilen, ob der NTP-Server hinreichend verl\u00e4sslich ist. Der IT-Betrieb MUSS sicherstellen, dass nur als verl\u00e4sslich eingestufte NTP-Server verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Nutzung externer NTP-Server nach OPS.1.2.6.A2 erl\u00e4utern.",
+            "baustein_id": "OPS.1.2.6.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Ob der externe NTP-Server hinreichend verl\u00e4sslich ist", "is_correct": true},
+                {"text": "Ob der NTP-Server kostenlos nutzbar ist", "is_correct": false},
+                {"text": "Ob der NTP-Server in Deutschland steht", "is_correct": false},
+                {"text": "Ob der NTP-Server \u00fcber IPv6 erreichbar ist", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.6-003",
+            "text": "Was bezeichnet der Begriff Stratum-1 im Kontext von NTP laut OPS.1.2.6?",
+            "explanation": "Stratum-1-NTP-Server beziehen ihre Zeit von genauen Quellen wie einer Atomuhr, einem GPS- oder DCF77-Empf\u00e4nger und stehen an der Spitze der hierarchischen Zeitverteilung.",
+            "quote": "An der Spitze stehen NTP-Server, die ihre Zeit von genauen Quellen (z. B. einer Atomuhr, einem GPS- oder einem DCF77-Empf\u00e4nger) beziehen. Diese NTP-Server werden als Stratum-1 bezeichnet.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Begriff Stratum-1 im NTP-Kontext nach OPS.1.2.6 erkl\u00e4ren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "NTP-Server an der Spitze der Hierarchie, die ihre Zeit von genauen Quellen wie Atomuhren beziehen", "is_correct": true},
+                {"text": "NTP-Clients, die ihre Zeit von mehreren Servern gleichzeitig beziehen", "is_correct": false},
+                {"text": "Eine Sicherheitsstufe f\u00fcr die Verschl\u00fcsselung von NTP-Paketen", "is_correct": false},
+                {"text": "Die erste Version des NTP-Protokolls", "is_correct": false}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "6",
+        "chapter_title": "Einbindung der Mitarbeiter in den Sicherheitsprozess",
+        "page_start": 27,
+        "page_end": 28
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-6-001",
+            "text": "Wen betrifft laut BSI-Standard 200-1 die Informationssicherheit innerhalb einer Institution?",
+            "explanation": "Der Standard stellt klar, dass die Informationssicherheit ohne Ausnahme alle Mitarbeiter betrifft. Eine Beschränkung auf IT-Abteilung, Führungskräfte oder den ISB widerspricht dieser Aussage.",
+            "quote": "Die Informationssicherheit betrifft ohne Ausnahme alle Mitarbeiter.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Breite der Zielgruppe für Informationssicherheit erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Ohne Ausnahme alle Mitarbeiter", "is_correct": true },
+                { "text": "Nur die Beschäftigten der IT-Abteilung", "is_correct": false },
+                { "text": "Nur Führungskräfte und Leitungsebene", "is_correct": false },
+                { "text": "Ausschließlich den Informationssicherheitsbeauftragten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-6-002",
+            "text": "Was ist laut BSI-Standard 200-1 eine Grundvoraussetzung für Informationssicherheit im Personalbereich?",
+            "explanation": "Der Standard nennt die Sensibilisierung für Informationssicherheit und entsprechende Schulungen der Mitarbeiter sowie aller Führungskräfte ausdrücklich als Grundvoraussetzung. Eine jährliche Prüfung aller Mitarbeiter oder die Auslagerung an externe Dienstleister werden nicht als Grundvoraussetzung genannt.",
+            "quote": "Eine Sensibilisierung für Informationssicherheit und entsprechende Schulungen der Mitarbeiter sowie aller Führungskräfte sind daher eine Grundvoraussetzung für Informationssicherheit.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Sensibilisierung und Schulung als Grundvoraussetzung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Sensibilisierung und Schulungen von Mitarbeitern und Führungskräften", "is_correct": true },
+                { "text": "Eine jährliche Zertifizierungsprüfung aller Mitarbeiter", "is_correct": false },
+                { "text": "Die Auslagerung aller Sicherheitsaufgaben an externe Dienstleister", "is_correct": false },
+                { "text": "Technische Schutzmaßnahmen ohne Schulungsbedarf", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-6-003",
+            "text": "Welche Faktoren beeinflussen laut BSI-Standard 200-1 die Informationssicherheit neben reinen Kenntnissen entscheidend?",
+            "explanation": "Der Standard nennt das Arbeitsklima, gemeinsame Wertvorstellungen und das Engagement der Mitarbeiter als entscheidende Einflussfaktoren. Das persönliche Gehalt einzelner Mitarbeiter wird nicht als entscheidender Faktor genannt.",
+            "quote": "Auch das Arbeitsklima, gemeinsame Wertvorstellungen und das Engagement der Mitarbeiter beeinflussen die Informationssicherheit entscheidend.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Weiche Faktoren (Klima, Werte, Engagement) als Einflussgrößen auf Informationssicherheit erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Arbeitsklima", "is_correct": true },
+                { "text": "Gemeinsame Wertvorstellungen", "is_correct": true },
+                { "text": "Das Engagement der Mitarbeiter", "is_correct": true },
+                { "text": "Das persönliche Gehalt einzelner Mitarbeiter", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-6-004",
+            "text": "Welche Sicherheitsmaßnahmen sollten laut BSI-Standard 200-1 beim Ausscheiden oder bei Zuständigkeitswechseln von Mitarbeitern begleitet werden?",
+            "explanation": "Der Standard nennt ausdrücklich den Entzug von Berechtigungen und die Rückgabe von Schlüsseln und Ausweisen als begleitende Sicherheitsmaßnahmen. Eine Veröffentlichung des Austritts im Internet oder die zwingende Ausstellung eines Arbeitszeugnisses im Sinne der Informationssicherheit werden nicht genannt.",
+            "quote": "Wenn Mitarbeiter die Institution verlassen oder sich ihre Zuständigkeiten verändern, muss dieser Prozess durch geeignete Sicherheitsmaßnahmen begleitet werden (z. B. Entzug von Berechtigungen, Rückgabe von Schlüsseln und Ausweisen).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Sicherheitsmaßnahmen bei Personalwechsel erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Entzug von Berechtigungen", "is_correct": true },
+                { "text": "Rückgabe von Schlüsseln und Ausweisen", "is_correct": true },
+                { "text": "Veröffentlichung des Austritts auf der Firmenwebsite", "is_correct": false },
+                { "text": "Automatische Weitergabe der Zugangsdaten an Kolleginnen und Kollegen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-6-005",
+            "text": "Was müssen Mitarbeiter laut BSI-Standard 200-1 bezüglich Sicherheitsvorfällen wissen?",
+            "explanation": "Der Standard fordert, dass Mitarbeiter wissen, dass jeder erkannte oder vermutete Sicherheitsvorfall dem Sicherheitsmanagement unmittelbar gemeldet werden muss und wie und an wen die Meldung zu erfolgen hat. Eine selbstständige Behebung durch Mitarbeiter oder eine Meldung erst nach Rücksprache mit Kollegen widerspricht dieser Vorgabe.",
+            "quote": "Des Weiteren sollten die Mitarbeiter wissen, dass jeder erkannte (oder vermutete) Sicherheitsvorfall dem Sicherheitsmanagement unmittelbar gemeldet werden muss und wie und an wen die Meldung zu erfolgen hat.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Meldepflichten von Mitarbeitern bei Sicherheitsvorfällen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Jeder erkannte oder vermutete Sicherheitsvorfall ist dem Sicherheitsmanagement unmittelbar zu melden", "is_correct": true },
+                { "text": "Mitarbeiter müssen wissen, wie und an wen die Meldung zu erfolgen hat", "is_correct": true },
+                { "text": "Sicherheitsvorfälle müssen zuerst selbstständig behoben werden, bevor gemeldet wird", "is_correct": false },
+                { "text": "Eine Meldung erfolgt nur nach vorheriger Rücksprache mit mindestens zwei Kollegen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-6-006",
+            "text": "Was ist laut BSI-Standard 200-1 notwendig, wenn Mitarbeiter neu eingestellt werden oder neue Aufgaben erhalten?",
+            "explanation": "Der Standard fordert eine gründliche Einarbeitung und gegebenenfalls Ausbildung, bei der auch sicherheitsrelevante Aspekte des jeweiligen Arbeitsplatzes berücksichtigt werden. Eine sofortige Vergabe aller Administratorrechte oder der Verzicht auf Einarbeitung widersprechen dieser Vorgabe.",
+            "quote": "Werden Mitarbeiter neu eingestellt oder erhalten sie neue Aufgaben, ist eine gründliche Einarbeitung und gegebenenfalls Ausbildung notwendig. Die Vermittlung sicherheitsrelevanter Aspekte des jeweiligen Arbeitsplatzes muss dabei berücksichtigt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Anforderungen an Einarbeitung und Ausbildung bei Personalveränderungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine gründliche Einarbeitung und gegebenenfalls Ausbildung", "is_correct": true },
+                { "text": "Die Berücksichtigung sicherheitsrelevanter Aspekte des Arbeitsplatzes", "is_correct": true },
+                { "text": "Die sofortige Vergabe aller Administratorrechte", "is_correct": false },
+                { "text": "Der vollständige Verzicht auf jegliche Einarbeitung", "is_correct": false }
+            ]
+        }
+    ]
+}

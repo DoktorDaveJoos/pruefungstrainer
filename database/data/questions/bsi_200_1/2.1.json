@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "2.1",
+        "chapter_title": "Überblick über Normen und Standards zur Informationssicherheit",
+        "page_start": 14,
+        "page_end": 15
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-2.1-001",
+            "text": "Wer gibt den Payment Card Industry Data Security Standard (PCI DSS) heraus?",
+            "explanation": "Die Passage nennt ausdrücklich ein Konsortium führender Kreditkartenorganisationen als Herausgeber; erstellt wurde der Standard vom PCI Security Standards Council. Weder ISO, BSI noch NIST sind laut Passage beteiligt.",
+            "quote": "Der Payment Card Industry Data Security Standard (PCI DSS) wird von einem Konsortium führender Kreditkartenorganisationen herausgegeben. Er wurde vom PCI Security Standards Council erstellt und formuliert Sicherheitsanforderungen bezüglich der Abwicklung von Kreditkartentransaktionen.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Herausgeber und Zweck des PCI DSS benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein Konsortium führender Kreditkartenorganisationen, erstellt durch das PCI Security Standards Council",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Internationale Organisation für Normung (ISO)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das National Institute of Standards and Technology (NIST)",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-2.1-002",
+            "text": "Welche Institutionen müssen die Anforderungen des PCI DSS umsetzen?",
+            "explanation": "Die Passage nennt alle Institutionen, die Karteninhaberdaten speichern, verarbeiten oder übertragen, und gibt als Beispiele Händler mit Kreditkartenakzeptanz sowie Dienstleister, die diese Daten weiterverarbeiten. Eine Beschränkung auf Banken oder börsennotierte Unternehmen besteht nicht.",
+            "quote": "Die Anforderungen des PCI DSS müssen von allen Institutionen umgesetzt werden, die Karteninhaberdaten von Kreditkarten speichern, verarbeiten oder übertragen, also z. B. von Händlern, die Kreditkartenzahlungen akzeptieren, oder von Dienstleistern, die diese im Auftrag weiterverarbeiten.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Den Adressatenkreis des PCI DSS einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Alle Institutionen, die Karteninhaberdaten von Kreditkarten speichern, verarbeiten oder übertragen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Händler, die Kreditkartenzahlungen akzeptieren, sowie Dienstleister, die diese Daten im Auftrag weiterverarbeiten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich Zentralbanken der EU-Mitgliedsstaaten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur börsennotierte US-Unternehmen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-2.1-003",
+            "text": "Welche Rolle spielt das NIST laut Passage?",
+            "explanation": "Die Passage beschreibt das NIST als US-amerikanische Bundesbehörde, die unter anderem für die Entwicklung von Standards zuständig ist, und erklärt, dass diese Standards für US-Behörden verpflichtend sind. Eine Rolle als ISO-Mitglied oder EU-Behörde wird nicht erwähnt.",
+            "quote": "Das US-amerikanische National Institute of Standards and Technology (NIST) ist eine Bundesbehörde, die unter anderem für die Entwicklung von Standards zuständig ist. Diese Standards sind für US-Behörden verpflichtend.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Auftrag und Verbindlichkeit der NIST-Standards einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine US-Bundesbehörde, die unter anderem für die Entwicklung von Standards zuständig ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die NIST-Standards sind für US-Behörden verpflichtend",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine EU-Agentur, deren Standards in Europa verpflichtend sind",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein privatwirtschaftliches Zertifizierungsunternehmen ohne behördliche Rolle",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-2.1-004",
+            "text": "Welche Funktion hat das Dokument NIST SP 800-53 im Bereich Sicherheitsmanagement?",
+            "explanation": "Die Passage erklärt, dass NIST SP 800-53 eine große Zahl sogenannter „Controls“ zusammenstellt, die zum Schutz von Informationsverbünden eingesetzt werden können. Diese sind nach Themen in Bereiche gegliedert (z. B. Schulung, Berechtigungsmanagement, Infrastruktursicherheit).",
+            "quote": "Das Dokument NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and Organizations stellt dabei für den Bereich Sicherheitsmanagement eine große Zahl sogenannter „Controls“ zusammen, die dazu eingesetzt werden können, Informationsverbünde zu schützen.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Funktion von NIST SP 800-53 als Control-Katalog einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es stellt eine große Zahl sogenannter „Controls“ zum Schutz von Informationsverbünden zusammen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es definiert die Zertifizierungsregeln für PCI-Dienstleister",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es enthält die rechtlichen Grundlagen des US-Datenschutzrechts",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es beschreibt ausschließlich Verschlüsselungsalgorithmen für Regierungsbehörden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-2.1-005",
+            "text": "Was ist das Information Security Forum (ISF) laut Passage?",
+            "explanation": "Die Passage beschreibt das ISF ausdrücklich als unabhängige und weltweit tätige Organisation für Informationssicherheit. Eine Verortung als staatliche Behörde, Zertifizierungsstelle oder US-Beratungsunternehmen entspricht nicht dem Text.",
+            "quote": "Das Information Security Forum (ISF) ist eine unabhängige und weltweit tätige Organisation für Informationssicherheit.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Art und den Wirkungskreis des ISF einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine unabhängige und weltweit tätige Organisation für Informationssicherheit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine staatliche Behörde der Vereinigten Staaten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Zertifizierungsstelle der Europäischen Union",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein US-amerikanisches Beratungsunternehmen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-2.1-006",
+            "text": "Welche anerkannten Standards werden laut Passage durch den ISF Standard of Good Practice (SoGP) inhaltlich abgedeckt?",
+            "explanation": "Die Passage nennt ausdrücklich ISO/IEC 27002, COBIT 5, PCI DSS 3.1 und das NIST Cybersecurity Framework als durch den SoGP abgedeckte Standards. BSI IT-Grundschutz und ISO/IEC 20000 werden in diesem Zusammenhang nicht genannt.",
+            "quote": "Der praxisorientierte Leitfaden deckt nach eigenen Angaben die Anforderungen der Standards ISO/IEC 27002, COBIT 5, PCI DSS 3.1 und NIST Cybersecurity Framework ab.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die vom ISF SoGP abgedeckten Referenz-Standards unterscheiden.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "ISO/IEC 27002 und COBIT 5",
+                    "is_correct": true
+                },
+                {
+                    "text": "PCI DSS 3.1 und NIST Cybersecurity Framework",
+                    "is_correct": true
+                },
+                {
+                    "text": "BSI IT-Grundschutz-Kompendium",
+                    "is_correct": false
+                },
+                {
+                    "text": "ISO/IEC 20000",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

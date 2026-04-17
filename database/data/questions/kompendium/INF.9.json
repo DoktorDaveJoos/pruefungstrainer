@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.9",
+        "chapter_title": "Mobiler Arbeitsplatz",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.9-001",
+            "text": "Was MUSS laut INF.9.A1 mindestens für mobile Arbeitsplätze geregelt werden?",
+            "explanation": "INF.9.A1 verlangt mindestens Regelungen zu: unter welchen Arbeitsplatzbedingungen schützenswerte Informationen bearbeitet werden dürfen, wie sich Mitarbeitende vor ungewollter Einsichtnahme Dritter schützen, ob eine permanente Netz- und Stromversorgung gegeben sein muss, und welche Arbeitsplatzumgebungen komplett verboten sind.",
+            "quote": "Mindestens MUSS geregelt werden: unter welchen Arbeitsplatzbedingungen schützenswerte Informationen bearbeitet werden dürfen, wie sich Mitarbeitende am mobilen Arbeitsplatz vor ungewollter Einsichtnahme Dritter schützen, ob eine permanente Netz- und Stromversorgung gegeben sein muss sowie welche Arbeitsplatzumgebungen komplett verboten sind.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Mindestregelungen für mobile Arbeitsplätze nach INF.9.A1 benennen.",
+            "baustein_id": "INF.9",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Unter welchen Bedingungen schützenswerte Informationen bearbeitet werden dürfen und welche Umgebungen verboten sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wie sich Mitarbeitende vor ungewollter Einsichtnahme Dritter schützen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche Kantinen in der Nähe des mobilen Arbeitsplatzes genutzt werden dürfen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Wie viele Stunden pro Tag maximal mobil gearbeitet werden darf",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.9-002",
+            "text": "Was SOLLTEN Mitarbeitende laut INF.9.A12 bei der Nutzung von IT-Systemen an mobilen Arbeitsplätzen verwenden?",
+            "explanation": "INF.9.A12 empfiehlt, dass Mitarbeitende einen Sichtschutz für die Bildschirme der IT-Systeme verwenden sollten, wenn sie an mobilen Arbeitsplätzen arbeiten.",
+            "quote": "Wenn IT-Systeme an mobilen Arbeitsplätzen genutzt werden, SOLLTEN die Mitarbeitenden einen Sichtschutz für die Bildschirme der IT-Systeme verwenden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zum Bildschirmschutz an mobilen Arbeitsplätzen nach INF.9.A12 benennen.",
+            "baustein_id": "INF.9",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Einen Sichtschutz für die Bildschirme",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein zusätzliches Schloss für die Tastatur",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich speziell gehärtete Dienstgeräte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine externe Tastatur mit Fingerabdruckleser",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.9-003",
+            "text": "Was MUSS laut INF.9.A4 grundsätzlich sichergestellt sein, wenn Mitarbeitende mit fremden IT-Systemen arbeiten?",
+            "explanation": "INF.9.A4 verlangt, dass grundsätzlich sichergestellt sein muss, dass alle währenddessen entstandenen temporären Daten gelöscht werden, wenn Mitarbeitende mit fremden IT-Systemen arbeiten.",
+            "quote": "Wenn Mitarbeitende mit fremden IT-Systemen arbeiten, MUSS grundsätzlich sichergestellt sein, dass alle währenddessen entstandenen temporären Daten gelöscht werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an den Umgang mit fremden IT-Systemen nach INF.9.A4 erklären.",
+            "baustein_id": "INF.9",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Dass alle währenddessen entstandenen temporären Daten gelöscht werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dass die fremden IT-Systeme vorher von der IT-Abteilung geprüft werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dass ein VPN zum Firmennetz aufgebaut wird",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dass die Arbeit an fremden IT-Systemen grundsätzlich untersagt ist",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Terminalserver questions drawn from A1/A3/A11/A14. All pass: verbatim quotes, supported correct answers, schema sanity intact.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.9-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.9-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.9-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.9-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

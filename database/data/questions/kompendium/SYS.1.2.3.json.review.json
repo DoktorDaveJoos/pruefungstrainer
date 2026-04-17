@@ -1,0 +1,33 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three Windows Server questions. Q001 (SYS.1.2.3.A3 Telemetrie) flags on PDF line-break normalization: the source has `Telemetrie-\\nLevel 0` which normalizes to `TelemetrieLevel 0` while the quote keeps the hyphen-word as `Telemetrie-Level 0` — matches under aggressive no-hyphen-no-space normalization. Q002 is a descriptive question about which Windows versions the baustein covers; baustein_id is set but anforderung_type is null (idiomatic for Beschreibung questions across the corpus). Q003 passes cleanly.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.2.3-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Um die Übertragung von Diagnose- und Nutzungsdaten an Micros...` — PDF line-break artifact (hyphen/whitespace drift); matches under aggressive no-hyphen-no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.2.3-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; idiomatic for descriptive (Beschreibung/Gefährdungen) questions across Kompendium corpus, but rubric prefers it set."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.2.3-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

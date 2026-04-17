@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "6.2",
+        "chapter_title": "Auswahl und Priorisierung für die Basis-Absicherung",
+        "page_start": 62,
+        "page_end": 62
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-6.2-001",
+            "text": "Worin besteht der nächste Schritt nach der Festlegung des Geltungsbereichs im Rahmen der Basis-Absicherung?",
+            "explanation": "Laut Standard wird der Informationsverbund mithilfe der in der Ersterfassung identifizierten Prozesse, Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume sowie den vorhandenen Bausteinen aus dem IT-Grundschutz-Kompendium nachgebildet. Eine Risikoanalyse nach 200-3, ein externer Pentest oder die sofortige Realisierung aller Maßnahmen sind in diesem Schritt nicht vorgesehen.",
+            "quote": "Der nächste Schritt besteht darin, den betrachteten Informationsverbund mithilfe der in der Ersterfassung identifizierten Prozesse, Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume und den vorhandenen Bausteinen aus dem IT-Grundschutz-Kompendium nachzubilden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Nachbildungsschritt des Informationsverbunds im Prozess der Basis-Absicherung einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Den Informationsverbund mithilfe der Ersterfassung und der vorhandenen Bausteine aus dem Kompendium nachzubilden", "is_correct": true },
+                { "text": "Eine vollständige Risikoanalyse nach BSI-Standard 200-3 durchzuführen", "is_correct": false },
+                { "text": "Einen externen Penetrationstest zu beauftragen", "is_correct": false },
+                { "text": "Alle Sicherheitsmaßnahmen sofort ohne Priorisierung umzusetzen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.2-002",
+            "text": "Welche Ergebnisart entsteht aus der Auswahl und Priorisierung der Bausteine für die Basis-Absicherung?",
+            "explanation": "Das Ergebnis ist laut Standard ein IT-Grundschutz-Modell des Informationsverbunds, das aus verschiedenen — gegebenenfalls auch mehrfach verwendeten — Bausteinen besteht. Eine Risikomatrix, ein Audit-Bericht oder ein Business-Continuity-Plan entstehen an dieser Stelle nicht.",
+            "quote": "Das Ergebnis ist ein IT-Grundschutz-Modell des Informationsverbunds, das aus verschiedenen, gegebenenfalls auch mehrfach verwendeten Bausteinen besteht und durch die Verwendung der Bausteine die sicherheitsrelevanten Aspekte des Informationsverbunds beinhaltet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Ergebnis der Bausteinauswahl als IT-Grundschutz-Modell identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein IT-Grundschutz-Modell des Informationsverbunds aus verschiedenen, ggf. mehrfach verwendeten Bausteinen", "is_correct": true },
+                { "text": "Eine quantitative Risikomatrix mit Eintrittswahrscheinlichkeiten", "is_correct": false },
+                { "text": "Ein externer Audit-Bericht einer Zertifizierungsstelle", "is_correct": false },
+                { "text": "Ein vollständiger Business-Continuity-Plan", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.2-003",
+            "text": "Können Bausteine bei der Modellierung des Informationsverbunds gemäß BSI-Standard 200-2 mehrfach verwendet werden?",
+            "explanation": "Der Standard stellt ausdrücklich klar, dass ein IT-Grundschutz-Modell aus verschiedenen, gegebenenfalls auch mehrfach verwendeten Bausteinen besteht. Eine strikte Einmalverwendung, eine auf Systembausteine beschränkte Mehrfachverwendung oder ein Verbot werden nicht genannt.",
+            "quote": "Das Ergebnis ist ein IT-Grundschutz-Modell des Informationsverbunds, das aus verschiedenen, gegebenenfalls auch mehrfach verwendeten Bausteinen besteht und durch die Verwendung der Bausteine die sicherheitsrelevanten Aspekte des Informationsverbunds beinhaltet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die zulässige Mehrfachverwendung von Bausteinen in der Modellierung erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Ja, Bausteine können gegebenenfalls auch mehrfach verwendet werden", "is_correct": true },
+                { "text": "Nein, jeder Baustein darf pro Informationsverbund nur einmal angewendet werden", "is_correct": false },
+                { "text": "Nur Bausteine der Schicht SYS dürfen mehrfach verwendet werden", "is_correct": false },
+                { "text": "Eine Mehrfachverwendung ist grundsätzlich unzulässig", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.2-004",
+            "text": "Welche Elemente der Ersterfassung werden bei der Auswahl und Priorisierung für die Basis-Absicherung herangezogen?",
+            "explanation": "Laut Standard zieht die Modellierung die in der Ersterfassung identifizierten Prozesse, Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume heran. Externe Dienstleisterverträge, Budgetpläne oder interne Schulungsnachweise werden in dieser Aufzählung nicht genannt.",
+            "quote": "Der nächste Schritt besteht darin, den betrachteten Informationsverbund mithilfe der in der Ersterfassung identifizierten Prozesse, Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume und den vorhandenen Bausteinen aus dem IT-Grundschutz-Kompendium nachzubilden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die in der Ersterfassung relevanten Elemente für die Modellierung aufzählen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Prozesse, Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume", "is_correct": true },
+                { "text": "Bestehende Dienstleisterverträge und Service-Level-Agreements", "is_correct": false },
+                { "text": "Interne Schulungsnachweise und Personalakten", "is_correct": false },
+                { "text": "Der Mehrjahres-Budgetplan des Finanzbereichs", "is_correct": false }
+            ]
+        }
+    ]
+}

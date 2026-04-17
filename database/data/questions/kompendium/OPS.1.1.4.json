@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.4",
+        "chapter_title": "Schutz vor Schadprogrammen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.4-001",
+            "text": "Was MUSS laut OPS.1.1.4.A3 bei der Auswahl eines Virenschutzprogrammes beachtet werden?",
+            "explanation": "Es d\u00fcrfen nur Produkte f\u00fcr den Enterprise-Bereich eingesetzt werden. Produkte f\u00fcr die reine Heimanwendung oder ohne Support d\u00fcrfen nicht im professionellen Wirkbetrieb eingesetzt werden.",
+            "quote": "Es D\u00dcRFEN NUR Produkte f\u00fcr den Enterprise-Bereich mit auf die Institution zugeschnittenen Service- und Supportleistungen eingesetzt werden. Produkte f\u00fcr die reine Heimanwendung oder Produkte ohne Support D\u00dcRFEN NICHT im professionellen Wirkbetrieb eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Auswahl von Virenschutzprogrammen nach OPS.1.1.4.A3 benennen.",
+            "baustein_id": "OPS.1.1.4.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Es d\u00fcrfen nur Enterprise-Produkte mit institutionsspezifischen Service- und Supportleistungen eingesetzt werden", "is_correct": true},
+                {"text": "Es m\u00fcssen mindestens drei verschiedene Virenschutzprogramme parallel betrieben werden", "is_correct": false},
+                {"text": "Kostenlose Open-Source-L\u00f6sungen sind grunds\u00e4tzlich zu bevorzugen", "is_correct": false},
+                {"text": "Cloud-basierte Funktionen d\u00fcrfen unter keinen Umst\u00e4nden genutzt werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.4-002",
+            "text": "Was MUSS laut OPS.1.1.4.A1 im Konzept zum Schutz vor Schadprogrammen ber\u00fccksichtigt werden?",
+            "explanation": "Das Konzept muss beschreiben, welche IT-Systeme vor Schadprogrammen gesch\u00fctzt werden m\u00fcssen. Dabei m\u00fcssen auch IoT-Ger\u00e4te und Produktionssysteme ber\u00fccksichtigt werden.",
+            "quote": "Es MUSS ein Konzept erstellt werden, das beschreibt, welche IT-Systeme vor Schadprogrammen gesch\u00fctzt werden m\u00fcssen. Hierbei M\u00dcSSEN auch IoT-Ger\u00e4te und Produktionssysteme ber\u00fccksichtigt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang des Schutzkonzepts gegen Schadprogramme nach OPS.1.1.4.A1 beschreiben.",
+            "baustein_id": "OPS.1.1.4.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Welche IT-Systeme gesch\u00fctzt werden m\u00fcssen, einschlie\u00dflich IoT-Ger\u00e4te und Produktionssysteme", "is_correct": true},
+                {"text": "Ausschlie\u00dflich klassische Desktop-PCs und Server", "is_correct": false},
+                {"text": "Nur Systeme, die direkt mit dem Internet verbunden sind", "is_correct": false},
+                {"text": "Nur IT-Systeme mit erh\u00f6htem Schutzbedarf", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.4-003",
+            "text": "Was MUSS laut OPS.1.1.4.A7 den Benutzenden im Kontext von Schadprogrammen vermittelt werden?",
+            "explanation": "Benutzende m\u00fcssen regelm\u00e4\u00dfig \u00fcber die Bedrohung durch Schadprogramme aufgekl\u00e4rt werden und die grundlegenden Verhaltensregeln einhalten. Sie m\u00fcssen die Kontaktpersonen f\u00fcr den Verdachtsfall kennen.",
+            "quote": "Benutzende M\u00dcSSEN regelm\u00e4\u00dfig \u00fcber die Bedrohung durch Schadprogramme aufgekl\u00e4rt werden. Sie M\u00dcSSEN die grundlegenden Verhaltensregeln einhalten, um die Gefahr eines Befalls durch Schadprogramme zu reduzieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Sensibilisierungspflichten gegen\u00fcber Benutzenden nach OPS.1.1.4.A7 benennen.",
+            "baustein_id": "OPS.1.1.4.A7",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Sie m\u00fcssen regelm\u00e4\u00dfig \u00fcber Bedrohungen aufgekl\u00e4rt werden und die Kontaktpersonen f\u00fcr Verdachtsf\u00e4lle kennen", "is_correct": true},
+                {"text": "Sie m\u00fcssen selbst Virenschutzprogramme installieren und konfigurieren k\u00f6nnen", "is_correct": false},
+                {"text": "Sie m\u00fcssen monatlich einen schriftlichen Bericht \u00fcber Bedrohungen verfassen", "is_correct": false},
+                {"text": "Sie d\u00fcrfen grunds\u00e4tzlich keine E-Mails mehr \u00f6ffnen", "is_correct": false}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "ORP.3",
+        "chapter_title": "Sensibilisierung und Schulung zur Informationssicherheit",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-orp.3-001",
+            "text": "Was MUSS laut ORP.3.A1 vor Beginn eines Sensibilisierungs- und Schulungsprogramms eingeholt werden?",
+            "explanation": "Laut ORP.3.A1 muss vor dem Beginn eines Sensibilisierungs- und Schulungsprogramms zur Informationssicherheit die Unterstützung der Institutionsleitung eingeholt werden. Ohne diese Unterstützung können die Programme nicht erfolgreich sein.",
+            "quote": "Vor dem Beginn eines Sensibilisierungs- und Schulungsprogramms zur Informationssicherheit MUSS die Unterstützung der Institutionsleitung eingeholt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Voraussetzung der Management-Unterstützung für Schulungsprogramme benennen.",
+            "baustein_id": "ORP.3.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Unterstützung der Institutionsleitung", "is_correct": true },
+                { "text": "Die Genehmigung des Betriebsrats", "is_correct": false },
+                { "text": "Eine externe Zertifizierung des Schulungsprogramms", "is_correct": false },
+                { "text": "Die Freigabe durch den Datenschutzbeauftragten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.3-002",
+            "text": "In welche Komponenten MÜSSEN laut ORP.3.A3 alle Mitarbeitenden eingewiesen werden?",
+            "explanation": "Laut ORP.3.A3 müssen alle Mitarbeitenden und externen Benutzenden in den sicheren Umgang mit IT-, ICS- und IoT-Komponenten eingewiesen und sensibilisiert werden, soweit dies für ihre Arbeitszusammenhänge relevant ist.",
+            "quote": "Alle Mitarbeitenden und externen Benutzenden MÜSSEN in den sicheren Umgang mit IT-, ICS- und IoT-Komponenten eingewiesen und sensibilisiert werden, soweit dies für ihre Arbeitszusammenhänge relevant ist.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang der Pflicht zur Einweisung in IT-Komponenten benennen.",
+            "baustein_id": "ORP.3.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "IT-, ICS- und IoT-Komponenten", "is_correct": true },
+                { "text": "Ausschließlich in Server- und Netzwerkkomponenten", "is_correct": false },
+                { "text": "Nur in die von ihnen persönlich genutzten Clients", "is_correct": false },
+                { "text": "Ausschließlich in sicherheitskritische Verschlüsselungssysteme", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.3-003",
+            "text": "Was SOLLTE laut ORP.3.A4 vor der Konzeption eines Schulungsprogramms durchgeführt werden?",
+            "explanation": "Laut ORP.3.A4 sollten sich Sensibilisierungs- und Schulungsprogramme an den jeweiligen Zielgruppen orientieren. Dazu sollte eine Zielgruppenanalyse durchgeführt werden, um Schulungsmaßnahmen auf die speziellen Anforderungen und unterschiedlichen Hintergründe fokussieren zu können.",
+            "quote": "Sensibilisierungs- und Schulungsprogramme zur Informationssicherheit SOLLTEN sich an den jeweiligen Zielgruppen orientieren. Dazu SOLLTE eine Zielgruppenanalyse durchgeführt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Notwendigkeit einer Zielgruppenanalyse für Schulungsprogramme erklären.",
+            "baustein_id": "ORP.3.A4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine Zielgruppenanalyse", "is_correct": true },
+                { "text": "Eine vollständige Risikoanalyse aller IT-Systeme", "is_correct": false },
+                { "text": "Eine Kosten-Nutzen-Analyse der Schulungsanbieter", "is_correct": false },
+                { "text": "Eine Befragung aller externen Dienstleister", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.3-004",
+            "text": "Welche Aspekte SOLLTEN laut ORP.3.A8 bei der Messung des Lernerfolgs berücksichtigt werden?",
+            "explanation": "Laut ORP.3.A8 sollten die Messungen sowohl quantitative als auch qualitative Aspekte der Sensibilisierungs- und Schulungsprogramme berücksichtigen. Die Ergebnisse sollten in die Verbesserung des Angebots einfließen.",
+            "quote": "Die Messungen SOLLTEN sowohl quantitative als auch qualitative Aspekte der Sensibilisierungs- und Schulungsprogramme zur Informationssicherheit berücksichtigen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Art der Erfolgsmessung bei Schulungsprogrammen beschreiben.",
+            "baustein_id": "ORP.3.A8",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sowohl quantitative als auch qualitative Aspekte", "is_correct": true },
+                { "text": "Ausschließlich die Anzahl der geschulten Mitarbeitenden", "is_correct": false },
+                { "text": "Nur die Kosten pro Schulungsteilnehmenden", "is_correct": false },
+                { "text": "Ausschließlich die Ergebnisse von Multiple-Choice-Tests", "is_correct": false }
+            ]
+        }
+    ]
+}

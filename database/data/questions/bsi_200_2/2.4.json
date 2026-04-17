@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "2.4",
+        "chapter_title": "Elemente des IT-Grundschutzes",
+        "page_start": 12,
+        "page_end": 14
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-2.4-001",
+            "text": "Welche Schichten umfassen laut BSI-Standard 200-2 die prozessorientierten Bausteine?",
+            "explanation": "Die prozessorientierten Bausteine finden sich in den Schichten ISMS, ORP, CON, OPS und DER. SYS (IT-Systeme) gehört zu den systemorientierten Bausteinen und ist daher keine prozessorientierte Schicht.",
+            "quote": "Die prozessorientierten Bausteine finden sich in den folgenden Schichten: • ISMS (Managementsysteme für Informationssicherheit) • ORP (Organisation und Personal) • CON (Konzepte und Vorgehensweisen) • OPS (Betrieb) • DER (Detektion und Reaktion)",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die prozessorientierten Schichten des IT-Grundschutz-Schichtenmodells benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": null,
+            "answers": [
+                { "text": "ISMS, ORP, CON, OPS, DER", "is_correct": true },
+                { "text": "SYS, APP, NET, INF, IND", "is_correct": false },
+                { "text": "ISMS, SYS, ORP, NET, DER", "is_correct": false },
+                { "text": "CON, APP, NET, DER, IND", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.4-002",
+            "text": "Welche Schichten umfassen laut BSI-Standard 200-2 die systemorientierten Bausteine?",
+            "explanation": "Die systemorientierten Bausteine sind in die Schichten INF, NET, SYS, APP und IND gruppiert. ISMS, ORP, CON, OPS und DER gehören zu den prozessorientierten Schichten.",
+            "quote": "Die systemorientierten Bausteine sind in die folgenden Schichten gruppiert: • INF (Infrastruktur) • NET (Netze und Kommunikation) • SYS (IT-Systeme) • APP (Anwendungen) • IND (Industrielle IT)",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die systemorientierten Schichten des IT-Grundschutz-Schichtenmodells benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": null,
+            "answers": [
+                { "text": "INF, NET, SYS, APP, IND", "is_correct": true },
+                { "text": "ISMS, ORP, CON, OPS, DER", "is_correct": false },
+                { "text": "INF, ORP, CON, SYS, APP", "is_correct": false },
+                { "text": "SYS, APP, OPS, DER, IND", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.4-003",
+            "text": "Welches Sicherheitsniveau erreicht eine Institution laut BSI-Standard 200-2 durch die Standard-Absicherung?",
+            "explanation": "Der Standard legt fest, dass durch die geeignete Umsetzung von organisatorischen, personellen, infrastrukturellen und technischen Sicherheitsanforderungen mit der Standard-Absicherung ein Sicherheitsniveau erreicht wird, das für den normalen Schutzbedarf angemessen und ausreichend ist. Basis-Absicherung liegt deutlich darunter, Kern-Absicherung adressiert hochschutzbedürftige Bereiche.",
+            "quote": "Durch die geeignete Umsetzung von organisatorischen, personellen, infrastrukturellen und technischen Sicherheitsanforderungen wird mit der Standard-Absicherung ein Sicherheitsniveau erreicht, das für den normalen Schutzbedarf angemessen und ausreichend ist, um geschäftsrelevante Informationen zu schützen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Sicherheitsniveau der Standard-Absicherung einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein für den normalen Schutzbedarf angemessenes und ausreichendes Sicherheitsniveau", "is_correct": true },
+                { "text": "Ein Sicherheitsniveau, das nur für hochschutzbedürftige Informationen geeignet ist", "is_correct": false },
+                { "text": "Ein Sicherheitsniveau, das deutlich unter dem der Basis-Absicherung liegt", "is_correct": false },
+                { "text": "Ein ausschließlich auf Einsteiger zugeschnittenes Einstiegsniveau", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.4-004",
+            "text": "Welches Vorgehen eignet sich laut BSI-Standard 200-2, um hochschutzbedürftige Informationen und Geschäftsprozesse vorrangig zu schützen?",
+            "explanation": "Der Standard beschreibt, dass mit der Kern-Absicherung hochschutzbedürftige Informationen und Geschäftsprozesse vorrangig geschützt werden können. Basis-Absicherung bietet nur eine Einsteigergrundlage, Standard-Absicherung adressiert normalen Schutzbedarf.",
+            "quote": "Mit der Kern-Absicherung können hochschutzbedürftige Informationen und Geschäftsprozesse vorrangig geschützt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Anwendungsfall der Kern-Absicherung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Kern-Absicherung", "is_correct": true },
+                { "text": "Basis-Absicherung", "is_correct": false },
+                { "text": "Standard-Absicherung", "is_correct": false },
+                { "text": "Notfall-Absicherung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.4-005",
+            "text": "Welche Bestandteile enthält laut BSI-Standard 200-2 jeder Baustein des IT-Grundschutz-Kompendiums?",
+            "explanation": "Jeder Baustein enthält eine kurze Beschreibung der Thematik mit Zielsetzung, eine Abgrenzung zu anderen thematisch verwandten Bausteinen, einen Überblick über spezifische Gefährdungen und die konkreten Sicherheitsanforderungen als Hauptteil. Eine gesetzliche Grundlage oder Zertifizierungsprotokolle sind nicht Bestandteil eines Bausteins.",
+            "quote": "Jeder Baustein enthält eine kurze Beschreibung der Thematik und des Ziels, das mit der Umsetzung des Bausteins erreicht werden soll, sowie eine Abgrenzung zu anderen Bausteinen, die einen ähnlichen thematischen Bezug haben. Weiterhin gibt es einen kurzen Überblick über die spezifischen Gefährdungen des betrachteten Themengebietes. Die konkreten Sicherheitsanforderungen für die Basis-, Standard- und Kern-Absicherung bilden den Hauptteil.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den typischen Aufbau eines Bausteins im IT-Grundschutz-Kompendium beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": null,
+            "answers": [
+                { "text": "Thematik und Zielsetzung sowie Abgrenzung zu anderen Bausteinen", "is_correct": true },
+                { "text": "Überblick über spezifische Gefährdungen", "is_correct": true },
+                { "text": "Konkrete Sicherheitsanforderungen für Basis-, Standard- und Kern-Absicherung", "is_correct": true },
+                { "text": "Die gesetzliche Grundlage und Zertifizierungsprotokolle", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.4-006",
+            "text": "Welche Aussage über Umsetzungshinweise im IT-Grundschutz-Kompendium trifft laut BSI-Standard 200-2 zu?",
+            "explanation": "Umsetzungshinweise beschreiben, wie die Anforderungen der Bausteine in der Praxis erfüllt werden können, und enthalten passende Sicherheitsmaßnahmen mit detaillierten Beschreibungen. Sie basieren auf dem Erfahrungsschatz des BSI und der IT-Grundschutz-Anwender. Sie ersetzen nicht die Bausteine, und sie sind im Text nicht als Pflicht für jede Institution deklariert.",
+            "quote": "Zusätzlich kann es zu den Bausteinen des IT-Grundschutz-Kompendiums Umsetzungshinweise geben. Diese beschreiben, wie die Anforderungen der Bausteine in der Praxis erfüllt werden können, und enthalten dafür passende Sicherheitsmaßnahmen mit detaillierten Beschreibungen, die auf dem Erfahrungsschatz des BSI und von IT-Grundschutz-Anwendern basieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Zweck und Grundlage der Umsetzungshinweise beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie beschreiben, wie Anforderungen der Bausteine in der Praxis erfüllt werden können", "is_correct": true },
+                { "text": "Sie basieren auf dem Erfahrungsschatz des BSI und der IT-Grundschutz-Anwender", "is_correct": true },
+                { "text": "Sie ersetzen die Bausteine des IT-Grundschutz-Kompendiums", "is_correct": false },
+                { "text": "Sie sind für jede Institution verpflichtend anzuwenden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.4-007",
+            "text": "Warum enthält das IT-Grundschutz-Kompendium laut BSI-Standard 200-2 einen eigenen Baustein Sicherheitsmanagement?",
+            "explanation": "Der Standard nennt zwei Gründe für den Baustein Sicherheitsmanagement: eine einheitliche Methodik bei der Anwendung des IT-Grundschutzes zu erreichen und das Sicherheitsmanagement angemessen in die Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz einbeziehen zu können. Aussagen zur Notfallvorsorge oder zur Standardisierung aller Institutionen werden hier nicht getroffen.",
+            "quote": "Dies dient sowohl dazu, eine einheitliche Methodik bei der Anwendung des IT-Grundschutzes zu erreichen, als auch dazu, das Sicherheitsmanagement seiner • Bedeutung angemessen in die Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz einbeziehen zu können.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Beweggründe für den eigenen Baustein Sicherheitsmanagement im Kompendium einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": 13,
+            "answers": [
+                { "text": "Um eine einheitliche Methodik bei der Anwendung des IT-Grundschutzes zu erreichen", "is_correct": true },
+                { "text": "Um das Sicherheitsmanagement in die Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz einbeziehen zu können", "is_correct": true },
+                { "text": "Um Notfallvorsorge vollständig zu ersetzen", "is_correct": false },
+                { "text": "Um alle Institutionen zu standardisieren", "is_correct": false }
+            ]
+        }
+    ]
+}

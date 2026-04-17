@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.1",
+        "chapter_title": "Allgemeiner Server",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.1-001",
+            "text": "Welche Aussage zur Nutzung von Servern als Arbeitsplatzrechner ist laut SYS.1.1.A1 korrekt?",
+            "explanation": "Die Anforderung SYS.1.1.A1 verbietet explizit, dass Server als Arbeitsplatzrechner genutzt werden. Insbesondere dürfen vorhandene Anwendungen wie Webbrowser auf dem Server nicht für das Abrufen von Informationen aus dem Internet verwendet werden. Es handelt sich um eine Basis-Anforderung (DÜRFEN NICHT), nicht um eine bloße Empfehlung.",
+            "quote": "Server DÜRFEN NICHT als Arbeitsplatzrechner genutzt werden. • Insbesondere DÜRFEN vorhandene Anwendungen, wie Webbrowser, auf dem Server NICHT für das Abrufen von Informationen aus dem Internet oder das Herunterladen von Software, Treibern und Updates verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Einschränkungen der Servernutzung als Arbeitsplatz gemäß SYS.1.1.A1 erläutern.",
+            "baustein_id": "SYS.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Server dürfen nicht als Arbeitsplatzrechner genutzt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Webbrowser auf Servern dürfen zum Surfen im Internet genutzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Server dürfen bei Bedarf auch als Client-Systeme eingesetzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Nutzung als Arbeitsplatz ist nur eine Empfehlung, keine Pflicht",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.1-002",
+            "text": "Welche sicherheitsrelevanten Systemereignisse MÜSSEN laut SYS.1.1.A10 auf Servern protokolliert werden?",
+            "explanation": "Die Anforderung SYS.1.1.A10 nennt explizit Systemstarts und Reboots, erfolgreiche und erfolglose Anmeldungen sowie blockierte Datenströme als zu protokollierende Ereignisse. Änderungen an der Netzwerktopologie werden dort nicht erwähnt.",
+            "quote": "Generell MÜSSEN alle sicherheitsrelevanten Systemereignisse protokolliert werden, dazu gehören mindestens: • Systemstarts und Reboots, • erfolgreiche und erfolglose Anmeldungen am IT-System (Betriebssystem und Anwendungssoftware), • fehlgeschlagene Berechtigungsprüfungen, • blockierte Datenströme (Verstöße gegen ACLs oder Firewallregeln)",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die laut SYS.1.1.A10 zu protokollierenden Systemereignisse auf Servern identifizieren.",
+            "baustein_id": "SYS.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Systemstarts und Reboots",
+                    "is_correct": true
+                },
+                {
+                    "text": "Erfolgreiche und erfolglose Anmeldungen am IT-System",
+                    "is_correct": true
+                },
+                {
+                    "text": "Blockierte Datenströme (Verstöße gegen ACLs oder Firewallregeln)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Änderungen an der Netzwerktopologie",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.1-003",
+            "text": "Was SOLLTE laut SYS.1.1.A30 bei erhöhtem Schutzbedarf hinsichtlich der Dienste auf Servern beachtet werden?",
+            "explanation": "Die Anforderung SYS.1.1.A30 empfiehlt, abhängig von der Bedrohungslage und dem Schutzbedarf, auf jedem Server jeweils nur einen Dienst zu betreiben. Dies ist eine Anforderung bei erhöhtem Schutzbedarf (H). Eine Begrenzung auf zwei Dienste oder die Clusterung werden dort nicht gefordert.",
+            "quote": "Abhängig von der Bedrohungslage und dem Schutzbedarf der Dienste SOLLTE auf jedem Server jeweils nur ein Dienst betrieben werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung zur Diensttrennung bei erhöhtem Schutzbedarf gemäß SYS.1.1.A30 benennen.",
+            "baustein_id": "SYS.1.1",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es sollte auf jedem Server jeweils nur ein Dienst betrieben werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es sollten maximal zwei Dienste pro Server betrieben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mehrere Dienste sollten auf einem Server geclustert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Anzahl der Dienste pro Server ist nicht relevant",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.1-004",
+            "text": "Welche Maßnahme fordert SYS.1.1.A6 in Bezug auf nicht benötigte Dienste auf Servern?",
+            "explanation": "SYS.1.1.A6 fordert als Basis-Anforderung, dass alle nicht benötigten Serverrollen, Features und Funktionen, sonstige Software und Dienste deaktiviert oder deinstalliert werden müssen, vor allem Netzdienste. Auch nicht benötigte Funktionen in der Firmware müssen deaktiviert werden.",
+            "quote": "Alle nicht benötigten Serverrollen, Features und Funktionen, sonstige Software und Dienste MÜSSEN deaktiviert oder deinstalliert werden, vor allem Netzdienste. Auch alle nicht benötigten Funktionen in der Firmware MÜSSEN deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung zur Deaktivierung nicht benötigter Dienste gemäß SYS.1.1.A6 wiedergeben.",
+            "baustein_id": "SYS.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Nicht benötigte Serverrollen, Software und Dienste müssen deaktiviert oder deinstalliert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nicht benötigte Dienste sollen lediglich dokumentiert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nicht benötigte Dienste dürfen aktiv bleiben, wenn sie keine Sicherheitslücken aufweisen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Deaktivierung ist nur bei erhöhtem Schutzbedarf erforderlich",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

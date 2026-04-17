@@ -1,0 +1,40 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Seven questions on the security process overview. Questions 002, 003, 004, and 006 pass cleanly with verbatim quotes in the section source. Questions 001, 005, and 007 have page_start values (14, 14, 15) that fall below the manifest section page_start of 16. Their quoted text exists in the full source in the char range that the manifest assigns to section 2.5, but the content semantically belongs to chapter 2.6 (Initiierungsphase, Keimzellen approach). This is a manifest boundary artifact, not a factual error. Topics are well-assigned: 'methodik' for process-level content, 'risikoanalyse' for the Risikoanalyse trigger question, 'check' for the Soll-Ist-Vergleich question. Both 'experte' labels (005, 007) are appropriate -- they require synthesizing a strategic argument from multiple sentences.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-2.6-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=14 is below section manifest page_start=16. Quote fragments for Initiierung sub-items are found at char positions in the 2.5 char range (46776-46975) due to manifest boundary placement. Content is semantically correct for chapter 2.6."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-2.6-002", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.6-003", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.6-004", "verdict": "pass", "issues": [] },
+        {
+            "external_id": "bsi-200-2-2.6-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=14 is below section manifest page_start=16. Quote is found in the char range assigned to section 2.5 but content belongs to chapter 2.6."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-2.6-006", "verdict": "pass", "issues": [] },
+        {
+            "external_id": "bsi-200-2-2.6-007",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=15 is below section manifest page_start=16. Same manifest boundary issue. Content is correct for chapter 2.6."
+                }
+            ]
+        }
+    ]
+}

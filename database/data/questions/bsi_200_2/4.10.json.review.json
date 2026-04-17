@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All five questions are factually correct and well-supported by the source text. Quotes are verbatim substrings of the normalized source. The 'experte' difficulty on 4.10-005 is justified: it requires understanding a nuanced principle (controllers shouldn't check their own work) and distinguishing combinable from non-combinable roles. All page_start values (49) are within the manifest range (49-50). No schema violations.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-4.10-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.10-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.10-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.10-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.10-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

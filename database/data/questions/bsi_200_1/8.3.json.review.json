@@ -1,0 +1,51 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 8.3 covers Erfolgskontrolle via interne/externe Audits, audit effort scaling, small-institution sufficiency, reaction to operational changes, Detektionsmaßnahmen, Einhaltungsprüfung, Eignungsprüfung, and Managementberichte. All quotes are verbatim after normalization. Correct answers are directly supported by the passage and distractors are unsupported. Two topic concerns: (1) 8.3-005 is labeled 'siem' but the passage spans broad Detektionsmaßnahmen (including physical Brand-/Wasser-/Klimasensoren and Zutrittskontrolle), which is broader than SIEM proper — 'methodik' or 'check' would be a cleaner fit. Flagging rather than failing since system/network monitoring and log correlation clearly overlap the siem bucket. (2) 8.3-006 and 8.3-007 correctly use 'check' for audit mechanics. Difficulty basis is plausible throughout.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-8.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.3-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.3-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.3-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "topic_mismatch",
+                    "detail": "Topic 'siem' is borderline. The quoted Detektionsmaßnahmen list includes Brand-/Wasser-/Klimasensoren and Zutrittskontrolle zu Gebäuden/Räumen — these are physical detection controls, not SIEM. A broader topic like 'methodik' or 'check' would fit the full option set better. System-/Netzüberwachung and Protokollierung overlap siem, so the label is defensible but imprecise."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.3-007",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.3-008",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

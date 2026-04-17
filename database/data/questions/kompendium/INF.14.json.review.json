@@ -1,0 +1,54 @@
+{
+    "reviewed_at": "2026-04-17T12:30:00Z",
+    "critic_notes": "Section INF.14 (3 questions: 3 pass, 0 flag, 0 fail). Correct answers are supported by the baustein introduction (Einleitung / 1.1 Beschreibung) — GA-Aufgaben, GA als Werkzeug des TGM, und Zielrichtungs-Kriterien; distractors are clearly wrong per source; topic 'bausteine' fits; difficulty labels plausible. 3 question(s) annotated with quote_mismatch/info — content verbatim but manifest char-range drift means fragments match only under aggressive normalization against the full source. All 3 questions have anforderung_type=null — acceptable because they cover the baustein intro/scope (Gebäudeautomation-Definition, Zielrichtungs-Kriterien), not specific Basis/Standard/Hoch Anforderungen.",
+    "results": [
+        {
+            "external_id": "kompendium-inf.14-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim in the full source)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein intro/scope (Einleitung/1.1 Beschreibung); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.14-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein intro/scope (Rolle der GA im Kontext des TGM); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.14-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein intro/scope (Zielkriterien der Gebäudeautomation); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        }
+    ]
+}

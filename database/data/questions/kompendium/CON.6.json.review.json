@@ -1,0 +1,27 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.6 Löschen und Vernichten: 3 questions on CON.6.A12/A2. Quotes verbatim after normalization. Correct answers supported; distractors (destruction-as-sole-method, unsorted disposal) are unambiguously wrong. Topic `bausteine` fits. `basis` difficulty — appropriate for single-step paraphrases.",
+    "results": [
+        {
+            "external_id": "kompendium-con.6-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-con.6-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-con.6-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Bevor schutzbedürftigen Informationen und Datenträger entsorgt werden, MÜSSEN sie sicher g...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        }
+    ]
+}

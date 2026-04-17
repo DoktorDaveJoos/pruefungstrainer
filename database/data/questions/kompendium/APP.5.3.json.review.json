@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Section APP.5.3 (4 questions: 4 pass, 0 flag, 0 fail). All questions pass verdict; annotated issues are info-severity only (no factual concerns). 3 question(s) annotated with quote_mismatch/info — content verbatim but source has PDF hyphen/line-break or bullet-list layout artifacts. Correct answers are supported by the quoted passages; distractors are clearly wrong per source; topic 'bausteine' fits; difficulty labels plausible.",
+    "results": [
+        {
+            "external_id": "kompendium-app.5.3-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under nospace_nohyphen normalization (PDF hyphen/line-break artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-app.5.3-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.3-004",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break artifact; content verbatim)."
+                }
+            ]
+        }
+    ]
+}

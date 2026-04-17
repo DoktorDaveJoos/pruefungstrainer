@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All four questions accurately reflect section 7. Quotes match after normalization. Correct answers are directly supported. Distractors are clearly wrong. All questions cite page_start: 39, which matches the actual printed page marker in the source but falls outside the manifest range of 40-41. This appears to be a systemic manifest page-offset issue rather than a question error. Topic 'risikoanalyse' is appropriate. All basis difficulty is fitting. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-7-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "Question cites page_start 39 but manifest section range is 40-41. The actual source content starts at printed page 39, suggesting a manifest calibration error."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-7-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "Question cites page_start 39 but manifest section range is 40-41. Same manifest calibration issue."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-7-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "Question cites page_start 39 but manifest section range is 40-41. Same manifest calibration issue."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-7-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "Question cites page_start 39 but manifest section range is 40-41. Same manifest calibration issue."
+                }
+            ]
+        }
+    ]
+}

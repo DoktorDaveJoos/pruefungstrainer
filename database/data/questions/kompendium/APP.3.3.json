@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.3.3",
+        "chapter_title": "Fileserver",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.3.3-001",
+            "text": "Was MUSS laut APP.3.3 mit Daten geschehen, bevor sie auf dem Fileserver abgelegt werden?",
+            "explanation": "Anforderung APP.3.3.A3 verlangt, dass alle Daten durch ein Viren-Schutzprogramm auf Schadsoftware untersucht werden müssen, bevor sie auf dem Fileserver abgelegt werden. Eine Prüfung erst nach der Ablage oder ein Verzicht auf Virenscans genügt nicht.",
+            "quote": "Alle Daten MÜSSEN durch ein Viren-Schutzprogramm auf Schadsoftware untersucht werden, bevor sie auf dem Fileserver abgelegt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung zum Virenschutz auf Fileservern benennen.",
+            "baustein_id": "APP.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen durch ein Viren-Schutzprogramm auf Schadsoftware untersucht werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen ausschließlich verschlüsselt gespeichert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen zuerst auf einem USB-Datenträger zwischengespeichert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein Virenscan ist nur bei Dateien aus dem Internet erforderlich",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.3-002",
+            "text": "Was DARF laut APP.3.3 NICHT als Fileserver eingesetzt werden?",
+            "explanation": "Anforderung APP.3.3.A15 stellt klar, dass Arbeitsplatzrechner nicht als Fileserver eingesetzt werden dürfen. Fileserver müssen für ihren Einsatzzweck ausreichend dimensioniert und für den Dauerbetrieb ausgelegt sein.",
+            "quote": "Arbeitsplatzrechner DÜRFEN NICHT als Fileserver eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Einschränkung bezüglich der Eignung von IT-Systemen als Fileserver benennen.",
+            "baustein_id": "APP.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Arbeitsplatzrechner",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dedizierte Server-Hardware",
+                    "is_correct": false
+                },
+                {
+                    "text": "Virtuelle Maschinen auf Server-Hardware",
+                    "is_correct": false
+                },
+                {
+                    "text": "Server-Appliances",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.3-003",
+            "text": "Welche Entscheidungen MUSS der IT-Betrieb laut APP.3.3 bezüglich RAID-Systemen im Fileserver treffen?",
+            "explanation": "Anforderung APP.3.3.A2 verlangt, dass der IT-Betrieb festlegen muss, ob ein RAID-System eingesetzt werden soll. Bei Einsatz müssen das RAID-Level, die Zeitspanne für den Rebuild-Prozess und die Wahl zwischen Software- oder Hardware-RAID entschieden werden. Eine Entscheidung gegen RAID muss nachvollziehbar dokumentiert werden.",
+            "quote": "Der IT-Betrieb MUSS festlegen, ob im Fileserver ein RAID-System eingesetzt werden soll. Eine Entscheidung gegen ein solches System MUSS nachvollziehbar dokumentiert werden. Falls ein RAID-System eingesetzt werden soll, MUSS der IT-Betrieb entscheiden: welches RAID-Level benutzt werden soll, wie lang die Zeitspanne für einen RAID-Rebuild-Prozess sein darf und ob ein Software- oder ein Hardware-RAID eingesetzt werden soll.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Entscheidungspunkte zum Einsatz von RAID-Systemen im Fileserver benennen.",
+            "baustein_id": "APP.3.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das RAID-Level, die Rebuild-Zeitspanne und ob Software- oder Hardware-RAID eingesetzt wird",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die Anzahl der Festplatten im Server",
+                    "is_correct": false
+                },
+                {
+                    "text": "Lediglich die Farbkennzeichnung der Festplatten",
+                    "is_correct": false
+                },
+                {
+                    "text": "RAID ist laut Baustein grundsätzlich verboten",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

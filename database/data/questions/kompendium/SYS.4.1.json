@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.4.1",
+        "chapter_title": "Drucker, Kopierer und Multifunktionsger\u00e4te",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.4.1-001",
+            "text": "Welche Anforderung stellt SYS.4.1 an den physischen Zugriff auf Drucker und Multifunktionsger\u00e4te?",
+            "explanation": "SYS.4.1.A2 fordert, dass Drucker und Multifunktionsger\u00e4te so aufgestellt werden m\u00fcssen, dass nur befugte Personen die Ger\u00e4te verwenden und auf verarbeitete Informationen zugreifen k\u00f6nnen. Die Ger\u00e4te m\u00fcssen mit Ger\u00e4tepassw\u00f6rtern versehen sein.",
+            "quote": "Der IT-Betrieb MUSS Drucker, Kopierer und Multifunktionsger\u00e4te so aufstellen und absichern, dass nur befugte Personen die Ger\u00e4te verwenden und auf verarbeitete Informationen zugreifen k\u00f6nnen. \u2022 Drucker, Kopierer und Multifunktionsger\u00e4te M\u00dcSSEN mit Ger\u00e4tepassw\u00f6rtern versehen sein, um so den Zugriff auf Webserver und Bedienfeld f\u00fcr die Administration zu sperren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Aufstellung und den Zugriff auf Drucker und Multifunktionsger\u00e4te beschreiben.",
+            "baustein_id": "SYS.4.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Nur befugte Personen d\u00fcrfen die Ger\u00e4te verwenden und auf verarbeitete Informationen zugreifen.", "is_correct": true },
+                { "text": "Die Ger\u00e4te m\u00fcssen mit Ger\u00e4tepassw\u00f6rtern versehen sein.", "is_correct": true },
+                { "text": "Die Ger\u00e4te d\u00fcrfen ohne Passwortschutz betrieben werden, wenn sie im internen Netz stehen.", "is_correct": false },
+                { "text": "Ein offener Zugang zu den Ger\u00e4ten ist akzeptabel, solange keine vertraulichen Dokumente gedruckt werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.1-002",
+            "text": "Wie SOLLTEN Drucker und Multifunktionsger\u00e4te laut SYS.4.1 im Netz positioniert werden?",
+            "explanation": "SYS.4.1.A11 empfiehlt, dass netzf\u00e4hige Drucker und Multifunktionsger\u00e4te nicht aus Fremdnetzen erreichbar sein sollten. Sie sollten in einem eigenen Netzsegment betrieben werden, das von Clients und Servern getrennt ist.",
+            "quote": "Netzdrucker und Multifunktionsger\u00e4te SOLLTEN in einem eigenen Netzsegment, das von den Clients und Servern der Institution getrennt ist, betrieben werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Netzsegmentierung f\u00fcr Drucker und Multifunktionsger\u00e4te benennen.",
+            "baustein_id": "SYS.4.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "In einem eigenen Netzsegment, getrennt von Clients und Servern.", "is_correct": true },
+                { "text": "Im selben Netzsegment wie die Clients, um den Zugriff zu vereinfachen.", "is_correct": false },
+                { "text": "Direkt im Servernetz, um die Verwaltung zu erleichtern.", "is_correct": false },
+                { "text": "In der DMZ mit Zugang zum Internet.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.1-003",
+            "text": "Welche Protokolle SOLLTEN laut SYS.4.1 f\u00fcr die Verwaltung von Druckern und Multifunktionsger\u00e4ten verwendet werden?",
+            "explanation": "SYS.4.1.A18 empfiehlt, die Ger\u00e4te ausschlie\u00dflich \u00fcber verschl\u00fcsselte Protokolle wie HTTPS und SNMPv3 zu verwalten. Unverschl\u00fcsselte Protokolle wie SNMP, Telnet und PJL sollten durch verschl\u00fcsselte ersetzt oder abgeschaltet werden.",
+            "quote": "Die Ger\u00e4te SOLLTEN ausschlie\u00dflich \u00fcber verschl\u00fcsselte Protokolle wie HTTPS und SNMPv3 verwaltet werden. S\u00e4mtliche Protokolle, mit denen unverschl\u00fcsselt auf Drucker und Multifunktionsger\u00e4te zugegriffen werden kann, SOLLTEN vom IT-Betrieb durch verschl\u00fcsselte ersetzt oder abgeschaltet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlenen Verwaltungsprotokolle f\u00fcr Drucker und Multifunktionsger\u00e4te benennen.",
+            "baustein_id": "SYS.4.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Verschl\u00fcsselte Protokolle wie HTTPS und SNMPv3", "is_correct": true },
+                { "text": "Telnet und unverschl\u00fcsseltes SNMP", "is_correct": false },
+                { "text": "FTP und HTTP", "is_correct": false },
+                { "text": "PJL (Printer Job Language) ohne Verschl\u00fcsselung", "is_correct": false }
+            ]
+        }
+    ]
+}

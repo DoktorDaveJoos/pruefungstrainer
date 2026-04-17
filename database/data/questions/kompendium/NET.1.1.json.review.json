@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Baustein NET.1.1: 5 questions reviewed. All pass; quotes align verbatim with the source text, topics are correctly labeled as 'bausteine', required answers trace to the Baustein's Anforderungen, and distractors are unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-net.1.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-net.1.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-net.1.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-net.1.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-net.1.1-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

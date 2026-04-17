@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "6.4",
+        "chapter_title": "Realisierung",
+        "page_start": 66,
+        "page_end": 66
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-6.4-001",
+            "text": "Welche Anforderungen müssen für die Basis-Absicherung in der Realisierungsphase erfüllt werden?",
+            "explanation": "Der Standard stellt ausdrücklich fest, dass für die Basis-Absicherung alle identifizierten Basis-Anforderungen erfüllt werden müssen. Standard-Anforderungen oder Anforderungen bei erhöhtem Schutzbedarf gehören zur Standard- bzw. Kern-Absicherung und sind in der Realisierung der Basis-Absicherung nicht verpflichtend.",
+            "quote": "Generell müssen für die Basis-Absicherung alle identifizierten Basis-Anforderungen erfüllt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Pflicht zur Erfüllung aller Basis-Anforderungen in der Realisierung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 66,
+            "page_end": null,
+            "answers": [
+                { "text": "Alle identifizierten Basis-Anforderungen müssen erfüllt werden", "is_correct": true },
+                { "text": "Mindestens die Hälfte der Standard-Anforderungen", "is_correct": false },
+                { "text": "Nur Anforderungen bei erhöhtem Schutzbedarf", "is_correct": false },
+                { "text": "Es reicht, die Basis-Anforderungen der OPS-Schicht zu erfüllen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.4-002",
+            "text": "Was ist laut BSI-Standard 200-2 das primäre Ziel der in Kapitel 6.4 beschriebenen Realisierungs-Schritte?",
+            "explanation": "Der Standard nennt ausdrücklich eine möglichst effiziente Erfüllung der vorgesehenen Basis-Anforderungen als primäres Ziel. Eine hundertprozentige Umsetzung aller Standard-Anforderungen, eine ISO-Zertifizierung oder ein kompletter Verzicht auf begleitende Maßnahmen sind keine genannten Ziele.",
+            "quote": "Das primäre Ziel der nachfolgend beschriebenen Schritte ist es daher, eine möglichst effiziente Erfüllung der vorgesehenen Basis-Anforderungen zu erreichen",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Effizienzziel der Realisierungsphase benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 66,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine möglichst effiziente Erfüllung der vorgesehenen Basis-Anforderungen", "is_correct": true },
+                { "text": "Eine hundertprozentige Umsetzung aller Standard-Anforderungen", "is_correct": false },
+                { "text": "Die Vorbereitung auf eine ISO-27001-Zertifizierung ohne IT-Grundschutz-Testat", "is_correct": false },
+                { "text": "Der vollständige Verzicht auf realisierungsbegleitende Maßnahmen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.4-003",
+            "text": "Was soll laut BSI-Standard 200-2 im Rahmen der Kosten- und Aufwandsschätzung pro Basis-Anforderung festgehalten werden?",
+            "explanation": "Der Standard verlangt, für jede zu erfüllende Basis-Anforderung festzuhalten, welche Investitionskosten und welcher Personalaufwand dafür notwendig sind. Ein konkreter Marktpreisvergleich, ein ROI-Wert oder der CO₂-Fußabdruck werden nicht gefordert.",
+            "quote": "Es sollte für jede zu erfüllende Basis-Anforderung festgehalten werden, welche Investitionskosten und welcher Personalaufwand dafür notwendig sind.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Mindestangaben der Kosten- und Aufwandsschätzung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 66,
+            "page_end": null,
+            "answers": [
+                { "text": "Investitionskosten und Personalaufwand je Basis-Anforderung", "is_correct": true },
+                { "text": "Marktpreisvergleich zu drei alternativen Anbietern", "is_correct": false },
+                { "text": "Ein konkreter Return-on-Investment (ROI) in Prozent", "is_correct": false },
+                { "text": "Der CO₂-Fußabdruck der eingesetzten Hardware", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.4-004",
+            "text": "Wann muss für die Basis-Anforderungen eine Umsetzungsreihenfolge festgelegt werden?",
+            "explanation": "Der Standard verlangt eine Umsetzungsreihenfolge, wenn das vorhandene Budget oder die personellen Ressourcen nicht ausreichen, um die fehlenden Basis-Anforderungen sofort erfüllen zu können. Eine grundsätzliche Pflicht, eine Priorisierung nach Bausteinnummer oder eine zufällige Reihenfolge sind nicht vorgesehen.",
+            "quote": "Wenn das vorhandene Budget oder die personellen Ressourcen nicht ausreichen, um die fehlenden Basis-Anforderungen sofort erfüllen zu können, muss eine Umsetzungsreihenfolge festgelegt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Auslöser für die Festlegung einer Umsetzungsreihenfolge benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 66,
+            "page_end": null,
+            "answers": [
+                { "text": "Wenn Budget oder personelle Ressourcen nicht ausreichen, alle fehlenden Basis-Anforderungen sofort zu erfüllen", "is_correct": true },
+                { "text": "Grundsätzlich immer, auch wenn Ressourcen unbegrenzt zur Verfügung stehen", "is_correct": false },
+                { "text": "Nur wenn die Reihenfolge sich rein zufällig ergeben soll", "is_correct": false },
+                { "text": "Ausschließlich nach aufsteigender Nummer der Bausteine", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.4-005",
+            "text": "Welche Bedeutung haben realisierungsbegleitende Basis-Anforderungen laut BSI-Standard 200-2?",
+            "explanation": "Der Standard hebt ausdrücklich hervor, dass es überaus wichtig ist, notwendige realisierungsbegleitende Basis-Anforderungen — wie Schulungen — rechtzeitig zu konzipieren und für die Realisierung mit einzuplanen. Eine Beschränkung auf technische Maßnahmen, eine verzögerte Einplanung oder ein Verweis in die Notfallvorsorge widersprechen dem Text.",
+            "quote": "Überaus wichtig ist es, notwendige realisierungsbegleitende Basis-Anforderungen, wie beispielsweise Schulungen, rechtzeitig zu konzipieren und für die Realisierung mit einzuplanen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Rolle realisierungsbegleitender Anforderungen (z. B. Schulungen) einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 66,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie sind rechtzeitig zu konzipieren und für die Realisierung mit einzuplanen — typisches Beispiel: Schulungen", "is_correct": true },
+                { "text": "Sie betreffen ausschließlich technische Maßnahmen und keine Schulungen", "is_correct": false },
+                { "text": "Sie können erst nach Abschluss aller Basis-Anforderungen eingeplant werden", "is_correct": false },
+                { "text": "Sie gehören ausschließlich in den Bereich der Notfallvorsorge", "is_correct": false }
+            ]
+        }
+    ]
+}

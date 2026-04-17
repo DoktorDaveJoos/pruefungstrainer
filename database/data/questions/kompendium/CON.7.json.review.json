@@ -1,0 +1,59 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.7 Informationssicherheit auf Auslandsreisen: 3 questions, all on chapter intro/description content (baustein_id: null). Quotes match after dehyphenation but are in the buffer zone — the Einleitung paragraphs occupy positions just before the manifest CON.7 char_start. Correct answers align with source. Question 002 `experte` is borderline. Schema violations are intro-type (info severity).",
+    "results": [
+        {
+            "external_id": "kompendium-con.7-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Bedrohungslage ist auf Reisen besonders erhöht. Dies ergibt sich z. B. aus der Kommuni...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Hinzu kommt, dass das Risiko auf Auslandsreisen abhängig vom Zielland oftmals deutlich höh...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.7-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Dieser Baustein beschreibt den Schutz aller Informationen, die auf Auslandsreisen sowohl i...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.7-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Politische, gesellschaftliche, religiöse, geografische, klimatische, gesetzliche und regul...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        }
+    ]
+}

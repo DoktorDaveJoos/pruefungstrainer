@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "9.5",
+        "chapter_title": "Realisierungsbegleitende Maßnahmen",
+        "page_start": 162,
+        "page_end": 163
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-9.5-001",
+            "text": "Welche Art von Maßnahmen zählt Abschnitt 9.5 insbesondere zu den realisierungsbegleitenden Maßnahmen?",
+            "explanation": "Insbesondere Sensibilisierungsmaßnahmen werden genannt – sie verdeutlichen den Mitarbeitern die Belange der Informationssicherheit und informieren über Notwendigkeit und Konsequenzen der neuen Sicherheitsmaßnahmen. Risikoanalyse, Strukturanalyse oder ISO-Zertifizierung sind nicht gemeint.",
+            "quote": "Zu diesen Maßnahmen gehören insbesondere Sensibilisierungsmaßnahmen, die darauf abzielen, die Belange der Informationssicherheit zu verdeutlichen und die von neuen Sicherheitsmaßnahmen betroffenen Mitarbeiter über die Notwendigkeit und die Konsequenzen der Maßnahmen zu unterrichten.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Sensibilisierungsmaßnahmen als realisierungsbegleitende Maßnahmen einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 162,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sensibilisierungsmaßnahmen für betroffene Mitarbeiter",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die initiale Risikoanalyse eines neuen Informationsverbunds",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Strukturanalyse der gesamten Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine ISO-Zertifizierung des Informationssicherheits-Managements",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.5-002",
+            "text": "Warum ist laut Abschnitt 9.5 die Schulung der betroffenen Mitarbeiter wichtig?",
+            "explanation": "Ohne Schulung können Maßnahmen oft nicht umgesetzt werden und verlieren ihre Wirkung; unzureichend informierte Mitarbeiter entwickeln häufig eine ablehnende Haltung gegenüber der Informationssicherheit. Eine Reduzierung der ISB-Aufgaben, gesetzliche Pflicht oder Gehaltsanpassung werden nicht angeführt.",
+            "quote": "Wird diese Schulung unterlassen, können die Maßnahmen oft nicht umgesetzt werden und verlieren ihre Wirkung, wenn sich die Mitarbeiter unzureichend informiert fühlen, was oft zu einer ablehnenden Haltung gegenüber der Informationssicherheit führt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Nutzen der Schulung betroffener Mitarbeiter beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 162,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ohne Schulung können Maßnahmen oft nicht umgesetzt werden und verlieren ihre Wirkung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Schulungen reduzieren die Aufgaben des ISB erheblich",
+                    "is_correct": false
+                },
+                {
+                    "text": "Schulungen sind gesetzlich bei jeder Maßnahme zwingend vorgeschrieben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Schulungen sind Grundlage für Gehaltsanpassungen der Mitarbeiter",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.5-003",
+            "text": "Welche Schritte nennt der Aktionspunktkatalog zu 9 Umsetzung der Sicherheitskonzeption?",
+            "explanation": "Die Aktionspunkte umfassen u. a. das Zusammenfassen fehlender Anforderungen, die Konsolidierung der Maßnahmen, die Kosten- und Aufwandsermittlung, das Auflisten von Ersatzmaßnahmen, Ressourcen- und Restrisikoentscheidung, Festlegen der Umsetzungsreihenfolge, Termin- und Verantwortungszuweisung, Überwachung sowie Schulung und Sensibilisierung der Mitarbeiter. Eine Veröffentlichung des Sicherheitskonzepts auf der Webseite der Institution gehört nicht dazu.",
+            "quote": "Fehlende oder nur teilweise umgesetzte IT-Grundschutz-Anforderungen sowie ergänzende Si cherheitsmaßnahmen in einer Tabelle zusammenfassen • Sicherheitsmaßnahmen konsolidieren, d. h. überflüssige Maßnahmen streichen, allgemeine Maßnahmen an die Gegebenheiten anpassen und alle Maßnahmen auf Eignung prüfen • Einmalige und wiederkehrende Kosten und den Aufwand für die umzusetzenden Maßnahmen ermitteln • Ersatzmaßnahmen für nicht finanzierbare oder nicht leistbare Maßnahmen auflisten • Betroffene Mitarbeiter schulen und sensibilisieren",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Aktionspunkte zur Umsetzung der Sicherheitskonzeption benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 163,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Fehlende oder teilweise umgesetzte Anforderungen und ergänzende Maßnahmen in einer Tabelle zusammenfassen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einmalige und wiederkehrende Kosten und den Aufwand ermitteln",
+                    "is_correct": true
+                },
+                {
+                    "text": "Betroffene Mitarbeiter schulen und sensibilisieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Das Sicherheitskonzept vollständig auf der öffentlichen Webseite der Institution veröffentlichen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.5-004",
+            "text": "Welcher Aktionspunkt betrifft laut Kapitel 9 den Umgang mit Restrisiken in der Umsetzungsphase?",
+            "explanation": "Der Aktionspunkt fordert, gegebenenfalls das Restrisiko aufzuzeigen und die Entscheidung der Leitungsebene dazu einzuholen. Andere Optionen entsprechen nicht dem Text – weder ein freihändiges Akzeptieren durch den ISB noch eine vollständige Eliminierung oder die Delegation an den Personalrat.",
+            "quote": "Gegebenenfalls Restrisiko aufzeigen und Entscheidung der Leitungsebene dazur einholen",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Aktionspunkt zur Restrisiko-Entscheidung in der Umsetzungsphase benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 163,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Restrisiko aufzeigen und Entscheidung der Leitungsebene einholen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Das Restrisiko durch den ISB eigenständig akzeptieren lassen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Restrisiken in der Umsetzungsphase vollständig eliminieren",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Entscheidung über Restrisiken an den Personalrat delegieren",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.5-005",
+            "text": "Welche Aufgaben im Zusammenhang mit Terminen und Umsetzung nennt der Aktionspunktkatalog zu Kapitel 9?",
+            "explanation": "Der Katalog fordert, Termine für die Umsetzung festzulegen, Verantwortung zuzuweisen sowie den Verlauf der Umsetzung und die Einhaltung der Termine zu überwachen. Eine Offenlegung aller Termine gegenüber Dritten oder eine automatische Verlängerung bei Verzug wird nicht erwähnt.",
+            "quote": "Umsetzungsreihenfolge für die Maßnahmen festlegen, begründen und dokumentieren • Termine für die Umsetzung festlegen und Verantwortung zuweisen • Verlauf der Umsetzung und Einhaltung der Termine überwachen",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Aktionspunkte zur Terminfestlegung und -überwachung in der Umsetzungsphase benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 163,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Umsetzungsreihenfolge festlegen, begründen und dokumentieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Termine festlegen und Verantwortung zuweisen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Verlauf der Umsetzung und Einhaltung der Termine überwachen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Termine automatisch gegenüber beliebigen Dritten offenlegen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

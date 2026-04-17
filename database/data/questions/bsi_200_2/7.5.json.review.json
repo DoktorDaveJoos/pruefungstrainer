@@ -1,0 +1,36 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 5 questions are factually correct. The experte question (7.5-005) is flagged as borderline: it asks about further assets besides Kronjuwelen, which is a direct one-sentence paraphrase from the source rather than requiring synthesis. Consider downgrading to fortgeschritten.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-7.5-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.5-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.5-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.5-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.5-005",
+      "verdict": "flag",
+      "issues": [
+        {
+          "kind": "difficulty_mismatch",
+          "detail": "Labeled experte but asks about a single-sentence fact (existence of further assets besides Kronjuwelen). This is direct recall, not synthesis. Consider fortgeschritten."
+        }
+      ]
+    }
+  ]
+}

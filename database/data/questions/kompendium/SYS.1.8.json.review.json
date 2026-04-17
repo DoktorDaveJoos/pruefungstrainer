@@ -1,0 +1,32 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Speicherlösungen questions. Q001/Q003/Q004 pass cleanly. Q002 is a Gefährdungen question about WWN-Spoofing; baustein_id set but anforderung_type null (idiomatic for descriptive content).",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.8-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.8-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; idiomatic for descriptive (Beschreibung/Gefährdungen) questions across Kompendium corpus, but rubric prefers it set."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.8-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.8-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "ORP.3 Sensibilisierung und Schulung: 4 questions on ORP.3.A1/A3/A4/A8. Quotes match. Correct answers directly supported (management support, role-tailored content, training schedule, evaluation). Distractors clearly wrong. Topic `bausteine` fits. `basis` throughout — appropriate. Schema clean.",
+    "results": [
+        {
+            "external_id": "kompendium-orp.3-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Vor dem Beginn eines Sensibilisierungs- und Schulungsprogramms zur Informationssicherheit ...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.3-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Alle Mitarbeitenden und externen Benutzenden MÜSSEN in den sicheren Umgang mit IT-, ICS- u...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Sensibilisierungs- und Schulungsprogramme zur Informationssicherheit SOLLTEN sich an den j...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.3-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

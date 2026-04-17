@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.10",
+        "chapter_title": "Entwicklung von Webanwendungen",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.10-001",
+            "text": "Was MÜSSEN die Entwickelnden laut CON.10.A8 mit sämtlichen an eine Webanwendung übergebenen Daten tun?",
+            "explanation": "Laut CON.10.A8 müssen die Entwickelnden sämtliche an eine Webanwendung übergebenen Daten als potenziell gefährlich behandeln und geeignet filtern. Sämtliche Eingabedaten sowie Datenströme und Sekundärdaten müssen serverseitig validiert werden.",
+            "quote": "Die Entwickelnden MÜSSEN sämtliche an eine Webanwendung übergebenen Daten als potenziell gefährlich behandeln und geeignet filtern. Sämtliche Eingabedaten sowie Datenströme und Sekundärdaten, wie z. B. Session-IDs, MÜSSEN serverseitig validiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur serverseitigen Eingabevalidierung bei Webanwendungen benennen.",
+            "baustein_id": "CON.10.A8",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Als potenziell gefährlich behandeln und serverseitig validieren", "is_correct": true },
+                { "text": "Nur clientseitig validieren, um die Serverauslastung zu reduzieren", "is_correct": false },
+                { "text": "Ohne Prüfung direkt an die Datenbank weiterleiten", "is_correct": false },
+                { "text": "Ausschließlich auf Schadsoftware-Signaturen prüfen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.10-002",
+            "text": "Was MÜSSEN laut CON.10.A9 eingesetzt werden, wenn Daten an ein DBMS weitergeleitet werden?",
+            "explanation": "Laut CON.10.A9 müssen Stored Procedures bzw. Prepared SQL Statements eingesetzt werden, wenn Daten an ein Datenbankmanagementsystem weitergeleitet werden. Dies dient dem Schutz vor SQL-Injection.",
+            "quote": "Falls Daten an ein Datenbankmanagementsystem (DBMS) weitergeleitet werden, MÜSSEN Stored Procedures bzw. Prepared SQL Statements eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die technischen Schutzmaßnahmen gegen SQL-Injection benennen.",
+            "baustein_id": "CON.10.A9",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Stored Procedures bzw. Prepared SQL Statements", "is_correct": true },
+                { "text": "Dynamisch zusammengesetzte SQL-Strings", "is_correct": false },
+                { "text": "Ausschließlich clientseitige Eingabefilter", "is_correct": false },
+                { "text": "Nur eine Firewall zwischen Webanwendung und Datenbank", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.10-003",
+            "text": "Welche HTTP-Header SOLLTEN laut CON.10.A14 mindestens verwendet werden?",
+            "explanation": "Laut CON.10.A14 sollten zum Schutz vor Clickjacking, Cross-Site-Scripting und anderen Angriffen mindestens die folgenden HTTP-Header verwendet werden: Content-Security-Policy, Strict-Transport-Security, Content-Type, X-Content-Type-Options sowie Cache-Control.",
+            "quote": "Es SOLLTEN mindestens die folgenden HTTP-Header verwendet werden: Content-Security-Policy, Strict-Transport-Security, Content-Type, X-Content-Type-Options sowie Cache-Control.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlenen sicherheitsrelevanten HTTP-Header für Webanwendungen benennen.",
+            "baustein_id": "CON.10.A14",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Content-Security-Policy und Strict-Transport-Security", "is_correct": true },
+                { "text": "X-Content-Type-Options und Cache-Control", "is_correct": true },
+                { "text": "X-Powered-By und Server", "is_correct": false },
+                { "text": "Accept-Language und User-Agent", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.10-004",
+            "text": "Was MUSS laut CON.10.A3 nach der Anmeldung eines Kontos mit der Session-ID geschehen?",
+            "explanation": "Laut CON.10.A3 muss eine bereits bestehende Session-ID durch eine neue ersetzt werden, nachdem ein Konto angemeldet wurde. Dies schützt vor Session-Fixation-Angriffen.",
+            "quote": "Nachdem ein Konto angemeldet wurde, MUSS eine bereits bestehende Session-ID durch eine neue ersetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Session-ID-Erneuerung nach Authentisierung erklären.",
+            "baustein_id": "CON.10.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die bestehende Session-ID muss durch eine neue ersetzt werden", "is_correct": true },
+                { "text": "Die Session-ID wird beibehalten und nur verlängert", "is_correct": false },
+                { "text": "Die Session-ID wird an den Client im Klartext übertragen", "is_correct": false },
+                { "text": "Die Session-ID wird in der URL als Parameter mitgeführt", "is_correct": false }
+            ]
+        }
+    ]
+}

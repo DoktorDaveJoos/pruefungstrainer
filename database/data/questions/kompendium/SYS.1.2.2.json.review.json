@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Windows Server 2012 questions. All pass: quotes verbatim, correct answers supported by A2/A6/A9/A14 as cited, distractors unambiguously wrong, topic bausteine and schema fields populated.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.2.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.2.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.2.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.2.2-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

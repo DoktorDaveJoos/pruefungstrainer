@@ -1,0 +1,13 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Seven questions on Elements des IT-Grundschutzes. All quotes are verbatim in the normalized section source. Topic assignments are well-chosen: 'bausteine' for questions about layer model structure, Baustein content, and Umsetzungshinweise; 'methodik' for questions about the security level achieved by different Vorgehensweisen. Question 007 is labeled 'experte' and requires synthesizing two distinct reasons for the Sicherheitsmanagement Baustein from non-adjacent sentences -- appropriate difficulty. All answers are source-supported; all distractors are properly wrong. Page and schema checks pass.",
+    "results": [
+        { "external_id": "bsi-200-2-2.4-001", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.4-002", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.4-003", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.4-004", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.4-005", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.4-006", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-2.4-007", "verdict": "pass", "issues": [] }
+    ]
+}

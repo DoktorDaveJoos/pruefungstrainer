@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.4.5",
+        "chapter_title": "Wechseldatentr\u00e4ger",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.4.5-001",
+            "text": "Was MUSS laut SYS.4.5 f\u00fcr Wechseldatentr\u00e4ger gelten, die au\u00dferhalb eines sicheren Bereiches transportiert werden?",
+            "explanation": "SYS.4.5.A10 fordert, dass Daten auf Wechseldatentr\u00e4gern mit einem sicheren Verfahren verschl\u00fcsselt werden m\u00fcssen, wenn diese au\u00dferhalb eines sicheren Bereiches verwendet oder transportiert werden und schutzbed\u00fcrftige Daten enthalten.",
+            "quote": "Wenn Wechseldatentr\u00e4ger au\u00dferhalb eines sicheren Bereiches verwendet oder transportiert werden und dabei schutzbed\u00fcrftige Daten enthalten, M\u00dcSSEN die Daten mit einem sicheren Verfahren verschl\u00fcsselt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Verschl\u00fcsselungsanforderung f\u00fcr Wechseldatentr\u00e4ger au\u00dferhalb sicherer Bereiche benennen.",
+            "baustein_id": "SYS.4.5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Daten m\u00fcssen mit einem sicheren Verfahren verschl\u00fcsselt werden.", "is_correct": true },
+                { "text": "Eine Verschl\u00fcsselung ist nicht erforderlich, wenn der Datentr\u00e4ger passwortgesch\u00fctzt ist.", "is_correct": false },
+                { "text": "Es reicht aus, die Daten in einem ZIP-Archiv ohne Passwort zu speichern.", "is_correct": false },
+                { "text": "Eine Verschl\u00fcsselung ist nur bei USB-Sticks, nicht bei externen Festplatten, erforderlich.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.5-002",
+            "text": "Was MUSS laut SYS.4.5 bei der Verlust- und Manipulationsmeldung von Wechseldatentr\u00e4gern geschehen?",
+            "explanation": "SYS.4.5.A2 fordert, dass Benutzende umgehend melden m\u00fcssen, wenn ein Wechseldatentr\u00e4ger gestohlen oder verloren wurde oder ein Manipulationsverdacht besteht. Wiedergefundene Wechseldatentr\u00e4ger d\u00fcrfen nicht ohne vorherige \u00dcberpr\u00fcfung auf Manipulation und Schadsoftware verwendet werden.",
+            "quote": "Die Benutzenden M\u00dcSSEN umgehend melden, wenn ein Wechseldatentr\u00e4ger gestohlen oder verloren wurde oder der Verdacht einer Manipulation besteht. \u2022 Wiedergefundene Wechseldatentr\u00e4ger D\u00dcRFEN NICHT ohne vorherige \u00dcberpr\u00fcfung auf Manipulation und Schadsoftware verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Verlust- und Manipulationsmeldung beschreiben.",
+            "baustein_id": "SYS.4.5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Der Verlust oder Manipulationsverdacht muss umgehend gemeldet werden.", "is_correct": true },
+                { "text": "Wiedergefundene Wechseldatentr\u00e4ger d\u00fcrfen nicht ohne vorherige Pr\u00fcfung auf Manipulation und Schadsoftware verwendet werden.", "is_correct": true },
+                { "text": "Wiedergefundene Wechseldatentr\u00e4ger k\u00f6nnen sofort wieder genutzt werden, da sie zuvor verschl\u00fcsselt waren.", "is_correct": false },
+                { "text": "Der Verlust muss erst am Ende des Arbeitstages gemeldet werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.5-003",
+            "text": "Welche Anforderung stellt SYS.4.5 an den Schutz vor Schadsoftware bei Wechseldatentr\u00e4gern?",
+            "explanation": "SYS.4.5.A12 fordert, dass nur auf Schadsoftware \u00fcberpr\u00fcfte Daten auf Wechseldatentr\u00e4ger \u00fcbertragen werden d\u00fcrfen. Bevor Daten von Wechseldatentr\u00e4gern verarbeitet werden, m\u00fcssen sie ebenfalls auf Schadsoftware \u00fcberpr\u00fcft werden.",
+            "quote": "Die Institution MUSS sicherstellen, dass nur Daten auf Wechseldatentr\u00e4ger \u00fcbertragen werden, die auf Schadsoftware \u00fcberpr\u00fcft wurden. Bevor Daten von Wechseldatentr\u00e4gern verarbeitet werden, M\u00dcSSEN sie auf Schadsoftware \u00fcberpr\u00fcft werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an den Schutz vor Schadsoftware bei Wechseldatentr\u00e4gern beschreiben.",
+            "baustein_id": "SYS.4.5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Daten m\u00fcssen sowohl vor dem \u00dcbertragen auf als auch vor dem Verarbeiten von Wechseldatentr\u00e4gern auf Schadsoftware gepr\u00fcft werden.", "is_correct": true },
+                { "text": "Eine \u00dcberpr\u00fcfung auf Schadsoftware ist nur beim Empfang von Wechseldatentr\u00e4gern n\u00f6tig.", "is_correct": false },
+                { "text": "Nur USB-Sticks m\u00fcssen auf Schadsoftware gepr\u00fcft werden, nicht CD-ROMs.", "is_correct": false },
+                { "text": "Die \u00dcberpr\u00fcfung auf Schadsoftware kann entfallen, wenn der Wechseldatentr\u00e4ger aus einer vertrauensw\u00fcrdigen Quelle stammt.", "is_correct": false }
+            ]
+        }
+    ]
+}

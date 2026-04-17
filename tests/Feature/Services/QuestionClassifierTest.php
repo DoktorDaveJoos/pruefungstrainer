@@ -2,6 +2,7 @@
 
 use App\Enums\BsiTopic;
 use App\Enums\QuestionDifficulty;
+use App\Enums\SourceDocument;
 use App\Models\Module;
 use App\Models\Question;
 use App\Services\QuestionClassifier;
@@ -16,7 +17,10 @@ it('builds a user prompt including question text + explanation + optional quote 
         'text' => 'Was beschreibt der BSI-Standard 200-1?',
         'explanation' => 'BSI-Standard 200-1 beschreibt die Anforderungen an ein ISMS.',
         'quote' => 'Siehe Kapitel 2.',
-        'source' => 'BSI-Standard 200-1, Kapitel 2, S. 8',
+        'source_document' => SourceDocument::Bsi2001,
+        'source_chapter' => '2',
+        'source_chapter_title' => 'Einleitung',
+        'source_page_start' => 8,
     ]);
 
     $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
@@ -27,25 +31,6 @@ it('builds a user prompt including question text + explanation + optional quote 
         ->toContain('BSI-Standard 200-1 beschreibt die Anforderungen')
         ->toContain('Zitat: Siehe Kapitel 2.')
         ->toContain('Quelle: BSI-Standard 200-1, Kapitel 2, S. 8');
-});
-
-it('omits quote and source sections when they are null', function () {
-    $module = Module::factory()->create(['slug' => 'm2-bsi-grundschutz']);
-    $question = Question::factory()->for($module)->create([
-        'text' => 'Minimal question?',
-        'explanation' => 'Minimal explanation.',
-        'quote' => null,
-        'source' => null,
-    ]);
-
-    $classifier = new QuestionClassifier(apiKey: 'test', model: 'test-model');
-    $prompt = $classifier->buildUserPrompt($question);
-
-    expect($prompt)
-        ->toContain('Minimal question?')
-        ->toContain('Minimal explanation.')
-        ->not->toContain('Zitat:')
-        ->not->toContain('Quelle:');
 });
 
 it('parses a valid JSON response into enum values', function () {

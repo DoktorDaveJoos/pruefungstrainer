@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "7.5",
+        "chapter_title": "Kontinuierliche Verbesserung der Informationssicherheit",
+        "page_start": 31,
+        "page_end": 32
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-7.5-001",
+            "text": "Welchem Zweck dient die Überprüfung des Sicherheitsprozesses letztendlich?",
+            "explanation": "Die Überprüfung des Sicherheitsprozesses dient letztendlich dessen Verbesserung. Zertifikatserhalt, Compliance-Nachweise oder reine Dokumentation sind nicht das vom Standard genannte Endziel.",
+            "quote": "Die Überprüfung des Sicherheitsprozesses dient letztendlich dessen Verbesserung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Überprüfung des Sicherheitsprozesses benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 31,
+            "page_end": null,
+            "answers": [
+                { "text": "Der Verbesserung des Sicherheitsprozesses.", "is_correct": true },
+                { "text": "Dem reinen Erhalt eines Zertifikats.", "is_correct": false },
+                { "text": "Der Erfüllung einer Compliance-Pflicht ohne weitere Folgen.", "is_correct": false },
+                { "text": "Der Archivierung abgeschlossener Sicherheitsmaßnahmen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.5-002",
+            "text": "Wofür sollten die Ergebnisse der Prozessüberprüfung konkret genutzt werden?",
+            "explanation": "Die Ergebnisse sollten genutzt werden, um die Wirksamkeit und Effizienz der gewählten Sicherheitsstrategie zu beurteilen und eventuell anzupassen. Reine Schulung neuer Mitarbeiter oder Marketingzwecke nennt der Standard nicht.",
+            "quote": "Die Ergebnisse sollten vor diesem Hintergrund dazu genutzt werden, die Wirksamkeit und Effizienz der gewählten Sicherheitsstrategie zu beurteilen und eventuell anzupassen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Verwendung der Überprüfungsergebnisse für die Sicherheitsstrategie erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 31,
+            "page_end": null,
+            "answers": [
+                { "text": "Zur Beurteilung und eventuellen Anpassung von Wirksamkeit und Effizienz der Sicherheitsstrategie.", "is_correct": true },
+                { "text": "Ausschließlich zur Schulung neuer Mitarbeiter.", "is_correct": false },
+                { "text": "Zur reinen Veröffentlichung in Marketingunterlagen.", "is_correct": false },
+                { "text": "Für die Ablage im Qualitätsmanagement-Handbuch ohne weitere Auswertung.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.5-003",
+            "text": "Wann muss die Sicherheitsstrategie laut BSI-Standard 200-1 überarbeitet werden?",
+            "explanation": "Auch bei Veränderungen der Sicherheitsziele oder der Rahmenbedingungen muss die Sicherheitsstrategie überarbeitet werden. Eine Überarbeitung nur nach Sicherheitsvorfällen oder ausschließlich alle fünf Jahre ist nicht der vom Standard genannte Auslöser.",
+            "quote": "Auch bei Veränderungen der Sicherheitsziele oder der Rahmenbedingungen muss die Sicherheitsstrategie überarbeitet werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Auslöser für die Überarbeitung der Sicherheitsstrategie benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 31,
+            "page_end": null,
+            "answers": [
+                { "text": "Bei Veränderungen der Sicherheitsziele oder der Rahmenbedingungen.", "is_correct": true },
+                { "text": "Ausschließlich nach einem schwerwiegenden Sicherheitsvorfall.", "is_correct": false },
+                { "text": "Nur alle fünf Jahre im Rahmen der Rezertifizierung.", "is_correct": false },
+                { "text": "Nur wenn die IT-Infrastruktur grundlegend ausgetauscht wird.", "is_correct": false }
+            ]
+        }
+    ]
+}

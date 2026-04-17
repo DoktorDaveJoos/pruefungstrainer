@@ -1,0 +1,261 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.4",
+        "chapter_title": "Der Informationssicherheitsbeauftragte",
+        "page_start": 42,
+        "page_end": 43
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.4-001",
+            "text": "Welche Gefahr entsteht laut BSI-Standard 200-2, wenn die Zuständigkeiten für Informationssicherheit unklar aufgeteilt sind?",
+            "explanation": "Die Passage beschreibt, dass bei unklarer Aufteilung der Zuständigkeiten die Gefahr besteht, dass Informationssicherheit zu einem „Problem anderer Leute“ wird und die Verantwortung so lange hin- und hergeschoben wird, bis keiner sie mehr zu haben glaubt. Eine automatische Übertragung oder ein System-Alarm wird nicht genannt.",
+            "quote": "Dadurch besteht bei unklarer Aufteilung der Zuständigkeiten die Gefahr, dass Informationssicherheit grundsätzlich zu einem „Problem anderer Leute“ wird. Damit wird die Verantwortung für Informationssicherheit so lange hin- und hergeschoben, bis keiner sie mehr zu haben glaubt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefahr unklarer Zuständigkeiten im Sicherheitsprozess erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 42,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Informationssicherheit wird zu einem „Problem anderer Leute“ und die Verantwortung wird hin- und hergeschoben",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Verantwortung geht automatisch auf den Datenschutzbeauftragten über",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das ISMS erzeugt einen automatischen Alarm",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die BSI übernimmt ersatzweise die Verantwortung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-002",
+            "text": "Welche Hauptaufgabe hat der Informationssicherheitsbeauftragte laut BSI-Standard 200-2?",
+            "explanation": "Die Passage beschreibt die Hauptaufgabe des ISB als Beratung und Unterstützung der Behörden- bzw. Unternehmensleitung bei deren Aufgabenwahrnehmung bezüglich der Informationssicherheit. Technische Konfiguration, Penetrationstests oder Durchführung von Audits durch den ISB werden nicht als Hauptaufgabe genannt.",
+            "quote": "Die Hauptaufgabe des ISB besteht darin, die Behördenbzw. Unternehmensleitung bei deren Aufgabenwahrnehmung bezüglich der Informationssicherheit zu beraten und diese bei der Umsetzung zu unterstützen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Hauptaufgabe des ISB als Berater der Leitungsebene erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 40,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Behörden- bzw. Unternehmensleitung bei der Wahrnehmung ihrer Aufgaben zur Informationssicherheit zu beraten und zu unterstützen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die technische Konfiguration aller IT-Systeme selbst durchzuführen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eigenverantwortlich Penetrationstests durchzuführen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Externe Zertifizierungsaudits für Kunden durchzuführen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-003",
+            "text": "Wo sollte der Informationssicherheitsbeauftragte laut BSI-Standard 200-2 organisatorisch verankert sein?",
+            "explanation": "Die Passage empfiehlt, die Position des ISB direkt der obersten Leitungsebene zuzuordnen und rät ausdrücklich davon ab, den Sicherheitsbeauftragten in der IT-Abteilung zu verorten, da es zu Rollenkonflikten kommen kann. Eine Verankerung in der Personalabteilung oder im Rechenzentrum wird nicht empfohlen.",
+            "quote": "Es ist empfehlenswert, die Position des Informationssicherheitsbeauftragten direkt der obersten Leitungsebene zuzuordnen. Es ist davon abzuraten, den Sicherheitsbeauftragten in der IT-Abteilung zu verorten, da es hierbei zu Rollenkonflikten kommen kann.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene organisatorische Verankerung des ISB erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 40,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Direkt der obersten Leitungsebene zugeordnet",
+                    "is_correct": true
+                },
+                {
+                    "text": "In der IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "In der Personalabteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Im Rechenzentrumsbetrieb",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-004",
+            "text": "Welche gängigen alternativen Titel für den Verantwortlichen für Informationssicherheit nennt der BSI-Standard 200-2?",
+            "explanation": "Die Passage nennt ausdrücklich Chief Information Security Officer (CISO) und Informationssicherheitsmanager (ISM) als häufige alternative Titel. Data Protection Officer, Chief Information Officer (CIO) oder IT-Leiter werden nicht als synonyme Titel genannt.",
+            "quote": "Häufige Titel sind neben dem Informationssicherheitsbeauftragten auch Chief Information Security Officer (CISO) oder Informationssicherheitsmanager (ISM).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Gängige Alternativbezeichnungen für den ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 40,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Chief Information Security Officer (CISO)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Informationssicherheitsmanager (ISM)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Data Protection Officer (DPO)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Chief Information Officer (CIO)",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-005",
+            "text": "Welche Aufgaben umfasst das Tätigkeitsfeld des ISB laut BSI-Standard 200-2?",
+            "explanation": "Die Passage listet explizit Steuerung des Informationssicherheitsprozesses, Unterstützung der Leitungsebene bei der Leitlinie, Koordination des Sicherheitskonzepts, Initiierung und Überprüfung von Maßnahmen, Berichterstattung, Untersuchung von Sicherheitsvorfällen sowie Schulungs- und Sensibilisierungsmaßnahmen auf. Die eigenverantwortliche Budgetfreigabe oder Personalentscheidungen gehören nicht zu den genannten Aufgaben.",
+            "quote": "Seine Aufgaben umfassen unter anderem: • den Informationssicherheitsprozess zu steuern und an allen damit zusammenhängenden Aufga ben mitzuwirken, • die Leitungsebene bei der Erstellung der Leitlinie zur Informationssicherheit zu unterstützen, • die Erstellung des Sicherheitskonzepts, des Notfallvorsorgekonzepts und anderer Teilkonzepte und System-Sicherheitsrichtlinien zu koordinieren",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Aufgabenfelder des ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 40,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Den Informationssicherheitsprozess zu steuern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Leitungsebene bei der Erstellung der Leitlinie zur Informationssicherheit zu unterstützen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Erstellung des Sicherheitskonzepts und weiterer Teilkonzepte zu koordinieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eigenverantwortlich über das Jahresbudget der IT-Abteilung zu entscheiden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-006",
+            "text": "Welche organisatorische Form empfiehlt der BSI-Standard 200-2 für die Position des Informationssicherheitsbeauftragten?",
+            "explanation": "Die Passage empfiehlt, die Position des ISB als Stabsstelle einzurichten, also als direkt der Leitungsebene zugeordnete Position ohne Weisungen von anderen Stellen. Zusätzlich wird ein jederzeitiges Vorsprache­recht bei der Leitung verlangt. Eine Ansiedlung als Linienstelle in der IT oder als Matrixposition wird nicht empfohlen.",
+            "quote": "Es ist empfehlenswert, die Position des Informationssicherheitsbeauftragten organisatorisch als Stabsstelle einzurichten, also als eine direkt der Leitungsebene zugeordnete Position, die von keinen anderen Stellen Weisungen bekommt. In jedem Fall muss der ISB das direkte und jederzeitige Vorspracherecht bei der Behörden- bzw. Unternehmensleitung haben,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene Stabsstellen-Position des ISB und das Vorspracherecht erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 42,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Als Stabsstelle direkt der Leitungsebene zugeordnet, ohne Weisungen anderer Stellen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mit direktem und jederzeitigem Vorspracherecht bei der Behörden- bzw. Unternehmensleitung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Als Linienposition innerhalb der IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Als Matrixposition unter Weisung des IT-Leiters und des Personalleiters",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-007",
+            "text": "Warum ist es laut BSI-Standard 200-2 problematisch, wenn ein „aktiver“ Administrator zusätzlich die Rolle des ISB wahrnimmt?",
+            "explanation": "Die Passage beschreibt, dass eine solche Personalunion mit hoher Wahrscheinlichkeit zu Interessenkonflikten führt, da der Administrator als ISB Einspruch gegen Entscheidungen einlegen müsste, die ihm seine Administratorenarbeit erleichtern würden oder die von seinem Fachvorgesetzten favorisiert werden. Eine gesetzliche Unvereinbarkeit, Überqualifikation oder Konflikte mit dem Betriebsrat werden nicht als Begründung genannt.",
+            "quote": "Es ist z. B. problematisch, wenn ein „aktiver“ Administrator die Rolle des Informationssicherheitsbeauftragten zusätzlich zu seinen normalen Aufgaben wahrnimmt, da es mit hoher Wahrscheinlichkeit zu Interessenkonflikten kommen wird. Die Personalunion kann dazu führen, dass er als Informationssicherheitsbeauftragter Einspruch gegen Entscheidungen einlegen müsste, die ihm sein Leben als Administrator wesentlich erleichtern würden oder die gar von seinem Fachvorgesetzten stark favorisiert werden",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Den inhärenten Rollenkonflikt zwischen Administrator und ISB erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 42,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es entstehen mit hoher Wahrscheinlichkeit Interessenkonflikte, da der ISB Einspruch gegen für ihn als Administrator günstige Entscheidungen einlegen müsste",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es ist gesetzlich in Deutschland verboten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Administrator ist grundsätzlich für die ISB-Rolle überqualifiziert",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Betriebsrat lehnt eine solche Personalunion grundsätzlich ab",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.4-008",
+            "text": "Welche Qualifikationen sollte ein Informationssicherheitsbeauftragter laut BSI-Standard 200-2 mitbringen?",
+            "explanation": "Die Passage nennt ausdrücklich Identifikation mit den Zielen der Informationssicherheit, Kooperations- und Teamfähigkeit mit Durchsetzungsvermögen sowie Erfahrungen im Projektmanagement und Kenntnisse über Risikoanalysemethoden. Eine abgeschlossene juristische Ausbildung oder eine BSI-Zertifizierung als Pflichtvoraussetzung werden im Text nicht genannt.",
+            "quote": "• Identifikation mit den Zielsetzungen der Informationssicherheit, Überblick über Aufgaben und Zie le der Institution. • Kooperations- und Teamfähigkeit, aber auch Durchsetzungsvermögen • Erfahrungen im Projektmanagement, idealerweise im Bereich der Systemanalyse und Kenntnisse über Methoden zur Risikoanalyse.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Qualifikationen des ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 41,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Identifikation mit den Zielsetzungen der Informationssicherheit und Überblick über die Aufgaben der Institution",
+                    "is_correct": true
+                },
+                {
+                    "text": "Kooperations- und Teamfähigkeit sowie Durchsetzungsvermögen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Erfahrungen im Projektmanagement und Kenntnisse über Methoden zur Risikoanalyse",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine abgeschlossene juristische Ausbildung und Anwaltszulassung",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

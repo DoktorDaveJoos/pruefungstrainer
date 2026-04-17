@@ -49,9 +49,9 @@ TEXT;
             $parts[] = 'Zitat: '.$question->quote;
         }
 
-        if ($question->source !== null) {
+        if ($question->source_document !== null) {
             $parts[] = '';
-            $parts[] = 'Quelle: '.$question->source;
+            $parts[] = 'Quelle: '.$question->source_citation;
         }
 
         return implode("\n", $parts);

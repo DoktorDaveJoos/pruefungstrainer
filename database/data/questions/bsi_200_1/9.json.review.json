@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 9 covers Zertifizierungsgründe, ISO/IEC 27001 als Basisnorm, zweistufiges Zertifizierungsverfahren, Abbildung Standard-/Kern-Absicherung auf ISO/IEC 27001, IT-Grundschutz-Kompendium als Prüfkatalog, Auditor-/Zertifizierungsstellen-Rollen, und Auditor-Qualifikation. All quotes verbatim after normalization. Correct answers are directly supported; distractors clearly wrong per passage. Topic 'standards' is the correct bucket (content is explicitly about BSI/ISO document lineage and certification framework). 9-004 and 9-006 are reasonably labeled experte since each requires distinguishing which IT-Grundschutz Vorgehensweisen map to ISO/IEC 27001 (excluding Basis-Absicherung) or distinguishing audit execution vs. certificate award — both are edge-case distinctions, not one-step lookups. Minor nit on 9-003: quote says 'Erteilung ... geht eine Überprüfung durch einen qualifizierten Auditor voraus' but the correct answer text reorders it to 'Überprüfung ... anschließend Erteilung'. This matches the source semantics, so it is fine.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-9-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-9-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-9-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-9-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-9-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-9-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-9-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

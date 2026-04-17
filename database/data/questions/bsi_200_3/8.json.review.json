@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All four questions accurately reflect section 8. Quotes match after normalization. Correct answers are directly supported. Distractors are clearly wrong. Topics are well-chosen: 'risikoanalyse' for the role of the security concept (8-001), 'check' for audit mechanics (8-002), 'methodik' for the overarching security process (8-003), and 'standards' for the certification framework (8-004). All basis difficulty is fitting. Page_start 41 is within the manifest range of 41-42. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-8-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-8-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-8-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-8-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

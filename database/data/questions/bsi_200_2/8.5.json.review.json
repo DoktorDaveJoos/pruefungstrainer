@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Six questions on Risikoanalyse methodology (section 8.5). All correct answers are well-supported by the source. Question 001 has a minor quote artifact ('durch\\u00ADzuführen' with visible soft-hyphen vs source 'durchzuführen'). All other quotes verified clean. Topic 'risikoanalyse' is correct. Difficulty 'basis' is appropriate for all -- these are straightforward paraphrases. Schema and pages correct. Question 006 page_start=157 is within the section range (156-158).",
+    "results": [
+        {
+            "external_id": "bsi-200-2-8.5-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote has 'durch\\u00ADzuführen' (with visible soft-hyphen character) while normalized source has 'durchzuführen'. Matches under aggressive normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-8.5-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-8.5-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-8.5-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-8.5-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

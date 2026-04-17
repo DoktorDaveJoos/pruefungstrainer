@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "1.2",
+        "chapter_title": "Zielsetzung",
+        "page_start": 7,
+        "page_end": 8
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-1.2-001",
+            "text": "Was stellt das BSI mit dem BSI-Standard 200-2 zur Verfügung?",
+            "explanation": "Der einleitende Satz der Zielsetzung nennt explizit eine Methodik für ein effektives Management von Informationssicherheit. Eine verbindliche Gesetzesgrundlage, ein Produkt-Zertifizierungskatalog oder ein Notfallplan sind nicht der Gegenstand des 200-2.",
+            "quote": "Mit dem BSI-Standard 200-2 stellt das BSI eine Methodik für ein effektives Management von Infor­mationssicherheit zur Verfügung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Gegenstand des BSI-Standards 200-2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine Methodik für ein effektives Management von Informationssicherheit", "is_correct": true },
+                { "text": "Eine verbindliche gesetzliche Grundlage für Datenschutz", "is_correct": false },
+                { "text": "Einen Produkt-Zertifizierungskatalog", "is_correct": false },
+                { "text": "Einen Notfallplan für kritische Infrastrukturen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.2-002",
+            "text": "Über welche drei Vorgehensweisen realisiert der BSI-Standard 200-2 die Anpassung an Institutionen verschiedenster Art und Größe?",
+            "explanation": "Die Zielsetzung benennt die drei Vorgehensweisen „Standard-Absicherung“, „Basis-Absicherung“ und „Kern-Absicherung“ als Mittel zur Anpassung. Eine „Maximal-Absicherung“ oder „Minimal-Absicherung“ ist im Standard nicht vorgesehen.",
+            "quote": "Im BSI-Standard 200-2 wird dies über die drei Vorgehensweisen „Standard-Absicherung“, „Basis-Absicherung“ und „Kern-Absicherung“ realisiert.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Vorgehensweisen nach BSI-Standard 200-2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Standard-Absicherung, Basis-Absicherung und Kern-Absicherung", "is_correct": true },
+                { "text": "Standard-Absicherung, Basis-Absicherung und Maximal-Absicherung", "is_correct": false },
+                { "text": "Minimal-Absicherung, Standard-Absicherung und Kern-Absicherung", "is_correct": false },
+                { "text": "Grund-Absicherung, Normal-Absicherung und Hoch-Absicherung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.2-003",
+            "text": "Auf welchen Standards baut die Methodik des BSI-Standards 200-2 laut Zielsetzung auf?",
+            "explanation": "Die Zielsetzung stellt klar, dass die Methodik auf dem BSI-Standard 200-1 aufbaut und damit auch auf ISO 27001. Der BSI-Standard 200-3 zur Risikoanalyse oder ISO 27005 werden an dieser Stelle nicht als methodische Grundlage genannt.",
+            "quote": "Die Methodik baut auf dem BSI-Standard 200-1 Managementsysteme ffr die Informationssicherheit (ISMS) (siehe [BSI1]) und damit auch auf ISO 27001 [27001] auf.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die methodische Grundlage des BSI-Standards 200-2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "BSI-Standard 200-1 und ISO 27001", "is_correct": true },
+                { "text": "BSI-Standard 200-3 und ISO 27005", "is_correct": false },
+                { "text": "BSI-Standard 100-4 und ISO 22301", "is_correct": false },
+                { "text": "Ausschließlich ISO 27002", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.2-004",
+            "text": "Wie definiert die Zielsetzung ein Managementsystem für die Informationssicherheit (ISMS)?",
+            "explanation": "Das ISMS wird in der Zielsetzung als das geplante und organisierte Vorgehen definiert, um ein angemessenes Sicherheitsniveau zu erzielen und aufrechtzuerhalten. Eine einmalige Implementierung, eine Software oder ein Audit widersprechen dieser Definition.",
+            "quote": "Ein Managementsystem für die Informati­onssicherheit (ISMS) ist das geplante und organisierte Vorgehen, um ein angemessenes Sicherheits­niveau für die Informationssicherheit zu erzielen und aufrechtzuerhalten.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Definition eines ISMS nach BSI-Standard 200-2 wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Das geplante und organisierte Vorgehen, um ein angemessenes Sicherheitsniveau zu erzielen und aufrechtzuerhalten", "is_correct": true },
+                { "text": "Eine einmalige Implementierung technischer Schutzmaßnahmen", "is_correct": false },
+                { "text": "Eine Softwareanwendung zur automatischen Sicherheitsprüfung", "is_correct": false },
+                { "text": "Ein jährlich wiederkehrendes externes Audit", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.2-005",
+            "text": "Welche Leistungen bietet die IT-Grundschutz-Methodik laut Zielsetzung?",
+            "explanation": "Die Methodik liefert laut Text sowohl Anleitungen für den Aufbau eines ISMS als auch eine umfassende Basis für die Risikoanalyse, die Überprüfung des Sicherheitsniveaus und die Implementierung angemessener Informationssicherheit. Eine automatisierte Software-Implementierung oder eine verbindliche Zertifizierungspflicht wird in der Zielsetzung nicht genannt.",
+            "quote": "Die vom BSI kontinuierlich weiterentwickelte Methodik bietet sowohl Anleitungen für den Aufbau eines ISMS als auch eine umfassende Basis für die Risikoanalyse, die Überprüfung des vorhandenen Sicherheitsniveaus und die Implementierung eines angemessenen Grades an Informationssicherheit.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Leistungen der IT-Grundschutz-Methodik benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Anleitungen für den Aufbau eines ISMS", "is_correct": true },
+                { "text": "Eine Basis für die Risikoanalyse und die Überprüfung des vorhandenen Sicherheitsniveaus", "is_correct": true },
+                { "text": "Eine automatisierte Software-Implementierung aller Maßnahmen", "is_correct": false },
+                { "text": "Eine gesetzlich verpflichtende Zertifizierung für alle Institutionen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.2-006",
+            "text": "Welches ist laut Zielsetzung eines der wichtigsten Ziele des IT-Grundschutzes?",
+            "explanation": "Der Text nennt explizit die Reduzierung des Aufwands im Informationssicherheitsprozess als eines der wichtigsten Ziele. Eine lückenlose Eliminierung aller Restrisiken oder die Standardisierung der IT-Beschaffung werden nicht als Ziele des IT-Grundschutzes genannt.",
+            "quote": "Eines der wichtigsten Ziele des IT-Grundschutzes ist es, den Aufwand im Informationssicherheitspro­zess zu reduzieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Ein zentrales Ziel des IT-Grundschutzes benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": 8,
+            "answers": [
+                { "text": "Den Aufwand im Informationssicherheitsprozess zu reduzieren", "is_correct": true },
+                { "text": "Alle Restrisiken vollständig zu eliminieren", "is_correct": false },
+                { "text": "Die IT-Beschaffung in Behörden zu standardisieren", "is_correct": false },
+                { "text": "Produkthersteller zu zertifizieren", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.2-007",
+            "text": "Welches Sicherheitsniveau erreicht die Vorgehensweise „Basis-Absicherung“ laut Zielsetzung?",
+            "explanation": "Die Zielsetzung stellt klar, dass die Basis-Absicherung ein Sicherheitsniveau erreicht, das deutlich unter dem der Standard-Absicherung liegt, aber eine gute Grundlage für ISMS-Einsteiger bietet. Dass sie das höchste Schutzniveau erreicht oder identisch mit der Kern-Absicherung ist, widerspricht dem Text.",
+            "quote": "Bei der Umsetzung der Vorge­hensweise „Basis-Absicherung“ wird ein Sicherheitsniveau erreicht, das zwar deutlich unter dem der Standard-Absicherung liegt, aber eine gute Grundlage für ISMS-Einsteiger bietet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Sicherheitsniveau der Basis-Absicherung einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein Niveau deutlich unter der Standard-Absicherung, aber als Grundlage für ISMS-Einsteiger geeignet", "is_correct": true },
+                { "text": "Ein Niveau über der Standard-Absicherung", "is_correct": false },
+                { "text": "Das gleiche Niveau wie die Kern-Absicherung", "is_correct": false },
+                { "text": "Ein Niveau, das nur für kritische Infrastrukturen geeignet ist", "is_correct": false }
+            ]
+        }
+    ]
+}

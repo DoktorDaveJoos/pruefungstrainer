@@ -1,0 +1,12 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Solid section. All six quotes are verbatim substrings of the normalized passage (after joining soft-hyphen line breaks like 'regel\u00admäßig' → 'regelmäßig', 'Überprü\u00adfung' → 'Überprüfung', 'Be\u00adschlüsse' → 'Beschlüsse'). Correct answers are directly supported; distractors are cleanly wrong (Marktposition, Personalfluktuation, ISB-Leistungsbewertung, etc.). Topic 'methodik' is appropriate for ISMS governance / Managementbewertung. Difficulty labels are reasonable — Q5 as 'experte' is borderline (it's still a list-lookup, just with three correct items), but defensible. All page_start values (24, 25) fall within the section's 24–25 range. Schema sanity: baustein_id and anforderung_type correctly null for the Standards doc.",
+    "results": [
+        { "external_id": "bsi-200-1-4.3-001", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-4.3-002", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-4.3-003", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-4.3-004", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-4.3-005", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-4.3-006", "verdict": "pass", "issues": [] }
+    ]
+}

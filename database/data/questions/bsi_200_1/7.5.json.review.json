@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Section 7.5 is tiny (one paragraph) but the three questions extracted are clean and each anchored to a distinct sentence. All quotes verify verbatim. Correct answers are directly supported; distractors (pure Zertifikatserhalt, only-after-incident, every-5-years rezertifizierung) are clearly wrong per the passage. Topic=methodik and basis difficulty fit a short declarative KVP section. Page 31 is in range. Schema correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-7.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.5-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

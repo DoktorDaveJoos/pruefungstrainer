@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.6",
+        "chapter_title": "Bereichs- und Projekt-Sicherheitsbeauftragte bzw. Beauftragter für IT-Sicherheit",
+        "page_start": 44,
+        "page_end": 45
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.6-001",
+            "text": "Wofür ist ein Bereichs-Sicherheitsbeauftragter laut BSI-Standard 200-2 verantwortlich?",
+            "explanation": "Der Bereichs-Sicherheitsbeauftragte ist für alle Sicherheitsbelange der Geschäftsprozesse, Anwendungen und IT-Systeme in seinem Bereich (z. B. Abteilung oder Außenstelle) verantwortlich. Eine gesamtorganisatorische Zuständigkeit oder ausschließliche juristische/externe Dienstleister-Perspektive ist nicht gemeint.",
+            "quote": "Der Bereichs-Sicherheitsbeauftragte ist für alle Sicherheitsbelange der Geschäftsprozesse, Anwendungen und IT-Systeme in seinem Bereich (z. B. Abteilung oder Außenstelle) verantwortlich.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zuständigkeitsbereich eines Bereichs-Sicherheitsbeauftragten beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 44,
+            "page_end": null,
+            "answers": [
+                { "text": "Für alle Sicherheitsbelange der Geschäftsprozesse, Anwendungen und IT-Systeme in seinem Bereich", "is_correct": true },
+                { "text": "Für alle Sicherheitsbelange der gesamten Institution", "is_correct": false },
+                { "text": "Ausschließlich für juristische Fragen der Informationssicherheit", "is_correct": false },
+                { "text": "Nur für die Steuerung externer Dienstleister", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.6-002",
+            "text": "Worin unterscheiden sich laut Passage der ISB und ein Beauftragter für IT-Sicherheit in großen Institutionen?",
+            "explanation": "Der ISB gestaltet das ISMS und erstellt generelle Sicherheitsziele und -vorgaben, während der Beauftragte für IT-Sicherheit dafür sorgt, dass diese technisch umgesetzt werden. Letzterer ist typischerweise im IT-Betrieb tätig, während der ISB der Leitungsebene zuarbeitet. Beide sind nicht identisch und der ISB arbeitet nicht dem IT-Betrieb zu.",
+            "quote": "Der ISB gestaltet das Informationssicherheitsmanagement und erstellt die generellen Sicherheitsziele und -vorgaben, ein Beauftragter für die IT-Sicherheit sorgt dafür, dass diese technisch umgesetzt werden. Ein Beauftragter für die IT-Sicherheit ist somit typischerweise im IT-Betrieb tätig, während der ISB unmittelbar der Leitungsebene zuarbeitet.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Aufgabenteilung zwischen ISB und Beauftragtem für IT-Sicherheit unterscheiden.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 44,
+            "page_end": null,
+            "answers": [
+                { "text": "Der ISB gestaltet das ISMS und erstellt generelle Sicherheitsziele; der Beauftragte für IT-Sicherheit setzt diese technisch um", "is_correct": true },
+                { "text": "Der Beauftragte für IT-Sicherheit ist typischerweise im IT-Betrieb tätig, der ISB arbeitet der Leitungsebene zu", "is_correct": true },
+                { "text": "Beide Rollen sind inhaltlich identisch und unterscheiden sich nur im Titel", "is_correct": false },
+                { "text": "Der ISB ist dem Beauftragten für IT-Sicherheit im IT-Betrieb unterstellt", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.6-003",
+            "text": "Bei wem liegt die Verantwortung für die Informationssicherheit in großen Projekten, für die ein Projekt-Sicherheitsbeauftragter benannt wird?",
+            "explanation": "Laut Passage liegt die Verantwortung für die Informationssicherheit immer beim Projektleiter bzw. bei der Leitungsebene. Der ISB bzw. Projekt-Sicherheitsbeauftragte unterstützt die Projektleitung nur. Die Verantwortung wird nicht an den Projekt-Sicherheitsbeauftragten, das IS-Management-Team oder den ICS-ISB delegiert.",
+            "quote": "Die Verantwortung für die Informationssicherheit liegt immer beim Projektleiter bzw. bei der Leitungsebene. Der ISB bzw. der Projekt-Sicherheitsbeauftragte unterstützt die Projektleitung in Fragen der Informationssicherheit.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Verantwortungszuordnung für Informationssicherheit in Projekten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 44,
+            "page_end": null,
+            "answers": [
+                { "text": "Beim Projektleiter bzw. bei der Leitungsebene", "is_correct": true },
+                { "text": "Beim Projekt-Sicherheitsbeauftragten selbst", "is_correct": false },
+                { "text": "Beim IS-Management-Team", "is_correct": false },
+                { "text": "Beim ICS-Informationssicherheitsbeauftragten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.6-004",
+            "text": "Wer kann laut Passage die Rolle des Projekt-Sicherheitsbeauftragten übernehmen?",
+            "explanation": "Die Passage nennt zwei Möglichkeiten: ein Mitarbeiter des Projektes oder ein Mitglied des IS-Management-Teams. Ein ausschließlich externer Auditor oder verpflichtend der Datenschutzbeauftragte sind nicht vorgesehen.",
+            "quote": "Der Projekt-Sicherheitsbeauftragter kann ein Mitarbeiter des Projektes oder ein Mitglied des IS-Management-Teams sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Mögliche Besetzungen der Rolle des Projekt-Sicherheitsbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 44,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein Mitarbeiter des Projektes", "is_correct": true },
+                { "text": "Ein Mitglied des IS-Management-Teams", "is_correct": true },
+                { "text": "Verpflichtend ein externer zertifizierter Auditor", "is_correct": false },
+                { "text": "Ausschließlich der Datenschutzbeauftragte der Institution", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.6-005",
+            "text": "Welche Aufgaben haben Projekt-, IT- bzw. Bereichs-Sicherheitsbeauftragte laut Passage?",
+            "explanation": "Die Passage listet u. a.: die Vorgaben des ISB umsetzen, projekt- oder IT-systemspezifische Informationen zusammenfassen und an den ISB weiterleiten sowie sicherheitsrelevante Zwischenfälle an den ISB melden. Die eigenständige Erstellung der Informationssicherheitsleitlinie gehört nicht dazu.",
+            "quote": "die Vorgaben des ISB umsetzen, • die Sicherheitsmaßnahmen gemäß der IT-System-Sicherheitsleitlinie • projekt- oder IT-systemspezifische Informationen zusammenfassen und an den ISB weiterleiten, • als Ansprechpartner der Mitarbeiter vor Ort dienen, • an der Auswahl der Sicherheitsmaßnahmen zur Umsetzung der spezifischen Sicherheitsleitlinien mitwirken, • Information über Schulungs- und Sensibilisierungsbedarf von Beschäftigten ermitteln,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Aufgaben der Projekt-, IT- bzw. Bereichs-Sicherheitsbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 44,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Vorgaben des ISB umsetzen", "is_correct": true },
+                { "text": "Projekt- oder IT-systemspezifische Informationen zusammenfassen und an den ISB weiterleiten", "is_correct": true },
+                { "text": "Als Ansprechpartner der Mitarbeiter vor Ort dienen", "is_correct": true },
+                { "text": "Eigenständig die Informationssicherheitsleitlinie der gesamten Institution erstellen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.6-006",
+            "text": "Welche Qualifikationen sollten Projekt-, IT- bzw. Bereichs-Sicherheitsbeauftragte laut Passage besitzen?",
+            "explanation": "Die Passage nennt detaillierte IT-Kenntnisse (zur Erleichterung der Gespräche und der Maßnahmenfindung) sowie Kenntnisse im Projektmanagement. Eine Hochschulausbildung in Jura oder eine BSI-Auditorzertifizierung werden nicht gefordert.",
+            "quote": "detaillierte IT-Kenntnisse, da diese die Gespräche mit Mitarbeitern vor Ort erleichtern und bei der Suche nach Sicherheitsmaßnahmen für die speziellen IT-Systeme von Nutzen sind, sowie • Kenntnisse im Projektmanagement, die bei der Organisation von Benutzerbefragungen und der Erstellung von Plänen zur Umsetzung und der Kontrolle von Sicherheitsmaßnahmen hilfreich sind.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Qualifikationen der Projekt-, IT- bzw. Bereichs-Sicherheitsbeauftragten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 45,
+            "page_end": null,
+            "answers": [
+                { "text": "Detaillierte IT-Kenntnisse", "is_correct": true },
+                { "text": "Kenntnisse im Projektmanagement", "is_correct": true },
+                { "text": "Abgeschlossene Hochschulausbildung in Jura", "is_correct": false },
+                { "text": "Eine verpflichtende BSI-Auditorzertifizierung", "is_correct": false }
+            ]
+        }
+    ]
+}

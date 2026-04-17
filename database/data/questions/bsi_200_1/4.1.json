@@ -1,0 +1,261 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "4.1",
+        "chapter_title": "Aufgaben und Pflichten des Managements",
+        "page_start": 20,
+        "page_end": 22
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-4.1-001",
+            "text": "Wer trägt nach BSI-Standard 200-1 die Gesamtverantwortung für die Informationssicherheit in einer Institution?",
+            "explanation": "Der Standard weist die Gesamtverantwortung ausdrücklich der obersten Managementebene jeder Behörde bzw. jedes Unternehmens zu. Die operative Aufgabe wird typischerweise an einen ISB delegiert, die Verantwortung selbst verbleibt jedoch bei der Leitungsebene. IT-Abteilung, Datenschutzbeauftragter oder Mitarbeiter tragen diese Gesamtverantwortung nicht.",
+            "quote": "Die oberste Managementebene jeder Behörde und jedes Unternehmens ist für das zielgerichtete und ordnungsgemäße Funktionieren der Institution verantwortlich und damit auch für die Gewährleistung der Informationssicherheit nach innen und außen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gesamtverantwortung für Informationssicherheit der obersten Managementebene zuordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die oberste Managementebene der Behörde bzw. des Unternehmens.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die IT-Abteilung bzw. der IT-Betrieb.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Datenschutzbeauftragte.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Mitarbeiter in gleicher Weise.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-002",
+            "text": "Welche Aufgaben hat die oberste Leitungsebene nach BSI-Standard 200-1 beim Sicherheitsprozess?",
+            "explanation": "Der Standard formuliert ausdrücklich, dass die oberste Leitungsebene den Sicherheitsprozess initiieren, steuern und überwachen muss. Die rein operative Durchführung einzelner Maßnahmen, die tägliche technische Administration oder das eigenhändige Erstellen technischer Richtlinien gehören nicht zu diesen Kernaufgaben der Leitungsebene.",
+            "quote": "Die oberste Leitungsebene muss den Sicherheitsprozess initiieren, steuern und überwachen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Kernaufgaben der Leitungsebene im Sicherheitsprozess benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Den Sicherheitsprozess initiieren, steuern und überwachen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle operativen Sicherheitsmaßnahmen persönlich durchführen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die tägliche technische Administration übernehmen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Technische Richtlinien eigenhändig verfassen.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-003",
+            "text": "Wie verhält es sich nach BSI-Standard 200-1 mit der Verantwortung für Informationssicherheit bei Delegation der operativen Aufgabe an einen ISB?",
+            "explanation": "Die Leitungsebene trifft die Entscheidung über den Umgang mit Risiken, und die Verantwortung für Informationssicherheit verbleibt dort. Die operative Aufgabe „Informationssicherheit“ wird zwar typischerweise an einen ISB delegiert, die Verantwortung selbst bleibt jedoch bei der Leitung. Ein automatischer Übergang auf den ISB, den Datenschutzbeauftragten oder die IT-Abteilung findet nicht statt.",
+            "quote": "Die Verantwortung für Informationssicherheit verbleibt dort. • typischerweise an einen Informa tionssicherheitsbeauftragten (ISB) delegiert.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Trennung zwischen delegierbarer operativer Aufgabe und nicht delegierbarer Verantwortung beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": 21,
+            "answers": [
+                {
+                    "text": "Die operative Aufgabe wird an den ISB delegiert, die Verantwortung verbleibt bei der Leitungsebene.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mit der Delegation an den ISB geht auch die Verantwortung auf diesen über.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Verantwortung geht automatisch auf den Datenschutzbeauftragten über.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Verantwortung wird auf die IT-Abteilung übertragen.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-004",
+            "text": "Welche Aussagen über die Ressourcen für Informationssicherheit entsprechen dem BSI-Standard 200-1?",
+            "explanation": "Der Standard fordert, dass für Informationssicherheit ausreichende Ressourcen bereitgestellt werden und dass die Sicherheitsstrategie mit den zur Verfügung stehenden Ressourcen in Einklang steht. Eine Finanzierung ausschließlich durch die IT-Abteilung oder aus Projektbudgets ist vom Standard nicht vorgesehen, ebenso wenig ein Verzicht auf Ressourcen.",
+            "quote": "Für Informationssicherheit müssen ausreichende Ressourcen bereitgestellt werden. Die Sicher heitsstrategie muss mit den zur Verfügung stehenden Ressourcen in Einklang stehen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an Ressourcen und deren Abstimmung mit der Sicherheitsstrategie benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 21,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es müssen ausreichende Ressourcen bereitgestellt werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Sicherheitsstrategie muss mit den zur Verfügung stehenden Ressourcen in Einklang stehen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Ressourcen werden ausschließlich von der IT-Abteilung finanziert.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Informationssicherheit kommt grundsätzlich ohne zusätzliche Ressourcen aus.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-005",
+            "text": "Warum muss Informationssicherheit laut BSI-Standard 200-1 in andere Management-Prozesse integriert werden?",
+            "explanation": "Der Standard begründet die Integration damit, dass Informationssicherheit eine Querschnittsfunktion ist und daher in alle Prozesse und Projekte einer Institution integriert werden muss, bei denen Informationen verarbeitet werden. Zudem hängt der Reifegrad der Informationssicherheit vom Reifegrad der anderen Management-Prozesse ab — er ist also keine selbstständige Größe.",
+            "quote": "Informationssicherheit ist Querschnittsfunktion und muss daher in alle Prozesse und Projekte der Institution integriert werden, bei denen Informationen verarbeitet werden. • Der Reifegrad der Informationssicherheit hängt somit auch vom Reifegrad der anderen Management-Prozesse der Institution ab und ist keine selbstständige Größe.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Notwendigkeit der Integration von Informationssicherheit in andere Management-Prozesse begründen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 21,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Informationssicherheit ist Querschnittsfunktion und muss in alle Prozesse integriert werden, in denen Informationen verarbeitet werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Reifegrad der Informationssicherheit hängt vom Reifegrad der anderen Management-Prozesse ab.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Informationssicherheit ist eine vom Rest der Organisation unabhängige, selbstständige Größe.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Integration ist nach dem Standard nicht vorgesehen, um Konflikte zu vermeiden.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-006",
+            "text": "Welche Empfehlung gibt der BSI-Standard 200-1 zur Zielsetzung im Bereich Informationssicherheit?",
+            "explanation": "Der Standard warnt, dass Projekte oft an unrealistischen oder zu ehrgeizigen Zielvorgaben scheitern, und empfiehlt daher viele kleine Schritte und einen langfristigen, kontinuierlichen Verbesserungsprozess ohne hohe Investitionskosten zu Beginn. Ein groß angelegtes Projekt oder eine sofortige flächendeckende Höchstabsicherung wird gerade nicht empfohlen.",
+            "quote": "Um das angemessene Sicherheitsziel zu erreichen, können viele kleine Schritte und ein langfristiger, kontinuierlicher Verbesserungsprozess ohne hohe Investitionskosten zu Beginn effizienter sein als ein groß angelegtes Projekt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur erreichbaren Zielsetzung und kontinuierlichen Verbesserung wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 21,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Viele kleine Schritte und ein langfristiger, kontinuierlicher Verbesserungsprozess ohne hohe Investitionskosten zu Beginn.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein einmaliges, groß angelegtes Projekt mit hohen Anfangsinvestitionen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine sofortige flächendeckende Umsetzung des höchsten Sicherheitsniveaus.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Verzicht auf Zielsetzungen, um Frustration zu vermeiden.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-007",
+            "text": "Welche Aussage zum Verhältnis von Kosten und Nutzen bei Sicherheitsmaßnahmen entspricht dem BSI-Standard 200-1?",
+            "explanation": "Der Standard betont, dass die effektivsten Maßnahmen erfahrungsgemäß nicht immer die teuersten sind, und dass es unerlässlich ist, die Abhängigkeit der Geschäftsprozesse und Aufgaben von der Informationsverarbeitung zu kennen, um angemessene Maßnahmen auszuwählen. Eine Gleichsetzung „teuer = effektiv“ oder ein generelles Ersetzen von Technik durch Organisation wird nicht empfohlen.",
+            "quote": "Die effektivsten Maßnahmen sind dabei erfahrungsgemäß jedoch nicht immer die teuersten. Es ist daher unerlässlich, die Abhängigkeit der Geschäftsprozesse und Aufgaben von der Informationsverarbeitung zu kennen, um angemessene Sicherheitsmaßnahmen auswählen zu können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Abwägung von Sicherheitskosten und Nutzen nach BSI-Standard 200-1 beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 22,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die effektivsten Maßnahmen sind nicht immer die teuersten.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es ist unerlässlich, die Abhängigkeit der Geschäftsprozesse von der Informationsverarbeitung zu kennen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die teuersten Maßnahmen sind grundsätzlich auch die wirksamsten.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Technische Maßnahmen sollten generell durch organisatorische ersetzt werden.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-008",
+            "text": "Was gehört laut BSI-Standard 200-1 zur Vorbildfunktion der Leitungsebene im Bereich Informationssicherheit?",
+            "explanation": "Der Standard führt explizit aus, dass die Leitungsebene alle vorgegebenen Sicherheitsregeln beachtet, selbst an Schulungsveranstaltungen teilnimmt und andere Führungskräfte bei der Ausübung ihrer Vorbildfunktion unterstützt. Eine Befreiung der Leitung von Sicherheitsregeln oder die vollständige Übertragung der Vorbildfunktion auf den ISB widersprechen dem Standard.",
+            "quote": "Dazu gehört unter anderem, dass auch die Leitungsebene alle vorgegebenen Sicherheitsregeln beachtet, selbst an Schulungsveranstaltungen teilnimmt und andere Führungskräfte bei der Ausübung ihrer Vorbildfunktion unterstützt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Elemente der Vorbildfunktion der Leitungsebene benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 22,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Leitungsebene beachtet alle vorgegebenen Sicherheitsregeln selbst.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Leitungsebene nimmt selbst an Schulungsveranstaltungen teil.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Leitungsebene unterstützt andere Führungskräfte bei deren Vorbildfunktion.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Leitungsebene ist aus Gründen der Effizienz von Sicherheitsregeln ausgenommen.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 6 questions are factually correct. The experte question (7.7-004) about entbehrlich not being possible for Basis-Anforderungen is flagged: while accurate, it extracts from a single parenthetical clause and does not require synthesis. Consider downgrading to fortgeschritten.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-7.7-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.7-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.7-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.7-004",
+      "verdict": "flag",
+      "issues": [
+        {
+          "kind": "difficulty_mismatch",
+          "detail": "Labeled experte but the answer is directly stated in a single parenthetical clause: \"(mit Begruendung, nicht moeglich bei Basis-Anforderungen)\". No synthesis required. Consider fortgeschritten."
+        }
+      ]
+    },
+    {
+      "external_id": "bsi-200-2-7.7-005",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.7-006",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

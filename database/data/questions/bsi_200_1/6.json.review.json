@@ -1,0 +1,12 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Clean section on Mitarbeiter-Einbindung. All six quotes match the normalized source after joining soft-hyphen line breaks ('Ar\u00adbeitsklima', 'Sicherheitsmaßnah\u00admen', 'Sicherheits\u00advorfall', 'jewei\u00adligen'). Correct answers are directly supported by the passage; distractors (IT-Abteilung only, Zertifizierungsprüfung, Auslagerung, Website-Veröffentlichung des Austritts, Gehalt als Einflussfaktor, Admin-Rechte sofort) are clearly unsupported. Topic 'methodik' is appropriate — personnel/awareness is ISMS process/governance. Difficulty 'basis' for all six is correct; these are direct paraphrase/recognition tasks. Page_start = 27 falls within section range 27–28. Schema: baustein_id / anforderung_type correctly null.",
+    "results": [
+        { "external_id": "bsi-200-1-6-001", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-6-002", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-6-003", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-6-004", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-6-005", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-6-006", "verdict": "pass", "issues": [] }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four Linux/Unix server questions drawn from A4, A5, A10, A17. All quotes verbatim, correct answers supported, distractors unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.3-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.3-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

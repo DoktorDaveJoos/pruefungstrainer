@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "DER.2.3",
+        "chapter_title": "Bereinigung weitreichender Sicherheitsvorfälle",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-der.2.3-001",
+            "text": "Was ist laut DER.2.3 ein wesentliches Merkmal von Advanced Persistent Threats (APTs)?",
+            "explanation": "APTs zeichnen sich durch einen sehr hohen Ressourceneinsatz und umfassende technische Fähigkeiten auf Seiten der Angreifenden aus. Die Angreifenden verschaffen sich dauerhaften Zugriff und weiten diesen auf weitere IT-Systeme aus.",
+            "quote": "Bei Advanced Persistent Threats (APTs) handelt es sich um zielgerichtete Cyber-Angriffe auf ausgewählte Institutionen und Einrichtungen. Dabei verschaffen sich Angreifende dauerhaften Zugriff zu einem Netz und weiten diesen Zugriff auf weitere IT-Systeme aus. Die Angriffe zeichnen sich durch einen sehr hohen Ressourceneinsatz und umfassende technische Fähigkeiten auf Seiten der Angreifenden aus.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Merkmale von APTs nach DER.2.3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zielgerichtete Angriffe mit dauerhaftem Zugriff, hohem Ressourceneinsatz und umfassenden technischen Fähigkeiten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Automatisierte Massenangriffe ohne bestimmtes Ziel",
+                    "is_correct": false
+                },
+                {
+                    "text": "Angriffe, die ausschließlich auf physischen Zugang setzen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kurzfristige Denial-of-Service-Angriffe auf Webserver",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.2.3-002",
+            "text": "Welche Gefährdung besteht laut DER.2.3 bei einer unvollständigen Bereinigung eines APT-Vorfalls?",
+            "explanation": "Bei unvollständiger Bereinigung ist es sehr wahrscheinlich, dass Angreifende zu einem späteren Zeitpunkt erneut auf die IT-Systeme zugreifen und ihren Zugang wieder ausbauen, z. B. über verbliebene Hintertüren.",
+            "quote": "Bei einer unvollständigen Bereinigung ist es jedoch sehr wahrscheinlich, dass Angreifende zu einem späteren Zeitpunkt, z. B. nach einer längeren Ruhephase, erneut auf die IT-Systeme zugreifen und ihren Zugang wieder ausbauen.",
+            "topic": "siem",
+            "difficulty": "experte",
+            "learning_objective": "Die Risiken einer unvollständigen Bereinigung nach APT-Vorfällen gemäß DER.2.3 erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Angreifende können später erneut zugreifen und ihren Zugang über verbliebene Hintertüren wieder ausbauen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die betroffenen IT-Systeme werden automatisch langsamer",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Institution verliert ihren Versicherungsschutz",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Passwörter müssen weltweit geändert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.2.3-003",
+            "text": "Warum ist laut DER.2.3 ein Netzumbau nach einem APT-Angriff empfehlenswert?",
+            "explanation": "Angreifende erlangen bei einem APT-Angriff detaillierte Kenntnisse über die Zielumgebung (Netzsegmente, Namensschemata, Konten, Software). Ohne Netzumbau können sie sich nach der Bereinigung sehr gezielt und effizient erneut Zugang verschaffen.",
+            "quote": "Bei einem APT-Angriff erlangen die Angreifenden detaillierte Kenntnisse darüber, wie die Zielumgebung aufgebaut und konfiguriert ist. • Durch dieses Wissen können sich dieselben Angreifenden unter Umständen auch nach einer Bereinigung erneut Zugang zur Zielumgebung verschaffen.",
+            "topic": "siem",
+            "difficulty": "experte",
+            "learning_objective": "Die Notwendigkeit eines Netzumbaus nach APT-Angriffen gemäß DER.2.3 begründen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Weil Angreifende detaillierte Kenntnisse der Netzstruktur erlangt haben und sich sonst erneut Zugang verschaffen können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Weil die Hardware nach einem Angriff nicht mehr funktionsfähig ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil die Netzkomponenten bei einem APT immer physisch beschädigt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil der Netzumbau versicherungstechnisch vorgeschrieben ist",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "reviewed_at": "2026-04-17T12:30:00Z",
+    "critic_notes": "Section OPS.1.1.1 (4 questions: 4 pass, 0 flag, 0 fail). Correct answers are supported by the quoted passages (incl. OPS.1.1.1.A1 and A2); distractors are clearly wrong per source; topic 'bausteine' fits; difficulty labels plausible. 1 question(s) annotated with quote_mismatch/info — content verbatim but the generator flowed bullet-list items into a running quote, so fragments match only under aggressive normalization. 2 question(s) have anforderung_type=null — acceptable for the baustein intro (IT-Betrieb task list) and Gefährdungslage (Betriebsmittel) content that is not tied to a specific Basis/Standard/Hoch Anforderung.",
+    "results": [
+        {
+            "external_id": "kompendium-ops.1.1.1-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF bullet-list layout artifact; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein intro/scope aggregation (task list of the IT-Betrieb); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-ops.1.1.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-ops.1.1.1-004",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for non-Anforderung content (Gefährdungslage/Betriebsmittel motivation); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        }
+    ]
+}

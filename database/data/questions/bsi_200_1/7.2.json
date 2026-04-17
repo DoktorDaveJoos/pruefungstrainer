@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "7.2",
+        "chapter_title": "Aufbau einer Sicherheitsorganisation [DOK]",
+        "page_start": 30,
+        "page_end": 30
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-7.2-001",
+            "text": "Wovon richtet sich die personelle Ausgestaltung der Sicherheitsorganisation ab?",
+            "explanation": "Die personelle Ausgestaltung richtet sich nach der Größe der Institution, den vorhandenen Ressourcen und dem angestrebten Sicherheitsniveau. Rein umsatzbasierte oder rechtsformbezogene Kriterien nennt der Standard nicht.",
+            "quote": "Dabei richtet sich die personelle Ausgestaltung nach der Größe der jeweiligen Institution, den vorhandenen Ressourcen und dem angestrebten Sicherheitsniveau.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Faktoren für die personelle Ausgestaltung der Sicherheitsorganisation benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Nach Größe der Institution, vorhandenen Ressourcen und angestrebtem Sicherheitsniveau.", "is_correct": true },
+                { "text": "Ausschließlich nach dem Jahresumsatz der Institution.", "is_correct": false },
+                { "text": "Nach der Rechtsform und dem Gründungsdatum der Institution.", "is_correct": false },
+                { "text": "Nach der Anzahl der IT-Systeme im Rechenzentrum.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.2-002",
+            "text": "Wer trägt nach BSI-Standard 200-1 die Gesamtverantwortung für die Informationssicherheit?",
+            "explanation": "Die Gesamtverantwortung für die Informationssicherheit verbleibt bei der Leitungsebene. Der ISB fördert und koordiniert den Prozess, übernimmt jedoch nicht die Gesamtverantwortung; auch IT-Leitung oder Datenschutzbeauftragter sind es nicht.",
+            "quote": "Die Gesamtverantwortung für die Informationssicherheit verbleibt bei der Leitungsebene.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gesamtverantwortung für Informationssicherheit der richtigen Rolle zuordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Leitungsebene.", "is_correct": true },
+                { "text": "Der Informationssicherheitsbeauftragte (ISB).", "is_correct": false },
+                { "text": "Die IT-Leitung.", "is_correct": false },
+                { "text": "Der Datenschutzbeauftragte.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.2-003",
+            "text": "Welche Rolle muss mindestens benannt werden, um den Informationssicherheitsprozess zu fördern und zu koordinieren?",
+            "explanation": "Der Standard verlangt mindestens die Benennung einer Person, die den Informationssicherheitsprozess fördert und koordiniert, typischerweise als Informationssicherheitsbeauftragter (ISB). Andere Rollen wie CISO oder Auditor sind nicht die im Standard genannte Mindestrolle.",
+            "quote": "Es muss mindestens eine Person benannt werden, die den Informationssicherheitsprozess fördert und koordiniert, typischerweise als Informationssicherheitsbeauftragter (ISB).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle des ISB als Mindestanforderung der Sicherheitsorganisation benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Informationssicherheitsbeauftragter (ISB).", "is_correct": true },
+                { "text": "Externer Auditor.", "is_correct": false },
+                { "text": "Chief Operating Officer (COO).", "is_correct": false },
+                { "text": "IT-Administrator.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.2-004",
+            "text": "Wie sollte die Rolle des ISB organisatorisch eingebunden sein?",
+            "explanation": "Um den direkten Zugang zur Institutionsleitung sicherzustellen, soll die Rolle des ISB als Stabsstelle organisiert sein. Eine Unterstellung unter die IT-Abteilung oder Einbettung in die Personalabteilung widerspricht dieser Vorgabe.",
+            "quote": "Um den direkten Zugang zur Institutionsleitung sicherzustellen, sollte die Rolle des ISB als Stabsstelle organisiert sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die organisatorische Einordnung des ISB als Stabsstelle begründen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Als Stabsstelle mit direktem Zugang zur Institutionsleitung.", "is_correct": true },
+                { "text": "Als Teil der IT-Abteilung unter dem IT-Leiter.", "is_correct": false },
+                { "text": "Als Unterabteilung der Personalabteilung.", "is_correct": false },
+                { "text": "Als rein externe Beraterrolle ohne interne Anbindung.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.2-005",
+            "text": "Wofür ist laut Grundregeln zur Rollendefinition jeder Mitarbeiter verantwortlich?",
+            "explanation": "Jeder Mitarbeiter ist gleichermaßen für seine originäre Aufgabe wie für die Aufrechterhaltung der Informationssicherheit an seinem Arbeitsplatz und in seiner Umgebung verantwortlich. Eine vollständige Delegation an den ISB oder die IT ist damit ausgeschlossen.",
+            "quote": "Jeder Mitarbeiter ist gleichermaßen für seine originäre Aufgabe wie für die Aufrechterhaltung der Informationssicherheit an seinem Arbeitsplatz und in seiner Umgebung verantwortlich.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Eigenverantwortung jedes Mitarbeiters für Informationssicherheit erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Für seine originäre Aufgabe sowie für die Informationssicherheit an seinem Arbeitsplatz und in seiner Umgebung.", "is_correct": true },
+                { "text": "Nur für die rein fachlichen Aufgaben seines Arbeitsplatzes.", "is_correct": false },
+                { "text": "Ausschließlich für die Meldung technischer Störungen.", "is_correct": false },
+                { "text": "Nur für Datenschutzbelange, nicht für Informationssicherheit.", "is_correct": false }
+            ]
+        }
+    ]
+}

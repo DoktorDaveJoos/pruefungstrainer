@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.1.4",
+        "chapter_title": "Mobile Anwendungen (Apps)",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.1.4-001",
+            "text": "Was MUSS laut APP.1.4 bei der Einführung einer App hinsichtlich der Berechtigungen sichergestellt werden?",
+            "explanation": "Anforderung APP.1.4.A5 verlangt, dass vor der Einführung einer App sichergestellt werden muss, dass sie nur die minimal benötigten Berechtigungen erhält. Nicht unbedingt notwendige Berechtigungen müssen hinterfragt und gegebenenfalls unterbunden werden. Eine pauschale Erteilung aller Berechtigungen widerspricht dem Minimalprinzip der Anforderung.",
+            "quote": "Bevor eine App in einer Institution eingeführt wird, MUSS sichergestellt werden, dass sie nur die minimal benötigten App-Berechtigungen für ihre Funktion erhält. Nicht unbedingt notwendige Berechtigungen MÜSSEN hinterfragt und gegebenenfalls unterbunden werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderung zur Minimierung von App-Berechtigungen benennen.",
+            "baustein_id": "APP.1.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die App darf nur die minimal benötigten Berechtigungen für ihre Funktion erhalten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nicht unbedingt notwendige Berechtigungen müssen hinterfragt und gegebenenfalls unterbunden werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle verfügbaren Berechtigungen müssen der App pauschal erteilt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Berechtigungen werden ausschließlich von den Benutzenden selbst festgelegt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.4-002",
+            "text": "Was MUSS laut APP.1.4 bei der lokalen Datenhaltung von Apps sichergestellt werden?",
+            "explanation": "Anforderung APP.1.4.A7 verlangt, dass die lokale Datenhaltung der App angemessen abgesichert sein muss, wenn Apps auf interne Dokumente zugreifen können. Insbesondere müssen Zugriffsschlüssel verschlüsselt abgelegt werden, und vertrauliche Daten dürfen nicht vom Betriebssystem an anderen Ablageorten zwischengespeichert werden.",
+            "quote": "Wenn Apps auf interne Dokumente der Institution zugreifen können, MUSS sichergestellt sein, dass die lokale Datenhaltung der App angemessen abgesichert ist. Insbesondere MÜSSEN Zugriffsschlüssel verschlüsselt abgelegt werden. Außerdem DÜRFEN vertrauliche Daten NICHT vom Betriebssystem an anderen Ablageorten zwischengespeichert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen zur sicheren lokalen Speicherung von App-Daten benennen.",
+            "baustein_id": "APP.1.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zugriffsschlüssel müssen verschlüsselt abgelegt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Vertrauliche Daten dürfen nicht vom Betriebssystem an anderen Ablageorten zwischengespeichert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "App-Daten müssen grundsätzlich unverschlüsselt gespeichert werden, um die Performance zu sichern",
+                    "is_correct": false
+                },
+                {
+                    "text": "Lokale Datenhaltung von Apps ist generell nicht zulässig",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.4-003",
+            "text": "Wie SOLLTEN interne und schutzbedürftige Apps laut APP.1.4 verteilt werden?",
+            "explanation": "Anforderung APP.1.4.A3 (Standard-Anforderung) empfiehlt, dass interne Apps und Apps, die schutzbedürftige Informationen verarbeiten, über einen institutionseigenen App Store oder via MDM verteilt werden sollten. Die Nutzung öffentlicher App Stores oder eine Verteilung per E-Mail wird für solche Apps nicht empfohlen.",
+            "quote": "Interne Apps der Institution und Apps, die schutzbedürftige Informationen verarbeiten, SOLLTEN über einen institutionseigenen App Store oder via MDM verteilt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene Verteilungsmethode für schutzbedürftige Apps erläutern.",
+            "baustein_id": "APP.1.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Über einen institutionseigenen App Store oder via MDM",
+                    "is_correct": true
+                },
+                {
+                    "text": "Über öffentliche App Stores ohne weitere Einschränkungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Per E-Mail-Anhang an alle Mitarbeitenden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Durch manuelle Installation von USB-Datenträgern",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.4-004",
+            "text": "Welche Gefährdung entsteht laut APP.1.4 durch zu weitreichende App-Berechtigungen?",
+            "explanation": "Der Baustein beschreibt, dass bei zu weitreichenden Berechtigungen Apps Informationen an unberechtigte Dritte weitergeben können, z. B. Standort, Fotos oder Kontaktdaten. Außerdem können Apps lokal gespeicherte Daten verändern oder löschen und Kosten verursachen. Die Gefährdung betrifft die Vertraulichkeit und Integrität der Informationen auf dem Endgerät.",
+            "quote": "Apps können zudem Informationen an unberechtigte Dritte weitergeben, wie z. B. den Standort, Fotos oder Kontakt- und Kalenderdaten. Außerdem sind Apps in der Lage, lokal abgespeicherte Daten zu verändern oder zu löschen. Schließlich können Apps auch Kosten verursachen, etwa durch Telefonanrufe, versendete SMS oder In-App-Käufe.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdungen durch zu weitreichende App-Berechtigungen erläutern.",
+            "baustein_id": "APP.1.4",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Apps können Informationen wie Standort, Fotos oder Kontaktdaten an unberechtigte Dritte weitergeben",
+                    "is_correct": true
+                },
+                {
+                    "text": "Apps können lokal gespeicherte Daten verändern oder löschen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Apps werden automatisch langsamer, wenn sie zu viele Berechtigungen haben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Betriebssystem wird durch zu viele Berechtigungen automatisch auf die Werkseinstellungen zurückgesetzt",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

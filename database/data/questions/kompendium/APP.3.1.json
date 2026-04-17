@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.3.1",
+        "chapter_title": "Webanwendungen und Webservices",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.3.1-001",
+            "text": "Was MUSS laut APP.3.1 zum Schutz von Zugangsdaten in Webanwendungen und Webservices verwendet werden?",
+            "explanation": "Anforderung APP.3.1.A14 verlangt, dass Zugangsdaten serverseitig mithilfe von sicheren kryptografischen Algorithmen geschützt werden müssen. Dazu müssen Salted-Hash-Verfahren verwendet werden. Die Speicherung im Klartext oder einfache Hash-Verfahren ohne Salt genügen nicht.",
+            "quote": "Der IT-Betrieb MUSS sicherstellen, dass Zugangsdaten zur Webanwendung oder zum Webservice serverseitig mithilfe von sicheren kryptografischen Algorithmen vor unbefugtem Zugriff geschützt werden. Dazu MÜSSEN Salted Hash-Verfahren verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung zum Schutz von Zugangsdaten in Webanwendungen benennen.",
+            "baustein_id": "APP.3.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Salted-Hash-Verfahren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Speicherung der Zugangsdaten im Klartext in einer Konfigurationsdatei",
+                    "is_correct": false
+                },
+                {
+                    "text": "Einfache Base64-Kodierung der Passwörter",
+                    "is_correct": false
+                },
+                {
+                    "text": "Symmetrische Verschlüsselung mit einem fest kodierten Schlüssel",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.1-002",
+            "text": "Welche HTTP-Header SOLLTEN laut APP.3.1 mindestens bei Webanwendungen verwendet werden?",
+            "explanation": "Anforderung APP.3.1.A21 empfiehlt zum Schutz vor Clickjacking, Cross-Site-Scripting und anderen Angriffen mindestens die HTTP-Header Content-Security-Policy, Strict-Transport-Security, Content-Type, X-Content-Type-Options sowie Cache-Control. Ein X-Powered-By-Header wird nicht empfohlen, da dieser Informationen über die verwendete Technologie offenlegen würde.",
+            "quote": "Dazu SOLLTEN mindestens die folgenden HTTP-Header verwendet werden: Content-Security-Policy, Strict-Transport-Security, Content-Type, X-Content-Type-Options sowie Cache-Control.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlenen HTTP-Response-Header für Webanwendungen gemäß APP.3.1 benennen.",
+            "baustein_id": "APP.3.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Content-Security-Policy und Strict-Transport-Security",
+                    "is_correct": true
+                },
+                {
+                    "text": "X-Content-Type-Options und Cache-Control",
+                    "is_correct": true
+                },
+                {
+                    "text": "X-Powered-By zur Offenlegung der verwendeten Servertechnologie",
+                    "is_correct": false
+                },
+                {
+                    "text": "Server-Version zur Anzeige der Webserver-Software",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.1-003",
+            "text": "Was MUSS laut APP.3.1 bei einer Upload-Funktion in Webanwendungen eingeschränkt werden?",
+            "explanation": "Anforderung APP.3.1.A4 verlangt, dass eine Upload-Funktion so weit wie möglich eingeschränkt werden muss. Insbesondere müssen die erlaubte Dateigröße, erlaubte Dateitypen und erlaubte Speicherorte festgelegt werden. Zugriffs- und Ausführungsrechte müssen restriktiv gesetzt werden.",
+            "quote": "Falls eine Webanwendung oder ein Webservice eine Upload-Funktion für Dateien anbietet, MUSS diese Funktion durch den IT-Betrieb so weit wie möglich eingeschränkt werden. Insbesondere MÜSSEN die erlaubte Dateigröße, erlaubte Dateitypen und erlaubte Speicherorte festgelegt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen zur Einschränkung von Upload-Funktionen in Webanwendungen benennen.",
+            "baustein_id": "APP.3.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die erlaubte Dateigröße, erlaubte Dateitypen und erlaubte Speicherorte",
+                    "is_correct": true
+                },
+                {
+                    "text": "Lediglich die maximale Anzahl gleichzeitiger Uploads",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich die Farbe der Upload-Schaltfläche",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Tageszeit, zu der Uploads erlaubt sind",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.1-004",
+            "text": "Mit welchen Attributen SOLLTEN Cookies laut APP.3.1 grundsätzlich gesetzt werden?",
+            "explanation": "Anforderung APP.3.1.A21 empfiehlt, dass Cookies grundsätzlich mit den Attributen secure, SameSite und httponly gesetzt werden sollten. Diese Attribute schützen vor dem Abfangen von Cookies über unsichere Verbindungen, Cross-Site-Request-Forgery und dem Zugriff durch JavaScript.",
+            "quote": "Cookies SOLLTEN grundsätzlich mit den Attributen secure, SameSite und httponly gesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlenen Cookie-Attribute für Webanwendungen gemäß APP.3.1 benennen.",
+            "baustein_id": "APP.3.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "secure, SameSite und httponly",
+                    "is_correct": true
+                },
+                {
+                    "text": "public, domain und path",
+                    "is_correct": false
+                },
+                {
+                    "text": "expires, max-age und version",
+                    "is_correct": false
+                },
+                {
+                    "text": "encoding, charset und language",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

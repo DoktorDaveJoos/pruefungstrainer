@@ -1,0 +1,32 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four containerization questions. Q001-Q003 pass cleanly on A-requirements. Q004 is a Beschreibung question about Applikations- vs System-Container typology; anforderung_type null is idiomatic for descriptive content.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.6-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.6-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.6-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.6-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; idiomatic for descriptive (Beschreibung/Gefährdungen) questions across Kompendium corpus, but rubric prefers it set."
+                }
+            ]
+        }
+    ]
+}

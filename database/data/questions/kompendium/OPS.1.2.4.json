@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.2.4",
+        "chapter_title": "Telearbeit",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.2.4-001",
+            "text": "Was MUSS laut OPS.1.1.2.A1 den Telearbeitenden zu Informationszwecken ausgeh\u00e4ndigt werden?",
+            "explanation": "Den Telearbeitenden m\u00fcssen die geltenden Regelungen oder ein Merkblatt ausgeh\u00e4ndigt werden, das die zu beachtenden Sicherheitsma\u00dfnahmen erl\u00e4utert.",
+            "quote": "Zu Informationszwecken M\u00dcSSEN den Telearbeitenden die geltenden Regelungen oder ein daf\u00fcr vorgesehenes Merkblatt ausgeh\u00e4ndigt werden, das die zu beachtenden Sicherheitsma\u00dfnahmen erl\u00e4utert.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Informationspflichten gegen\u00fcber Telearbeitenden nach OPS.1.2.4.A1 benennen.",
+            "baustein_id": "OPS.1.2.4.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Die geltenden Regelungen oder ein Merkblatt zu den Sicherheitsma\u00dfnahmen", "is_correct": true},
+                {"text": "Eine vollst\u00e4ndige Kopie des IT-Grundschutz-Kompendiums", "is_correct": false},
+                {"text": "Nur die Kontaktdaten des IT-Helpdesks", "is_correct": false},
+                {"text": "Eine Liste aller IT-Systeme der Institution", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.4-002",
+            "text": "Was MUSS laut OPS.1.2.4.A2 f\u00fcr den Telearbeitsrechner sichergestellt werden?",
+            "explanation": "Es muss sichergestellt werden, dass nur autorisierte Personen Zugang haben und der Rechner nur f\u00fcr autorisierte Zwecke benutzt werden kann.",
+            "quote": "Es MUSS sichergestellt werden, dass nur autorisierte Personen Zugang zu den Telearbeitsrechnern haben. Dar\u00fcber hinaus MUSS der Telearbeitsrechner so abgesichert werden, dass er nur f\u00fcr autorisierte Zwecke benutzt werden kann.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die sicherheitstechnischen Anforderungen an den Telearbeitsrechner nach OPS.1.2.4.A2 beschreiben.",
+            "baustein_id": "OPS.1.2.4.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Nur autorisierte Personen d\u00fcrfen Zugang haben und er darf nur f\u00fcr autorisierte Zwecke nutzbar sein", "is_correct": true},
+                {"text": "Der Rechner muss immer per VPN verbunden sein", "is_correct": false},
+                {"text": "Familienangeh\u00f6rige d\u00fcrfen den Rechner mit nutzen, wenn sie eine Erkl\u00e4rung unterzeichnen", "is_correct": false},
+                {"text": "Der Rechner muss t\u00e4glich vollst\u00e4ndig verschl\u00fcsselt gesichert werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.4-003",
+            "text": "Welche Rolle ist laut OPS.1.2.4 grunds\u00e4tzlich zust\u00e4ndig f\u00fcr den Baustein Telearbeit?",
+            "explanation": "Die Zust\u00e4ndigkeitstabelle weist den Informationssicherheitsbeauftragten (ISB) als grunds\u00e4tzlich zust\u00e4ndig aus.",
+            "quote": "Grunds\u00e4tzlich zust\u00e4ndig Informationssicherheitsbeauftragte (ISB)",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grunds\u00e4tzliche Zust\u00e4ndigkeit f\u00fcr den Baustein Telearbeit benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Der oder die Informationssicherheitsbeauftragte (ISB)", "is_correct": true},
+                {"text": "Der IT-Betrieb", "is_correct": false},
+                {"text": "Die Personalabteilung", "is_correct": false},
+                {"text": "Die Institutionsleitung", "is_correct": false}
+            ]
+        }
+    ]
+}

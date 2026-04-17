@@ -1,0 +1,230 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "1.3",
+        "chapter_title": "Abgrenzung, Begriffe und Einordnung in den IT-Grundschutz",
+        "page_start": 6,
+        "page_end": 8
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-1.3-001",
+            "text": "In welchen Fällen muss laut BSI-Standard 200-3 explizit eine Risikoanalyse durchgeführt werden?",
+            "explanation": "Eine explizite Risikoanalyse ist erforderlich, wenn Zielobjekte einen hohen oder sehr hohen Schutzbedarf haben, nicht hinreichend durch Bausteine modelliert werden können oder in Einsatzszenarien betrieben werden, die im IT-Grundschutz nicht vorgesehen sind. Ein normaler Schutzbedarf allein löst hingegen keine explizite Risikoanalyse aus – diese ist bereits implizit durch das BSI abgedeckt.",
+            "quote": "einen hohen oder sehr hohen Schutzbedarf in mindestens einem der drei Grundwerte Vertraulichkeit, Integrität oder Verfügbarkeit haben oder • mit den existierenden Bausteinen des IT-Grundschutzes nicht hinreichend abgebildet (modelliert) werden können oder • in Einsatzszenarien (Umgebung, Anwendung) betrieben werden, die im Rahmen des IT-Grundschutzes nicht vorgesehen sind.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Auslöser einer expliziten Risikoanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 6,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Wenn Zielobjekte einen hohen oder sehr hohen Schutzbedarf in mindestens einem Grundwert haben",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wenn Zielobjekte nicht hinreichend durch bestehende Bausteine modelliert werden können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wenn Zielobjekte in nicht vorgesehenen Einsatzszenarien betrieben werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wenn für Zielobjekte nur normaler Schutzbedarf besteht",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.3-002",
+            "text": "Aus welchen zwei Anteilen ergibt sich das Risiko bei der Risikoeinschätzung nach BSI-Standard 200-3?",
+            "explanation": "Die Einschätzung erfolgt über die zu erwartende Häufigkeit des Eintretens und die Höhe des Schadens. Aus diesen beiden Anteilen ergibt sich das Risiko. Angriffsvektor und Exploit-Reife sind Begriffe aus der Schwachstellenbewertung, gehören hier aber nicht zur Risikoeinschätzung.",
+            "quote": "Die Einschätzung erfolgt über die zu erwartende Häufigkeit des Eintretens und die Höhe des Schadens, der bei Eintritt des Schadensereignisses entsteht. Aus diesen beiden Anteilen ergibt sich das Risiko.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die zwei Komponenten der Risikoeinschätzung nach 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 6,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eintrittshäufigkeit und Schadenshöhe",
+                    "is_correct": true
+                },
+                {
+                    "text": "Angriffsvektor und Angreiferprofil",
+                    "is_correct": false
+                },
+                {
+                    "text": "Exploit-Reife und Patch-Verfügbarkeit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Bedrohung und Schwachstelle",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.3-003",
+            "text": "Wie ist die Risikoanalyse im BSI-Standard 200-3 strukturell angelegt?",
+            "explanation": "Die Risikoanalyse ist zweistufig angelegt: Zunächst wird die Gefährdungsübersicht unter Annahme bereits umgesetzter Sicherheitsmaßnahmen bewertet, anschließend erfolgt eine erneute Bewertung unter Berücksichtigung der Maßnahmen zur Risikobehandlung. Eine einstufige, dreistufige oder fünfstufige Anlage wird nicht beschrieben.",
+            "quote": "Im vorliegenden BSI-Standard 200-3 ist die Risikoanalyse zweistufig angelegt.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die zweistufige Anlage der Risikoanalyse nach 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 6,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zweistufig",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einstufig",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dreistufig",
+                    "is_correct": false
+                },
+                {
+                    "text": "Fünfstufig nach ISO 31000",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.3-004",
+            "text": "Welche Schritte umfasst die Risikobeurteilung nach den ISO-Normen 31000 und 27005?",
+            "explanation": "Die Risikobeurteilung nach ISO 31000 und ISO 27005 umfasst die Identifikation, Analyse und Evaluation/Bewertung von Risiken. Die Risikobehandlung ist im ISO-Sprachgebrauch ein eigenständiger Schritt außerhalb der Risikobeurteilung.",
+            "quote": "Identifikation von Risiken (Risk Identification) • Analyse von Risiken (Risk Analysis) • Evaluation oder Bewertung von Risiken (Risk Evaluation)",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Schritte der Risikobeurteilung nach ISO 31000/27005 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 6,
+            "page_end": 7,
+            "answers": [
+                {
+                    "text": "Identifikation von Risiken (Risk Identification)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Analyse von Risiken (Risk Analysis)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Evaluation oder Bewertung von Risiken (Risk Evaluation)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikobehandlung (Risk Treatment)",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.3-005",
+            "text": "Wie wird der Begriff „Risikoanalyse“ im BSI-Standard 200-3 verwendet?",
+            "explanation": "Laut Standard bezeichnet Risikoanalyse im deutschen Sprachgebrauch den kompletten Prozess der Risikobeurteilung und Risikobehandlung. Nach den ISO-Normen ist sie hingegen nur ein Schritt der Risikobeurteilung. Eine Beschränkung auf die reine Schadensberechnung oder auf die Auswahl von Maßnahmen trifft nicht zu.",
+            "quote": "Als Risikoanalyse wird in diesem Werk der komplette Prozess bezeichnet, um Risiken zu beurteilen (identifizieren, einschätzen und bewerten) sowie zu behandeln.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Bedeutung des Begriffs „Risikoanalyse“ im BSI-Standard 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 6,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Als kompletter Prozess der Risikobeurteilung und Risikobehandlung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur als einzelner Schritt innerhalb der Risikobeurteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur als rechnerische Ermittlung der Schadenshöhe",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich als Auswahl geeigneter Sicherheitsmaßnahmen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.3-006",
+            "text": "Welche Schritte sieht die Risikoanalyse nach BSI-Standard 200-3 vor?",
+            "explanation": "Die Risikoanalyse nach BSI-Standard 200-3 umfasst: Erstellung einer Gefährdungsübersicht, Risikoeinstufung, Risikobehandlung und Konsolidierung des Sicherheitskonzepts. Die Strukturanalyse ist eine Vorarbeit im Sinne des 200-2 und kein Schritt der Risikoanalyse selbst.",
+            "quote": "Schritt 1: Erstellung einer Gefährdungsübersicht (siehe Kapitel 4) • Zusammenstellung einer Liste von möglichen elementaren Gefährdungen • Ermittlung zusätzlicher Gefährdungen, die über die elementaren Gefährdungen hinausgehen • Schritt 2: Risikoeinstufung (siehe Kapitel 5) • Risikoeinschätzung (Ermittlung von Eintrittshäufigkeit und Schadenshöhe) • Risikobewertung (Ermittlung der Risikokategorie) • Schritt 3: Risikobehandlung (siehe Kapitel 6) • Risikovermeidung • Risikoreduktion (Ermittlung von Sicherheitsmaßnahmen) • Risikotransfer • Risikoakzeptanz • Schritt 4: Konsolidierung des Sicherheitskonzepts (siehe Kapitel 7)",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Schritte der Risikoanalyse nach BSI-Standard 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Erstellung einer Gefährdungsübersicht",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikoeinstufung und Risikobehandlung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Konsolidierung des Sicherheitskonzepts",
+                    "is_correct": true
+                },
+                {
+                    "text": "Strukturanalyse des Informationsverbundes",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.3-007",
+            "text": "Welche vier Risikobehandlungsoptionen benennt der BSI-Standard 200-3 in Schritt 3?",
+            "explanation": "Schritt 3 der Risikoanalyse nach 200-3 umfasst die Optionen Risikovermeidung, Risikoreduktion, Risikotransfer und Risikoakzeptanz. „Risikokompensation“ ist kein Begriff des Standards.",
+            "quote": "Schritt 3: Risikobehandlung (siehe Kapitel 6) • Risikovermeidung • Risikoreduktion (Ermittlung von Sicherheitsmaßnahmen) • Risikotransfer • Risikoakzeptanz",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Risikobehandlungsoptionen nach 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Risikovermeidung und Risikoreduktion",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikotransfer und Risikoakzeptanz",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikokompensation durch Gegenmaßnahmen anderer Institutionen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Risikoeinstufung in die Kategorie „mittel“",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

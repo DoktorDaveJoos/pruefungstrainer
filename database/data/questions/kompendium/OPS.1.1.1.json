@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.1",
+        "chapter_title": "Allgemeiner IT-Betrieb",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.1-001",
+            "text": "Welche Aufgaben z\u00e4hlen laut Baustein OPS.1.1.1 unter anderem zum IT-Betrieb?",
+            "explanation": "Der Baustein listet sechs Kernaufgaben des IT-Betriebs auf: Verwaltung (inkl. Inventarisierung und Dokumentation), Mitwirkung bei der Beschaffung, In- und Au\u00dferbetriebnahme, IT-Administration, IT-Monitoring und IT Incident Management. Die Optionen Softwareentwicklung und Benutzerschulung geh\u00f6ren nicht zu den genannten Aufgaben.",
+            "quote": "Zum IT-Betrieb z\u00e4hlen unter anderem die folgenden Aufgaben: die Verwaltung, inklusive Inventarisierung und Dokumentation \u2022 die Mitwirkung bei der Beschaffung \u2022 die In- und Au\u00dferbetriebnahme, inklusive Austausch von IT \u2022 die IT-Administration \u2022 das IT-Monitoring \u2022 das IT Incident Management",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Kernaufgaben des IT-Betriebs gem\u00e4\u00df OPS.1.1.1 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Verwaltung, IT-Administration und IT-Monitoring", "is_correct": true},
+                {"text": "Softwareentwicklung und Qualit\u00e4tssicherung", "is_correct": false},
+                {"text": "Benutzerschulung und Sensibilisierung", "is_correct": false},
+                {"text": "Netzplanung und Firewall-Konfiguration", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.1-002",
+            "text": "Was MUSS laut OPS.1.1.1.A1 f\u00fcr alle betriebenen IT-Komponenten festgelegt werden?",
+            "explanation": "Die Basis-Anforderung A1 verlangt, dass f\u00fcr alle betriebenen IT-Komponenten festgelegt wird, welche Aufgaben f\u00fcr den IT-Betrieb anfallen und wer daf\u00fcr zust\u00e4ndig ist. Zus\u00e4tzlich m\u00fcssen Rechte, Pflichten, Aufgaben, Befugnisse, Prozesse sowie Schnittstellen und Meldewege geregelt werden.",
+            "quote": "F\u00fcr alle betriebenen IT-Komponenten MUSS festgelegt werden, welche Aufgaben f\u00fcr den IT-Betrieb anfallen und wer daf\u00fcr zust\u00e4ndig ist.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Inhalte der Basis-Anforderung OPS.1.1.1.A1 zur Festlegung von Aufgaben und Zust\u00e4ndigkeiten wiedergeben.",
+            "baustein_id": "OPS.1.1.1.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Welche Aufgaben f\u00fcr den IT-Betrieb anfallen und wer daf\u00fcr zust\u00e4ndig ist", "is_correct": true},
+                {"text": "Welche Cloud-Dienste genutzt werden d\u00fcrfen", "is_correct": false},
+                {"text": "Wie viele Mitarbeitende maximal Zugriff erhalten", "is_correct": false},
+                {"text": "Welche Hersteller bevorzugt beschafft werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.1-003",
+            "text": "Was verlangt OPS.1.1.1.A2 hinsichtlich der Trennung von Rollen im IT-Betrieb?",
+            "explanation": "Die Anforderung A2 fordert, dass das Rollen- und Berechtigungskonzept die IT-Nutzung von IT-Betriebsaufgaben trennt und dass Administrationsaufgaben und sonstige Betriebsaufgaben durch unterschiedliche Rollen getrennt werden m\u00fcssen. Sammel-Accounts d\u00fcrfen nur in begr\u00fcndeten Ausnahmef\u00e4llen eingerichtet werden.",
+            "quote": "Das Rollen- und Berechtigungskonzept f\u00fcr den IT-Betrieb MUSS die IT-Nutzung von IT-Betriebsaufgaben trennen. Administrationsaufgaben und sonstige Betriebsaufgaben M\u00dcSSEN durch unterschiedliche Rollen getrennt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Rollentrennung im IT-Betrieb nach OPS.1.1.1.A2 erl\u00e4utern.",
+            "baustein_id": "OPS.1.1.1.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Administrationsaufgaben und sonstige Betriebsaufgaben m\u00fcssen durch unterschiedliche Rollen getrennt werden", "is_correct": true},
+                {"text": "Alle Mitarbeitenden m\u00fcssen identische Berechtigungen erhalten", "is_correct": false},
+                {"text": "Sammel-Accounts m\u00fcssen grunds\u00e4tzlich f\u00fcr alle Teams eingerichtet werden", "is_correct": false},
+                {"text": "Die Rollentrennung gilt nur f\u00fcr externe Dienstleistende", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.1-004",
+            "text": "Warum kommt den Betriebsmitteln des IT-Betriebs laut OPS.1.1.1 eine besondere Sicherheitsbedeutung zu?",
+            "explanation": "Betriebsmittel halten viele f\u00fcr die IT-Komponenten und deren Funktionsf\u00e4higkeit wichtige Informationen vor, die ein attraktives Ziel f\u00fcr Angriffe bieten. Au\u00dferdem ist ihre Verf\u00fcgbarkeit f\u00fcr den IT-Betrieb wesentlich.",
+            "quote": "Auf ihnen werden viele f\u00fcr die IT-Komponenten und deren Funktionsf\u00e4higkeit wichtige Informationen vorgehalten, die ein attraktives Ziel f\u00fcr einen Angriff bieten und daher gesch\u00fctzt werden m\u00fcssen. Au\u00dferdem ist ihre Verf\u00fcgbarkeit f\u00fcr den IT-Betrieb wesentlich.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die besondere Sicherheitsbedeutung der Betriebsmittel des IT-Betriebs begr\u00fcnden.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Sie halten wichtige Informationen vor, die ein attraktives Angriffsziel bieten, und ihre Verf\u00fcgbarkeit ist f\u00fcr den IT-Betrieb wesentlich", "is_correct": true},
+                {"text": "Sie sind g\u00fcnstiger als andere Komponenten und daher leichter zu ersetzen", "is_correct": false},
+                {"text": "Sie werden ausschlie\u00dflich von externen Dienstleistern betrieben", "is_correct": false},
+                {"text": "Sie unterliegen keinen gesetzlichen Aufbewahrungspflichten", "is_correct": false}
+            ]
+        }
+    ]
+}

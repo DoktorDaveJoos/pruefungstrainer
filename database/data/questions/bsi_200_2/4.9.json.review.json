@@ -1,0 +1,61 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All seven questions are factually correct and well-supported by the source text. Quotes are verbatim substrings of the normalized source. However, several questions (4.9-001 through 4.9-004) cite page_start 47, which falls outside the manifest-declared range for section 4.9 (pages 48-49). The cited text genuinely appears on page 47 of the document; the manifest page range appears to be shifted by one page. No schema violations. Topic 'methodik' is appropriate throughout.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-4.9-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 47 but manifest declares section 4.9 range as pages 48-49. The cited text genuinely appears on page 47; the manifest page range appears shifted."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 47 but manifest declares section 4.9 range as pages 48-49."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 47 but manifest declares section 4.9 range as pages 48-49."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start is 47 but manifest declares section 4.9 range as pages 48-49."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.9-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.9-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.9-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

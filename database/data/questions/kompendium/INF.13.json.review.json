@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Baustein INF.13: 3 questions reviewed. 0 pass, 3 flag, 0 fail. 1 flag(s) for cosmetic quote artifacts — PDF-to-markdown line-wrap hyphens that the quote spans, or bulleted-list content flattened into a prose sentence; content remains verbatim under aggressive normalization; 3 schema note(s) where anforderung_type is null. No factual errors or unsupported correct answers were found; all correct answers trace to Anforderungen in the Baustein and distractors are unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-inf.13-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.13-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.13-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment flattens a bulleted list from the source (bullets replaced by commas). Content is verbatim after dropping bullet markers. Example: 'Zu diesen Leistungen gehören unter anderem: Betreiben, Dokumentieren, Energie- und Umweltmanagement,'"
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        }
+    ]
+}

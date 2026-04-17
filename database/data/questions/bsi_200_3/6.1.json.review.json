@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All eight questions accurately reflect section 6.1. Quotes match after normalization (including the soft-hyphen join in 'Risikoakzeptanz'). Note the source contains an OCR artifact 'fbertragen' instead of 'übertragen' in the Risikotransfer passage; the quote in 6.1-004 faithfully reproduces this artifact. Correct answers are well-supported. Distractors are clearly wrong. Topic 'risikoanalyse' is appropriate. All basis difficulty is fitting. Page_start values (33-35) align with printed page markers. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-6.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-007",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.1-008",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

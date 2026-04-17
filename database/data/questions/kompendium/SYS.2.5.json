@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.2.5",
+        "chapter_title": "Client-Virtualisierung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.2.5-001",
+            "text": "Welche Netztrennung MUSS laut SYS.2.5 bei virtuellen Clients eingehalten werden?",
+            "explanation": "SYS.2.5.A2 fordert, dass die Netzsegmente f\u00fcr virtuelle Clients von Netzsegmenten f\u00fcr Server getrennt sein m\u00fcssen. Eine bestehende Netztrennung darf nicht mithilfe eines virtuellen Clients oder eines Virtualisierungsservers umgangen werden.",
+            "quote": "Die Netzsegmente f\u00fcr virtuelle Clients M\u00dcSSEN von Netzsegmenten f\u00fcr Server getrennt sein. Eine bestehende Netztrennung DARF NICHT mithilfe eines virtuellen Clients oder eines Virtualisierungsservers umgangen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Netztrennungsanforderungen f\u00fcr virtuelle Clients benennen.",
+            "baustein_id": "SYS.2.5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Netzsegmente f\u00fcr virtuelle Clients m\u00fcssen von Netzsegmenten f\u00fcr Server getrennt sein.", "is_correct": true },
+                { "text": "Virtuelle Clients und Server d\u00fcrfen im selben Netzsegment betrieben werden, sofern eine Firewall aktiv ist.", "is_correct": false },
+                { "text": "Die Netztrennung ist nur bei erh\u00f6htem Schutzbedarf erforderlich.", "is_correct": false },
+                { "text": "Eine bestehende Netztrennung darf \u00fcber einen Virtualisierungsserver umgangen werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.5-002",
+            "text": "Wo SOLLTEN Daten bei der Client-Virtualisierung laut SYS.2.5 gespeichert werden?",
+            "explanation": "SYS.2.5.A6 empfiehlt, dass durch Benutzende erstellte oder verarbeitete Daten zentral gespeichert und nicht dauerhaft auf den virtuellen Clients abgelegt werden sollten. Benutzende sollten nicht in der Lage sein, Daten auf ihre lokalen IT-Systeme zu \u00fcbertragen.",
+            "quote": "Durch die Benutzenden erstellte oder verarbeitete Daten SOLLTEN zentral gespeichert werden. Die Daten SOLLTEN NICHT dauerhaft auf den virtuellen Clients abgelegt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Datenspeicherung bei Client-Virtualisierung beschreiben.",
+            "baustein_id": "SYS.2.5",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Daten sollten zentral gespeichert und nicht dauerhaft auf den virtuellen Clients abgelegt werden.", "is_correct": true },
+                { "text": "Daten sollten ausschlie\u00dflich lokal auf den virtuellen Clients gespeichert werden.", "is_correct": false },
+                { "text": "Jeder virtuelle Client sollte eine eigene Datensicherung auf einem USB-Stick erhalten.", "is_correct": false },
+                { "text": "Die Datenspeicherung sollte auf den zugreifenden physischen Clients erfolgen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.5-003",
+            "text": "Was SOLLTE laut SYS.2.5 auf virtuellen Clients vermieden werden?",
+            "explanation": "SYS.2.5.A11 empfiehlt, auf virtuellen Clients keine weiteren virtuellen IT-Systeme einzurichten (verschachtelte Virtualisierung). Falls technisch m\u00f6glich, sollten Funktionen aktiviert werden, die eine verschachtelte Virtualisierung erschweren oder unterbinden.",
+            "quote": "Auf virtuellen Clients SOLLTEN keine weiteren virtuellen IT-Systeme eingerichtet werden. Falls technisch m\u00f6glich, SOLLTEN in der zugrundeliegenden Virtualisierungsinfrastruktur Funktionen aktiviert werden, die eine verschachtelte Virtualisierung erschweren oder unterbinden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Vermeidung verschachtelter Virtualisierung erl\u00e4utern.",
+            "baustein_id": "SYS.2.5",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Verschachtelte Virtualisierung, also das Einrichten weiterer virtueller IT-Systeme auf virtuellen Clients.", "is_correct": true },
+                { "text": "Die Nutzung von Terminalserver-Protokollen f\u00fcr die Verbindung zu virtuellen Clients.", "is_correct": false },
+                { "text": "Die zentrale Provisionierung der Client-Anwendungen.", "is_correct": false },
+                { "text": "Die Nutzung von Templates zur Erzeugung virtueller Clients.", "is_correct": false }
+            ]
+        }
+    ]
+}

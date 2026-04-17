@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.8",
+        "chapter_title": "Software-Entwicklung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.8-001",
+            "text": "Was MUSS laut CON.8.A2 für die Software-Entwicklung festgelegt werden?",
+            "explanation": "Laut CON.8.A2 muss ein geeignetes Vorgehensmodell zur Software-Entwicklung festgelegt werden. Anhand des gewählten Vorgehensmodells muss ein Ablaufplan erstellt werden. Die Sicherheitsanforderungen der Auftraggebenden müssen im Vorgehensmodell integriert werden.",
+            "quote": "Ein geeignetes Vorgehensmodell zur Software-Entwicklung MUSS festgelegt werden. Anhand des gewählten Vorgehensmodells MUSS ein Ablaufplan für die Software-Entwicklung erstellt werden. Die Sicherheitsanforderungen der Auftraggebenden an die Vorgehensweise MÜSSEN im Vorgehensmodell integriert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Festlegung eines Vorgehensmodells bei der Software-Entwicklung benennen.",
+            "baustein_id": "CON.8.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein geeignetes Vorgehensmodell mit integriertem Ablaufplan", "is_correct": true },
+                { "text": "Ein detailliertes Pflichtenheft mit mindestens 100 Seiten", "is_correct": false },
+                { "text": "Eine agile Vorgehensweise ohne feste Strukturen", "is_correct": false },
+                { "text": "Eine ausschließlich iterative Entwicklung ohne Dokumentation", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.8-002",
+            "text": "Welche Grundregeln des sicheren Systemdesigns MÜSSEN laut CON.8.A5 berücksichtigt werden?",
+            "explanation": "Laut CON.8.A5 müssen alle Eingabedaten vor der Weiterverarbeitung geprüft und validiert werden, bei Client-Server-Anwendungen müssen die Daten auf dem Server validiert werden, und die Software muss mit möglichst geringen Privilegien ausgeführt werden können.",
+            "quote": "Grundsätzlich MÜSSEN alle Eingabedaten vor der Weiterverarbeitung geprüft und validiert werden. • Bei Client-Server-Anwendungen MÜSSEN die Daten grundsätzlich auf dem Server validiert werden. • Die Software MUSS mit möglichst geringen Privilegien ausgeführt werden können.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Grundregeln des sicheren Systemdesigns nach CON.8 benennen.",
+            "baustein_id": "CON.8.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Alle Eingabedaten müssen vor der Weiterverarbeitung geprüft und validiert werden", "is_correct": true },
+                { "text": "Die Software muss mit möglichst geringen Privilegien ausgeführt werden können", "is_correct": true },
+                { "text": "Die Software muss immer mit Administratorrechten ausgeführt werden", "is_correct": false },
+                { "text": "Validierung der Eingabedaten soll nur clientseitig erfolgen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.8-003",
+            "text": "Was MUSS laut CON.8.A10 mit dem Quellcode eines Entwicklungsprojekts geschehen?",
+            "explanation": "Laut CON.8.A10 muss der Quellcode über eine geeignete Versionsverwaltung verwaltet werden. Es muss sichergestellt sein, dass alle Änderungen nachvollzogen und rückgängig gemacht werden können. Die Versionsverwaltung muss im Datensicherungskonzept berücksichtigt werden.",
+            "quote": "Der Quellcode des Entwicklungsprojekts MUSS über eine geeignete Versionsverwaltung verwaltet werden. • Es MUSS sichergestellt sein, dass durch die Versionsverwaltung alle Änderungen am Quellcode nachvollzogen und rückgängig gemacht werden können. • Die Versionsverwaltung MUSS in dem Datensicherungskonzept berücksichtigt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Versionsverwaltung des Quellcodes erklären.",
+            "baustein_id": "CON.8.A10",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Er muss über eine geeignete Versionsverwaltung verwaltet werden", "is_correct": true },
+                { "text": "Er muss täglich per E-Mail an alle Entwickler versendet werden", "is_correct": false },
+                { "text": "Er muss ausschließlich auf lokalen Festplatten gespeichert werden", "is_correct": false },
+                { "text": "Er darf nur in ausgedruckter Form archiviert werden", "is_correct": false }
+            ]
+        }
+    ]
+}

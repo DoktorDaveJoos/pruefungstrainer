@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.1.1",
+        "chapter_title": "Office-Produkte",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.1.1-001",
+            "text": "Welche Maßnahme MUSS laut Baustein APP.1.1 bezüglich Aktiver Inhalte in Office-Produkten ergriffen werden?",
+            "explanation": "Die Anforderung APP.1.1.A2 verlangt, dass die automatische Ausführung eingebetteter Aktiver Inhalte deaktiviert werden muss. Aktive Inhalte dürfen nur aus vertrauenswürdigen Quellen ausgeführt werden. Die anderen Optionen sind falsch: ein vollständiges Verbot aller Makros wird nicht verlangt, und eine automatische Ausführung aus allen Quellen widerspricht der Anforderung direkt.",
+            "quote": "Die Funktion, dass eingebettete Aktive Inhalte automatisch ausgeführt werden, MUSS deaktiviert werden. Falls es dennoch notwendig ist, Aktive Inhalte auszuführen, MUSS darauf geachtet werden, dass Aktive Inhalte nur ausgeführt werden, wenn sie aus vertrauenswürdigen Quellen stammen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderung zur Einschränkung Aktiver Inhalte in Office-Produkten benennen.",
+            "baustein_id": "APP.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die automatische Ausführung eingebetteter Aktiver Inhalte muss deaktiviert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Aktive Inhalte dürfen nur ausgeführt werden, wenn sie aus vertrauenswürdigen Quellen stammen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Makros müssen vollständig und ohne Ausnahme verboten werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Aktive Inhalte müssen aus allen Quellen automatisch ausgeführt werden, um die Produktivität zu sichern",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.1-002",
+            "text": "Was MUSS laut APP.1.1 mit Dokumenten aus externen Quellen geschehen, bevor sie geöffnet werden?",
+            "explanation": "Anforderung APP.1.1.A3 verlangt, dass alle aus externen Quellen bezogenen Dokumente auf Schadsoftware überprüft werden müssen, bevor sie geöffnet werden. Nicht benötigte Dateiformate müssen verboten und möglichst blockiert werden. Eine sofortige Löschung oder ausschließliche Speicherung auf USB wird nicht gefordert.",
+            "quote": "Alle aus externen Quellen bezogenen Dokumente MÜSSEN auf Schadsoftware überprüft werden, bevor sie geöffnet werden. Alle als problematisch eingestuften und alle innerhalb der Institution nicht benötigten Dateiformate MÜSSEN verboten werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen zum sicheren Öffnen von Dokumenten aus externen Quellen benennen.",
+            "baustein_id": "APP.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen auf Schadsoftware überprüft werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nicht benötigte Dateiformate müssen verboten werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen sofort und ohne Prüfung gelöscht werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie dürfen ausschließlich auf USB-Datenträgern gespeichert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.1-003",
+            "text": "Was SOLLTE laut APP.1.1 mit den in Office-Produkten integrierten Cloud-Speicher-Funktionen geschehen?",
+            "explanation": "Anforderung APP.1.1.A12 (Standard-Anforderung) besagt, dass die in Office-Produkten integrierten Cloud-Speicher-Funktionen grundsätzlich deaktiviert werden sollten. Dokumente sollten auf zentral verwalteten Fileservern gespeichert werden. Eine Pflicht zur Nutzung des Cloud-Speichers oder eine Verschlüsselung der Cloud-Daten mit privaten Schlüsseln wird nicht gefordert.",
+            "quote": "Die in einigen Office-Produkten integrierten Funktionen für Cloud-Speicher SOLLTEN grundsätzlich deaktiviert werden. Alle Cloud-Laufwerke SOLLTEN deaktiviert werden. Alle Dokumente SOLLTEN durch die Benutzenden auf zentral verwalteten Fileservern der Institution gespeichert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Standard-Anforderung zum Umgang mit Cloud-Speicherung in Office-Produkten erläutern.",
+            "baustein_id": "APP.1.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Cloud-Speicher-Funktionen sollten grundsätzlich deaktiviert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dokumente sollten auf zentral verwalteten Fileservern der Institution gespeichert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Cloud-Speicher-Funktionen müssen verpflichtend für alle Benutzenden aktiviert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Cloud-Daten müssen mit privaten Schlüsseln der Benutzenden verschlüsselt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.1-004",
+            "text": "Auf welche Office-Produkte ist der Baustein APP.1.1 anzuwenden?",
+            "explanation": "Laut der Abgrenzung und Modellierung ist der Baustein APP.1.1 auf jedes Office-Produkt anzuwenden, das lokal installiert ist und mit dem Dokumente betrachtet, bearbeitet oder erstellt werden, außer E-Mail-Anwendungen. Reine Cloud-Office-Anwendungen und E-Mail-Clients sind explizit ausgenommen.",
+            "quote": "Der Baustein APP.1.1 Office-Produkte ist auf jedes Office-Produkt anzuwenden, das lokal installiert ist und mit dem Dokumente betrachtet, bearbeitet oder erstellt werden, außer E-Mail-Anwendungen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Anwendungsbereich des Bausteins APP.1.1 Office-Produkte abgrenzen.",
+            "baustein_id": "APP.1.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Auf jedes lokal installierte Office-Produkt zum Betrachten, Bearbeiten oder Erstellen von Dokumenten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf alle E-Mail-Anwendungen in der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich auf Microsoft-Office-Produkte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf reine Cloud-Office-Anwendungen wie Google Workspace",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

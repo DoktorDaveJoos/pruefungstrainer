@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.2.2",
+        "chapter_title": "Archivierung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.2.2-001",
+            "text": "Was MUSS laut OPS.1.2.2.A2 in einem Archivierungskonzept definiert werden?",
+            "explanation": "Es muss definiert werden, welche Ziele mit der Archivierung erreicht werden sollen, einschlie\u00dflich der einzuhaltenden Regularien, zust\u00e4ndigen Mitarbeitenden und des angestrebten Funktions- und Leistungsumfangs.",
+            "quote": "Es MUSS definiert werden, welche Ziele mit der Archivierung erreicht werden sollen. Hierbei MUSS insbesondere ber\u00fccksichtigt werden, welche Regularien einzuhalten sind, welche Mitarbeitende zust\u00e4ndig sind und welcher Funktions- und Leistungsumfang angestrebt wird.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestinhalte eines Archivierungskonzepts nach OPS.1.2.2.A2 benennen.",
+            "baustein_id": "OPS.1.2.2.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Ziele, einzuhaltende Regularien, Zust\u00e4ndigkeiten und angestrebter Funktions- und Leistungsumfang", "is_correct": true},
+                {"text": "Ausschlie\u00dflich die technische Spezifikation der Speichermedien", "is_correct": false},
+                {"text": "Nur die maximale Aufbewahrungsdauer in Jahren", "is_correct": false},
+                {"text": "Die Kosten pro gespeichertem Gigabyte", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.2-002",
+            "text": "Was MUSS laut OPS.1.2.2.A5 \u00fcber den gesamten Archivierungszeitraum sichergestellt werden?",
+            "explanation": "Es muss unter anderem sichergestellt werden, dass das verwendete Datenformat verarbeitet werden kann, die Daten lesbar und reproduzierbar sind, und die kryptografischen Verfahren dem Stand der Technik entsprechen.",
+            "quote": "\u00dcber den gesamten Archivierungszeitraum hinweg MUSS sichergestellt werden, dass das verwendete Datenformat von den benutzten Anwendungen verarbeitet werden kann, die gespeicherten Daten auch zuk\u00fcnftig lesbar und so reproduzierbar sind, dass Semantik und Beweiskraft beibehalten werden",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die langfristigen Anforderungen an die Aufbereitung archivierter Datenbest\u00e4nde nach OPS.1.2.2.A5 erl\u00e4utern.",
+            "baustein_id": "OPS.1.2.2.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Datenformat-Verarbeitbarkeit, Lesbarkeit und Reproduzierbarkeit unter Erhalt von Semantik und Beweiskraft", "is_correct": true},
+                {"text": "Nur die physische Unversehrtheit der Speichermedien", "is_correct": false},
+                {"text": "Ausschlie\u00dflich die Einhaltung der maximalen Speicherkapazit\u00e4t", "is_correct": false},
+                {"text": "Die regelm\u00e4\u00dfige Neubeschaffung aktueller Speichermedien alle zwei Jahre", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.2-003",
+            "text": "Was MUSS laut OPS.1.2.2.A8 bei allen Zugriffen auf elektronische Archive geschehen?",
+            "explanation": "Alle Zugriffe auf elektronische Archive m\u00fcssen protokolliert werden. Dabei sollten Datum, Uhrzeit, Benutzender, Client und die ausgef\u00fchrten Aktionen aufgezeichnet werden.",
+            "quote": "Alle Zugriffe auf elektronische Archive M\u00dcSSEN protokolliert werden. Daf\u00fcr SOLLTEN Datum, Uhrzeit, Benutzender, Client und die ausgef\u00fchrten Aktionen sowie Fehlermeldungen aufgezeichnet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Protokollierungsanforderungen f\u00fcr Archivzugriffe nach OPS.1.2.2.A8 wiedergeben.",
+            "baustein_id": "OPS.1.2.2.A8",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Alle Zugriffe m\u00fcssen protokolliert werden", "is_correct": true},
+                {"text": "Nur Schreibzugriffe m\u00fcssen protokolliert werden", "is_correct": false},
+                {"text": "Nur Zugriffe durch externe Personen m\u00fcssen dokumentiert werden", "is_correct": false},
+                {"text": "Eine Protokollierung ist nur bei klassifizierten Dokumenten erforderlich", "is_correct": false}
+            ]
+        }
+    ]
+}

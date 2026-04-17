@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.4.3",
+        "chapter_title": "Faxgeräte und Faxserver",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.4.3-001",
+            "text": "Wie MÜSSEN Faxgeräte laut NET.4.3 aufgestellt werden?",
+            "explanation": "NET.4.3.A1 fordert, dass Faxgeräte so aufgestellt werden müssen, dass eingegangene Faxsendungen nicht von Unberechtigten eingesehen oder entnommen werden können.",
+            "quote": "Faxgeräte MÜSSEN so aufgestellt werden, dass eingegangene Faxsendungen nicht von Unberechtigten eingesehen oder entnommen werden können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Aufstellungsanforderung für Faxgeräte gemäß NET.4.3 beschreiben.",
+            "baustein_id": "NET.4.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "So, dass eingegangene Faxsendungen nicht von Unberechtigten eingesehen oder entnommen werden können",
+                    "is_correct": true
+                },
+                {
+                    "text": "In einem frei zugänglichen Bereich für alle Mitarbeitenden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich im Serverraum",
+                    "is_correct": false
+                },
+                {
+                    "text": "In einem klimatisierten Raum mit Zutrittskontrolle",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.4.3-002",
+            "text": "Worüber MÜSSEN Mitarbeitende laut NET.4.3 im Zusammenhang mit der Faxnutzung informiert werden?",
+            "explanation": "NET.4.3.A2 fordert, dass Mitarbeitende auf die Besonderheiten der Informationsübermittlung per Fax hingewiesen werden müssen, insbesondere darauf, dass die Rechtsverbindlichkeit einer Faxsendung stark eingeschränkt ist.",
+            "quote": "Alle Mitarbeitenden MÜSSEN auf die Besonderheiten der Informationsübermittlung per Fax hingewiesen werden. Sie MÜSSEN auch darüber informiert sein, dass die Rechtsverbindlichkeit einer Faxsendung stark eingeschränkt ist.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Informationspflichten gegenüber Mitarbeitenden bei der Faxnutzung gemäß NET.4.3 benennen.",
+            "baustein_id": "NET.4.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Dass die Rechtsverbindlichkeit einer Faxsendung stark eingeschränkt ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dass Faxsendungen immer verschlüsselt übertragen werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dass Faxgeräte ausschließlich vom IT-Betrieb bedient werden dürfen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dass jede Faxsendung eine elektronische Signatur benötigt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.4.3-003",
+            "text": "Welche Gefährdung beschreibt NET.4.3 in Bezug auf das Vortäuschen eines falschen Absenders?",
+            "explanation": "NET.4.3 beschreibt, dass bei Faxsendungen ein falscher Absender vorgetäuscht werden kann, indem z. B. Unterschriften von anderen Schriftstücken eingescannt und auf das Fax-Dokument kopiert werden. Ein Unterschied zur echten Unterschrift ist nicht erkennbar.",
+            "quote": "So können beispielsweise Unterschriften von anderen Schriftstücken eingescannt und auf das Fax-Dokument kopiert werden. Ein Unterschied, ob es sich um eine tatsächlich getätigte Unterschrift oder um eine reproduzierte Grafikdatei handelt, ist generell nicht zu erkennen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch gefälschte Absenderangaben bei Faxsendungen beschreiben.",
+            "baustein_id": "NET.4.3",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Unterschriften können eingescannt und auf Fax-Dokumente kopiert werden, ohne dass dies erkennbar ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Absendernummer kann technisch nicht manipuliert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Faxgeräte verifizieren automatisch die Echtheit der Unterschrift",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur digitale Faxserver sind von dieser Gefährdung betroffen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

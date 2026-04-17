@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 5 questions are accurate and well-sourced. Topic modellierung is appropriate for Geltungsbereich/Informationsverbund content. Quotes are verbatim. No issues found.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-6.1-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.1-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.1-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.1-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.1-005",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

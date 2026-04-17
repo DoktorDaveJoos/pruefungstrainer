@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.2.3",
+        "chapter_title": "OpenLDAP",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.2.3-001",
+            "text": "Was MUSS laut APP.2.3 bei der Planung und Auswahl von Backends und Overlays für OpenLDAP beachtet werden?",
+            "explanation": "Anforderung APP.2.3.A1 verlangt, dass Backends und Overlays restriktiv selektiert werden müssen und die Overlays in der korrekten Reihenfolge eingesetzt werden müssen. Zudem müssen die Client-Anwendungen bei der Planung berücksichtigt werden. Eine beliebige Auswahl ohne Prüfung wird nicht erlaubt.",
+            "quote": "Backends und Overlays für OpenLDAP MÜSSEN restriktiv selektiert werden. Dazu MUSS sichergestellt werden, dass die OpenLDAP-Overlays in der korrekten Reihenfolge eingesetzt werden. Bei der Planung von OpenLDAP MÜSSEN die auszuwählenden und unterstützten Client-Anwendungen berücksichtigt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Auswahl von Backends und Overlays für OpenLDAP benennen.",
+            "baustein_id": "APP.2.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Backends und Overlays müssen restriktiv selektiert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Overlays müssen in der korrekten Reihenfolge eingesetzt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle verfügbaren Overlays sollten grundsätzlich aktiviert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Backends und Overlays sind frei wählbar und bedürfen keiner Prüfung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.3-002",
+            "text": "Was MUSS laut APP.2.3 bei der Authentisierung gegenüber OpenLDAP gewährleistet werden?",
+            "explanation": "Anforderung APP.2.3.A6 verlangt, dass die Authentisierung zwischen dem slapd-Server und den Kommunikationsbeteiligten verschlüsselt werden muss. Es sollten nur Hashwerte von Passwörtern gespeichert werden und es muss ein geeigneter Hashing-Algorithmus verwendet werden. Klartextpasswörter oder eine unverschlüsselte Authentisierung sind nicht zulässig.",
+            "quote": "Die Authentisierung zwischen dem slapd-Server und den Kommunikationsbeteiligten MUSS verschlüsselt werden. Es SOLLTEN nur die Hashwerte von Passwörtern auf den Clients und Servern abgespeichert werden. Es MUSS ein geeigneter Hashing-Algorithmus verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die sichere Authentisierung gegenüber OpenLDAP benennen.",
+            "baustein_id": "APP.2.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Authentisierung muss verschlüsselt erfolgen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es muss ein geeigneter Hashing-Algorithmus für Passwörter verwendet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Passwörter dürfen im Klartext auf dem Server gespeichert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine unverschlüsselte Authentisierung ist für interne Netze ausreichend",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.3-003",
+            "text": "Was SOLLTE laut APP.2.3 bei der Laufzeitumgebung des slapd-Servers eingeschränkt werden?",
+            "explanation": "Anforderung APP.2.3.A11 empfiehlt, die Laufzeitumgebung des slapd-Servers möglichst mit Mitteln des Betriebssystems auf die minimal benötigten Dateien, Verzeichnisse und Funktionen einzuschränken. Falls Containerisierungstechniken eingesetzt werden, sollte der Baustein SYS.1.6 berücksichtigt werden. Auf einem dedizierten Server sollte dieser ausreichend gehärtet sein.",
+            "quote": "Die Laufzeitumgebung des slapd-Servers SOLLTE, möglichst mit Mitteln des Betriebssystems, auf die minimal benötigten Dateien, Verzeichnisse und vom Betriebssystem bereitgestellten Funktionen eingeschränkt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Einschränkung der OpenLDAP-Laufzeitumgebung erläutern.",
+            "baustein_id": "APP.2.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Auf die minimal benötigten Dateien, Verzeichnisse und Betriebssystemfunktionen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf maximal drei gleichzeitige Verbindungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf die Nutzung durch einen einzelnen Administrator",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf eine maximale Laufzeit von 24 Stunden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

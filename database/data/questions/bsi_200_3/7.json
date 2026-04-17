@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "7",
+        "chapter_title": "Konsolidierung des Sicherheitskonzepts",
+        "page_start": 40,
+        "page_end": 41
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-7-001",
+            "text": "Wann muss laut BSI-Standard 200-3 das Sicherheitskonzept konsolidiert werden?",
+            "explanation": "Der Standard nennt als Anlass ausdrücklich den Fall, dass bei der Behandlung verbleibender Gefährdungen ergänzende Maßnahmen zu den bereits im Sicherheitskonzept beschriebenen Sicherheitsmaßnahmen hinzugefügt wurden. Andere Anlässe (Personalwechsel, Audits, Stichtag) werden als Trigger nicht genannt.",
+            "quote": "Falls bei der Behandlung von verbleibenden Gefährdungen ergänzende Maßnahmen zu den bereits im Sicherheitskonzept beschriebenen Sicherheitsmaßnahmen hinzugefügt wurden, muss das Sicherheitskonzept anschließend konsolidiert werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Anlass für die Konsolidierung des Sicherheitskonzepts benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                { "text": "Wenn ergänzende Maßnahmen zu den bereits dokumentierten hinzugefügt wurden", "is_correct": true },
+                { "text": "Jeden Monat unabhängig vom Ergebnis der Risikoanalyse", "is_correct": false },
+                { "text": "Nur bei einem Wechsel des Informationssicherheitsbeauftragten", "is_correct": false },
+                { "text": "Nur vor einer externen ISO-27001-Zertifizierung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-7-002",
+            "text": "Welche Kriterien nennt der BSI-Standard 200-3 ausdrücklich für die Überprüfung der Sicherheitsmaßnahmen bei der Konsolidierung?",
+            "explanation": "Der Standard nennt vier Kriterien: Eignung zur Abwehr der Gefährdungen, Zusammenwirken der Maßnahmen, Benutzerfreundlichkeit sowie Angemessenheit/Qualitätssicherung. Die Einhaltung der ISO-31000 oder eine bestimmte Softwareversion werden nicht als Prüfkriterium genannt.",
+            "quote": "Eignung der Sicherheitsmaßnahmen zur Abwehr der Gefährdungen • Werden alle Aspekte der relevanten Gefährdungen vollständig abgedeckt? • Stehen die getroffenen Gegenmaßnahmen im Einklang mit den Sicherheitszielen? • Zusammenwirken der Sicherheitsmaßnahmen • Benutzerfreundlichkeit der Sicherheitsmaßnahmen • Angemessenheit/Qualitätssicherung der Sicherheitsmaßnahmen",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Prüfkriterien der Konsolidierung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                { "text": "Eignung der Sicherheitsmaßnahmen zur Abwehr der Gefährdungen", "is_correct": true },
+                { "text": "Zusammenwirken und Benutzerfreundlichkeit der Maßnahmen", "is_correct": true },
+                { "text": "Angemessenheit/Qualitätssicherung der Maßnahmen", "is_correct": true },
+                { "text": "Einhaltung der ISO/IEC 31000 als Pflicht", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-7-003",
+            "text": "Wie soll laut BSI-Standard 200-3 mit ungeeigneten Sicherheitsmaßnahmen im Rahmen der Konsolidierung umgegangen werden?",
+            "explanation": "Der Standard fordert ausdrücklich, dass ungeeignete Sicherheitsmaßnahmen verworfen und nach eingehender Analyse durch wirksame Maßnahmen ersetzt werden. Die anderen Optionen sind nicht vorgesehen.",
+            "quote": "Ungeeignete Sicherheitsmaßnahmen sollten verworfen und nach eingehender Analyse durch wirksame Maßnahmen ersetzt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Umgang mit ungeeigneten Maßnahmen in der Konsolidierung beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie werden verworfen und nach eingehender Analyse durch wirksame Maßnahmen ersetzt.", "is_correct": true },
+                { "text": "Sie bleiben in jedem Fall bestehen, werden aber kommentiert.", "is_correct": false },
+                { "text": "Sie werden an einen externen Dienstleister übertragen.", "is_correct": false },
+                { "text": "Sie werden als Restrisiko akzeptiert.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-7-004",
+            "text": "Wie kann laut BSI-Standard 200-3 mit neu gefundenen Gefährdungen und Anforderungen verfahren werden, wenn bestehende Bausteine das Zielobjekt nicht abdecken?",
+            "explanation": "Der Standard schlägt vor, die neu gefundenen Gefährdungen und Anforderungen in einem benutzerdefinierten Baustein zusammenzufassen. Bei bereits im Kompendium enthaltenen Zielobjekten können bestehende Bausteine um neue Anforderungen ergänzt werden. Die anderen Optionen sind nicht als Vorgehen genannt.",
+            "quote": "Bei Zielobjekten, die nicht hinreichend mit dem bestehenden IT-Grundschutz abgebildet werden können, kann überlegt werden, die neu gefundenen Gefährdungen und Anforderungen (siehe",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Das Vorgehen bei nicht durch das Kompendium abgedeckten Zielobjekten beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Inhalte können in einem benutzerdefinierten Baustein zusammengefasst werden.", "is_correct": true },
+                { "text": "Das Zielobjekt wird ohne Bausteinbezug als „nicht abgedeckt“ markiert.", "is_correct": false },
+                { "text": "Das Zielobjekt wird vom Informationsverbund ausgeschlossen.", "is_correct": false },
+                { "text": "Die Gefährdungen werden automatisch vom BSI integriert.", "is_correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.5.3",
+        "chapter_title": "Allgemeiner E-Mail-Client und -Server",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.5.3-001",
+            "text": "Was MUSS auf E-Mail-Servern hinsichtlich eingehender und ausgehender E-Mails sichergestellt werden?",
+            "explanation": "Anforderung APP.5.3.A4 verlangt, dass auf E-Mail-Servern eingehende und ausgehende E-Mails, insbesondere deren Anhänge, auf Spam-Merkmale und schädliche Inhalte überprüft werden müssen. Die Einführung und Nutzung von Filterprogrammen muss mit Datenschutzbeauftragten und Personalvertretung abgestimmt werden.",
+            "quote": "Der IT-Betrieb MUSS sicherstellen, dass auf E-Mail-Servern eingehende und ausgehende E-Mails, insbesondere deren Anhänge, auf Spam-Merkmale und schädliche Inhalte überprüft werden. Die Einführung und Nutzung von E-Mail-Filterprogrammen MUSS mit den Datenschutzbeauftragten und der Personalvertretung abgestimmt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtmaßnahmen zum Spam- und Virenschutz auf E-Mail-Servern benennen.",
+            "baustein_id": "APP.5.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "E-Mails und deren Anhänge müssen auf Spam-Merkmale und schädliche Inhalte überprüft werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur eingehende E-Mails müssen geprüft werden, ausgehende nicht",
+                    "is_correct": false
+                },
+                {
+                    "text": "E-Mails dürfen nur manuell durch Administrierende geprüft werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es genügt ein jährlicher Scan des E-Mail-Archivs",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.3-002",
+            "text": "Welche erweiterten Sicherheitsmaßnahmen SOLLTE eine Institution für die E-Mail-Authentisierung einsetzen?",
+            "explanation": "Anforderung APP.5.3.A9 empfiehlt, dass E-Mail-Server eingehende E-Mails mittels SPF und DKIM überprüfen sollten. Die Institution sollte selbst DKIM und SPF einsetzen, um versendete E-Mails zu authentisieren. Zusätzlich sollte DMARC genutzt werden, um festzulegen, wie E-Mails überprüft werden.",
+            "quote": "Die E-Mail-Server einer Institution SOLLTEN eingehende E-Mails mittels des Sender Policy Framework (SPF) und mit Hilfe von DomainKeys Identified Mail (DKIM) überprüfen. Die Institution SOLLTE selbst DKIM und SPF einsetzen, um von ihr versendete E-Mails zu authentisieren.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlenen E-Mail-Authentisierungsmechanismen SPF, DKIM und DMARC erläutern.",
+            "baustein_id": "APP.5.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sender Policy Framework (SPF) und DomainKeys Identified Mail (DKIM)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Domain-based Message Authentication, Reporting and Conformance (DMARC)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich PGP-Verschlüsselung für alle E-Mails",
+                    "is_correct": false
+                },
+                {
+                    "text": "IP-basierte Authentisierung ohne Protokollprüfung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.3-003",
+            "text": "Was MUSS bei der sicheren Konfiguration von E-Mail-Clients hinsichtlich HTML-Code in E-Mails beachtet werden?",
+            "explanation": "Anforderung APP.5.3.A1 verlangt, dass E-Mail-Clients so konfiguriert werden müssen, dass sie eventuell vorhandenen HTML-Code und andere aktive Inhalte in E-Mails nicht automatisch interpretieren. Dies dient dem Schutz vor Schadcode, der in HTML-E-Mails eingebettet sein kann.",
+            "quote": "E-Mail-Clients MÜSSEN so konfiguriert werden, dass sie eventuell vorhandenen HTML-Code und andere aktive Inhalte in E-Mails nicht automatisch interpretieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichteinstellung von E-Mail-Clients bezüglich HTML-Code und aktiver Inhalte benennen.",
+            "baustein_id": "APP.5.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "HTML-Code und andere aktive Inhalte dürfen nicht automatisch interpretiert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "HTML-Code muss immer vollständig dargestellt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur HTML-Code von internen Absendern darf interpretiert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Aktive Inhalte müssen in einer Sandbox ausgeführt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.3-004",
+            "text": "Wie SOLLTE mit dem SPF-Eintrag einer Institution umgegangen werden?",
+            "explanation": "Anforderung APP.5.3.A9 gibt vor, dass bei Verwendung von SPF alle sendeberechtigten E-Mail-Server für eine Domain im SPF-Eintrag angegeben werden sollten. Der SPF-Eintrag sollte den -all Parameter enthalten. Der Softfail-Parameter (~) sollte nur zu Testzwecken verwendet werden.",
+            "quote": "Wird SPF verwendet, SOLLTEN alle sendeberechtigten E-Mail-Server für eine Domain im SPF-Eintrag angegeben werden. Der SPF-Eintrag SOLLTE den „-all“ Parameter enthalten. Der Softfail-Parameter („~“) SOLLTE nur zu Testzwecken verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Vorgaben für die korrekte Konfiguration von SPF-Einträgen beschreiben.",
+            "baustein_id": "APP.5.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Alle sendeberechtigten Server müssen angegeben werden und der -all Parameter sollte verwendet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Softfail-Parameter (~) sollte im Produktivbetrieb verwendet werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es genügt, nur den primären E-Mail-Server anzugeben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der SPF-Eintrag sollte den +all Parameter enthalten",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

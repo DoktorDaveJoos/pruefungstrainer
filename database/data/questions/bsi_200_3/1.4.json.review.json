@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All three questions accurately reflect the Adressatenkreis section. Quotes match after normalization. Correct answers are directly supported. Distractors are clearly wrong. Topic 'risikoanalyse' is appropriate since the section describes who the risk analysis standard addresses. All basis difficulty is fitting. Schema correct (nulls). Page_start 8 is within the section's range of 8-8.",
+    "results": [
+        {
+            "external_id": "bsi-200-3-1.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.4-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

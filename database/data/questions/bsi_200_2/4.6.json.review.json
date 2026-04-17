@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All six questions are factually correct and well-supported by the source text. Quotes are verbatim substrings of the normalized source. The 'experte' difficulty on 4.6-002 is justified: the question requires distinguishing the nuanced role separation between ISB and Beauftragter fuer IT-Sicherheit across multiple dimensions (strategic vs technical, organizational placement). All page_start values (44-45) are within the manifest range (44-45). No schema violations.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-4.6-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.6-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.6-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.6-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.6-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.6-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

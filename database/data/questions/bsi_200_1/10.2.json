@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "10.2",
+        "chapter_title": "Der Sicherheitsprozess nach IT-Grundschutz",
+        "page_start": 46,
+        "page_end": 47
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-10.2-001",
+            "text": "Wie bewertet der Text die Kombination aus Standard-Sicherheitsmaßnahmen und zusätzlicher Risikoanalyse für besonders schutzbedürftige Bereiche?",
+            "explanation": "Der Text stellt fest, dass die Kombination aus Standard-Sicherheitsmaßnahmen und Risikoanalyse für Bereiche mit erhöhtem Schutzbedarf wesentlich effizienter ist als eine vollständige quantitative Risikoanalyse. Dass sie aufwendiger oder weniger effizient wäre oder die Standard-Sicherheitsmaßnahmen ersetzen würde, widerspricht dem Text.",
+            "quote": "Die Kombination aus Standard-Sicherheitsmaßnahmen und Risikoanalyse für die Bereiche, deren Schutzbedürftigkeit über den normalen Schutzbedarf hinausgeht, ist wesentlich effizienter als eine vollständige quantitative Risikoanalyse.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Effizienzvorteil der Kombination aus Standard-Maßnahmen und ergänzender Risikoanalyse einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie ist wesentlich effizienter als eine vollständige quantitative Risikoanalyse.", "is_correct": true },
+                { "text": "Sie ist aufwendiger als eine vollständige quantitative Risikoanalyse.", "is_correct": false },
+                { "text": "Sie ersetzt die Standard-Sicherheitsmaßnahmen vollständig.", "is_correct": false },
+                { "text": "Sie darf nur bei normalem Schutzbedarf eingesetzt werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-10.2-002",
+            "text": "Was muss laut Abschnitt „Umsetzung der Maßnahmen“ für die identifizierten Sicherheitsmaßnahmen geregelt werden?",
+            "explanation": "Laut Text muss festgelegt werden, in welcher Reihenfolge die Maßnahmen umgesetzt werden und auch wer bis wann welche Maßnahmen realisieren muss. Eine verpflichtende externe Auditierung vor der Umsetzung oder eine Umsetzung ausschließlich durch das BSI werden im Text nicht gefordert.",
+            "quote": "Hierfür sollte festgelegt werden, in welcher Reihenfolge die Maßnahmen umgesetzt werden und auch wer bis wann welche Maßnahmen realisieren muss.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Planungspflichten bei der Umsetzung von Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Reihenfolge der Umsetzung der Maßnahmen", "is_correct": true },
+                { "text": "Die Verantwortlichkeit und der Termin für jede Maßnahme", "is_correct": true },
+                { "text": "Eine verpflichtende externe Auditierung vor jeder Umsetzung", "is_correct": false },
+                { "text": "Die Umsetzung der Maßnahmen ausschließlich durch das BSI", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-10.2-003",
+            "text": "Welche Pflicht nennt der Text im Hinblick auf Mitarbeitende, die Sicherheitsmaßnahmen einsetzen und umsetzen müssen?",
+            "explanation": "Laut Text sollten alle Mitarbeitenden, die Sicherheitsmaßnahmen ein- und umsetzen müssen, geschult werden, um zu erfahren, was deren Zweck ist und was bei der Nutzung zu beachten ist. Eine formale Zertifizierung jedes Einzelnen, eine Entbindung von Haftung oder ausschließliche Online-Schulungen werden nicht gefordert.",
+            "quote": "Alle Mitarbeiter, die Sicherheitsmaßnahmen ein- und umsetzen müssen, sollten geschult werden, um zu erfahren, was deren Zweck ist und was bei der Nutzung zu beachten ist.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Schulungspflicht für Mitarbeitende bei der Umsetzung von Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie sollten zum Zweck der Maßnahmen und zu den Nutzungshinweisen geschult werden.", "is_correct": true },
+                { "text": "Sie müssen einzeln beim BSI zertifiziert werden.", "is_correct": false },
+                { "text": "Sie werden durch die Schulung von jeglicher Haftung entbunden.", "is_correct": false },
+                { "text": "Sie dürfen ausschließlich durch Online-Kurse ohne Präsenzanteile geschult werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-10.2-004",
+            "text": "Welche Tätigkeiten umfasst laut Abschnitt „Umsetzung der Maßnahmen“ der Prozess zur Realisierung identifizierter Sicherheitsmaßnahmen?",
+            "explanation": "Der Text nennt ausdrücklich, dass die identifizierten Sicherheitsmaßnahmen geplant, durchgeführt, begleitet und überwacht werden müssen. Die sofortige Stilllegung betroffener Systeme oder die automatische Übertragung an externe Dienstleister sind dort nicht vorgesehen.",
+            "quote": "Die identifizierten Sicherheitsmaßnahmen müssen geplant, durchgeführt, begleitet und überwacht werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Schritte des Umsetzungsprozesses für Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Planen, Durchführen, Begleiten und Überwachen der Maßnahmen", "is_correct": true },
+                { "text": "Sofortige Stilllegung aller betroffenen Systeme", "is_correct": false },
+                { "text": "Automatische Übertragung an externe Dienstleister", "is_correct": false },
+                { "text": "Ausschließlich nachträgliche Dokumentation ohne aktive Steuerung", "is_correct": false }
+            ]
+        }
+    ]
+}

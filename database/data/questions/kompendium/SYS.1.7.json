@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.7",
+        "chapter_title": "IBM Z",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.7-001",
+            "text": "Was MUSS laut SYS.1.7.A1 mit der besonderen Kennung IBMUSER nach der Neuinstallation eines z/OS-Systems geschehen?",
+            "explanation": "SYS.1.7.A1 fordert, dass die Kennung IBMUSER nur bei der Neuinstallation zur Erzeugung von Kennungen mit dem Attribut SPECIAL benutzt werden darf. Danach muss diese Kennung dauerhaft gesperrt werden. Sie darf nicht für den täglichen Betrieb verwendet werden.",
+            "quote": "Die besondere Kennung IBMUSER DARF NUR bei der Neuinstallation zur Erzeugung von Kennungen mit Attribut SPECIAL benutzt werden. Diese Kennung MUSS danach dauerhaft gesperrt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Den Umgang mit der IBMUSER-Kennung gemäß SYS.1.7.A1 beschreiben.",
+            "baustein_id": "SYS.1.7",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie muss dauerhaft gesperrt werden", "is_correct": true },
+                { "text": "Sie muss als reguläre Administrationskennung weiterverwendet werden", "is_correct": false },
+                { "text": "Sie muss gelöscht werden", "is_correct": false },
+                { "text": "Sie muss in eine Gruppe mit eingeschränkten Rechten verschoben werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.7-002",
+            "text": "Welche RACF-Attribute MÜSSEN laut SYS.1.7.A1 restriktiv gehandhabt werden?",
+            "explanation": "SYS.1.7.A1 nennt explizit die RACF-Attribute SPECIAL, OPERATIONS, AUDITOR und die entsprechenden GROUP-Attribute sowie die User-ID 0 unter Unix System Services (USS) als besonders restriktiv zu handhabende Berechtigungen.",
+            "quote": "Insbesondere die RACF-Attribute SPECIAL, OPERATIONS, AUDITOR und die entsprechenden GROUP-Attribute sowie die User-ID 0 unter den Unix System Services (USS) MÜSSEN restriktiv gehandhabt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die restriktiv zu handhabenden RACF-Attribute gemäß SYS.1.7.A1 benennen.",
+            "baustein_id": "SYS.1.7",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "SPECIAL, OPERATIONS und AUDITOR", "is_correct": true },
+                { "text": "READ, WRITE und EXECUTE", "is_correct": false },
+                { "text": "ADMIN, OPERATOR und MONITOR", "is_correct": false },
+                { "text": "CREATE, DELETE und MODIFY", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.7-003",
+            "text": "Wie MUSS laut SYS.1.7.A6 die Kommunikation der Remote Support Facility (RSF) abgesichert werden?",
+            "explanation": "SYS.1.7.A6 fordert, dass die RSF-Kommunikation über Proxy-Server und zusätzlich über gesicherte Verbindungen (wie TLS) stattfinden muss. Wartungszugriffe durch das herstellende Unternehmen müssen von Betreibenden explizit freigegeben und nach Beendigung wieder deaktiviert werden.",
+            "quote": "Die RSF-Kommunikation MUSS über Proxy-Server und zusätzlich über gesicherte Verbindungen (wie TLS) stattfinden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Absicherungsanforderungen für die RSF-Kommunikation gemäß SYS.1.7.A6 beschreiben.",
+            "baustein_id": "SYS.1.7",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Über Proxy-Server und zusätzlich über gesicherte Verbindungen wie TLS", "is_correct": true },
+                { "text": "Ausschließlich über ein dediziertes VPN", "is_correct": false },
+                { "text": "Über unverschlüsselte direkte Verbindungen zum Hersteller", "is_correct": false },
+                { "text": "Ausschließlich über physische Vor-Ort-Zugänge", "is_correct": false }
+            ]
+        }
+    ]
+}

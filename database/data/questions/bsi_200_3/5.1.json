@@ -1,0 +1,165 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "5.1",
+        "chapter_title": "Risikoeinschätzung",
+        "page_start": 26,
+        "page_end": 33
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-5.1-001",
+            "text": "Von welchen zwei Einflussgrößen hängt laut BSI-Standard 200-3 die Höhe des Risikos ab, das von einer Gefährdung ausgeht?",
+            "explanation": "Der Standard legt fest, dass die Höhe des Risikos sowohl von der Eintrittshäufigkeit (Eintrittseinschätzung) der Gefährdung als auch von der Höhe des Schadens abhängt. Bei der Risikoeinschätzung müssen daher beide Einflussgrößen berücksichtigt werden. Schutzbedarf und Sicherheitsanforderungen sind keine Eingangsgrößen der Risikoeinschätzung selbst.",
+            "quote": "Wie hoch dieses Risiko ist, hängt sowohl von der Eintrittshäufigkeit (Eintrittseinschätzung) der Gefährdung als auch von der Höhe des Schadens ab, der dabei droht. Bei der Risikoeinschätzung müssen daher beide Einflussgrößen berücksichtigt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die zwei Einflussgrößen der Risikoeinschätzung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Eintrittshäufigkeit der Gefährdung", "is_correct": true },
+                { "text": "Höhe des Schadens, der bei Eintritt droht", "is_correct": true },
+                { "text": "Anzahl der betroffenen Mitarbeiter", "is_correct": false },
+                { "text": "Höhe des Investitionsvolumens für das Zielobjekt", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-002",
+            "text": "Welche Betrachtungsweise von Risiken ist laut BSI-Standard 200-3 in den meisten Fällen im Bereich der Informationssicherheit praktikabler?",
+            "explanation": "Der Standard argumentiert, dass die quantitative Risikobetrachtung sehr aufwändig ist und umfangreiches statistisches Datenmaterial voraussetzt, das im dynamischen Umfeld der Informationssicherheit meist fehlt. Daher ist es praktikabler, sowohl für Eintrittshäufigkeit als auch potenzielle Schadenshöhe mit qualitativen Kategorien zu arbeiten. Die anderen Optionen beschreiben keine im Standard empfohlene Praxis.",
+            "quote": "Daher ist es in den meisten Fällen praktikabler, sowohl für die Eintrittshäufigkeit als auch für die potenzielle Schadenshöhe mit qualitativen Kategorien zu arbeiten.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die bevorzugte Betrachtungsweise für Risiken in der Informationssicherheit begründen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Qualitative Kategorien für Eintrittshäufigkeit und Schadenshöhe", "is_correct": true },
+                { "text": "Rein quantitative Betrachtung mit statistischen Modellen", "is_correct": false },
+                { "text": "Rein monetäre Bewertung über ROI-Kennzahlen", "is_correct": false },
+                { "text": "Zufällige Stichproben mittels Simulation", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-003",
+            "text": "Wie viele Kategorien pro Dimension sollten laut BSI-Standard 200-3 bei der qualitativen Risikobetrachtung maximal gewählt werden?",
+            "explanation": "Der Standard legt fest, dass pro Dimension nicht mehr als fünf Kategorien gewählt werden sollten. Die anderen Zahlen werden nicht als Obergrenze genannt.",
+            "quote": "Pro Dimension sollten dabei nicht mehr als fünf Kategorien gewählt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Obergrenze für Kategorien pro Dimension benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Nicht mehr als fünf Kategorien", "is_correct": true },
+                { "text": "Nicht mehr als drei Kategorien", "is_correct": false },
+                { "text": "Nicht mehr als acht Kategorien", "is_correct": false },
+                { "text": "Genau zehn Kategorien", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-004",
+            "text": "Welche Kategorien zur Eintrittshäufigkeit nutzt der IT-Grundschutz laut BSI-Standard 200-3?",
+            "explanation": "Der Standard nennt ausdrücklich die Kategorien selten, mittel, häufig und sehr häufig für die Eintrittshäufigkeit. Kategorien wie „nie“ oder „mehrmals täglich“ gehören nicht zu dieser Liste.",
+            "quote": "Eintrittshäufigkeit: selten, mittel, häufig, sehr häufig",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Eintrittshäufigkeitskategorien des IT-Grundschutzes benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "selten, mittel, häufig, sehr häufig", "is_correct": true },
+                { "text": "nie, gelegentlich, regelmäßig, ständig", "is_correct": false },
+                { "text": "niedrig, mittel, hoch, sehr hoch", "is_correct": false },
+                { "text": "einmalig, jährlich, monatlich, täglich", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-005",
+            "text": "Welche Kategorien zur potenziellen Schadenshöhe nutzt der IT-Grundschutz laut BSI-Standard 200-3?",
+            "explanation": "Der Standard nennt für die potenzielle Schadenshöhe die Kategorien vernachlässigbar, begrenzt, beträchtlich und existenzbedrohend. „Katastrophal“, „minimal“ oder „tolerierbar“ gehören nicht zu dieser vom BSI vorgesehenen Liste.",
+            "quote": "Potenzielle Schadenshöhe: vernachlässigbar, begrenzt, beträchtlich, existenzbedrohend",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Schadenshöhenkategorien benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "vernachlässigbar, begrenzt, beträchtlich, existenzbedrohend", "is_correct": true },
+                { "text": "gering, mittel, hoch, katastrophal", "is_correct": false },
+                { "text": "minimal, tolerierbar, kritisch, katastrophal", "is_correct": false },
+                { "text": "niedrig, mittel, hoch, sehr hoch", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-006",
+            "text": "Wie häufig tritt laut BSI-Standard 200-3 ein Ereignis ein, das in die Kategorie „mittel“ der Eintrittshäufigkeit fällt?",
+            "explanation": "Der Standard definiert die Kategorie „mittel“ ausdrücklich als: Ereignis tritt einmal alle fünf Jahre bis einmal im Jahr ein. Die anderen Angaben entsprechen anderen Kategorien oder sind nicht Teil der Definition.",
+            "quote": "mittel                          Ereignis tritt einmal alle fünf Jahre bis einmal im Jahr ein.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die zeitliche Definition der Kategorie „mittel“ benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Einmal alle fünf Jahre bis einmal im Jahr", "is_correct": true },
+                { "text": "Mehrmals im Monat", "is_correct": false },
+                { "text": "Einmal im Jahr bis einmal pro Monat", "is_correct": false },
+                { "text": "Höchstens alle fünf Jahre", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-007",
+            "text": "Wie beschreibt der BSI-Standard 200-3 die Schadensauswirkungen der Kategorie „existenzbedrohend“?",
+            "explanation": "Der Standard definiert diese Kategorie als: Die Schadensauswirkungen können ein existenziell bedrohliches, katastrophales Ausmaß erreichen. Die anderen Formulierungen entsprechen niedrigeren Kategorien oder sind nicht Teil der Definition.",
+            "quote": "existenzbedrohend                       Die Schadensauswirkungen können ein existenziell bedrohliches, ka",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Beschreibung der Schadenskategorie „existenzbedrohend“ wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 27,
+            "page_end": null,
+            "answers": [
+                { "text": "Schadensauswirkungen können ein existenziell bedrohliches, katastrophales Ausmaß erreichen.", "is_correct": true },
+                { "text": "Die Schadensauswirkungen sind begrenzt und überschaubar.", "is_correct": false },
+                { "text": "Die Schadensauswirkungen sind gering und können vernachlässigt werden.", "is_correct": false },
+                { "text": "Die Schadensauswirkungen können beträchtlich sein.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-5.1-008",
+            "text": "Wer muss laut BSI-Standard 200-3 den Risikoanteil Schadenshöhe einschätzen?",
+            "explanation": "Der Standard stellt klar: Der Risikoanteil Schadenshöhe kann nur von der Institution selbst eingeschätzt werden. Externe Stellen, das BSI oder ausschließlich Versicherungen werden nicht als zuständig genannt.",
+            "quote": "Der Risikoanteil Schadenshöhe kann nur von der Institution selbst eingeschätzt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuständigkeit für die Einschätzung der Schadenshöhe benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Nur die Institution selbst", "is_correct": true },
+                { "text": "Nur das BSI", "is_correct": false },
+                { "text": "Ausschließlich die beauftragte Versicherung", "is_correct": false },
+                { "text": "Ausschließlich externe Wirtschaftsprüfer", "is_correct": false }
+            ]
+        }
+    ]
+}

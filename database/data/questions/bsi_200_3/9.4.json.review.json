@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All six questions accurately reflect section 9.4. Quotes match after normalization (table content with whitespace collapse produces correct substrings). Correct answers are directly supported by the ISO/IEC 31000 mapping table. Distractors are clearly wrong. Topic 'standards' is appropriate since this section explicitly compares BSI and ISO terminology. Question 9.4-005 labeled 'experte' is appropriate as it requires synthesizing the three-part structure of Risk Assessment from the table. All other questions are basis, which is fitting. Page_start values (52) are within the manifest range of 52-54. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-9.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.4-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.4-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.4-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-9.4-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

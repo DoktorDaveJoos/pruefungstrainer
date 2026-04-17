@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "ORP.4",
+        "chapter_title": "Identitäts- und Berechtigungsmanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-orp.4-001",
+            "text": "Welches Prinzip MUSS laut ORP.4.A2 bei der Vergabe von Berechtigungen beachtet werden?",
+            "explanation": "Laut ORP.4.A2 dürfen Berechtigungen nur aufgrund des tatsächlichen Bedarfs und der Notwendigkeit zur Aufgabenerfüllung vergeben werden. Dies entspricht dem Prinzip der geringsten Berechtigungen (Least Privileges) und dem Erforderlichkeitsprinzip (Need-to-know).",
+            "quote": "Benutzendenkennungen und Berechtigungen DÜRFEN NUR aufgrund des tatsächlichen Bedarfs und der Notwendigkeit zur Aufgabenerfüllung vergeben werden (Prinzip der geringsten Berechtigungen, englisch Least Privileges und Erforderlichkeitsprinzip, englisch Need-to-know).",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Least-Privileges- und Need-to-know-Prinzip bei der Berechtigungsvergabe benennen.",
+            "baustein_id": "ORP.4.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Prinzip der geringsten Berechtigungen (Least Privileges) und das Erforderlichkeitsprinzip (Need-to-know)", "is_correct": true },
+                { "text": "Das Prinzip der maximalen Verfügbarkeit für alle Mitarbeitenden", "is_correct": false },
+                { "text": "Das Prinzip der einmaligen Genehmigung ohne spätere Überprüfung", "is_correct": false },
+                { "text": "Das Prinzip der abteilungsweiten Standardberechtigungen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.4-002",
+            "text": "Was DÜRFEN Passwörter laut ORP.4.A8 NICHT?",
+            "explanation": "Laut ORP.4.A8 dürfen Passwörter nicht mehrfach verwendet werden. Für jedes IT-System bzw. jede Anwendung muss ein eigenständiges Passwort verwendet werden. Passwörter, die leicht zu erraten sind oder in gängigen Passwortlisten geführt werden, dürfen nicht verwendet werden.",
+            "quote": "Passwörter DÜRFEN NICHT mehrfach verwendet werden. Für jedes IT-System bzw. jede Anwendung MUSS ein eigenständiges Passwort verwendet werden. Passwörter, die leicht zu erraten sind oder in gängigen Passwortlisten geführt werden, DÜRFEN NICHT verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Verbote bei der Passwortverwendung nach ORP.4 benennen.",
+            "baustein_id": "ORP.4.A8",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Mehrfach verwendet werden", "is_correct": true },
+                { "text": "Auf programmierbaren Funktionstasten gespeichert werden", "is_correct": true },
+                { "text": "In einem Passwort-Manager gespeichert werden", "is_correct": false },
+                { "text": "Aus mehr als 20 Zeichen bestehen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.4-003",
+            "text": "Was SOLLTEN reine zeitgesteuerte Passwortwechsel laut ORP.4.A23?",
+            "explanation": "Laut ORP.4.A23 sollten IT-Systeme oder Anwendungen nur mit einem validen Grund zum Wechsel des Passworts auffordern. Reine zeitgesteuerte Wechsel sollten vermieden werden. Stattdessen müssen Maßnahmen ergriffen werden, um die Kompromittierung von Passwörtern zu erkennen.",
+            "quote": "IT-Systeme oder Anwendungen SOLLTEN nur mit einem validen Grund zum Wechsel des Passworts auffordern. Reine zeitgesteuerte Wechsel SOLLTEN vermieden werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die aktuelle Empfehlung zu zeitgesteuerten Passwortwechseln erläutern.",
+            "baustein_id": "ORP.4.A23",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Vermieden werden", "is_correct": true },
+                { "text": "Alle 30 Tage durchgeführt werden", "is_correct": false },
+                { "text": "Mindestens quartalsweise stattfinden", "is_correct": false },
+                { "text": "Durch die Institutionsleitung persönlich angeordnet werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.4-004",
+            "text": "Womit SOLLTEN Benutzendenkennungen mit weitreichenden Berechtigungen laut ORP.4.A10 geschützt werden?",
+            "explanation": "Laut ORP.4.A10 sollten Benutzendenkennungen mit weitreichenden Berechtigungen mit einer Mehr-Faktor-Authentisierung geschützt werden, z. B. mit kryptografischen Zertifikaten, Chipkarten oder Token.",
+            "quote": "Benutzendenkennungen mit weitreichenden Berechtigungen SOLLTEN mit einer Mehr-Faktor-Authentisierung, z. B. mit kryptografischen Zertifikaten, Chipkarten oder Token, geschützt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den empfohlenen Schutz privilegierter Konten benennen.",
+            "baustein_id": "ORP.4.A10",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Mit einer Mehr-Faktor-Authentisierung", "is_correct": true },
+                { "text": "Mit einem besonders langen Passwort von mindestens 30 Zeichen", "is_correct": false },
+                { "text": "Durch eine tägliche Passwortänderung", "is_correct": false },
+                { "text": "Durch Beschränkung auf lokalen Konsolenzugang", "is_correct": false }
+            ]
+        }
+    ]
+}

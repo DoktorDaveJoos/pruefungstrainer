@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.3.4",
+        "chapter_title": "Samba",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.3.4-001",
+            "text": "Was MUSS laut APP.3.4 bei der sicheren Grundkonfiguration eines Samba-Servers beachtet werden?",
+            "explanation": "Anforderung APP.3.4.A2 verlangt, dass Samba so konfiguriert werden muss, dass Verbindungen nur von sicheren Hosts und Netzen entgegengenommen werden. Nach jeder Änderung muss die Syntax der Konfigurationsdatei geprüft werden. Zusätzliche Softwaremodule wie SWAT dürfen nicht installiert werden.",
+            "quote": "Samba MUSS vom IT-Betrieb so konfiguriert werden, dass Verbindungen nur von sicheren Hosts und Netzen entgegengenommen werden. • Dabei MUSS nach jeder Änderung überprüft werden, ob die Syntax der Konfigurationsdatei noch korrekt ist. Zusätzliche Softwaremodule wie SWAT DÜRFEN NICHT installiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderungen an die sichere Grundkonfiguration eines Samba-Servers benennen.",
+            "baustein_id": "APP.3.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Verbindungen dürfen nur von sicheren Hosts und Netzen entgegengenommen werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zusätzliche Softwaremodule wie SWAT dürfen nicht installiert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "SWAT muss als primäres Administrationswerkzeug installiert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Verbindungen von allen Hosts und Netzen müssen akzeptiert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.4-002",
+            "text": "Was SOLLTE laut APP.3.4 bei der Konfiguration von Kerberos unter Samba beachtet werden?",
+            "explanation": "Anforderung APP.3.4.A9 empfiehlt, dass zur Authentisierung das von Samba implementierte Heimdal Kerberos KDC verwendet werden sollte. Es sollten nur sichere Verschlüsselungsverfahren für Kerberos-Tickets benutzt werden. Bei Kerberos-Authentisierung sollte der zentrale Zeitserver lokal auf dem Samba-Server installiert werden.",
+            "quote": "Zur Authentisierung SOLLTE das von Samba implementierte Heimdal Kerberos Key Distribution Center (KDC) verwendet werden. • Es SOLLTEN nur sichere Verschlüsselungsverfahren für Kerberos-Tickets benutzt werden. Wird mit Kerberos authentisiert, SOLLTE der zentrale Zeitserver lokal auf dem Samba-Server installiert werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Empfehlungen zur Kerberos-Konfiguration unter Samba erläutern.",
+            "baustein_id": "APP.3.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das von Samba implementierte Heimdal Kerberos KDC sollte zur Authentisierung verwendet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur sichere Verschlüsselungsverfahren sollten für Kerberos-Tickets benutzt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es sollte ein externer Kerberos-Server eines Drittanbieters ohne Verschlüsselung eingesetzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kerberos sollte grundsätzlich zugunsten von NTLM deaktiviert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.4-003",
+            "text": "Was SOLLTE bei erhöhtem Schutzbedarf laut APP.3.4 mit den Datenpaketen unter Samba geschehen?",
+            "explanation": "Anforderung APP.3.4.A15 empfiehlt bei erhöhtem Schutzbedarf, die Datenpakete mit den ab SMB Version 3 integrierten Verschlüsselungsverfahren zu verschlüsseln, um die Sicherheit auf dem Transportweg zu gewährleisten.",
+            "quote": "Um die Sicherheit der Datenpakete auf dem Transportweg zu gewährleisten, SOLLTEN die Datenpakete mit den ab SMB Version 3 integrierten Verschlüsselungsverfahren verschlüsselt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Verschlüsselung der Datenpakete unter Samba bei erhöhtem Schutzbedarf benennen.",
+            "baustein_id": "APP.3.4",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie sollten mit den ab SMB Version 3 integrierten Verschlüsselungsverfahren verschlüsselt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie sollten unverschlüsselt übertragen werden, um die Performance zu maximieren",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie sollten mit dem veralteten SMB Version 1 verschlüsselt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Verschlüsselung ist bei Samba technisch nicht möglich",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

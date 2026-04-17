@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "2.6",
+        "chapter_title": "Übersicht über den Informationssicherheitsprozess",
+        "page_start": 14,
+        "page_end": 17
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-2.6-001",
+            "text": "Welche Teilschritte gehören laut BSI-Standard 200-2 zur Phase „Initiierung des Sicherheitsprozesses“?",
+            "explanation": "Der Standard listet unter der Initiierung des Sicherheitsprozesses die Übernahme der Verantwortung durch die Leitungsebene, Konzeption und Planung des Sicherheitsprozesses, die Bereitstellung finanzieller, personeller und zeitlicher Ressourcen sowie die Entscheidung für eine Vorgehensweise auf. Das Erstellen einer Sicherheitskonzeption ist eine eigene Phase und gehört nicht zur Initiierung.",
+            "quote": "Initiierung des Sicherheitsprozesses • Übernahme der Verantwortung durch die Leitungsebene • Konzeption und Planung des Sicherheitsprozesses • Bereitstellung von finanziellen, personellen und zeitlichen Ressourcen • Entscheidung für eine Vorgehensweise",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Teilschritte der Initiierungsphase des Sicherheitsprozesses benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "Übernahme der Verantwortung durch die Leitungsebene", "is_correct": true },
+                { "text": "Konzeption und Planung des Sicherheitsprozesses", "is_correct": true },
+                { "text": "Bereitstellung finanzieller, personeller und zeitlicher Ressourcen", "is_correct": true },
+                { "text": "Erstellung einer Sicherheitskonzeption", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.6-002",
+            "text": "Wann muss laut BSI-Standard 200-2 zusätzlich zum Soll-Ist-Vergleich eine Risikoanalyse durchgeführt werden?",
+            "explanation": "Der Standard legt fest, dass nur bei einem signifikant höheren Schutzbedarf zusätzlich eine Risikoanalyse unter Beachtung von Kosten- und Wirksamkeitsaspekten durchgeführt werden muss. Für den normalen Schutzbedarf reichen die Bausteine des IT-Grundschutz-Kompendiums aus.",
+            "quote": "Nur bei einem signifikant höheren Schutzbedarf muss zusätzlich eine Risikoanalyse unter Beachtung von Kosten- und Wirksamkeitsaspekten durchgeführt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Auslöser für eine zusätzliche Risikoanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Bei signifikant höherem Schutzbedarf", "is_correct": true },
+                { "text": "Bei jeder Standard-Absicherung", "is_correct": false },
+                { "text": "Immer bei der Basis-Absicherung", "is_correct": false },
+                { "text": "Nur bei Zertifizierung nach ISO 9001", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.6-003",
+            "text": "Welches Vorgehen wendet der IT-Grundschutz laut BSI-Standard 200-2 bei der Erstellung einer Sicherheitskonzeption an?",
+            "explanation": "Der Standard beschreibt, dass bei Anwendung des IT-Grundschutzes ein Soll-Ist-Vergleich zwischen den Sicherheitsanforderungen aus den relevanten Bausteinen und den in der Institution bereits realisierten Maßnahmen durchgeführt wird. Fehlende oder nur unzureichend erfüllte Anforderungen zeigen die Sicherheitsdefizite auf.",
+            "quote": "Bei Anwendung des IT-Grundschutzes wird ein Soll-Ist-Vergleich zwischen den Sicherheitsanforderungen aus den relevanten Bausteinen des IT-Grundschutz-Kompendiums und den in der Institution bereits realisierten Maßnahmen durchgeführt. Dabei festgestellte fehlende oder nur unzureichend erfüllte Anforderungen zeigen die Sicherheitsdefizite auf, die es durch die Umsetzung von aus den Anforderungen abgeleiteten Maßnahmen zu beheben gilt.",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Das Prinzip des Soll-Ist-Vergleichs im IT-Grundschutz beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Einen Soll-Ist-Vergleich zwischen Baustein-Anforderungen und realisierten Maßnahmen", "is_correct": true },
+                { "text": "Ausschließlich eine quantitative Risikoanalyse", "is_correct": false },
+                { "text": "Eine reine Eigenerklärung ohne Anforderungsvergleich", "is_correct": false },
+                { "text": "Eine verpflichtende Penetrationstestung vorab", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.6-004",
+            "text": "Was beschreibt eine Leitlinie zur Informationssicherheit laut BSI-Standard 200-2?",
+            "explanation": "Der Standard bezeichnet die Leitlinie als wesentliche Grundlage für die Ausgestaltung des Sicherheitsprozesses. Sie beschreibt die angestrebten Sicherheitsziele, das Sicherheitsniveau, die Motivation und die Maßnahmen und Strukturen zur Zielerreichung. Alle Mitarbeiter sollen ihre Inhalte kennen.",
+            "quote": "Eine wesentliche Grundlage für die Ausgestaltung des Sicherheitsprozesses ist die Leitlinie zur Informationssicherheit. Sie beschreibt, welche Sicherheitsziele und welches Sicherheitsniveau die Institution anstrebt, was die Motivation hierfür ist und mit welchen Maßnahmen und mit welchen Strukturen dies erreicht werden soll.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Inhalt einer Leitlinie zur Informationssicherheit beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Angestrebte Sicherheitsziele und Sicherheitsniveau", "is_correct": true },
+                { "text": "Die Motivation der Institution für Sicherheit", "is_correct": true },
+                { "text": "Maßnahmen und Strukturen zur Zielerreichung", "is_correct": true },
+                { "text": "Konkrete technische Konfigurationsbefehle einzelner Systeme", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.6-005",
+            "text": "Welche Einschätzung gibt der BSI-Standard 200-2 zur vollumfänglichen Umsetzung der Standard-Absicherung in einem einzigen großen Schritt?",
+            "explanation": "Der Standard bewertet die vollständige Umsetzung der Standard-Absicherung in einem einzigen großen Schritt oft als zu ehrgeiziges Ziel. Viele kleine Schritte und ein langfristiger, kontinuierlicher Verbesserungsprozess ohne hohe Investitionskosten zu Beginn seien oft erfolgversprechender. Es kann daher besser sein, zunächst nur die dringend erforderlichen Vorkehrungen umzusetzen.",
+            "quote": "Die ganzheitliche Umsetzung von Informationssicherheit (Standard-Absicherung) in einem einzelnen großen Schritt ist oft ein zu ehrgeiziges Ziel. Viele kleine Schritte und ein langfristiger, kontinuierlicher Verbesserungsprozess ohne hohe Investitionskosten zu Beginn sind oft erfolgversprechender.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Einschätzung zu schrittweiser vs. sofortiger Umsetzung der Standard-Absicherung wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": 15,
+            "answers": [
+                { "text": "Oft ein zu ehrgeiziges Ziel; schrittweises Vorgehen ist erfolgversprechender", "is_correct": true },
+                { "text": "Zwingend vorgeschrieben und in einem Rutsch umzusetzen", "is_correct": false },
+                { "text": "Nur für zertifizierte Unternehmen verpflichtend", "is_correct": false },
+                { "text": "Durch den BSI-Standard 200-3 ausgeschlossen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.6-006",
+            "text": "Was muss bei der Aufrechterhaltung und kontinuierlichen Verbesserung der Informationssicherheit laut BSI-Standard 200-2 regelmäßig überprüft werden?",
+            "explanation": "Der Standard fordert, dass der Sicherheitsprozess und die Organisationsstrukturen regelmäßig darauf überprüft werden, ob sie angemessen, wirksam und effizient sind. Ebenso ist zu analysieren, ob die Maßnahmen noch zum Informationsverbund passen, praxisnah sind und korrekt umgesetzt wurden.",
+            "quote": "Daher müssen der Sicherheitsprozess und die Organisationsstrukturen für Informationssicherheit regelmäßig darauf überprüft werden, ob sie angemessen, wirksam und effizient sind. Ebenso ist zu analysieren, ob die Maßnahmen des Sicherheitskonzepts noch zum Informationsverbund passen, ob sie praxisnah sind und ob sie korrekt umgesetzt wurden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Überprüfungsgegenstände in der Aufrechterhaltungsphase benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": 17,
+            "answers": [
+                { "text": "Ob Sicherheitsprozess und Organisationsstrukturen angemessen, wirksam und effizient sind", "is_correct": true },
+                { "text": "Ob die Maßnahmen noch zum Informationsverbund passen, praxisnah sind und korrekt umgesetzt wurden", "is_correct": true },
+                { "text": "Ob alle Mitarbeiter das Kompendium auswendig kennen", "is_correct": false },
+                { "text": "Ob externe Dienstleister die Revision übernommen haben", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.6-007",
+            "text": "Was bedeutet der im BSI-Standard 200-2 beschriebene „Keimzellen“-Ansatz für den Sicherheitsprozess?",
+            "explanation": "Der Standard empfiehlt, zunächst kleinere, überschaubare Schritte zu gehen — zum Beispiel die Basis-Absicherung umzusetzen oder in Bereichen mit höchsten Sicherheitsanforderungen die Kern-Absicherung —, und von diesen „Keimzellen“ ausgehend kontinuierlich die Sicherheit in der Gesamtorganisation zu verbessern. Ein sofortiges vollumfängliches Rollout oder die Beschränkung auf einen einzigen Bereich wird nicht empfohlen.",
+            "quote": "So kann es besser sein, zunächst nur die dringend erforderlichen Sicherheitsvorkehrungen umzusetzen • oder in Bereichen mit höchsten Sicherheitsanforderungen schnell das erforderliche hohe Sicherheitsniveau zu erreichen (Kern-Absicherung). Von diesen Keimzellen ausgehend, sollte dann kontinuierlich die Sicherheit in der Gesamtorganisation verbessert werden.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Den Keimzellen-Ansatz für die schrittweise Ausweitung der Sicherheit erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 15,
+            "page_end": null,
+            "answers": [
+                { "text": "Mit Basis- oder Kern-Absicherung starten und von dort die Sicherheit kontinuierlich ausweiten", "is_correct": true },
+                { "text": "Sofortiger vollumfänglicher Rollout der Standard-Absicherung in der gesamten Institution", "is_correct": false },
+                { "text": "Beschränkung der Sicherheitsbemühungen dauerhaft auf einen einzigen Bereich", "is_correct": false },
+                { "text": "Die Einführung einer Sicherheitskonzeption ausschließlich durch externe Berater", "is_correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "ISMS.1",
+        "chapter_title": "Sicherheitsmanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-isms.1-001",
+            "text": "Wer MUSS die Gesamtverantwortung für Informationssicherheit in der Institution übernehmen?",
+            "explanation": "Laut ISMS.1.A1 muss die Institutionsleitung die Gesamtverantwortung für Informationssicherheit übernehmen. Sie muss den Sicherheitsprozess initiieren, steuern und kontrollieren. Weder der ISB noch der IT-Betrieb oder externe Berater tragen die Gesamtverantwortung.",
+            "quote": "Die Institutionsleitung MUSS die Gesamtverantwortung für Informationssicherheit in der Institution übernehmen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gesamtverantwortung der Institutionsleitung für Informationssicherheit benennen.",
+            "baustein_id": "ISMS.1.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Institutionsleitung", "is_correct": true },
+                { "text": "Der oder die Informationssicherheitsbeauftragte", "is_correct": false },
+                { "text": "Der IT-Betrieb", "is_correct": false },
+                { "text": "Die Personalabteilung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-isms.1-002",
+            "text": "Was MUSS die übergeordnete Leitlinie zur Informationssicherheit laut ISMS.1 beschreiben?",
+            "explanation": "Die Leitlinie zur Informationssicherheit muss den Stellenwert der Informationssicherheit, die Sicherheitsziele, die wichtigsten Aspekte der Sicherheitsstrategie sowie die Organisationsstruktur für Informationssicherheit beschreiben. Technische Detailkonzepte, Notfallpläne oder Risikobewertungen einzelner Systeme gehören nicht in die Leitlinie.",
+            "quote": "Die Institutionsleitung MUSS eine übergeordnete Leitlinie zur Informationssicherheit verabschieden. Diese MUSS den Stellenwert der Informationssicherheit, die Sicherheitsziele, die wichtigsten Aspekte der Sicherheitsstrategie sowie die Organisationsstruktur für Informationssicherheit beschreiben.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtinhalte der Leitlinie zur Informationssicherheit benennen.",
+            "baustein_id": "ISMS.1.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Den Stellenwert der Informationssicherheit und die Sicherheitsziele", "is_correct": true },
+                { "text": "Die Organisationsstruktur für Informationssicherheit", "is_correct": true },
+                { "text": "Die technische Konfiguration aller IT-Systeme", "is_correct": false },
+                { "text": "Die Ergebnisse einzelner Risikoanalysen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-isms.1-003",
+            "text": "Welche Möglichkeit MUSS die Institutionsleitung dem oder der ISB einräumen?",
+            "explanation": "Laut ISMS.1.A4 muss die Institutionsleitung dem oder der ISB die Möglichkeit einräumen, bei Bedarf direkt an sie selbst zu berichten. Dies stellt sicher, dass sicherheitsrelevante Informationen ohne Umwege die Leitungsebene erreichen.",
+            "quote": "Die Institutionsleitung MUSS dem oder der ISB die Möglichkeit einräumen, bei Bedarf direkt an sie selbst zu berichten.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das direkte Berichtsrecht des ISB an die Institutionsleitung erläutern.",
+            "baustein_id": "ISMS.1.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Bei Bedarf direkt an die Institutionsleitung zu berichten", "is_correct": true },
+                { "text": "Eigenständig Budgetentscheidungen zu treffen", "is_correct": false },
+                { "text": "Weisungen an alle Abteilungen zu erteilen", "is_correct": false },
+                { "text": "Externe Audits ohne Rücksprache zu beauftragen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-isms.1-004",
+            "text": "Welche Anforderungen gelten laut ISMS.1 für den Vertrag mit einem oder einer externen ISB?",
+            "explanation": "Laut ISMS.1.A5 muss der Vertrag alle Aufgaben des ISB sowie die damit verbundenen Rechte und Pflichten umfassen, eine geeignete Vertraulichkeitsvereinbarung enthalten und eine kontrollierte Beendigung des Vertragsverhältnisses einschließlich der Übergabe der Aufgaben gewährleisten.",
+            "quote": "Der Vertrag mit einem oder einer externen ISB MUSS alle Aufgaben des oder der ISB sowie die damit verbundenen Rechte und Pflichten umfassen. Der Vertrag MUSS eine geeignete Vertraulichkeitsvereinbarung umfassen. Der Vertrag MUSS eine kontrollierte Beendigung des Vertragsverhältnisses, einschließlich der Übergabe der Aufgaben an die Auftraggebenden, gewährleisten.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die vertraglichen Anforderungen bei externer ISB-Bestellung vollständig benennen.",
+            "baustein_id": "ISMS.1.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine geeignete Vertraulichkeitsvereinbarung muss enthalten sein", "is_correct": true },
+                { "text": "Eine kontrollierte Beendigung einschließlich Aufgabenübergabe muss gewährleistet sein", "is_correct": true },
+                { "text": "Der Vertrag muss eine automatische Verlängerungsklausel enthalten", "is_correct": false },
+                { "text": "Der Vertrag muss eine Haftpflichtversicherung des ISB vorschreiben", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-isms.1-005",
+            "text": "Was SOLLTE laut ISMS.1.A11 regelmäßig überprüft und aktualisiert werden?",
+            "explanation": "Laut ISMS.1.A11 sollen der Sicherheitsprozess, die Sicherheitskonzepte, die Leitlinie zur Informationssicherheit und die Organisationsstruktur für Informationssicherheit regelmäßig auf Wirksamkeit und Angemessenheit überprüft und aktualisiert werden.",
+            "quote": "Der Sicherheitsprozess, die Sicherheitskonzepte, die Leitlinie zur Informationssicherheit und die Organisationsstruktur für Informationssicherheit SOLLTEN regelmäßig auf Wirksamkeit und Angemessenheit überprüft und aktualisiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die regelmäßig zu überprüfenden Elemente des ISMS benennen.",
+            "baustein_id": "ISMS.1.A11",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sicherheitsprozess, Sicherheitskonzepte, Leitlinie und Organisationsstruktur für Informationssicherheit", "is_correct": true },
+                { "text": "Ausschließlich die technischen IT-Systeme und deren Konfiguration", "is_correct": false },
+                { "text": "Nur die Leitlinie zur Informationssicherheit", "is_correct": false },
+                { "text": "Nur die Budgetplanung für Informationssicherheit", "is_correct": false }
+            ]
+        }
+    ]
+}

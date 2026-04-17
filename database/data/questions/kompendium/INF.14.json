@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.14",
+        "chapter_title": "Gebäudeautomation",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.14-001",
+            "text": "Welche Aufgaben führt die Gebäudeautomation (GA) laut INF.14 unter anderem durch?",
+            "explanation": "Laut INF.14 führt die GA unter anderem Automatisierungsaufgaben wie automatisiertes Messen, Steuern und Regeln (MSR) sowie Aufgaben für Monitoring, Service und Diagnose, Optimierung, Bedienung und Management für die TGA eines Gebäudes durch.",
+            "quote": "Die GA führt unter anderem Automatisierungsaufgaben wie automatisiertes Messen, Steuern und Regeln (MSR) sowie Aufgaben für Monitoring, Service und Diagnose, Optimierung, Bedienung und Management für die TGA eines Gebäudes durch.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Aufgaben der Gebäudeautomation nach INF.14 benennen.",
+            "baustein_id": "INF.14",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Automatisiertes Messen, Steuern und Regeln (MSR)", "is_correct": true },
+                { "text": "Monitoring, Service und Diagnose, Optimierung, Bedienung und Management", "is_correct": true },
+                { "text": "Personalplanung und Arbeitszeiterfassung", "is_correct": false },
+                { "text": "Ausschließlich die Steuerung von Aufzügen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.14-002",
+            "text": "Was ist die Gebäudeautomation (GA) laut INF.14 in Bezug auf das technische Gebäudemanagement?",
+            "explanation": "Laut INF.14 ist die GA ein zentrales Werkzeug des TGM, um für den Gebäudebetrieb die gesetzte Zielrichtung umzusetzen. Sie umfasst alle Produkte und Dienstleistungen zum übergreifenden, automatisierten Betrieb der TGA.",
+            "quote": "Die GA ist somit ein zentrales Werkzeug des TGM, um für den Gebäudebetrieb die gesetzte Zielrichtung umzusetzen. Sie umfasst alle Produkte und Dienstleistungen zum übergreifenden, automatisierten Betrieb der TGA.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle der GA im Kontext des TGM nach INF.14 erklären.",
+            "baustein_id": "INF.14",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein zentrales Werkzeug des TGM für den übergreifenden, automatisierten Betrieb der TGA", "is_correct": true },
+                { "text": "Ein eigenständiges, vom TGM unabhängiges System", "is_correct": false },
+                { "text": "Eine reine Softwarelösung ohne Hardwarekomponenten", "is_correct": false },
+                { "text": "Ausschließlich eine Klimasteuerung für Serverräume", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.14-003",
+            "text": "Welche Kriterien können laut INF.14 für die Zielrichtung der Gebäudeautomation gelten?",
+            "explanation": "Laut INF.14 können Kriterien für die Zielrichtung der GA Funktionalität, Energieeffizienz und Nachhaltigkeit, Sicherheit, Verfügbarkeit oder Komfort sein.",
+            "quote": "Kriterien für die Zielrichtung können Funktionalität, Energieeffizienz und Nachhaltigkeit, Sicherheit, Verfügbarkeit oder Komfort sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zielkriterien der Gebäudeautomation nach INF.14 benennen.",
+            "baustein_id": "INF.14",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Funktionalität, Energieeffizienz und Nachhaltigkeit, Sicherheit, Verfügbarkeit oder Komfort", "is_correct": true },
+                { "text": "Ausschließlich die Minimierung der Betriebskosten", "is_correct": false },
+                { "text": "Nur die Einhaltung gesetzlicher Mindestanforderungen", "is_correct": false },
+                { "text": "Die Maximierung der Gebäudefläche", "is_correct": false }
+            ]
+        }
+    ]
+}

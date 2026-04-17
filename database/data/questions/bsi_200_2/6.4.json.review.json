@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 5 questions are factually accurate with verbatim quotes. They correctly cover the Realisierung phase of Basis-Absicherung. Topic methodik is appropriate for process/methodology content. No issues found.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-6.4-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.4-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.4-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.4-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.4-005",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

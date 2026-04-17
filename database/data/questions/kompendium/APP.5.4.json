@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.5.4",
+        "chapter_title": "Unified Communications und Collaboration (UCC)",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.5.4-001",
+            "text": "Welche Aspekte MUSS die Planung von UCC mindestens beinhalten?",
+            "explanation": "Anforderung APP.5.4.A1 listet die Pflichtaspekte der UCC-Planung auf, darunter Einsatzzwecke, funktionale Anforderungen, Anforderungen zur Absicherung, Festlegung zu übertragbaren Informationen, Analyse der Abhängigkeiten, Produkt- und Dienstauswahl sowie organisatorische Regelungen. Personalplanung und Budgetierung werden nicht genannt.",
+            "quote": "Die Planung MUSS insbesondere die Wechselwirkungen der UCC-Dienste berücksichtigen und mindestens folgende Aspekte beinhalten: • Einsatzzwecke der vorgesehenen UCC-Dienste • Funktionale Anforderungen an UCC als Gesamtheit und an die einzelnen UCC-Dienste • Anforderungen zur Absicherung von UCC • Festlegung zu Informationen und Daten, die über UCC übertragen werden dürfen • Analyse der Kommunikation und der Abhängigkeiten von UCC-Diensten untereinander • Produkt- und Dienstauswahl ausgehend von den definierten Anforderungen • Aufstellen von organisatorischen Regelungen, um die UCC-Dienste zu benutzen",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtbestandteile der UCC-Planung aufzählen.",
+            "baustein_id": "APP.5.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Einsatzzwecke, funktionale Anforderungen und Anforderungen zur Absicherung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Analyse der Abhängigkeiten von UCC-Diensten untereinander und Produkt- und Dienstauswahl",
+                    "is_correct": true
+                },
+                {
+                    "text": "Personalplanung und Budgetierung für die UCC-Einführung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Marktforschung und Wettbewerbsanalyse der UCC-Anbieter",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.4-002",
+            "text": "Welche Dienste und Funktionen MÜSSEN bei UCC auf Notwendigkeit geprüft und gegebenenfalls deaktiviert werden?",
+            "explanation": "Anforderung APP.5.4.A4 verlangt, dass insbesondere die Speicherung und Verarbeitung personenbezogener Daten, die Benutzbarkeit von Funktionen durch externe Teilnehmende sowie das Senden von Daten an externe UCC-Dienste auf Notwendigkeit geprüft und ggf. deaktiviert werden müssen. UCC-Dienste dürfen nur mit dem geringsten notwendigen Funktionsumfang betrieben werden.",
+            "quote": "Außerdem MÜSSEN insbesondere die folgenden Dienste und Funktionen auf Notwendigkeit geprüft und gegebenenfalls deaktiviert oder eingeschränkt werden: • Speicherung von personenbezogenen Daten durch die UCC-Komponenten • Zugriff und Verarbeitung von personenbezogenen Daten durch Benutzende und den UCC-Dienst • Benutzbarkeit von Funktionen wie Chat, Erreichbarkeitsstatus, Dateiablagen oder Team-Bereiche durch externe Teilnehmende • Senden von Daten und Dateien an externe UCC-Dienste",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die bei UCC auf Notwendigkeit zu prüfenden Dienste und Funktionen benennen.",
+            "baustein_id": "APP.5.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Speicherung und Verarbeitung von personenbezogenen Daten durch UCC-Komponenten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Benutzbarkeit von Funktionen durch externe Teilnehmende und Senden von Daten an externe UCC-Dienste",
+                    "is_correct": true
+                },
+                {
+                    "text": "Automatische Software-Updates der UCC-Clients",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Protokollierung von Netzwerkverkehr auf Routerebene",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.4-003",
+            "text": "Was MUSS hinsichtlich der Verschlüsselung von UCC-Daten sichergestellt werden?",
+            "explanation": "Anforderung APP.5.4.A6 verlangt, dass sämtliche Kommunikation über unzureichend vertrauenswürdige Netze mit sicheren Verfahren verschlüsselt werden muss, sofern die UCC-Komponente dies unterstützt. Die Benutzenden müssen über den Status der Verschlüsselung innerhalb von Konversationen informiert werden. Dateiablagen mit personenbezogenen oder vertraulichen Daten müssen ebenfalls verschlüsselt werden.",
+            "quote": "Sämtliche Kommunikation über unzureichend vertrauenswürdige Netze MUSS mit sicheren Verfahren verschlüsselt werden, sofern dies durch die jeweilige UCC-Komponente unterstützt wird. • Die Benutzenden MÜSSEN zudem über den Status der Verschlüsselung innerhalb von Konversationen informiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtanforderungen zur Verschlüsselung von UCC-Kommunikation beschreiben.",
+            "baustein_id": "APP.5.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Kommunikation über unzureichend vertrauenswürdige Netze muss verschlüsselt werden und Benutzende müssen über den Verschlüsselungsstatus informiert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur interne Kommunikation muss verschlüsselt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Verschlüsselung ist nur bei Videokonferenzen erforderlich",
+                    "is_correct": false
+                },
+                {
+                    "text": "Benutzende müssen selbst entscheiden, ob sie verschlüsseln",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.4-004",
+            "text": "Welche Gefährdung entsteht durch die Vorspiegelung falscher Identitäten bei UCC-Diensten?",
+            "explanation": "Die Gefährdungslage (2.9) beschreibt, dass Angreifende durch neue UCC-Dienste neue Wege erhalten, sich als vertrauenswürdige Kommunikationspartner auszugeben. Benutzende sind häufig nicht darüber bewusst, dass sie auch von unbekannten Externen kontaktiert werden können, und sind dadurch anfälliger für Social Engineering.",
+            "quote": "Dadurch, dass neue UCC-Dienste eingeführt werden und Externe neue Möglichkeiten erhalten, Kontakt aufzunehmen, ergeben sich neue Wege für Angreifende, die sich als vertrauenswürdige Kommunikationspartner und -partnerin ausgeben wollen, um so an vertrauliche Informationen zu gelangen. • Häufig sind sich die Benutzenden nicht darüber bewusst, dass sie auch von unbekannten Externen kontaktiert werden können. Dadurch sind sie anfälliger für Social Engineering, beispielsweise über einen Chat oder eine Einladung zu einer Konversation.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch Identitätsvorspiegelung bei UCC-Diensten beschreiben.",
+            "baustein_id": "APP.5.4",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Angreifende können sich als vertrauenswürdige Kommunikationspartner ausgeben, da Benutzende oft nicht wissen, dass Externe sie kontaktieren können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die UCC-Software wird automatisch deinstalliert",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Konversationen werden automatisch aufgezeichnet und veröffentlicht",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Netzwerkverbindung bricht bei externen Kontakten ab",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.4-005",
+            "text": "Wofür SOLLTE bei der Administration von SIP-Trunks ein 4-Augen-Prinzip angewendet werden?",
+            "explanation": "Anforderung APP.5.4.A13 (erhöhter Schutzbedarf) listet die Tätigkeiten auf, für die bei SIP-Trunk-Administration ein 4-Augen-Prinzip gelten sollte: Änderungen an Routing-Konfigurationen, an CAC-Parametern, hinsichtlich der Verschlüsselung und an weiteren sicherheitsrelevanten Konfigurationen wie der lokalen Speicherung von Verbindungsdaten.",
+            "quote": "Wenn SIP-Trunks administriert werden, SOLLTE für folgende Tätigkeiten ein 4-Augen-Prinzip angewendet werden: • Änderungen an Routing-Konfigurationen • Änderungen an Parametern, die im Rahmen von Call Admission Control benutzt werden • Änderungen hinsichtlich der Verschlüsselung sowohl in Richtung des eigenen Netzes als auch in Richtung des Provider-Netzes • Änderungen an weiteren sicherheitsrelevanten Konfigurationen wie der lokalen Speicherung von Verbindungsdaten",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Tätigkeiten benennen, für die bei SIP-Trunk-Administration ein 4-Augen-Prinzip gelten sollte.",
+            "baustein_id": "APP.5.4",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Änderungen an Routing-Konfigurationen und an Call-Admission-Control-Parametern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Änderungen hinsichtlich der Verschlüsselung und an weiteren sicherheitsrelevanten Konfigurationen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Neuanlage von Benutzerkonten und Passwortänderungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Aktualisierung der Firmwareversionen der SIP-Telefone",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

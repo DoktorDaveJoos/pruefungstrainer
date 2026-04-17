@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "7.1",
+        "chapter_title": "Die Methodik der Kern-Absicherung",
+        "page_start": 68,
+        "page_end": 69
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-7.1-001",
+            "text": "Worauf konzentriert sich die Vorgehensweise Kern-Absicherung des IT-Grundschutzes?",
+            "explanation": "Laut Kapitel 7.1 fokussiert die Kern-Absicherung auf den Schutz besonders schützenswerter Assets, die sogenannten „Kronjuwelen“. Eine flächendeckende Absicherung aller Assets ist der Standard-Absicherung vorbehalten, und die Kern-Absicherung zielt nicht primär auf einen Mindestschutz oder die ausschließliche Erfüllung gesetzlicher Anforderungen ab.",
+            "quote": "Die Vorgehensweise Kern-Absicherung des IT-Grundschutzes konzentriert sich auf den Schutz von besonders schützenswerten Assets, den sogenannten „Kronjuwelen“.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Fokus der Kern-Absicherung auf die Kronjuwelen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 68,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Auf den Schutz besonders schützenswerter Assets („Kronjuwelen“)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf eine flächendeckende Absicherung sämtlicher Geschäftsprozesse der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf einen Mindestschutz aller Assets mit normalem Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf die ausschließliche Erfüllung gesetzlicher Mindestanforderungen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.1-002",
+            "text": "Welche Anforderungen müssen bei der Kern-Absicherung in den relevanten Bausteinen des IT-Grundschutz-Kompendiums komplett umgesetzt werden?",
+            "explanation": "Da bei der Kern-Absicherung grundsätzlich von einem erhöhten Schutzbedarf auszugehen ist, müssen die Basis- und Standard-Anforderungen der relevanten Bausteine komplett umgesetzt werden. Anforderungen für erhöhten Schutzbedarf dürfen lediglich exemplarisch herangezogen werden und sind nicht per se vollständig umzusetzen; eine Beschränkung auf Basis-Anforderungen ist nicht ausreichend.",
+            "quote": "Daher müssen die in den relevanten Bausteinen des IT-Grundschutz-Kompendiums aufgeführten Basis- und Standard-Anforderungen komplett umgesetzt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die für die Kern-Absicherung verpflichtend umzusetzenden Anforderungstypen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 68,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Basis-Anforderungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Standard-Anforderungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich Anforderungen für erhöhten Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur Basis-Anforderungen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.1-003",
+            "text": "Welcher BSI-Standard beschreibt die bei erhöhtem Schutzbedarf heranzuziehende Risikoanalyse-Methodik für die Kern-Absicherung?",
+            "explanation": "Für die Risikoanalyse bei erhöhtem Schutzbedarf verweist Kapitel 7.1 ausdrücklich auf den BSI-Standard 200-3 „Risikoanalyse auf der Basis von IT-Grundschutz“. Die übrigen Standards beschreiben keine Risikoanalyse in diesem Sinne.",
+            "quote": "Hierzu ist im BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz eine im Vergleich zu traditionellen Risikoanalyse-Methoden einfachere Vorgehensweise beschrieben.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den für die Kern-Absicherung relevanten Risikoanalyse-Standard benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 68,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "BSI-Standard 200-3",
+                    "is_correct": true
+                },
+                {
+                    "text": "BSI-Standard 200-1",
+                    "is_correct": false
+                },
+                {
+                    "text": "BSI-Standard 200-2",
+                    "is_correct": false
+                },
+                {
+                    "text": "BSI-Standard 200-4",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.1-004",
+            "text": "Unter welcher Bedingung kann die Kern-Absicherung laut BSI-Standard 200-2 als eigenständiges Projekt betrachtet werden?",
+            "explanation": "Die Kern-Absicherung ist grundsätzlich Teil des Sicherheitsprozesses und kann nur dann als Projekt betrachtet werden, wenn sie anschließend in die Standard-Absicherung integriert wird. Erfolgt diese Integration nicht, muss der Prozess regelmäßig überprüft und verbessert werden. Eine Zertifizierung nach ISO 27001 oder die Erfüllung aller Anforderungen für erhöhten Schutzbedarf ist keine Voraussetzung für den Projektstatus.",
+            "quote": "Die Kern-Absicherung kann nur dann als Projekt betrachtet werden, wenn sie anschließend in die Standard-Absicherung integriert wird.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Voraussetzung für die Betrachtung der Kern-Absicherung als eigenständiges Projekt erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 69,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Wenn sie anschließend in die Standard-Absicherung integriert wird",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wenn sie nach Abschluss in eine Basis-Absicherung übergeht",
+                    "is_correct": false
+                },
+                {
+                    "text": "Wenn sie durch eine ISO-27001-Zertifizierung abgeschlossen wird",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sobald alle Anforderungen für erhöhten Schutzbedarf umgesetzt sind",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.1-005",
+            "text": "Welche Bereiche gehören laut BSI-Standard 200-2 zur Erstellung einer Sicherheitskonzeption nach Kern-Absicherung?",
+            "explanation": "Die Gliederung in Kapitel 7.1 nennt u. a. die Festlegung des Geltungsbereichs, die Identifikation der Kronjuwelen, die Strukturanalyse, die Schutzbedarfsfeststellung, die Modellierung, den IT-Grundschutz-Check, die Risikoanalyse sowie die Umsetzung. Eine „Wirtschaftlichkeitsanalyse“ oder „Marktanalyse“ ist nicht Teil der aufgeführten Bereiche.",
+            "quote": "• Festlegung des Geltungsbereichs für die Kern-Absicherung • Identifikation und Festlegung der kritischen Assets (Kronjuwelen) • Strukturanalyse • Schutzbedarfsfeststellung • Modellierung: Auswahl und Anpassung von Anforderungen • IT-Grundschutz-Check • Risikoanalyse und weiterführende Sicherheitsmaßnahmen • Umsetzung und weitere Schritte",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Phasen der Sicherheitskonzeption bei Kern-Absicherung aufzählen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 69,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Festlegung des Geltungsbereichs und Identifikation der Kronjuwelen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Strukturanalyse, Schutzbedarfsfeststellung und Modellierung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Markt- und Wettbewerbsanalyse der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Wirtschaftlichkeitsanalyse und Return-on-Investment-Berechnung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.1-006",
+            "text": "Welche Rolle spielt das mittels Kern-Absicherung erstellte Sicherheitskonzept im weiteren Vorgehen?",
+            "explanation": "Das mittels Kern-Absicherung erstellte Sicherheitskonzept ist laut Kapitel 7.1 die Basis für ein umfangreicheres Sicherheitskonzept im Sinne der Standard-Absicherung. Es ersetzt weder die Standard-Absicherung noch das Notfallmanagement, und es ist keine hinreichende Grundlage für eine Zertifizierung ohne weitere Schritte.",
+            "quote": "Das mittels der Kern-Absicherung erstellte Sicherheitskonzept ist die Basis für ein umfangreicheres Sicherheitskonzept, wie es mit der Standard-Absicherung (siehe Kapitel 8) erstellt und etabliert werden kann.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Funktion der Kern-Absicherung als Grundlage für eine umfassendere Standard-Absicherung beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 68,
+            "page_end": 69,
+            "answers": [
+                {
+                    "text": "Es bildet die Basis für ein umfangreicheres Sicherheitskonzept nach Standard-Absicherung.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es ersetzt die Standard-Absicherung dauerhaft.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es ist ein alleiniger Ersatz für das Notfallmanagement.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es ist ohne weitere Schritte ausreichend für eine ISO-27001-Zertifizierung.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "8.5",
+        "chapter_title": "Risikoanalyse",
+        "page_start": 156,
+        "page_end": 157
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-8.5-001",
+            "text": "Warum ist es laut Abschnitt 8.5 oft leichter, eine Risikoanalyse nacheinander auf kleine Teilaspekte des Informationsverbunds anzuwenden?",
+            "explanation": "Der Standard hält ausdrücklich fest, dass eine Risikoanalyse auf Basis von IT-Grundschutz häufig leichter durchzuführen ist, wenn sie nacheinander auf kleine Teilaspekte des Informationsverbunds angewandt wird. Die übrigen Optionen widersprechen dem Text (Pflicht zur Einzelbetrachtung, Vorschrift nach 200-3) oder sind nicht genannt.",
+            "quote": "Wichtig ist außerdem, dass eine Risikoanalyse auf der Basis von IT-Grundschutz häufig leichter durch­zuführen ist, wenn sie nacheinander auf kleine Teilaspekte des Informationsverbunds angewandt wird.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Nutzen einer schrittweisen Risikoanalyse auf Teilaspekte benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 156,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Weil sie häufig leichter durchzuführen ist, wenn sie nacheinander auf kleine Teilaspekte angewandt wird",
+                    "is_correct": true
+                },
+                {
+                    "text": "Weil BSI-Standard 200-3 zwingend eine Einzelbetrachtung von Teilaspekten vorschreibt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil kleine Informationsverbünde keine Gesamtrisikoanalyse erfordern",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil eine schrittweise Analyse die Pflicht zur Dokumentation ersetzt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.5-002",
+            "text": "In welchen Punkten können sich etablierte Verfahren zur Risikoanalyse laut Abschnitt 8.5 unterscheiden?",
+            "explanation": "Der Standard nennt Detaillierungsgrad, Formalisierung und thematische Schwerpunkte als Unterschiede zwischen international etablierten Risikoanalyseverfahren. Eine Mindestanzahl an Mitarbeitern, Zertifizierungspflicht oder ein vorgeschriebenes Werkzeug werden nicht genannt.",
+            "quote": "Diese Verfahren unterscheiden sich beispielsweise in Bezug auf den Detaillierungsgrad, die Formalisierung und die thematischen Schwerpunkte.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Unterscheidungsmerkmale zwischen Risikoanalyseverfahren benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 156,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Detaillierungsgrad",
+                    "is_correct": true
+                },
+                {
+                    "text": "Formalisierung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Thematische Schwerpunkte",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mindestanzahl an beteiligten Mitarbeitern",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.5-003",
+            "text": "Worauf kann sich eine Risikoanalyse im ersten Schritt laut Abschnitt 8.5 sinnvoll beschränken?",
+            "explanation": "Der Standard empfiehlt, die Analyse beispielsweise zunächst auf die baulich-physische Infrastruktur zu beschränken, d. h. Schutz vor Brand, Wasser, unbefugtem Zutritt sowie ordnungsgemäße Strom- und Klimaversorgung. Server, Anwendungen oder gesamte Verbünde sind gerade nicht der geeignete Einstieg.",
+            "quote": "Als ersten Schritt kann die Analyse beispielsweise auf die baulich-physische Infrastruktur beschränkt werden, d. h. auf den Schutz vor Brand, Wasser und unbefugtem Zutritt sowie auf die ordnungsgemäße Strom- und Klimaversorgung.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Einen möglichen Einstieg in die Risikoanalyse auf Teilaspekte benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 156,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Auf die baulich-physische Infrastruktur, z. B. Schutz vor Brand, Wasser, unbefugtem Zutritt sowie Strom- und Klimaversorgung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf alle Server des Informationsverbunds gleichzeitig",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf sämtliche Anwendungen der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf den gesamten Informationsverbund in einem einzigen Schritt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.5-004",
+            "text": "Unter welchen Voraussetzungen kann gemäß Abschnitt 8.5 alternativ zum BSI-Standard 200-3 ein anderes Verfahren zur Risikoanalyse genutzt werden?",
+            "explanation": "Der Standard erlaubt, abhängig von Rahmenbedingungen und Art des Informationsverbunds alternativ zum BSI-Standard 200-3 ein anderes etabliertes Verfahren oder eine angepasste Methodik zu verwenden. Eine Freigabe durch das BSI, das Abdecken aller BSI-Bausteine oder die ISO/IEC 27005 als einzige zulässige Alternative werden nicht gefordert.",
+            "quote": "Abhängig von den Rahmenbedingungen einer Institution und der Art des Informationsverbunds kann es zweckmäßig sein, alternativ zum BSI-Standard 200-3 ein anderes etabliertes Verfahren oder eine angepasste Methodik für die Analyse von Informationsrisiken zu verwenden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Voraussetzungen für alternative Risikoanalyseverfahren zum BSI-Standard 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 156,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Abhängig von den Rahmenbedingungen der Institution und der Art des Informationsverbunds",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur nach ausdrücklicher Freigabe des alternativen Verfahrens durch das BSI",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur wenn das alternative Verfahren alle BSI-Bausteine vollständig abdeckt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur wenn das alternative Verfahren die ISO/IEC 27005 ist",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.5-005",
+            "text": "Welche Maßnahme empfiehlt Abschnitt 8.5, wenn in einer Institution bereits Verfahren zur Risikoanalyse existieren?",
+            "explanation": "Der Standard empfiehlt, vorhandene Verfahren auf die Informationssicherheit auszudehnen und gegebenenfalls nur Teilaspekte des BSI-Standards 200-3 anzuwenden, um eine einheitliche Methodik zu erreichen. Eine Pflicht zum vollständigen Ersetzen durch 200-3 oder eine parallele Durchführung zweier Analysen wird nicht gefordert.",
+            "quote": "Um eine einheitliche Methodik zu erreichen, kann es in solchen Fällen zweckmäßig sein, die vorhandenen Verfahren auf die Informationssicherheit auszudehnen und gegebenenfalls nur Teilaspekte des BSI-Standards 200-3 anzuwenden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Integration vorhandener Risikoanalyseverfahren mit dem BSI-Standard 200-3 beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 156,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die vorhandenen Verfahren auf die Informationssicherheit ausdehnen und ggf. nur Teilaspekte des BSI-Standards 200-3 anwenden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die vorhandenen Verfahren vollständig durch den BSI-Standard 200-3 ersetzen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zwei vollständig unabhängige Risikoanalysen parallel durchführen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf jede Form der Risikoanalyse in der Informationssicherheit verzichten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.5-006",
+            "text": "Welche Schritte nennt der Aktionspunktkatalog zu 8.5 Risikoanalyse?",
+            "explanation": "Die Aktionspunkte fordern, die grundsätzliche Vorgehensweise in einer Richtlinie zu dokumentieren und der Leitungsebene vorzulegen, die Zielobjekte für die Analyse zu bestimmen, den BSI-Standard 200-3 systematisch durchzuarbeiten und die Ergebnisse in das Sicherheitskonzept zu integrieren. Die Zertifizierung aller Ergebnisse durch einen externen Auditor wird nicht gefordert.",
+            "quote": "Grundsätzliche Vorgehensweise der Institution zur Durchführung von Risikoanalysen in einer Richtlinie dokumentieren und der Leitungsebene zur Verabschiedung vorlegen • Ermitteln, für welche Zielobjekte oder Gruppen von Zielobjekten eine Risikoanalyse durchgeführt werden soll • BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz systematisch durcharbeiten • Ergebnisse der Risikoanalysen in das Sicherheitskonzept integrieren",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Aktionspunkte der Risikoanalyse nach Abschnitt 8.5 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 157,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die grundsätzliche Vorgehensweise in einer Richtlinie dokumentieren und der Leitungsebene zur Verabschiedung vorlegen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zielobjekte oder Gruppen von Zielobjekten für eine Risikoanalyse ermitteln",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ergebnisse der Risikoanalysen in das Sicherheitskonzept integrieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sämtliche Ergebnisse der Risikoanalyse durch einen externen Auditor zertifizieren lassen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

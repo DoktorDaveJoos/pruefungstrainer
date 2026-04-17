@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "7.5",
+        "chapter_title": "Schutzbedarfsfeststellung",
+        "page_start": 72,
+        "page_end": 73
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-7.5-001",
+            "text": "Welchen Zweck verfolgt die Schutzbedarfsfeststellung gemäß Kapitel 7.5?",
+            "explanation": "Die Schutzbedarfsfeststellung ermittelt, welcher Schutz für Geschäftsprozesse, Informationen und Informationstechnik ausreichend und angemessen ist. Eine reine Kostenoptimierung oder eine Festlegung von Lieferantenverträgen gehört nicht zu ihrem Zweck.",
+            "quote": "Zweck der Schutzbedarfsfeststellung ist es, zu ermitteln, welcher Schutz für die Geschäftsprozesse, die dabei verarbeiteten Informationen und die eingesetzte Informationstechnik ausreichend und angemessen ist.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Schutzbedarfsfeststellung beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zu ermitteln, welcher Schutz für Geschäftsprozesse, Informationen und IT ausreichend und angemessen ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Den günstigsten Sicherheitslieferanten auszuwählen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Abhängigkeit von externen Dienstleistern zu maximieren",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sicherheitsmaßnahmen ausschließlich auf Basis-Anforderungen zu beschränken",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.5-002",
+            "text": "Welche drei Schutzbedarfskategorien haben sich laut BSI-Standard 200-2 bewährt?",
+            "explanation": "Kapitel 7.5 nennt ausdrücklich die drei Kategorien „normal“, „hoch“ und „sehr hoch“. Andere Klassifikationen wie „gering“, „mittel“ oder „kritisch“ werden nicht verwendet.",
+            "quote": "Bewährt hat sich hierfür eine Einteilung in die drei Schutzbedarfskategorien „normal“, „hoch“ und „sehr hoch“.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Schutzbedarfskategorien des IT-Grundschutzes benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "normal, hoch, sehr hoch",
+                    "is_correct": true
+                },
+                {
+                    "text": "gering, mittel, hoch",
+                    "is_correct": false
+                },
+                {
+                    "text": "niedrig, kritisch, katastrophal",
+                    "is_correct": false
+                },
+                {
+                    "text": "Stufe 1, Stufe 2, Stufe 3",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.5-003",
+            "text": "Von welchem Schutzbedarf ist laut Kapitel 7.5 bei Assets auszugehen, die durch eine Kern-Absicherung geschützt werden sollen?",
+            "explanation": "Der Standard stellt fest, dass bei Assets einer Kern-Absicherung grundsätzlich von einem Schutzbedarf „hoch“ und „sehr hoch“ auszugehen ist. „normal“ oder gar kein Schutzbedarf ist nicht zutreffend.",
+            "quote": "Grundsätzlich ist bei den Assets, die durch eine Kern-Absicherung geschützt werden sollen, von einem Schutzbedarf der Kategorien „hoch“ und „sehr hoch“ auszugehen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den für Kern-Absicherungs-Assets typischen Schutzbedarf benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "„hoch“ und „sehr hoch“",
+                    "is_correct": true
+                },
+                {
+                    "text": "„normal“",
+                    "is_correct": false
+                },
+                {
+                    "text": "„gering“ und „normal“",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es besteht kein Schutzbedarf, da nur Kronjuwelen betrachtet werden.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.5-004",
+            "text": "Welche Schäden werden bei der Schutzbedarfsfeststellung für jede Anwendung und die verarbeiteten Informationen betrachtet?",
+            "explanation": "Kapitel 7.5 beschreibt, dass die zu erwartenden Schäden bei einer Beeinträchtigung von Vertraulichkeit, Integrität oder Verfügbarkeit betrachtet werden. Diese Grundwerte der Informationssicherheit sind zentral; Marktanteile oder Börsenkurse gehören nicht zu den genannten Kriterien.",
+            "quote": "Hierzu werden für jede Anwendung und die verarbeiteten Informationen die zu erwartenden Schäden betrachtet, die bei einer Beeinträchtigung von Vertraulichkeit, Integrität oder Verfügbarkeit entstehen können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Grundwerte Vertraulichkeit, Integrität und Verfügbarkeit als Kriterien der Schutzbedarfsfeststellung erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Schäden bei Beeinträchtigung von Vertraulichkeit, Integrität oder Verfügbarkeit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Schäden durch Marktanteilsverlust",
+                    "is_correct": false
+                },
+                {
+                    "text": "Schäden am Börsenkurs der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich Schäden an Hardware",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.5-005",
+            "text": "Welche Aussage zum Verhältnis von Kronjuwelen und weiteren Assets ist gemäß Kapitel 7.5 korrekt?",
+            "explanation": "Laut Kapitel 7.5 gibt es neben den als Kronjuwelen identifizierten Assets typischerweise weitere Assets mit hohem oder sehr hohem Schutzbedarf, die angemessen zu schützen sind. Die anderen Aussagen widersprechen dem Text.",
+            "quote": "Neben den als Kronjuwelen identifizierten Assets gibt es typischerweise weitere Assets mit hohem oder sehr hohem Schutzbedarf, die auch angemessen zu schützen sind.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Existenz weiterer hoch schützenswerter Assets neben den Kronjuwelen anerkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 73,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Neben den Kronjuwelen gibt es typischerweise weitere Assets mit hohem oder sehr hohem Schutzbedarf.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Außerhalb der Kronjuwelen existieren keine schützenswerten Assets mehr.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur Kronjuwelen sind angemessen zu schützen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Andere Assets haben stets Schutzbedarf „normal“.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

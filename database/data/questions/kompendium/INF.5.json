@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.5",
+        "chapter_title": "Raum sowie Schrank für technische Infrastruktur",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.5-001",
+            "text": "Was kann laut INF.5 alternativ genutzt werden, wenn technische Infrastruktur nicht in einem separaten Raum untergebracht werden kann?",
+            "explanation": "Laut INF.5 kann die technische Infrastruktur in einem eigens dafür ausgerüsteten Schrank untergebracht werden, wenn kein separater Raum möglich ist oder der Schrank die wirtschaftlichste Alternative darstellt. Die Anforderungen an den Raum sind dann möglichst wirkungsgleich auf den Schrank und dessen Hülle zu übertragen.",
+            "quote": "Wenn die zu schützende technische Infrastruktur nicht in einem separaten Raum untergebracht werden kann oder sich der Raum nicht entsprechend der beschriebenen Anforderungen einrichten lässt, kann die technische Infrastruktur auch in einem eigens dafür ausgerüsteten Schrank untergebracht werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Alternative zum separaten Raum für technische Infrastruktur nach INF.5 benennen.",
+            "baustein_id": "INF.5",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein eigens dafür ausgerüsteter Schrank", "is_correct": true },
+                { "text": "Ein normaler Büroraum ohne besondere Vorkehrungen", "is_correct": false },
+                { "text": "Ein offener Bereich im Flur mit Videoüberwachung", "is_correct": false },
+                { "text": "Eine externe Cloud-Infrastruktur bei einem Dienstleister", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.5-002",
+            "text": "Welche Art von Komponenten enthält ein Raum für technische Infrastruktur laut INF.5?",
+            "explanation": "Ein Raum für technische Infrastruktur enthält technische Komponenten, die nur selten direkt vor Ort bedient werden müssen, aber unabdingbar für die Gebäudeinfrastruktur und damit auch für die IT-Infrastruktur sind. Beispiele sind Verteiler für die Energieversorgung, Sicherungskästen, Lüftungsanlagen, TK-Anlagenteile, Patchfelder, Switches oder Router.",
+            "quote": "Ein Raum für technische Infrastruktur enthält technische Komponenten, die nur selten direkt vor Ort bedient werden müssen. Sie sind aber unabdingbar für die Gebäudeinfrastruktur und damit auch für die IT-Infrastruktur. Dabei kann es sich z. B. um Verteiler für die Energieversorgung, Sicherungskästen, Lüftungsanlagen, TK-Anlagenteile, Patchfelder, Switches oder Router handeln.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die typischen Komponenten eines Raums für technische Infrastruktur nach INF.5 kennen.",
+            "baustein_id": "INF.5",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Verteiler für die Energieversorgung, Sicherungskästen und Lüftungsanlagen", "is_correct": true },
+                { "text": "TK-Anlagenteile, Patchfelder, Switches oder Router", "is_correct": true },
+                { "text": "Büroarbeitsplätze mit ergonomischen Möbeln", "is_correct": false },
+                { "text": "Aktenvernichter und Druckerzentrum", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.5-003",
+            "text": "Welches Ziel verfolgt der Baustein INF.5 laut seiner Zielsetzung?",
+            "explanation": "Ziel des Bausteins INF.5 ist es, einen Raum oder Schrank für technische Infrastruktur im Sinne der Informationssicherheit baulich, mechanisch und elektronisch zu schützen, sodass die darin befindlichen technischen Komponenten in ihren Funktionen möglichst nicht beeinträchtigt werden können.",
+            "quote": "Ziel dieses Bausteins ist es, einen Raum oder Schrank für technische Infrastruktur im Sinne der Informationssicherheit baulich, mechanisch und elektronisch zu schützen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Schutzziel des Bausteins INF.5 erläutern.",
+            "baustein_id": "INF.5",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Baulicher, mechanischer und elektronischer Schutz der technischen Infrastruktur", "is_correct": true },
+                { "text": "Ausschließlich der Schutz vor Feuer und Wasser", "is_correct": false },
+                { "text": "Optimierung der Energieeffizienz der Gebäudetechnik", "is_correct": false },
+                { "text": "Bereitstellung von Arbeitsplätzen für das Wartungspersonal", "is_correct": false }
+            ]
+        }
+    ]
+}

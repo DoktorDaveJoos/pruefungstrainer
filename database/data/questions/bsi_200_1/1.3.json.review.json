@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T00:00:00Z",
+    "critic_notes": "Clean section. All five quotes are verbatim substrings of the normalized source, all correct answers are directly supported by the passage, and all distractors are clearly wrong per the text. Topic labels are mostly well chosen; Q003 is borderline between 'standards' and 'methodik' (the sentence describes the relevance of ISMS to institutions of all sizes, not the BSI document itself) but the chosen 'methodik' is defensible. Difficulty labels ('basis') match the one-step-paraphrase nature of every question. Schema is correct for a Standards doc (baustein_id/anforderung_type both null). Page numbers fall inside 6..7.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-1.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "topic_mismatch",
+                    "detail": "Topic 'methodik' is defensible but borderline. The quote is a scope statement about the BSI-Standard's applicability to institutions of all sizes, which could equally be labelled 'standards'. Human should decide; no factual error."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.3-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.3-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

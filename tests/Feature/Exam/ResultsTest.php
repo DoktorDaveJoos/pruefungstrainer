@@ -2,6 +2,7 @@
 
 use App\Enums\BsiTopic;
 use App\Enums\QuestionDifficulty;
+use App\Enums\SourceDocument;
 use App\Models\Answer;
 use App\Models\ExamAnswer;
 use App\Models\ExamAttempt;
@@ -152,7 +153,10 @@ it('passes reviewItems for wrong answers only when the user has active access', 
         'text' => 'Welche Schutzbedarfskategorien kennt der IT-Grundschutz?',
         'explanation' => 'Drei Kategorien: normal, hoch, sehr hoch.',
         'quote' => 'Die Schutzbedarfskategorien sind normal, hoch und sehr hoch.',
-        'source' => 'BSI-Standard 200-2, Kap. 8.2',
+        'source_document' => SourceDocument::Bsi2002,
+        'source_chapter' => '8.2',
+        'source_chapter_title' => 'Schutzbedarfsfeststellung',
+        'source_page_start' => 104,
     ]);
     $correctAnswer = Answer::factory()->for($wrongQuestion)->correct()->create(['text' => 'Normal, Hoch, Sehr hoch']);
     $wrongAnswer = Answer::factory()->for($wrongQuestion)->incorrect()->create(['text' => 'Normal, Hoch, Kritisch']);
@@ -187,7 +191,7 @@ it('passes reviewItems for wrong answers only when the user has active access', 
         ->where('reviewItems.0.stem', 'Welche Schutzbedarfskategorien kennt der IT-Grundschutz?')
         ->where('reviewItems.0.explanation', 'Drei Kategorien: normal, hoch, sehr hoch.')
         ->where('reviewItems.0.quote', 'Die Schutzbedarfskategorien sind normal, hoch und sehr hoch.')
-        ->where('reviewItems.0.source', 'BSI-Standard 200-2, Kap. 8.2')
+        ->where('reviewItems.0.source', 'BSI-Standard 200-2, Kapitel 8.2, S. 104')
         ->has('reviewItems.0.options', 2)
         ->where('reviewItems.0.options.0.text', 'Normal, Hoch, Sehr hoch')
         ->where('reviewItems.0.options.0.isCorrect', true)

@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.4.2",
+        "chapter_title": "VoIP",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.4.2-001",
+            "text": "Was MUSS laut NET.4.2 bei der Planung des VoIP-Einsatzes unter anderem entschieden werden?",
+            "explanation": "NET.4.2.A1 fordert, dass die Bedingungen für den VoIP-Einsatz festgelegt werden, insbesondere ob vollständig oder partiell auf VoIP umgestiegen werden soll. Auch müssen geeignete Signalisierungs- und Medientransportprotokolle ausgewählt werden.",
+            "quote": "Die Bedingungen, unter denen VoIP eingesetzt werden soll, MÜSSEN festgelegt werden. Es MUSS unter anderem entschieden werden, ob vollständig oder partiell auf VoIP umgestiegen werden soll. • Geeignete Signalisierungs- und Medientransportprotokolle MÜSSEN vor dem Einsatz ausgewählt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Planungsanforderungen für den VoIP-Einsatz gemäß NET.4.2 benennen.",
+            "baustein_id": "NET.4.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ob vollständig oder partiell auf VoIP umgestiegen wird und welche Protokolle eingesetzt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die Auswahl des VoIP-Anbieters",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Anzahl der benötigten Telefonanschlüsse",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Farbgestaltung der VoIP-Endgeräte",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.4.2-002",
+            "text": "Warum können VoIP-Gespräche laut NET.4.2 einfacher abgehört werden als bei klassischen TK-Anlagen?",
+            "explanation": "NET.4.2 erläutert, dass bei VoIP alle Sprachinformationen innerhalb eines Medienstroms (z. B. RTP) übertragen werden. Durch Techniken wie Spoofing und Sniffing stehen Angreifenden zusätzlich alle Möglichkeiten von Angriffen in Datennetzen zur Verfügung.",
+            "quote": "Bei VoIP können Telefongespräche und Datenübertragungen sogar einfacher als bei klassischen TK-Anlagen abgehört werden. Alle Sprachinformationen werden innerhalb eines Medienstroms, beispielsweise mit dem Realtime Transport Protocol (RTP), übertragen. Durch Techniken wie Spoofing und Sniffing stehen bei VoIP den Angreifenden auch alle Möglichkeiten von Angriffen in Datennetzen zur Verfügung.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die erhöhte Abhörgefahr bei VoIP gegenüber klassischer Telefonie begründen.",
+            "baustein_id": "NET.4.2",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Weil Sprachinformationen in Datennetzen übertragen werden und zusätzlich Spoofing- und Sniffing-Angriffe möglich sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Weil VoIP-Gespräche grundsätzlich unverschlüsselt sind und keine Verschlüsselung möglich ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil VoIP-Endgeräte keine Sicherheitsfunktionen besitzen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil klassische TK-Anlagen immer verschlüsselt kommunizieren",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.4.2-003",
+            "text": "Wie SOLLTE laut NET.4.2 der Medientransport bei erhöhtem Schutzbedarf geschützt werden?",
+            "explanation": "NET.4.2.A15 empfiehlt den Einsatz von SRTP (Secure Real-Time Transport Protocol) bzw. SRTCP zum Schutz der über RTP übertragenen Mediendaten und Steuerungsinformationen.",
+            "quote": "Mediendaten und Informationen zur Steuerung dieser Daten, die über das Real-Time Transport Protocol (RTP) übertragen werden, SOLLTEN in geeigneter Weise geschützt werden. Die Nutzdaten SOLLTEN durch den Einsatz von Secure Real-Time Transport Protocol (SRTP) beziehungsweise Secure Real-Time Control Protocol (SRTCP) geschützt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Schutzmaßnahme SRTP/SRTCP für VoIP-Medientransport bei erhöhtem Schutzbedarf benennen.",
+            "baustein_id": "NET.4.2",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Durch den Einsatz von SRTP und SRTCP",
+                    "is_correct": true
+                },
+                {
+                    "text": "Durch Verschlüsselung auf IP-Ebene mit IPsec",
+                    "is_correct": false
+                },
+                {
+                    "text": "Durch physische Trennung in ein eigenes Kabelnetz",
+                    "is_correct": false
+                },
+                {
+                    "text": "Durch Einsatz von WPA2 auf der Netzwerkschicht",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "ORP.5",
+        "chapter_title": "Compliance Management (Anforderungsmanagement)",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-orp.5-001",
+            "text": "Was MUSS laut ORP.5.A1 mit allen sicherheitsrelevanten Vorgaben geschehen?",
+            "explanation": "Laut ORP.5.A1 müssen alle gesetzlichen, vertraglichen und sonstigen Vorgaben mit Auswirkungen auf das Informationssicherheitsmanagement identifiziert und dokumentiert werden. Die Dokumentation muss auf dem aktuellen Stand gehalten werden.",
+            "quote": "Alle gesetzlichen, vertraglichen und sonstigen Vorgaben mit Auswirkungen auf das Informationssicherheitsmanagement MÜSSEN identifiziert und dokumentiert werden. • Die Dokumentation MUSS auf dem aktuellen Stand gehalten werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Identifikation und Dokumentation von Compliance-Anforderungen benennen.",
+            "baustein_id": "ORP.5.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen identifiziert und dokumentiert werden", "is_correct": true },
+                { "text": "Sie müssen lediglich mündlich an die Führungskräfte kommuniziert werden", "is_correct": false },
+                { "text": "Sie müssen nur bei der Ersteinführung des ISMS erfasst werden", "is_correct": false },
+                { "text": "Sie müssen an das BSI gemeldet werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.5-002",
+            "text": "Welche Rolle ist im Baustein ORP.5 grundsätzlich zuständig?",
+            "explanation": "Im Baustein ORP.5 Compliance Management ist der oder die Compliance-Beauftragte grundsätzlich zuständig. Weitere Zuständigkeiten haben die Zentrale Verwaltung, Vorgesetzte und Institutionsleitung.",
+            "quote": "Grundsätzlich zuständig            Compliance-Beauftragte",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grundsätzliche Zuständigkeit im Baustein ORP.5 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Compliance-Beauftragte", "is_correct": true },
+                { "text": "Informationssicherheitsbeauftragte (ISB)", "is_correct": false },
+                { "text": "Datenschutzbeauftragte", "is_correct": false },
+                { "text": "IT-Betrieb", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.5-003",
+            "text": "Was SOLLTE laut ORP.5.A5 bei Ausnahmegenehmigungen von Regelungen gelten?",
+            "explanation": "Laut ORP.5.A5 sollte eine Ausnahme begründet und durch eine autorisierte Stelle nach einer Risikoabschätzung genehmigt werden. Es sollte ein Genehmigungsverfahren geben, eine Übersicht gepflegt werden, und alle Ausnahmegenehmigungen sollten befristet sein.",
+            "quote": "Ist es in Einzelfällen erforderlich, von getroffenen Regelungen abzuweichen, SOLLTE die Ausnahme begründet und durch eine autorisierte Stelle nach einer Risikoabschätzung genehmigt werden. • Alle Ausnahmegenehmigungen SOLLTEN befristet sein.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Anforderungen an Ausnahmegenehmigungen im Compliance Management erläutern.",
+            "baustein_id": "ORP.5.A5",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen begründet und nach Risikoabschätzung durch eine autorisierte Stelle genehmigt werden", "is_correct": true },
+                { "text": "Alle Ausnahmegenehmigungen sollten befristet sein", "is_correct": true },
+                { "text": "Ausnahmen können ohne Dokumentation mündlich erteilt werden", "is_correct": false },
+                { "text": "Ausnahmegenehmigungen gelten automatisch unbefristet nach einmaliger Erteilung", "is_correct": false }
+            ]
+        }
+    ]
+}

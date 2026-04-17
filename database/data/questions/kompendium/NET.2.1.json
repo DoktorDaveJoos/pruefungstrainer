@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.2.1",
+        "chapter_title": "WLAN-Betrieb",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.2.1-001",
+            "text": "Welche kryptografischen Mindestanforderungen gelten laut NET.2.1 für die WLAN-Kommunikation?",
+            "explanation": "NET.2.1.A3 fordert, dass die Kommunikation über die Luftschnittstelle komplett kryptografisch abgesichert sein muss. Verfahren, die unsicherer als WPA2 sind, dürfen nicht mehr eingesetzt werden. WEP und WPA1 erfüllen diese Anforderung nicht.",
+            "quote": "Die Kommunikation über die Luftschnittstelle MUSS komplett kryptografisch abgesichert werden. Kryptografische Verfahren, die unsicherer als WPA2 sind, DÜRFEN NICHT mehr eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestanforderung an die WLAN-Verschlüsselung gemäß NET.2.1 benennen.",
+            "baustein_id": "NET.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mindestens WPA2; unsicherere Verfahren dürfen nicht eingesetzt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "WEP-Verschlüsselung ist ausreichend",
+                    "is_correct": false
+                },
+                {
+                    "text": "WPA1 mit starkem Passwort genügt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Verschlüsselung ist nur bei erhöhtem Schutzbedarf erforderlich",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.2.1-002",
+            "text": "Welche Mindestlänge MUSS ein WPA2-PSK-Schlüssel laut NET.2.1 haben?",
+            "explanation": "NET.2.1.A3 fordert bei Verwendung von WPA2 mit Pre-Shared Keys einen komplexen Schlüssel mit einer Mindestlänge von 20 Zeichen. 8 oder 12 Zeichen sind unzureichend.",
+            "quote": "Wird WPA2 mit Pre-Shared Keys (WPA2-PSK) verwendet, dann MUSS ein komplexer Schlüssel mit einer Mindestlänge von 20 Zeichen verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestlänge für WPA2-PSK-Schlüssel gemäß NET.2.1 angeben.",
+            "baustein_id": "NET.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mindestens 20 Zeichen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mindestens 8 Zeichen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mindestens 12 Zeichen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mindestens 32 Zeichen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.2.1-003",
+            "text": "Was MUSS laut NET.2.1 vor dem produktiven Einsatz von Access Points geändert werden?",
+            "explanation": "NET.2.1.A5 verbietet den Einsatz von Access Points im Auslieferungszustand. Voreingestellte SSIDs, Zugangskennwörter und kryptografische Schlüssel müssen geändert und unsichere Administrationszugänge abgeschaltet werden.",
+            "quote": "Access Points DÜRFEN NICHT in der Konfiguration des Auslieferungszustandes verwendet werden. Voreingestellte SSIDs (Service Set Identifiers), Zugangskennwörter oder kryptografische Schlüssel MÜSSEN vor dem produktiven Einsatz geändert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Konfigurationsanforderungen für Access Points gemäß NET.2.1 beschreiben.",
+            "baustein_id": "NET.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Voreingestellte SSIDs, Zugangskennwörter und kryptografische Schlüssel",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur die IP-Adresse des Access Points",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Firmware muss auf die neueste Version aktualisiert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur das Administrator-Passwort",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.2.1-004",
+            "text": "Was ist ein Rogue Access Point und welche Gefahr geht laut NET.2.1 davon aus?",
+            "explanation": "NET.2.1 beschreibt einen Rogue Access Point als einen von Angreifenden installierten Access Point mit geeignet gewähltem Namen (SSID), der eine stärkere Sendeleistung als der echte Access Point bietet und so die Kommunikation abhören kann.",
+            "quote": "Angreifende können sich als Teil der WLAN-Infrastruktur ausgeben, indem sie einen eigenen Access Point mit einem geeignet gewählten Namen (SSID) in der Nähe eines WLAN-Clients installiert. Dieser vorgetäuschte Access Point wird als „Rogue Access Point“ bezeichnet.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch Rogue Access Points im WLAN beschreiben.",
+            "baustein_id": "NET.2.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein von Angreifenden installierter Access Point, der einen gültigen Access Point vortäuscht",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein defekter Access Point, der fehlerhafte Datenpakete sendet",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein nicht autorisierter Access Point, der von Mitarbeitenden versehentlich angeschlossen wurde",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein Access Point, der nach einem Firmware-Update nicht mehr korrekt funktioniert",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

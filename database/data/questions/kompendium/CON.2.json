@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.2",
+        "chapter_title": "Datenschutz",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.2-001",
+            "text": "Welche Methode hat die Datenschutzkonferenz laut CON.2 zur Systematisierung technischer und organisatorischer Maßnahmen entwickelt?",
+            "explanation": "Laut der Einleitung von CON.2 hat die Datenschutzkonferenz (DSK) mit dem Standard-Datenschutzmodell (SDM) eine Methode entwickelt, welche die technischen und organisatorischen Maßnahmen auf der Basis von sieben Gewährleistungszielen systematisiert.",
+            "quote": "Die Konferenz der unabhängigen Datenschutzaufsichtsbehörden des Bundes und der Länder (kurz: Datenschutzkonferenz, DSK) hat mit dem Standard-Datenschutzmodell (SDM) eine Methode entwickelt, welche die in den deutschen und europäischen Rechtsvorschriften genannten technischen und organisatorischen Maßnahmen auf der Basis von sieben Schutz- beziehungsweise Gewährleistungszielen systematisiert.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Standard-Datenschutzmodell (SDM) als Methode der Datenschutzkonferenz benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Standard-Datenschutzmodell (SDM)", "is_correct": true },
+                { "text": "Den IT-Grundschutz-Check", "is_correct": false },
+                { "text": "Die BSI-Zertifizierung nach ISO 27001", "is_correct": false },
+                { "text": "Das Datenschutz-Audit nach BDSG", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.2-002",
+            "text": "Was MUSS laut CON.2.A1 bei der Verarbeitung personenbezogener Daten eingehalten werden?",
+            "explanation": "Laut CON.2.A1 müssen die gesetzlichen Bestimmungen zum Datenschutz eingehalten werden, insbesondere DSGVO, BDSG und die Datenschutzgesetze der Bundesländer. Falls die SDM-Methodik nicht berücksichtigt wird, sollte dies begründet und dokumentiert werden.",
+            "quote": "Die gesetzlichen Bestimmungen zum Datenschutz (DSGVO, BDSG, die Datenschutzgesetze der Bundesländer und gegebenenfalls einschlägige bereichsspezifische Datenschutzregelungen) MÜSSEN eingehalten werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Einhaltung der Datenschutzgesetze im IT-Grundschutz-Kontext benennen.",
+            "baustein_id": "CON.2.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "DSGVO, BDSG und die Datenschutzgesetze der Bundesländer müssen eingehalten werden", "is_correct": true },
+                { "text": "Nur das BDSG muss beachtet werden", "is_correct": false },
+                { "text": "Datenschutz ist nur relevant, wenn die Institution mehr als 500 Mitarbeitende hat", "is_correct": false },
+                { "text": "Die Datenschutzgesetze gelten nur für öffentliche Institutionen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.2-003",
+            "text": "Worin unterscheidet sich die Perspektive des SDM grundlegend vom IT-Grundschutz laut CON.2?",
+            "explanation": "Laut CON.2 nimmt das SDM bei der Auswahl geeigneter Maßnahmen die Perspektive der Betroffenen und deren Grundrechtsausübung ein, während der IT-Grundschutz den Schwerpunkt auf die Informationssicherheit legt und die datenverarbeitenden Institutionen schützen soll.",
+            "quote": "Das SDM nimmt bei der Auswahl geeigneter technischer und organisatorischer Maßnahmen die Perspektive der Betroffenen und deren Grundrechtsausübung ein und unterscheidet sich daher grundlegend von der Sicht des IT-Grundschutzes. Dieser legt den Schwerpunkt vorrangig auf die Informationssicherheit und soll die datenverarbeitenden Institutionen schützen.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Den Perspektivunterschied zwischen SDM und IT-Grundschutz erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das SDM nimmt die Perspektive der Betroffenen ein, IT-Grundschutz schützt die Institution", "is_correct": true },
+                { "text": "Das SDM betrachtet nur technische Maßnahmen, IT-Grundschutz nur organisatorische", "is_correct": false },
+                { "text": "Das SDM gilt nur für Behörden, IT-Grundschutz nur für Unternehmen", "is_correct": false },
+                { "text": "Es gibt keinen grundlegenden Unterschied zwischen beiden Ansätzen", "is_correct": false }
+            ]
+        }
+    ]
+}

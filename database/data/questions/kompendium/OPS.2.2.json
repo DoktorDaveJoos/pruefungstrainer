@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.2.2",
+        "chapter_title": "Cloud-Nutzung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.2.2-001",
+            "text": "Welche Besonderheit der Cloud-Nutzung gegen\u00fcber klassischem Outsourcing nennt OPS.2.2?",
+            "explanation": "Cloud-Dienste teilen sich oft eine gemeinsame Infrastruktur (Multi-Tenant), sind dynamisch skalierbar und k\u00f6nnen \u00fcber mehrere geographische Standorte verteilt werden.",
+            "quote": "Aus wirtschaftlichen Gr\u00fcnden teilen sich oft in einer Cloud mehrere Anwendende eine gemeinsame Infrastruktur. \u2022 Cloud-Dienste sind dynamisch und dadurch innerhalb viel k\u00fcrzerer Zeitr\u00e4ume nach oben und unten skalierbar.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Unterschiede zwischen Cloud-Nutzung und klassischem Outsourcing nach OPS.2.2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Mehrere Anwendende teilen sich eine gemeinsame Infrastruktur und Dienste sind dynamisch skalierbar", "is_correct": true},
+                {"text": "Cloud-Dienste erfordern immer l\u00e4ngere Vertragslaufzeiten als klassisches Outsourcing", "is_correct": false},
+                {"text": "Bei Cloud-Diensten ist die Institution immer alleiniger Nutzer der Infrastruktur", "is_correct": false},
+                {"text": "Cloud-Dienste k\u00f6nnen nicht \u00fcber geographische Grenzen hinweg verteilt werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.2.2-002",
+            "text": "Welche Gef\u00e4hrdung beschreibt OPS.2.2 bei Abh\u00e4ngigkeit von Cloud-Diensteanbietenden?",
+            "explanation": "Die Institution kann die ausgelagerten Gesch\u00e4ftsprozesse und Informationen nicht mehr vollst\u00e4ndig kontrollieren. Au\u00dferdem kann Know-how \u00fcber Informationssicherheit verloren gehen.",
+            "quote": "Dadurch kann es passieren, dass die Institution die ausgelagerten Gesch\u00e4ftsprozesse und die damit verbundenen Informationen nicht mehr vollst\u00e4ndig kontrollieren kann, insbesondere deren Sicherheit. \u2022 Zudem kann die Nutzung externer Cloud-Dienste dazu f\u00fchren, dass in der Institution Know-how \u00fcber Informationssicherheit und -technik verloren geht.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Gef\u00e4hrdungen durch Abh\u00e4ngigkeit von Cloud-Diensteanbietenden nach OPS.2.2 erl\u00e4utern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Kontrollverlust \u00fcber ausgelagerte Prozesse und Informationen sowie Verlust von internem Sicherheits-Know-how", "is_correct": true},
+                {"text": "Die Cloud-Anbietenden k\u00f6nnen die Daten der Institution frei nutzen", "is_correct": false},
+                {"text": "Die Institution muss alle Mitarbeitenden im IT-Betrieb entlassen", "is_correct": false},
+                {"text": "Die Kosten f\u00fcr die Cloud-Nutzung steigen immer exponentiell", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.2.2-003",
+            "text": "Wie ist laut OPS.2.2 das Verh\u00e4ltnis zwischen den Bausteinen Cloud-Nutzung und Outsourcing?",
+            "explanation": "Der Baustein OPS.2.3 Nutzung von Outsourcing ist nicht auf Cloud-Dienste anzuwenden, da OPS.2.2 die spezifischen Besonderheiten von Cloud-Diensten abdeckt.",
+            "quote": "Der Baustein OPS.2.3 Nutzung von Outsourcing ist daher nicht auf Cloud-Dienste anzuwenden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Abgrenzung zwischen den Bausteinen Cloud-Nutzung und Outsourcing nach OPS.2.2 differenzieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "OPS.2.3 Nutzung von Outsourcing ist nicht auf Cloud-Dienste anzuwenden", "is_correct": true},
+                {"text": "Beide Bausteine m\u00fcssen immer gemeinsam angewendet werden", "is_correct": false},
+                {"text": "OPS.2.2 ersetzt den Baustein OPS.2.3 vollst\u00e4ndig", "is_correct": false},
+                {"text": "Cloud-Nutzung ist eine Teilmenge des Outsourcing-Bausteins", "is_correct": false}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 8.1 covers Risikoanalyse schritte, Risikobehandlungsoptionen, Risikoappetit, Risiko-Akzeptanz-Rollen, und Auswahl/Dokumentation von Sicherheitsmaßnahmen. Quotes are verbatim after normalization. Correct answers are directly supported; distractors are unambiguously wrong. Topic assignments are reasonable (risikoanalyse for the risk-analysis steps and treatment options, methodik for role/responsibility and measure-selection items). One difficulty flag: 8.1-004 is labeled experte but is essentially a one-step paraphrase of a single sentence — it tests recall of role ownership, not synthesis. Stem also has a minor German grammar hiccup (‚das verbleibende Restrisiko zustimmen‘ → ‚dem Restrisiko zustimmen‘), non-critical.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-8.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.1-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "detail": "Labeled experte but the question is a one-step lookup of the sentence 'Die Art des Umgangs mit Risiken muss ... einem Risikoeigentümer zugeordnet und von der obersten Leitungsebene genehmigt werden.' No synthesis across sentences. basis would fit better."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.1-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.1-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

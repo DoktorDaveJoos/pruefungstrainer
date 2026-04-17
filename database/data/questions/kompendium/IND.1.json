@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "IND.1",
+        "chapter_title": "Prozessleit- und Automatisierungstechnik",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ind.1-001",
+            "text": "Welche wesentlichen Unterschiede weist die OT laut IND.1 gegenüber der klassischen IT auf?",
+            "explanation": "Laut IND.1 weist die OT gegenüber der klassischen IT wesentliche Unterschiede auf, die es erschweren, dort etablierte Sicherheitsverfahren anzuwenden. Es kann Beschränkungen geben, die Veränderungen an Komponenten verhindern oder erschweren, wie z. B. das Einspielen von Sicherheitsupdates. Zudem unterliegt die OT deutlich längeren Lebenszyklen.",
+            "quote": "Gleichzeitig weist die OT gegenüber der klassischen IT aber wesentliche Unterschiede auf, die es erschweren, dort etablierte Sicherheitsverfahren anzuwenden. So kann es aufgrund von Vorgaben der herstellenden Unternehmen oder gesetzlichen Anforderungen Beschränkungen geben, die Veränderungen an Komponenten verhindern oder erschweren, wie zum Beispiel das Einspielen von Sicherheitsupdates oder nachträgliche Härtungsmaßnahmen. Die OT unterliegt zudem in der Regel deutlich längeren Lebenszyklen",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Unterschiede zwischen OT und klassischer IT hinsichtlich der Informationssicherheit erklären.",
+            "baustein_id": "IND.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Beschränkungen beim Einspielen von Sicherheitsupdates oder Härtungsmaßnahmen", "is_correct": true },
+                { "text": "Deutlich längere Lebenszyklen als in der klassischen IT", "is_correct": true },
+                { "text": "Höhere Bandbreitenanforderungen als bei der Office-IT", "is_correct": false },
+                { "text": "Grundsätzlich geringere Verfügbarkeitsanforderungen als bei der Office-IT", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.1-002",
+            "text": "Welche potenziellen Auswirkungen können Störungen von OT-Systemen laut IND.1 haben?",
+            "explanation": "Laut IND.1 können Störungen von OT-Systemen Gefährdungen von Leib, Leben und Umwelt nach sich ziehen und sind zumeist nicht durch einen Neustart zu beheben. Dies unterscheidet sie wesentlich von der Office-IT, bei der die Verfügbarkeit häufig von nachrangiger Bedeutung ist.",
+            "quote": "Störungen von OT-Systemen können dagegen Gefährdungen von Leib, Leben und Umwelt nach sich ziehen und sind zumeist nicht durch einen Neustart zu beheben.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die besonderen Risiken von OT-Störungen nach IND.1 benennen.",
+            "baustein_id": "IND.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Gefährdungen von Leib, Leben und Umwelt", "is_correct": true },
+                { "text": "Sie sind zumeist nicht durch einen Neustart zu beheben", "is_correct": true },
+                { "text": "Lediglich kurzzeitige Produktionsverzögerungen", "is_correct": false },
+                { "text": "Ausschließlich finanzielle Verluste durch Produktionsausfall", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.1-003",
+            "text": "Was ist laut IND.1 Prozessleit- und Automatisierungstechnik (Operational Technology, OT)?",
+            "explanation": "Laut IND.1 ist Prozessleit- und Automatisierungstechnik (OT) Hard- und Software, die physische Geräte, Prozesse und Ereignisse in der Institution überwacht und steuert. Dazu zählen insbesondere industrielle Steuerungssysteme (ICS) und Automationslösungen.",
+            "quote": "Prozessleit- und Automatisierungstechnik (Operational Technology, OT) ist Hard- und Software, die physische Geräte, Prozesse und Ereignisse in der Institution überwacht und steuert.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Definition von OT nach IND.1 benennen.",
+            "baustein_id": "IND.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Hard- und Software, die physische Geräte, Prozesse und Ereignisse überwacht und steuert", "is_correct": true },
+                { "text": "Ausschließlich Software zur Büroautomatisierung", "is_correct": false },
+                { "text": "Nur die Netzwerkinfrastruktur einer Produktionsanlage", "is_correct": false },
+                { "text": "Die kaufmännische Betriebssoftware einer Institution", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.1-004",
+            "text": "Was kann laut IND.1 eine Folge mangelnder Life-Cycle-Konzepte bei OT-Systemen sein?",
+            "explanation": "Laut IND.1 werden OT-Komponenten teilweise über die Support-Zyklen der herstellenden Unternehmen hinaus betrieben. Nach Ablauf der Unterstützung werden keine Updates gegen Schwachstellen mehr bereitgestellt, während öffentlich dokumentierte Schwachstellen und Werkzeuge auch nicht versierten Angreifenden ein erfolgreiches Eindringen ermöglichen.",
+            "quote": "Dies hat zur Folge, dass nach dem Ablauf der Unterstützung der herstellenden Unternehmen keine Updates gegen Schwachstellen mehr zur Verfügung gestellt werden. Dem gegenüber stehen oftmals öffentlich dokumentierte Schwachstellen sowie Werkzeuge, die diese Schwachstellen ausnutzen. Dies ermöglicht auch nicht versierten Angreifenden ein erfolgreiches Eindringen in die OT-Systeme.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Risiken mangelnder Life-Cycle-Konzepte bei OT nach IND.1 erläutern.",
+            "baustein_id": "IND.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Keine Updates gegen Schwachstellen nach Ende des Herstellersupports, bei gleichzeitig öffentlich dokumentierten Schwachstellen", "is_correct": true },
+                { "text": "Automatische Abschaltung der Systeme durch den Hersteller", "is_correct": false },
+                { "text": "Sofortige Zertifizierungspflicht bei jeder Versionsaktualisierung", "is_correct": false },
+                { "text": "Höhere Lizenzkosten für den Weiterbetrieb", "is_correct": false }
+            ]
+        }
+    ]
+}

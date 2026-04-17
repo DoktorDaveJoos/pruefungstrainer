@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "12.1",
+        "chapter_title": "Erläuterungen zu den Schadensszenarien",
+        "page_start": 176,
+        "page_end": 178
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-12.1-001",
+            "text": "Wozu dienen die im Anhang 12.1 aufgeführten beispielhaften Fragestellungen zu den Schadensszenarien?",
+            "explanation": "Der Standard stellt klar, dass die Fragen als Hilfsmittel für die Schutzbedarfsfeststellung dienen, vor allem im Bereich der Anwendungen, und dass sie individuell angepasst und ergänzt werden sollen. Sie sind keine abschließende Prüfliste.",
+            "quote": "Diese Fragen sollen als Hilfsmittel für die Schutzbedarfsfeststellung dienen, vor allem im Bereich der Anwendungen. Anhand der individuellen Anforderungen sollten die Fragen angepasst und ergänzt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Beispielfragen zu den Schadensszenarien erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 176,
+            "page_end": null,
+            "answers": [
+                { "text": "Als Hilfsmittel für die Schutzbedarfsfeststellung, besonders bei Anwendungen", "is_correct": true },
+                { "text": "Als abschließende, bindende Prüfliste, die nicht verändert werden darf", "is_correct": false },
+                { "text": "Als Risikoakzeptanzerklärung gegenüber der Leitung", "is_correct": false },
+                { "text": "Als Audit-Checkliste der Zertifizierungsstelle", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-12.1-002",
+            "text": "Wovon hängt die Schwere des Schadens beim Schadensszenario „Verstoß gegen Gesetze/Vorschriften/Verträge“ maßgeblich ab?",
+            "explanation": "Der Standard formuliert explizit, dass die Schwere des Schadens oft davon abhängt, welche rechtlichen Konsequenzen für die Institution entstehen können. Die Mitarbeiterzahl oder die Betriebsgröße sind kein Bewertungsmaßstab.",
+            "quote": "Die Schwere des Schadens ist dabei oftmals abhängig davon, welche rechtlichen Konsequenzen daraus für die Institution entstehen können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Bewertungsmaßstab für das Schadensszenario „Verstoß gegen Gesetze/Vorschriften/Verträge“ benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 176,
+            "page_end": null,
+            "answers": [
+                { "text": "Von den rechtlichen Konsequenzen für die Institution", "is_correct": true },
+                { "text": "Von der Anzahl der Mitarbeiter der Institution", "is_correct": false },
+                { "text": "Vom Bundesland des Unternehmenssitzes", "is_correct": false },
+                { "text": "Von der Größe der IT-Abteilung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-12.1-003",
+            "text": "Welche Vorgänge zählt der BSI-Standard 200-2 zum Schadensszenario „Beeinträchtigung des informationellen Selbstbestimmungsrechts“?",
+            "explanation": "Der Standard nennt u. a. die unzulässige Erhebung ohne Rechtsgrundlage oder Einwilligung, die unbefugte Kenntnisnahme bei der Datenverarbeitung sowie die unbefugte Weitergabe personenbezogener Daten. Der Ausfall einer Klimaanlage ist kein Beispiel dieses Szenarios.",
+            "quote": "Unzulässige Erhebung personenbezogener Daten ohne Rechtsgrundlage oder Einwilligung, • unbefugte Kenntnisnahme bei der Datenverarbeitung bzw. der Übermittlung von personenbezogenen Daten, • unbefugte Weitergabe personenbezogener Daten,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Beispiele für Beeinträchtigungen des informationellen Selbstbestimmungsrechts benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 176,
+            "page_end": null,
+            "answers": [
+                { "text": "Unzulässige Erhebung personenbezogener Daten ohne Rechtsgrundlage oder Einwilligung", "is_correct": true },
+                { "text": "Unbefugte Kenntnisnahme bei Datenverarbeitung oder Datenübermittlung", "is_correct": true },
+                { "text": "Unbefugte Weitergabe personenbezogener Daten", "is_correct": true },
+                { "text": "Ausfall einer Klimaanlage im Serverraum", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-12.1-004",
+            "text": "Woran wird laut BSI-Standard 200-2 die Höhe des Schadens beim Schadensszenario „Beeinträchtigung der persönlichen Unversehrtheit“ gemessen?",
+            "explanation": "Der Standard formuliert: Die Höhe des Schadens ist am direkten persönlichen Schaden zu messen. Beispiele sind medizinische Überwachungs- und Diagnosesysteme, Flugkontrollrechner und Verkehrsleitsysteme. Sachschäden an Hardware sind dem Szenario „Finanzielle Auswirkungen“ zugeordnet.",
+            "quote": "Die Fehlfunktion von IT-Systemen oder Anwendungen kann unmittelbar die Verletzung, die Invalidität oder den Tod von Personen nach sich ziehen. Die Höhe des Schadens ist am direkten persönlichen Schaden zu messen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Bewertungsmaßstab für das Szenario „Beeinträchtigung der persönlichen Unversehrtheit“ erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 176,
+            "page_end": null,
+            "answers": [
+                { "text": "Am direkten persönlichen Schaden (Verletzung, Invalidität, Tod von Personen)", "is_correct": true },
+                { "text": "An der Höhe der Regressforderungen", "is_correct": false },
+                { "text": "An den Sachschäden an der Hardware", "is_correct": false },
+                { "text": "An der Anzahl betroffener Geschäftspartner", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-12.1-005",
+            "text": "Wovon hängt die Schwere des Schadens beim Schadensszenario „Beeinträchtigung der Aufgabenerfüllung“ ab?",
+            "explanation": "Der Standard nennt zwei Faktoren: die zeitliche Dauer der Beeinträchtigung und den Umfang der Einschränkungen der angebotenen Dienstleistungen. Die Rechtsform der Institution oder die Anzahl der IT-Systeme sind keine Bewertungsmaßstäbe dieses Szenarios.",
+            "quote": "Die Schwere des Schadens richtet sich hierbei nach der zeitlichen Dauer der Beeinträchtigung und nach dem Umfang der Einschränkungen der angebotenen Dienstleistungen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Bewertungsfaktoren für das Szenario „Beeinträchtigung der Aufgabenerfüllung“ benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 176,
+            "page_end": null,
+            "answers": [
+                { "text": "Von der zeitlichen Dauer der Beeinträchtigung", "is_correct": true },
+                { "text": "Vom Umfang der Einschränkungen der angebotenen Dienstleistungen", "is_correct": true },
+                { "text": "Von der Rechtsform der Institution", "is_correct": false },
+                { "text": "Von der Anzahl der installierten IT-Systeme", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-12.1-006",
+            "text": "Woran orientiert sich laut BSI-Standard 200-2 die Höhe des Schadens beim Schadensszenario „Negative Innen- oder Außenwirkung“?",
+            "explanation": "Der Standard formuliert: Die Höhe des Schadens orientiert sich an der Schwere des Vertrauensverlustes oder des Verbreitungsgrades der Innen- oder Außenwirkung. Genannt werden als mögliche Wirkungen u. a. Ansehensverlust, Vertrauensverlust und Einbuße der Konkurrenzfähigkeit.",
+            "quote": "Die Höhe des Schadens orientiert sich an der Schwere des Vertrauensverlustes oder des Verbreitungsgrades der Innen- oder Außenwirkung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Bewertungsmetrik für das Szenario „Negative Innen- oder Außenwirkung“ benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 176,
+            "page_end": null,
+            "answers": [
+                { "text": "An der Schwere des Vertrauensverlustes oder dem Verbreitungsgrad der Wirkung", "is_correct": true },
+                { "text": "Am direkten persönlichen Schaden von Einzelpersonen", "is_correct": false },
+                { "text": "An der Höhe der Sachschäden an Hardware", "is_correct": false },
+                { "text": "An der Anzahl der entlassenen Mitarbeiter", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-12.1-007",
+            "text": "Woraus setzt sich die Höhe des Gesamtschadens beim Schadensszenario „Finanzielle Auswirkungen“ zusammen?",
+            "explanation": "Der Standard beschreibt, dass sich die Höhe des Gesamtschadens aus den direkt und indirekt entstehenden Kosten zusammensetzt, etwa durch Sachschäden, Schadenersatzleistungen und Kosten für zusätzlichen Aufwand wie Wiederherstellung. Steuervergünstigungen oder Versicherungsprämien sind nicht genannt.",
+            "quote": "Die Höhe des Gesamtschadens setzt sich zusammen aus den direkt und indirekt entstehenden Kosten, etwa durch Sachschäden, Schadenersatzleistungen und Kosten für zusätzlichen Aufwand (z. B. Wiederherstellung).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Kostenkomponenten des Szenarios „Finanzielle Auswirkungen“ benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 177,
+            "page_end": null,
+            "answers": [
+                { "text": "Direkte und indirekte Kosten, u. a. Sachschäden, Schadenersatzleistungen und zusätzlicher Aufwand (z. B. Wiederherstellung)", "is_correct": true },
+                { "text": "Ausschließlich Steuervergünstigungen", "is_correct": false },
+                { "text": "Ausschließlich Versicherungsprämien", "is_correct": false },
+                { "text": "Die Höhe des Eigenkapitals der Institution", "is_correct": false }
+            ]
+        }
+    ]
+}

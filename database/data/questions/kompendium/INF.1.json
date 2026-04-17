@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.1",
+        "chapter_title": "Allgemeines Gebäude",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.1-001",
+            "text": "Welche Aspekte MUSS die Planung der Gebäudeabsicherung laut INF.1.A1 insbesondere beachten?",
+            "explanation": "Laut INF.1.A1 müssen bei der Gebäudeabsicherung insbesondere Sicherheitsaspekte zum Schutz von Personen, Wirtschaftsgütern und der IT beachtet werden, von Brandschutz über Elektrik bis hin zur Zutrittskontrolle. Die Sicherheitsanforderungen aus den verschiedenen Bereichen müssen aufeinander abgestimmt werden.",
+            "quote": "Bei einem Gebäude MÜSSEN insbesondere Sicherheitsaspekte zum Schutz von Personen im Gebäude, dem Schutz der Wirtschaftsgüter und der IT beachtet werden, von Brandschutz über Elektrik bis hin zur Zutrittskontrolle.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Kernaspekte der Planung der Gebäudeabsicherung nach INF.1.A1 benennen.",
+            "baustein_id": "INF.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Schutz von Personen, Wirtschaftsgütern und der IT",
+                    "is_correct": true
+                },
+                {
+                    "text": "Brandschutz, Elektrik und Zutrittskontrolle",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich den Schutz der Gebäudesubstanz vor Witterung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Einhaltung der kommunalen Bauordnung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.1-002",
+            "text": "Welche Anforderung stellt INF.1.A3 an den Brandschutz hinsichtlich der Fluchtwege?",
+            "explanation": "INF.1.A3 verlangt, dass die Fluchtwege vorschriftsmäßig ausgeschildert und freigehalten werden müssen. Es muss regelmäßig kontrolliert werden, dass sie benutzbar und frei von Hindernissen sind, damit das Gebäude in einer Gefahrensituation schnell geräumt werden kann.",
+            "quote": "Die Fluchtwege MÜSSEN vorschriftsmäßig ausgeschildert und freigehalten werden. Es MUSS regelmäßig kontrolliert werden, dass die Fluchtwege benutzbar und frei von Hindernissen sind, damit das Gebäude in einer Gefahrensituation schnell geräumt werden kann.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an den Brandschutz hinsichtlich der Fluchtwege nach INF.1.A3 erläutern.",
+            "baustein_id": "INF.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Fluchtwege müssen vorschriftsmäßig ausgeschildert und freigehalten werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es muss regelmäßig kontrolliert werden, dass die Fluchtwege benutzbar und frei von Hindernissen sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Fluchtwege dürfen als zusätzliche Lagerfläche genutzt werden, solange ein Durchgang bleibt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Beschilderung der Fluchtwege ist nur bei Neubauten erforderlich",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.1-003",
+            "text": "Für welche Räume MUSS laut INF.1.A8 ein Rauchverbot erlassen werden?",
+            "explanation": "INF.1.A8 verlangt ein Rauchverbot für Räume mit IT oder Datenträgern, in denen Brände oder Verschmutzungen zu hohen Schäden führen können. Als Beispiele werden Serverräume, Datenträger- oder Belegarchive genannt.",
+            "quote": "Für Räume mit IT oder Datenträgern, in denen Brände oder Verschmutzungen zu hohen Schäden führen können, wie Serverräume, Datenträger- oder Belegarchive, MUSS ein Rauchverbot erlassen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Geltungsbereich des Rauchverbots nach INF.1.A8 benennen.",
+            "baustein_id": "INF.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Räume mit IT oder Datenträgern, in denen Brände oder Verschmutzungen zu hohen Schäden führen können",
+                    "is_correct": true
+                },
+                {
+                    "text": "In allen Büroräumen der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur in explosionsgefährdeten Bereichen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich in der Kantine und im Eingangsbereich",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.1-004",
+            "text": "Wie häufig SOLLTEN Brandschutzbegehungen laut INF.1.A18 mindestens stattfinden?",
+            "explanation": "Laut INF.1.A18 sollten Brandschutzbegehungen regelmäßig, d. h. mindestens ein- bis zweimal im Jahr stattfinden. Bei Brandschutzbegehungen festgestellte Mängel sollten unverzüglich behoben werden.",
+            "quote": "Brandschutzbegehungen SOLLTEN regelmäßig, d. h. mindestens ein- bis zweimal im Jahr, stattfinden. Bei Brandschutzbegehungen festgestellte Mängel SOLLTEN unverzüglich behoben werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Frequenz der Brandschutzbegehungen nach INF.1.A18 benennen.",
+            "baustein_id": "INF.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mindestens ein- bis zweimal im Jahr",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mindestens einmal pro Quartal",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur bei konkretem Anlass oder nach einem Brandereignis",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle fünf Jahre im Rahmen der allgemeinen Gebäudeinspektion",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.1-005",
+            "text": "Was SOLLTE bei erhöhtem Schutzbedarf laut INF.1.A23 mit Räumen ähnlichen Schutzbedarfs geschehen?",
+            "explanation": "INF.1.A23 empfiehlt, Räume ähnlichen Schutzbedarfs in Zonen zusammenzufassen, um vergleichbare Risiken einheitlich behandeln und Kosten für erforderliche Sicherheitsmaßnahmen reduzieren zu können.",
+            "quote": "Räume ähnlichen Schutzbedarfs SOLLTEN in Zonen zusammengefasst werden, um vergleichbare Risiken einheitlich behandeln und Kosten für erforderliche Sicherheitsmaßnahmen reduzieren zu können.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Das Konzept der Sicherheitszonen nach INF.1.A23 erklären.",
+            "baustein_id": "INF.1",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In Zonen zusammengefasst werden, um vergleichbare Risiken einheitlich zu behandeln",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einzeln und unabhängig voneinander geschützt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "In verschiedenen Gebäuden untergebracht werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mit identischen Zugangsberechtigungen für alle Mitarbeitenden versehen werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

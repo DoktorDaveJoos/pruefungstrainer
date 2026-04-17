@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 8.4 (short: three sentences of continuous improvement guidance) is mined cleanly into three focused questions on goals, Praxistauglichkeit→Akzeptanz, and quality of formulation (Nachvollziehbarkeit/Verständlichkeit). Quotes are verbatim after normalization. Correct answers are directly supported; distractors are unambiguously off-topic. methodik + basis is appropriate — none of this requires synthesis.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-8.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-8.4-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

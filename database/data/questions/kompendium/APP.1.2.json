@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.1.2",
+        "chapter_title": "Webbrowser",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.1.2-001",
+            "text": "Welche grundlegenden Sicherheitsmechanismen MUSS ein Webbrowser laut APP.1.2 umsetzen?",
+            "explanation": "Anforderung APP.1.2.A1 verlangt Sandboxing (jede Instanz darf nur auf eigene Ressourcen zugreifen), Isolation von Webseiten als eigenständige Prozesse oder Threads, isolierte Ausführung von Plug-ins und Erweiterungen sowie die Umsetzung der Content Security Policy (CSP). Ein integriertes VPN oder automatisches Blockieren aller Skripte wird nicht gefordert.",
+            "quote": "Der eingesetzte Webbrowser MUSS sicherstellen, dass jede Instanz und jeder Verarbeitungsprozess nur auf die eigenen Ressourcen zugreifen kann (Sandboxing). Webseiten MÜSSEN als eigenständige Prozesse oder mindestens als eigene Threads voneinander isoliert werden. • Der verwendete Webbrowser MUSS die Content Security Policy (CSP) umsetzen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grundlegenden Sicherheitsmechanismen eines Webbrowsers gemäß APP.1.2 benennen.",
+            "baustein_id": "APP.1.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sandboxing, sodass jede Instanz nur auf eigene Ressourcen zugreifen kann",
+                    "is_correct": true
+                },
+                {
+                    "text": "Umsetzung der Content Security Policy (CSP)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein integriertes VPN für alle Verbindungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Automatisches Blockieren aller JavaScript-Skripte",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.2-002",
+            "text": "Was MUSS laut APP.1.2 beim Kennwortmanagement im Webbrowser sichergestellt werden?",
+            "explanation": "Anforderung APP.1.2.A6 verlangt, dass der Kennwortmanager eine direkte Beziehung zwischen Webseite und Kennwort herstellt, die Passwörter verschlüsselt speichert, den Zugriff nur nach Eingabe eines Master-Kennworts erlaubt und die Authentisierung nur für die aktuelle Sitzung gültig ist. Ein Verbot von Kennwortmanagern oder die Speicherung im Klartext wird nicht verlangt.",
+            "quote": "Wird ein Kennwortmanager im Webbrowser verwendet, MUSS er eine direkte und eindeutige Beziehung zwischen Webseite und hierfür gespeichertem Kennwort herstellen. Der Kennwortspeicher MUSS die Passwörter verschlüsselt speichern. Es MUSS sichergestellt werden, dass auf die im Kennwortmanager gespeicherten Passwörter nur nach Eingabe eines Master-Kennworts zugegriffen werden kann.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an das Kennwortmanagement im Webbrowser benennen.",
+            "baustein_id": "APP.1.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der Kennwortspeicher muss Passwörter verschlüsselt speichern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Zugriff auf gespeicherte Passwörter darf nur nach Eingabe eines Master-Kennworts erfolgen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Kennwortmanager im Browser müssen grundsätzlich verboten werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Passwörter sollen im Klartext gespeichert werden, um die Verfügbarkeit zu erhöhen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.2-003",
+            "text": "Was MUSS die Institution laut APP.1.2 bezüglich DNS-over-HTTPS (DoH) im Webbrowser entscheiden?",
+            "explanation": "Anforderung APP.1.2.A13 verlangt als Basis-Anforderung, dass die Institution entscheiden muss, ob die Browser DoH verwenden sollen, und die Browser entsprechend konfiguriert werden müssen. Falls ein interner DNS-Resolver verwendet wird, muss auch der Browser diesen verwenden. DoH wird weder verpflichtend vorgeschrieben noch grundsätzlich verboten.",
+            "quote": "Die Institution MUSS entscheiden, ob die verwendeten Browser DNS-over-HTTPS (DoH) verwenden sollen. Die Browser MÜSSEN entsprechend dieser Entscheidung konfiguriert werden. Falls ein interner DNS-Resolver verwendet wird, MUSS dieser auch vom Browser verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung zur Entscheidung über DNS-over-HTTPS im Webbrowser erläutern.",
+            "baustein_id": "APP.1.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Institution muss entscheiden, ob die Browser DoH verwenden sollen, und sie entsprechend konfigurieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "DNS-over-HTTPS muss in jedem Fall verpflichtend aktiviert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "DNS-over-HTTPS muss grundsätzlich verboten werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Entscheidung über DoH obliegt ausschließlich den einzelnen Benutzenden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.1.2-004",
+            "text": "Was SOLLTE laut APP.1.2 bei erhöhtem Schutzbedarf für den Fall ungelöster Sicherheitsprobleme mit dem Webbrowser bereitstehen?",
+            "explanation": "Anforderung APP.1.2.A12 (erhöhter Schutzbedarf) empfiehlt die Zwei-Browser-Strategie: Für den Fall ungelöster Sicherheitsprobleme sollte ein alternativer Browser mit einer anderen Plattform installiert sein, der den Benutzenden als Ausweichmöglichkeit dient. Eine Sperrung aller Browser oder der Wechsel zu einem textbasierten Browser wird nicht gefordert.",
+            "quote": "Für den Fall von ungelösten Sicherheitsproblemen mit dem verwendeten Webbrowser SOLLTE ein alternativer Browser mit einer anderen Plattform installiert sein, der den Benutzenden als Ausweichmöglichkeit dient.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Zwei-Browser-Strategie als Maßnahme bei erhöhtem Schutzbedarf erläutern.",
+            "baustein_id": "APP.1.2",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein alternativer Browser mit einer anderen Plattform sollte als Ausweichmöglichkeit installiert sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Browser sollten gesperrt und der Internetzugang unterbunden werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Benutzenden sollten auf einen textbasierten Browser wechseln",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der bestehende Browser sollte in einer älteren Version weiterbetrieben werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

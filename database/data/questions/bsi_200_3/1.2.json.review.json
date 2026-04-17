@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All six questions in section 1.2 are accurate. Quotes match the source after normalization (soft-hyphen joins in 'IT-Grundschutz-Kompendium', 'einschneidende', 'IT-Grundschutzes', 'Schwachstellenanalyse'). Correct answers are directly supported by the source text. Topic 'risikoanalyse' is appropriate since these questions concern the methodology and purpose of the risk analysis standard. All questions are 'basis' difficulty, which is fitting for direct paraphrases of the Zielsetzung. Schema is correct (nulls for baustein_id and anforderung_type).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-1.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.2-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.2-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

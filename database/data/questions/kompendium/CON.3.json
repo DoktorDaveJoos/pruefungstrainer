@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.3",
+        "chapter_title": "Datensicherungskonzept",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.3-001",
+            "text": "Was MUSS laut CON.3.A15 regelmäßig getestet werden?",
+            "explanation": "Laut CON.3.A15 muss regelmäßig getestet werden, ob die Datensicherungen wie gewünscht funktionieren, vor allem, ob gesicherte Daten einwandfrei und in angemessener Zeit zurückgespielt werden können.",
+            "quote": "Es MUSS regelmäßig getestet werden, ob die Datensicherungen wie gewünscht funktionieren, vor allem, ob gesicherte Daten einwandfrei und in angemessener Zeit zurückgespielt werden können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zu regelmäßigen Wiederherstellungstests benennen.",
+            "baustein_id": "CON.3.A15",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Ob gesicherte Daten einwandfrei und in angemessener Zeit zurückgespielt werden können", "is_correct": true },
+                { "text": "Ob die Datensicherungssoftware die neueste Version hat", "is_correct": false },
+                { "text": "Ob alle Mitarbeitenden die Datensicherung selbst durchführen können", "is_correct": false },
+                { "text": "Ob die Datensicherungen weniger als ein Gigabyte groß sind", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.3-002",
+            "text": "Wo MÜSSEN Speichermedien für die Datensicherung laut CON.3.A12 aufbewahrt werden?",
+            "explanation": "Laut CON.3.A12 müssen die Speichermedien für die Datensicherung räumlich getrennt von den gesicherten IT-Systemen aufbewahrt werden. Sie sollten in einem anderen Brandabschnitt aufbewahrt werden.",
+            "quote": "Die Speichermedien für die Datensicherung MÜSSEN räumlich getrennt von den gesicherten IT-Systemen aufbewahrt werden. Sie SOLLTEN in einem anderen Brandabschnitt aufbewahrt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die räumlich getrennte Aufbewahrung von Datensicherungen erklären.",
+            "baustein_id": "CON.3.A12",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Räumlich getrennt von den gesicherten IT-Systemen", "is_correct": true },
+                { "text": "Direkt neben dem gesicherten Server im selben Rack", "is_correct": false },
+                { "text": "In einem beliebigen Büro des gleichen Gebäudes", "is_correct": false },
+                { "text": "Ausschließlich bei einem externen Cloud-Anbieter", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.3-003",
+            "text": "Warum werden RAID-Systeme laut CON.3 nicht als Datensicherung verstanden?",
+            "explanation": "Laut der Einleitung von CON.3 werden Datenspiegelungen über RAID-Systeme nicht als Datensicherung verstanden, da die gespiegelten Daten simultan verändert werden. Ein RAID kann zwar vor Hardwaredefekten einzelner Datenträger schützen, jedoch nicht vor unbeabsichtigtem Überschreiben oder Schadsoftware.",
+            "quote": "Dem gegenüber werden Datenspiegelungen über RAID-Systeme nicht als Datensicherung verstanden, da die gespiegelten Daten simultan verändert werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Abgrenzung zwischen RAID-Spiegelung und Datensicherung erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Weil die gespiegelten Daten simultan verändert werden", "is_correct": true },
+                { "text": "Weil RAID-Systeme zu teuer für den regulären Einsatz sind", "is_correct": false },
+                { "text": "Weil RAID-Systeme keine Verschlüsselung unterstützen", "is_correct": false },
+                { "text": "Weil RAID-Systeme nur in Rechenzentren eingesetzt werden dürfen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.3-004",
+            "text": "Welche Rahmenbedingungen MUSS der IT-Betrieb laut CON.3.A1 mit den Fachverantwortlichen abstimmen?",
+            "explanation": "Laut CON.3.A1 muss der IT-Betrieb mindestens die folgenden Rahmenbedingungen abstimmen: zu sichernde Daten, Speichervolumen, Änderungsvolumen, Änderungszeitpunkte, Verfügbarkeitsanforderungen, Vertraulichkeitsanforderungen, Integritätsbedarf, rechtliche Anforderungen, Anforderungen an das Löschen und Vernichten sowie Zuständigkeiten.",
+            "quote": "Der IT-Betrieb MUSS mindestens die nachfolgenden Rahmenbedingungen mit den Fachverantwortlichen abstimmen: • zu sichernde Daten, • Speichervolumen, • Änderungsvolumen, • Änderungszeitpunkte, • Verfügbarkeitsanforderungen, • Vertraulichkeitsanforderungen, • Integritätsbedarf, • rechtliche Anforderungen, • Anforderungen an das Löschen und Vernichten der Daten sowie • Zuständigkeiten für die Datensicherung.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Einflussfaktoren für die Datensicherung vollständig benennen.",
+            "baustein_id": "CON.3.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Verfügbarkeitsanforderungen, Vertraulichkeitsanforderungen und Integritätsbedarf", "is_correct": true },
+                { "text": "Zu sichernde Daten, Speichervolumen und Änderungsvolumen", "is_correct": true },
+                { "text": "Die bevorzugte Farbe der Backup-Bänder", "is_correct": false },
+                { "text": "Die persönlichen IT-Kenntnisse jedes einzelnen Mitarbeitenden", "is_correct": false }
+            ]
+        }
+    ]
+}

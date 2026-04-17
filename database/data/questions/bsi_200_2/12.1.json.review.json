@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Seven questions on Erläuterungen zu den Schadensszenarien (section 12.1). All correct answers directly supported by the source annexe text. Topic 'methodik' is appropriate since these scenarios support the Schutzbedarfsfeststellung methodology. All quotes verified clean. All page_start values (176-177) are within the manifest range (176-178). Schema correct. Questions cover six different Schadensszenarien (Verstoß, informationelles Selbstbestimmungsrecht, persönliche Unversehrtheit, Aufgabenerfüllung, Innen-/Außenwirkung, finanzielle Auswirkungen) -- good coverage.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-12.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-12.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-12.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-12.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-12.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-12.1-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-12.1-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

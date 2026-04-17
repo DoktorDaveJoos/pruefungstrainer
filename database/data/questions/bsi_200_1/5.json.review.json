@@ -1,0 +1,12 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Solid section. Six quotes all match the normalized source (after joining 'zeitli\u00adche', 'perso\u00adnelle', 'Ar\u00adbeitsklima'-style breaks). Correct answers are well-supported; distractors (Räumliche Ressourcen, Marketingargumente, Abteilungs-Ranking, Betriebsrats-Anforderung) are plausibly wrong. Topic 'methodik' is appropriate — resources for the ISMS are a governance/management topic. Q3 and Q6 are labeled 'experte' which is borderline: both are two-prong lookups rather than real cross-sentence synthesis, but they do require extracting two distinct rationales from adjacent clauses, so it's defensible rather than mislabeled. Page_start = 26 matches section range 26–27. Schema: baustein_id / anforderung_type correctly null.",
+    "results": [
+        { "external_id": "bsi-200-1-5-001", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-5-002", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-5-003", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-5-004", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-5-005", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-1-5-006", "verdict": "pass", "issues": [] }
+    ]
+}

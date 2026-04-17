@@ -1,0 +1,261 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "2",
+        "chapter_title": "Vorarbeiten zur Risikoanalyse",
+        "page_start": 9,
+        "page_end": 12
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-2-001",
+            "text": "Welche Vorarbeiten müssen laut BSI-Standard 200-3 vor Beginn der eigentlichen Risikoanalyse abgeschlossen sein?",
+            "explanation": "Vor der Risikoanalyse müssen der Informationssicherheitsprozess initiiert, der Geltungsbereich (Informationsverbund) definiert sowie Strukturanalyse, Schutzbedarfsfeststellung, Modellierung und IT-Grundschutz-Check durchgeführt worden sein. Ein bestandenes Zertifizierungsaudit wird nicht gefordert.",
+            "quote": "Es muss ein systematischer Informationssicherheitsprozess initiiert worden sein. • Gemäß Kapitel 3.3 der IT-Grundschutz-Methodik muss ein Geltungsbereich für die Sicherheitskonzeption definiert worden sein. • Für den Informationsverbund sollte eine Strukturanalyse gemäß Kapitel 8.1 der IT-Grundschutz-Methodik durchgeführt worden sein. • Anschließend sollte eine Schutzbedarfsfeststellung gemäß Kapitel 8.2 der IT-Grundschutz-Methodik durchgeführt worden sein. • Es sollte eine Modellierung gemäß Kapitel 8.3 der IT-Grundschutz-Methodik und Kapitel 2 des IT-Grundschutz-Kompendiums durchgeführt worden sein. • Es sollte vor der Risikoanalyse ein IT-Grundschutz-Check gemäß Kapitel 8.4 der IT-Grundschutz-Methodik durchgeführt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die notwendigen Vorarbeiten vor der Risikoanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 9,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Strukturanalyse und Schutzbedarfsfeststellung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Modellierung und IT-Grundschutz-Check",
+                    "is_correct": true
+                },
+                {
+                    "text": "Definition eines Informationsverbunds als Geltungsbereich",
+                    "is_correct": true
+                },
+                {
+                    "text": "Bestandenes Zertifizierungsaudit nach ISO 27001",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-002",
+            "text": "In welchen Stufen wird der Schutzbedarf im Rahmen der Vorarbeiten nach IT-Grundschutz festgelegt?",
+            "explanation": "Der Schutzbedarf bezieht sich auf Vertraulichkeit, Integrität und Verfügbarkeit und wird nach IT-Grundschutz normalerweise in den Stufen normal, hoch und sehr hoch festgelegt. Andere Schemata wie „niedrig/mittel/hoch“ oder „normal/kritisch/extrem“ sind nicht vorgesehen.",
+            "quote": "Der Schutzbedarf bezieht sich jeweils auf die Grundwerte Vertraulichkeit, Integrität und Verfügbarkeit und wird nach IT-Grundschutz normalerweise in den Stufen normal, hoch und sehr hoch festgelegt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Schutzbedarfsstufen des IT-Grundschutzes benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 9,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "normal, hoch, sehr hoch",
+                    "is_correct": true
+                },
+                {
+                    "text": "niedrig, mittel, hoch",
+                    "is_correct": false
+                },
+                {
+                    "text": "normal, kritisch, extrem",
+                    "is_correct": false
+                },
+                {
+                    "text": "niedrig, hoch, sehr hoch",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-003",
+            "text": "Welche Zielobjekte sollten bei der Vorgehensweise „Standard-Absicherung“ vorrangig analysiert werden, wenn trotz Gruppenbildung viele Zielobjekte eine Risikoanalyse benötigen?",
+            "explanation": "Bei Standard-Absicherung sollten vorrangig die übergeordneten Zielobjekte bearbeitet werden, insbesondere Geschäftsprozesse, Teilverbünde und der gesamte Informationsverbund. Die Priorisierung nach höchstem Schutzbedarf ist hingegen die Regel für Kern-Absicherung.",
+            "quote": "Falls für den IT-Grundschutz die Vorgehensweise „Standard-Absicherung“ gewählt wurde, sollten vorrangig die übergeordneten Zielobjekte bearbeitet werden (insbesondere Geschäftsprozesse, Teilverbünde und gesamter Informationsverbund).",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Priorisierungsregel der Standard-Absicherung für die Risikoanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 9,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die übergeordneten Zielobjekte wie Geschäftsprozesse, Teilverbünde und der gesamte Informationsverbund",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die Zielobjekte mit dem höchsten Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich die technisch untergeordneten Zielobjekte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur einzelne Räume und Gebäude",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-004",
+            "text": "Welche Zielobjekte werden bei der „Kern-Absicherung“ vorrangig einer Risikoanalyse unterzogen?",
+            "explanation": "Bei Kern-Absicherung sollten vorrangig die Zielobjekte mit dem höchsten Schutzbedarf bearbeitet werden. Bei Standard-Absicherung wären das die übergeordneten Zielobjekte; das trifft hier nicht zu.",
+            "quote": "Falls für den IT-Grundschutz die Vorgehensweise „Kern-Absicherung“ gewählt wurde, sollten vorrangig die Zielobjekte mit dem höchsten Schutzbedarf bearbeitet werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Das Priorisierungskriterium der Kern-Absicherung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 9,
+            "page_end": 10,
+            "answers": [
+                {
+                    "text": "Zielobjekte mit dem höchsten Schutzbedarf",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich übergeordnete Zielobjekte wie Geschäftsprozesse",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur Räume und technische Infrastruktur",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zielobjekte ohne erkennbaren Schutzbedarf",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-005",
+            "text": "Was sieht der BSI-Standard 200-3 bei der Vorgehensweise „Basis-Absicherung“ in Bezug auf Risikoanalysen vor?",
+            "explanation": "Bei Basis-Absicherung werden zunächst keine Risikoanalysen durchgeführt, sondern es werden als erstes nur die Basis-Anforderungen umgesetzt. Eine umfassende Risikoanalyse für alle Zielobjekte ist bei diesem Vorgehen nicht vorgesehen.",
+            "quote": "Falls für den IT-Grundschutz die Vorgehensweise „Basis-Absicherung“ gewählt wurde, werden zunächst keine Risikoanalysen durchgeführt, sondern es werden als erstes nur die Basis-Anforderungen umgesetzt.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Das Vorgehen bei Basis-Absicherung in Bezug auf Risikoanalysen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es werden zunächst keine Risikoanalysen durchgeführt, sondern nur die Basis-Anforderungen umgesetzt.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zuerst werden die Zielobjekte mit dem höchsten Schutzbedarf analysiert.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Vorrangig werden übergeordnete Zielobjekte wie Geschäftsprozesse analysiert.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es wird eine vollständige Risikoanalyse für alle Zielobjekte durchgeführt.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-006",
+            "text": "Welche Aspekte sollte die von der Leitungsebene verabschiedete Richtlinie zum Umgang mit Risiken unter anderem umfassen?",
+            "explanation": "Die Richtlinie soll unter anderem regeln, unter welchen Voraussetzungen eine Risikoanalyse durchzuführen ist, welche Methodik eingesetzt wird, wie sie auf die Institution angepasst wird und was die Risikoakzeptanzkriterien sind. Eine konkrete Produkt-Whitelist für Firewalls ist nicht Bestandteil dieser Richtlinie.",
+            "quote": "Unter welchen Voraussetzungen muss in jedem Fall eine Risikoanalyse durchgeführt werden? • Welche Methodik beziehungsweise welcher Standard wird dazu eingesetzt, um die Risiken zu identifizieren, einzuschätzen, zu bewerten und zu behandeln? • Wie wird die gewählte Methodik auf die speziellen Belange der Institution angepasst? • Was sind die Risikoakzeptanzkriterien?",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Typische Inhalte der Risikomanagement-Richtlinie benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Voraussetzungen, unter denen eine Risikoanalyse durchzuführen ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eingesetzte Methodik bzw. Standard sowie Risikoakzeptanzkriterien",
+                    "is_correct": true
+                },
+                {
+                    "text": "Anpassung der Methodik an die speziellen Belange der Institution",
+                    "is_correct": true
+                },
+                {
+                    "text": "Konkrete Liste zulässiger Firewall-Produkte",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-007",
+            "text": "Wer muss die Richtlinie zur Risikoanalyse laut BSI-Standard 200-3 freigeben?",
+            "explanation": "Die Richtlinie zur Risikoanalyse muss durch die Institutionsleitung freigegeben werden. Eine Freigabe durch den Datenschutzbeauftragten, die IT-Abteilung oder ein externes Audit wird nicht gefordert.",
+            "quote": "Die Richtlinie zur Risikoanalyse muss durch die Institutionsleitung freigegeben werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die für die Freigabe der Risikoanalyse-Richtlinie zuständige Instanz benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Institutionsleitung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Datenschutzbeauftragte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein externes Audit-Team",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-2-008",
+            "text": "Was gilt laut BSI-Standard 200-3, wenn sich eine Institution ihrer eigenen Risikoneigung nicht bewusst ist?",
+            "explanation": "In diesem Fall sollte die Leitungsebene eine Klärung und Entscheidung herbeiführen, gegebenenfalls sollte die Institution hierfür auf externe Experten zurückgreifen. Eine Standardvorgabe durch das BSI, das automatische Höchstniveau oder eine Delegation an den IT-Betrieb werden nicht genannt.",
+            "quote": "In diesem Fall sollte die Leitungsebene eine Klärung und Entscheidung herbeiführen, gegebenenfalls sollte die Institution hierfür auf externe Experten zurückgreifen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Vorgehen bei unklarer Risikoneigung einer Institution benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Leitungsebene soll eine Klärung und Entscheidung herbeiführen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Institution soll gegebenenfalls externe Experten heranziehen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Das BSI gibt die Risikoneigung per Standard vor.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Risikoneigung wird automatisch auf das höchste Niveau gesetzt.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

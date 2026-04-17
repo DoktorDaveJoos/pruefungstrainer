@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.7",
+        "chapter_title": "Büroarbeitsplatz",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.7-001",
+            "text": "Was DARF laut INF.7.A1 NICHT in sicherheitsrelevanten Bereichen liegen?",
+            "explanation": "INF.7.A1 verlangt, dass Büroräume mit Publikumsverkehr nicht in sicherheitsrelevanten Bereichen liegen dürfen. Außerdem müssen Büroräume für den Schutzbedarf der dort verarbeiteten Informationen angemessen ausgewählt und ausgestattet sein.",
+            "quote": "Büroräume mit Publikumsverkehr DÜRFEN NICHT in sicherheitsrelevanten Bereichen liegen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Einschränkung für Büroräume mit Publikumsverkehr nach INF.7.A1 benennen.",
+            "baustein_id": "INF.7",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Büroräume mit Publikumsverkehr",
+                    "is_correct": true
+                },
+                {
+                    "text": "Büroräume mit mehr als vier Mitarbeitenden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Büroräume ohne Fenster",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Büroräume im Erdgeschoss",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.7-002",
+            "text": "Worauf SOLLTEN Bildschirme laut INF.7.A5 bei der Aufstellung geachtet werden?",
+            "explanation": "INF.7.A5 verlangt, dass Bildschirme so aufgestellt werden, dass ein ergonomisches und ungestörtes Arbeiten möglich ist. Dabei sollte beachtet werden, dass Bildschirme nicht durch Unbefugte eingesehen werden können.",
+            "quote": "Vor allem die Bildschirme SOLLTEN so aufgestellt werden, dass ein ergonomisches und ungestörtes Arbeiten möglich ist. Dabei SOLLTE beachtet werden, dass Bildschirme nicht durch Unbefugte eingesehen werden können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Bildschirmaufstellung nach INF.7.A5 erläutern.",
+            "baustein_id": "INF.7",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Dass ergonomisches und ungestörtes Arbeiten möglich ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dass Bildschirme nicht durch Unbefugte eingesehen werden können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dass alle Bildschirme in gleicher Höhe angebracht sind",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dass mindestens zwei Bildschirme pro Arbeitsplatz vorhanden sind",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.7-003",
+            "text": "Welche Maßnahme SOLLTE laut INF.7.A6 zum aufgeräumten Arbeitsplatz ergriffen werden?",
+            "explanation": "INF.7.A6 verlangt, dass alle Mitarbeitenden dazu angehalten werden, ihren Arbeitsplatz aufgeräumt zu hinterlassen und sicherzustellen, dass keine vertraulichen Informationen frei zugänglich sind. Vorgesetzte sollten dies sporadisch überprüfen.",
+            "quote": "Alle Mitarbeitenden SOLLTEN dazu angehalten werden, seinen Arbeitsplatz aufgeräumt zu hinterlassen. Die Mitarbeitenden SOLLTEN dafür sorgen, dass Unbefugte keine vertraulichen Informationen einsehen können. • Vorgesetzte SOLLTEN Arbeitsplätze sporadisch daraufhin überprüfen, ob dort schutzbedürftige Informationen offen zugreifbar sind.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an den aufgeräumten Arbeitsplatz nach INF.7.A6 erklären.",
+            "baustein_id": "INF.7",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mitarbeitende sollen den Arbeitsplatz aufgeräumt hinterlassen und keine vertraulichen Informationen frei zugänglich lassen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Vorgesetzte sollen sporadisch prüfen, ob schutzbedürftige Informationen offen zugreifbar sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Dokumente müssen täglich in einem zentralen Archiv abgegeben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Reinigung des Büros muss durch die Mitarbeitenden selbst erfolgen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

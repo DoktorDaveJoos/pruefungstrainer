@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "9.4",
+        "chapter_title": "Zusammenspiel mit ISO/IEC 31000",
+        "page_start": 52,
+        "page_end": 54
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-9.4-001",
+            "text": "Warum stellt der BSI-Standard 200-3 die Begriffe aus ISO/IEC 31000 den Begriffen der BSI-Standards gegenüber?",
+            "explanation": "Der Standard begründet die Gegenüberstellung damit, dass in ISO/IEC 31000 einige Begriffe anders belegt werden als im deutschen Sprachraum üblich. Eine Ersetzung der BSI-Standards, eine Einführung neuer Rollen oder eine Harmonisierung mit ISO 27001 werden als Grund nicht genannt.",
+            "quote": "In den internationalen Normen zum Risikomanagement und zur Risikobeurteilung, insbesondere der • ISO/IEC 31000, werden einige Begriffe anders belegt, als es im deutschen Sprachraum üblich ist.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Motivation für die Begriffs-Gegenüberstellung mit ISO/IEC 31000 wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 52,
+            "page_end": null,
+            "answers": [
+                { "text": "Weil in der ISO/IEC 31000 einige Begriffe anders belegt sind, als es im deutschen Sprachraum üblich ist", "is_correct": true },
+                { "text": "Weil die BSI-Standards durch die ISO/IEC 31000 abgelöst werden sollen", "is_correct": false },
+                { "text": "Weil ISO/IEC 31000 neue Rollen im Sicherheitsprozess einführt", "is_correct": false },
+                { "text": "Weil die Gegenüberstellung eine Harmonisierung mit ISO 27001 herstellt", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.4-002",
+            "text": "Welcher BSI-Standard 200-3-Begriff entspricht laut Gegenüberstellung dem ISO/IEC 31000-Schritt „Risk Analysis“ (Kapitel 5.4.3)?",
+            "explanation": "Die Tabelle ordnet „Risk Analysis, Kapitel 5.4.3“ der Risikoeinschätzung (BSI-Standard 200-3, Kapitel 5.1) zu. „Risikobewertung“ entspricht „Risk Evaluation“, „Risikobehandlung“ entspricht „Risk Treatment“ und „Erstellung einer Gefährdungsübersicht“ entspricht „Risk Identification“.",
+            "quote": "Risk Analysis, Kapitel 5.4.3 BSI-Standard 200-3 Risikoeinschätzung, Kapitel 5.1",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuordnung von „Risk Analysis“ zum BSI-Begriff „Risikoeinschätzung“ wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 52,
+            "page_end": null,
+            "answers": [
+                { "text": "Risikoeinschätzung (Kapitel 5.1)", "is_correct": true },
+                { "text": "Risikobewertung (Kapitel 5.2)", "is_correct": false },
+                { "text": "Risikobehandlung (Kapitel 6)", "is_correct": false },
+                { "text": "Erstellung einer Gefährdungsübersicht (Kapitel 4)", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.4-003",
+            "text": "Welchem BSI-Begriff entspricht laut Gegenüberstellung der ISO/IEC-31000-Schritt „Risk Evaluation“ (Kapitel 5.4.4)?",
+            "explanation": "Die Tabelle ordnet „Risk Evaluation, Kapitel 5.4.4“ der Risikobewertung im BSI-Standard 200-3, Kapitel 5.2 zu. Die Risikoeinschätzung entspricht „Risk Analysis“, die Risikobehandlung „Risk Treatment“ und die Erstellung einer Gefährdungsübersicht „Risk Identification“.",
+            "quote": "Risk Evaluation, Kapitel 5.4.4 BSI-Standard 200-3, Risikobewertung, Kapitel 5.2",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuordnung von „Risk Evaluation“ zum BSI-Begriff „Risikobewertung“ wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 52,
+            "page_end": null,
+            "answers": [
+                { "text": "Risikobewertung (Kapitel 5.2)", "is_correct": true },
+                { "text": "Risikoeinschätzung (Kapitel 5.1)", "is_correct": false },
+                { "text": "Risikobehandlung (Kapitel 6)", "is_correct": false },
+                { "text": "Erstellung einer Gefährdungsübersicht (Kapitel 4)", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.4-004",
+            "text": "Welchem BSI-Kapitel entspricht laut Gegenüberstellung der ISO/IEC-31000-Schritt „Risk Treatment“ (Kapitel 5.5)?",
+            "explanation": "Die Tabelle ordnet „Risk Treatment, Kapitel 5.5“ der Risikobehandlung im BSI-Standard 200-3, Kapitel 6 zu. Risikobewertung, Risikoeinschätzung und die Erstellung einer Gefährdungsübersicht decken andere ISO-Schritte ab.",
+            "quote": "Risk Treatment, Kapitel 5.5 BSI-Standard 200-3, Risikobehandlung, Kapitel 6",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuordnung von „Risk Treatment“ zum BSI-Kapitel „Risikobehandlung“ wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 52,
+            "page_end": null,
+            "answers": [
+                { "text": "BSI-Standard 200-3, Risikobehandlung, Kapitel 6", "is_correct": true },
+                { "text": "BSI-Standard 200-3, Risikobewertung, Kapitel 5.2", "is_correct": false },
+                { "text": "BSI-Standard 200-3, Risikoeinschätzung, Kapitel 5.1", "is_correct": false },
+                { "text": "BSI-Standard 200-3, Erstellung einer Gefährdungsübersicht, Kapitel 4", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.4-005",
+            "text": "Welche BSI-Begriffe werden laut Gegenüberstellung den ISO/IEC-31000-Teilschritten von „Risk Assessment“ (Kapitel 5.4) zugeordnet?",
+            "explanation": "Die Tabelle führt „Risk Assessment, Kapitel 5.4“ als BSI-Standard 200-3 Risikobeurteilung, Kapitel 1 ein und untergliedert diese in Erstellung einer Gefährdungsübersicht (Risk Identification), Risikoeinschätzung (Risk Analysis) und Risikobewertung (Risk Evaluation). Risikobehandlung gehört zu „Risk Treatment“, Monitoring and Review zu einem eigenen Tabelleneintrag.",
+            "quote": "Risk Assessment, Kapitel 5.4 BSI-Standard 200-3 Risikobeurteilung, Kapitel 1 •Risk Identification •Erstellung einer Gefährdungsübersicht •Risk Analysis •Risikoeinschätzung •Risk Evaluation •Risikobewertung",
+            "topic": "standards",
+            "difficulty": "experte",
+            "learning_objective": "Die dreiteilige BSI-Entsprechung der ISO-Phase „Risk Assessment“ zuordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 52,
+            "page_end": null,
+            "answers": [
+                { "text": "Erstellung einer Gefährdungsübersicht, Risikoeinschätzung und Risikobewertung", "is_correct": true },
+                { "text": "Risikobehandlung und Monitoring and Review", "is_correct": false },
+                { "text": "Risikobeurteilung als Synonym ohne Untergliederung", "is_correct": false },
+                { "text": "Nur Risikoeinschätzung und Risikobehandlung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.4-006",
+            "text": "Welches Kapitel im BSI-Standard 200-3 entspricht laut Gegenüberstellung dem ISO/IEC-31000-Schritt „Monitoring and Review“ (Kapitel 5.6)?",
+            "explanation": "Die Tabelle ordnet „Monitoring and Review“ unter anderem dem Kapitel 6.2 „Risiken unter Beobachtung“ im BSI-Standard 200-3 zu. Eine Zuordnung zu Risikobehandlung, Risikobewertung oder Erstellung einer Gefährdungsübersicht gibt die Tabelle an dieser Stelle nicht.",
+            "quote": "Monitoring and Review, Kapitel 5.6 BSI-Standard 200-1 • BSI-Standard 200-3 Risiken unter Beobachtung, Kapitel 6.2",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuordnung von „Monitoring and Review“ zum BSI-Kapitel „Risiken unter Beobachtung“ wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 52,
+            "page_end": null,
+            "answers": [
+                { "text": "Risiken unter Beobachtung (Kapitel 6.2)", "is_correct": true },
+                { "text": "Risikobehandlung (Kapitel 6)", "is_correct": false },
+                { "text": "Risikobewertung (Kapitel 5.2)", "is_correct": false },
+                { "text": "Erstellung einer Gefährdungsübersicht (Kapitel 4)", "is_correct": false }
+            ]
+        }
+    ]
+}

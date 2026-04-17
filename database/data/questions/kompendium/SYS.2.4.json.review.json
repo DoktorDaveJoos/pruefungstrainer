@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three macOS client questions from A2/A4/A5. All pass cleanly with verbatim quotes.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.2.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.4-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

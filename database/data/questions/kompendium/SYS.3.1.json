@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.3.1",
+        "chapter_title": "Laptops",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.3.1-001",
+            "text": "Welche Anforderung stellt SYS.3.1 an die Personal Firewall auf Laptops?",
+            "explanation": "SYS.3.1.A3 fordert, dass auf Laptops eine Personal Firewall aktiv sein muss, wenn sie au\u00dferhalb von Netzen der Institution eingesetzt werden. Die Filterregeln m\u00fcssen so restriktiv wie m\u00f6glich sein und regelm\u00e4\u00dfig getestet werden.",
+            "quote": "Auf Laptops MUSS eine Personal Firewall aktiv sein, wenn sie au\u00dferhalb von Netzen der Institution eingesetzt werden. Die Filterregeln der Firewall M\u00dcSSEN so restriktiv wie m\u00f6glich sein. Die Filterregeln M\u00dcSSEN regelm\u00e4\u00dfig getestet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Personal Firewall auf Laptops beschreiben.",
+            "baustein_id": "SYS.3.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine Personal Firewall muss aktiv sein, wenn der Laptop au\u00dferhalb institutionseigener Netze eingesetzt wird.", "is_correct": true },
+                { "text": "Die Filterregeln m\u00fcssen so restriktiv wie m\u00f6glich sein.", "is_correct": true },
+                { "text": "Eine Firewall ist nur erforderlich, wenn der Laptop mit dem Internet verbunden ist.", "is_correct": false },
+                { "text": "Die Firewall darf von Benutzenden bei Bedarf deaktiviert werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.1-002",
+            "text": "Was DARF laut SYS.3.1 beim Fernzugriff mit Laptops NICHT geschehen?",
+            "explanation": "SYS.3.1.A9 fordert, dass aus \u00f6ffentlich zug\u00e4nglichen Netzen nur \u00fcber einen sicheren Kommunikationskanal auf das interne Netz zugegriffen werden darf. Ein unverschl\u00fcsselter Zugriff aus \u00f6ffentlichen Netzen ist somit nicht zul\u00e4ssig.",
+            "quote": "Aus \u00f6ffentlich zug\u00e4nglichen Netzen DARF NUR \u00fcber einen sicheren Kommunikationskanal auf das interne Netz der Institution zugegriffen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an den sicheren Fernzugriff mit Laptops benennen.",
+            "baustein_id": "SYS.3.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Aus \u00f6ffentlichen Netzen darf nur \u00fcber einen sicheren Kommunikationskanal auf das interne Netz zugegriffen werden.", "is_correct": true },
+                { "text": "Der Zugriff auf das interne Netz ist aus \u00f6ffentlichen Netzen grunds\u00e4tzlich untersagt.", "is_correct": false },
+                { "text": "Ein unverschl\u00fcsselter Fernzugriff ist erlaubt, sofern eine Firewall aktiv ist.", "is_correct": false },
+                { "text": "Der Fernzugriff darf nur \u00fcber Mobilfunknetze erfolgen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.1-003",
+            "text": "Was SOLLTE laut SYS.3.1 bei der Weitergabe von Laptops an andere Personen beachtet werden?",
+            "explanation": "SYS.3.1.A7 empfiehlt, dass vor der Weitergabe sch\u00fctzenswerte Daten sicher gel\u00f6scht werden sollten. Falls der Laptop nicht neu aufgesetzt wird, sollte sichergestellt sein, dass keine Schadsoftware vorhanden ist. Au\u00dferdem sollte ein Merkblatt f\u00fcr den sicheren Umgang ausgeh\u00e4ndigt werden.",
+            "quote": "Vor der Weitergabe eines Laptops SOLLTEN eventuell vorhandene sch\u00fctzenswerte Daten sicher gel\u00f6scht werden. Falls der Laptop vor der Weitergabe nicht neu aufgesetzt wird, SOLLTE sichergestellt sein, dass sich auf dem IT-System und allen damit verbundenen Datentr\u00e4gern keine Schadsoftware befindet. Gemeinsam mit einem Laptop SOLLTE ein Merkblatt f\u00fcr den sicheren Umgang mit dem Ger\u00e4t ausgeh\u00e4ndigt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlungen f\u00fcr die geregelte \u00dcbergabe von Laptops beschreiben.",
+            "baustein_id": "SYS.3.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sch\u00fctzenswerte Daten sollten vor der Weitergabe sicher gel\u00f6scht werden.", "is_correct": true },
+                { "text": "Es sollte sichergestellt sein, dass keine Schadsoftware vorhanden ist.", "is_correct": true },
+                { "text": "Der Laptop darf ohne Pr\u00fcfung direkt an die n\u00e4chste Person weitergegeben werden.", "is_correct": false },
+                { "text": "Die Festplatte muss vor jeder Weitergabe physisch zerst\u00f6rt werden.", "is_correct": false }
+            ]
+        }
+    ]
+}

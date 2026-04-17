@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.4.4",
+        "chapter_title": "Allgemeines IoT-Ger\u00e4t",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.4.4-001",
+            "text": "Welche Einsatzkriterien MUSS ein IoT-Ger\u00e4t laut SYS.4.4 erf\u00fcllen?",
+            "explanation": "SYS.4.4.A1 fordert, dass IoT-Ger\u00e4te Update-Funktionen besitzen m\u00fcssen und die herstellenden Unternehmen einen Update-Prozess anbieten m\u00fcssen. Die Ger\u00e4te m\u00fcssen eine angemessene Authentisierung erm\u00f6glichen und d\u00fcrfen keine fest codierten oder herzuleitenden Zugangsdaten enthalten.",
+            "quote": "IoT-Ger\u00e4te M\u00dcSSEN Update-Funktionen besitzen. Die herstellenden Unternehmen M\u00dcSSEN einen Update-Prozess anbieten. Die Ger\u00e4te M\u00dcSSEN eine angemessene Authentisierung erm\u00f6glichen. Es D\u00dcRFEN KEINE fest codierten oder herzuleitenden Zugangsdaten in den Ger\u00e4ten enthalten sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Einsatzkriterien f\u00fcr IoT-Ger\u00e4te benennen.",
+            "baustein_id": "SYS.4.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "IoT-Ger\u00e4te m\u00fcssen Update-Funktionen besitzen und eine angemessene Authentisierung erm\u00f6glichen.", "is_correct": true },
+                { "text": "Fest codierte Zugangsdaten d\u00fcrfen nicht in den Ger\u00e4ten enthalten sein.", "is_correct": true },
+                { "text": "IoT-Ger\u00e4te d\u00fcrfen auch ohne Update-Funktionen eingesetzt werden, wenn sie in einem isolierten Netz betrieben werden.", "is_correct": false },
+                { "text": "Standardpassw\u00f6rter wie \u201eadmin/admin\u201c sind akzeptabel, wenn sie nach der Ersteinrichtung ge\u00e4ndert werden.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.4-002",
+            "text": "Was MUSS laut SYS.4.4 beim Netzzugriff von IoT-Ger\u00e4ten beachtet werden?",
+            "explanation": "SYS.4.4.A5 fordert, dass der Netzzugriff auf das erforderliche Minimum eingeschr\u00e4nkt werden muss. IoT-Ger\u00e4te und Sensoren sollten in einem eigenen Netzsegment betrieben werden. Die UPnP-Funktion muss an allen Routern deaktiviert sein.",
+            "quote": "Der Netzzugriff von IoT-Ger\u00e4ten MUSS auf das erforderliche Minimum eingeschr\u00e4nkt werden. \u2022 Die IoT-Ger\u00e4te und Sensoren SOLLTEN in einem eigenen Netzsegment betrieben werden, das ausschlie\u00dflich mit dem Netzsegment f\u00fcr das Management kommunizieren darf. \u2022 Die UPnP-Funktion MUSS an allen Routern deaktiviert sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an den Netzzugriff von IoT-Ger\u00e4ten beschreiben.",
+            "baustein_id": "SYS.4.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Der Netzzugriff muss auf das erforderliche Minimum eingeschr\u00e4nkt werden.", "is_correct": true },
+                { "text": "Die UPnP-Funktion muss an allen Routern deaktiviert sein.", "is_correct": true },
+                { "text": "IoT-Ger\u00e4te d\u00fcrfen uneingeschr\u00e4nkt auf das Internet und das interne Netz zugreifen.", "is_correct": false },
+                { "text": "UPnP sollte aktiviert bleiben, damit IoT-Ger\u00e4te sich automatisch konfigurieren k\u00f6nnen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.4-003",
+            "text": "Welche Gef\u00e4hrdung beschreibt der Baustein SYS.4.4 im Zusammenhang mit UPnP und IoT-Ger\u00e4ten?",
+            "explanation": "Laut der Gef\u00e4hrdungslage (2.2) bauen IoT-Ger\u00e4te oft selbstst\u00e4ndig eine Verbindung zum Internet auf, indem sie Router per UPnP so konfigurieren, dass eine Portweiterleitung entsteht. Dadurch werden die Ger\u00e4te auch au\u00dferhalb des LANs sicht- und erreichbar, was sie angreifbar macht und ihre Aufnahme in ein Botnetz erm\u00f6glicht.",
+            "quote": "In LANs integrierte IoT-Ger\u00e4te bauen oftmals selbstst\u00e4ndig eine Verbindung zum Internet auf, indem sie Router im Netz per UPnP (Universal Plug and Play) so konfigurieren, dass eine Portweiterleitung entsteht. Die Ger\u00e4te k\u00f6nnen dann nicht nur ins lokale Netz kommunizieren, sondern sind auch au\u00dferhalb des LANs sicht- und erreichbar.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Gef\u00e4hrdung durch UPnP bei IoT-Ger\u00e4ten erkl\u00e4ren.",
+            "baustein_id": "SYS.4.4",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "IoT-Ger\u00e4te k\u00f6nnen per UPnP Router so konfigurieren, dass Portweiterleitungen entstehen und die Ger\u00e4te aus dem Internet erreichbar werden.", "is_correct": true },
+                { "text": "UPnP verhindert, dass IoT-Ger\u00e4te auf das Internet zugreifen k\u00f6nnen.", "is_correct": false },
+                { "text": "UPnP sch\u00fctzt IoT-Ger\u00e4te automatisch vor Angriffen aus dem Internet.", "is_correct": false },
+                { "text": "UPnP wird nur f\u00fcr die Druckerverwaltung genutzt und hat keine Auswirkungen auf IoT-Ger\u00e4te.", "is_correct": false }
+            ]
+        }
+    ]
+}

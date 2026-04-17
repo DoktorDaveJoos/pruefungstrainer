@@ -1,0 +1,39 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Section OPS.1.1.6 (3 questions: 1 pass, 2 flag, 0 fail). 1 question(s) annotated with quote_mismatch/info — content verbatim but source has PDF hyphen/line-break, page-break word split, or bullet-list layout artifacts. 2 question(s) flagged with quote_mismatch/warning — fragments verbatim in the full kompendium but outside the manifest slice for this chapter (boundary artifact) or require eliding an inline parenthetical; content is correct per manual inspection. Correct answers are supported by the quoted passages; distractors are clearly wrong per source; topic assignments fit; difficulty labels plausible.",
+    "results": [
+        {
+            "external_id": "kompendium-ops.1.1.6-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment found in kompendium but outside manifest slice for this chapter, or requires elision of inline parenthetical (boundary / paraphrase artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.6-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break or bullet-list layout artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.6-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment found in kompendium but outside manifest slice for this chapter, or requires elision of inline parenthetical (boundary / paraphrase artifact; content verbatim)."
+                }
+            ]
+        }
+    ]
+}

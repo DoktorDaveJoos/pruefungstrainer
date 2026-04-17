@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.1.2",
+        "chapter_title": "Netzmanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.1.2-001",
+            "text": "Welche Ereignisse MÜSSEN laut NET.1.2 im Netzmanagement mindestens protokolliert werden?",
+            "explanation": "NET.1.2.A7 listet vier Kategorien von Ereignissen auf, die mindestens protokolliert werden müssen: unerlaubte Zugriffe, Leistungs-/Verfügbarkeitsschwankungen, Fehler in automatischen Prozessen und eingeschränkte Erreichbarkeit. Erfolgreiche Anmeldungen und Bandbreitenauslastung werden dort nicht explizit gefordert.",
+            "quote": "Mindestens folgende Ereignisse MÜSSEN protokolliert werden: • unerlaubte Zugriffe bzw. Zugriffsversuche, • Leistungs- oder Verfügbarkeitsschwankungen des Netzes, • Fehler in automatischen Prozessen (z. B. bei der Konfigurationsverteilung) sowie • eingeschränkte Erreichbarkeit von Netzkomponenten.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestanforderungen an die Protokollierung im Netzmanagement benennen.",
+            "baustein_id": "NET.1.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Unerlaubte Zugriffe bzw. Zugriffsversuche",
+                    "is_correct": true
+                },
+                {
+                    "text": "Leistungs- oder Verfügbarkeitsschwankungen des Netzes",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle erfolgreichen Benutzeranmeldungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Bandbreitenauslastung pro Anwendung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.2-002",
+            "text": "Welche Versionen des Simple Network Management Protocol DÜRFEN laut NET.1.2 grundsätzlich NICHT eingesetzt werden?",
+            "explanation": "NET.1.2.A10 legt fest, dass grundsätzlich keine unsicheren SNMP-Versionen verwendet werden dürfen. Falls dennoch unsichere Protokolle eingesetzt werden, muss ein separates Managementnetz genutzt werden.",
+            "quote": "Grundsätzlich DÜRFEN im Netzmanagement KEINE unsicheren Versionen des Simple Network Management Protocol (SNMP) eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die SNMP-Beschränkung im Netzmanagement gemäß NET.1.2 erklären.",
+            "baustein_id": "NET.1.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Unsichere Versionen von SNMP",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Versionen von SNMP",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur SNMP Version 3",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur SNMP über IPv6",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.2-003",
+            "text": "Wie MUSS laut NET.1.2 die Zeitsynchronisation aller Netzmanagement-Komponenten sichergestellt werden?",
+            "explanation": "NET.1.2.A8 fordert eine synchrone Uhrzeit für alle Komponenten und empfiehlt die Synchronisation mittels NTP-Service. Bei separatem Managementnetz sollte eine NTP-Instanz dort positioniert werden.",
+            "quote": "Alle Komponenten des Netzmanagements, inklusive der eingebundenen Netzkomponenten, MÜSSEN eine synchrone Uhrzeit nutzen. Die Uhrzeit SOLLTE an jedem Standort innerhalb des lokalen Netzes mittels NTP-Service synchronisiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Zeitsynchronisation im Netzmanagement beschreiben.",
+            "baustein_id": "NET.1.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Alle Komponenten müssen eine synchrone Uhrzeit nutzen, bevorzugt über NTP-Service",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur die zentralen Management-Server müssen synchron sein",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine manuelle Zeitsynchronisation einmal pro Woche genügt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Zeitsynchronisation ist nur eine Standard-Anforderung und kein Muss",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.2-004",
+            "text": "Wie SOLLTEN laut NET.1.2 direkte Management-Zugriffe von außerhalb der Managementnetze auf Netzkomponenten gehandhabt werden?",
+            "explanation": "NET.1.2.A21 empfiehlt, direkte Zugriffe von außerhalb der Managementnetze zu vermeiden. Ist ein solcher Zugriff notwendig, sollte die Kommunikation über Sprungserver entkoppelt werden, die im Management-Netz in einem getrennten Zugangssegment positioniert sind.",
+            "quote": "Direkte Management-Zugriffe von Administrierenden von einem IT-System außerhalb der Managementnetze auf eine Netzkomponente SOLLTEN vermieden werden. Ist ein solcher Zugriff ohne zentrales Management-Werkzeug notwendig, SOLLTE die Kommunikation entkoppelt werden. Solche Sprungserver SOLLTEN im Management-Netz integriert und in einem getrennten Zugangssegment positioniert sein.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Das Konzept der Entkopplung von Management-Zugriffen über Sprungserver erläutern.",
+            "baustein_id": "NET.1.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Direkte Zugriffe sollten vermieden und über Sprungserver im Management-Netz entkoppelt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Direkte Zugriffe sind grundsätzlich erlaubt, wenn verschlüsselte Protokolle genutzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Direkte Zugriffe sind nur bei erhöhtem Schutzbedarf einzuschränken",
+                    "is_correct": false
+                },
+                {
+                    "text": "Direkte Zugriffe müssen über das produktive Netz erfolgen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

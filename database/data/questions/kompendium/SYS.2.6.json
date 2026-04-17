@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.2.6",
+        "chapter_title": "Virtual Desktop Infrastructure",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.2.6-001",
+            "text": "Aus welchen drei zentralen Komponenten besteht eine VDI laut dem Baustein SYS.2.6?",
+            "explanation": "Der Baustein beschreibt drei zentrale VDI-Komponenten: VDI-Zugangskomponenten (authentisieren Benutzende und pr\u00fcfen Berechtigungen), VDI-Steuerungskomponenten (w\u00e4hlen virtuelle Clients aus und stellen Verbindungen her) und VDI-Managementkomponenten (verwalten Regeln, Einstellungen und virtuelle Clients).",
+            "quote": "Die VDI-Zugangskomponenten authentisieren die Benutzenden und entscheiden anhand ihrer Berechtigungen, ob Zugriffe erlaubt oder nicht erlaubt sowie f\u00fcr welchen Typ von virtuellem Client die Benutzenden autorisiert sind. \u2022 Die VDI-Steuerungskomponenten w\u00e4hlen f\u00fcr die erlaubten Zug\u00e4nge die entsprechenden virtuellen Clients aus und stellen die Verbindung zwischen zugreifendem und virtuellem Client her. \u2022 Die VDI-Managementkomponenten verwalten die Regeln und Einstellungen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die drei zentralen Komponenten einer VDI benennen.",
+            "baustein_id": "SYS.2.6",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "VDI-Zugangs-, VDI-Steuerungs- und VDI-Managementkomponenten", "is_correct": true },
+                { "text": "Firewall, Load Balancer und Storage-Server", "is_correct": false },
+                { "text": "Hypervisor, Betriebssystem und Anwendungssoftware", "is_correct": false },
+                { "text": "Client, Server und Netzwerk-Switch", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.6-002",
+            "text": "Was SOLLTE laut SYS.2.6 bei der Authentisierung an der VDI vermieden werden?",
+            "explanation": "SYS.2.6.A8 fordert, dass eine automatische Anmeldung an der VDI nicht m\u00f6glich sein sollte. Die Authentisierung sollte erst nach einer Interaktion der Benutzenden mit der VDI erfolgen. Dies verhindert unbeaufsichtigte Zugriffe auf virtuelle Clients.",
+            "quote": "Eine automatische Anmeldung an der VDI SOLLTE nicht m\u00f6glich sein. Die Authentisierung SOLLTE nur erfolgen, nachdem die Benutzenden mit der VDI interagiert haben.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die H\u00e4rtung der VDI-Authentisierung beschreiben.",
+            "baustein_id": "SYS.2.6",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine automatische Anmeldung an der VDI ohne Benutzerinteraktion.", "is_correct": true },
+                { "text": "Die Verwendung von Zertifikaten zur Authentisierung.", "is_correct": false },
+                { "text": "Die manuelle Eingabe von Benutzername und Passwort.", "is_correct": false },
+                { "text": "Die Nutzung von Single Sign-On innerhalb der Dom\u00e4ne.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.6-003",
+            "text": "Welche Parameter SOLLTEN laut SYS.2.6 f\u00fcr jede VDI-Komponente \u00fcberwacht werden?",
+            "explanation": "SYS.2.6.A10 empfiehlt die zentrale \u00dcberwachung der VDI-Komponenten. Mindestens die Erreichbarkeit der Netzschnittstellen, die Verf\u00fcgbarkeit der bereitgestellten Dienste und die Auslastung von CPU und Arbeitsspeicher sollten \u00fcberwacht werden.",
+            "quote": "Es SOLLTEN mindestens folgende Parameter f\u00fcr jede VDI-Komponente \u00fcberwacht werden: Erreichbarkeit der ben\u00f6tigten Netzschnittstellen \u2022 Verf\u00fcgbarkeit der von der VDI-Komponente bereitgestellten Dienste \u2022 Auslastung der CPU und des Arbeitsspeichers",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die mindestens zu \u00fcberwachenden Parameter f\u00fcr VDI-Komponenten benennen.",
+            "baustein_id": "SYS.2.6",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Erreichbarkeit der Netzschnittstellen, Verf\u00fcgbarkeit der Dienste und CPU-/Arbeitsspeicher-Auslastung", "is_correct": true },
+                { "text": "Nur die Anzahl der angemeldeten Benutzenden", "is_correct": false },
+                { "text": "Ausschlie\u00dflich die Festplattenkapazit\u00e4t", "is_correct": false },
+                { "text": "Nur die Netzwerkbandbreite zwischen den Standorten", "is_correct": false }
+            ]
+        }
+    ]
+}

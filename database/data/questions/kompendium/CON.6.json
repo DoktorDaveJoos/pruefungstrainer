@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "CON.6",
+        "chapter_title": "Löschen und Vernichten",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-con.6-001",
+            "text": "Wie MÜSSEN digitale wiederbeschreibbare Datenträger laut CON.6.A12 gelöscht werden, wenn sie nicht verschlüsselt eingesetzt werden?",
+            "explanation": "Laut CON.6.A12 müssen digitale wiederbeschreibbare Datenträger vollständig mit einem Datenstrom aus Zufallswerten (z. B. PRNG Stream) überschrieben werden, wenn sie nicht verschlüsselt eingesetzt werden.",
+            "quote": "Digitale wiederbeschreibbare Datenträger MÜSSEN vollständig mit einem Datenstrom aus Zufallswerten (z. B. PRNG Stream) überschrieben werden, wenn sie nicht verschlüsselt eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Verfahren zur sicheren Löschung nicht verschlüsselter Datenträger benennen.",
+            "baustein_id": "CON.6.A12",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Vollständig mit einem Datenstrom aus Zufallswerten überschreiben", "is_correct": true },
+                { "text": "Die Dateien einfach über den Papierkorb des Betriebssystems löschen", "is_correct": false },
+                { "text": "Die Festplatte formatieren und neu partitionieren", "is_correct": false },
+                { "text": "Den Datenträger entmagnetisieren und anschließend wieder verwenden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.6-002",
+            "text": "Nach welcher Sicherheitsstufe MUSS Papier laut CON.6.A12 mindestens vernichtet werden?",
+            "explanation": "Laut CON.6.A12 muss Papier mindestens nach Sicherheitsstufe P-3 entsprechend der ISO/IEC 21964-2 vernichtet werden.",
+            "quote": "Papier MUSS mindestens nach Sicherheitsstufe P-3 entsprechend der ISO/IEC 21964-2 vernichtet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindest-Sicherheitsstufe für die Papiervernichtung benennen.",
+            "baustein_id": "CON.6.A12",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sicherheitsstufe P-3 nach ISO/IEC 21964-2", "is_correct": true },
+                { "text": "Sicherheitsstufe P-1 nach ISO/IEC 21964-2", "is_correct": false },
+                { "text": "Sicherheitsstufe P-7 nach DIN 66399", "is_correct": false },
+                { "text": "Eine spezielle Sicherheitsstufe ist nicht vorgeschrieben", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.6-003",
+            "text": "Was MUSS laut CON.6.A2 vor der Entsorgung schutzbedürftiger Informationen und Datenträger geschehen?",
+            "explanation": "Laut CON.6.A2 müssen schutzbedürftige Informationen und Datenträger vor der Entsorgung sicher gelöscht oder vernichtet werden. Der Prozess muss klar geregelt sein und die Mitarbeitenden müssen über ihre Aufgaben informiert werden.",
+            "quote": "Bevor schutzbedürftigen Informationen und Datenträger entsorgt werden, MÜSSEN sie sicher gelöscht oder vernichtet werden. Zu diesem Zweck MUSS der Prozess klar geregelt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur sicheren Löschung vor Entsorgung erklären.",
+            "baustein_id": "CON.6.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen sicher gelöscht oder vernichtet werden", "is_correct": true },
+                { "text": "Sie müssen lediglich in den Hausmüll gegeben werden", "is_correct": false },
+                { "text": "Sie müssen an den Hersteller zurückgesendet werden", "is_correct": false },
+                { "text": "Sie müssen nur physisch beschädigt werden", "is_correct": false }
+            ]
+        }
+    ]
+}

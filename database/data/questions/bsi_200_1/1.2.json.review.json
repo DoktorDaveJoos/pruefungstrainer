@@ -1,0 +1,64 @@
+{
+    "reviewed_at": "2026-04-16T00:00:00Z",
+    "critic_notes": "Strong factual pilot for §1.2 Zielsetzung. Four of five quotes match the normalized source verbatim. Question 1.2-005 misses strictly because the source word `Informationssicherheit` is hyphenated across a line as `In\\u00ad\\nformationssicherheit` — under the spec's normalization rules (soft-hyphen -> empty, newline -> space) this yields `In formationssicherheit` whereas the question has `Informationssicherheit`. This is a normalization-rule gap rather than a generator error: the quote is semantically verbatim. Recommend tightening the normalization spec to join soft-hyphen+newline into nothing (word-join) before running quote checks on the rest of the document. Section char_end in the manifest (9655) truncates §1.2 mid-word — the real section runs to ~11854; verify that the generator had access to the full section or risk missing content in similar cases. Correct answers and distractors are all well-grounded. Difficulty labels fit. Topic classification for questions about management responsibility (1.2-003, 1.2-005) uses `standards` but would arguably be a better fit for `methodik` — borderline.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-1.2-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "topic_mismatch",
+                    "detail": "Topic `standards` is defensible because the question is explicitly framed around what the BSI-Standard 200-1 states. `methodik` could also fit since the content is about the IT-Grundschutz methodology philosophy (non-technical success factors). Not worth changing; flagging for calibration."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.2-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Quote `Die Leitungsebene ist diejenige Instanz, die über den Umgang mit Risiken entscheidet.` matches verbatim but only supports correct answer A (risk decisions). Correct answer B (`wirtschaftlichen Einsatz von Ressourcen`) is supported elsewhere in §1.2 (separate bullet: `Die Leitungsebene ist zudem für den wirtschaftlichen Einsatz von Ressourcen verantwortlich.`) but is NOT anchored by the chosen quote. Consider concatenating both bullets with `•` (as done in §1.1), or picking a quote that covers both assertions. Minor concern; human reviewer should decide whether the quote field must anchor every correct answer."
+                },
+                {
+                    "severity": "info",
+                    "kind": "topic_mismatch",
+                    "detail": "`standards` is borderline. The question is really about ISMS governance / management responsibility; `methodik` might be a cleaner fit. Calibration-only."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.2-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Under the spec's strict normalization rules the quote does NOT match: source reads `...unerlässlich: In\\u00ad\\nformationssicherheit ist Chefsache!`, which after (soft-hyphen -> '', newline -> ' ', whitespace collapse) becomes `...unerlässlich: In formationssicherheit ist Chefsache!` with a stray space inside the word. The question's quote `Informationssicherheit ist Chefsache!` is the correct un-hyphenated word form. Under an aggressive normalization that treats soft-hyphen+newline as a word-join (empty), the quote matches verbatim. Recommendation: update the normalization spec to strip `\\u00ad\\n` (and likely `\\u00ad` anywhere adjacent to whitespace) as empty before falling back to the existing rules. The quote itself is faithful to the source; this is a spec gap, not a generator error."
+                },
+                {
+                    "severity": "info",
+                    "kind": "difficulty_mismatch",
+                    "detail": "Marked `experte` but the question essentially asks to paraphrase the Chefsache slogan and its immediate rationale. Reads closer to `basis`. Borderline; generator may want tighter criteria for `experte` (e.g., cross-section synthesis, edge cases, numerical thresholds) rather than a light reasoning step over a single paragraph."
+                },
+                {
+                    "severity": "info",
+                    "kind": "topic_mismatch",
+                    "detail": "Same note as 1.2-003 — `methodik` is arguably a better bucket than `standards` for management-responsibility content."
+                }
+            ]
+        }
+    ]
+}

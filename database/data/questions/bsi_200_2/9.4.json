@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "9.4",
+        "chapter_title": "Festlegung der Aufgaben und der Verantwortung",
+        "page_start": 161,
+        "page_end": 162
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-9.4-001",
+            "text": "Was muss laut Abschnitt 9.4 nach Festlegung der Umsetzungsreihenfolge für jede Maßnahme geregelt werden?",
+            "explanation": "Der Standard fordert festzulegen, wer bis wann welche Maßnahmen realisieren muss. Ohne diese verbindliche Festlegung verzögert sich die Realisierung erfahrungsgemäß erheblich oder unterbleibt ganz. Gesetzliche Grundlagen, Versionierung oder eine Gebührenordnung sind hier nicht gefragt.",
+            "quote": "Nachdem die Reihenfolge für die Umsetzung der Maßnahmen bestimmt wurde, muss anschließend festgelegt werden, wer bis wann welche Maßnahmen realisieren muss. Ohne eine solche verbindliche Festlegung verzögert sich die Realisierung erfahrungsgemäß erheblich bzw. unterbleibt ganz.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Kernfestlegung der Aufgaben- und Verantwortungszuweisung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 161,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Wer bis wann welche Maßnahmen realisieren muss",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche gesetzlichen Grundlagen die Maßnahme hat",
+                    "is_correct": false
+                },
+                {
+                    "text": "In welcher Versionsnummer die Maßnahme veröffentlicht wird",
+                    "is_correct": false
+                },
+                {
+                    "text": "Welche Gebührenordnung zur Anwendung kommt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.4-002",
+            "text": "Worauf ist laut Abschnitt 9.4 bei der Benennung der Verantwortlichen für die Umsetzung zu achten?",
+            "explanation": "Die benannte Person muss ausreichende Fähigkeiten und Kompetenzen besitzen und die erforderlichen Ressourcen zur Verfügung gestellt bekommen. Hierarchische Überlegungen, externe Beauftragung oder Entbindung von anderen Aufgaben werden nicht genannt.",
+            "quote": "Dabei ist darauf zu achten, dass der als verantwortlich Benannte ausreichende Fähigkeiten und Kompetenzen zur Umsetzung der Maßnahmen besitzt und dass ihm die erforderlichen Ressourcen zur Verfügung gestellt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Anforderungen an den benannten Verantwortlichen für die Maßnahmenumsetzung erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 161,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ausreichende Fähigkeiten und Kompetenzen sowie zur Verfügung gestellte Ressourcen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Person muss die höchste hierarchische Position in der Institution innehaben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Person muss extern beauftragt sein und darf nicht der Institution angehören",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Person muss von allen weiteren Aufgaben entbunden werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.4-003",
+            "text": "Welche Rolle spielt der Informationssicherheitsbeauftragte (ISB) laut Abschnitt 9.4 beim Überwachungsprozess der Umsetzung?",
+            "explanation": "Typischerweise wird der Abschluss der Realisierung an den ISB gemeldet; dieser muss kontinuierlich über Fortschritt und Ergebnisse informiert werden und informiert seinerseits regelmäßig die Leitungsebene. Weder ist er vom Prozess ausgenommen noch ersetzt er die Leitungsebene, und nicht alle Meldungen gehen direkt an die Leitungsebene.",
+            "quote": "Typischerweise wird die Meldung an den ISB erfolgen. Der ISB muss kontinuierlich über den Fortschritt der Realisierung und über die • Ergebnisse der Umsetzung informiert werden. Der ISB wiederum muss regelmäßig die Leitungsebene über den Fortschritt und die damit verbundene Absenkung vorhandener Risiken informieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle des ISB bei der Überwachung der Maßnahmenumsetzung beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 162,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Meldungen über den Abschluss der Realisierung gehen typischerweise an den ISB",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der ISB informiert regelmäßig die Leitungsebene über Fortschritt und Risikoabsenkung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der ISB ist vom Überwachungsprozess ausdrücklich ausgenommen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Meldungen gehen direkt an die Leitungsebene, ohne den ISB einzubinden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.4-004",
+            "text": "Welche Angaben sollte der Realisierungsplan laut Abschnitt 9.4 mindestens umfassen?",
+            "explanation": "Der Standard nennt Bezeichnung des Zielobjekts als Einsatzumfeld, Nummer/Titel des Bausteins, Titel/Beschreibung der Anforderung, Beschreibung der Maßnahme bzw. Verweis, Termin- und Budgetplanung sowie Verantwortliche. Ein Prüfbericht externer Auditoren gehört nicht zu den geforderten Mindestangaben.",
+            "quote": "Der Realisierungsplan sollte mindestens folgende Informationen umfassen: • Bezeichnung des Zielobjektes als Einsatzumfeld, • Nummer bzw. Titel des betrachteten Bausteins, • Titel bzw. Beschreibung der zu erfüllenden Anforderung, • Beschreibung der umzusetzenden Maßnahme bzw. Verweis auf die Beschreibung im Sicherheits konzept, • Terminplanung für die Umsetzung, Budgetplanung, beispielsweise für Beschaffung und Betriebs kosten von Komponenten, • Verantwortliche für die Umsetzung der Maßnahmen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestangaben des Realisierungsplans benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 162,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Bezeichnung des Zielobjektes und Nummer bzw. Titel des Bausteins",
+                    "is_correct": true
+                },
+                {
+                    "text": "Beschreibung der Maßnahme bzw. Verweis auf das Sicherheitskonzept",
+                    "is_correct": true
+                },
+                {
+                    "text": "Terminplanung, Budgetplanung und Verantwortliche für die Umsetzung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Prüfbericht eines externen Auditors",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

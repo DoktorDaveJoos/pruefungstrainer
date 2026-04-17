@@ -1,0 +1,33 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.8 Software-Entwicklung: 3 questions on CON.8.A2/A5/A10. Quotes match cleanly after dehyphenation. Correct answers faithful; distractors (develop-in-production, release-without-testing) clearly wrong. `experte` on 002 combines test-data isolation with data-protection rationale — appropriate. Schema clean.",
+    "results": [
+        {
+            "external_id": "kompendium-con.8-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Ein geeignetes Vorgehensmodell zur Software-Entwicklung MUSS festgelegt werden. Anhand des...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.8-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-con.8-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Es MUSS sichergestellt sein, dass durch die Versionsverwaltung alle Änderungen am Quellcod...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        }
+    ]
+}

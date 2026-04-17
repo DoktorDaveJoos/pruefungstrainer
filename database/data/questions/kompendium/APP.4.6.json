@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.4.6",
+        "chapter_title": "SAP ABAP-Programmierung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.4.6-001",
+            "text": "Wie MUSS jede Berechtigungsprüfung im ABAP-Code technisch erfolgen?",
+            "explanation": "Anforderung APP.4.6.A4 verlangt, dass jede Berechtigungsprüfung technisch über den dafür vorgesehenen Befehl AUTHORITY-CHECK erfolgen muss. Proprietäre Berechtigungsprüfungen, z.B. basierend auf Konto-Kennungen, dürfen nicht benutzt werden. IF-Abfragen auf Benutzernamen oder direkte Datenbankabfragen sind nicht der vorgesehene Mechanismus.",
+            "quote": "Jede Berechtigungsprüfung MUSS technisch über den dafür vorgesehenen Befehl AUTHORITY-CHECK erfolgen. Proprietäre Berechtigungsprüfungen, z. B. basierend auf Konto-Kennungen, DÜRFEN NICHT benutzt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den vorgeschriebenen technischen Befehl für Berechtigungsprüfungen in ABAP benennen.",
+            "baustein_id": "APP.4.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Über den Befehl AUTHORITY-CHECK",
+                    "is_correct": true
+                },
+                {
+                    "text": "Über IF-Abfragen auf den Benutzernamen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Über direkte Datenbankabfragen auf die Berechtigungstabelle",
+                    "is_correct": false
+                },
+                {
+                    "text": "Über proprietäre Prüfungen basierend auf Konto-Kennungen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.6-002",
+            "text": "Welche ABAP-Befehle SOLLTEN laut Baustein NICHT verwendet werden, um eingeschleusten Schadcode zu vermeiden?",
+            "explanation": "Anforderung APP.4.6.A11 besagt, dass die ABAP-Befehle INSERT REPORT und GENERATE SUBROUTINE POOL nicht verwendet werden sollten, da sie zum Einschleusen von Schadcode missbraucht werden können. SELECT und UPDATE sind normale Datenbankbefehle und werden hier nicht eingeschränkt.",
+            "quote": "Die ABAP-Befehle INSERT REPORT und GENERATE SUBROUTINE POOL SOLLTEN NICHT verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die ABAP-Befehle benennen, die zur Vermeidung von eingeschleustem Schadcode nicht verwendet werden sollten.",
+            "baustein_id": "APP.4.6",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "INSERT REPORT und GENERATE SUBROUTINE POOL",
+                    "is_correct": true
+                },
+                {
+                    "text": "SELECT und UPDATE",
+                    "is_correct": false
+                },
+                {
+                    "text": "CALL FUNCTION und CALL METHOD",
+                    "is_correct": false
+                },
+                {
+                    "text": "READ TABLE und LOOP AT",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.6-003",
+            "text": "Warum stellen fehlende Berechtigungsprüfungen in ABAP-Eigenentwicklungen eine Gefährdung dar?",
+            "explanation": "Die Gefährdungslage (2.1) erläutert, dass SAP Berechtigungen nur geprüft werden, wenn eine entsprechende Berechtigungsprüfung von Entwickelnden im Programm implementiert wurde. In selbst entwickeltem Code werden diese aber häufig vergessen, sodass das gesamte Berechtigungskonzept nicht greift und unberechtigte Personen auf die Daten zugreifen können.",
+            "quote": "In SAP werden Berechtigungen nur dann geprüft, wenn eine entsprechende Berechtigungsprüfung von Entwickelnden im Programm implementiert wurde. • In selbst entwickeltem Programm-Code werden Berechtigungsprüfungen aber häufig vergessen. Somit greift das gesamte Berechtigungskonzept oftmals nicht und unberechtigte Personen können auf die im SAP-System gespeicherten Daten zugreifen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch fehlende Berechtigungsprüfungen in ABAP-Eigenentwicklungen beschreiben.",
+            "baustein_id": "APP.4.6",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Weil SAP Berechtigungen nur prüft, wenn die Prüfung im Code implementiert wurde, und diese häufig vergessen wird",
+                    "is_correct": true
+                },
+                {
+                    "text": "Weil SAP automatisch alle Berechtigungen entzieht, wenn keine Prüfung vorhanden ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil das SAP-System bei fehlenden Prüfungen automatisch herunterfährt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil nur SAP-Standardprogramme Berechtigungsprüfungen durchführen können",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.4.6-004",
+            "text": "Was MUSS bei der Verwendung des Befehls CALL TRANSACTION in ABAP immer vorher durchgeführt werden?",
+            "explanation": "Anforderung APP.4.6.A3 verlangt, dass vor der Verwendung des Befehls CALL TRANSACTION immer eine Startberechtigungsprüfung durchgeführt werden muss. Eine Transaktionstypprüfung oder Systemprüfung ist nicht das Geforderte.",
+            "quote": "Wenn Entwickelnde den Befehl CALL TRANSACTION verwenden, MUSS vorher immer eine Startberechtigungsprüfung durchgeführt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtprüfung vor der Verwendung von CALL TRANSACTION in ABAP benennen.",
+            "baustein_id": "APP.4.6",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine Startberechtigungsprüfung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine Transaktionstypprüfung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Mandantenprüfung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Systemverfügbarkeitsprüfung",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

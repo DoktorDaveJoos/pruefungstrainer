@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "9.1",
+        "chapter_title": "Sichtung der Untersuchungsergebnisse",
+        "page_start": 158,
+        "page_end": 159
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-9.1-001",
+            "text": "Was sollte laut Abschnitt 9.1 in einer Gesamtsicht nach Abschluss des IT-Grundschutz-Checks ausgewertet werden?",
+            "explanation": "Der Abschnitt fordert auszuwerten, welche Anforderungen aus den IT-Grundschutz-Bausteinen nicht oder nur teilweise umgesetzt wurden, und diese aus den Ergebnissen des IT-Grundschutz-Checks in einer Tabelle zusammenzufassen. Es geht ausdrücklich nicht nur um die bereits erfüllten Anforderungen oder um reine Kostenaspekte.",
+            "quote": "In einer Gesamtsicht sollte ausgewertet werden, welche Anforderungen aus den IT-Grundschutz-Bausteinen nicht oder nur teilweise umgesetzt wurden. Dazu bietet es sich an, diese aus den Ergebnissen des IT-Grundschutz-Checks zu extrahieren und in einer Tabelle zusammenzufassen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gesamtsicht auf die Umsetzungsergebnisse als Einstieg in die Umsetzungsphase beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 158,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Welche Anforderungen aus den IT-Grundschutz-Bausteinen nicht oder nur teilweise umgesetzt wurden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche Anforderungen bereits vollständig umgesetzt wurden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Welche Maßnahmen das höchste Budget beanspruchen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Welche Mitarbeiter den IT-Grundschutz-Check durchgeführt haben",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.1-002",
+            "text": "Wie sind laut Abschnitt 9.1 zusätzliche Anforderungen aus Risikoanalysen zu dokumentieren?",
+            "explanation": "Zusätzliche Anforderungen und Maßnahmen aus Risikoanalysen sollen tabellarisch erfasst und den vorher betrachteten Zielobjekten der Modellierung sowie den entsprechenden IT-Grundschutz-Bausteinen thematisch zugeordnet werden. Eine separate Dokumentation ohne Zuordnung ist ausdrücklich nicht vorgesehen.",
+            "quote": "Durch Risikoanalysen könnten eventuell weitere zu erfüllende Anforderungen sowie zu realisierende Maßnahmen identifiziert worden sein. Diese sollten ebenfalls tabellarisch erfasst werden. Diese zusätzlichen Anforderungen und Maßnahmen sollten den vorher betrachteten Zielobjekten der Modellierung und den entsprechenden IT-Grundschutz-Bausteinen thematisch zugeordnet werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Dokumentation zusätzlicher Anforderungen aus Risikoanalysen beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 158,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Tabellarisch erfassen und den Zielobjekten der Modellierung sowie den IT-Grundschutz-Bausteinen thematisch zuordnen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur als Fließtext im Sicherheitskonzept beschreiben, ohne Zuordnung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich mündlich an die Leitungsebene berichten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Vollständig getrennt vom IT-Grundschutz-Sicherheitskonzept führen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.1-003",
+            "text": "Welche Kriterien müssen konkretisierte Sicherheitsmaßnahmen laut Abschnitt 9.1 erfüllen?",
+            "explanation": "Die Maßnahmen müssen vor den möglichen Gefährdungen wirksam schützen, in der Praxis umsetzbar sein und wirtschaftlich sein. Dass sie durch einen externen Zertifizierer freigegeben werden müssen, wird nicht gefordert.",
+            "quote": "Außerdem sollten alle Anforderungen und alle daraus abgeleiteten Sicherheitsmaßnahmen noch einmal daraufhin überprüft werden, ob sie auch geeignet sind: Sie müssen vor den möglichen Gefährdungen wirksam schützen, aber auch in der Praxis tatsächlich umsetzbar sein, dürfen also z. B. nicht die Organisationsabläufe behindern oder andere Sicherheitsmaßnahmen aushebeln. Des Weiteren müssen sie wirtschaftlich sein",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Prüfkriterien für konkretisierte Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 158,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen vor möglichen Gefährdungen wirksam schützen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen in der Praxis tatsächlich umsetzbar sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen wirtschaftlich sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen durch einen externen Zertifizierer freigegeben werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.1-004",
+            "text": "Wie sind Basis-Anforderungen laut Abschnitt 9.1 bei der Konsolidierung der Maßnahmen zu behandeln?",
+            "explanation": "Basis-Anforderungen sind so elementar, dass sie im Normalfall nicht durch andere Maßnahmen ersetzt werden können. Frei wählbar, nur bei Risikoanalyse relevant oder nachrangig sind sie ausdrücklich nicht.",
+            "quote": "Basis-Anforderungen sind so elementar, dass diese im Normalfall nicht ersetzt werden können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den besonderen Status von Basis-Anforderungen bei der Konsolidierung erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 158,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Basis-Anforderungen können im Normalfall nicht ersetzt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Basis-Anforderungen dürfen frei gegen Ersatzmaßnahmen ausgetauscht werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Basis-Anforderungen werden erst nach Standard-Anforderungen betrachtet",
+                    "is_correct": false
+                },
+                {
+                    "text": "Basis-Anforderungen sind nur im Rahmen einer Risikoanalyse relevant",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.1-005",
+            "text": "Wo finden sich laut Abschnitt 9.1 weiterführende Hinweise zur Konsolidierung der Sicherheitsmaßnahmen?",
+            "explanation": "Der Abschnitt verweist ausdrücklich auf den BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz für weiterführende Hinweise zur Konsolidierung. BSI-Standard 200-1, 200-4 oder das IT-Grundschutz-Kompendium sind an dieser Stelle nicht genannt.",
+            "quote": "Weiterführende Hinweise zur Konsolidierung der Sicherheitsmaßnahmen finden sich außerdem im BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Quelle weiterführender Hinweise zur Konsolidierung der Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 159,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Im BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz",
+                    "is_correct": true
+                },
+                {
+                    "text": "Im BSI-Standard 200-1 Managementsysteme für Informationssicherheit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Im BSI-Standard 200-4 Business Continuity Management",
+                    "is_correct": false
+                },
+                {
+                    "text": "Im IT-Grundschutz-Kompendium im Kapitel zum Umsetzungsplan",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

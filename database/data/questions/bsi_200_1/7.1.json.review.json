@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Section 7.1 is in very good shape. All seven quotes verify verbatim against the normalized source, correct answers are directly supported, and distractors are cleanly wrong. Topics are plausible (methodik for ISMS planning/governance, modellierung for Informationsverbund/Geltungsbereich). One minor concern: 7.1-005 is labeled experte but is effectively multi-select recall from a bullet list, not cross-sentence synthesis — flagged. Page ranges stay within 28-30. Schema conforms to Standards convention (baustein_id/anforderung_type null).",
+    "results": [
+        {
+            "external_id": "bsi-200-1-7.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.1-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "detail": "Labeled experte, but the question is multi-select recall from a contiguous bullet list of Leitlinien-Mindestinhalte. No edge cases, thresholds, or cross-sentence synthesis involved. Closer to basis or mittel."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.1-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

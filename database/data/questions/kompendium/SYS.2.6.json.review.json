@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:30:00Z",
+    "critic_notes": "Section SYS.2.6 (3 questions: 3 pass, 0 flag, 0 fail). Correct answers are supported by the source (incl. SYS.2.6.A8 and A10); distractors are clearly wrong per the passage; topic 'bausteine' fits; difficulty labels plausible. 2 question(s) annotated with quote_mismatch/info — content verbatim but bullet-list layout artifacts and manifest-range drift mean fragments match only under aggressive normalization. 1 question has anforderung_type=null — acceptable for the 3-Komponenten-Beschreibung (baustein intro/scope), which is not tied to a specific Basis/Standard/Hoch Anforderung.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.2.6-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF bullet-list layout artifact, plus trailing clause truncated; content verbatim and derivation sound)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein scope description (drei zentrale Komponenten einer VDI); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.6-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.2.6-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF bullet-list layout artifact; content verbatim)."
+                }
+            ]
+        }
+    ]
+}

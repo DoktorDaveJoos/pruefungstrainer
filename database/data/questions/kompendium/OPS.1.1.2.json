@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.2",
+        "chapter_title": "Ordnungsgem\u00e4\u00dfe IT-Administration",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.2-001",
+            "text": "Was MUSS laut OPS.1.1.2.A2 f\u00fcr jede Administrationsaufgabe geregelt werden?",
+            "explanation": "Die Basis-Anforderung A2 verlangt, dass f\u00fcr jede Administrationsaufgabe eine Vertretung benannt werden muss. Die Vertretung muss \u00fcber die notwendigen administrativen Berechtigungen und Kenntnisse verf\u00fcgen.",
+            "quote": "F\u00fcr jede Administrationsaufgabe MUSS eine Vertretung benannt werden. Die Vertretung MUSS \u00fcber die notwendigen administrativen Berechtigungen (organisatorisch und technisch) verf\u00fcgen, um die T\u00e4tigkeit durchf\u00fchren zu k\u00f6nnen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Vertretungsregelungen f\u00fcr Administrationsaufgaben nach OPS.1.1.2.A2 benennen.",
+            "baustein_id": "OPS.1.1.2.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Es muss eine Vertretung mit den notwendigen Berechtigungen und Kenntnissen benannt werden", "is_correct": true},
+                {"text": "Die Aufgabe muss automatisiert und ohne menschliches Eingreifen ablaufen", "is_correct": false},
+                {"text": "Es muss ein externer Dienstleister als Backup beauftragt werden", "is_correct": false},
+                {"text": "Die Aufgabe muss immer im Vier-Augen-Prinzip durchgef\u00fchrt werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.2-002",
+            "text": "Was MUSS laut OPS.1.1.2.A5 mindestens f\u00fcr die Nachweisbarkeit administrativer T\u00e4tigkeiten festgehalten werden?",
+            "explanation": "A5 fordert, dass mindestens festgehalten wird, welche \u00c4nderung durchgef\u00fchrt wurde, wer sie durchgef\u00fchrt hat und wann sie durchgef\u00fchrt wurde. Jeder Anmeldevorgang \u00fcber eine Administrationskennung muss protokolliert werden.",
+            "quote": "Daf\u00fcr MUSS mindestens festgehalten werden, welche \u00c4nderung bei einer T\u00e4tigkeit durchgef\u00fchrt wurde, wer eine T\u00e4tigkeit durchgef\u00fchrt hat und wann eine T\u00e4tigkeit durchgef\u00fchrt wurde.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestanforderungen an die Nachweisbarkeit administrativer T\u00e4tigkeiten nach OPS.1.1.2.A5 wiedergeben.",
+            "baustein_id": "OPS.1.1.2.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Welche \u00c4nderung durchgef\u00fchrt wurde, wer sie durchgef\u00fchrt hat und wann sie durchgef\u00fchrt wurde", "is_correct": true},
+                {"text": "Ausschlie\u00dflich die IP-Adresse des Administrationssystems", "is_correct": false},
+                {"text": "Nur der Name des Administrators und die Uhrzeit", "is_correct": false},
+                {"text": "Die Kosten der durchgef\u00fchrten \u00c4nderung und der Genehmiger", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.2-003",
+            "text": "Was MUSS laut OPS.1.1.2.A4 geschehen, wenn eine Person von Administrationsaufgaben entbunden wird?",
+            "explanation": "Bei Beendigung der Administrationst\u00e4tigkeit m\u00fcssen alle damit zusammenh\u00e4ngenden privilegierten Berechtigungen entzogen werden, pers\u00f6nliche Konten gesperrt und Passw\u00f6rter aller der Person bekannten administrativen Konten ge\u00e4ndert werden.",
+            "quote": "Falls eine Person von Administrationsaufgaben entbunden wird, M\u00dcSSEN ihr alle damit zusammenh\u00e4ngenden privilegierten Berechtigungen auf organisatorischer und technischer Ebene entzogen werden. Insbesondere M\u00dcSSEN pers\u00f6nliche administrative Konten gesperrt und Passw\u00f6rter aller administrativer Konten ge\u00e4ndert werden, die der Person bekannt sind.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Ma\u00dfnahmen bei Beendigung der IT-Administrationst\u00e4tigkeit nach OPS.1.1.2.A4 erl\u00e4utern.",
+            "baustein_id": "OPS.1.1.2.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Alle privilegierten Berechtigungen m\u00fcssen entzogen und Passw\u00f6rter bekannter Admin-Konten ge\u00e4ndert werden", "is_correct": true},
+                {"text": "Die Person muss lediglich eine Vertraulichkeitserkl\u00e4rung unterschreiben", "is_correct": false},
+                {"text": "Es gen\u00fcgt, die Person aus dem Verteiler f\u00fcr Sicherheitsmeldungen zu entfernen", "is_correct": false},
+                {"text": "Die Konten werden erst nach einer Karenzzeit von 30 Tagen gesperrt", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.2-004",
+            "text": "Was fordert OPS.1.1.2.A22 zur Trennung von administrativen und anderen T\u00e4tigkeiten?",
+            "explanation": "A22 fordert, dass Aufgaben ohne Administrationsrechte nicht mit Administrationsrechten ausgef\u00fchrt werden d\u00fcrfen. Wenn eine Anwendung f\u00fcr eine Administrationsaufgabe benutzt wird, darf nicht dieselbe Instanz f\u00fcr andere Aufgaben verwendet werden.",
+            "quote": "Aufgaben, die keine Administrationsrechte ben\u00f6tigen, D\u00dcRFEN NICHT mit Administrationsrechten ausgef\u00fchrt werden. \u2022 Wenn eine Anwendung zur Erf\u00fcllung einer Administrationsaufgabe benutzt wird, DARF NICHT dieselbe Instanz dieser Anwendung f\u00fcr andere Aufgaben verwendet werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Trennungsanforderungen zwischen administrativen und nicht-administrativen T\u00e4tigkeiten nach OPS.1.1.2.A22 differenzieren.",
+            "baustein_id": "OPS.1.1.2.A22",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Aufgaben ohne Adminrechte d\u00fcrfen nicht mit Adminrechten ausgef\u00fchrt werden, und Administrationsanwendungen d\u00fcrfen nicht f\u00fcr andere Aufgaben genutzt werden", "is_correct": true},
+                {"text": "Administrative T\u00e4tigkeiten d\u00fcrfen nur au\u00dferhalb der Gesch\u00e4ftszeiten durchgef\u00fchrt werden", "is_correct": false},
+                {"text": "Administrierende d\u00fcrfen generell keine anderen Aufgaben in der Institution \u00fcbernehmen", "is_correct": false},
+                {"text": "F\u00fcr jede einzelne Administrationsaufgabe muss ein separates IT-System verwendet werden", "is_correct": false}
+            ]
+        }
+    ]
+}

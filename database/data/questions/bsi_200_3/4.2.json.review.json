@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All seven questions accurately reflect section 4.2. Quotes match after normalization. Correct answers are directly supported by the source. Distractors are clearly wrong. Topic 'risikoanalyse' is appropriate throughout. All basis difficulty is fitting for one-step recall. Page_start values (23-24) align with printed page markers in the source. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-4.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.2-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.2-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-4.2-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

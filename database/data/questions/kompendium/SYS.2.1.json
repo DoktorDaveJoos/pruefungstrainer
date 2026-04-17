@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.2.1",
+        "chapter_title": "Allgemeiner Client",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.2.1-001",
+            "text": "Was MUSS laut BSI bei der Nutzung von Cloud- und Online-Funktionen des Betriebssystems auf Clients beachtet werden?",
+            "explanation": "Laut Anforderung SYS.2.1.A42 dürfen nur zwingend notwendige Cloud- und Online-Funktionen genutzt werden. Die Einstellungen müssen auf Konformität mit den Datenschutz- und Sicherheitsvorgaben überprüft werden. Es ist nicht erlaubt, alle Funktionen pauschal zu aktivieren oder die Entscheidung den Benutzenden zu überlassen.",
+            "quote": "Es DÜRFEN NUR zwingend notwendige Cloud- und Online-Funktionen des Betriebssystems genutzt werden. Die entsprechenden Einstellungen des Betriebssystems MÜSSEN auf Konformität mit den organisatorischen Datenschutz- und Sicherheitsvorgaben überprüft und restriktiv konfiguriert bzw. die Funktionen deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an Cloud- und Online-Funktionen auf Clients benennen.",
+            "baustein_id": "SYS.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es dürfen nur zwingend notwendige Cloud- und Online-Funktionen genutzt werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Einstellungen müssen auf Konformität mit den Datenschutz- und Sicherheitsvorgaben geprüft werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Cloud-Funktionen dürfen ohne Einschränkung aktiviert werden, solange ein Virenschutz aktiv ist.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Benutzende dürfen selbst entscheiden, welche Cloud-Funktionen sie nutzen.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.1-002",
+            "text": "Welche Anforderung stellt der Baustein SYS.2.1 an die Absicherung des Bootvorgangs von Clients?",
+            "explanation": "Gemäß SYS.2.1.A8 muss der Bootvorgang gegen Manipulation abgesichert werden. Nur Administrierende dürfen von wechselbaren oder externen Speichermedien booten. Alle nicht benötigten Funktionen in der Firmware müssen deaktiviert werden. Es ist nicht vorgesehen, dass Benutzende eigenständig von USB booten können.",
+            "quote": "Der Startvorgang des IT-Systems („Booten“) MUSS gegen Manipulation abgesichert werden. • NUR Administrierende DÜRFEN von wechselbaren oder externen Speichermedien booten können. • Alle nicht benötigten Funktionen in der Firmware des Client-Systems MÜSSEN deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderungen an die Absicherung des Bootvorgangs von Clients beschreiben.",
+            "baustein_id": "SYS.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Nur Administrierende dürfen von externen Speichermedien booten können.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle nicht benötigten Firmware-Funktionen müssen deaktiviert werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Benutzende sollten eigenständig von USB-Sticks booten können, um die Verfügbarkeit zu erhöhen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Bootvorgang muss nicht abgesichert werden, sofern ein Virenschutz installiert ist.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.1-003",
+            "text": "Welche Anforderung gilt laut SYS.2.1 für die Authentisierung von Benutzenden an Clients?",
+            "explanation": "SYS.2.1.A1 fordert, dass Benutzende sich gegenüber dem IT-System authentisieren müssen und eine Bildschirmsperre verwenden müssen. Die Bildschirmsperre darf nur durch erfolgreiche Authentisierung deaktiviert werden. Eine Anmeldung ohne Passwort oder das Deaktivieren der Sperre durch einfaches Bewegen der Maus ist nicht erlaubt.",
+            "quote": "Um den Client zu nutzen, MÜSSEN sich die Benutzenden gegenüber dem IT-System authentisieren. Benutzende MÜSSEN eine Bildschirmsperre verwenden, wenn sie den Client unbeaufsichtigt betreiben. Die Bildschirmsperre DARF NUR durch eine erfolgreiche Authentisierung wieder deaktiviert werden können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Basis-Anforderungen an die Authentisierung und Bildschirmsperre bei Clients benennen.",
+            "baustein_id": "SYS.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Benutzende müssen sich gegenüber dem IT-System authentisieren.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Benutzende müssen eine Bildschirmsperre verwenden, wenn der Client unbeaufsichtigt ist.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine Anmeldung ohne Passwort ist erlaubt, sofern der Client nur intern erreichbar ist.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Bildschirmsperre darf durch einfaches Bewegen der Maus deaktiviert werden.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.1-004",
+            "text": "Was SOLLTE laut SYS.2.1 bevorzugt für den Informationsaustausch zwischen Clients genutzt werden?",
+            "explanation": "SYS.2.1.A23 empfiehlt, dedizierte Serverdienste zum Informationsaustausch zu nutzen und direkte Verbindungen zwischen Clients zu vermeiden. Direkte Client-zu-Client-Verbindungen (Peer-to-Peer) sollten sich nur auf das LAN beschränken. Eine grundsätzliche Freigabe von Peer-to-Peer über das Internet widerspricht dieser Empfehlung.",
+            "quote": "Wenn möglich, SOLLTEN zum Informationsaustausch dedizierte Serverdienste genutzt und direkte Verbindungen zwischen Clients vermieden werden. • Direkte Verbindungen zwischen Clients SOLLTEN sich nur auf das LAN beschränken.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Empfehlung zur Nutzung von Client-Server-Diensten statt Peer-to-Peer erläutern.",
+            "baustein_id": "SYS.2.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Dedizierte Serverdienste, wobei direkte Verbindungen zwischen Clients vermieden werden sollten.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Peer-to-Peer-Verbindungen über das Internet, um die Serverauslastung zu reduzieren.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Bluetooth-Verbindungen zwischen den Clients.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Unverschlüsselte E-Mail-Kommunikation zwischen Clients.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.1-005",
+            "text": "Welche Maßnahme gehört zum erhöhten Schutzbedarf bei Clients gemäß SYS.2.1?",
+            "explanation": "SYS.2.1.A33 fordert bei erhöhtem Schutzbedarf den Einsatz einer Ausführungskontrolle, die sicherstellt, dass nur explizit erlaubte Programme und Skripte ausgeführt werden können. Die Regeln sollten so eng wie möglich gefasst werden. Das Erlauben aller Programme oder der Verzicht auf Schutzprogramme gehört nicht zu den Anforderungen.",
+            "quote": "Es SOLLTE über eine Ausführungskontrolle sichergestellt werden, dass nur explizit erlaubte Programme und Skripte ausgeführt werden können. Die Regeln SOLLTEN so eng wie möglich gefasst werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Anforderung an die Ausführungskontrolle bei erhöhtem Schutzbedarf beschreiben.",
+            "baustein_id": "SYS.2.1",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Einsatz einer Ausführungskontrolle, die nur explizit erlaubte Programme und Skripte zulässt.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Erlauben aller Programme, solange ein Virenschutz aktiv ist.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Vollständiger Verzicht auf Schutzprogramme gegen Schadsoftware.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Deaktivierung der Firewall zur Verbesserung der Performance.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

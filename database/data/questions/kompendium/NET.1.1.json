@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.1.1",
+        "chapter_title": "Netzarchitektur und -design",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.1.1-001",
+            "text": "In wie viele Zonen MUSS das Gesamtnetz einer Institution laut NET.1.1 mindestens physisch separiert sein?",
+            "explanation": "NET.1.1.A4 fordert eine physische Separierung in mindestens drei Zonen: internes Netz, DMZ und Außenanbindungen. Zwei Zonen wären unzureichend, vier oder fünf Zonen werden nicht als Minimum gefordert.",
+            "quote": "Das Gesamtnetz MUSS mindestens in folgende drei Zonen physisch separiert sein: internes Netz, demilitarisierte Zone (DMZ) und Außenanbindungen (inklusive Internetanbindung sowie Anbindung an andere nicht vertrauenswürdige Netze).",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Mindest-Zonen der Netzseparierung gemäß NET.1.1 benennen.",
+            "baustein_id": "NET.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mindestens drei Zonen: internes Netz, DMZ und Außenanbindungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mindestens zwei Zonen: internes Netz und externes Netz",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mindestens vier Zonen: internes Netz, DMZ, Extranet und Außenanbindungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mindestens fünf Zonen: Management, Server, Client, DMZ und Außenanbindungen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.1-002",
+            "text": "Wie MUSS laut NET.1.1 die Trennung zwischen nicht vertrauenswürdigen und vertrauenswürdigen Netzen realisiert werden?",
+            "explanation": "NET.1.1.A4 verlangt eine mindestens zweistufige Firewall-Struktur bestehend aus zustandsbehafteten Paketfiltern. Eine einstufige Firewall oder ein einfacher Router reicht nicht aus, und ein ALG allein erfüllt die Anforderung ebenfalls nicht.",
+            "quote": "Nicht vertrauenswürdige Netze (z. B. Internet) und vertrauenswürdige Netze (z. B. Intranet) MÜSSEN mindestens durch eine zweistufige Firewall-Struktur, bestehend aus zustandsbehafteten Paketfiltern (Firewall), getrennt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die Firewall-Struktur zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzen beschreiben.",
+            "baustein_id": "NET.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Durch eine mindestens zweistufige Firewall-Struktur aus zustandsbehafteten Paketfiltern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Durch einen einzelnen zustandsbehafteten Paketfilter",
+                    "is_correct": false
+                },
+                {
+                    "text": "Durch einen einfachen Router mit Access Control Lists",
+                    "is_correct": false
+                },
+                {
+                    "text": "Durch ein Application-Layer-Gateway ohne zusätzliche Paketfilter",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.1-003",
+            "text": "Was MUSS laut NET.1.1 bei der Segmentierung von Clients und Servern beachtet werden?",
+            "explanation": "NET.1.1.A5 fordert, dass Clients und Server in unterschiedlichen Netzsegmenten platziert werden und die Kommunikation mindestens durch einen zustandsbehafteten Paketfilter kontrolliert wird. Eine gemeinsame Platzierung ist nur in begründeten Ausnahmen zulässig.",
+            "quote": "Clients und Server MÜSSEN in unterschiedlichen Netzsegmenten platziert werden. Die Kommunikation zwischen diesen Netzsegmenten MUSS mindestens durch einen zustandsbehafteten Paketfilter kontrolliert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Client-Server-Segmentierungsanforderung gemäß NET.1.1 erläutern.",
+            "baustein_id": "NET.1.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Clients und Server müssen in unterschiedlichen Netzsegmenten platziert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Kommunikation zwischen Client- und Server-Segmenten muss durch einen zustandsbehafteten Paketfilter kontrolliert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Clients und Server dürfen immer im selben Netzsegment betrieben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Trennung ist nur bei erhöhtem Schutzbedarf erforderlich",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.1-004",
+            "text": "Wann SOLLTE laut NET.1.1 bei erhöhtem Schutzbedarf auf den Einsatz von VLANs verzichtet werden?",
+            "explanation": "NET.1.1.A36 empfiehlt, bei sehr hohem Schutzbedarf keine VLANs einzusetzen, da diese nur eine logische, keine physische Trennung bieten. Bei normalem oder erhöhtem Schutzbedarf sind VLANs grundsätzlich zulässig.",
+            "quote": "Bei sehr hohem Schutzbedarf SOLLTEN KEINE VLANs eingesetzt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Einschränkungen für VLANs bei sehr hohem Schutzbedarf gemäß NET.1.1 einordnen.",
+            "baustein_id": "NET.1.1",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Bei sehr hohem Schutzbedarf",
+                    "is_correct": true
+                },
+                {
+                    "text": "Grundsätzlich in allen Netzbereichen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur in der DMZ",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich bei Anbindung an öffentliche Netze",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.1.1-005",
+            "text": "Wer ist laut NET.1.1 für die Anforderungen des Bausteins grundsätzlich zuständig?",
+            "explanation": "Die Zuständigkeitsmatrix des Bausteins NET.1.1 weist die Rolle „Planende“ als grundsätzlich zuständig aus. Der IT-Betrieb ist als weitere Zuständigkeit aufgeführt, nicht als Hauptzuständiger.",
+            "quote": "Grundsätzlich zuständig            Planende",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grundsätzliche Zuständigkeit für den Baustein NET.1.1 benennen.",
+            "baustein_id": "NET.1.1",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Planende",
+                    "is_correct": true
+                },
+                {
+                    "text": "IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Informationssicherheitsbeauftragte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Haustechnik",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

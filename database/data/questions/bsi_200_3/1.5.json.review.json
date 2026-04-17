@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All five questions accurately reflect the Anwendungsweise section. Quotes match after normalization. Question page_start values (all 8) are within the manifest's section range of 8-12. Note: the source metadata in the file header incorrectly states page_start: 7, page_end: 8 while the manifest says 8-12 -- this is a file-level metadata mismatch but does not affect individual question validity. Topic 'risikoanalyse' is appropriate. All basis difficulty is fitting. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-1.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.5-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.5-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.5-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

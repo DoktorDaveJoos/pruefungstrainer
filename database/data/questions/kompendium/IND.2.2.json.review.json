@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "IND.2.2 SPS (Speicherprogrammierbare Steuerung): 3 questions on backup-before-change, SPS hardware description, time synchronization. All quotes in full source but far outside the manifest char range [2060069..2074812] — actual SPS content is around char ~1914000. Manifest boundaries for IND.2.* are systematically misaligned. Content is semantically correct for SPS. Correct answers supported; distractors wrong. Question 002 has null anforderung_type.",
+    "results": [
+        {
+            "external_id": "kompendium-ind.2.2-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Steuerungsprogramme und Konfigurationen SOLLTEN immer gesichert werden, bevor an ihnen etw...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.2-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Eine SPS verfügt über digitale Ein- und Ausgänge, ein Echtzeitbetriebssystem (Firmware) so...` found in full source but outside manifest range + buffer — manifest boundaries significantly misaligned with actual chapter content."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.2-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Systemzeit SOLLTE automatisch über eine zentrale automatisierte Zeitsynchronisation ei...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        }
+    ]
+}

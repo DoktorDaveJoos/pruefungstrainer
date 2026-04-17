@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All six questions are factually correct and well-supported by the source text. Quotes are verbatim substrings of the normalized source (using bullet fragment splitting). Correct answers are directly derivable, distractors are clearly wrong. All page_start values (43) are within the manifest range (43-44). No schema violations. Topic 'methodik' is appropriate throughout.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-4.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.5-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.5-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.5-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.5-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

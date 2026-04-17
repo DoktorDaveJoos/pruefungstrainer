@@ -1,0 +1,26 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 4 questions are factually correct with verbatim quotes. Topic modellierung is appropriate for Strukturanalyse content. All basis difficulty, which is correct for direct recall.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-7.4-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.4-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.4-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.4-004",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

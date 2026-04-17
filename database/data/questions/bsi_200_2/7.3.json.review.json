@@ -1,0 +1,41 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 7 questions comprehensively cover the Kronjuwelen identification. Quotes are verbatim, answers are well-supported. The experte questions (7.3-005, 7.3-007) appropriately require synthesis. No factual errors.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-7.3-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.3-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.3-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.3-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.3-005",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.3-006",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.3-007",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

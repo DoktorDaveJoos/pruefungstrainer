@@ -1,0 +1,51 @@
+{
+    "reviewed_at": "2026-04-16T18:10:00Z",
+    "critic_notes": "Section 10.1 yields seven well-grounded questions. All quote fragments match the normalized source verbatim, and every correct answer is clearly derivable from the passage. The only concern is Q7, which is labeled 'experte' but is actually a basis-level 'pick the two supported statements' task whose correct answers are near-verbatim paraphrases of the quote. Q6 uses topic 'standards' which is borderline but defensible because the question is specifically about which BSI document (200-2) to consult for the methodology — a lineage/scope question about BSI documents themselves.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-10.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.1-006",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "topic_mismatch",
+                    "note": "Topic 'standards' is defensible because the question pinpoints a specific BSI document (BSI-Standard 200-2) as the authoritative source. Borderline with 'methodik' because the referenced document is the methodology standard. Either label is reasonable; flagging for human confirmation."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-10.1-007",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "note": "Labeled 'experte' but is effectively a basis-level task. Both correct answers are near-verbatim paraphrases of adjacent sentences in the quoted passage; no real synthesis, edge cases, or threshold reasoning is required. Recommend downgrading to 'basis'."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T00:00:00Z",
+    "critic_notes": "Factually clean section on third-party standards (PCI DSS, NIST, ISF SoGP). All six quotes are verbatim substrings of the normalized source, every correct answer is directly derivable from the passage, and distractors are clearly wrong (e.g. ISO/BSI/NIST-as-PCI-publisher, EU-agency-NIST). Topic 'standards' fits throughout. Schema correct for Standards doc; page numbers inside 14..15. The only issue is Q006's difficulty label 'experte'—the answer is a single-sentence lookup of which reference standards the ISF SoGP covers, which is a basis-level paraphrase, not the cross-sentence synthesis or threshold reasoning that 'experte' requires per the rubric.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-2.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-2.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-2.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-2.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-2.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-2.1-006",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "detail": "Labelled 'experte' but is a direct one-sentence lookup ('Der praxisorientierte Leitfaden deckt ... ISO/IEC 27002, COBIT 5, PCI DSS 3.1 und NIST Cybersecurity Framework ab.'). No synthesis across sentences, no edge cases, no thresholds. Should be 'basis' per the rubric."
+                }
+            ]
+        }
+    ]
+}

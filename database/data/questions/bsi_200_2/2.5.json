@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "2.5",
+        "chapter_title": "Thematische Abgrenzung",
+        "page_start": 14,
+        "page_end": 14
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-2.5-001",
+            "text": "Wo können Informationen laut BSI-Standard 200-2 gespeichert sein, die durch Informationssicherheit zu schützen sind?",
+            "explanation": "Der Standard hebt ausdrücklich hervor, dass Informationen sowohl in IT-Systemen, aber auch auf Papier oder in Köpfen gespeichert sein können. Eine Beschränkung auf elektronische Informationen ist explizit nicht die Sichtweise der Informationssicherheit.",
+            "quote": "Informationssicherheit hat den Schutz von Informationen als Ziel. Dabei können Informationen sowohl in IT-Systemen, aber auch auf Papier oder in Köpfen gespeichert sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die verschiedenen Speicherformen schutzbedürftiger Informationen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "In IT-Systemen", "is_correct": true },
+                { "text": "Auf Papier", "is_correct": true },
+                { "text": "In Köpfen", "is_correct": true },
+                { "text": "Ausschließlich in elektronischen Systemen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.5-002",
+            "text": "Worauf erweitert die Cyber-Sicherheit laut BSI-Standard 200-2 das Aktionsfeld der klassischen IT-Sicherheit?",
+            "explanation": "Der Standard erläutert, dass die Cyber-Sicherheit das Feld der IT-Sicherheit auf den gesamten Cyber-Raum ausweitet, der sämtliche mit dem Internet und vergleichbaren Netzen verbundene Informationstechnik und die darauf basierende Kommunikation, Anwendungen, Prozesse und verarbeiteten Informationen umfasst.",
+            "quote": "Das Aktionsfeld der klassischen IT-Sicherheit wird bei der Cyber-Sicherheit auf den gesamten Cyber-Raum ausgeweitet. Dieser umfasst sämtliche mit dem Internet und vergleichbaren Netzen verbundene Informationstechnik und schließt darauf basierende Kommunikation, Anwendungen, Prozesse und verarbeitete Informationen mit ein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das erweiterte Aktionsfeld der Cyber-Sicherheit beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "Auf den gesamten Cyber-Raum mit dem Internet verbundener IT und zugehöriger Kommunikation, Anwendungen und Prozesse", "is_correct": true },
+                { "text": "Ausschließlich auf lokale Netzwerke einer Institution", "is_correct": false },
+                { "text": "Nur auf Papierinformationen und mündliche Kommunikation", "is_correct": false },
+                { "text": "Lediglich auf Arbeitsplatzrechner", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.5-003",
+            "text": "Welche Grundwerte nennt der BSI-Standard 200-2 als Aufgabe der Informationssicherheit?",
+            "explanation": "Der Standard definiert als Aufgabe den angemessenen Schutz der Grundwerte Vertraulichkeit, Integrität (Unverfälschtheit) und Verfügbarkeit von Informationen. Weitere Grundwerte können je nach Anwendungsfall hinzukommen, aber „Datensparsamkeit“ gehört nicht zu den Kerngrundwerten.",
+            "quote": "Aufgabe der Informationssicherheit ist der angemessene Schutz der Grundwerte Vertraulichkeit, Integrität (Unverfälschtheit) und Verfügbarkeit von Informationen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Grundwerte der Informationssicherheit nennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "Vertraulichkeit", "is_correct": true },
+                { "text": "Integrität", "is_correct": true },
+                { "text": "Verfügbarkeit", "is_correct": true },
+                { "text": "Datensparsamkeit", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.5-004",
+            "text": "Welche Spezialfälle der Integrität werden laut BSI-Standard 200-2 explizit in die Betrachtung der Informationssicherheit einbezogen?",
+            "explanation": "Der Standard stellt klar, dass zur Integrität auch die Authentizität und Nicht-Abstreitbarkeit als Spezialfälle gehören. Vertraulichkeit und Verfügbarkeit sind eigenständige Grundwerte — keine Spezialfälle der Integrität.",
+            "quote": "Außerdem schließt dies auch die Authentizität und Nicht-abstreitbarkeit als Spezialfälle der Integrität ein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Authentizität und Nicht-Abstreitbarkeit als Spezialfälle der Integrität einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "Authentizität", "is_correct": true },
+                { "text": "Nicht-Abstreitbarkeit", "is_correct": true },
+                { "text": "Vertraulichkeit", "is_correct": false },
+                { "text": "Verfügbarkeit", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.5-005",
+            "text": "Welche weiteren Schutzziele werden laut BSI-Standard 200-2 im Rahmen des Standard-Datenschutzmodells (SDM) im Bereich Datenschutz herangezogen?",
+            "explanation": "Der Standard nennt explizit Datenminimierung, Intervenierbarkeit, Transparenz und Nichtverkettung als weitere Schutzziele im SDM. Authentizität und Nicht-Abstreitbarkeit sind im 200-2 als Spezialfälle der Integrität zugeordnet — nicht als SDM-Schutzziele.",
+            "quote": "Im Bereich Datenschutz werden, im Rahmen des Standard-Datenschutzmodells (siehe [SDM]), weitere Schutzziele herangezogen, nämlich Datenminimierung, Intervenierbarkeit (als technische Gestaltung von Verfahren zur Ausübung der Betroffenenrechte), Transparenz und Nichtverkettung (als Sicherung der Zweckbindung).",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Schutzziele des SDM im Datenschutz benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "Datenminimierung", "is_correct": true },
+                { "text": "Intervenierbarkeit", "is_correct": true },
+                { "text": "Transparenz und Nichtverkettung", "is_correct": true },
+                { "text": "Authentizität und Nicht-Abstreitbarkeit", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.5-006",
+            "text": "Wie werden laut BSI-Standard 200-2 Systeme wie ICS und IoT bei der Informationssicherheit berücksichtigt?",
+            "explanation": "Der Standard betont, dass auch Systeme, die häufig nicht unmittelbar als IT-Systeme wahrgenommen werden — wie ICS- und IoT-Systeme — einzubeziehen sind. Ein Ausschluss oder eine Sonderzuständigkeit anderer Standards wird nicht formuliert.",
+            "quote": "Darüber hinaus müssen auch die Systeme einbezogen werden, die häufig nicht unmittelbar als IT-Systeme wahrgenommen werden, wie beispielsweise ICS- und IoT-Systeme.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Einbeziehung von ICS- und IoT-Systemen in die Informationssicherheit erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen in die Absicherung der Informationsverarbeitung einbezogen werden", "is_correct": true },
+                { "text": "Sie sind aus der Informationssicherheit ausgeschlossen", "is_correct": false },
+                { "text": "Sie fallen ausschließlich unter ISO 9001", "is_correct": false },
+                { "text": "Sie werden nur im Rahmen der Cyber-Sicherheit betrachtet", "is_correct": false }
+            ]
+        }
+    ]
+}

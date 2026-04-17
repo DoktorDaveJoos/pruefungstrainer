@@ -1,0 +1,36 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 6 questions are factually correct with verbatim quotes. Topic methodik is appropriate. Page ranges are within the section bounds (74-76). No issues.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-7.9-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.9-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.9-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.9-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.9-005",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-7.9-006",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

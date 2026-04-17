@@ -1,0 +1,41 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 7 questions are well-constructed with accurate quotes, correct answers supported by the source, and plausible distractors. Topics and difficulty ratings are appropriate. The experte question (5.1-002) correctly requires synthesis of two separate disadvantages.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-5.1-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-5.1-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-5.1-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-5.1-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-5.1-005",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-5.1-006",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-5.1-007",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "NET.2.2",
+        "chapter_title": "WLAN-Nutzung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-net.2.2-001",
+            "text": "Welches Verbot MUSS laut NET.2.2 in der WLAN-Nutzungsrichtlinie enthalten sein?",
+            "explanation": "NET.2.2.A1 fordert ein klares Verbot, ungenehmigte Access Points an das Netz der Institution anzuschließen. Dies schützt vor dem Unterlaufen der Sicherheitsmaßnahmen des LANs.",
+            "quote": "Die Nutzungsrichtlinie MUSS ein klares Verbot enthalten, ungenehmigte Access Points an das Netz der Institution anzuschließen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Verbot ungenehmigter Access Points in der WLAN-Nutzungsrichtlinie benennen.",
+            "baustein_id": "NET.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das Anschließen ungenehmigter Access Points an das Netz der Institution",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Nutzung privater Smartphones im WLAN",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Übertragung von E-Mails über WLAN",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Nutzung von Videokonferenz-Diensten über WLAN",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.2.2-002",
+            "text": "Über welchen Weg DÜRFEN Benutzende laut NET.2.2 über öffentlich zugängliche WLANs auf interne Ressourcen der Institution zugreifen?",
+            "explanation": "NET.2.2.A3 schreibt vor, dass der Zugriff auf interne Ressourcen über öffentlich zugängliche WLANs ausschließlich über ein Virtual Private Network (VPN) erfolgen darf. Ein direkter Zugriff oder die bloße HTTPS-Verschlüsselung genügt nicht.",
+            "quote": "Über öffentlich zugängliche WLANs DÜRFEN die Benutzenden NUR über ein Virtual Private Network (VPN) auf interne Ressourcen der Institution zugreifen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die VPN-Pflicht für den Zugriff auf interne Ressourcen über öffentliche WLANs erklären.",
+            "baustein_id": "NET.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Nur über ein Virtual Private Network (VPN)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Direkt über HTTPS-verschlüsselte Verbindungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Über einen Webbrowser mit aktiviertem Inkognito-Modus",
+                    "is_correct": false
+                },
+                {
+                    "text": "Über eine SSH-Verbindung zum internen Server",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-net.2.2-003",
+            "text": "Wer ist laut NET.2.2 grundsätzlich zuständig für die Anforderungen des Bausteins WLAN-Nutzung?",
+            "explanation": "Im Gegensatz zu den meisten anderen NET-Bausteinen, bei denen der IT-Betrieb grundsätzlich zuständig ist, weist NET.2.2 die Rolle „Benutzende“ als grundsätzlich zuständig aus. Dies unterstreicht die Verantwortung der Endnutzer für die sichere WLAN-Nutzung.",
+            "quote": "Grundsätzlich zuständig             Benutzende",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die besondere Zuständigkeitszuweisung bei der WLAN-Nutzung erkennen.",
+            "baustein_id": "NET.2.2",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Benutzende",
+                    "is_correct": true
+                },
+                {
+                    "text": "IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Informationssicherheitsbeauftragte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Planende",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

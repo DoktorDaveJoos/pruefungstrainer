@@ -1,0 +1,166 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "6.1",
+        "chapter_title": "Risikobehandlungsoptionen",
+        "page_start": 34,
+        "page_end": 38
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-6.1-001",
+            "text": "Welche vier Risikobehandlungsoptionen nennt der BSI-Standard 200-3 ausdrücklich?",
+            "explanation": "Der Standard nennt vier Optionen: Risiken können vermieden, reduziert, transferiert oder akzeptiert werden. Optionen wie „kompensieren“ oder „ignorieren“ sind keine im Standard genannten Risikobehandlungsoptionen.",
+            "quote": "Risiken können • vermieden werden, indem beispielsweise die Risikoursache ausgeschlossen wird, • reduziert werden, indem die Rahmenbedingungen, die zur Risikoeinstufung beigetragen haben, modifiziert werden, • transferiert werden, indem die Risiken mit anderen Parteien geteilt werden, • akzeptiert werden, beispielsweise weil die mit dem Risiko einhergehenden Chancen wahrgenommen werden sollen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vier Risikobehandlungsoptionen des BSI-Standards 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 33,
+            "page_end": null,
+            "answers": [
+                { "text": "Vermeidung, Reduktion, Transfer und Akzeptanz", "is_correct": true },
+                { "text": "Vermeidung, Reduktion, Ignorieren und Kompensation", "is_correct": false },
+                { "text": "Identifikation, Analyse, Bewertung und Überwachung", "is_correct": false },
+                { "text": "Vermeidung, Versicherung, Outsourcing und Löschung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-002",
+            "text": "Wie wird ein Risiko laut BSI-Standard 200-3 „vermieden“?",
+            "explanation": "Der Standard definiert Risikovermeidung explizit dadurch, dass die Risikoursache ausgeschlossen wird (z. B. durch Umstrukturierung des Geschäftsprozesses oder des Informationsverbunds). Versicherung ist Risikotransfer, zusätzliche Maßnahmen sind Risikoreduktion, und Akzeptanz ist eine eigene Option.",
+            "quote": "vermieden werden, indem beispielsweise die Risikoursache ausgeschlossen wird",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Das Vorgehen bei Risikovermeidung erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 33,
+            "page_end": null,
+            "answers": [
+                { "text": "Indem die Risikoursache ausgeschlossen wird", "is_correct": true },
+                { "text": "Indem das Risiko versichert wird", "is_correct": false },
+                { "text": "Indem zusätzliche Sicherheitsmaßnahmen umgesetzt werden", "is_correct": false },
+                { "text": "Indem das Restrisiko von der Leitung akzeptiert wird", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-003",
+            "text": "Welche Maßnahme beschreibt laut BSI-Standard 200-3 die Risikoreduktion (Risikomodifikation)?",
+            "explanation": "Der Standard definiert Risikoreduktion als Senkung des Risikos durch die Erarbeitung und Umsetzung einer oder mehrerer ergänzender Sicherheitsmaßnahmen, die der Gefährdung entgegenwirken. Outsourcing ist Transfer, Ausschluss der Ursache ist Vermeidung.",
+            "quote": "Das Risiko durch die verbleibende Gefährdung kann möglicherweise gesenkt werden, indem eine oder mehrere ergänzende Sicherheitsmaßnahmen erarbeitet und umgesetzt werden",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Risikoreduktion gegen andere Optionen abgrenzen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 33,
+            "page_end": 34
+            ,
+            "answers": [
+                { "text": "Erarbeitung und Umsetzung ergänzender Sicherheitsmaßnahmen, die der Gefährdung entgegenwirken", "is_correct": true },
+                { "text": "Abschluss einer Versicherung gegen die Gefährdung", "is_correct": false },
+                { "text": "Ausschluss der Risikoursache durch Umstrukturierung", "is_correct": false },
+                { "text": "Dokumentation der Risikoübernahme durch die Leitungsebene", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-004",
+            "text": "Welche Beispiele nennt der BSI-Standard 200-3 für einen Risikotransfer?",
+            "explanation": "Der Standard nennt ausdrücklich den Abschluss eines Versicherungsvertrags und Outsourcing als Beispiele für den Risikotransfer („Risiko an eine andere Institution übertragen“). Interne Umstrukturierung ist Vermeidung, ergänzende Sicherheitsmaßnahmen sind Reduktion.",
+            "quote": "Ist es sinnvoll, das Risiko an eine andere Institution zu fbertragen, beispielsweise durch den Abschluss eines Versicherungsvertrags oder durch Outsourcing?",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Beispiele für Risikotransfer benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                { "text": "Abschluss eines Versicherungsvertrags", "is_correct": true },
+                { "text": "Outsourcing an eine andere Institution", "is_correct": true },
+                { "text": "Umstrukturierung des eigenen Geschäftsprozesses", "is_correct": false },
+                { "text": "Einsatz einer zusätzlichen Firewall", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-005",
+            "text": "Wer muss laut BSI-Standard 200-3 bei der Entscheidung über den Umgang mit identifizierten Risiken auf jeden Fall beteiligt werden?",
+            "explanation": "Der Standard hält ausdrücklich fest, dass bei der Entscheidung über den Umgang mit identifizierten Risiken auf jeden Fall die Leitungsebene beteiligt werden muss, da sich daraus erhebliche Schäden oder Kosten ergeben können. Nicht genannt werden Datenschutzbeauftragte, Betriebsrat oder das BSI als zwingend beteiligte Stellen.",
+            "quote": "Bei der Entscheidung, wie mit den identifizierten Risiken umgegangen wird, muss auf jeden Fall die Leitungsebene beteiligt werden, da sich aus der Entscheidung unter Umständen erhebliche Schäden ergeben oder zusätzliche Kosten entstehen können.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die zwingend zu beteiligende Instanz bei der Risikoentscheidung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 33,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Leitungsebene", "is_correct": true },
+                { "text": "Der Betriebsrat", "is_correct": false },
+                { "text": "Das BSI", "is_correct": false },
+                { "text": "Der Datenschutzbeauftragte", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-006",
+            "text": "Was muss laut BSI-Standard 200-3 nach der Risikobehandlung mit dem verbleibenden Restrisiko geschehen?",
+            "explanation": "Der Standard schreibt vor, dass das Restrisiko der Leitungsebene zur Zustimmung vorgelegt werden muss (Risikoakzeptanz). Damit dokumentiert die Institution nachvollziehbar, dass sie sich des Restrisikos bewusst ist. Ein automatisches Herabsetzen, Löschen oder Weitergeben ist nicht vorgesehen.",
+            "quote": "Das Restrisiko muss anschließend der Leitungsebene zur Zustimmung vorgelegt werden (Risikoakzeptanz). Damit wird nachvollziehbar dokumentiert, dass die Institution sich des Restrisikos bewusst",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die formale Behandlung des Restrisikos benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                { "text": "Es muss der Leitungsebene zur Zustimmung (Risikoakzeptanz) vorgelegt werden.", "is_correct": true },
+                { "text": "Es wird automatisch auf „gering“ herabgestuft.", "is_correct": false },
+                { "text": "Es wird ohne weitere Dokumentation gelöscht.", "is_correct": false },
+                { "text": "Es wird zwingend an einen externen Dienstleister übertragen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-007",
+            "text": "Welche Gründe nennt der BSI-Standard 200-3 ausdrücklich dafür, auch höhere Risiken als „gering“ zu akzeptieren?",
+            "explanation": "Der Standard nennt drei Beispielgründe: Die Gefährdung führt nur unter ganz speziellen Voraussetzungen zu einem Schaden; es sind keine wirksamen Gegenmaßnahmen bekannt; Aufwand und Kosten für wirksame Gegenmaßnahmen überschreiten den zu schützenden Wert. Eine regulatorische Verpflichtung wird an dieser Stelle nicht als Grund genannt.",
+            "quote": "Die entsprechende Gefährdung führt nur unter ganz speziellen Voraussetzungen zu einem Schaden. • Gegen die entsprechende Gefährdung sind derzeit keine wirksamen Gegenmaßnahmen bekannt und sie lässt sich in der Praxis auch kaum vermeiden. • Aufwand und Kosten für wirksame Gegenmaßnahmen überschreiten den zu schützenden Wert.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Gründe für die Akzeptanz höherer Risiken benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 35,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Gefährdung führt nur unter speziellen Voraussetzungen zu einem Schaden.", "is_correct": true },
+                { "text": "Es sind keine wirksamen Gegenmaßnahmen bekannt und sie lässt sich kaum vermeiden.", "is_correct": true },
+                { "text": "Aufwand und Kosten für Gegenmaßnahmen überschreiten den zu schützenden Wert.", "is_correct": true },
+                { "text": "Die Institution ist gesetzlich zur Akzeptanz verpflichtet.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.1-008",
+            "text": "Worauf sollte laut BSI-Standard 200-3 bei einem Risikotransfer (z. B. Outsourcing) besonders geachtet werden?",
+            "explanation": "Der Standard betont, dass die sachgerechte Vertragsgestaltung einer der wichtigsten Aspekte beim Risikotransfer ist, besonders bei Outsourcing-Vorhaben. Dafür sollte auf juristischen Sachverstand zurückgegriffen werden. Die Entscheidung wird von der Leitungsebene getroffen und dokumentiert.",
+            "quote": "Beim Risikotransfer ist die sachgerechte Vertragsgestaltung einer der wichtigsten Aspekte. Besonders bei Outsourcing-Vorhaben sollte hierzu auf juristischen Sachverstand zurückgegriffen werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Bedeutung der Vertragsgestaltung beim Risikotransfer erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine sachgerechte Vertragsgestaltung unter Einbeziehung juristischen Sachverstands", "is_correct": true },
+                { "text": "Die automatische Umwandlung in ein akzeptiertes Restrisiko", "is_correct": false },
+                { "text": "Eine ausschließlich mündliche Vereinbarung mit dem Dienstleister", "is_correct": false },
+                { "text": "Der Verzicht auf weitere Sicherheitsmaßnahmen", "is_correct": false }
+            ]
+        }
+    ]
+}

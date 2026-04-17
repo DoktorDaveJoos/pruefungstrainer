@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.3",
+        "chapter_title": "Aufgaben, Verantwortungen und Kompetenzen in der IS-Organisation",
+        "page_start": 39,
+        "page_end": 42
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.3-001",
+            "text": "Wer legt laut BSI-Standard 200-2 die Aufgaben, Verantwortungsbereiche und Kompetenzen des ISB und des IS-Management-Teams fest?",
+            "explanation": "Die Passage stellt ausdrücklich klar, dass diese Festlegung durch die Leitungsebene zu erfolgen hat. Der ISB selbst, die IT-Abteilung oder der Betriebsrat sind laut Text nicht für die Festlegung zuständig.",
+            "quote": "Der Informationssicherheitsbeauftragte und das IS-Management-Team müssen klar definierte Aufgaben, Verantwortungsbereiche und Kompetenzen haben, die von der Leitungsebene festzulegen sind.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Leitungsebene als Festlegende der IS-Rollenkompetenzen identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Leitungsebene",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Informationssicherheitsbeauftragte selbst",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Betriebsrat",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.3-002",
+            "text": "An welchen Verfahren und Entscheidungen sollen der ISB und das IS-Management-Team laut BSI-Standard 200-2 beteiligt werden?",
+            "explanation": "Die Passage fordert die Beteiligung an allen relevanten Verfahren und Entscheidungen, damit die Rollen ihre Aufgaben wahrnehmen können. Eine Beschränkung auf IT-Beschaffung, Audits oder Notfallvorfälle widerspricht dem Text.",
+            "quote": "Um ihre Aufgabe wahrnehmen zu können, sollten sie an allen relevanten Verfahren und Entscheidungen beteiligt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang der Beteiligung von ISB und IS-Management-Team erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "An allen relevanten Verfahren und Entscheidungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich an IT-Beschaffungsentscheidungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur bei externen Audits",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich im Rahmen von Notfallvorfällen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.3-003",
+            "text": "An welche weiteren Rollen können laut BSI-Standard 200-2 Sicherheitsaufgaben unterstützend delegiert werden?",
+            "explanation": "Die Passage nennt ausdrücklich Bereichs-ISB, Projekt-ISB und ICS-ISB als Rollen, an die unterstützende Aufgaben delegiert werden können. Der Datenschutzbeauftragte und der Betriebsrat werden hier nicht als Delegationsrollen genannt.",
+            "quote": "Bei Bedarf können unterstützend Aufgaben an weitere Rollen, wie beispielsweise • Bereichs-ISB (Informationssicherheitsbeauftragter für einen Bereich, Abteilung, Außenstelle, o.Ä.), • Projekt-ISB sowie • ICS-ISB (Informationssicherheitsbeauftragter für den Bereich der industriellen Steuerung), delegiert werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die spezialisierten ISB-Rollen zur Delegation benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 40,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Bereichs-ISB für einen Bereich, eine Abteilung oder Außenstelle",
+                    "is_correct": true
+                },
+                {
+                    "text": "Projekt-ISB und ICS-ISB",
+                    "is_correct": true
+                },
+                {
+                    "text": "Datenschutzbeauftragter und Betriebsrat",
+                    "is_correct": false
+                },
+                {
+                    "text": "Arbeitsschutzbeauftragter und Werkschutz",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.3-004",
+            "text": "Welche Kommunikationsaspekte müssen laut BSI-Standard 200-2 im Rahmen des Sicherheitsmanagements geklärt werden?",
+            "explanation": "Die Passage verlangt die Klärung, wer wann worüber mit welchen internen und externen Stellen kommuniziert, welche Kommunikationskanäle genutzt werden und wie diese geschützt werden. Die Festlegung einer konkreten Bürokratur oder ein Verbot externer Kommunikation werden nicht gefordert.",
+            "quote": "Außerdem muss geklärt sein, wer im Rahmen des Sicherheitsmanagements mit welchen internen und externen Stellen wann worüber kommuniziert sowie welche Kommunikationskanäle für die jeweiligen Ansprechpartner genutzt und wie diese geschützt werden",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die zu klärenden Kommunikationsaspekte im Sicherheitsmanagement benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Wer mit welchen internen und externen Stellen wann worüber kommuniziert",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche Kommunikationskanäle genutzt werden und wie diese geschützt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Dass jede externe Kommunikation grundsätzlich untersagt ist",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dass nur eine einzige zentrale Bürokratur zuständig ist",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.3-005",
+            "text": "Mit welcher Art von Personal sollen laut BSI-Standard 200-2 die Aufgaben als Sicherheitsbeauftragte bzw. im IS-Management-Team wahrgenommen werden?",
+            "explanation": "Die Passage fordert ausdrücklich qualifiziertes Personal für diese Rollen. Reine Anlernkräfte, Praktikanten oder ausschließlich externe Dienstleister werden nicht als geeignete Besetzung genannt.",
+            "quote": "Mit der Wahrnehmung der Aufgaben als Sicherheitsbeauftragte bzw. im IS-Management-Team sollte stets qualifiziertes Personal betraut werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Qualifikationsanforderung an die IS-Rollen erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 40,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Qualifiziertes Personal",
+                    "is_correct": true
+                },
+                {
+                    "text": "Anlernkräfte ohne besondere Qualifikation",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich Praktikanten zu Ausbildungszwecken",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich externe Dienstleister auf Stundenbasis",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.3-006",
+            "text": "Wie müssen laut BSI-Standard 200-2 die Rollen in die Organisationsstruktur eingebunden werden?",
+            "explanation": "Die Passage fordert, dass die Rollen so in die Organisationsstruktur eingebunden werden, dass alle Beteiligten untereinander kommunizieren können. Eine Einbindung in streng getrennte Silos oder ausschließlich unterhalb der IT-Abteilung widerspricht dem Text.",
+            "quote": "Die Rollen sind so in die Organisationsstruktur einzubinden, dass alle Beteiligten untereinander kommunizieren können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Prinzip der kommunikationsfähigen Rolleneinbindung erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 39,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "So, dass alle Beteiligten untereinander kommunizieren können",
+                    "is_correct": true
+                },
+                {
+                    "text": "In strikt getrennten Silos ohne Kommunikationswege",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich unterhalb der IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich auf Ebene der operativen Sachbearbeitung",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "reviewed_at": "2026-04-16T00:00:00Z",
+    "critic_notes": "Solid pilot for a short, tabular section. All three questions correctly anchor to the version history and all quotes match the normalized source verbatim (including the bullet `•` glyphs, which survive normalization). Correct answers are verifiable and distractors are clean. Topic `standards` is acceptable for a section about the BSI document lineage itself. Difficulty `basis` fits the factual nature of the content. The generator handled the tabular layout (Stand/Version/Änderungen + bullet lists) well by concatenating bullets with the `•` separator; confirm this rendering convention is acceptable in the UI.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-1.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-1.1-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Quote is a verbatim substring after normalization (bullets preserved). It concatenates two separate bullet items from the CD 1.0 row with a `•` separator, which matches how they appear together on that row. Acceptable; noting the pattern for consistency across sections."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.1-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Quote concatenates three bullet items from the V 1.0 row with `•` separators. Matches normalized source as a substring. Same pattern as 1.1-002."
+                }
+            ]
+        }
+    ]
+}

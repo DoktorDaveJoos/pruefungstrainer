@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.3",
+        "chapter_title": "Server unter Linux und Unix",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.3-001",
+            "text": "Was MUSS laut SYS.1.3.A4 im Kernel aktiviert sein, um die Ausnutzung von Schwachstellen in Anwendungen zu erschweren?",
+            "explanation": "SYS.1.3.A4 fordert als Basis-Anforderung, dass ASLR und DEP/NX im Kernel aktiviert und von den Anwendungen genutzt werden müssen. Sicherheitsfunktionen des Kernels wie Heap- und Stackschutz dürfen nicht deaktiviert werden. SELinux und AppArmor werden in einer anderen Anforderung (SYS.1.3.A10) behandelt.",
+            "quote": "Um die Ausnutzung von Schwachstellen in Anwendungen zu erschweren, MUSS ASLR und DEP/NX im Kernel aktiviert und von den Anwendungen genutzt werden. Sicherheitsfunktionen des Kernels und der Standardbibliotheken, wie z. B. Heap- und Stackschutz, DÜRFEN NICHT deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Kernel-Sicherheitsfunktionen gemäß SYS.1.3.A4 für Linux/Unix-Server benennen.",
+            "baustein_id": "SYS.1.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "ASLR und DEP/NX", "is_correct": true },
+                { "text": "SELinux und AppArmor", "is_correct": false },
+                { "text": "iptables und nftables", "is_correct": false },
+                { "text": "TLS und SSH", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.3-002",
+            "text": "Was DARF laut SYS.1.3.A3 auf Linux- und Unix-Servern NICHT automatisch geschehen?",
+            "explanation": "SYS.1.3.A3 verbietet das automatische Einbinden von Wechseldatenträgern wie USB-Sticks oder CDs/DVDs. Dies ist eine Basis-Anforderung zum Schutz vor unkontrolliertem Datenimport.",
+            "quote": "Wechseldatenträger wie z. B. USB-Sticks oder CDs/DVDs DÜRFEN NICHT automatisch eingebunden werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung zum automatischen Einbinden von Wechseldatenträgern gemäß SYS.1.3.A3 wiedergeben.",
+            "baustein_id": "SYS.1.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das automatische Einbinden von Wechseldatenträgern", "is_correct": true },
+                { "text": "Das automatische Starten von Netzwerkdiensten", "is_correct": false },
+                { "text": "Das automatische Einspielen von Updates", "is_correct": false },
+                { "text": "Das automatische Anlegen von Benutzerkonten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.3-003",
+            "text": "Welches Protokoll SOLLTE laut SYS.1.3.A8 für verschlüsselte interaktive Verbindungen zwischen zwei IT-Systemen verwendet werden?",
+            "explanation": "SYS.1.3.A8 empfiehlt, dass ausschließlich Secure Shell (SSH) verwendet werden sollte. Alle anderen Protokolle, deren Funktionalität durch SSH abgedeckt wird, sollten vollständig abgeschaltet werden. Für die Authentifizierung sollten vorrangig Zertifikate anstatt eines Passworts verwendet werden.",
+            "quote": "Um eine verschlüsselte und authentisierte, interaktive Verbindung zwischen zwei IT-Systemen aufzubauen, SOLLTE ausschließlich Secure Shell (SSH) verwendet werden. Alle anderen Protokolle, deren Funktionalität durch Secure Shell abgedeckt wird, SOLLTEN vollständig abgeschaltet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das empfohlene Protokoll für verschlüsselte Verbindungen gemäß SYS.1.3.A8 benennen.",
+            "baustein_id": "SYS.1.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Secure Shell (SSH)", "is_correct": true },
+                { "text": "Telnet", "is_correct": false },
+                { "text": "Remote Desktop Protocol (RDP)", "is_correct": false },
+                { "text": "FTP", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.3-004",
+            "text": "Was SOLLTE laut SYS.1.3.A10 zum Schutz vor der Ausbreitung bei Schwachstellen eingesetzt werden?",
+            "explanation": "SYS.1.3.A10 empfiehlt, dass Dienste und Anwendungen mit einer individuellen Sicherheitsarchitektur geschützt werden sollten, z. B. mit AppArmor oder SELinux. Auch chroot-Umgebungen sowie LXC- oder Docker-Container sollten berücksichtigt werden. Es sollte sichergestellt sein, dass mitgelieferte Standardprofile aktiviert sind.",
+            "quote": "Dienste und Anwendungen SOLLTEN mit einer individuellen Sicherheitsarchitektur geschützt werden (z. B. mit AppArmor oder SELinux). Auch chroot-Umgebungen sowie LXC- oder Docker-Container SOLLTEN dabei berücksichtigt werden. Es SOLLTE sichergestellt sein, dass mitgelieferte Standardprofile bzw. -regeln aktiviert sind.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlenen Isolationsmechanismen für Dienste auf Linux/Unix-Servern gemäß SYS.1.3.A10 identifizieren.",
+            "baustein_id": "SYS.1.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Individuelle Sicherheitsarchitekturen wie AppArmor oder SELinux", "is_correct": true },
+                { "text": "chroot-Umgebungen sowie LXC- oder Docker-Container", "is_correct": true },
+                { "text": "Eine vollständige Neuinstallation des Betriebssystems", "is_correct": false },
+                { "text": "Die Deaktivierung aller Netzwerkschnittstellen", "is_correct": false }
+            ]
+        }
+    ]
+}

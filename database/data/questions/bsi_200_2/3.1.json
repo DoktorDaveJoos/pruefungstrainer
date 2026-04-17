@@ -1,0 +1,230 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "3.1",
+        "chapter_title": "Übernahme von Verantwortung durch die Leitungsebene",
+        "page_start": 20,
+        "page_end": 21
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-3.1-001",
+            "text": "Welche Rolle trägt laut BSI-Standard 200-2 die Gesamtverantwortung für die Informationssicherheit in einer Institution?",
+            "explanation": "Die Passage stellt klar, dass die oberste Leitungsebene den Sicherheitsprozess initiieren, steuern und kontrollieren muss und die Verantwortung für Informationssicherheit bei ihr verbleibt. Der ISB übernimmt lediglich die operative Aufgabe per Delegation. Die IT-Abteilung und externe Berater werden im Text nicht als Verantwortungsträger genannt.",
+            "quote": "Die oberste Leitungsebene muss den Sicherheitsprozess initiieren, steuern und kontrollieren. Die Leitungsebene ist diejenige Instanz, die die Entscheidung über den Umgang mit Risiken treffen und die entsprechenden Ressourcen zur Verfügung stellen muss. Die Verantwortung für Informationssicherheit verbleibt dort.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gesamtverantwortung für Informationssicherheit korrekt der obersten Leitungsebene zuordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die oberste Leitungsebene",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der Informationssicherheitsbeauftragte (ISB)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Externe Sicherheitsberater",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.1-002",
+            "text": "Was geschieht laut BSI-Standard 200-2 typischerweise mit der operativen Aufgabe „Informationssicherheit“?",
+            "explanation": "Die Passage beschreibt, dass die Verantwortung für Informationssicherheit bei der Leitungsebene verbleibt, die operative Aufgabe aber typischerweise an einen Informationssicherheitsbeauftragten (ISB) delegiert wird. Eine Auslagerung an externe Dienstleister oder Übernahme durch die Leitungsebene selbst wird nicht als Normalfall beschrieben.",
+            "quote": "Die Verantwortung für Informationssicherheit verbleibt dort. Die operative Aufgabe „Informationssicherheit“ wird allerdings typischerweise an einen Informationssicherheitsbeauftragten (ISB) delegiert.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Delegation der operativen Sicherheitsaufgabe an den ISB erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie wird typischerweise an einen Informationssicherheitsbeauftragten (ISB) delegiert",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie wird vollständig an externe Dienstleister ausgelagert",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie wird von der Leitungsebene operativ selbst wahrgenommen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie verbleibt ohne Delegation bei den Fachabteilungen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.1-003",
+            "text": "Wer muss in der Einstiegsphase mindestens benannt werden, wenn noch keine Sicherheitsorganisation aufgebaut und kein ISB benannt ist?",
+            "explanation": "In der Einstiegsphase muss laut Passage zumindest ein Verantwortlicher für Informationssicherheit benannt werden, der die ersten Schritte zur Konzeption und Planung übernimmt. Ein Datenschutzbeauftragter, externer Auditor oder kompletter Lenkungsausschuss sind laut Text nicht erforderlich.",
+            "quote": "Für die Initiierung des Sicherheitsprozesses muss aber zumindest ein Verantwortlicher für Informationssicherheit benannt werden, der die ersten Schritte zur Konzeption und Planung des Einstiegs in die Informationssicherheit durchführt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestanforderung an die Rollenbenennung in der Einstiegsphase erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein Verantwortlicher für Informationssicherheit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein Datenschutzbeauftragter nach DSGVO",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein externer Auditor einer Zertifizierungsstelle",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein vollständig besetzter Lenkungsausschuss",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.1-004",
+            "text": "Welche Themen gehören laut BSI-Standard 200-2 zu den sicherheitsrelevanten Informationen, über die die Leitungsebene unterrichtet werden muss?",
+            "explanation": "Die Passage listet ausdrücklich Sicherheitsrisiken und deren Auswirkungen sowie Sicherheitsanforderungen aus gesetzlichen und vertraglichen Vorgaben als sicherheitsrelevante Themen auf. Die jährliche Umsatzplanung und Marketingstrategie werden nicht als Sicherheitsthemen genannt.",
+            "quote": "Zu den sicherheitsrelevanten Themen gehören beispielsweise: • die Sicherheitsrisiken für die Institution und deren Informationen sowie die damit verbundenen Auswirkungen und Kosten, • die Auswirkungen von Sicherheitsvorfällen auf die kritischen Geschäftsprozesse, • die Sicherheitsanforderungen, die sich aus gesetzlichen und vertraglichen Vorgaben ergeben,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die sicherheitsrelevanten Berichtsthemen für die Leitungsebene benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sicherheitsrisiken für die Institution und deren Auswirkungen und Kosten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sicherheitsanforderungen aus gesetzlichen und vertraglichen Vorgaben",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die jährliche Umsatzplanung und Budgetabweichungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Marketingstrategie für neue Produkte",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.1-005",
+            "text": "Wer muss laut BSI-Standard 200-2 den Sicherheitsprozess in einer Organisation mitgestalten?",
+            "explanation": "Die Passage stellt ausdrücklich fest, dass der Sicherheitsprozess von allen Beschäftigten in einer Organisation mitgetragen und mitgestaltet werden muss – auch wenn die Leitungsebene die Verantwortung für die Sicherheitsziele trägt. Eine Beschränkung auf IT-Personal oder ausschließlich den ISB widerspricht dem Text.",
+            "quote": "Die Leitungsebene trägt zwar die Verantwortung für die Erreichung der Sicherheitsziele, der Sicherheitsprozess muss aber von allen Beschäftigten in einer Organisation mitgetragen und mitgestaltet werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Mitverantwortung aller Beschäftigten im Sicherheitsprozess erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 20,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Alle Beschäftigten der Organisation",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich das IT-Personal",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur der Informationssicherheitsbeauftragte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Leitungsebene und der ISB",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.1-006",
+            "text": "Welche Ressourcen muss die Leitungsebene laut BSI-Standard 200-2 so bemessen, dass das angestrebte Sicherheitsniveau erreichbar ist?",
+            "explanation": "Die Passage nennt explizit Personal, Zeit und Finanzmittel als die drei Ressourcenarten, die für das Erreichen des Sicherheitsniveaus bereitgestellt werden müssen. Hard- und Software oder Zertifizierungskosten werden an dieser Stelle nicht als bereitzustellende Ressourcenkategorien genannt.",
+            "quote": "Die Leitungsebene muss die Ziele sowohl für das Informationssicherheitsmanagement als auch für alle anderen Bereiche so setzen, dass das angestrebte Sicherheitsniveau in allen Bereichen mit den bereitgestellten Ressourcen (Personal, Zeit, Finanzmittel) erreichbar ist.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Ressourcenarten für das Erreichen des Sicherheitsniveaus benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 21,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Personal, Zeit und Finanzmittel",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich Finanzmittel",
+                    "is_correct": false
+                },
+                {
+                    "text": "Hard- und Software sowie Cloud-Kapazitäten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zertifizierungskosten und externe Beratung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.1-007",
+            "text": "Welche Aktionspunkte werden im BSI-Standard 200-2 der Leitungsebene für Abschnitt 3.1 zugeordnet?",
+            "explanation": "Die Aktionspunkte zu 3.1 nennen, dass sich die Leitungsebene über Risiken informiert, die Gesamtverantwortung übernimmt und den Sicherheitsprozess initiiert sowie einen Verantwortlichen benennt. Die Durchführung einer technischen Schwachstellenanalyse oder Beschaffung einer SIEM-Lösung gehören nicht zu den genannten Aktionspunkten.",
+            "quote": "Aktionspunkte zu 3.1 Übernahme von Verantwortung durch die Leitungsebene • Die Leitungsebene informiert sich über mögliche Risiken und Konsequenzen aufgrund fehlender Informationssicherheit. • Die Leitungsebene übernimmt die Gesamtverantwortung für Informationssicherheit.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die in Abschnitt 3.1 verankerten Aktionspunkte der Leitungsebene benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 21,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Leitungsebene informiert sich über mögliche Risiken und Konsequenzen aufgrund fehlender Informationssicherheit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Leitungsebene übernimmt die Gesamtverantwortung für Informationssicherheit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Leitungsebene führt persönlich eine technische Schwachstellenanalyse durch",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Leitungsebene beschafft und konfiguriert eine SIEM-Lösung",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

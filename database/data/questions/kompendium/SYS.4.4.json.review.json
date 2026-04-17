@@ -1,0 +1,44 @@
+{
+    "reviewed_at": "2026-04-17T12:30:00Z",
+    "critic_notes": "Section SYS.4.4 (3 questions: 3 pass, 0 flag, 0 fail). Correct answers are supported by the source (SYS.4.4.A1 Einsatzkriterien, A5 Einschränkung des Netzzugriffs, plus 2.2 Verwendung von UPnP Gefährdungslage); distractors are clearly wrong per source; topic 'bausteine' fits; difficulty labels plausible. 3 question(s) annotated with quote_mismatch/info — content verbatim but manifest char-range drift means fragments match only under aggressive normalization against the full source. 1 question has anforderung_type=null — acceptable for Gefährdungslage content (UPnP section 2.2) not tied to a specific Basis/Standard/Hoch Anforderung.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.4.4-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim in the full source)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.4-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF bullet-list layout artifact and manifest char-range drift; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.4-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for Gefährdungslage content (section 2.2 Verwendung von UPnP); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        }
+    ]
+}

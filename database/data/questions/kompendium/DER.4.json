@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "DER.4",
+        "chapter_title": "Notfallmanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-der.4-001",
+            "text": "Was SOLLTE laut DER.4.A1 in einem Notfallhandbuch enthalten sein?",
+            "explanation": "Das Notfallhandbuch sollte die wichtigsten Informationen zu Rollen, Sofortmaßnahmen, Alarmierung und Eskalation sowie Kommunikations-, Geschäftsfortführungs-, Wiederanlauf- und Wiederherstellungsplänen enthalten.",
+            "quote": "Es SOLLTE ein Notfallhandbuch erstellt werden, in dem die wichtigsten Informationen zu Rollen, Sofortmaßnahmen, Alarmierung und Eskalation sowie Kommunikations-, grundsätzlichen Geschäftsfortführungs-, Wiederanlauf- und Wiederherstellungsplänen enthalten sind.",
+            "topic": "notfall",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestinhalte eines Notfallhandbuchs nach DER.4.A1 benennen.",
+            "baustein_id": "DER.4.A1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Rollen, Sofortmaßnahmen, Alarmierung/Eskalation und Wiederanlauf-/Wiederherstellungspläne",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die Kontaktdaten aller Mitarbeitenden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die technische Dokumentation aller IT-Systeme",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die vollständige Risikoanalyse der Institution",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.4-002",
+            "text": "Welche Rolle ist laut DER.4 grundsätzlich zuständig für das Notfallmanagement?",
+            "explanation": "Die Notfallbeauftragten sind grundsätzlich zuständig. Als weitere Zuständigkeiten werden ISB, Vorgesetzte, Institutionsleitung und Personalabteilung genannt.",
+            "quote": "Grundsätzlich zuständig Notfallbeauftragte",
+            "topic": "notfall",
+            "difficulty": "basis",
+            "learning_objective": "Die grundsätzliche Zuständigkeit für das Notfallmanagement nach DER.4 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Notfallbeauftragten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der oder die Informationssicherheitsbeauftragte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Institutionsleitung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.4-003",
+            "text": "Was SOLLTE laut DER.4.A7 bei erhöhtem Schutzbedarf als Grundlage für das Notfallkonzept dienen?",
+            "explanation": "Alle kritischen Geschäftsprozesse und Ressourcen sollten identifiziert werden, beispielsweise mit einer Business-Impact-Analyse (BIA). Für jedes identifizierte Risiko sollte eine Risikostrategie festgelegt werden.",
+            "quote": "Alle kritischen Geschäftsprozesse und Ressourcen SOLLTEN identifiziert werden, beispielsweise mit einer Business-Impact-Analyse (BIA). Es SOLLTEN die wichtigsten relevanten Risiken für die kritischen Geschäftsprozesse und Fachaufgaben sowie deren Ressourcen identifiziert werden.",
+            "topic": "notfall",
+            "difficulty": "experte",
+            "learning_objective": "Die Methoden zur Identifikation kritischer Geschäftsprozesse im Notfallmanagement nach DER.4.A7 benennen.",
+            "baustein_id": "DER.4.A7",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Identifikation kritischer Geschäftsprozesse und Ressourcen, z. B. mittels Business-Impact-Analyse (BIA)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine vollständige Inventarisierung aller IT-Systeme",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die jährliche Umsatzanalyse der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Befragung aller Mitarbeitenden zu ihren Aufgaben",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.4-004",
+            "text": "Wo wird laut DER.4 die Entscheidung darüber getroffen, ob ein Notfall vorliegt?",
+            "explanation": "Die Entscheidung, ob ein Notfall vorliegt, wird während der Behandlung des Sicherheitsvorfalls getroffen, also im Kontext von DER.2.1 Behandlung von Sicherheitsvorfällen.",
+            "quote": "Im vorliegenden Baustein werden weder Kriterien noch Prozesse erläutert, anhand derer die Verantwortlichen entscheiden können, ob ein Notfall vorliegt oder nicht. Die Entscheidung darüber wird getroffen, während der Sicherheitsvorfall behandelt wird (siehe DER.2.1 Behandlung von Sicherheitsvorfällen).",
+            "topic": "notfall",
+            "difficulty": "experte",
+            "learning_objective": "Die Abgrenzung der Notfallentscheidung zum Baustein DER.2.1 nach DER.4 erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Während der Behandlung des Sicherheitsvorfalls (DER.2.1)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Durch die Institutionsleitung in der jährlichen Sicherheitsbewertung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich durch den Notfallbeauftragten im Voraus",
+                    "is_correct": false
+                },
+                {
+                    "text": "Durch das IT-Monitoring automatisch",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

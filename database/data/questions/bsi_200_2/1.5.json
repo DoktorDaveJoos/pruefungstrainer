@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "1.5",
+        "chapter_title": "Aufbau des BSI-Standards 200-2",
+        "page_start": 10,
+        "page_end": 11
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-1.5-001",
+            "text": "Welches Kapitel des BSI-Standards 200-2 behandelt die Initiierung des Informationssicherheitsprozesses und die Erstellung der Leitlinie zur Informationssicherheit?",
+            "explanation": "Laut Aufbau beschreibt Kapitel 3 die grundlegende Phase der Initiierung des Informationssicherheitsprozesses und die Erstellung der Leitlinie. Kapitel 2 behandelt die wichtigsten Schritte zur ISMS-Einführung, Kapitel 4 die Organisationsstrukturen und Kapitel 5 die Dokumentation.",
+            "quote": "In Kapitel 3 wird beschrieben, wie die grundlegende Phase der Initiierung des Informationssicherheits­prozesses aussehen kann und welche Hintergrundinformationen erforderlich sind, um eine fundierte Entscheidung über die für die Institution geeignete Vorgehensweise zur Absicherung ihrer Informa­tionen und Geschäftsprozesse zu treffen. Als wesentliche Grundlage für die weiteren Aktivitäten ist eine Leitlinie zur Informationssicherheit zu erstellen.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Den Kapitelbezug zur Initiierung des Sicherheitsprozesses und zur Leitlinie identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 9,
+            "page_end": null,
+            "answers": [
+                { "text": "Kapitel 3", "is_correct": true },
+                { "text": "Kapitel 2", "is_correct": false },
+                { "text": "Kapitel 4", "is_correct": false },
+                { "text": "Kapitel 5", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-002",
+            "text": "Welches Ziel verfolgt die Basis-Absicherung laut Aufbau des BSI-Standards 200-2?",
+            "explanation": "Laut Text verfolgt die Basis-Absicherung das Ziel, als Einstieg in den IT-Grundschutz zunächst eine breite, grundlegende Erst-Absicherung über alle Geschäftsprozesse bzw. Fachverfahren einer Institution zu erzielen. Eine maximale Absicherung besonders schützenswerter Assets ist die Kern-Absicherung, nicht die Basis-Absicherung.",
+            "quote": "Die Basis-Absicherung verfolgt das Ziel, als Einstieg in den IT-Grundschutz zunächst eine breite, grundlegende Erst-Absicherung über alle Geschäftsprozesse bzw. Fachverfahren einer • Institution hinweg zu erzielen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Ziel der Basis-Absicherung wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 9,
+            "page_end": 10,
+            "answers": [
+                { "text": "Eine breite, grundlegende Erst-Absicherung über alle Geschäftsprozesse als Einstieg in den IT-Grundschutz", "is_correct": true },
+                { "text": "Eine maximale Absicherung der besonders schützenswerten Assets", "is_correct": false },
+                { "text": "Eine ausschließliche Absicherung der technischen Komponenten", "is_correct": false },
+                { "text": "Eine reine Zertifizierungsgrundlage ohne operative Umsetzung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-003",
+            "text": "Welcher Schritt wird bei der Basis-Absicherung nach Festlegung des Geltungsbereichs durchgeführt?",
+            "explanation": "Laut Text muss nach der Festlegung des Geltungsbereichs eine Auswahl und Zuordnung der IT-Grundschutz-Bausteine erfolgen und die Reihenfolge ihrer Anwendung festgelegt werden. Eine Risikoanalyse nach 200-3 oder eine direkte Zertifizierung ist in der Basis-Absicherung nicht dieser Schritt.",
+            "quote": "Nach der Festlegung des Geltungsbereichs muss eine Auswahl und Zuordnung der IT-Grundschutz-Bausteine erfolgen und die Reihenfolge ihrer Anwendung festgelegt werden.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Folgeschritt der Basis-Absicherung nach Geltungsbereichsfestlegung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                { "text": "Auswahl und Zuordnung der IT-Grundschutz-Bausteine und Festlegung der Reihenfolge ihrer Anwendung", "is_correct": true },
+                { "text": "Vollständige Risikoanalyse nach BSI-Standard 200-3", "is_correct": false },
+                { "text": "Direkte Beantragung der Zertifizierung nach ISO 27001", "is_correct": false },
+                { "text": "Durchführung eines externen Penetrationstests", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-004",
+            "text": "Welches Kapitel des BSI-Standards 200-2 behandelt die Vorgehensweise der Kern-Absicherung?",
+            "explanation": "Laut Aufbau verdeutlicht Kapitel 7 die Kern-Absicherung als vorgezogenen Schutz der essenziellen Assets. Kapitel 6 betrifft die Basis-Absicherung, Kapitel 8 die Standard-Absicherung und Kapitel 9 die Umsetzung der Sicherheitsmaßnahmen.",
+            "quote": "Wie ein vorgezogener Schutz der essenziellen Assets nach IT-Grundschutz mit der Kern-Absicherung erzielt werden kann, wird in Kapitel 7 verdeutlicht.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Den Kapitelbezug zur Kern-Absicherung identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                { "text": "Kapitel 7", "is_correct": true },
+                { "text": "Kapitel 6", "is_correct": false },
+                { "text": "Kapitel 8", "is_correct": false },
+                { "text": "Kapitel 9", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-005",
+            "text": "Welche Schritte beschreibt Kapitel 8 zur Standard-Absicherung im BSI-Standard 200-2?",
+            "explanation": "Laut Aufbau behandelt Kapitel 8 die Erhebung von Grundinformationen über einen Informationsverbund, deren Reduktion durch Gruppenbildung, die Schutzbedarfsfeststellung ausgehend von den Geschäftsprozessen sowie die Modellierung und Ableitung von Sicherheitsmaßnahmen. Eine isolierte Technikauswahl ohne methodischen Prozess widerspricht dem Kapitelinhalt.",
+            "quote": "Dabei wird aufge­zeigt, wie zunächst die Grundinformationen über einen Informationsverbund erhoben werden und diese durch Gruppenbildung reduziert werden können. Anschließend muss ausgehend von den Ge­schäftsprozessen der Schutzbedarf für Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume festgestellt werden.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Abfolge der Standard-Absicherung in Kapitel 8 wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                { "text": "Erhebung der Grundinformationen zum Informationsverbund und Reduzierung durch Gruppenbildung", "is_correct": true },
+                { "text": "Schutzbedarfsfeststellung für Anwendungen, IT-Systeme, Kommunikationsverbindungen und Räume ausgehend von den Geschäftsprozessen", "is_correct": true },
+                { "text": "Direkte Auswahl einzelner Produkte ohne methodische Vorarbeit", "is_correct": false },
+                { "text": "Ausschließliche Durchführung der Zertifizierungsprüfung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-006",
+            "text": "Nach welchem BSI-Standard wird laut Aufbau die Risikoanalyse auf Basis von IT-Grundschutz durchgeführt?",
+            "explanation": "Der Text verweist explizit auf den BSI-Standard 200-3 für die Risikoanalyse auf Basis von IT-Grundschutz. Der BSI-Standard 200-1 betrifft das ISMS allgemein, 200-2 die Methodik selbst, und 100-4 ist der alte Notfallmanagement-Standard.",
+            "quote": "Vor der Realisierung von Sicherheitsmaß­nahmen müssen vorhandene und zusätzliche Sicherheitsmaßnahmen, die beispielsweise durch die Risikoanalyse auf der Basis von IT-Grundschutz gemäß BSI-Standard 200-3 (siehe [BSI3]) ermittelt wur­den, in das Sicherheitskonzept integriert werden.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Den für die Risikoanalyse relevanten BSI-Standard benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                { "text": "BSI-Standard 200-3", "is_correct": true },
+                { "text": "BSI-Standard 200-1", "is_correct": false },
+                { "text": "BSI-Standard 200-2", "is_correct": false },
+                { "text": "BSI-Standard 100-4", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-007",
+            "text": "Welches Thema behandelt Kapitel 11 des BSI-Standards 200-2?",
+            "explanation": "Laut Aufbau liefert Kapitel 11 einen Überblick über die Schritte zur Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz. Die Aufrechterhaltung der Informationssicherheit wird in Kapitel 10 behandelt, die Umsetzung der Sicherheitsmaßnahmen in Kapitel 9.",
+            "quote": "Kapitel 11 liefert einen kurzen Überblick darüber, welche Schritte hierfür notwendig sind, und erläutert abschließend, welche Bedingungen für eine erfolgrei­che Zertifizierung erfüllt werden müssen.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Den Inhalt von Kapitel 11 des BSI-Standards 200-2 identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 10,
+            "page_end": null,
+            "answers": [
+                { "text": "Schritte und Bedingungen für eine erfolgreiche Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz", "is_correct": true },
+                { "text": "Die Aufrechterhaltung der Informationssicherheit", "is_correct": false },
+                { "text": "Die Umsetzung identifizierter Sicherheitsmaßnahmen", "is_correct": false },
+                { "text": "Die Durchführung der Risikoanalyse", "is_correct": false }
+            ]
+        }
+    ]
+}

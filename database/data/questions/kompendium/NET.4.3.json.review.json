@@ -1,0 +1,27 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Baustein NET.4.3: 3 questions reviewed. 2 pass, 1 flag, 0 fail. 1 schema note(s) where anforderung_type is null. No factual errors or unsupported correct answers were found; all correct answers trace to Anforderungen in the Baustein and distractors are unambiguously wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-net.4.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-net.4.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-net.4.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; kompendium rubric expects basis|standard|hoch unless the question is about role responsibilities."
+                }
+            ]
+        }
+    ]
+}

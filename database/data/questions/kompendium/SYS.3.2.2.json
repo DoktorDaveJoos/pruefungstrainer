@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.3.2.2",
+        "chapter_title": "Mobile Device Management (MDM)",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.3.2.2-001",
+            "text": "Was MUSS laut SYS.3.2.2 in der Strategie f\u00fcr das Mobile Device Management mindestens abgedeckt werden?",
+            "explanation": "SYS.3.2.2.A1 fordert eine schriftlich fixierte Strategie, die u. a. festlegt, ob das MDM als Cloud-Dienst oder selbst betrieben wird, welche Apps bereitgestellt werden, welche Compliance-Anforderungen gelten und welche Ger\u00e4te und Betriebssysteme unterst\u00fctzt werden m\u00fcssen. Die Strategie muss vom ISB freigegeben werden.",
+            "quote": "Es MUSS eine Strategie erarbeitet werden, die festlegt, wie Mitarbeitende mobile Endger\u00e4te benutzen d\u00fcrfen und wie die Ger\u00e4te in die IT-Strukturen der Institution integriert sind. \u2022 Die Strategie MUSS schriftlich fixiert und von dem oder der ISB freigegeben werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die MDM-Strategie benennen.",
+            "baustein_id": "SYS.3.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Eine schriftlich fixierte Strategie, die vom ISB freigegeben werden muss.", "is_correct": true },
+                { "text": "Eine m\u00fcndliche Absprache zwischen IT-Betrieb und Gesch\u00e4ftsf\u00fchrung gen\u00fcgt.", "is_correct": false },
+                { "text": "Die MDM-Strategie muss nur die technischen Aspekte der Ger\u00e4teverwaltung abdecken.", "is_correct": false },
+                { "text": "Eine Freigabe durch den Datenschutzbeauftragten ersetzt die ISB-Freigabe.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.2-002",
+            "text": "In welchem Zustand M\u00dcSSEN sich mobile Endger\u00e4te befinden, wenn sie die MDM-Grundkonfiguration erhalten?",
+            "explanation": "SYS.3.2.2.A4 verlangt, dass mobile Endger\u00e4te im Werkszustand sein m\u00fcssen, wenn sie die Grundkonfiguration erhalten. Bei bereits benutzten Ger\u00e4ten m\u00fcssen vorher alle institutionsbezogenen Daten gel\u00f6scht werden. Ein nicht \u00fcber MDM konfiguriertes Ger\u00e4t darf nicht auf Informationen der Institution zugreifen k\u00f6nnen.",
+            "quote": "Wenn die Ger\u00e4te die Grundkonfiguration erhalten, M\u00dcSSEN sie sich im Werkszustand befinden. \u2022 Ein nicht \u00fcber MDM konfiguriertes Endger\u00e4t DARF NICHT auf Informationen der Institution zugreifen k\u00f6nnen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Verteilung der MDM-Grundkonfiguration beschreiben.",
+            "baustein_id": "SYS.3.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Im Werkszustand", "is_correct": true },
+                { "text": "Im aktuellen Nutzungszustand mit allen vorhandenen Apps und Daten", "is_correct": false },
+                { "text": "Im Debug-Modus f\u00fcr Entwickler", "is_correct": false },
+                { "text": "Im abgesicherten Modus des Betriebssystems", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.3.2.2-003",
+            "text": "Was SOLLTE das MDM laut SYS.3.2.2 bei der Fernl\u00f6schung und Au\u00dferbetriebnahme sicherstellen?",
+            "explanation": "SYS.3.2.2.A22 empfiehlt, dass das MDM sicherstellen sollte, dass alle dienstlichen Daten aus der Ferne gel\u00f6scht werden k\u00f6nnen (Remote Wipe). Der Prozess zur Au\u00dferbetriebnahme (Unenrollment) sollte sicherstellen, dass keine schutzbed\u00fcrftigen Daten auf dem Ger\u00e4t verbleiben.",
+            "quote": "Das MDM SOLLTE sicherstellen, dass s\u00e4mtliche dienstliche Daten auf dem mobilen Endger\u00e4t aus der Ferne gel\u00f6scht werden k\u00f6nnen (Remote Wipe bei bestehender Datenverbindung). \u2022 Der Prozess zur Au\u00dferbetriebnahme des mobilen Endger\u00e4tes (Unenrollment) SOLLTE sicherstellen, dass keine schutzbed\u00fcrftigen Daten auf dem mobilen Endger\u00e4t oder eingebundenen Speichermedien verbleiben.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an Fernl\u00f6schung und Unenrollment im MDM beschreiben.",
+            "baustein_id": "SYS.3.2.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Dienstliche Daten m\u00fcssen aus der Ferne gel\u00f6scht werden k\u00f6nnen (Remote Wipe).", "is_correct": true },
+                { "text": "Beim Unenrollment d\u00fcrfen keine schutzbed\u00fcrftigen Daten auf dem Ger\u00e4t verbleiben.", "is_correct": true },
+                { "text": "Private Daten der Benutzenden m\u00fcssen bei einem Remote Wipe immer mit gel\u00f6scht werden.", "is_correct": false },
+                { "text": "Eine Fernl\u00f6schung ist nicht erforderlich, wenn das Ger\u00e4t verschl\u00fcsselt ist.", "is_correct": false }
+            ]
+        }
+    ]
+}

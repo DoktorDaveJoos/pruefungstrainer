@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "7.3",
+        "chapter_title": "Umsetzung der Leitlinie zur Informationssicherheit",
+        "page_start": 30,
+        "page_end": 30
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-7.3-001",
+            "text": "Was muss zur Erreichung der gesetzten Sicherheitsziele zunächst erstellt werden?",
+            "explanation": "Um die gesetzten Sicherheitsziele zu erreichen, muss zunächst ein Sicherheitskonzept erstellt werden. Eine Risikomatrix, ein Notfallhandbuch oder ein Audit-Bericht sind nicht der im Standard genannte erste Schritt.",
+            "quote": "Um die gesetzten Sicherheitsziele zu erreichen, muss zunächst ein Sicherheitskonzept erstellt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Sicherheitskonzept als ersten Umsetzungsschritt der Leitlinie identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein Sicherheitskonzept.", "is_correct": true },
+                { "text": "Eine Risikomatrix.", "is_correct": false },
+                { "text": "Ein Notfallhandbuch.", "is_correct": false },
+                { "text": "Ein Audit-Bericht.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.3-002",
+            "text": "Wer bewertet die Ergebnisse der Überprüfung der Sicherheitsmaßnahmen im Rahmen der Erfolgskontrolle?",
+            "explanation": "Die Ergebnisse der Überprüfung gehen in die Erfolgskontrolle des Sicherheitsprozesses ein und werden von der Leitungsebene bewertet. Weder ISB noch externe Auditoren oder die IT-Leitung nimmt diese Bewertung laut Standard vor.",
+            "quote": "Die Ergebnisse der Überprüfung der Sicherheitsmaßnahmen gehen dann in die Erfolgskontrolle des Sicherheitsprozesses ein und werden von der Leitungsebene bewertet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle der Leitungsebene bei der Bewertung der Erfolgskontrolle benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Leitungsebene.", "is_correct": true },
+                { "text": "Der Informationssicherheitsbeauftragte allein.", "is_correct": false },
+                { "text": "Ein externer Auditor ohne interne Einbindung.", "is_correct": false },
+                { "text": "Der IT-Leiter.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.3-003",
+            "text": "Was wird laut Abschnitt 7.3 in einem eigenen Kapitel dargestellt?",
+            "explanation": "In einem eigenen Kapitel wird dargestellt, wie ein Sicherheitskonzept geplant, umgesetzt und das Informationssicherheitsniveau aufrechterhalten und verbessert werden kann. Andere Themen wie Rollen oder Notfallkonzepte sind nicht Gegenstand dieses Hinweises.",
+            "quote": "Zur besseren Übersichtlichkeit wird in einem eigenen Kapitel dargestellt, wie ein Sicherheitskonzept geplant, umgesetzt und das Informationssicherheitsniveau aufrechterhalten und verbessert werden kann.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Inhalt des gesonderten Kapitels zum Sicherheitskonzept einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 30,
+            "page_end": null,
+            "answers": [
+                { "text": "Wie ein Sicherheitskonzept geplant, umgesetzt, aufrechterhalten und verbessert werden kann.", "is_correct": true },
+                { "text": "Die Definition der Rollen im Informationssicherheitsmanagement.", "is_correct": false },
+                { "text": "Die detaillierte Erstellung eines Notfallkonzepts.", "is_correct": false },
+                { "text": "Die Durchführung von Zertifizierungsaudits.", "is_correct": false }
+            ]
+        }
+    ]
+}

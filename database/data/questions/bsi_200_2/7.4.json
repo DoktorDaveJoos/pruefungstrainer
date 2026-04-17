@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "7.4",
+        "chapter_title": "Strukturanalyse",
+        "page_start": 72,
+        "page_end": 72
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-7.4-001",
+            "text": "Was ist laut Kapitel 7.4 Aufgabe der Strukturanalyse bei der Kern-Absicherung?",
+            "explanation": "Die Strukturanalyse analysiert und dokumentiert das Zusammenspiel von Geschäftsprozessen, Anwendungen und Informationstechnik. Sie bewertet weder direkt Risiken noch trifft sie Kostenentscheidungen; diese Aufgaben gehören zu anderen Phasen.",
+            "quote": "Für die Erstellung eines Sicherheitskonzepts und insbesondere für die Anwendung des IT-Grundschutz-Kompendiums ist es erforderlich, das Zusammenspiel der Geschäftsprozesse, der Anwendungen und der vorliegenden Informationstechnik zu analysieren und zu dokumentieren.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Strukturanalyse beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das Zusammenspiel von Geschäftsprozessen, Anwendungen und Informationstechnik analysieren und dokumentieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risiken quantitativ bewerten und in Risikoklassen einordnen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sicherheitsinvestitionen wirtschaftlich priorisieren",
+                    "is_correct": false
+                },
+                {
+                    "text": "Den Schutzbedarf auf „normal“ zu senken",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.4-002",
+            "text": "Welches Dokument bietet sich aufgrund der starken Vernetzung als Ausgangsbasis für die weitere technische Analyse im Rahmen der Strukturanalyse an?",
+            "explanation": "Der Text nennt ausdrücklich den Netztopologieplan als Ausgangsbasis für die weitere technische Analyse. Risikoregister, Notfallhandbuch oder Datenschutzfolgenabschätzung werden an dieser Stelle nicht genannt.",
+            "quote": "Aufgrund der heute üblichen starken Vernetzung von IT-Systemen bietet sich ein Netztopologieplan als Ausgangsbasis für die weitere technische Analyse an.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Netztopologieplan als Ausgangsbasis der Strukturanalyse identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Netztopologieplan",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikoregister",
+                    "is_correct": false
+                },
+                {
+                    "text": "Notfallhandbuch",
+                    "is_correct": false
+                },
+                {
+                    "text": "Datenschutzfolgenabschätzung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.4-003",
+            "text": "Welche Aspekte müssen bei der Strukturanalyse laut BSI-Standard 200-2 für die Kern-Absicherung berücksichtigt werden?",
+            "explanation": "Kapitel 7.4 listet explizit die im eingeschränkten Informationsverbund betriebenen Anwendungen und gestützten Geschäftsprozesse, organisatorische und personelle Rahmenbedingungen, vernetzte und nicht vernetzte IT-Systeme, Kommunikationsverbindungen und die Infrastruktur. Finanzkennzahlen oder Markentwicklung sind nicht Teil der Strukturanalyse.",
+            "quote": "• die für die Kern-Absicherung im eingeschränkten Informationsverbund betriebenen Anwendungen und die dadurch gestützten Geschäftsprozesse, • die organisatorischen und personellen Rahmenbedingungen für diesen Informationsverbund, • im Informationsverbund eingesetzte vernetzte und nicht vernetzte IT-Systeme, • die Kommunikationsverbindungen zwischen den IT-Systemen und nach außen, • die vorhandene Infrastruktur.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die bei der Strukturanalyse zu berücksichtigenden Aspekte aufzählen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Betriebene Anwendungen und gestützte Geschäftsprozesse im Informationsverbund",
+                    "is_correct": true
+                },
+                {
+                    "text": "Organisatorische und personelle Rahmenbedingungen, Kommunikationsverbindungen und Infrastruktur",
+                    "is_correct": true
+                },
+                {
+                    "text": "Aktuelle Finanzkennzahlen der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Markenbekanntheit und Kundenzufriedenheitsindex",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.4-004",
+            "text": "Wo werden die einzelnen Schritte der Strukturanalyse im Detail als Handlungsanweisung beschrieben?",
+            "explanation": "Kapitel 7.4 verweist ausdrücklich auf Kapitel 8.1 des Dokuments, wo die Schritte in Form einer Handlungsanweisung beschrieben werden. Die anderen Kapitel behandeln andere Phasen (Schutzbedarfsfeststellung, Modellierung, IT-Grundschutz-Check).",
+            "quote": "Die einzelnen Schritte der Strukturanalyse werden im Detail in Kapitel 8.1 dieses Dokuments in Form einer Handlungsanweisung beschrieben.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Fundstelle der detaillierten Handlungsanweisung zur Strukturanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "In Kapitel 8.1",
+                    "is_correct": true
+                },
+                {
+                    "text": "In Kapitel 8.2",
+                    "is_correct": false
+                },
+                {
+                    "text": "In Kapitel 8.3",
+                    "is_correct": false
+                },
+                {
+                    "text": "In Kapitel 8.4",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

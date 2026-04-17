@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.5",
+        "chapter_title": "Protokollierung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.5-001",
+            "text": "Was MUSS laut OPS.1.1.5.A4 f\u00fcr die Systemzeit protokollierender IT-Systeme gew\u00e4hrleistet sein?",
+            "explanation": "Die Systemzeit aller protokollierenden IT-Systeme und Anwendungen muss immer synchron sein. Au\u00dferdem muss sichergestellt sein, dass das Datums- und Zeitformat der Protokolldateien einheitlich ist.",
+            "quote": "Die Systemzeit aller protokollierenden IT-Systeme und Anwendungen MUSS immer synchron sein. Es MUSS sichergestellt sein, dass das Datums- und Zeitformat der Protokolldateien einheitlich ist.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Zeitsynchronisation bei der Protokollierung nach OPS.1.1.5.A4 benennen.",
+            "baustein_id": "OPS.1.1.5.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Die Systemzeit muss synchron und das Datums- und Zeitformat einheitlich sein", "is_correct": true},
+                {"text": "Jedes IT-System darf seine eigene lokale Zeitzone verwenden", "is_correct": false},
+                {"text": "Nur Server m\u00fcssen synchronisiert werden, Clients sind ausgenommen", "is_correct": false},
+                {"text": "Die Zeitsynchronisation ist nur bei erh\u00f6htem Schutzbedarf erforderlich", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.5-002",
+            "text": "Was MUSS laut OPS.1.1.5.A5 bei der Protokollierung hinsichtlich Protokollierungsdaten sichergestellt werden?",
+            "explanation": "Protokollierungsdaten m\u00fcssen nach einem festgelegten Prozess gel\u00f6scht werden. Es muss technisch unterbunden werden, dass sie unkontrolliert gel\u00f6scht oder ver\u00e4ndert werden.",
+            "quote": "Protokollierungsdaten M\u00dcSSEN nach einem festgelegten Prozess gel\u00f6scht werden. Es MUSS technisch unterbunden werden, dass Protokollierungsdaten unkontrolliert gel\u00f6scht oder ver\u00e4ndert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an den Umgang mit Protokollierungsdaten nach OPS.1.1.5.A5 erl\u00e4utern.",
+            "baustein_id": "OPS.1.1.5.A5",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Sie m\u00fcssen nach festgelegtem Prozess gel\u00f6scht werden und unkontrolliertes L\u00f6schen oder \u00c4ndern muss technisch unterbunden werden", "is_correct": true},
+                {"text": "Sie d\u00fcrfen unter keinen Umst\u00e4nden gel\u00f6scht werden", "is_correct": false},
+                {"text": "Jeder Administrator darf sie nach eigenem Ermessen l\u00f6schen", "is_correct": false},
+                {"text": "Sie m\u00fcssen nach genau 90 Tagen automatisch gel\u00f6scht werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.5-003",
+            "text": "Was MUSS laut OPS.1.1.5.A1 in der spezifischen Sicherheitsrichtlinie f\u00fcr die Protokollierung geregelt werden?",
+            "explanation": "In der Sicherheitsrichtlinie muss geregelt werden, wie, wo und was zu protokollieren ist. Art und Umfang der Protokollierung sollten sich am Schutzbedarf der Informationen orientieren.",
+            "quote": "In der spezifischen Sicherheitsrichtlinie MUSS geregelt werden, wie, wo und was zu protokollieren ist. Dabei SOLLTEN sich Art und Umfang der Protokollierung am Schutzbedarf der Informationen orientieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindestinhalte der Sicherheitsrichtlinie f\u00fcr die Protokollierung nach OPS.1.1.5.A1 benennen.",
+            "baustein_id": "OPS.1.1.5.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Wie, wo und was zu protokollieren ist", "is_correct": true},
+                {"text": "Ausschlie\u00dflich welche Software zur Protokollierung eingesetzt wird", "is_correct": false},
+                {"text": "Nur die maximale Speicherdauer der Protokolldaten", "is_correct": false},
+                {"text": "Welche Mitarbeitenden von der Protokollierung ausgenommen sind", "is_correct": false}
+            ]
+        }
+    ]
+}

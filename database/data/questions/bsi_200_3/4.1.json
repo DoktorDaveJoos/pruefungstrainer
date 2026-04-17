@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "4.1",
+        "chapter_title": "Ermittlung von elementaren Gefährdungen",
+        "page_start": 22,
+        "page_end": 24
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-4.1-001",
+            "text": "Was bedeutet die Einstufung einer elementaren Gefährdung als „direkt relevant“ für ein Zielobjekt?",
+            "explanation": "„Direkt relevant“ ist explizit so definiert, dass die Gefährdung auf das Zielobjekt einwirken kann und deshalb im Rahmen der Risikoanalyse behandelt werden muss. Die Verlagerung in ein anderes Zielobjekt oder der generelle Ausschluss sind andere Kategorien. Eine verpflichtende Versicherung ist keine Relevanzkategorie des Standards.",
+            "quote": "„Direkt relevant“bedeutet hier, dass die jeweilige Gefährdung auf das betrachtete Zielobjekt einwirken kann und deshalb im Rahmen der Risikoanalyse behandelt werden muss.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Bedeutung der Relevanzkategorie „direkt relevant“ benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Gefährdung wirkt auf das Zielobjekt ein und muss in der Risikoanalyse behandelt werden.", "is_correct": true },
+                { "text": "Die Gefährdung wird automatisch einem anderen Zielobjekt zugeordnet.", "is_correct": false },
+                { "text": "Das Zielobjekt muss gegen die Gefährdung versichert werden.", "is_correct": false },
+                { "text": "Die Gefährdung wird grundsätzlich nicht weiter berücksichtigt.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-4.1-002",
+            "text": "Wann muss eine nur „indirekt relevante“ elementare Gefährdung laut BSI-Standard 200-3 im Rahmen der Risikoanalyse gesondert behandelt werden?",
+            "explanation": "Der Standard stellt ausdrücklich fest, dass indirekt relevante Gefährdungen für das betrachtete Zielobjekt nicht gesondert behandelt werden müssen, weil sie in ihrer Wirkung nicht über andere (allgemeinere) Gefährdungen hinausgehen. Die anderen Optionen fügen Bedingungen hinzu, die im Standard nicht formuliert sind.",
+            "quote": "„Indirekt relevant“meint hier, dass die jeweilige Gefährdung zwar auf das betrachtete Zielobjekt einwirken kann, in ihrer potenziellen Wirkung aber nicht über andere (allgemeinere) Gefährdungen hinausgeht. In diesem Fall muss die jeweilige Gefährdung für dieses Zielobjekt nicht gesondert im Rahmen der Risikoanalyse behandelt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Konsequenz der Einstufung „indirekt relevant“ für die Risikoanalyse erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie muss nicht gesondert behandelt werden, da ihre Wirkung nicht über allgemeinere Gefährdungen hinausgeht.", "is_correct": true },
+                { "text": "Sie muss in jedem Fall vor allen direkt relevanten Gefährdungen behandelt werden.", "is_correct": false },
+                { "text": "Sie muss gesondert behandelt werden, sobald der Schutzbedarf hoch ist.", "is_correct": false },
+                { "text": "Sie muss gesondert behandelt werden, sobald sie in einer Statistik auftaucht.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-4.1-003",
+            "text": "Wie viele elementare Gefährdungen werden herangezogen, wenn ein Zielobjekt nicht hinreichend mit bestehenden Bausteinen abgebildet werden kann?",
+            "explanation": "Der Standard nennt für diesen Fall ausdrücklich die Liste der 47 elementaren Gefährdungen. Die anderen Zahlen werden an dieser Stelle nicht genannt.",
+            "quote": "dann wird die Liste der 47 elementaren Gefährdungen herangezogen und für jedes Zielobjekt jeweils geprüft, welche Gefährdungen relevant sind.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang der Liste elementarer Gefährdungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 17,
+            "page_end": null,
+            "answers": [
+                { "text": "47 elementare Gefährdungen", "is_correct": true },
+                { "text": "27 elementare Gefährdungen", "is_correct": false },
+                { "text": "50 elementare Gefährdungen", "is_correct": false },
+                { "text": "100 elementare Gefährdungen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-4.1-004",
+            "text": "Für welche Typen von Zielobjekten eignen sich Gefährdungen, die sich nicht auf konkrete technische Komponenten beziehen (z. B. G 0.29)?",
+            "explanation": "Der Standard nennt für solche nicht-technischen Gefährdungen explizit die Zielobjekttypen Anwendung, Geschäftsprozess und Informationsverbund. Einzelne Räume oder Kabeltrassen werden in diesem Kontext nicht genannt.",
+            "quote": "Gefährdungen, die sich nicht auf konkrete technische Komponenten beziehen, beispielsweise G 0.29 Verstoß gegen Gesetze oder Regelungen, eignen sich meist für Zielobjekte vom Typ Anwendung, Geschäftsprozess oder Informationsverbund.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Geeignete Zielobjekttypen für nicht-technische Gefährdungen identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Anwendung", "is_correct": true },
+                { "text": "Geschäftsprozess", "is_correct": true },
+                { "text": "Informationsverbund", "is_correct": true },
+                { "text": "Einzelner Serverraum", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-4.1-005",
+            "text": "Welche Angabe sollte gemäß BSI-Standard 200-3 in der Ergebnistabelle der Gefährdungsübersicht für jedes Zielobjekt zusätzlich zu den relevanten elementaren Gefährdungen vermerkt werden?",
+            "explanation": "Der Standard empfiehlt, den Schutzbedarf in den drei Grundwerten Vertraulichkeit, Integrität und Verfügbarkeit zu vermerken, um die nachfolgende Analyse zu erleichtern. Für das übergeordnete Zielobjekt Informationsverbund kann die Zuordnung sogar entfallen. Andere Angaben (ISMS-Verantwortliche, Investitionskosten, Mitarbeiterzahl) werden dafür nicht genannt.",
+            "quote": "sollte in der Tabelle für jedes Zielobjekt der Schutzbedarf vermerkt werden, der im Rahmen der Schutzbedarfsfeststellung in den drei Grundwerten Vertraulichkeit, Integrität und Verfügbarkeit ermittelt wurde.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die geforderten Zusatzangaben in der Gefährdungsübersicht benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 18,
+            "page_end": null,
+            "answers": [
+                { "text": "Der Schutzbedarf in den Grundwerten Vertraulichkeit, Integrität und Verfügbarkeit", "is_correct": true },
+                { "text": "Die Investitionskosten des Zielobjekts", "is_correct": false },
+                { "text": "Die Anzahl der das Zielobjekt nutzenden Mitarbeiter", "is_correct": false },
+                { "text": "Die Namen der ISMS-Verantwortlichen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-4.1-006",
+            "text": "Warum lässt sich laut BSI-Standard 200-3 für viele Zielobjekte bereits vorab auf eine vorhandene Gefährdungsbasis aus dem IT-Grundschutz-Kompendium zurückgreifen?",
+            "explanation": "Der Standard begründet dies damit, dass für bestehende Bausteine bereits vorab eine Risikoanalyse durchgeführt wurde und damit die relevanten elementaren Gefährdungen als Ausgangspunkt der Gefährdungsanalyse vorliegen. Die anderen Begründungen sind keine im Standard genannten Gründe.",
+            "quote": "Für bestehende Bausteine wurde bereits vorab eine Risikoanalyse durchgeführt und damit wurden für diese Bausteine bereits die relevanten elementaren Gefährdungen ermittelt, die als Ausgangspunkt der Gefährdungsanalyse verwendet werden können.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Bezug zwischen Bausteinen und vorhandener Gefährdungsbasis erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 16,
+            "page_end": null,
+            "answers": [
+                { "text": "Für bestehende Bausteine wurde bereits vorab eine Risikoanalyse mit elementaren Gefährdungen durchgeführt.", "is_correct": true },
+                { "text": "Zielobjekte in bestehenden Bausteinen sind automatisch gegen alle Gefährdungen abgesichert.", "is_correct": false },
+                { "text": "Bausteine enthalten quantitative Schadenshöhenstatistiken.", "is_correct": false },
+                { "text": "Die Liste der elementaren Gefährdungen ist bei bestehenden Bausteinen nicht anwendbar.", "is_correct": false }
+            ]
+        }
+    ]
+}

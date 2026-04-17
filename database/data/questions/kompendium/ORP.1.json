@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "ORP.1",
+        "chapter_title": "Organisation",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:45:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-orp.1-001",
+            "text": "Was MÜSSEN Mitarbeitende laut ORP.1.A3 mit institutionsfremden Personen in sensiblen Bereichen tun?",
+            "explanation": "Laut ORP.1.A3 müssen institutionsfremde Personen von Mitarbeitenden zu den Räumen begleitet und in sensiblen Bereichen beaufsichtigt werden. Ein einfaches Anmelden am Empfang oder das Tragen eines Besucherausweises reicht nicht aus.",
+            "quote": "Institutionsfremde Personen MÜSSEN von Mitarbeitenden zu den Räumen begleitet werden. Die Mitarbeitenden der Institution MÜSSEN institutionsfremde Personen in sensiblen Bereichen beaufsichtigen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Begleitung und Beaufsichtigung von Fremdpersonen benennen.",
+            "baustein_id": "ORP.1.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen sie zu den Räumen begleiten und in sensiblen Bereichen beaufsichtigen", "is_correct": true },
+                { "text": "Sie müssen ihnen lediglich einen Besucherausweis aushändigen", "is_correct": false },
+                { "text": "Sie müssen sie am Eingang registrieren und frei bewegen lassen", "is_correct": false },
+                { "text": "Sie müssen sie nur beim Verlassen des Gebäudes begleiten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.1-002",
+            "text": "Was MUSS laut ORP.1.A4 bei unvereinbaren Aufgaben sichergestellt werden?",
+            "explanation": "Laut ORP.1.A4 müssen unvereinbare Aufgaben wie operative und kontrollierende Funktionen auf verschiedene Personen verteilt werden. Eine Funktionstrennung muss festgelegt und dokumentiert sein, und auch Vertreter müssen der Funktionstrennung unterliegen.",
+            "quote": "Die Aufgaben und die hierfür erforderlichen Rollen und Funktionen MÜSSEN so strukturiert sein, dass unvereinbare Aufgaben wie operative und kontrollierende Funktionen auf verschiedene Personen verteilt werden. Für unvereinbare Funktionen MUSS eine Funktionstrennung festgelegt und dokumentiert sein. Auch Vertreter MÜSSEN der Funktionstrennung unterliegen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das Prinzip der Funktionstrennung bei unvereinbaren Aufgaben erläutern.",
+            "baustein_id": "ORP.1.A4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Operative und kontrollierende Funktionen müssen auf verschiedene Personen verteilt werden", "is_correct": true },
+                { "text": "Auch Vertreter müssen der Funktionstrennung unterliegen", "is_correct": true },
+                { "text": "Funktionstrennung gilt nur für IT-Administratoren", "is_correct": false },
+                { "text": "Im Vertretungsfall darf die Funktionstrennung aufgehoben werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.1-003",
+            "text": "Welche Rolle ist im Baustein ORP.1 Organisation grundsätzlich zuständig?",
+            "explanation": "Im Baustein ORP.1 ist die Zentrale Verwaltung grundsätzlich zuständig. Dies unterscheidet sich von anderen Bausteinen, in denen oft der ISB grundsätzlich zuständig ist.",
+            "quote": "Grundsätzlich zuständig            Zentrale Verwaltung",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grundsätzliche Zuständigkeit im Baustein ORP.1 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Zentrale Verwaltung", "is_correct": true },
+                { "text": "Informationssicherheitsbeauftragte (ISB)", "is_correct": false },
+                { "text": "IT-Betrieb", "is_correct": false },
+                { "text": "Institutionsleitung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.1-004",
+            "text": "Welche Punkte SOLLTE eine Richtlinie zur sicheren IT-Nutzung laut ORP.1.A16 abdecken?",
+            "explanation": "Laut ORP.1.A16 sollte die Richtlinie unter anderem Sicherheitsziele der Institution, wichtige Begriffe, Aufgaben und Rollen mit Bezug zur Informationssicherheit, Ansprechpersonen sowie umzusetzende Sicherheitsmaßnahmen abdecken.",
+            "quote": "Die Richtlinie SOLLTE folgende Punkte abdecken: • Sicherheitsziele der Institution, • wichtige Begriffe, • Aufgaben und Rollen mit Bezug zur Informationssicherheit, • Ansprechperson zu Fragen der Informationssicherheit sowie • von den Mitarbeitenden umzusetzende und einzuhaltende Sicherheitsmaßnahmen.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Pflichtinhalte einer Richtlinie zur sicheren IT-Nutzung benennen.",
+            "baustein_id": "ORP.1.A16",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Sicherheitsziele, wichtige Begriffe, Aufgaben und Rollen mit Bezug zur Informationssicherheit", "is_correct": true },
+                { "text": "Von den Mitarbeitenden umzusetzende Sicherheitsmaßnahmen", "is_correct": true },
+                { "text": "Detaillierte technische Konfigurationsanleitungen für alle Server", "is_correct": false },
+                { "text": "Persönliche Leistungsbeurteilungen der IT-Mitarbeitenden", "is_correct": false }
+            ]
+        }
+    ]
+}

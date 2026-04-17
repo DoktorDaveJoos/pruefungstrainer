@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Section 7.3 is short but clean. All three quotes verify verbatim. The three questions cover the only substantive claims in this very brief section: the Sicherheitskonzept as the first required artefact, the Leitungsebene as evaluator of the Erfolgskontrolle, and the pointer to the dedicated chapter on planning/implementing/maintaining the Sicherheitskonzept. Topic=methodik and difficulty=basis are appropriate (this is a short, declarative section without synthesis load). Page 30 is correct. Schema conforms.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-7.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.3-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

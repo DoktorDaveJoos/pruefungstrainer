@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.2.2.3",
+        "chapter_title": "Clients unter Windows",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.2.2.3-001",
+            "text": "Welches Telemetrie-Level MUSS in der Enterprise-Edition von Windows konfiguriert werden?",
+            "explanation": "Gemäß SYS.2.2.3.A4 muss das Telemetrie-Level 0 (Security) konfiguriert werden, um die Übertragung von Diagnose- und Nutzungsdaten an Microsoft stark zu reduzieren. Level 1, 2 oder 3 sind nicht restriktiv genug. Kann die Einstellung nicht wirksam umgesetzt werden, müssen geeignete Maßnahmen auf Netzebene ergriffen werden.",
+            "quote": "Um die Übertragung von Diagnose- und Nutzungsdaten an Microsoft stark zu reduzieren, MUSS das Telemetrie-Level 0 (Security) in der Enterprise-Edition von Windows konfiguriert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das vorgeschriebene Telemetrie-Level für Windows Enterprise benennen.",
+            "baustein_id": "SYS.2.2.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Telemetrie-Level 0 (Security)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Telemetrie-Level 1 (Basic)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Telemetrie-Level 2 (Enhanced)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Telemetrie-Level 3 (Full)",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.2.3-002",
+            "text": "Welches Authentisierungsprotokoll SOLLTE laut SYS.2.2.3 für die zentrale Authentisierung in Windows-Netzen bevorzugt eingesetzt werden?",
+            "explanation": "SYS.2.2.3.A9 empfiehlt ausschließlich Kerberos für die zentrale Authentisierung. Eine Gruppenrichtlinie sollte die Verwendung älterer Protokolle verhindern. Falls Kerberos nicht möglich ist, muss alternativ NTLMv2 eingesetzt werden. LAN-Manager und NTLMv1 dürfen nicht erlaubt werden.",
+            "quote": "Für die zentrale Authentisierung SOLLTE ausschließlich Kerberos eingesetzt werden. Eine Gruppenrichtlinie SOLLTE die Verwendung älterer Protokolle verhindern. • Die Authentisierung mittels LAN-Manager und NTLMv1 DARF NICHT innerhalb der Institution und in einer produktiven Betriebsumgebung erlaubt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das bevorzugte Authentisierungsprotokoll für Windows-Netze benennen.",
+            "baustein_id": "SYS.2.2.3",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Kerberos",
+                    "is_correct": true
+                },
+                {
+                    "text": "NTLMv1",
+                    "is_correct": false
+                },
+                {
+                    "text": "LAN-Manager",
+                    "is_correct": false
+                },
+                {
+                    "text": "LDAP ohne Verschlüsselung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.2.3-003",
+            "text": "Welche Aussage trifft auf die Integration von Online-Konten in Windows-Clients gemäß SYS.2.2.3.A6 zu?",
+            "explanation": "Die Anforderung A6 besagt, dass die Anmeldung nur mit dem Konto eines selbst betriebenen Verzeichnisdienstes möglich sein darf. Online-Konten wie ein Microsoft-Konto dürfen nicht zur Anmeldung verwendet werden, da personenbezogene Daten an Dritte übertragen werden. Lokale Konten sollten Administrierenden vorbehalten sein.",
+            "quote": "Die Anmeldung am System sowie an der Domäne DARF NUR mit dem Konto eines selbst betriebenen Verzeichnisdienstes möglich sein. • Online-Konten zur Anmeldung, etwa ein Microsoft-Konto oder Konten anderer Identitätsmanagementsysteme, DÜRFEN NICHT verwendet werden, da hier personenbezogene Daten an die Systeme Dritter übertragen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Vorgaben zur Nutzung von Online-Konten auf Windows-Clients beschreiben.",
+            "baustein_id": "SYS.2.2.3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Online-Konten wie ein Microsoft-Konto dürfen nicht zur Anmeldung verwendet werden.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Anmeldung darf nur über einen selbst betriebenen Verzeichnisdienst erfolgen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Anmeldung mit einem Microsoft-Konto ist erlaubt, wenn eine Zwei-Faktor-Authentisierung aktiv ist.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Mitarbeitenden sollten ein persönliches Microsoft-Konto nutzen.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.2.3-004",
+            "text": "Warum schränkt der Virtual Secure Mode (VSM) forensische Untersuchungen ein?",
+            "explanation": "Laut SYS.2.2.3.A26 und der Gefährdungslage (2.5) werden Prozesse, die durch den Secure Kernel bzw. den Isolated User Mode (IUM) geschützt werden, nicht mehr zugänglich. Speicherabbilder dieser Prozesse können aufgrund kryptografischer Maßnahmen nicht ausgewertet werden. VSM verschlüsselt nicht die gesamte Festplatte, sondern schützt spezifische Prozesse.",
+            "quote": "Durch die Nutzung des Virtual Secure Mode (VSM) werden forensische Untersuchungen, z. B. zur Sicherheitsvorfallbehandlung, eingeschränkt bzw. erschwert. Prozesse, die durch den Secure Kernel bzw. dem Isolated User Mode (IUM) geschützt werden, sind nicht mehr zugänglich. Beispielsweise können Speicherabbilder dieser Prozesse aufgrund kryptografischer Maßnahmen nicht ausgewertet werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Auswirkungen des Virtual Secure Mode auf forensische Untersuchungen erklären.",
+            "baustein_id": "SYS.2.2.3",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Durch den Secure Kernel geschützte Prozesse sind nicht mehr für forensische Analysen zugänglich.",
+                    "is_correct": true
+                },
+                {
+                    "text": "VSM verschlüsselt die gesamte Festplatte und verhindert so jegliche Analyse.",
+                    "is_correct": false
+                },
+                {
+                    "text": "VSM löscht automatisch alle Logdateien bei einem Sicherheitsvorfall.",
+                    "is_correct": false
+                },
+                {
+                    "text": "VSM deaktiviert den Windows Defender, was die Forensik erschwert.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

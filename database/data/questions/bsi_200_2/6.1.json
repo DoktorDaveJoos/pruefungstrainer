@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "6.1",
+        "chapter_title": "Festlegung des Geltungsbereichs für die Basis-Absicherung",
+        "page_start": 62,
+        "page_end": 62
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-6.1-001",
+            "text": "Was muss bei der Erstellung einer Sicherheitskonzeption für die Basis-Absicherung als Erstes festgelegt werden?",
+            "explanation": "Der Standard nennt ausdrücklich den Geltungsbereich als ersten Schritt — also den Bereich der Institution, den die Sicherheitskonzeption abdecken soll. Die Auswahl der Bausteine, ein Risikoanalyse-Bericht oder die Kostenschätzung sind spätere Schritte und keine Voraussetzung für die Festlegung des Geltungsbereichs.",
+            "quote": "Bei der Erstellung einer Sicherheitskonzeption muss als Erstes festgelegt werden, welchen Bereich der Institution sie abdecken soll (Geltungsbereich).",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Geltungsbereich als ersten Schritt der Sicherheitskonzeption einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Welchen Bereich der Institution die Sicherheitskonzeption abdecken soll (Geltungsbereich)", "is_correct": true },
+                { "text": "Die Auswahl der anzuwendenden Bausteine aus dem Kompendium", "is_correct": false },
+                { "text": "Ein vollständiger Risikoanalyse-Bericht nach BSI-Standard 200-3", "is_correct": false },
+                { "text": "Eine Kostenschätzung für alle Basis-Anforderungen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.1-002",
+            "text": "Welche Anforderungen stellt der BSI-Standard 200-2 an den Geltungsbereich einer Sicherheitskonzeption?",
+            "explanation": "Der Standard verlangt, dass der Geltungsbereich klar abgegrenzt und sinnvoll in sich abgeschlossen ist, mit wenigen, eindeutig definierten Schnittstellen. Dass er zwingend die gesamte Institution umfassen muss, ist laut Text falsch — er kann auch nur einzelne Bereiche umfassen. Eine Beschränkung auf IT-Systeme oder eine automatische Ableitung widersprechen der Passage.",
+            "quote": "Auf jeden Fall muss der Geltungsbereich klar abgegrenzt und sinnvoll in sich abgeschlossen sein, mit wenigen, eindeutig definierten Schnittstellen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Abgrenzungsanforderungen an den Geltungsbereich benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Er muss klar abgegrenzt und in sich sinnvoll abgeschlossen sein mit wenigen, eindeutig definierten Schnittstellen", "is_correct": true },
+                { "text": "Er muss zwingend die gesamte Institution umfassen", "is_correct": false },
+                { "text": "Er darf ausschließlich IT-Systeme, aber keine Geschäftsprozesse enthalten", "is_correct": false },
+                { "text": "Er wird automatisch aus dem IT-Grundschutz-Kompendium abgeleitet", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.1-003",
+            "text": "Was umfasst der im BSI-Standard 200-2 als „Informationsverbund“ bezeichnete Geltungsbereich?",
+            "explanation": "Laut Standard umfasst ein Informationsverbund die Gesamtheit von infrastrukturellen, organisatorischen, personellen und technischen Komponenten, die der Aufgabenerfüllung in einem bestimmten Anwendungsbereich der Informationsverarbeitung dienen. Eine reine Beschränkung auf Hardware oder Netzwerkkomponenten oder nur auf Personal widerspricht dieser ganzheitlichen Definition.",
+            "quote": "Ein Informationsverbund umfasst die Gesamtheit von infrastrukturellen, organisatorischen, personellen und technischen Komponenten, die der Aufgabenerfüllung in einem bestimmten Anwendungsbereich der Informationsverarbeitung dienen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Begriff Informationsverbund vollständig definieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Infrastrukturelle, organisatorische, personelle und technische Komponenten eines Anwendungsbereichs der Informationsverarbeitung", "is_correct": true },
+                { "text": "Ausschließlich alle im Einsatz befindlichen Server und Netzwerkkomponenten", "is_correct": false },
+                { "text": "Nur die Mitarbeiter, die mit schutzbedürftigen Daten arbeiten", "is_correct": false },
+                { "text": "Ausschließlich die Leitlinie zur Informationssicherheit und zugehörige Richtlinien", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.1-004",
+            "text": "Welche Ausprägungen kann ein Informationsverbund laut BSI-Standard 200-2 annehmen?",
+            "explanation": "Der Standard erlaubt sowohl die gesamte Informationsverarbeitung einer Institution als auch einzelne, nach organisatorischen oder technischen Strukturen bzw. gemeinsamen Geschäftsprozessen oder Anwendungen gegliederte Bereiche. Eine Beschränkung auf nur einen einzelnen Server oder die zwingende Abbildung der kompletten Lieferkette wird nicht gefordert.",
+            "quote": "Ein Informationsverbund kann dabei als Ausprägung die gesamte Informationsverarbeitung einer Institution oder auch einzelne Bereiche umfassen, die nach organisatorischen oder technischen Strukturen (z. B. Abteilungsnetz) oder gemeinsamen Geschäftsprozessen bzw. Anwendungen (z. B. Personalinformationssystem) gegliedert sind.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Mögliche Ausprägungen eines Informationsverbunds unterscheiden.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Die gesamte Informationsverarbeitung einer Institution", "is_correct": true },
+                { "text": "Einzelne Bereiche, gegliedert nach organisatorischen/technischen Strukturen oder gemeinsamen Geschäftsprozessen bzw. Anwendungen", "is_correct": true },
+                { "text": "Zwingend nur ein einzelner Server einer Institution", "is_correct": false },
+                { "text": "Die komplette Lieferkette inklusive aller externen Partner verpflichtend", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-6.1-005",
+            "text": "Auf welcher Grundlage werden für die Erstellung der Sicherheitskonzeption die relevanten Bestandteile des Informationsverbunds identifiziert?",
+            "explanation": "Laut Standard erfolgt die Identifikation auf Grundlage der bereits während der Vorarbeiten erfolgten Ersterfassung (Kapitel 3.2.4 Ersterfassung der Prozesse, Anwendungen und IT-Systeme). Eine vollständige Risikoanalyse nach 200-3, Penetrationstests oder die Vorgaben eines externen Zertifizierers werden in diesem Abschnitt nicht als Grundlage genannt.",
+            "quote": "Für die Erstellung der Sicherheitskonzeption werden auf Grundlage der bereits während der Vorarbeiten erfolgten Ersterfassung (siehe Kapitel 3.2.4 Ersterfassung der Prozesse, Anwendungen und IT-Systeme) die relevanten Bestandteile des betrachteten Informationsverbunds identifiziert.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Ersterfassung als Grundlage für die Identifikation von Informationsverbund-Bestandteilen einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 62,
+            "page_end": null,
+            "answers": [
+                { "text": "Auf Grundlage der während der Vorarbeiten erfolgten Ersterfassung der Prozesse, Anwendungen und IT-Systeme", "is_correct": true },
+                { "text": "Auf Grundlage einer vollständigen Risikoanalyse nach BSI-Standard 200-3", "is_correct": false },
+                { "text": "Auf Grundlage externer Penetrationstests", "is_correct": false },
+                { "text": "Auf Grundlage der verbindlichen Vorgaben eines externen Zertifizierers", "is_correct": false }
+            ]
+        }
+    ]
+}

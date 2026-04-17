@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All six questions are factually correct and well-supported. Quotes match the normalized source. The quote in 4.3-003 uses bullet-joined fragments which are all found verbatim in the source. All page_start values (39-40) are within the manifest range (39-42). No schema violations. Topic 'methodik' is appropriate throughout.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-4.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.3-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.3-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.3-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-4.3-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

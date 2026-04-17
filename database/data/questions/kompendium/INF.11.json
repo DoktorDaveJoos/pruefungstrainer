@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.11",
+        "chapter_title": "Allgemeines Fahrzeug",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.11-001",
+            "text": "Was MUSS laut INF.11.A1 bei der Beschaffung von Fahrzeugen berücksichtigt werden?",
+            "explanation": "INF.11.A1 verlangt, dass vor der Beschaffung der Einsatzzweck geplant werden muss und die funktionalen Anforderungen an die Fahrzeuge und insbesondere die Anforderungen an die Informationssicherheit sowie den Datenschutz der verbauten IT-Komponenten erhoben werden müssen. Dabei müssen Einsatzszenarien, Einsatzumgebung und der gesamte Lebenszyklus berücksichtigt werden.",
+            "quote": "Bevor Fahrzeuge beschafft werden, MUSS der Einsatzzweck geplant werden. Die funktionalen Anforderungen an die Fahrzeuge und insbesondere die Anforderungen an die Informationssicherheit, sowie den Datenschutz der verbauten IT-Komponenten MÜSSEN erhoben werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Beschaffungsanforderungen für Fahrzeuge nach INF.11.A1 benennen.",
+            "baustein_id": "INF.11",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der Einsatzzweck muss geplant und Anforderungen an Informationssicherheit und Datenschutz der IT-Komponenten müssen erhoben werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es genügt, auf den günstigsten Anbieter zurückzugreifen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich die Motorleistung und der Verbrauch sind relevant",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die IT-Ausstattung des Fahrzeugs ist nur bei Einsatzfahrzeugen zu prüfen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.11-002",
+            "text": "Welche Gefährdung ergibt sich laut INF.11 aus den Kommunikationsschnittstellen moderner Fahrzeuge?",
+            "explanation": "INF.11 beschreibt, dass viele moderne Fahrzeuge über integrierte Mobilfunkschnittstellen verfügen, über die interne Systeme direkt mit IT-Systemen der herstellenden Unternehmen kommunizieren. Dabei können umfangreich personenbezogene Daten erhoben werden, ohne dass die Fahrzeugnutzenden darüber Kenntnis haben.",
+            "quote": "Viele interne Systeme des Fahrzeugs kommunizieren direkt über integrierte Mobilfunkschnittstellen mit IT-Systemen der herstellenden Unternehmen, wobei dieser Informationsaustausch von den Anwendenden in der Regel nicht beeinflusst werden kann. • Dadurch könnten umfangreich personenbezogene Daten über die Fahrzeugnutzenden erhoben werden, ohne dass diese darüber Kenntnis haben oder dieser Datenerhebung und -verarbeitung explizit zugestimmt haben.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Datenschutzgefährdung durch Kommunikationsschnittstellen moderner Fahrzeuge erklären.",
+            "baustein_id": "INF.11",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Personenbezogene Daten können ohne Wissen der Nutzenden an die herstellenden Unternehmen übertragen werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die integrierten Mobilfunkschnittstellen können nicht durch die Anwendenden beeinflusst werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Fahrzeuge können bei Mobilfunkempfang schneller fahren als erlaubt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Kommunikationsschnittstellen verbrauchen zu viel Batterieleistung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.11-003",
+            "text": "Was MUSS laut INF.11.A2 hinsichtlich der Wartung und Updates von Fahrzeugen beachtet werden?",
+            "explanation": "INF.11.A2 verlangt, dass die Fahrzeuge und die dazugehörenden IT-Komponenten nach den Vorgaben des herstellenden Unternehmens gewartet werden müssen. Dabei muss beachtet werden, dass die Intervalle der herkömmlichen Wartung und von Updates der integrierten IT-Komponenten voneinander abweichen können.",
+            "quote": "Die Fahrzeuge und die dazugehörenden IT-Komponenten MÜSSEN nach den Vorgaben des herstellenden Unternehmens gewartet werden. Hierbei MUSS beachtet werden, dass die Intervalle der herkömmlichen Wartung und von Updates der integrierten IT-Komponenten voneinander abweichen können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Wartungsanforderungen für Fahrzeuge nach INF.11.A2 erklären.",
+            "baustein_id": "INF.11",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Intervalle der herkömmlichen Wartung und von IT-Updates können voneinander abweichen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Fahrzeuge und IT-Komponenten müssen stets gleichzeitig gewartet werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "IT-Updates sind nur bei Neufahrzeugen erforderlich",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Wartung darf ausschließlich durch den Fahrzeughersteller erfolgen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

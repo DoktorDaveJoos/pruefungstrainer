@@ -1,0 +1,26 @@
+{
+    "reviewed_at": "2026-04-16T18:10:00Z",
+    "critic_notes": "Section 10.2 covers only the ~1310-char tail of a longer section (roughly the last paragraph on combining Standard-Maßnahmen with a targeted risk analysis, plus the 'Umsetzung der Maßnahmen' bullet). The four questions extracted match the limited source cleanly: every quote fragment appears verbatim after normalization, correct answers are directly supported, distractors are clearly not in the text, topics ('methodik') and difficulty ('basis') are appropriate, pages fall within the declared range, and the schema constraints for bsi_200_* (baustein_id/anforderung_type both null) are satisfied. Given the small source window, four questions is a reasonable yield.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-10.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-10.2-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

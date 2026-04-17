@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.7",
+        "chapter_title": "Der ICS-Informationssicherheitsbeauftragte (ICS-ISB)",
+        "page_start": 45,
+        "page_end": 46
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.7-001",
+            "text": "Warum sollte eine Institution mit industriellen Steuerungskomponenten einen ICS-Informationssicherheitsbeauftragten benennen?",
+            "explanation": "Die Passage begründet die Rolle damit, die speziellen Anforderungen im Bereich der industriellen Steuerung abzudecken und die Sicherheitsorganisation aus diesem Bereich in das Gesamt-ISMS einzubinden. Eine Auslagerung aus dem Gesamt-ISMS oder eine Abschaffung des normalen ISB ist nicht intendiert.",
+            "quote": "Um die speziellen Anforderungen im Bereich der industriellen Steuerung abzudecken und um die Sicherheitsorganisation aus dem Bereich der industriellen Steuerung in das Gesamt-ISMS einzubinden, sollte die Institution einen ICS-Informationssicherheitsbeauftragten (ICS-ISB) benennen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Rolle des ICS-ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 45,
+            "page_end": null,
+            "answers": [
+                { "text": "Um die speziellen Anforderungen im ICS-Bereich abzudecken", "is_correct": true },
+                { "text": "Um die Sicherheitsorganisation aus dem ICS-Bereich in das Gesamt-ISMS einzubinden", "is_correct": true },
+                { "text": "Um die Sicherheitsorganisation des ICS-Bereichs vom Gesamt-ISMS vollständig zu trennen", "is_correct": false },
+                { "text": "Um die Rolle des regulären ISB in der Institution abzuschaffen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.7-002",
+            "text": "In welchen Gremien sollte der ICS-ISB laut Passage vertreten sein?",
+            "explanation": "Der ICS-ISB sollte Mitglied im IS-Management-Team sein und auch im IS-Koordinierungsausschuss vertreten sein. Ein Aufsichtsrat oder externer Zertifizierungsausschuss wird nicht genannt.",
+            "quote": "Dieser sollte Mitglied im IS-Management-Team sein. Außerdem sollte er im IS-Koordinierungsausschuss (siehe Kapitel 4.8 IS-Koordinierungsausschuss) vertreten sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Einbindung des ICS-ISB in Gremien der IS-Organisation benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 45,
+            "page_end": null,
+            "answers": [
+                { "text": "Im IS-Management-Team", "is_correct": true },
+                { "text": "Im IS-Koordinierungsausschuss", "is_correct": true },
+                { "text": "Im Aufsichtsrat der Institution", "is_correct": false },
+                { "text": "In einem externen BSI-Zertifizierungsausschuss", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.7-003",
+            "text": "Was ist laut Passage charakteristisch für den Einsatz von IT-Systemen und Anwendungen im ICS-Bereich?",
+            "explanation": "Die Passage stellt fest, dass IT-Systeme und Anwendungen im ICS-Bereich oftmals über einen sehr langen Zeitraum eingesetzt werden und der Lebenszyklus häufig mehr als zehn Jahre beträgt. Kürzere Zyklen oder ein Verbot von Büro-IT werden nicht genannt.",
+            "quote": "Im ICS-Bereich werden IT-Systeme und Anwendungen oftmals über einen sehr langen Zeitraum eingesetzt. Der Lebenszyklus dieser Objekte beträgt häufig mehr als zehn Jahre.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den langen Lebenszyklus von ICS-Systemen als Sicherheitsbesonderheit erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 45,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein Lebenszyklus von häufig mehr als zehn Jahren", "is_correct": true },
+                { "text": "Ein typischer Austauschzyklus von drei Jahren wie in der Büro-IT", "is_correct": false },
+                { "text": "Der Einsatz ausschließlich proprietärer Systeme ohne Büro-IT-Komponenten", "is_correct": false },
+                { "text": "Ein jährlicher Komplettaustausch der Komponenten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.7-004",
+            "text": "Welche Aufgaben gehören laut Passage zum Aufgabenspektrum des ICS-ISB?",
+            "explanation": "Die Passage nennt u. a.: Sicherheitsvorgaben der Informationssicherheitsleitlinie im ICS-Bereich umsetzen, Risikoanalysen für den ICS-Bereich durchführen, eng mit dem ISB kooperieren sowie Sicherheitsvorfälle im ICS-Bereich gemeinsam mit dem ISB bearbeiten. Eine eigenständige rechtliche Vertretung der Institution ist keine ICS-ISB-Aufgabe.",
+            "quote": "die allgemeingültigen Sicherheitsvorgaben der Informationssicherheitsleitlinie • gemeinsame Ziele aus dem Bereich der industriellen Steuerung und dem Gesamt-ISMS verfolgen und Projekte aktiv unterstützen, • für den ICS-Bereich Risikoanalysen durchführen • Sicherheitsrichtlinien und Konzepte für den ICS-Bereich unter Einbeziehung der Anforderungen aus Safety und Security erstellen und schulen, • eng mit dem Informationssicherheitsbeauftragten kooperieren,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Kernaufgaben des ICS-ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Allgemeingültige Sicherheitsvorgaben der Informationssicherheitsleitlinie im ICS-Bereich umsetzen", "is_correct": true },
+                { "text": "Für den ICS-Bereich Risikoanalysen durchführen, die den Vorgaben des Risikomanagements entsprechen", "is_correct": true },
+                { "text": "Eng mit dem Informationssicherheitsbeauftragten kooperieren", "is_correct": true },
+                { "text": "Die Institution rechtlich gegenüber Behörden vertreten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.7-005",
+            "text": "Welche Qualifikationen sollte ein ICS-ISB laut Passage mitbringen?",
+            "explanation": "Die Passage nennt explizit: Kenntnisse zu Bedrohungen und Schwachstellen innerhalb der industriellen Steuerung, ausreichende IT-Kenntnisse, Kenntnisse zu Change Management und Notfallmanagement. Eine kaufmännische Ausbildung wird nicht als Anforderung genannt.",
+            "quote": "spezielle Kenntnisse zu den Prozessen innerhalb der Institution und der industriellen Steuerung, • ausreichende IT-Kenntnisse, um Fragen der Mitarbeiter vor Ort • Kenntnisse zu Bedrohungen und Schwachstellen innerhalb der industriellen Steuerung, • Kenntnisse zu Gefährdungen für die Büro-IT, die innerhalb des ICS-Bereichs eingesetzt wird, • Kenntnisse zum Projektmanagement sowie • Kenntnisse zu den Themen Change Management und Notfallmanagement.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Qualifikationsanforderungen an den ICS-ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 46,
+            "page_end": null,
+            "answers": [
+                { "text": "Kenntnisse zu Bedrohungen und Schwachstellen innerhalb der industriellen Steuerung", "is_correct": true },
+                { "text": "Kenntnisse zu den Themen Change Management und Notfallmanagement", "is_correct": true },
+                { "text": "Ausreichende IT-Kenntnisse, um Fragen von Mitarbeitern vor Ort beantworten zu können", "is_correct": true },
+                { "text": "Eine abgeschlossene kaufmännische Berufsausbildung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.7-006",
+            "text": "Warum ist laut Passage eine enge Kooperation zwischen ICS-ISB und ISB erforderlich?",
+            "explanation": "Die Passage begründet die enge Kooperation damit, Synergien zu nutzen und Fehlplanungen sowie Risiken zu vermeiden. Die Kooperation ist nicht aus rechtlichen Gründen zwingend oder zur Reduktion von Personalkosten erforderlich.",
+            "quote": "Um Synergien zu nutzen und Fehlplanungen sowie Risiken zu vermeiden, muss eine enge Kooperation zwischen dem ICS-ISB und dem ISB stattfinden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Kooperation zwischen ICS-ISB und ISB erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 45,
+            "page_end": null,
+            "answers": [
+                { "text": "Um Synergien zu nutzen und Fehlplanungen sowie Risiken zu vermeiden", "is_correct": true },
+                { "text": "Um rechtliche Mindestvorgaben der EU-Datenschutz-Grundverordnung einzuhalten", "is_correct": false },
+                { "text": "Um die Personalkosten der Informationssicherheit zu reduzieren", "is_correct": false },
+                { "text": "Um den ICS-Bereich vollständig aus dem ISMS auszugliedern", "is_correct": false }
+            ]
+        }
+    ]
+}

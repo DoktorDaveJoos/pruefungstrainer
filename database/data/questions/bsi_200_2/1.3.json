@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "1.3",
+        "chapter_title": "Adressatenkreis",
+        "page_start": 8,
+        "page_end": 9
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-1.3-001",
+            "text": "An welchen Personenkreis richtet sich der BSI-Standard 200-2 primär?",
+            "explanation": "Der Text nennt explizit Sicherheitsverantwortliche, -beauftragte, -experten, -berater und alle Interessierten, die mit dem Management von Informationssicherheit betraut sind. Endanwender ohne Sicherheitsaufgaben oder externe Auditoren werden nicht als primärer Adressatenkreis definiert.",
+            "quote": "Der BSI-Standard 200-2 richtet sich primär an Sicherheitsverantwortliche, -beauftragte, -experten, -berater und alle Interessierten, die mit dem Management von Informationssicherheit betraut sind.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den primären Adressatenkreis des BSI-Standards 200-2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "Sicherheitsverantwortliche, -beauftragte, -experten und -berater", "is_correct": true },
+                { "text": "Personen, die mit dem Management von Informationssicherheit betraut sind", "is_correct": true },
+                { "text": "Endanwender ohne Sicherheitsaufgaben", "is_correct": false },
+                { "text": "Ausschließlich externe Auditoren", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.3-002",
+            "text": "Für welche weiteren Rollen ist der BSI-Standard 200-2 laut Text zusätzlich eine sinnvolle Grundlage?",
+            "explanation": "Der Text nennt explizit IT- und ICS-Verantwortliche, Führungskräfte und Projektmanager, die für eine ausreichende Berücksichtigung der Informationssicherheit sorgen. Juristen oder Marketingleiter werden nicht als zusätzliche Zielgruppe genannt.",
+            "quote": "Er ist zugleich eine sinnvolle Grundlage für IT- und ICS-Verantwortliche, Führungskräfte und Projekt­manager, die dafür Sorge tragen, dass Aspekte der Informationssicherheit in ihrer Institution bzw. in ihren Projekten ausreichend berücksichtigt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die erweiterten Zielgruppen des BSI-Standards 200-2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "IT- und ICS-Verantwortliche", "is_correct": true },
+                { "text": "Führungskräfte und Projektmanager", "is_correct": true },
+                { "text": "Juristen und Rechtsabteilungen", "is_correct": false },
+                { "text": "Marketingleiter", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.3-003",
+            "text": "Wie wird der Begriff „Institution“ im BSI-Standard 200-2 verwendet?",
+            "explanation": "Der Text definiert explizit, dass der Begriff „Institution“ für Unternehmen, Behörden und sonstige öffentliche oder private Organisationen verwendet wird. Eine Beschränkung auf staatliche Stellen oder ausschließlich Unternehmen wäre zu eng.",
+            "quote": "Der Be­griff „Institution“ wird im folgenden Text für Unternehmen, Behörden und sonstige öffentliche oder private Organisationen verwendet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Bedeutung des Begriffs „Institution“ im BSI-Standard 200-2 wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "Als Sammelbegriff für Unternehmen, Behörden und sonstige öffentliche oder private Organisationen", "is_correct": true },
+                { "text": "Ausschließlich für staatliche Behörden", "is_correct": false },
+                { "text": "Ausschließlich für private Unternehmen", "is_correct": false },
+                { "text": "Nur für Organisationen mit mehr als 250 Mitarbeitern", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.3-004",
+            "text": "Für welche Institutionsgrößen ist der IT-Grundschutz laut Adressatenkreis geeignet?",
+            "explanation": "Der Text stellt klar, dass der IT-Grundschutz sowohl von kleinen als auch von großen Institutionen eingesetzt werden kann. Er ist ausdrücklich nicht auf eine Größe beschränkt.",
+            "quote": "IT-Grundschutz kann sowohl von kleinen als auch großen Institutionen eingesetzt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Anwendungsbereich des IT-Grundschutzes nach Institutionsgröße einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "Sowohl von kleinen als auch großen Institutionen", "is_correct": true },
+                { "text": "Nur für mittelständische Unternehmen", "is_correct": false },
+                { "text": "Ausschließlich für Großunternehmen ab 1.000 Mitarbeitern", "is_correct": false },
+                { "text": "Nur für Kleinstbetriebe unter 10 Mitarbeitern", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.3-005",
+            "text": "Welche Voraussetzung gilt im IT-Grundschutz hinsichtlich der Administration von IT und Automatisierungstechnik?",
+            "explanation": "Der Text benennt die explizite Voraussetzung, dass die Informations- und Kommunikationstechnik sowie die industrielle Steuerungs- und Automatisierungstechnik von Fachpersonal administriert wird und es einen IT-Betrieb mit klar definierten Rollen gibt. Ein ausschließliches Outsourcing oder ein vollautomatisierter Betrieb sind nicht Voraussetzung.",
+            "quote": "Im IT-Grundschutz gilt die Voraussetzung, dass die Informations- und Kommunikationstechnik ebenso wie die vorhandene industrielle Steuerungs- und Automatisierungstechnik von Fachpersonal admi­nistriert wird, dass es also einen IT-Betrieb mit klar definierten Rollen gibt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Voraussetzung zur Administration von IT und Automatisierungstechnik im IT-Grundschutz benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Administration erfolgt durch Fachpersonal in einem IT-Betrieb mit klar definierten Rollen.", "is_correct": true },
+                { "text": "Die Administration muss verpflichtend an externe Dienstleister ausgelagert werden.", "is_correct": false },
+                { "text": "Die Systeme müssen vollständig autonom ohne menschliches Eingreifen betrieben werden.", "is_correct": false },
+                { "text": "Die Administration darf nur durch den ISB persönlich erfolgen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.3-006",
+            "text": "Von welcher Spanne an IT-Betrieb geht der BSI-Standard 200-2 aus?",
+            "explanation": "Der Text nennt ausdrücklich, dass der IT-Betrieb von einem einzelnen Administrator bis hin zu einer oder mehreren IT-Abteilungen reichen kann. Eine verpflichtende externe Auslagerung oder eine Mindestgröße werden nicht vorausgesetzt.",
+            "quote": "Dieser kann von einem einzelnen Administrator bis hin zu einer oder mehreren IT-Abteilungen reichen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Bandbreite möglicher IT-Betriebsstrukturen nach IT-Grundschutz wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 8,
+            "page_end": null,
+            "answers": [
+                { "text": "Von einem einzelnen Administrator bis hin zu mehreren IT-Abteilungen", "is_correct": true },
+                { "text": "Mindestens eine vollständige IT-Abteilung mit Fachbereichen", "is_correct": false },
+                { "text": "Ausschließlich ausgelagerter Betrieb über Dienstleister", "is_correct": false },
+                { "text": "Ein Verbund aus mindestens drei Administratoren", "is_correct": false }
+            ]
+        }
+    ]
+}

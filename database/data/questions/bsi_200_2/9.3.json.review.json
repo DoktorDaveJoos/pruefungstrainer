@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Six questions on Festlegung der Umsetzungsreihenfolge (section 9.3). All correct answers well-supported by source. Question 002 (difficulty 'experte') tests a genuine edge case about collision between Basis/Standard classification and logical dependencies, which does require synthesis -- appropriate difficulty. Question 003 has a minor line-break space artifact in quote. Question 006 has OCR artifacts inherited from source ('erffllt', 'durchzuffhrende') and a line-break space in 'Ge fährdungen'; the difficulty 'experte' is borderline since the concept of simplified Risikoanalyse is stated directly, but the nuance about omitting Gefährdungsermittlung justifies it. Schema and pages correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-9.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'einge schränkte' should be 'eingeschränkte'. Soft-hyphen line-break artifact -- matches under no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.3-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.3-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-9.3-006",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment has 'Ge fährdungen' (space from line-break artifact) instead of 'Gefährdungen'. Also contains OCR artifacts 'erffllt' and 'durchzuffhrende' inherited from the source PDF-to-text conversion. Content is semantically correct; matches under no-space normalization."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "IND.2.4 Maschine: 3 questions on Fernwartung policy, lifecycle support, and lateral-movement prevention. Quotes exist in full source but outside the manifest range (same IND.* manifest drift). Content is valid for IND.2.4. Correct answers supported; distractors wrong. `experte` on 003 is borderline — close paraphrase of a MUSS NOT clause.",
+    "results": [
+        {
+            "external_id": "kompendium-ind.2.4-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Für die Fernwartung einer Maschine MUSS es eine zentrale Richtlinie geben. Darin MUSS gere...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.4-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Es MUSS ein Prozess etabliert werden, der gewährleistet, dass die Maschine auch über den G...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.4-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Außerdem SOLLTE NICHT möglich sein, dass über die Fernwartung einer Maschine auf andere IT...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        }
+    ]
+}

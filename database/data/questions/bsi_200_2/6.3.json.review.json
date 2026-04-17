@@ -1,0 +1,41 @@
+{
+  "reviewed_at": "2026-04-17T05:18:28Z",
+  "critic_notes": "All 7 questions accurately cover the IT-Grundschutz-Check for Basis-Absicherung. Topic check is correct. Quotes are verbatim. The four Umsetzungsstatus (entbehrlich/ja/teilweise/nein) are correctly presented. No factual errors.",
+  "results": [
+    {
+      "external_id": "bsi-200-2-6.3-001",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.3-002",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.3-003",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.3-004",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.3-005",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.3-006",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "external_id": "bsi-200-2-6.3-007",
+      "verdict": "pass",
+      "issues": []
+    }
+  ]
+}

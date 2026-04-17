@@ -1,0 +1,40 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Seven questions on the structure chapter. Five pass cleanly. Questions 001 and 002 have page_start=9, which falls before the manifest's section page_start of 10. The quoted text exists in the full source at positions that fall in the tail of section 1.4's char range, but semantically the content clearly belongs to chapter 1.5 (it describes the structure of the BSI-Standard 200-2). This is a manifest boundary artifact, not a content error. Question 005 is labeled 'experte' but essentially lists factual steps from a single paragraph -- borderline, flagged for human review. All correct answers are supported; all distractors are properly wrong.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-1.5-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=9 is below section's manifest page_start=10. The quoted text appears in the overlap between chapters 1.4 and 1.5 due to manifest char_start boundary placement. Content is semantically correct for chapter 1.5."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-1.5-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "page_out_of_range",
+                    "detail": "page_start=9 is below section's manifest page_start=10. Same manifest boundary issue as 001. The quote is verbatim in the source and content is correct for chapter 1.5."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-1.5-003", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-1.5-004", "verdict": "pass", "issues": [] },
+        {
+            "external_id": "bsi-200-2-1.5-005",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "detail": "Labeled 'experte' but the question asks to identify factual steps from a single paragraph of the source. The two correct answers are direct statements from consecutive sentences. This is closer to 'basis' difficulty."
+                }
+            ]
+        },
+        { "external_id": "bsi-200-2-1.5-006", "verdict": "pass", "issues": [] },
+        { "external_id": "bsi-200-2-1.5-007", "verdict": "pass", "issues": [] }
+    ]
+}

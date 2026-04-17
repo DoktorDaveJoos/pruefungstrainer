@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "IND.2.1",
+        "chapter_title": "Allgemeine ICS-Komponente",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ind.2.1-001",
+            "text": "Was MUSS laut IND.2.1.A1 mit standardmäßig eingerichteten Passwörtern von ICS-Komponenten geschehen?",
+            "explanation": "IND.2.1.A1 verlangt, dass standardmäßig eingerichtete bzw. vom herstellenden Unternehmen gesetzte Passwörter gewechselt werden müssen. Der Wechsel muss dokumentiert und die Passwörter sicher hinterlegt werden.",
+            "quote": "Standardmäßig eingerichtete bzw. vom herstellenden Unternehmen gesetzte Passwörter MÜSSEN gewechselt werden (siehe ORP.4 Identitäts- und Berechtigungsmanagement). Der Wechsel MUSS dokumentiert werden. Die Passwörter MÜSSEN sicher hinterlegt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Passwortanforderung für ICS-Komponenten nach IND.2.1.A1 benennen.",
+            "baustein_id": "IND.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen gewechselt, der Wechsel dokumentiert und die Passwörter sicher hinterlegt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie dürfen beibehalten werden, wenn sie ausreichend komplex sind",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen nur bei externem Netzzugang geändert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen vom Hersteller jährlich neu vergeben werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.1-002",
+            "text": "Was MUSS laut IND.2.1.A6 mit ICS-Komponenten hinsichtlich der Netzsegmentierung geschehen?",
+            "explanation": "IND.2.1.A6 verlangt, dass ICS-Komponenten von der Office-IT getrennt werden müssen. ICS-Komponenten sollten außerdem so wenig wie möglich mit anderen ICS-Komponenten kommunizieren.",
+            "quote": "ICS-Komponenten MÜSSEN von der Office-IT getrennt werden. • ICS-Komponenten SOLLTEN so wenig wie möglich mit anderen ICS-Komponenten kommunizieren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Netzsegmentierungsanforderung für ICS-Komponenten nach IND.2.1.A6 erklären.",
+            "baustein_id": "IND.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "ICS-Komponenten müssen von der Office-IT getrennt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "ICS-Komponenten sollten so wenig wie möglich mit anderen ICS-Komponenten kommunizieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "ICS-Komponenten müssen direkt mit dem Internet verbunden sein",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle ICS-Komponenten müssen im selben Netzwerk wie die Office-IT betrieben werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.1-003",
+            "text": "Was MUSS laut IND.2.1.A4 mit nicht genutzten Diensten, Funktionen und Schnittstellen von ICS-Komponenten geschehen?",
+            "explanation": "IND.2.1.A4 verlangt, dass alle nicht genutzten Dienste, Funktionen und Schnittstellen der ICS-Komponenten deaktiviert oder deinstalliert werden müssen.",
+            "quote": "Alle nicht genutzten Dienste, Funktionen und Schnittstellen der ICS-Komponenten MÜSSEN deaktiviert oder deinstalliert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Härtungsanforderung für ICS-Komponenten nach IND.2.1.A4 benennen.",
+            "baustein_id": "IND.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen deaktiviert oder deinstalliert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen dokumentiert, dürfen aber aktiv bleiben",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie dürfen nur vom Hersteller geändert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen durch Firewallregeln geschützt werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

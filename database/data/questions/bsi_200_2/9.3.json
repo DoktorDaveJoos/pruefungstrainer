@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "9.3",
+        "chapter_title": "Festlegung der Umsetzungsreihenfolge der Maßnahmen",
+        "page_start": 160,
+        "page_end": 161
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-9.3-001",
+            "text": "In welcher grundsätzlichen Reihenfolge sollen laut Abschnitt 9.3 die aus Anforderungen abgeleiteten Maßnahmen umgesetzt werden?",
+            "explanation": "Der Standard schreibt vor, zuerst Maßnahmen aus Basis-Anforderungen, dann aus Standard-Anforderungen und erst anschließend Maßnahmen für den erhöhten Schutzbedarf umzusetzen. Eine umgekehrte Reihenfolge, zufällige Reihenfolge oder Priorisierung nach Baustein-Nummer entspricht nicht dem Text.",
+            "quote": "Grundsätzlich sind als Erstes die aus den Basis-Anforderungen abgeleiteten Maßnahmen umzusetzen, dann die der Standard-Anforderungen. Die zusätzlichen Maßnahmen für den erhöhten Schutzbedarf sollten erst anschließend angepasst und realisiert werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die grundsätzliche Umsetzungsreihenfolge von Maßnahmen aus Anforderungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 160,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zuerst Basis-, dann Standard-, dann Maßnahmen für erhöhten Schutzbedarf",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zuerst erhöhter Schutzbedarf, dann Standard-, dann Basis-Anforderungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zuerst Standard-, dann Basis-, dann erhöhter Schutzbedarf",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Reihenfolge wird ausschließlich nach Baustein-Nummer festgelegt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.3-002",
+            "text": "Welcher Grundsatz gilt, wenn die Reihenfolge aus logischen Abhängigkeiten (z. B. sichere Installation vor restriktiver Rechtevergabe) mit der Klassifikation in Basis- und Standard-Anforderungen kollidiert?",
+            "explanation": "Der Standard hält fest, dass Basis-Anforderungen inhaltlich stets Priorität haben, sofern sie bereits erfüllbar sind (z. B. bei einem bestehenden Server). Die anderen Optionen widersprechen diesem Grundsatz.",
+            "quote": "Dennoch haben Basis-Anforderungen inhaltlich stets Priorität, sofern sie bereits erfüllbar sind, im Beispiel etwa bei einem bestehenden Server.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Umgang mit logischen Abhängigkeiten bei der Umsetzungsreihenfolge erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 161,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Basis-Anforderungen haben inhaltlich stets Priorität, sofern sie bereits erfüllbar sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Logische Abhängigkeiten haben immer Vorrang vor Basis-Anforderungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Standard-Anforderungen werden generell zuerst umgesetzt, wenn Abhängigkeiten bestehen",
+                    "is_correct": false
+                },
+                {
+                    "text": "In solchen Fällen wird die Umsetzung der Anforderung ausgesetzt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.3-003",
+            "text": "Welche Kriterien zur Priorisierung der Umsetzungsreihenfolge nennt Abschnitt 9.3?",
+            "explanation": "Der Standard nennt Lebenszyklusphase des Zielobjekts, logische Abhängigkeiten, Breitenwirkung und Bausteine mit großem Einfluss auf das Sicherheitsniveau bzw. besonders vielen nicht umgesetzten Anforderungen. Die Nennenswertigkeit in Fachzeitschriften ist kein Kriterium des Standards.",
+            "quote": "Die Umsetzungsreihenfolge lässt sich daran festmachen, wann im Lebenszyklus eines Zielobjektes die jeweiligen Maßnahmen umzusetzen sind. • Bei einigen Maßnahmen ergibt sich durch Abhängigkeiten und logische Zusammenhänge eine zwingende zeitliche Reihenfolge. • Manche Maßnahmen erzielen eine große Breitenwirkung, manche jedoch nur eine einge schränkte lokale Wirkung. • Es gibt Bausteine, die auf das angestrebte Sicherheitsniveau einen größeren Einfluss haben als andere.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Kriterien für die Priorisierung der Umsetzungsreihenfolge benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 160,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Lebenszyklusphase des Zielobjekts",
+                    "is_correct": true
+                },
+                {
+                    "text": "Logische Abhängigkeiten und zwingende zeitliche Reihenfolgen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Breitenwirkung bzw. Einfluss auf das angestrebte Sicherheitsniveau",
+                    "is_correct": true
+                },
+                {
+                    "text": "Bekanntheit eines Bausteins in Fachzeitschriften",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.3-004",
+            "text": "Welche Reihenfolge empfiehlt Abschnitt 9.3 bei der Absicherung von Servern und Clients?",
+            "explanation": "Zuerst sollen die Server abgesichert werden (unter anderem durch Umsetzung des Bausteins SYS.1.1 Allgemeiner Server), dann die angeschlossenen Clients. Die umgekehrte Reihenfolge oder eine parallele bzw. nachrangige Behandlung wird nicht empfohlen.",
+            "quote": "immer zunächst die Server abgesichert werden (unter anderem durch Umsetzung des Bausteins SYS.1.1 Allgemeiner Server) und dann erst die angeschlossenen Clients.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Reihenfolge der Absicherung von Servern und Clients benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 161,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zuerst Server (u. a. über SYS.1.1 Allgemeiner Server), danach die angeschlossenen Clients",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zuerst alle Clients, damit Endanwender zügig geschützt sind",
+                    "is_correct": false
+                },
+                {
+                    "text": "Server und Clients werden grundsätzlich parallel in einem Schritt abgesichert",
+                    "is_correct": false
+                },
+                {
+                    "text": "Server werden in der Umsetzungsreihenfolge generell nachrangig behandelt",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.3-005",
+            "text": "Warum sollte die Entscheidung über verschobene Maßnahmen und akzeptierte Restrisiken laut Abschnitt 9.3 sorgfältig dokumentiert werden?",
+            "explanation": "Die Dokumentation dient auch juristischen Zwecken: In Zweifelsfällen sollen weitere Meinungen eingeholt und ebenfalls dokumentiert werden, um in späteren Streitfällen die Einhaltung der Sorgfaltspflicht belegen zu können. Die anderen Begründungen stehen nicht im Text.",
+            "quote": "Die Entscheidung, welche Sicherheitsmaßnahmen ergriffen oder zunächst verschoben werden und wo Restrisiken akzeptiert werden können, sollte auch aus juristischen Gründen sorgfältig dokumentiert werden. In Zweifelsfällen sollten hierfür weitere Meinungen eingeholt und diese ebenfalls dokumentiert werden, um in späteren Streitfällen die Einhaltung der erforderlichen Sorgfaltspflicht belegen zu können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Gründe für die sorgfältige Dokumentation der Umsetzungsentscheidungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 161,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Um in späteren Streitfällen die Einhaltung der Sorgfaltspflicht belegen zu können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Um die Dokumentation im IT-Grundschutz-Kompendium zu veröffentlichen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Um Steuerermäßigungen für Sicherheitsausgaben beantragen zu können",
+                    "is_correct": false
+                },
+                {
+                    "text": "Um eine Zertifizierung nach ISO 9001 zu erhalten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-9.3-006",
+            "text": "Was empfiehlt der Standard laut Hinweis in Abschnitt 9.3, wenn Anforderungen aus IT-Grundschutz-Bausteinen nicht erfüllt sind?",
+            "explanation": "Der Hinweis empfiehlt, im Rahmen einer vereinfachten Risikoanalyse die entstandenen Defizite zu betrachten. Die Ermittlung von Gefährdungen kann dabei entfallen, weil dies bei Erstellung der Bausteine bereits geschehen ist. Eine vollständige Risikoanalyse nach 200-3 oder ein Zertifizierungsaudit werden gerade nicht gefordert.",
+            "quote": "Wenn Anforderungen aus IT-Grundschutz-Bausteinen nicht erffllt sind, ist es empfehlenswert, im Rahmen einer vereinfachten Risikoanalyse die entstandenen Defizite zu betrachten. In diesem Fall kann die in der Risikoanalyse durchzuffhrende Ermittlung von Ge fährdungen entfallen. Dies ist bereits bei der Erstellung der Grundschutz-Bausteine geschehen.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Das Konzept der vereinfachten Risikoanalyse bei nicht erfüllten Anforderungen erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 161,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine vereinfachte Risikoanalyse, bei der die Ermittlung von Gefährdungen entfallen kann",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine vollständige Risikoanalyse nach BSI-Standard 200-3 für jede unerfüllte Anforderung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein externes Zertifizierungsaudit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine komplette Neu-Modellierung des Informationsverbunds",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

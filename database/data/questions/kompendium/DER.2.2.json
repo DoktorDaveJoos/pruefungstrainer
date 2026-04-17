@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "DER.2.2",
+        "chapter_title": "Vorsorge für die IT-Forensik",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-der.2.2-001",
+            "text": "Was MUSS laut DER.2.2.A2 als Erstmaßnahme bei einem IT-Sicherheitsvorfall erstellt werden?",
+            "explanation": "Es muss ein Leitfaden erstellt werden, der für die eingesetzten IT-Systeme beschreibt, welche Erstmaßnahmen durchzuführen sind, um möglichst wenig Spuren zu zerstören.",
+            "quote": "Es MUSS ein Leitfaden erstellt werden, der für die eingesetzten IT-Systeme beschreibt, welche Erstmaßnahmen bei einem IT-Sicherheitsvorfall durchgeführt werden müssen, um möglichst wenig Spuren zu zerstören.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an einen Erstmaßnahmen-Leitfaden nach DER.2.2.A2 benennen.",
+            "baustein_id": "DER.2.2.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ein Leitfaden, der Erstmaßnahmen beschreibt, um möglichst wenig Spuren zu zerstören",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein automatisiertes Skript zum sofortigen Herunterfahren aller IT-Systeme",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Checkliste für die sofortige Löschung aller Protokolldaten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein Formular zur Meldung an die Strafverfolgungsbehörden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.2.2-002",
+            "text": "Was unterscheidet laut DER.2.2 Live-Forensik von Post-Mortem-Forensik?",
+            "explanation": "Live-Forensik sichert flüchtige Daten wie Netzverbindungen oder RAM von einem laufenden IT-System. Post-Mortem-Forensik erstellt forensische Kopien von Datenträgern.",
+            "quote": "Die Live-Forensik stellt sicher, dass flüchtige Daten, wie z. B. Netzverbindungen oder RAM, von einem laufenden IT-System gesichert werden. Bei der Post-Mortem-Forensik hingegen werden forensische Kopien von Datenträgern erstellt.",
+            "topic": "siem",
+            "difficulty": "experte",
+            "learning_objective": "Den Unterschied zwischen Live-Forensik und Post-Mortem-Forensik nach DER.2.2 erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Live-Forensik sichert flüchtige Daten vom laufenden System, Post-Mortem-Forensik erstellt Kopien von Datenträgern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Live-Forensik wird während des Angriffs durchgeführt, Post-Mortem-Forensik erst nach Jahren",
+                    "is_correct": false
+                },
+                {
+                    "text": "Live-Forensik ist automatisiert, Post-Mortem-Forensik manuell",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es gibt keinen wesentlichen Unterschied zwischen beiden Verfahren",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-der.2.2-003",
+            "text": "Was MUSS laut DER.2.2.A1 vor der Erfassung und Auswertung forensischer Daten geschehen?",
+            "explanation": "Alle rechtlichen und regulatorischen Rahmenbedingungen müssen identifiziert und eingehalten werden. Der Betriebs- oder Personalrat sowie der Datenschutzbeauftragte müssen einbezogen werden.",
+            "quote": "Werden Daten für forensische Untersuchungen erfasst und ausgewertet, MÜSSEN alle rechtlichen und regulatorischen Rahmenbedingungen identifiziert und eingehalten werden. • Dazu MÜSSEN der Betriebs- oder Personalrat sowie der oder die Datenschutzbeauftragte einbezogen werden.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Die rechtlichen Voraussetzungen für forensische Datenerfassung nach DER.2.2.A1 benennen.",
+            "baustein_id": "DER.2.2.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Rechtliche Rahmenbedingungen müssen identifiziert und Betriebs-/Personalrat sowie Datenschutzbeauftragte einbezogen werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es genügt die Zustimmung des IT-Leiters",
+                    "is_correct": false
+                },
+                {
+                    "text": "Forensische Daten dürfen ohne Einschränkungen erfasst werden, solange ein Sicherheitsvorfall vorliegt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur ein Gericht kann die Erfassung forensischer Daten genehmigen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

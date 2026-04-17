@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "2.3",
+        "chapter_title": "Verantwortung für die Informationssicherheit",
+        "page_start": 12,
+        "page_end": 12
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-2.3-001",
+            "text": "Bei wem verbleibt laut BSI-Standard 200-2 die Verantwortung für Informationssicherheit, auch wenn die Aufgabe delegiert wird?",
+            "explanation": "Der Standard stellt unmissverständlich klar, dass die Verantwortung in jedem Fall bei der obersten Managementebene verbleibt. Die Aufgabe „Informationssicherheit“ wird typischerweise an einen Beauftragten delegiert — die Verantwortung selbst jedoch nicht.",
+            "quote": "Die Verantwortung für Informationssicherheit verbleibt in jedem Fall bei der obersten Managementebene, die Aufgabe „Informationssicherheit“ wird allerdings typischerweise an einen Beauftragten für Informationssicherheit delegiert.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die nicht delegierbare Verantwortung der obersten Managementebene für Informationssicherheit benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Bei der obersten Managementebene", "is_correct": true },
+                { "text": "Beim Informationssicherheitsbeauftragten", "is_correct": false },
+                { "text": "Bei der IT-Abteilung", "is_correct": false },
+                { "text": "Beim Datenschutzbeauftragten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.3-002",
+            "text": "Welche Bezeichnung ersetzt im IT-Grundschutz die bisher gebräuchliche Bezeichnung „IT-Sicherheitsbeauftragter“?",
+            "explanation": "Der Standard begründet, dass die Bezeichnung Informationssicherheitsbeauftragter (kurz IS-Beauftragter oder ISB) treffender ist und daher die alte Bezeichnung ersetzt. CISO und ISM werden als „andere Varianten“ erwähnt, aber nicht als die offizielle Ersetzung im IT-Grundschutz.",
+            "quote": "Die Bezeichnung Informationssicherheitsbeauftragter oder kurz IS-Beauftragter (ISB) ist allerdings treffender und ersetzt daher im IT-Grundschutz die alte Bezeichnung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die neue Bezeichnung ISB im IT-Grundschutz gegenüber der alten Bezeichnung IT-Sicherheitsbeauftragter einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Informationssicherheitsbeauftragter (ISB)", "is_correct": true },
+                { "text": "Datenschutzbeauftragter (DSB)", "is_correct": false },
+                { "text": "Compliance-Officer", "is_correct": false },
+                { "text": "Risk-Manager", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.3-003",
+            "text": "Wie grenzt der BSI-Standard 200-2 „Informationssicherheit“ und „IT-Sicherheit“ voneinander ab?",
+            "explanation": "Der Standard definiert Informationssicherheit als den umfangreicheren Bereich, der den Schutz von Informationen auch ohne IT bzw. über IT hinaus umfasst. IT-Sicherheit ist demnach ein Teilbereich, der sich gezielt mit dem Schutz der eingesetzten IT beschäftigt. Die Begriffe sind also nicht deckungsgleich, und IT-Sicherheit ist nicht der Oberbegriff.",
+            "quote": "Informationssicherheit umfasst den umfangreicheren Bereich des Schutzes von Informationen, zwar in und mit IT, aber auch ohne IT bzw. über IT hinaus. Somit ist IT-Sicherheit ein Teilbereich der Informationssicherheit und beschäftigt sich gezielt mit dem Schutz der eingesetzten IT.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Verhältnis von Informationssicherheit und IT-Sicherheit korrekt abgrenzen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "IT-Sicherheit ist ein Teilbereich der Informationssicherheit", "is_correct": true },
+                { "text": "Informationssicherheit umfasst den Schutz von Informationen auch ohne IT", "is_correct": true },
+                { "text": "Beide Begriffe sind deckungsgleich", "is_correct": false },
+                { "text": "IT-Sicherheit ist der Oberbegriff von Informationssicherheit", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.3-004",
+            "text": "Wo ist laut BSI-Standard 200-2 ein dedizierter IT-Sicherheitsbeauftragter in großen Institutionen typischerweise organisatorisch eingeordnet?",
+            "explanation": "Der Standard stellt klar: In großen Institutionen kann neben dem ISB auch ein dedizierter IT-Sicherheitsbeauftragter existieren. Dieser ist typischerweise im IT-Bereich tätig, während der ISB unmittelbar der Leitungsebene zuarbeitet. Die Rolle an den Datenschutzbeauftragten zu koppeln oder extern zu besetzen ist nicht vorgesehen.",
+            "quote": "In großen Institutionen kann es weiterhin neben dem ISB auch einen dedizierten Beauftragten für IT-Sicherheit geben. Dieser ist dann typischerweise im IT-Bereich tätig, während der ISB unmittelbar der Leitungsebene zuarbeitet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die organisatorische Einordnung von ISB und IT-Sicherheitsbeauftragtem in großen Institutionen unterscheiden.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Typischerweise im IT-Bereich", "is_correct": true },
+                { "text": "Typischerweise beim Datenschutzbeauftragten", "is_correct": false },
+                { "text": "Immer extern besetzt", "is_correct": false },
+                { "text": "In der Revisionsabteilung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.3-005",
+            "text": "Wie beurteilt der BSI-Standard 200-2 einen Informationssicherheitsprozess, der sich selbst auf Arbeitsebene initiiert?",
+            "explanation": "Der Standard bewertet einen auf Arbeitsebene initiierten Prozess kritisch: Er führt zwar zu einer punktuellen Verbesserung der Sicherheitssituation, garantiert jedoch kein dauerhaftes Fortentwickeln des Informationssicherheitsniveaus. Daher sollte darauf hingewirkt werden, die Leitungsebene zu sensibilisieren.",
+            "quote": "Der vielfach zu beobachtende, sich selbst auf Arbeitsebene initiierende Informationssicherheitsprozess führt zwar zu einer punktuellen Verbesserung der Sicherheitssituation, garantiert jedoch kein dauerhaftes Fortentwickeln des Informationssicherheitsniveaus.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Grenzen eines von unten initiierten Sicherheitsprozesses erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Er führt zu einer punktuellen Verbesserung, garantiert aber kein dauerhaftes Fortentwickeln des Sicherheitsniveaus", "is_correct": true },
+                { "text": "Er ist gleichwertig zu einem von der Leitung initiierten Prozess", "is_correct": false },
+                { "text": "Er ersetzt die Notwendigkeit der Sensibilisierung der Leitungsebene", "is_correct": false },
+                { "text": "Er garantiert eine flächendeckende Verbesserung", "is_correct": false }
+            ]
+        }
+    ]
+}

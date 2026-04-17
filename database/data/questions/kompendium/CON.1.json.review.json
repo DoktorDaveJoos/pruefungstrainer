@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.1 Kryptokonzept: 4 questions covering CON.1.A1/A2/A4/A10 on algorithm selection, offline key storage, key management scope, and BSI TR 02102 reference. All quote fragments appear in source after dehyphenation of line-break word splits (e.g., `etab-\\nlierte` → `etablierte`, `Si-\\ncherheitslücken` → `Sicherheitslücken`). Correct answers are faithful paraphrases; distractors (proprietary crypto, cloud-stored long-lived keys, ISO 27001 instead of TR-02102) are unambiguously wrong per the cited requirements. Topic `bausteine` fits. Difficulty calibration reasonable — `experte` on 003 requires combining two MÜSSEN obligations from CON.1.A4. Schema clean.",
+    "results": [
+        {
+            "external_id": "kompendium-con.1-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Es MÜSSEN geeignete kryptografische Verfahren ausgewählt werden. Dabei MUSS sichergestellt...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.1-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Langlebige kryptografische Schlüssel MÜSSEN offline, außerhalb der eingesetzten IT-Systeme...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.1-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-con.1-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

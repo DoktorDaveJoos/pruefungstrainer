@@ -1,0 +1,39 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.9 Informationsaustausch: 3 questions on CON.9.A1/A2/A5. All quotes exist in source but near the manifest boundary (buffer-zone hits). Correct answers supported; distractors (share-first-verify-later, shared credentials) unambiguously wrong. Schema clean.",
+    "results": [
+        {
+            "external_id": "kompendium-con.9-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Alle Beteiligten MÜSSEN vor dem Austausch von Informationen sicherstellen, dass die empfan...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.9-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Bevor Informationen ausgetauscht werden, MUSS die Institution festlegen, wie schutzbedürft...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.9-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Jede Datei und jedes Dokument SOLLTE vor der Weitergabe auf unerwünschte Restinformationen...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        }
+    ]
+}

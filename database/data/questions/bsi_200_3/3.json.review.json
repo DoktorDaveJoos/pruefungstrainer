@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "Five of six questions are solid. Question 3-004 has a minor quote mismatch: the quote contains 'Vertraulich- keit' (hard hyphen + space), while the source uses a soft hyphen + line break which normalizes to 'Vertraulichkeit'. This is a cosmetic rendering artifact and the intended passage is unambiguous. Questions 3-003 and 3-005 are labeled 'experte'; 3-003 is borderline (the answer is a single explicit sentence in the source) but 3-005 genuinely requires interpretive reasoning, so both are acceptable. All other quotes, correct answers, and distractors are accurate. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-3-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-3-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote fragment contains 'Vertraulich- keit' (hard hyphen + space) but normalized source reads 'Vertraulichkeit' (soft hyphen + newline joined). The intended passage is unambiguous but the quote string does not produce a verbatim substring match after normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-3-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-3-006",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

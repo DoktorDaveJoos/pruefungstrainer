@@ -1,0 +1,31 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All five questions accurately reflect section 6.2. Quotes match after normalization. Correct answers are directly supported. Distractors are clearly wrong. Topic 'risikoanalyse' is appropriate. All basis difficulty is fitting. Page_start values (38) match the manifest range (38-40), though there is a systemic issue where the manifest page numbers appear to be shifted relative to the printed page markers in the source markdown. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-6.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.2-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.2-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-6.2-005",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.1.3",
+        "chapter_title": "Patch- und \u00c4nderungsmanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.1.3-001",
+            "text": "Was MUSS laut OPS.1.1.3.A1 bei gr\u00f6\u00dferen \u00c4nderungen zus\u00e4tzlich sichergestellt werden?",
+            "explanation": "Bei gr\u00f6\u00dferen \u00c4nderungen muss der oder die ISB beteiligt sein. Insgesamt muss sichergestellt werden, dass das angestrebte Sicherheitsniveau w\u00e4hrend und nach den \u00c4nderungen erhalten bleibt.",
+            "quote": "Bei gr\u00f6\u00dferen \u00c4nderungen MUSS zudem der oder die ISB beteiligt sein. Insgesamt MUSS sichergestellt werden, dass das angestrebte Sicherheitsniveau w\u00e4hrend und nach den \u00c4nderungen erhalten bleibt.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle des ISB bei gr\u00f6\u00dferen \u00c4nderungen nach OPS.1.1.3.A1 benennen.",
+            "baustein_id": "OPS.1.1.3.A1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Der oder die ISB muss beteiligt sein und das Sicherheitsniveau muss erhalten bleiben", "is_correct": true},
+                {"text": "Ein externer Auditor muss die \u00c4nderung vorab genehmigen", "is_correct": false},
+                {"text": "Die Institutionsleitung muss jede einzelne \u00c4nderung pers\u00f6nlich freigeben", "is_correct": false},
+                {"text": "Es m\u00fcssen mindestens drei Testdurchl\u00e4ufe dokumentiert werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.3-002",
+            "text": "Was MUSS laut OPS.1.1.3.A15 geschehen, wenn ein Patch nicht eingespielt wird?",
+            "explanation": "Wenn ein Patch nicht eingespielt wird, m\u00fcssen die Entscheidung und die Gr\u00fcnde daf\u00fcr dokumentiert werden.",
+            "quote": "Wenn ein Patch nicht eingespielt wird, M\u00dcSSEN die Entscheidung und die Gr\u00fcnde daf\u00fcr dokumentiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Dokumentationspflicht bei Nicht-Einspielen von Patches nach OPS.1.1.3.A15 wiedergeben.",
+            "baustein_id": "OPS.1.1.3.A15",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Die Entscheidung und die Gr\u00fcnde m\u00fcssen dokumentiert werden", "is_correct": true},
+                {"text": "Das betroffene System muss sofort au\u00dfer Betrieb genommen werden", "is_correct": false},
+                {"text": "Der Hersteller muss schriftlich informiert werden", "is_correct": false},
+                {"text": "Es muss ein Penetrationstest durchgef\u00fchrt werden", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.3-003",
+            "text": "Welche Rolle ist laut OPS.1.1.3 grunds\u00e4tzlich zust\u00e4ndig f\u00fcr das Patch- und \u00c4nderungsmanagement?",
+            "explanation": "Die Zust\u00e4ndigkeitstabelle des Bausteins weist den IT-Betrieb als grunds\u00e4tzlich zust\u00e4ndig aus. Fachverantwortliche sind als weitere Zust\u00e4ndigkeit aufgef\u00fchrt.",
+            "quote": "Grunds\u00e4tzlich zust\u00e4ndig IT-Betrieb",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grunds\u00e4tzliche Zust\u00e4ndigkeit f\u00fcr das Patch- und \u00c4nderungsmanagement benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Der IT-Betrieb", "is_correct": true},
+                {"text": "Der Informationssicherheitsbeauftragte", "is_correct": false},
+                {"text": "Die Institutionsleitung", "is_correct": false},
+                {"text": "Der Datenschutzbeauftragte", "is_correct": false}
+            ]
+        }
+    ]
+}

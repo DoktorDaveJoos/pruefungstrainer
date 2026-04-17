@@ -1,0 +1,70 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "IND.1 Prozessleit- und Automatisierungstechnik: 4 chapter-intro questions on OT/IT distinction, safety impact, definition, lifecycle. All quotes are located in the full source but OUTSIDE the manifest's declared IND.1 range — actual IND.1 chapter body begins around char 1977954 vs manifest char_start 2008141. This is a systemic manifest-boundary issue affecting ALL IND.* chapters in this batch. Quote 004 additionally spans a PDF page break with injected page-header boilerplate; matches under combined aggressive + page-header-stripped normalization. All baustein_id values are chapter-level (IND.1) with null anforderung_type — acceptable for chapter-overview content. `experte` on 001/004 appropriate for synthesis of OT/IT contrasts.",
+    "results": [
+        {
+            "external_id": "kompendium-ind.1-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Gleichzeitig weist die OT gegenüber der klassischen IT aber wesentliche Unterschiede auf, ...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.1-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Störungen von OT-Systemen können dagegen Gefährdungen von Leib, Leben und Umwelt nach sich...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.1-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Prozessleit- und Automatisierungstechnik (Operational Technology, OT) ist Hard- und Softwa...` found in full source but outside manifest range + buffer — manifest boundaries significantly misaligned with actual chapter content."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.1-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Dies hat zur Folge, dass nach dem Ablauf der Unterstützung der herstellenden Unternehmen k...` spans a PDF page break with injected header boilerplate (`IT-Grundschutz-Kompendium: Stand Februar 2023` + section marker). Matches under combined aggressive + page-header-stripped normalization. Content is faithful; extraction artifact splits the paragraph."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Kompendium question has baustein_id but null anforderung_type (baustein_id is chapter-level, not a specific .A# requirement)."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.2.2",
+        "chapter_title": "Active Directory Domain Services",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.2.2-001",
+            "text": "Welche Mindest-Funktionsebene MUSS laut APP.2.2 bei der Planung von Active Directory Domain Services gewählt werden?",
+            "explanation": "Anforderung APP.2.2.A1 verlangt, dass eine Funktionsebene für die Domäne(n) und die Gesamtstruktur von mindestens Windows Server 2016 gewählt werden muss. Ältere Funktionsebenen wie Windows Server 2008 oder 2012 erfüllen diese Anforderung nicht.",
+            "quote": "Es MUSS eine Funktionsebene für die Domäne(n) und die Gesamtstruktur von mindestens Windows Server 2016 gewählt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Mindest-Funktionsebene für AD DS gemäß APP.2.2 benennen.",
+            "baustein_id": "APP.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Windows Server 2016",
+                    "is_correct": true
+                },
+                {
+                    "text": "Windows Server 2008",
+                    "is_correct": false
+                },
+                {
+                    "text": "Windows Server 2012",
+                    "is_correct": false
+                },
+                {
+                    "text": "Windows Server 2003",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.2-002",
+            "text": "Was stellt laut APP.2.2 im Active Directory die systembedingte Sicherheitsgrenze dar?",
+            "explanation": "Der Baustein erläutert, dass die Gesamtstruktur (Forest) die logische Sicherheitsgrenze darstellt, da innerhalb einer Gesamtstruktur alle Domänen durch bidirektionale, transitive Vertrauensbeziehungen verknüpft sind. Eine Domäne bildet lediglich eine Verwaltungsgrenze, nicht eine Sicherheitsgrenze.",
+            "quote": "Dabei MUSS berücksichtigt werden, dass zwischen den einzelnen Domänen einer Gesamtstruktur produktbedingt keine Sicherheitsgrenzen bestehen und daher keine sichere Begrenzung der administrativen Bereiche innerhalb einer Gesamtstruktur möglich ist.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Sicherheitsgrenze im Active Directory (Gesamtstruktur vs. Domäne) unterscheiden.",
+            "baustein_id": "APP.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Gesamtstruktur (Forest)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die einzelne Domäne",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Organisationseinheit (OU)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der einzelne Domänencontroller",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.2-003",
+            "text": "Was MUSS laut APP.2.2 mit dem Built-in Guest-Konto im Active Directory geschehen?",
+            "explanation": "Anforderung APP.2.2.A16 verlangt, dass Built-in-AD-DS-Konten mit komplexen Passwörtern versehen werden und nur als Notfallkonten dienen dürfen. Das Built-in Guest-Konto muss deaktiviert werden. Privilegierte Konten müssen Mitglied der Gruppe Protected Users sein.",
+            "quote": "Built-in-AD-DS-Konten MÜSSEN mit komplexen Passwörtern versehen werden. Sie DÜRFEN NUR als Notfallkonten dienen. Das Built-in „Guest\"- / „Gast\"-Konto MUSS deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Härtungsanforderungen für Built-in-Konten im AD DS benennen.",
+            "baustein_id": "APP.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es muss deaktiviert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es muss mit einem einfachen Standardpasswort versehen werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es muss allen Benutzenden als Standardkonto zugewiesen werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es darf nur für die tägliche Administration verwendet werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.2-004",
+            "text": "Was SOLLTE laut APP.2.2 bei erhöhtem Schutzbedarf mit besonders kritischen IT-Systemen und Administrationskonten geschehen?",
+            "explanation": "Anforderung APP.2.2.A15 empfiehlt, dass besonders kritische IT-Systeme und Konten zur Administration der Domänen oder Gesamtstruktur in eine eigene Gesamtstruktur (häufig als Red Forest bezeichnet) ausgegliedert werden sollten, zu der eine einseitige Vertrauensstellung besteht.",
+            "quote": "Besonders kritische IT-Systeme und Konten zur Administration der Domänen oder der Gesamtstruktur SOLLTEN in eine eigene Gesamtstruktur (häufig als „Red Forest\" bezeichnet) ausgegliedert werden, zu der von der zu verwaltenden Gesamtstruktur eine einseitige Vertrauensstellung besteht.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Das Konzept der Auslagerung der Administration in eine eigene Gesamtstruktur (Red Forest) erläutern.",
+            "baustein_id": "APP.2.2",
+            "anforderung_type": "hoch",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie sollten in eine eigene Gesamtstruktur (Red Forest) mit einseitiger Vertrauensstellung ausgegliedert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie sollten in dieselbe Domäne wie alle anderen IT-Systeme integriert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie sollten ohne Vertrauensbeziehung zu anderen Domänen betrieben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie müssen auf physischen Servern ohne Virtualisierung betrieben werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.2-005",
+            "text": "Welches Authentisierungsprotokoll SOLLTE laut APP.2.2 konsequent in der AD-DS-Gesamtstruktur eingesetzt werden?",
+            "explanation": "Anforderung APP.2.2.A9 empfiehlt, dass konsequent das Authentisierungsprotokoll Kerberos eingesetzt werden sollte. Die LM-Authentisierung und NTLMv1 müssen deaktiviert sein. NTLMv2 darf nur übergangsweise aus Kompatibilitätsgründen eingesetzt werden, wobei die Migration auf Kerberos geplant und terminiert werden sollte.",
+            "quote": "In der Gesamtstruktur SOLLTE konsequent das Authentisierungsprotokoll Kerberos eingesetzt werden. • Die LM-Authentisierung und NTLMv1 MÜSSEN deaktiviert sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Das empfohlene Authentisierungsprotokoll für AD DS benennen.",
+            "baustein_id": "APP.2.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Kerberos",
+                    "is_correct": true
+                },
+                {
+                    "text": "NTLMv1",
+                    "is_correct": false
+                },
+                {
+                    "text": "LM-Authentisierung",
+                    "is_correct": false
+                },
+                {
+                    "text": "RADIUS",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

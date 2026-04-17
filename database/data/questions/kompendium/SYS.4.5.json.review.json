@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three Wechseldatenträger questions from A6/A8/A12. All pass cleanly.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.4.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.4.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.4.5-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

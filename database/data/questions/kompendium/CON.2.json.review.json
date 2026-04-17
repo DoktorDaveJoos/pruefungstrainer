@@ -1,0 +1,43 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "CON.2 Datenschutz: 3 questions on SDM intro (001, 003) and CON.2.A1 (002). Quotes match after dehyphenation; quote 003 needs the most aggressive normalization because `IT-Grundschutzes` renders in source with an ambiguous `-\\n` break. Questions 001 and 003 are chapter-intro content with `baustein_id: null` (info-severity schema note). Quote for 001 is located in the buffer zone (manifest boundary drift). Correct answers well-supported; distractors (BDSG-only, >500-employees threshold, behörden-only) are clearly wrong.",
+    "results": [
+        {
+            "external_id": "kompendium-con.2-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Konferenz der unabhängigen Datenschutzaufsichtsbehörden des Bundes und der Länder (kur...` matches source near manifest boundary (within 30k-char buffer); manifest char_start/char_end drift."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-con.2-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-con.2-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Das SDM nimmt bei der Auswahl geeigneter technischer und organisatorischer Maßnahmen die P...` matches source only under aggressive normalization (ignoring hyphens). PDF extracts compound words like `Content-Security-Policy` as `Content-Security-\\nPolicy`; hyphen-newline is ambiguous between word-break and compound-hyphen."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        }
+    ]
+}

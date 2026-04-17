@@ -1,0 +1,33 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "ORP.2 Personal: 3 questions on ORP.2.A2/A5/A3. Quotes match after dehyphenation. Correct answers faithful (onboarding duties, confidentiality upon termination, Vertretungsregelung); distractors clearly wrong. Topic `bausteine`, difficulty `basis` throughout — appropriate. Schema clean.",
+    "results": [
+        {
+            "external_id": "kompendium-orp.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-orp.2-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Bevor externe Personen Zugang und Zugriff zu vertraulichen Informationen erhalten, MÜSSEN ...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.2-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Vorgesetzten MÜSSEN dafür sorgen, dass im laufenden Betrieb Vertretungsregelungen umge...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        }
+    ]
+}

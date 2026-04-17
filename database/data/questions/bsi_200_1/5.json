@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "5",
+        "chapter_title": "Ressourcen für Informationssicherheit",
+        "page_start": 26,
+        "page_end": 27
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-5-001",
+            "text": "Welche Arten von Ressourcen müssen laut BSI-Standard 200-1 durch die Leitungsebene für ein bestimmtes Sicherheitsniveau bereitgestellt werden?",
+            "explanation": "Der Standard nennt ausdrücklich finanzielle, personelle und zeitliche Ressourcen. Räumliche Ressourcen werden in dieser Aufzählung nicht genannt.",
+            "quote": "Die Einhaltung eines bestimmten Sicherheitsniveaus erfordert stets finanzielle, personelle und zeitliche Ressourcen, die von der Leitungsebene ausreichend bereitgestellt werden müssen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei vom Standard genannten Ressourcenarten für Informationssicherheit benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Finanzielle Ressourcen", "is_correct": true },
+                { "text": "Personelle Ressourcen", "is_correct": true },
+                { "text": "Zeitliche Ressourcen", "is_correct": true },
+                { "text": "Räumliche Ressourcen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-5-002",
+            "text": "Wer ist laut BSI-Standard 200-1 verantwortlich, wenn Sicherheitsziele aufgrund fehlender Ressourcen nicht erfüllt werden können?",
+            "explanation": "Der Standard stellt klar, dass nicht die mit der Umsetzung betrauten Personen, sondern die Vorgesetzten verantwortlich sind, die unrealistische Ziele gesetzt oder die Ressourcen nicht bereitgestellt haben. Der ISB oder externe Dienstleister sind nicht Adressaten dieser Verantwortung.",
+            "quote": "Wenn die Zielvorgaben aufgrund fehlender Ressourcen nicht erfüllt werden können, sind hierfür nicht die mit der Umsetzung betrauten Personen verantwortlich, sondern die Vorgesetzten, die unrealistische Ziele gesetzt bzw. die erforderlichen Ressourcen nicht zur Verfügung gestellt haben.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Verantwortungszuordnung bei unzureichender Ressourcenbereitstellung erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Vorgesetzten, die unrealistische Ziele gesetzt haben", "is_correct": true },
+                { "text": "Die mit der Umsetzung betrauten Personen", "is_correct": false },
+                { "text": "Der Informationssicherheitsbeauftragte", "is_correct": false },
+                { "text": "Externe Dienstleister", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-5-003",
+            "text": "Warum ist es wichtig, schon bei der Festlegung von Sicherheitszielen eine erste Kosten-Nutzen-Schätzung durchzuführen?",
+            "explanation": "Der Standard begründet die frühe Kosten-Nutzen-Schätzung damit, dass Ressourcen nicht verschwendet werden und gleichzeitig die notwendigen Investitionen zur Erreichung des angemessenen Sicherheitsniveaus gewährleistet werden können. Marketingargumente oder Abteilungsrankings gehören nicht zu den im Standard genannten Gründen.",
+            "quote": "Um die gesteckten Ziele nicht zu verfehlen, ist es wichtig, schon bei deren Festlegung eine erste Kosten-Nutzen-Schätzung durchzuführen. Im Laufe des Sicherheitsprozesses sollte dieser Aspekt weiterhin eine entscheidende Rolle spielen, einerseits, um keine Ressourcen zu verschwenden, und andererseits, um die notwendigen Investitionen zur Erreichung des angemessenen Sicherheitsniveaus gewährleisten zu können.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Die Ziele der frühzeitigen Kosten-Nutzen-Schätzung im Sicherheitsprozess ableiten.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Um keine Ressourcen zu verschwenden", "is_correct": true },
+                { "text": "Um notwendige Investitionen für ein angemessenes Sicherheitsniveau zu gewährleisten", "is_correct": true },
+                { "text": "Um gezielte Marketingargumente gegenüber Kunden zu gewinnen", "is_correct": false },
+                { "text": "Um ein internes Ranking zwischen Abteilungen zu etablieren", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-5-004",
+            "text": "Welche Aussage zur Rolle von Technik in der Informationssicherheit trifft der BSI-Standard 200-1?",
+            "explanation": "Der Standard weist darauf hin, dass Investitionen in personelle Ressourcen häufig effektiver sind als Investitionen in Sicherheitstechnik und dass Technik allein keine Probleme löst – sie muss in organisatorische Rahmenbedingungen eingebunden sein. Die Aussage, Technik allein löse alle Probleme, widerspricht diesem Standpunkt.",
+            "quote": "Vor allem erscheint es aber wichtig, darauf hinzuweisen, dass Investitionen in personelle Ressourcen häufig effektiver sind als Investitionen in Sicherheitstechnik. Technik alleine löst somit keine Probleme, sie muss immer in organisatorische Rahmenbedingungen eingebunden sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Verhältnis von Technik und organisatorischer Einbindung beurteilen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Investitionen in personelle Ressourcen sind häufig effektiver als Investitionen in Sicherheitstechnik", "is_correct": true },
+                { "text": "Technik muss immer in organisatorische Rahmenbedingungen eingebunden sein", "is_correct": true },
+                { "text": "Technik alleine löst alle Sicherheitsprobleme einer Institution", "is_correct": false },
+                { "text": "Organisatorische Regelungen sind für Informationssicherheit irrelevant", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-5-005",
+            "text": "Wann ist es laut BSI-Standard 200-1 sinnvoll, auf externe Experten zurückzugreifen?",
+            "explanation": "Der Standard erklärt, dass der Rückgriff auf externe Experten immer dann sinnvoll ist, wenn Fragen und Probleme nicht mit eigenen Mitteln zu klären oder zu lösen sind. Ein grundsätzlicher Verzicht auf interne Expertise oder eine Budgetlogik werden nicht als Kriterium genannt.",
+            "quote": "Es ist immer dann sinnvoll, auf externe Experten zurückzugreifen, wenn Fragen und Probleme nicht mit eigenen Mitteln zu klären bzw. zu lösen sind.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Kriterium für den Einsatz externer Sicherheitsexperten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Wenn Fragen und Probleme nicht mit eigenen Mitteln geklärt oder gelöst werden können", "is_correct": true },
+                { "text": "Grundsätzlich bei jeder sicherheitsrelevanten Fragestellung", "is_correct": false },
+                { "text": "Nur wenn das Budget der Institution unverbraucht bleiben muss", "is_correct": false },
+                { "text": "Nur auf ausdrückliche Anforderung des Betriebsrats", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-5-006",
+            "text": "Warum ist ein gut funktionierender IT-Betrieb laut BSI-Standard 200-1 eine Grundvoraussetzung für Informationssicherheit?",
+            "explanation": "Der Standard erklärt, dass typische Betriebsprobleme wie knappe Ressourcen, überlastete Administratoren oder eine unstrukturierte und schlecht gewartete IT-Landschaft in der Regel zuerst gelöst werden müssen, damit die eigentlichen Sicherheitsmaßnahmen wirksam und effizient umgesetzt werden können. Eine Aussage, Betriebsprobleme seien für Sicherheit irrelevant, ist unzutreffend.",
+            "quote": "Die Grundvoraussetzung für einen sicheren Betrieb der Informationstechnik ist ein gut funktionierender Betrieb. • Typische Probleme des Betriebs (knappe Ressourcen, überlastete Administratoren oder eine unstrukturierte und schlecht gewartete IT-Landschaft) müssen in der Regel erst gelöst werden, damit die eigentlichen Sicherheitsmaßnahmen wirksam und effizient umgesetzt werden können.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Den Zusammenhang zwischen IT-Betrieb und Wirksamkeit von Sicherheitsmaßnahmen verstehen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 26,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein gut funktionierender Betrieb ist Grundvoraussetzung für einen sicheren Betrieb der Informationstechnik", "is_correct": true },
+                { "text": "Typische Betriebsprobleme müssen in der Regel erst gelöst werden, damit Sicherheitsmaßnahmen wirksam umgesetzt werden können", "is_correct": true },
+                { "text": "Betriebsprobleme haben keinen Einfluss auf die Wirksamkeit von Sicherheitsmaßnahmen", "is_correct": false },
+                { "text": "Sicherheitsmaßnahmen ersetzen in der Regel einen gut funktionierenden Betrieb", "is_correct": false }
+            ]
+        }
+    ]
+}

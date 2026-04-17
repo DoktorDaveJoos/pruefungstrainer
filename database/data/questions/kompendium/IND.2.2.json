@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "IND.2.2",
+        "chapter_title": "Speicherprogrammierbare Steuerung (SPS)",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ind.2.2-001",
+            "text": "Was SOLLTE laut IND.2.2.A1 vor jeder Veränderung an einer SPS geschehen?",
+            "explanation": "IND.2.2.A1 verlangt, dass Steuerungsprogramme und Konfigurationen immer gesichert werden sollten, bevor an ihnen etwas verändert wird. Änderungen an der Konfiguration oder der Tausch von Komponenten sollten vollständig dokumentiert werden.",
+            "quote": "Steuerungsprogramme und Konfigurationen SOLLTEN immer gesichert werden, bevor an ihnen etwas verändert wird. Änderungen an der Konfiguration oder der Tausch von Komponenten SOLLTEN vollständig dokumentiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Dokumentations- und Sicherungsanforderungen bei SPS-Änderungen nach IND.2.2.A1 benennen.",
+            "baustein_id": "IND.2.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Steuerungsprogramme und Konfigurationen sollten gesichert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Änderungen sollten vollständig dokumentiert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die SPS muss vom Hersteller komplett zurückgesetzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ein neues Gerät muss als Ersatz beschafft werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.2-002",
+            "text": "Über welche grundlegenden Schnittstellen verfügt eine SPS laut IND.2.2?",
+            "explanation": "Laut IND.2.2 verfügt eine SPS über digitale Ein- und Ausgänge, ein Echtzeitbetriebssystem (Firmware) sowie weitere Schnittstellen für Ethernet oder Feldbusse. Die Verbindung zu Sensoren und Aktoren erfolgt über die analogen oder digitalen Ein- bzw. Ausgänge oder über einen Feldbus.",
+            "quote": "Eine SPS verfügt über digitale Ein- und Ausgänge, ein Echtzeitbetriebssystem (Firmware) sowie weitere Schnittstellen für Ethernet oder Feldbusse. Die Verbindung zu Sensoren und Aktoren erfolgt über die analogen oder digitalen Ein- bzw. Ausgänge oder über einen Feldbus.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die grundlegenden Schnittstellen einer SPS nach IND.2.2 benennen.",
+            "baustein_id": "IND.2.2",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Digitale Ein- und Ausgänge, ein Echtzeitbetriebssystem (Firmware) und Schnittstellen für Ethernet oder Feldbusse",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich eine serielle RS-232-Schnittstelle",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur WLAN und Bluetooth zur drahtlosen Kommunikation",
+                    "is_correct": false
+                },
+                {
+                    "text": "USB-Anschlüsse und HDMI-Ausgänge für Monitore",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.2-003",
+            "text": "Was SOLLTE laut IND.2.2.A3 hinsichtlich der Systemzeit einer SPS geschehen?",
+            "explanation": "IND.2.2.A3 verlangt, dass die Systemzeit automatisch über eine zentrale automatisierte Zeitsynchronisation eingestellt werden sollte.",
+            "quote": "Die Systemzeit SOLLTE automatisch über eine zentrale automatisierte Zeitsynchronisation eingestellt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zeitsynchronisationsanforderung für SPS nach IND.2.2.A3 benennen.",
+            "baustein_id": "IND.2.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Automatisch über eine zentrale automatisierte Zeitsynchronisation eingestellt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Manuell durch das Wartungspersonal bei jeder Inspektion justiert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Einmalig bei der Inbetriebnahme gesetzt und danach nie wieder geändert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Über eine eigene Funkuhr in jeder SPS synchronisiert werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

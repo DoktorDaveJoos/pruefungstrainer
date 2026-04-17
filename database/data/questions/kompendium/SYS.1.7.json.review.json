@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Three IBM Z questions on A1/A14/A19. All quotes verbatim, correct answers supported, topic/difficulty/schema sanity all check.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.7-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.7-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.7-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T23:10:00Z",
+    "critic_notes": "All seven questions accurately reflect the source text of section 1.3. Quotes match after normalization. The long multi-fragment quote in 1.3-006 accurately reproduces the four-step process. Question 1.3-004 cites page_start 6 and page_end 7 which is within the section's page range of 6-8. Topic 'risikoanalyse' is appropriate throughout as these questions address the risk analysis methodology and its terminology. All are basis difficulty which is appropriate for one-step recall. Schema correct (nulls).",
+    "results": [
+        {
+            "external_id": "bsi-200-3-1.3-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.3-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.3-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.3-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.3-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.3-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-3-1.3-007",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

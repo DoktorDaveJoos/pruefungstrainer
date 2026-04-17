@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "IND.2.7",
+        "chapter_title": "Safety Instrumented Systems",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ind.2.7-001",
+            "text": "Wozu werden Safety Instrumented Systems (SIS) laut IND.2.7 eingesetzt?",
+            "explanation": "Laut IND.2.7 werden SIS eingesetzt, um Gefahren für technische Anlagen, die Umwelt und Personen abzuwehren. Der wesentliche Unterschied zu konventionellen Automatisierungssystemen liegt in den erhöhten Anforderungen an die Zuverlässigkeit.",
+            "quote": "SIS werden eingesetzt, um Gefahren für technische Anlagen, die Umwelt und Personen abzuwehren.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Einsatzzweck von Safety Instrumented Systems nach IND.2.7 benennen.",
+            "baustein_id": "IND.2.7",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zur Abwehr von Gefahren für technische Anlagen, die Umwelt und Personen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zur Optimierung der Produktionsgeschwindigkeit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich zur Qualitätskontrolle von Fertigprodukten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zur automatischen Bestellung von Ersatzteilen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.7-002",
+            "text": "Was drückt der Sicherheits-Integritätslevel (SIL) bei SIS laut IND.2.7 aus?",
+            "explanation": "Laut IND.2.7 wird das Maß an Zuverlässigkeit, mit der die von einem SIS auszuführenden Sicherheitsfunktionen (SIF) vollzogen werden, mit Hilfe des vierstufigen Sicherheits-Integritätslevels (SIL) ausgedrückt. SIL1 ist die geringste und SIL4 die höchste Anforderung an die Zuverlässigkeit.",
+            "quote": "Das Maß an Zuverlässigkeit wird mit Hilfe des vierstufigen Sicherheits-Integritätslevels (SIL) ausgedrückt, diese werden in der IEC 61508 definiert. SIL1 ist hierbei die geringste und SIL4 die höchste Anforderung an die Zuverlässigkeit.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Den Sicherheits-Integritätslevel (SIL) im Kontext von SIS nach IND.2.7 erklären.",
+            "baustein_id": "IND.2.7",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das Maß an Zuverlässigkeit der Sicherheitsfunktionen, wobei SIL1 die geringste und SIL4 die höchste Stufe ist",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die maximale Anzahl gleichzeitig betreibbarer Sicherheitssysteme",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Geschwindigkeit, mit der das System auf einen Fehler reagiert",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Anzahl der erforderlichen Bedienpersonen pro Schicht",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.2.7-003",
+            "text": "Was DARF laut IND.2.7.A2 mit Hard- und Softwarekomponenten eines SIS NICHT geschehen?",
+            "explanation": "IND.2.7.A2 verlangt, dass die Hard- und Softwarekomponenten, die zum SIS gehören oder im Zusammenhang mit diesem genutzt werden, nicht zweckentfremdet werden dürfen.",
+            "quote": "Die Hard- und Softwarekomponenten, die zum SIS gehören oder im Zusammenhang mit diesem genutzt werden, DÜRFEN NICHT zweckentfremdet werde.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zweckbindung von SIS-Komponenten nach IND.2.7.A2 erklären.",
+            "baustein_id": "IND.2.7",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie dürfen nicht zweckentfremdet werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie dürfen nicht in einem klimatisierten Raum betrieben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie dürfen nicht von externem Personal gewartet werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie dürfen nicht mit einem Netzwerk verbunden werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

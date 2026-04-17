@@ -1,0 +1,33 @@
+{
+    "reviewed_at": "2026-04-17T12:30:00Z",
+    "critic_notes": "Section SYS.4.3 (3 questions: 3 pass, 0 flag, 0 fail). Correct answers are supported by the source (SYS.4.3.A2 Deaktivieren nicht benutzter Schnittstellen, A4 Beschaffungskriterien, A14 Abgesicherter Bootprozess); distractors are clearly wrong per source; topic 'bausteine' fits. Q003 labeled difficulty=experte with anforderung_type=hoch is appropriate — A14 is a hoch-level requirement that combines multiple conditions (Bootloader-Integritätsprüfung, mehrstufiges Boot-Konzept mit kryptografisch sicherer Überprüfung). 2 question(s) annotated with quote_mismatch/info — content verbatim but PDF bullet-list layout artifact and manifest-range drift mean fragments match only under aggressive normalization.",
+    "results": [
+        {
+            "external_id": "kompendium-sys.4.3-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim in the full source)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.3-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF bullet-list layout artifact and manifest char-range drift; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.4.3-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

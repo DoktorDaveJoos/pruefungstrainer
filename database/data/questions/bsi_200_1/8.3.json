@@ -1,0 +1,165 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "8.3",
+        "chapter_title": "Erfolgskontrolle des Sicherheitskonzepts",
+        "page_start": 36,
+        "page_end": 38
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-8.3-001",
+            "text": "In welchem Rahmen sollte laut BSI-Standard 200-1 die Analyse der Effektivität und Effizienz der umgesetzten Sicherheitsmaßnahmen erfolgen?",
+            "explanation": "Der Standard legt fest, dass die Analyse im Rahmen von internen Audits erfolgen sollte. Stehen dafür nicht genügend interne Ressourcen zur Verfügung, können externe Experten mit Prüfungsaktivitäten beauftragt werden. Kunden oder Zertifizierungsstellen sind nicht die vorgesehene Instanz.",
+            "quote": "Die Analyse der Effektivität und Effizienz der umgesetzten Maßnahmen sollte im Rahmen von internen Audits erfolgen. Wenn nicht genügend Ressourcen zur Verfügung stehen, um solche Audits von erfahrenen internen Mitarbeitern durchführen zu lassen, sollten externe Experten mit der Durchführung von Prüfungsaktivitäten beauftragt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Rahmen für die Erfolgskontrolle des Sicherheitskonzepts benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                { "text": "Im Rahmen von internen Audits, ergänzend können externe Experten beauftragt werden", "is_correct": true },
+                { "text": "Ausschließlich durch Befragung der Kunden der Institution", "is_correct": false },
+                { "text": "Ausschließlich durch eine externe Zertifizierungsstelle", "is_correct": false },
+                { "text": "Im Rahmen von automatisierten Scans ohne menschliche Beteiligung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-002",
+            "text": "Wovon hängt laut BSI-Standard 200-1 der Aufwand für Audits zur Erfolgskontrolle ab?",
+            "explanation": "Der Standard stellt fest, dass der Aufwand bei Audits von der Komplexität und Größe des Informationsverbunds abhängt und die Prüfanforderungen für kleine Institutionen entsprechend niedriger sind. Branchenzugehörigkeit oder Anzahl der Kunden werden nicht als maßgeblich benannt.",
+            "quote": "Da der Aufwand bei Audits von der Komplexität und Größe des Informationsverbunds abhängt, sind die Prüfanforderungen für kleine Institutionen entsprechend niedriger als für große und komplexe Institutionen und damit normalerweise sehr gut umzusetzen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Abhängigkeit des Audit-Aufwands von Komplexität und Größe des Informationsverbunds erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                { "text": "Von der Komplexität und Größe des Informationsverbunds", "is_correct": true },
+                { "text": "Ausschließlich von der Branchenzugehörigkeit der Institution", "is_correct": false },
+                { "text": "Ausschließlich von der Anzahl der Kunden der Institution", "is_correct": false },
+                { "text": "Ausschließlich vom Jahresumsatz der Institution", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-003",
+            "text": "Was nennt der BSI-Standard 200-1 als mögliche ausreichende Maßnahmen zur Erfolgskontrolle in kleinen Institutionen?",
+            "explanation": "Der Standard nennt ausdrücklich drei Maßnahmen, die in kleinen Institutionen unter Umständen schon ausreichen können: ein jährlicher technischer Check der IT-Systeme, eine Durchsicht vorhandener Dokumentationen zur Aktualitätsprüfung und ein Workshop zur Besprechung von Problemen und Erfahrungen mit dem Sicherheitskonzept. Ein vollständiges ISO-Zertifizierungsaudit ist nicht gemeint.",
+            "quote": "Ein jährlicher technischer Check von IT-Systemen, eine Durchsicht vorhandener Dokumentationen, um die Aktualität zu prüfen, und ein Workshop, bei dem Probleme und Erfahrungen mit dem Sicherheitskonzept besprochen werden, können unter Umständen in kleinen Institutionen schon ausreichend sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Angemessene Prüfmaßnahmen für kleine Institutionen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein jährlicher technischer Check von IT-Systemen", "is_correct": true },
+                { "text": "Eine Durchsicht vorhandener Dokumentationen auf Aktualität", "is_correct": true },
+                { "text": "Ein Workshop zu Problemen und Erfahrungen mit dem Sicherheitskonzept", "is_correct": true },
+                { "text": "Ein vollständiges ISO/IEC 27001-Zertifizierungsaudit durch eine externe Stelle", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-004",
+            "text": "Welche Reaktion verlangt der BSI-Standard 200-1 bei Änderungen im laufenden Betrieb?",
+            "explanation": "Der Standard verlangt, dass bei Änderungen im laufenden Betrieb (z. B. neue Geschäftsprozesse, Organisationsänderungen oder Einsatz neuer IT-Systeme) das Sicherheitskonzept sowie die damit verbundenen Dokumente (z. B. Liste der Zuständigkeiten oder IT-Systeme) aktualisiert werden. Ein Abwarten bis zum nächsten Audit oder eine Verschiebung auf eine neue ISMS-Einführung entspricht nicht dem Standard.",
+            "quote": "Bei Änderungen im laufenden Betrieb (z. B. Einführung neuer Geschäftsprozesse, Organisationsänderungen oder Einsatz neuer IT-Systeme) müssen das Sicherheitskonzept sowie die damit verbundenen Dokumente (wie auch die Liste der Zuständigkeiten oder der IT-Systeme) aktualisiert werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur Aktualisierung des Sicherheitskonzepts bei Betriebsänderungen begründen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 37,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Sicherheitskonzept und die damit verbundenen Dokumente müssen aktualisiert werden", "is_correct": true },
+                { "text": "Änderungen werden erst beim nächsten externen Audit berücksichtigt", "is_correct": false },
+                { "text": "Änderungen erfordern eine komplette Neueinführung des ISMS", "is_correct": false },
+                { "text": "Änderungen werden nur dokumentiert, wenn sicherheitskritische Vorfälle aufgetreten sind", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-005",
+            "text": "Welche Hilfsmittel nennt der BSI-Standard 200-1 beispielhaft zur frühzeitigen Erkennung von Sicherheitsproblemen?",
+            "explanation": "Der Standard nennt als Beispiele Tools zur System- und Netzüberwachung, Integritätsprüfungen, Protokollierung von Zugriffen, Aktionen oder Fehlern, Zutrittskontrollen zu Gebäuden und Räumen sowie Brand-, Wasser- und Klimasensoren. Öffentliche Pressemitteilungen der Konkurrenz sind kein genanntes Hilfsmittel.",
+            "quote": "Zur frühzeitigen Erkennung von Sicherheitsproblemen können beispielsweise Tools zu System- und Netzüberwachungen, Integritätsprüfungen, die Protokollierung von Zugriffen, Aktionen oder Fehlern, die Kontrolle des Zutritts zu Gebäuden und Räumen oder Brand-, Wasser- bzw. Klimasensoren beitragen.",
+            "topic": "siem",
+            "difficulty": "basis",
+            "learning_objective": "Detektionsmaßnahmen zur frühzeitigen Erkennung von Sicherheitsproblemen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 37,
+            "page_end": null,
+            "answers": [
+                { "text": "Tools zu System- und Netzüberwachungen sowie Integritätsprüfungen", "is_correct": true },
+                { "text": "Protokollierung von Zugriffen, Aktionen oder Fehlern", "is_correct": true },
+                { "text": "Brand-, Wasser- bzw. Klimasensoren", "is_correct": true },
+                { "text": "Die regelmäßige Auswertung öffentlicher Pressemitteilungen der Konkurrenz", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-006",
+            "text": "Was muss laut BSI-Standard 200-1 im Rahmen der Überprüfung der Einhaltung von Vorgaben regelmäßig kontrolliert werden?",
+            "explanation": "Der Standard verlangt eine regelmäßige Prüfung, ob alle Sicherheitsmaßnahmen wie im Sicherheitskonzept vorgesehen angewendet werden. Dabei muss sowohl die Einhaltung technischer Maßnahmen (z. B. Konfiguration) als auch der organisatorischen Regelungen (Prozesse, Verfahren, Abläufe) kontrolliert werden. Ebenso ist zu prüfen, ob die notwendigen Ressourcen vorhanden sind und ob zugewiesene Personen ihren Verpflichtungen nachkommen.",
+            "quote": "Hierbei muss sowohl die Einhaltung der technischen Sicherheitsmaßnahmen (z. B. hinsichtlich der Konfiguration) als auch die der organisatorischen Regelungen (z. B. Prozesse, Verfahren und Abläufe) kontrolliert werden. Es sollte auch eine Überprüfung erfolgen, ob die notwendigen Ressourcen zur korrekten Umsetzung der Maßnahmen zur Verfügung stehen und alle Personen, denen bestimmte Rollen zur Umsetzung von Sicherheitsmaßnahmen zugewiesen wurden, ihren Verpflichtungen nachkommen.",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang der Überprüfung der Einhaltung von Vorgaben erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 37,
+            "page_end": null,
+            "answers": [
+                { "text": "Einhaltung der technischen Sicherheitsmaßnahmen (z. B. Konfiguration)", "is_correct": true },
+                { "text": "Einhaltung der organisatorischen Regelungen (Prozesse, Verfahren, Abläufe)", "is_correct": true },
+                { "text": "Verfügbarkeit notwendiger Ressourcen und Erfüllung zugewiesener Rollen", "is_correct": true },
+                { "text": "Die Gewinnmarge der für Sicherheitslösungen eingesetzten Produkte", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-007",
+            "text": "Welche Methoden nennt der BSI-Standard 200-1 zur Überprüfung der Eignung und Wirksamkeit von Sicherheitsmaßnahmen?",
+            "explanation": "Der Standard nennt als Methoden die Auswertung zurückliegender Sicherheitsvorfälle, Mitarbeiterbefragungen und Penetrationstests. Eine Umfrage unter Kunden über deren Zufriedenheit ist nicht als Methode genannt.",
+            "quote": "Zur Überprüfung auf ihre Eignung können z. B. zurückliegende Sicherheitsvorfälle ausgewertet, Mitarbeiter befragt oder Penetrationstests durchgeführt werden.",
+            "topic": "check",
+            "difficulty": "basis",
+            "learning_objective": "Methoden zur Eignungsprüfung von Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 37,
+            "page_end": null,
+            "answers": [
+                { "text": "Auswertung zurückliegender Sicherheitsvorfälle", "is_correct": true },
+                { "text": "Mitarbeiterbefragungen", "is_correct": true },
+                { "text": "Penetrationstests", "is_correct": true },
+                { "text": "Kundenzufriedenheitsumfragen zur Servicequalität", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.3-008",
+            "text": "Welche Informationen sollten laut BSI-Standard 200-1 typischerweise Bestandteil der Managementberichte im Rahmen der Managementbewertungen sein?",
+            "explanation": "Der Standard nennt beispielhaft: Übersicht über den aktuellen Status im Sicherheitsprozess, Begutachtung von Folgemaßnahmen vorangegangener Managementbewertungen, Rückmeldungen von Kunden und Mitarbeitern sowie Überblick über neu aufgetretene Bedrohungen und Sicherheitslücken. Detaillierte Gehaltslisten der IT-Mitarbeiter sind nicht genannt.",
+            "quote": "Übersicht über den aktuellen Status im Sicherheitsprozess, • Begutachtung von Folgemaßnahmen vorangegangener Managementbewertungen, • Rückmeldungen von Kunden und Mitarbeitern sowie • Überblick über neu aufgetretene Bedrohungen und Sicherheitslücken.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Typische Inhalte von Managementberichten im ISMS benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Übersicht über den aktuellen Status im Sicherheitsprozess", "is_correct": true },
+                { "text": "Begutachtung von Folgemaßnahmen vorangegangener Managementbewertungen", "is_correct": true },
+                { "text": "Überblick über neu aufgetretene Bedrohungen und Sicherheitslücken", "is_correct": true },
+                { "text": "Detaillierte Gehaltslisten aller IT-Mitarbeiter", "is_correct": false }
+            ]
+        }
+    ]
+}

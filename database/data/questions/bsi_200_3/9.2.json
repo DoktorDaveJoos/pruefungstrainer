@@ -1,0 +1,146 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "9.2",
+        "chapter_title": "Moderation der Risikoanalyse",
+        "page_start": 49,
+        "page_end": 50
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-9.2-001",
+            "text": "Welche Sitzungsorganisation empfiehlt der BSI-Standard 200-3 für die Durchführung einer Risikoanalyse in der Praxis?",
+            "explanation": "Der Standard hält fest, dass sich mehrere kurze Sitzungen gegenüber einer einzigen langen Sitzung bewährt haben. Eine einzelne lange Sitzung, eine reine Einzelarbeit des Moderators oder mehrtägige Workshops ohne Unterbrechung werden nicht empfohlen.",
+            "quote": "In der Praxis hat es sich bewährt, hierzu besser mehrere kurze als eine lange Sitzung mit allen beteiligten Mitarbeitern durchzuführen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die in der Praxis bewährte Sitzungsstruktur für Risikoanalysen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Mehrere kurze Sitzungen statt einer einzigen langen Sitzung", "is_correct": true },
+                { "text": "Eine einzige lange Sitzung, damit alle Aspekte in einem Zug abgearbeitet werden", "is_correct": false },
+                { "text": "Eine reine Einzelarbeit des Moderators ohne beteiligte Mitarbeiter", "is_correct": false },
+                { "text": "Mehrtägige Workshops ohne Unterbrechung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.2-002",
+            "text": "Welche Personengruppen sollen laut BSI-Standard 200-3 an der Risikoanalyse-Sitzung für ein Zielobjekt teilnehmen?",
+            "explanation": "Der Standard nennt ausdrücklich Informationssicherheitsbeauftragte, Fachverantwortliche, Administratoren und Benutzer des betrachteten Zielobjekts sowie gegebenenfalls externe Sachverständige. Kunden oder Öffentlichkeitsvertreter werden nicht genannt.",
+            "quote": "Es sollten Informationssicherheitsbeauftragte, Fachverantwortliche, Administratoren und Benutzer des jeweils betrachteten Zielobjekts und gegebenenfalls auch externe Sachverständige daran teilnehmen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vorgesehenen Teilnehmer einer Risikoanalyse-Sitzung aufzählen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Informationssicherheitsbeauftragte, Fachverantwortliche, Administratoren und Benutzer des Zielobjekts", "is_correct": true },
+                { "text": "Gegebenenfalls externe Sachverständige", "is_correct": true },
+                { "text": "Kunden und Vertreter der Öffentlichkeit", "is_correct": false },
+                { "text": "Ausschließlich der Informationssicherheitsbeauftragte ohne weitere Rollen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.2-003",
+            "text": "Warum soll bei einer Risikoanalyse-Sitzung zumindest gegen Ende ein Vertreter der Leitungsebene anwesend sein?",
+            "explanation": "Der Standard begründet die Anwesenheit der Leitungsebene damit, dass die notwendigen Beschlüsse zu den einzelnen Schritten der Risikoanalyse – etwa zu Risikoakzeptanz, Kosten und Umsetzbarkeit – direkt konsolidiert werden können. Die anderen Gründe (Protokollführung, Moderation, Kontrolle der Teilnehmer) werden im Text nicht genannt.",
+            "quote": "Damit die für die jeweiligen Schritte der Risikoanalyse notwendigen Beschlüsse direkt konsolidiert werden können, z. B. zu Risikoakzeptanz, Kosten und Umsetzbarkeit, sollte (zumindest gegen Ende) ein Vertreter der Leitungsebene anwesend sein.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck der Teilnahme eines Leitungsvertreters an der Risikoanalyse-Sitzung erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Damit notwendige Beschlüsse, z. B. zu Risikoakzeptanz, Kosten und Umsetzbarkeit, direkt konsolidiert werden können", "is_correct": true },
+                { "text": "Damit die Leitungsebene das Sitzungsprotokoll selbst erstellt", "is_correct": false },
+                { "text": "Damit die Leitungsebene die Moderation übernimmt", "is_correct": false },
+                { "text": "Damit die Leitungsebene die Teilnehmerzahl kontrolliert", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.2-004",
+            "text": "Welche Teamgröße hat sich laut BSI-Standard 200-3 für ein Risikoanalyse-Team bewährt?",
+            "explanation": "Der Standard nennt ausdrücklich vier bis acht Personen als bewährte Teamgröße. Zwei bis drei Personen wären zu klein, zehn bis fünfzehn oder mehr als zwanzig Personen zu groß.",
+            "quote": "Das Team sollte nicht zu groß sein (bewährt haben sich vier bis acht Personen).",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene Teamgröße für eine Risikoanalyse-Sitzung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Vier bis acht Personen", "is_correct": true },
+                { "text": "Zwei bis drei Personen", "is_correct": false },
+                { "text": "Zehn bis fünfzehn Personen", "is_correct": false },
+                { "text": "Mehr als zwanzig Personen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.2-005",
+            "text": "Welche Qualifikation soll der Moderator einer Risikoanalyse-Sitzung laut BSI-Standard 200-3 mitbringen?",
+            "explanation": "Der Standard fordert, dass der Moderator schon an Risikoanalysen teilgenommen hat, sodass er die Vorgehensweise kennt. Eine Zertifizierung als IT-Sicherheitsauditor, eine juristische Ausbildung oder eine Zugehörigkeit zur Leitungsebene werden nicht verlangt.",
+            "quote": "Der Moderator sollte schon an Risikoanalysen teilgenommen haben, sodass er die Vorgehensweise kennt.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die Moderatorqualifikation in einer Risikoanalyse wiedergeben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Er sollte bereits an Risikoanalysen teilgenommen haben, sodass er die Vorgehensweise kennt", "is_correct": true },
+                { "text": "Er muss als IT-Sicherheitsauditor zertifiziert sein", "is_correct": false },
+                { "text": "Er muss über eine juristische Ausbildung verfügen", "is_correct": false },
+                { "text": "Er muss der Leitungsebene angehören", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.2-006",
+            "text": "Welche Faustregel empfiehlt der BSI-Standard 200-3 für die inhaltliche Fokussierung einer Risikoanalyse?",
+            "explanation": "Der Standard verweist auf die 80:20-Regel und fordert, die wahrscheinlichsten Gefährdungen und plausibelsten Lösungen in den Vordergrund zu stellen. Esoterische, extrem seltene Gefährdungen gelten gerade als Zeichen nachlassender Konzentration und sollen nicht Schwerpunkt der Analyse sein.",
+            "quote": "Auch bei einer Risikoanalyse sollte die 80:20-Regel beachtet • Da ohnehin nicht jeder mögliche Sachverhalt betrachtet werden kann, sollten immer die am wahrscheinlichsten Gefährdungen und die plausibelsten Lösungen im Vordergrund stehen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Anwendung der 80:20-Regel in der Risikoanalyse begründen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Die 80:20-Regel anwenden und die wahrscheinlichsten Gefährdungen sowie plausibelsten Lösungen in den Vordergrund stellen", "is_correct": true },
+                { "text": "Jede denkbare Gefährdung vollständig betrachten, um Lücken auszuschließen", "is_correct": false },
+                { "text": "Gerade die esoterischen, extrem seltenen Gefährdungen in den Mittelpunkt stellen", "is_correct": false },
+                { "text": "Nur die Gefährdungen betrachten, die das BSI zentral vorgibt", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-9.2-007",
+            "text": "Wie soll laut BSI-Standard 200-3 vorgegangen werden, wenn der für eine Risikoanalyse betrachtete Bereich zu umfangreich ist?",
+            "explanation": "Der Standard empfiehlt, zu umfangreiche Bereiche in Teilbereiche aufzuteilen. Die Analyse ganz ausfallen zu lassen, die Dauer zu verdoppeln oder die Teamgröße unbeschränkt zu erhöhen widerspricht den Vorgaben (empfohlen sind vier bis acht Personen und normalerweise ein Tag).",
+            "quote": "Wenn der betrachtete Bereich zu umfangreich ist, sollte er in Teilbereiche aufgeteilt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Umgang mit zu umfangreichen Analysebereichen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Der Bereich sollte in Teilbereiche aufgeteilt werden", "is_correct": true },
+                { "text": "Die Risikoanalyse sollte in diesem Fall ganz ausfallen", "is_correct": false },
+                { "text": "Die Sitzungsdauer sollte verdoppelt werden", "is_correct": false },
+                { "text": "Die Teamgröße sollte unbegrenzt erhöht werden", "is_correct": false }
+            ]
+        }
+    ]
+}

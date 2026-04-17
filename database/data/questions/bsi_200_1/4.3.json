@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "4.3",
+        "chapter_title": "Erfolgskontrolle im Sicherheitsprozess",
+        "page_start": 24,
+        "page_end": 25
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-4.3-001",
+            "text": "Wer trägt die Verantwortung für die Erfolgskontrolle und Bewertung des Sicherheitsprozesses (Managementbewertung)?",
+            "explanation": "Der Standard legt fest, dass die Erfolgskontrolle und Bewertung des Sicherheitsprozesses regelmäßig durch die Leitungsebene erfolgen soll. Der Informationssicherheitsbeauftragte oder externe Auditoren werden hier nicht als verantwortliche Instanz genannt; die Mitarbeitenden sind ebenfalls nicht zuständig.",
+            "quote": "Eine Erfolgskontrolle und Bewertung des Sicherheitsprozesses durch die Leitungsebene sollte regelmäßig stattfinden (Managementbewertung).",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die für die Managementbewertung verantwortliche Rolle benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 24,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Leitungsebene", "is_correct": true },
+                { "text": "Der Informationssicherheitsbeauftragte", "is_correct": false },
+                { "text": "Ein externer Auditor", "is_correct": false },
+                { "text": "Alle Mitarbeitenden gemeinsam", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.3-002",
+            "text": "In welchen Fällen müssen Kontrollen und Bewertungen des Sicherheitsprozesses auch zwischen den Routineterminen durchgeführt werden?",
+            "explanation": "Der Standard nennt ausdrücklich die Häufung von Sicherheitsvorfällen und deutliche Änderungen der Rahmenbedingungen als Anlässe für außerplanmäßige Kontrollen. Ein Wechsel einzelner IT-Administratoren oder ein neuer Designentwurf der Sicherheitsleitlinie werden als Auslöser nicht genannt.",
+            "quote": "Bei Bedarf (z. B. bei der Häufung von Sicherheitsvorfällen oder einer deutlichen Änderung der Rahmenbedingungen) müssen entsprechende Kontrollen und Bewertungen auch zwischen den Routineterminen vorgenommen werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Auslöser für außerplanmäßige Managementbewertungen erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 24,
+            "page_end": null,
+            "answers": [
+                { "text": "Bei einer Häufung von Sicherheitsvorfällen", "is_correct": true },
+                { "text": "Bei einer deutlichen Änderung der Rahmenbedingungen", "is_correct": true },
+                { "text": "Beim Wechsel einzelner IT-Administratoren", "is_correct": false },
+                { "text": "Beim Entwurf eines neuen Designs der Sicherheitsleitlinie", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.3-003",
+            "text": "Worauf liegt laut BSI-Standard 200-1 der Schwerpunkt bei der Erfolgskontrolle des Sicherheitsprozesses?",
+            "explanation": "Der Standard stellt klar, dass nicht einzelne Maßnahmen oder organisatorische Regelungen überprüft werden sollen, sondern eine Gesamtbetrachtung im Mittelpunkt steht. Die Prüfung technischer Einzelmaßnahmen, der Wirksamkeit einzelner Tools oder der persönlichen Leistung des ISB sind daher nicht der Fokus.",
+            "quote": "Der Schwerpunkt bei der Erfolgskontrolle des Sicherheitsprozesses liegt dabei nicht auf der Überprüfung einzelner Sicherheitsmaßnahmen oder organisatorischer Regelungen, sondern auf einer Gesamtbetrachtung.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Fokus der Erfolgskontrolle (Gesamtbetrachtung vs. Einzelmaßnahmen) einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 24,
+            "page_end": null,
+            "answers": [
+                { "text": "Auf einer Gesamtbetrachtung des Sicherheitsprozesses", "is_correct": true },
+                { "text": "Auf der Überprüfung einzelner Sicherheitsmaßnahmen", "is_correct": false },
+                { "text": "Auf der Wirksamkeitsprüfung einzelner technischer Werkzeuge", "is_correct": false },
+                { "text": "Auf der persönlichen Leistungsbewertung des ISB", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.3-004",
+            "text": "Welche Leitfragen sollten laut BSI-Standard 200-1 unter anderem bei der Managementbewertung des Sicherheitsprozesses diskutiert werden?",
+            "explanation": "Der Standard nennt u. a. die Angemessenheit der Sicherheitsziele und die Aktualität der Leitlinie zur Informationssicherheit als zu diskutierende Leitfragen. Die Markenwirkung der Institution oder die Personalfluktuation im IT-Betrieb werden in diesem Kontext nicht als Diskussionsfragen genannt.",
+            "quote": "Sind die Sicherheitsziele noch angemessen? • Ist die Leitlinie zur Informationssicherheit noch aktuell?",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die vom Standard vorgeschlagenen Leitfragen für die Managementbewertung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 25,
+            "page_end": null,
+            "answers": [
+                { "text": "Ob die Sicherheitsziele noch angemessen sind", "is_correct": true },
+                { "text": "Ob die Leitlinie zur Informationssicherheit noch aktuell ist", "is_correct": true },
+                { "text": "Wie hoch die Personalfluktuation im IT-Betrieb ist", "is_correct": false },
+                { "text": "Wie stark die Markenwirkung der Institution am Markt ist", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.3-005",
+            "text": "Welche Fragen sollten sich Betroffene bei der Bewertung der Sicherheitsstrategie zusätzlich stellen?",
+            "explanation": "Der Standard nennt explizit Fragen zur Angemessenheit der Strategie, zur Eignung des Konzepts (inkl. Erfüllung gesetzlicher Anforderungen) sowie zum Verhältnis von Aufwand und Geschäftszielen. Die Frage nach der Marktposition der Institution gehört nicht zu den im Standard aufgeführten Prüffragen.",
+            "quote": "Ist die Sicherheitsstrategie noch angemessen? • Ist das Sicherheitskonzept geeignet, um die gesteckten Ziele zu erreichen? • Steht der Aufwand – also Kosten, Personal, Material –, der zur Erreichung der Sicherheitsziele betrieben wird, in einem sinnvollen Verhältnis zu den Geschäftszielen",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Prüffragen zur Sicherheitsstrategie von unpassenden Fragen abgrenzen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 25,
+            "page_end": null,
+            "answers": [
+                { "text": "Ist die Sicherheitsstrategie noch angemessen?", "is_correct": true },
+                { "text": "Ist das Sicherheitskonzept geeignet, um die gesteckten Ziele zu erreichen?", "is_correct": true },
+                { "text": "Steht der Aufwand in einem sinnvollen Verhältnis zu den Geschäftszielen?", "is_correct": true },
+                { "text": "Wie positioniert sich die Institution am Markt gegenüber Wettbewerbern?", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.3-006",
+            "text": "Wie müssen laut BSI-Standard 200-1 die Ergebnisse und Beschlüsse der Managementbewertung behandelt werden?",
+            "explanation": "Der Standard fordert ausdrücklich, dass alle Ergebnisse und Beschlüsse nachvollziehbar dokumentiert werden. Eine ausschließlich mündliche Überlieferung, die alleinige Speicherung im E-Mail-Postfach der Leitung oder die Veröffentlichung im Intranet sind nicht vorgesehen.",
+            "quote": "Alle Ergebnisse und Beschlüsse müssen nachvollziehbar dokumentiert werden [DOK].",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Dokumentationspflicht für Ergebnisse der Managementbewertung erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 24,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen nachvollziehbar dokumentiert werden", "is_correct": true },
+                { "text": "Sie müssen ausschließlich mündlich an die Führungskräfte weitergegeben werden", "is_correct": false },
+                { "text": "Sie werden nur im E-Mail-Postfach der Leitungsebene archiviert", "is_correct": false },
+                { "text": "Sie müssen vollständig im Intranet veröffentlicht werden", "is_correct": false }
+            ]
+        }
+    ]
+}

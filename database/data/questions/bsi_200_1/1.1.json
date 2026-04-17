@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "1.1",
+        "chapter_title": "Versionshistorie",
+        "page_start": 5,
+        "page_end": 5
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-1.1-001",
+            "text": "Welchen BSI-Standard löst der BSI-Standard 200-1 ab?",
+            "explanation": "Der BSI-Standard 200-1 ist die aktualisierte Nachfolgefassung des BSI-Standards 100-1. Der BSI-Standard 100-2 wurde nicht durch 200-1, sondern durch 200-2 abgelöst. Der BSI-Standard 200-2 selbst beschreibt die IT-Grundschutz-Methodik und ist ein eigenständiges Dokument. ISO/IEC 27001 ist eine Norm, kein BSI-Standard.",
+            "quote": "Der BSI-Standard 200-1 löst den BSI-Standard 100-1 ab.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Ablösungsbeziehung zwischen BSI-Standard 100-1 und 200-1 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                { "text": "BSI-Standard 100-1", "is_correct": true },
+                { "text": "BSI-Standard 100-2", "is_correct": false },
+                { "text": "BSI-Standard 200-2", "is_correct": false },
+                { "text": "ISO/IEC 27001", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.1-002",
+            "text": "Welche inhaltlichen Änderungen wurden mit der Version CD 1.0 (April 2017) am BSI-Standard 200-1 gegenüber dem Vorgänger vorgenommen?",
+            "explanation": "Die Version CD 1.0 aktualisierte den bisherigen BSI-Standard 100-1 an zwei Stellen: an die Fortschreibung der ISO-Normen sowie an den BSI-Standard 200-2 zur IT-Grundschutz-Methodik. Der PDCA-Zyklus wurde in dieser Version nicht neu eingeführt, und das IT-Grundschutz-Kompendium wurde in der Versionshistorie des 200-1 nicht umbenannt.",
+            "quote": "Anpassungen an Fortschreibung der ISO-Normen • Anpassungen an BSI-Standard 200-2 (IT-Grundschutz-Methodik)",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die mit Version CD 1.0 vorgenommenen Anpassungen im BSI-Standard 200-1 identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                { "text": "Anpassungen an die Fortschreibung der ISO-Normen", "is_correct": true },
+                { "text": "Anpassungen an den BSI-Standard 200-2 (IT-Grundschutz-Methodik)", "is_correct": true },
+                { "text": "Erstmalige Einführung des PDCA-Zyklus", "is_correct": false },
+                { "text": "Umbenennung des IT-Grundschutz-Kompendiums", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.1-003",
+            "text": "Welche Ergänzungen enthielt die Version V 1.0 (Oktober 2017) des BSI-Standards 200-1?",
+            "explanation": "Die Version V 1.0 war primär eine redaktionelle Überarbeitung, in die Anwenderkommentare eingearbeitet wurden und in der eine klare Unterscheidung zwischen Norm und Standard vorgenommen wurde. Eine Einführung des IT-Grundschutz-Kompendiums fand im Rahmen der Versionshistorie des 200-1 nicht statt, und der BSI-Standard 200-3 wurde nicht abgeschafft — er besteht weiterhin eigenständig.",
+            "quote": "Anwenderkommentare eingearbeitet • im Wesentlichen sprachliche Präzisierungen • Unterscheidung zwischen Norm und Standard",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die mit Version V 1.0 vorgenommenen redaktionellen Ergänzungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                { "text": "Einarbeitung von Anwenderkommentaren", "is_correct": true },
+                { "text": "Unterscheidung zwischen Norm und Standard", "is_correct": true },
+                { "text": "Erstmalige Einführung des IT-Grundschutz-Kompendiums", "is_correct": false },
+                { "text": "Abschaffung des BSI-Standards 200-3", "is_correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "1.1",
+        "chapter_title": "Versionshistorie",
+        "page_start": 5,
+        "page_end": 5
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-1.1-001",
+            "text": "Welchen BSI-Standard löst der BSI-Standard 200-3 laut Versionshistorie ab?",
+            "explanation": "Die Versionshistorie stellt klar, dass der BSI-Standard 200-3 den BSI-Standard 100-3 ablöst. 100-1 wird durch 200-1 abgelöst, 100-2 durch 200-2. 100-4 ist ein eigenständiger Standard zum Notfallmanagement.",
+            "quote": "Der BSI-Standard 200-3 löst den BSI-Standard 100-3 ab.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Ablösungsbeziehung zwischen BSI-Standard 100-3 und 200-3 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "BSI-Standard 100-3",
+                    "is_correct": true
+                },
+                {
+                    "text": "BSI-Standard 100-2",
+                    "is_correct": false
+                },
+                {
+                    "text": "BSI-Standard 100-4",
+                    "is_correct": false
+                },
+                {
+                    "text": "ISO/IEC 27005",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.1-002",
+            "text": "Welche methodischen Neuerungen wurden mit der Version CD 1.0 (Oktober 2016) im Rahmen der Neukonzeption eingeführt?",
+            "explanation": "Die Versionshistorie nennt explizit die Umstellung der Risikoanalyse auf die elementaren Gefährdungen, die Einführung des Matrix-Ansatzes zur Bewertung von Risiken sowie die Einführung von Risikoappetit und Chancenmanagement. Eine Einführung der Basis-Absicherung gehört zu BSI-Standard 200-2, nicht 200-3.",
+            "quote": "Risikoanalyse auf die elementaren Gefährdungen umgestellt • Einführung Matrix-Ansatz zur Bewertung von Risiken • Einführung Risikoappetit und Chancenmanagement",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die mit Version CD 1.0 neu eingeführten methodischen Elemente benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Umstellung der Risikoanalyse auf die elementaren Gefährdungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einführung des Matrix-Ansatzes zur Bewertung von Risiken",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einführung von Risikoappetit und Chancenmanagement",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einführung der Basis-Absicherung als Vorgehensweise",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.1-003",
+            "text": "Welche Begriffsänderungen wurden mit der Version 1.0 (Oktober 2017) am BSI-Standard 200-3 vorgenommen?",
+            "explanation": "Laut Versionshistorie wurde „Eintrittswahrscheinlichkeit“ durch „Eintrittshäufigkeit“ und „Handlungsalternativen“ durch „Handlungsoptionen“ ersetzt. Eine Umbenennung von „Risiko“ in „Gefährdung“ oder von „Schaden“ in „Verlust“ findet sich nicht in der Versionshistorie.",
+            "quote": "Begriffe „Eintrittswahrscheinlichkeit“ und „Handlungsalternativen“ durch „Eintrittshäufigkeit“ bzw. „Handlungsoptionen“ ersetzt",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die mit Version 1.0 vorgenommenen Begriffsänderungen identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "„Eintrittswahrscheinlichkeit“ wurde durch „Eintrittshäufigkeit“ ersetzt.",
+                    "is_correct": true
+                },
+                {
+                    "text": "„Handlungsalternativen“ wurde durch „Handlungsoptionen“ ersetzt.",
+                    "is_correct": true
+                },
+                {
+                    "text": "„Risiko“ wurde durch „Gefährdung“ ersetzt.",
+                    "is_correct": false
+                },
+                {
+                    "text": "„Schaden“ wurde durch „Verlust“ ersetzt.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.1-004",
+            "text": "In welche zwei Unterschritte wurde das Kapitel Risikoeinstufung mit Version 1.0 (Oktober 2017) unterteilt?",
+            "explanation": "Die Versionshistorie nennt die Unterteilung in Risikoeinschätzung und Risikobewertung. Risikobehandlung ist ein eigenständiges Kapitel (Kapitel 6) und keine Unterteilung der Risikoeinstufung. Risikoidentifikation und Risikotransfer werden in diesem Zusammenhang nicht erwähnt.",
+            "quote": "Kapitel Risikoeinstufung unterteilt in Risikoeinschätzung und Risikobewertung",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Unterteilung des Kapitels Risikoeinstufung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Risikoeinschätzung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikobewertung",
+                    "is_correct": true
+                },
+                {
+                    "text": "Risikobehandlung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Risikoidentifikation",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.1-005",
+            "text": "Welche inhaltliche Fokussierung wurde mit Version 1.0 (Oktober 2017) am Ziel des Dokuments vorgenommen?",
+            "explanation": "Die Versionshistorie führt aus, dass das Ziel des Dokuments auf die Darstellung der Risikoanalyse konzentriert wurde. Die Ausrichtung auf Notfallmanagement, Zertifizierung oder Grundschutz-Check wird an dieser Stelle nicht genannt.",
+            "quote": "Ziel des Dokuments auf die Darstellung der Risikoanalyse konzentriert",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die inhaltliche Zielfokussierung der Version 1.0 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das Ziel wurde auf die Darstellung der Risikoanalyse konzentriert.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Das Ziel wurde auf das Notfallmanagement ausgeweitet.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Ziel wurde um Zertifizierungsvorgaben erweitert.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Ziel wurde auf den IT-Grundschutz-Check fokussiert.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-1.1-006",
+            "text": "Welche inhaltliche Ergänzung wurde mit Version 1.0 (Oktober 2017) in Bezug auf internationale Normen hinzugefügt?",
+            "explanation": "Die Versionshistorie nennt ausdrücklich die Gegenüberstellung von Begriffen aus ISO/IEC 31000 und dem BSI-Standard 200-3. Eine Integration von ISO/IEC 27001-Anforderungen, ein direkter Verweis auf NIST oder eine Aufnahme von COBIT-Begriffen werden nicht aufgeführt.",
+            "quote": "Gegenüberstellung von Begriffen aus ISO/IEC 31000 und dem BSI-Standard 200-3",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die mit Version 1.0 ergänzte Gegenüberstellung internationaler Begriffe identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 5,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Gegenüberstellung von Begriffen aus ISO/IEC 31000 und dem BSI-Standard 200-3",
+                    "is_correct": true
+                },
+                {
+                    "text": "Integration der ISO/IEC 27001-Anforderungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Direkter Verweis auf die NIST-Risikomanagement-Framework-Schritte",
+                    "is_correct": false
+                },
+                {
+                    "text": "Aufnahme der COBIT-Risikobegriffe",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

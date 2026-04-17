@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "1.4",
+        "chapter_title": "Anwendungsweise",
+        "page_start": 7,
+        "page_end": 8
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-1.4-001",
+            "text": "Was umfasst ein Managementsystem laut BSI-Standard 200-1?",
+            "explanation": "Laut Passage umfasst ein Managementsystem alle Regelungen, die für die Steuerung und Lenkung der Institution sorgen und somit zur Zielerreichung beitragen. Die übrigen Optionen (rein technische Lösungen, Softwarewerkzeuge, Rollenzuordnungen) greifen zu kurz.",
+            "quote": "Ein Managementsystem umfasst alle Regelungen, die für die Steuerung und Lenkung der Institution sorgen und somit zur Zielerreichung beitragen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang eines Managementsystems im ISMS-Kontext erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Alle Regelungen, die für die Steuerung und Lenkung der Institution sorgen und zur Zielerreichung beitragen", "is_correct": true },
+                { "text": "Ausschließlich technische Schutzmaßnahmen wie Firewalls und Verschlüsselung", "is_correct": false },
+                { "text": "Nur die eingesetzten Softwarewerkzeuge zur Risikobewertung", "is_correct": false },
+                { "text": "Ausschließlich die Zuweisung von Rollen an Einzelpersonen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.4-002",
+            "text": "Was legt ein Managementsystem für Informationssicherheit laut BSI-Standard 200-1 fest?",
+            "explanation": "Die Passage erklärt explizit, dass das ISMS festlegt, mit welchen Instrumenten und Methoden die Leitungsebene die auf Informationssicherheit ausgerichteten Aufgaben und Aktivitäten nachvollziehbar lenken kann. Die Betonung liegt auf der Steuerungsbefähigung der Leitungsebene.",
+            "quote": "Ein Managementsystem für Informationssicherheit legt somit fest, mit welchen Instrumenten und Methoden die Leitungsebene einer Institution die auf Informationssicherheit ausgerichteten Aufgaben und Aktivitäten nachvollziehbar lenken kann.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zweck eines ISMS aus Sicht der Leitungsebene benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Instrumente und Methoden, mit denen die Leitungsebene Sicherheitsaufgaben nachvollziehbar lenken kann", "is_correct": true },
+                { "text": "Die exakten technischen Konfigurationen aller IT-Systeme", "is_correct": false },
+                { "text": "Die verpflichtenden Gehälter der IT-Sicherheitsbeauftragten", "is_correct": false },
+                { "text": "Die Marketingstrategie der Institution", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.4-003",
+            "text": "Welche Fragen beantwortet der BSI-Standard 200-1 laut Passage unter anderem?",
+            "explanation": "Die Passage listet diese Fragen explizit als Inhalte des Standards auf: Erfolgsfaktoren, Steuerung des Sicherheitsprozesses, Entwicklung von Sicherheitszielen und -strategien sowie Auswahl von Maßnahmen und Erstellung von Konzepten. Konkrete Firewall-Konfigurationen oder Stellenbesetzung werden im Standard nicht behandelt.",
+            "quote": "Was sind die Erfolgsfaktoren beim Management von Informationssicherheit? • Wie kann der Sicherheitsprozess vom verantwortlichen Management gesteuert und überwacht werden? • Wie werden Sicherheitsziele und eine angemessene Sicherheitsstrategie entwickelt? • Wie werden Sicherheitsmaßnahmen ausgewählt und Sicherheitskonzepte erstellt?",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Kerninhalte des BSI-Standards 200-1 aus der Anwendungsweise erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Was sind die Erfolgsfaktoren beim Management von Informationssicherheit?", "is_correct": true },
+                { "text": "Wie kann der Sicherheitsprozess vom verantwortlichen Management gesteuert und überwacht werden?", "is_correct": true },
+                { "text": "Wie werden Sicherheitsziele und eine angemessene Sicherheitsstrategie entwickelt?", "is_correct": true },
+                { "text": "Welche konkrete Firewall-Regel gilt für DMZ-Systeme am Standort A?", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.4-004",
+            "text": "Wo ist die Methodik des IT-Grundschutzes beschrieben?",
+            "explanation": "Die Passage verweist ausdrücklich auf BSI-Standard 200-2 als Fundstelle der IT-Grundschutz-Methodik. 200-1 beschreibt den ISMS-Aufbau allgemein, 200-3 behandelt die Risikoanalyse, das Kompendium enthält Anforderungen zur Implementierung.",
+            "quote": "Die Methodik des IT-Grundschutzes wird im BSI-Standard 200-2 (siehe [BSI2]) beschrieben und ist so gestaltet, dass ein sowohl im Hinblick auf die Bedrohungslage als auch die Geschäftsziele angemessenes Sicherheitsniveau erreicht werden kann.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle des BSI-Standards 200-2 innerhalb der BSI-Standard-Reihe einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Im BSI-Standard 200-2", "is_correct": true },
+                { "text": "Im BSI-Standard 200-1", "is_correct": false },
+                { "text": "Im BSI-Standard 200-3", "is_correct": false },
+                { "text": "Im IT-Grundschutz-Kompendium", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.4-005",
+            "text": "Welche Funktion hat das IT-Grundschutz-Kompendium laut Passage?",
+            "explanation": "Die Passage beschreibt das Kompendium als Ort, an dem Anforderungen für die praktische Implementierung des angemessenen Sicherheitsniveaus formuliert werden. Es ersetzt weder den Standard 200-2 noch enthält es eine Zertifizierungsordnung oder reine Risikoanalyseverfahren.",
+            "quote": "Ergänzend dazu werden im IT-Grundschutz-Kompendium Anforderungen für die praktische Implementierung des angemessenen Sicherheitsniveaus formuliert.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Die Rolle des IT-Grundschutz-Kompendiums in Abgrenzung zu den Standards beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Es formuliert Anforderungen für die praktische Implementierung des angemessenen Sicherheitsniveaus", "is_correct": true },
+                { "text": "Es ersetzt den BSI-Standard 200-2 vollständig", "is_correct": false },
+                { "text": "Es enthält ausschließlich die Zertifizierungsordnung des BSI", "is_correct": false },
+                { "text": "Es beschreibt nur Risikoanalyseverfahren für Hochsicherheitsumgebungen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-1.4-006",
+            "text": "Was versteht der BSI-Standard 200-1 konkret unter dem Begriff „IT-System“?",
+            "explanation": "Die Passage definiert den Begriff ausdrücklich weit: er umfasst klassische IT-Systeme (Server, Arbeitsplatzrechner, Smartphones, Netzkomponenten) sowie Industrial Control Systems (ICS) und Komponenten aus dem Internet of Things (IoT). Eine Beschränkung auf zentrale Serversysteme oder Web-Anwendungen widerspricht der Definition.",
+            "quote": "Wenn in diesem Standard der Begriff „IT-System“ verwendet wird, sind damit nicht nur „klassische“ IT-Systeme, wie zum Beispiel Server, Arbeitsplatzrechner, Smartphones oder Netzkomponenten, gemeint. Der Begriff „IT-Systeme“ schließt hier auch Industrial Control Systems (ICS) ebenso wie Komponenten aus dem Bereich Internet of Things (IoT) mit ein.",
+            "topic": "standards",
+            "difficulty": "basis",
+            "learning_objective": "Den erweiterten Begriff „IT-System“ im BSI-Standard 200-1 abgrenzen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 7,
+            "page_end": null,
+            "answers": [
+                { "text": "Klassische IT-Systeme wie Server, Arbeitsplatzrechner, Smartphones und Netzkomponenten", "is_correct": true },
+                { "text": "Industrial Control Systems (ICS) und Komponenten aus dem Bereich Internet of Things (IoT)", "is_correct": true },
+                { "text": "Ausschließlich zentrale Serversysteme im Rechenzentrum", "is_correct": false },
+                { "text": "Nur Web-Anwendungen und zugehörige Datenbanken", "is_correct": false }
+            ]
+        }
+    ]
+}

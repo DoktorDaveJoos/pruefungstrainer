@@ -1,0 +1,21 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Three questions on Aktionspunkte 8.4.1 (organisatorische Vorarbeiten des IT-Grundschutz-Checks). All correct answers are verbatim from the source Aktionspunkte list. Distractors are plausible but not in the source. Quotes verified clean. Topic 'check' is correct for IT-Grundschutz-Check content. Schema and pages correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-8.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-8.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-2-8.4-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

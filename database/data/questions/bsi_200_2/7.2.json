@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "7.2",
+        "chapter_title": "Festlegung des Geltungsbereichs für die Kern-Absicherung",
+        "page_start": 69,
+        "page_end": 70
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-7.2-001",
+            "text": "Warum wird bei der Kern-Absicherung bewusst ein eingeschränkter Informationsverbund betrachtet?",
+            "explanation": "Laut Kapitel 7.2 ist eine ganzheitliche Umsetzung in einem großen Schritt oft ein zu ehrgeiziges Ziel; viele kleine Schritte ohne hohe Investitionskosten sind erfolgversprechender. Daher konzentriert sich die Kern-Absicherung auf besonders schützenswerte Assets. Gesetzliche Vorgaben oder eine Beschränkung durch Zertifizierungsstellen sind nicht der genannte Grund.",
+            "quote": "Die ganzheitliche Umsetzung von Informationssicherheit, wie dies mit der Standard-Absicherung erfolgt, ist in einem einzelnen großen Schritt oft ein zu ehrgeiziges Ziel. • Daher konzentriert sich die Kern-Absicherung auf die besonders schützenswerten Assets und Ressourcen der Institution.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Motivation für einen eingeschränkten Geltungsbereich bei der Kern-Absicherung erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 69,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine ganzheitliche Umsetzung ist in einem Schritt oft ein zu ehrgeiziges Ziel.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Kern-Absicherung konzentriert sich auf besonders schützenswerte Assets und Ressourcen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Gesetzliche Vorgaben verbieten eine ganzheitliche Umsetzung.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Zertifizierungsstelle schreibt die Einschränkung zwingend vor.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.2-002",
+            "text": "Wie wird der betrachtete Geltungsbereich für die Sicherheitskonzeption im IT-Grundschutz generell bezeichnet?",
+            "explanation": "Kapitel 7.2 benennt den Geltungsbereich ausdrücklich als „Informationsverbund“ und stellt fest, dass die Kern-Absicherung einen bewusst eingeschränkten Informationsverbund betrachtet. Die anderen Begriffe sind zwar im IT-Sicherheitskontext gebräuchlich, aber keine im IT-Grundschutz für den Geltungsbereich verwendeten Fachbegriffe.",
+            "quote": "Die Kern-Absicherung betrachtet somit einen bewusst eingeschränkten Informationsverbund.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Begriff „Informationsverbund“ als Geltungsbereich im IT-Grundschutz identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 70,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Informationsverbund",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sicherheitsdomäne",
+                    "is_correct": false
+                },
+                {
+                    "text": "Assetverbund",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zielnetzwerk",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.2-003",
+            "text": "Welche Elemente umfasst der bei der Kern-Absicherung festzulegende Bereich unter anderem?",
+            "explanation": "Laut Kapitel 7.2 umfasst der Bereich unter anderem alle (Teil-)Geschäftsprozesse, Anwendungen, IT-Systeme und Infrastrukturen, die für die Bearbeitung der besonders kritischen Geschäftsprozesse und Informationen benötigt werden. Eine Beschränkung ausschließlich auf IT-Systeme oder auf externe Dienstleister wird im Text nicht gezogen.",
+            "quote": "Dieser umfasst unter anderem alle (Teil-)Geschäftsprozesse, Anwendungen, IT-Systeme, Infrastrukturen, die für die Bearbeitung der besonders kritischen Geschäftsprozesse und Informationen benötigt werden.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Bestandteile des Geltungsbereichs einer Kern-Absicherung aufzählen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 69,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "(Teil-)Geschäftsprozesse und Anwendungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "IT-Systeme und Infrastrukturen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich IT-Systeme",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich externe Dienstleister",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.2-004",
+            "text": "Warum sollte der Informationsverbund bei der Kern-Absicherung möglichst klein gehalten werden?",
+            "explanation": "Kapitel 7.2 betont, dass jedes weitere Zielobjekt, das einem Informationsverbund hinzugefügt wird, die Komplexität der Absicherung erhöht. Die übrigen Aussagen sind Vermutungen oder Umkehrungen der Kernaussage und stehen nicht im Text.",
+            "quote": "Jedes weitere Zielobjekt, das einem Informationsverbund hinzugefügt wird, erhöht die Komplexität der Absicherung.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Zusammenhang zwischen Größe des Informationsverbunds und Absicherungskomplexität erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 70,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Weil jedes zusätzliche Zielobjekt die Komplexität der Absicherung erhöht.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Weil das BSI die maximale Anzahl von Zielobjekten pro Verbund begrenzt.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil ein großer Verbund automatisch zu niedrigem Schutzbedarf führt.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Weil kleine Verbünde keine Modellierung erfordern.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.2-005",
+            "text": "Welche Vorgehensweise empfiehlt der BSI-Standard 200-2 in Zweifelsfällen bezüglich der Einbettung kritischer Objekte?",
+            "explanation": "Laut Kapitel 7.2 kann es in Zweifelsfällen zielführender sein, die kritischen Objekte in kleinen, überschaubaren Bereichen zu betreiben, die vom Rest der Institution abgeschottet sind. Die Integration in die gewohnte Büroumgebung wird als weniger sinnvoll beschrieben, da dadurch alle vernetzten Komponenten auf hohem Niveau abgesichert werden müssten.",
+            "quote": "Daher kann es in Zweifelsfällen zielführender sein, die kritischen Objekte in kleinen, überschaubaren Bereichen zu betreiben, die vom Rest der Institution abgeschottet sind.",
+            "topic": "modellierung",
+            "difficulty": "experte",
+            "learning_objective": "Die Empfehlung zur Abschottung kritischer Objekte in kleinen Bereichen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 70,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Betrieb in kleinen, überschaubaren und vom Rest der Institution abgeschotteten Bereichen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Integration in die gewohnte Büroumgebung zur Kostenreduktion",
+                    "is_correct": false
+                },
+                {
+                    "text": "Betrieb ausschließlich in öffentlichen Cloud-Umgebungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Vollständige Vernetzung mit allen Unternehmensprozessen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "3",
+        "chapter_title": "Übersicht über die elementaren Gefährdungen",
+        "page_start": 13,
+        "page_end": 15
+    },
+    "generated_at": "2026-04-16T22:40:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-3-001",
+            "text": "Wie viele elementare Gefährdungen hat das BSI aus den spezifischen Einzelgefährdungen der IT-Grundschutz-Bausteine herausgearbeitet?",
+            "explanation": "Laut Kapitel 3 hat das BSI aus den vielen spezifischen Einzelgefährdungen der IT-Grundschutz-Bausteine die generellen Aspekte herausgearbeitet und in 47 elementare Gefährdungen überführt. Andere Zahlen (z. B. 40, 50 oder 100) entsprechen nicht der Angabe des Standards.",
+            "quote": "Das BSI hat aus den vielen spezifischen Einzelgefährdungen der IT-Grundschutz-Bausteine die generellen Aspekte herausgearbeitet und in 47 elementare Gefährdungen überführt, die im IT-Grundschutz-Kompendium aufgelistet sind.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Anzahl der elementaren Gefährdungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "47",
+                    "is_correct": true
+                },
+                {
+                    "text": "40",
+                    "is_correct": false
+                },
+                {
+                    "text": "50",
+                    "is_correct": false
+                },
+                {
+                    "text": "100",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-3-002",
+            "text": "Welche Ziele werden bei der Erstellung der Übersicht der elementaren Gefährdungen laut BSI-Standard 200-3 verfolgt?",
+            "explanation": "Elementare Gefährdungen sind für die Verwendung bei der Risikoanalyse optimiert, produktneutral und möglichst technikneutral, kompatibel mit vergleichbaren internationalen Katalogen und Standards sowie nahtlos in den IT-Grundschutz integriert. Eine Beschränkung auf nur eine Branche gehört nicht zu den Zielen.",
+            "quote": "für die Verwendung bei der Risikoanalyse optimiert, • produktneutral (immer), technikneutral (möglichst, bestimmte Techniken prägen so stark den Markt, dass sie auch die abstrahierten Gefährdungen beeinflussen), • kompatibel mit vergleichbaren internationalen Katalogen und Standards und • nahtlos in den IT-Grundschutz integriert.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Gestaltungsziele der elementaren Gefährdungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Optimierung für die Verwendung bei der Risikoanalyse",
+                    "is_correct": true
+                },
+                {
+                    "text": "Produktneutralität und möglichst Technikneutralität",
+                    "is_correct": true
+                },
+                {
+                    "text": "Kompatibilität mit internationalen Katalogen und Standards",
+                    "is_correct": true
+                },
+                {
+                    "text": "Beschränkung auf einen einzelnen Branchen-Sektor",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-3-003",
+            "text": "Welche Art von Gefährdungen wurde bei der Erstellung der Übersicht bewusst nicht in die elementaren Gefährdungen aufgenommen?",
+            "explanation": "Laut Standard wurden Gefährdungen, die überwiegend die fehlende oder unzureichende Umsetzung von Sicherheitsmaßnahmen thematisieren und somit auf indirekte Gefahren verweisen, bewusst nicht benannt. Elementare Naturereignisse, Diebstahl oder Schadprogramme sind hingegen enthalten.",
+            "quote": "Gefährdungen, die überwiegend die fehlende oder unzureichende Umsetzung von Sicherheitsmaßnahmen thematisieren und somit auf indirekte Gefahren verweisen, wurden bewusst nicht benannt.",
+            "topic": "risikoanalyse",
+            "difficulty": "experte",
+            "learning_objective": "Bewusst ausgeschlossene Kategorien bei den elementaren Gefährdungen identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 13,
+            "page_end": 14,
+            "answers": [
+                {
+                    "text": "Gefährdungen, die überwiegend auf fehlende oder unzureichende Sicherheitsmaßnahmen verweisen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Gefährdungen durch elementare Naturereignisse",
+                    "is_correct": false
+                },
+                {
+                    "text": "Gefährdungen durch Diebstahl oder Verlust von Geräten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Gefährdungen durch Schadprogramme",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-3-004",
+            "text": "Welche Grundwerte der Informationssicherheit werden bei den elementaren Gefährdungen als jeweils betroffen ausgewiesen?",
+            "explanation": "Die Übersicht nennt die Grundwerte Vertraulichkeit (C), Integrität (I) und Verfügbarkeit (A). Authentizität, Verbindlichkeit oder Nichtabstreitbarkeit sind keine Grundwerte in dieser Tabelle.",
+            "quote": "Dabei steht C für Confidentiality (Vertraulich- keit), I für Integrity (Integrität) und A für Availability (Verfügbarkeit).",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die drei in der Tabelle der elementaren Gefährdungen verwendeten Grundwerte benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Vertraulichkeit, Integrität und Verfügbarkeit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Vertraulichkeit, Integrität und Authentizität",
+                    "is_correct": false
+                },
+                {
+                    "text": "Vertraulichkeit, Verbindlichkeit und Nachvollziehbarkeit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Integrität, Verfügbarkeit und Nichtabstreitbarkeit",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-3-005",
+            "text": "Wie ist laut BSI-Standard 200-3 die Zuordnung eines oder mehrerer Grundwerte zu einer elementaren Gefährdung zu interpretieren?",
+            "explanation": "Die Zuordnung bedeutet, dass durch die jeweilige Gefährdung die dazu aufgeführten Grundwerte direkt beeinträchtigt werden. Indirekte Auswirkungen werden zwar als ableitbar, aber nicht als in der Tabelle ausgewiesen beschrieben. Eine automatische Schutzbedarfsstufe oder ein quantitativer Schadenswert wird nicht damit ausgedrückt.",
+            "quote": "Dabei ist dies so zu interpretieren, dass durch die jeweilige Gefährdung die dazu aufgeführten Grundwerte direkt beeinträchtigt werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "experte",
+            "learning_objective": "Die Interpretation der Grundwert-Zuordnung in der Tabelle der elementaren Gefährdungen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die aufgeführten Grundwerte werden durch die jeweilige Gefährdung direkt beeinträchtigt.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die aufgeführten Grundwerte können nur indirekt beeinträchtigt werden.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Schutzbedarf steigt automatisch auf „sehr hoch“.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Zuordnung gibt den quantitativen Schadenswert an.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-3-006",
+            "text": "Welcher Grundwert wird laut Tabelle als direkt betroffen bei G 0.1 Feuer ausgewiesen?",
+            "explanation": "Laut Standard wird zu G 0.1 Feuer als einziger betroffener Grundwert „Verfügbarkeit“ genannt. Natürlich könnte ein Feuer auch Integrität oder Vertraulichkeit indirekt betreffen, direkt beeinträchtigt wird jedoch nur die Verfügbarkeit.",
+            "quote": "So wird z. B. zu G 0.1 Feuer als einziger betroffener Grundwert „Verfügbarkeit“ genannt.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den direkt betroffenen Grundwert bei G 0.1 Feuer benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 14,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Verfügbarkeit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Vertraulichkeit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Integrität",
+                    "is_correct": false
+                },
+                {
+                    "text": "Authentizität",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

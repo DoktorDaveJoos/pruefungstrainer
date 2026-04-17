@@ -1,0 +1,32 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Four virtualization questions. Q001-Q003 pass cleanly. Q004 is a Gefährdungen question about snapshots — baustein_id is set but anforderung_type is null (idiomatic for descriptive questions in the Kompendium corpus).",
+    "results": [
+        {
+            "external_id": "kompendium-sys.1.5-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.5-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.5-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-sys.1.5-004",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type is null; idiomatic for descriptive (Beschreibung/Gefährdungen) questions across Kompendium corpus, but rubric prefers it set."
+                }
+            ]
+        }
+    ]
+}

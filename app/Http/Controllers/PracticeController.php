@@ -60,7 +60,7 @@ class PracticeController extends Controller
             'correct_option_ids' => $correctIds->values()->all(),
             'explanation' => $question->explanation,
             'quote' => $question->quote,
-            'source' => $question->source,
+            'source' => $question->source_citation,
         ]);
     }
 }

@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.2.1",
+        "chapter_title": "Allgemeiner Verzeichnisdienst",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T22:50:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.2.1-001",
+            "text": "Was MUSS laut APP.2.1 bei der Administration eines Verzeichnisdienstes getrennt werden?",
+            "explanation": "Anforderung APP.2.1.A3 verlangt, dass die Administration des Verzeichnisdienstes selbst und die eigentliche Verwaltung der Daten getrennt werden müssen. Diese Trennung stellt sicher, dass administrative Rechte nicht unkontrolliert auch Datenzugriff ermöglichen.",
+            "quote": "Die Administration des Verzeichnisdienstes selbst und die eigentliche Verwaltung der Daten MÜSSEN getrennt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Trennung von Administration und Datenverwaltung bei Verzeichnisdiensten erläutern.",
+            "baustein_id": "APP.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Administration des Verzeichnisdienstes und die Verwaltung der Daten",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Netzwerksegmente für interne und externe Zugriffe",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Backup-Server und die Produktivserver",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Hardware-Wartung und die Software-Aktualisierung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.1-002",
+            "text": "Was MUSS laut APP.2.1 bei der Planung eines Verzeichnisdienstes beachtet werden, der personenbezogene Daten enthält?",
+            "explanation": "Anforderung APP.2.1.A2 verlangt, dass bei der Planung eines Verzeichnisdienstes, der personenbezogene Daten beinhaltet, Personalvertretung und Datenschutzbeauftragte beteiligt werden müssen. Zudem muss ein bedarfsgerechtes Berechtigungskonzept entworfen werden.",
+            "quote": "Bei der Planung eines Verzeichnisdienstes, der personenbezogene Daten beinhaltet, MÜSSEN Personalvertretung und Datenschutzbeauftragte beteiligt werden. Es MUSS ein bedarfsgerechtes Berechtigungskonzept zum Verzeichnisdienst entworfen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Beteiligungspflichten bei der Planung eines Verzeichnisdienstes mit personenbezogenen Daten benennen.",
+            "baustein_id": "APP.2.1",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Personalvertretung und Datenschutzbeauftragte müssen beteiligt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein bedarfsgerechtes Berechtigungskonzept muss entworfen werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle personenbezogenen Daten müssen vor der Speicherung anonymisiert werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Verzeichnisdienst darf grundsätzlich keine personenbezogenen Daten enthalten",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.2.1-003",
+            "text": "Was SOLLTE bei einer Replikation im Verzeichnisdienst laut APP.2.1 festgelegt werden?",
+            "explanation": "Anforderung APP.2.1.A18 verlangt, dass bei jeder Replikation festgelegt werden muss, welches Ziel diese verfolgt. Bei Replikationen, die nicht der Hochverfügbarkeit dienen, muss der replizierte Inhalt auf die erforderlichen Objekte beschränkt werden. Eine vollständige Replikation aller Datenbankinhalte ohne Einschränkung wird nicht grundsätzlich gefordert.",
+            "quote": "Bei jeder Replikation MUSS festgelegt werden, welches Ziel diese Replikation verfolgt. • Bei Replikationen, die nicht der Hochverfügbarkeit des Dienstes dienen, MUSS der replizierte Inhalt des Verzeichnisdienstes auf die erforderlichen Objekte beschränkt werden.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Anforderungen an die Planung einer Replikation im Verzeichnisdienst erläutern.",
+            "baustein_id": "APP.2.1",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Das Ziel der Replikation muss festgelegt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Bei Nicht-Hochverfügbarkeits-Replikationen muss der Inhalt auf erforderliche Objekte beschränkt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Replikationen müssen immer den vollständigen Verzeichnisbaum umfassen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Replikationen dürfen nur einmal jährlich durchgeführt werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_3",
+        "chapter": "6.2",
+        "chapter_title": "Risiken unter Beobachtung",
+        "page_start": 38,
+        "page_end": 40
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-3-6.2-001",
+            "text": "Welche Situation beschreibt der BSI-Standard 200-3 typischerweise als „Risiko unter Beobachtung“?",
+            "explanation": "Der Standard beschreibt Risiken unter Beobachtung als solche, die zwar derzeit akzeptabel sind, in Zukunft jedoch voraussichtlich steigen werden, so dass sich Handlungsbedarf ergeben könnte. Weder ein bereits akzeptiertes Restrisiko noch ein ausschließlich vertraglich transferiertes Risiko entsprechen dieser Definition.",
+            "quote": "Bei der Risikoanalyse können unter Umständen Gefährdungen identifiziert werden, aus denen Risiken resultieren, die zwar derzeit akzeptabel sind, in Zukunft jedoch voraussichtlich steigen werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "„Risiken unter Beobachtung“ charakterisieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Risiken, die derzeit akzeptabel sind, in Zukunft aber voraussichtlich steigen werden", "is_correct": true },
+                { "text": "Risiken, die bereits abschließend akzeptiert und dokumentiert wurden", "is_correct": false },
+                { "text": "Risiken, die vollständig an einen Versicherer übertragen wurden", "is_correct": false },
+                { "text": "Risiken, die sofort durch Risikovermeidung beseitigt werden müssen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.2-002",
+            "text": "Was ist laut BSI-Standard 200-3 im Vorfeld für Risiken sinnvoll, die in Zukunft voraussichtlich steigen werden?",
+            "explanation": "Der Standard empfiehlt, bereits im Vorfeld ergänzende Sicherheitsmaßnahmen zu erarbeiten und vorzubereiten, die in Betrieb genommen werden können, sobald die Risiken inakzeptabel werden. Eine sofortige Umsetzung oder ein direkter Risikotransfer wird nicht empfohlen.",
+            "quote": "In solchen Fällen ist es sinnvoll und üblich, bereits im Vorfeld ergänzende Sicherheitsmaßnahmen zu erarbeiten und vorzubereiten, die in Betrieb genommen werden können, sobald die Risiken inakzeptabel werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die vorbereitende Behandlung steigender Risiken benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Ergänzende Sicherheitsmaßnahmen vorbereiten, die bei Bedarf in Betrieb gehen können", "is_correct": true },
+                { "text": "Die Maßnahmen sofort ohne Bewertung umsetzen", "is_correct": false },
+                { "text": "Die Risiken sofort an eine Versicherung übertragen", "is_correct": false },
+                { "text": "Die Risiken endgültig akzeptieren, ohne sie weiter zu beobachten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.2-003",
+            "text": "Welche Risiken sollten laut BSI-Standard 200-3 grundsätzlich beobachtet werden?",
+            "explanation": "Der Standard formuliert ausdrücklich, dass generell alle Risiken beobachtet werden sollten – nicht nur solche, die in Zukunft voraussichtlich steigen werden. Die Einschränkungen in den anderen Optionen widersprechen dieser Aussage.",
+            "quote": "Generell sollten jedoch alle Risiken beobachtet werden, also nicht nur solche, die in Zukunft voraussichtlich steigen werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Den Umfang der Risikobeobachtung benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Alle Risiken, nicht nur solche, die voraussichtlich steigen werden", "is_correct": true },
+                { "text": "Ausschließlich Risiken der Kategorie „sehr hoch“", "is_correct": false },
+                { "text": "Ausschließlich bereits akzeptierte Risiken", "is_correct": false },
+                { "text": "Nur Risiken, die eine Meldepflicht auslösen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.2-004",
+            "text": "Welche Hilfsmittel sind laut BSI-Standard 200-3 in der Praxis üblich, um die Beobachtung von Risiken und die Anpassung der Maßnahmen zu dokumentieren?",
+            "explanation": "Der Standard nennt als übliche Hilfsmittel ausdrücklich Risikoregister oder Risikoverzeichnisse. Alarmpläne, IT-Grundschutz-Checks oder Policy-Handbücher werden an dieser Stelle nicht genannt.",
+            "quote": "Um die Beobachtung der Risiken und Anpassung der Maßnahmen bzw. Handlungsalternativen zu dokumentieren, ist es in der Praxis üblich, hierfür Risikoregister oder Risikoverzeichnisse anzulegen.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die zur Dokumentation der Risikobeobachtung üblichen Hilfsmittel benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Risikoregister oder Risikoverzeichnisse", "is_correct": true },
+                { "text": "Alarmpläne aus dem Notfallmanagement", "is_correct": false },
+                { "text": "Der IT-Grundschutz-Check", "is_correct": false },
+                { "text": "Ein jährliches Policy-Handbuch", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-3-6.2-005",
+            "text": "Wie müssen Gefährdungen für benutzerdefinierte Bausteine laut BSI-Standard 200-3 gehandhabt werden?",
+            "explanation": "Der Standard schreibt vor, dass die Gefährdungen für benutzerdefinierte Bausteine in regelmäßigen Zeitabständen überprüft und neu bewertet werden müssen, da die dadurch abgedeckten Zielobjekte den normalen Anwendungsfall des Kompendiums überschreiten. Die anderen Optionen widersprechen dieser Pflicht.",
+            "quote": "Für benutzerdefinierte Bausteine müssen die Gefährdungen in regelmäßigen Zeitabständen überprüft und neu bewertet werden.",
+            "topic": "risikoanalyse",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflicht zur regelmäßigen Neubewertung bei benutzerdefinierten Bausteinen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Sie müssen in regelmäßigen Zeitabständen überprüft und neu bewertet werden.", "is_correct": true },
+                { "text": "Sie müssen nur einmal zu Beginn bewertet werden.", "is_correct": false },
+                { "text": "Sie werden aus dem Sicherheitskonzept ausgeschlossen.", "is_correct": false },
+                { "text": "Sie werden vom BSI jährlich bewertet.", "is_correct": false }
+            ]
+        }
+    ]
+}

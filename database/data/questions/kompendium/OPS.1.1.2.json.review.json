@@ -1,0 +1,50 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Section OPS.1.1.2 (4 questions: 4 pass, 0 flag, 0 fail). 4 question(s) annotated with quote_mismatch/info — content verbatim but source has PDF hyphen/line-break, page-break word split, or bullet-list layout artifacts. Correct answers are supported by the quoted passages; distractors are clearly wrong per source; topic assignments fit; difficulty labels plausible.",
+    "results": [
+        {
+            "external_id": "kompendium-ops.1.1.2-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break or bullet-list layout artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.2-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break or bullet-list layout artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.2-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break or bullet-list layout artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.1.2-004",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break or bullet-list layout artifact; content verbatim)."
+                }
+            ]
+        }
+    ]
+}

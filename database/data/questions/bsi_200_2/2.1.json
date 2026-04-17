@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "2.1",
+        "chapter_title": "Ganzheitliches Konzept",
+        "page_start": 11,
+        "page_end": 11
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-2.1-001",
+            "text": "Welche Grundwerte soll das Informationssicherheitsmanagement laut BSI-Standard 200-2 gewährleisten?",
+            "explanation": "Das IS-Management ist der Teil des Risikomanagements, der Vertraulichkeit, Integrität und Verfügbarkeit von Informationen, Geschäftsprozessen, Anwendungen und IT-Systemen gewährleisten soll. Authentizität und Nicht-Abstreitbarkeit werden in Kapitel 2.1 nicht als die zu gewährleistenden Grundwerte genannt.",
+            "quote": "Informationssicherheitsmanagement (oder kurz: IS-Management) ist jener Teil des allgemeinen Risikomanagements, der die Vertraulichkeit, Integrität und Verfügbarkeit von Informationen, Geschäftsprozessen, Anwendungen und IT-Systemen gewährleisten soll.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die vom IS-Management zu gewährleistenden Grundwerte benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                { "text": "Vertraulichkeit", "is_correct": true },
+                { "text": "Integrität", "is_correct": true },
+                { "text": "Verfügbarkeit", "is_correct": true },
+                { "text": "Anonymität", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.1-002",
+            "text": "Warum reicht laut BSI-Standard 200-2 das bloße Anschaffen von Virenschutzprogrammen, Firewalls oder Datensicherungssystemen für ein bedarfsgerechtes Sicherheitsniveau nicht aus?",
+            "explanation": "Laut dem Standard ist ein ganzheitliches Konzept wichtig, zu dem vor allem ein funktionierendes und in die Institution integriertes Sicherheitsmanagement gehört. Die Aussagen zu ausreichendem Schutz durch Virenschutz oder gesetzliche Vorgaben werden im Text nicht getroffen.",
+            "quote": "Um zu einem bedarfsgerechten Sicherheitsniveau für alle Geschäftsprozesse, Informationen und auch der IT-Systeme einer Institution zu kommen, ist allerdings mehr als das bloße Anschaffen von Virenschutzprogrammen, Firewalls oder Datensicherungssystemen notwendig. Ein ganzheitliches Konzept ist wichtig. Dazu gehört vor allem ein funktionierendes und in die Institution integriertes Sicherheitsmanagement.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Bedeutung eines ganzheitlichen Sicherheitskonzepts gegenüber reiner Technik erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                { "text": "Weil ein ganzheitliches Konzept mit funktionierendem, integriertem Sicherheitsmanagement erforderlich ist", "is_correct": true },
+                { "text": "Weil diese Produkte gesetzlich nicht zugelassen sind", "is_correct": false },
+                { "text": "Weil Technik grundsätzlich unwirksam ist", "is_correct": false },
+                { "text": "Weil das IT-Grundschutz-Kompendium Technik verbietet", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.1-003",
+            "text": "Welche Charakteristik beschreibt das Informationssicherheitsmanagement laut BSI-Standard 200-2 zutreffend?",
+            "explanation": "Der Standard beschreibt das IS-Management als kontinuierlichen Prozess, dessen Strategien und Konzepte ständig auf ihre Leistungsfähigkeit und Wirksamkeit zu überprüfen und bei Bedarf fortzuschreiben sind. Die Charakterisierung als einmaliges Projekt oder rein technischer Vorgang widerspricht dem Text.",
+            "quote": "Dabei handelt es sich um einen kontinuierlichen Prozess, dessen Strategien und Konzepte ständig auf ihre Leistungsfähigkeit und Wirksamkeit zu überprüfen und bei Bedarf fortzuschreiben sind.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das IS-Management als kontinuierlichen, zu überprüfenden Prozess beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein kontinuierlicher Prozess, dessen Strategien und Konzepte ständig zu überprüfen sind", "is_correct": true },
+                { "text": "Ein einmalig abschließbares Projekt", "is_correct": false },
+                { "text": "Ein rein technischer Vorgang innerhalb der IT-Abteilung", "is_correct": false },
+                { "text": "Eine Aufgabe, die ausschließlich externe Dienstleister verantworten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.1-004",
+            "text": "Welche Arten von Sicherheitsanforderungen beschreibt der IT-Grundschutz über seine Bausteine?",
+            "explanation": "Der IT-Grundschutz trägt dem Umstand Rechnung, dass Informationssicherheit auch von organisatorischen und personellen Rahmenbedingungen abhängt, indem er über seine Bausteine sowohl technische als auch nicht technische Sicherheitsanforderungen für typische Geschäftsbereiche, Anwendungen und Systeme beschreibt.",
+            "quote": "Der IT-Grundschutz trägt dem Ganzen Rechnung, indem er über die auf dem Stand der Technik basierenden Bausteine sowohl technische als auch nicht technische Sicherheitsanforderungen für typische Geschäftsbereiche, Anwendungen und Systeme beschreibt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die technischen und nicht technischen Sicherheitsanforderungen im IT-Grundschutz unterscheiden.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                { "text": "Technische Sicherheitsanforderungen", "is_correct": true },
+                { "text": "Nicht technische Sicherheitsanforderungen", "is_correct": true },
+                { "text": "Ausschließlich kryptografische Anforderungen", "is_correct": false },
+                { "text": "Nur vertragsrechtliche Anforderungen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.1-005",
+            "text": "Welche drei Vorgehensweisen werden unter dem Dach des IT-Grundschutzes angeboten, um Institutionen passende Instrumente zum Schutz ihrer Informationsverbünde bereitzustellen?",
+            "explanation": "Unter dem Dach des IT-Grundschutzes werden mit der Basis-, der Standard- und der Kern-Absicherung verschiedene Vorgehensweisen angeboten. Die „Minimal-Absicherung“ und „Zusatzabsicherung“ sind keine im Text vorgesehenen Vorgehensweisen.",
+            "quote": "Unter dem Dach des IT-Grundschutzes werden mit der Basis-, der Standard- und der Kern-Absicherung verschiedene Vorgehensweisen angeboten, um den Institutionen je nach Art und Größe passende Instrumente zum Schutz ihrer Informationsverbünde an die Hand zu geben.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Vorgehensweisen des IT-Grundschutzes benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                { "text": "Basis-Absicherung", "is_correct": true },
+                { "text": "Standard-Absicherung", "is_correct": true },
+                { "text": "Kern-Absicherung", "is_correct": true },
+                { "text": "Minimal-Absicherung", "is_correct": false }
+            ]
+        }
+    ]
+}

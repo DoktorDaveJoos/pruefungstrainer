@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.13",
+        "chapter_title": "Technisches Gebäudemanagement",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.13-001",
+            "text": "Was umfasst das technische Gebäudemanagement (TGM) gemäß DIN 32736 laut INF.13?",
+            "explanation": "Laut INF.13 umfasst das TGM gemäß DIN 32736 alle Leistungen, die die technische Funktion und Verfügbarkeit eines Gebäudes erhalten. Dazu gehören unter anderem Betreiben, Dokumentieren, Energie- und Umweltmanagement, Informationsmanagement, Modernisieren, Sanieren, Umbauen und Verfolgen der technischen Gewährleistung.",
+            "quote": "Das technische Gebäudemanagement (TGM) umfasst gemäß DIN 32736 alle Leistungen, die die technische Funktion und Verfügbarkeit eines Gebäudes erhalten.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Definition des technischen Gebäudemanagements nach INF.13 benennen.",
+            "baustein_id": "INF.13",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Alle Leistungen, die die technische Funktion und Verfügbarkeit eines Gebäudes erhalten", "is_correct": true },
+                { "text": "Ausschließlich die Reinigung und Pflege der Außenanlagen", "is_correct": false },
+                { "text": "Nur die kaufmännische Verwaltung der Gebäudekosten", "is_correct": false },
+                { "text": "Die Planung und Errichtung neuer Gebäude", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.13-002",
+            "text": "In welchem Verhältnis stehen laut INF.13 Gebäudeautomation (GA) und technisches Gebäudemanagement (TGM)?",
+            "explanation": "Laut INF.13 ist die GA ein zentrales Werkzeug des TGM. Ein Gebäude kann durch TGM auch ohne GA betrieben werden, GA hingegen ist immer durch TGM flankiert.",
+            "quote": "Somit ist die GA ein zentrales Werkzeug des TGM. Ein Gebäude kann durch TGM auch ohne GA betrieben werden, GA hingegen ist immer durch TGM flankiert.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Das Verhältnis zwischen GA und TGM nach INF.13 erklären.",
+            "baustein_id": "INF.13",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die GA ist ein zentrales Werkzeug des TGM, TGM kann aber auch ohne GA betrieben werden", "is_correct": true },
+                { "text": "TGM und GA sind vollständig unabhängig voneinander", "is_correct": false },
+                { "text": "Das TGM ist ein Teilbereich der GA", "is_correct": false },
+                { "text": "GA ersetzt das TGM vollständig in modernen Gebäuden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.13-003",
+            "text": "Welche Leistungen gehören laut INF.13 unter anderem zum technischen Gebäudemanagement?",
+            "explanation": "INF.13 nennt als Leistungen des TGM unter anderem: Betreiben, Dokumentieren, Energie- und Umweltmanagement, Informationsmanagement, Modernisieren, Sanieren, Umbauen und Verfolgen der technischen Gewährleistung.",
+            "quote": "Zu diesen Leistungen gehören unter anderem: Betreiben, Dokumentieren, Energie- und Umweltmanagement, Informationsmanagement, Modernisieren, Sanieren, Umbauen, Verfolgen der technischen Gewährleistung",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Leistungsbereiche des TGM nach INF.13 aufzählen.",
+            "baustein_id": "INF.13",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Betreiben, Dokumentieren und Energie- und Umweltmanagement", "is_correct": true },
+                { "text": "Modernisieren, Sanieren und Umbauen", "is_correct": true },
+                { "text": "Personalbeschaffung und Gehaltsabrechnung", "is_correct": false },
+                { "text": "Softwareentwicklung und IT-Sicherheitsaudits", "is_correct": false }
+            ]
+        }
+    ]
+}

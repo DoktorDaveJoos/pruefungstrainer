@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "APP.5.2",
+        "chapter_title": "Microsoft Exchange und Outlook",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-app.5.2-001",
+            "text": "Welche Punkte MUSS die Institution bei der Planung des Einsatzes von Exchange und Outlook mindestens beachten?",
+            "explanation": "Anforderung APP.5.2.A1 verlangt, dass bei der Planung mindestens folgende Punkte beachtet werden müssen: Aufbau der E-Mail-Infrastruktur, einzubindende Clients bzw. Server, Nutzung von funktionalen Erweiterungen sowie die zu verwendenden Protokolle. Lizenzkosten und Cloud-Migration werden nicht als Pflichtpunkte der Planung aufgeführt.",
+            "quote": "Dabei MUSS sie mindestens folgende Punkte beachten: • Aufbau der E-Mail-Infrastruktur, • einzubindende Clients beziehungsweise Server, • Nutzung von funktionalen Erweiterungen sowie • die zu verwendenden Protokolle.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtaspekte der Planung für den Exchange- und Outlook-Einsatz aufzählen.",
+            "baustein_id": "APP.5.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Aufbau der E-Mail-Infrastruktur und einzubindende Clients bzw. Server",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nutzung von funktionalen Erweiterungen und die zu verwendenden Protokolle",
+                    "is_correct": true
+                },
+                {
+                    "text": "Lizenzkosten und Personalbedarfsplanung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Cloud-Migrationsstrategie und Outsourcing-Optionen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.2-002",
+            "text": "Welche Gefährdung entsteht durch eine fehlerhafte Migration von Exchange?",
+            "explanation": "Die Gefährdungslage (2.2) beschreibt, dass bei einer nicht sorgfältig geplanten und durchgeführten Migration die interne Kommunikation über Exchange massiv gestört werden kann. Es können Probleme bei der Konfiguration auftreten, z.B. durch geänderte Konfigurationseinstellungen oder fehlerhafte Protokolleinstellungen.",
+            "quote": "Wenn die Migration nicht sorgfältig geplant und durchgeführt wird, kann die interne Kommunikation über Exchange in der Institution massiv gestört werden, was in der Folge die Produktivität verringern könnte.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Gefährdung durch eine fehlerhafte Exchange-Migration beschreiben.",
+            "baustein_id": "APP.5.2",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die interne Kommunikation kann massiv gestört werden und die Produktivität sinken",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Exchange-Lizenz wird automatisch ungültig",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle E-Mails werden automatisch an externe Server weitergeleitet",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Active Directory wird dauerhaft gelöscht",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.2-003",
+            "text": "Welche Schnittstellen SOLLTE der IT-Betrieb bei der Absicherung der Kommunikation zwischen Exchange-Systemen berücksichtigen?",
+            "explanation": "Anforderung APP.5.2.A11 nennt fünf Schnittstellen: Administrationsschnittstellen, Client-Server-Kommunikation, WebDAV-Schnittstellen, Server-Server-Kommunikation und die Public-Key-Infrastruktur für die E-Mail-Verschlüsselung von Outlook. LDAP-Schnittstellen und DNS werden hier nicht erwähnt.",
+            "quote": "Insbesondere SOLLTE der IT-Betrieb festlegen, wie die Kommunikation zu folgenden Schnittstellen abgesichert wird: • Administrationsschnittstellen, • Client-Server-Kommunikation, • vorhandene Web-based-Distributed-Authoring-and-Versioning-(WebDAV)-Schnittstellen, • Server-Server-Kommunikation und • Public-Key-Infrastruktur, auf der die E-Mail-Verschlüsselung von Outlook basiert.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die abzusichernden Kommunikationsschnittstellen bei Exchange-Systemen benennen.",
+            "baustein_id": "APP.5.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Administrationsschnittstellen, Client-Server-Kommunikation und WebDAV-Schnittstellen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Server-Server-Kommunikation und Public-Key-Infrastruktur für die E-Mail-Verschlüsselung",
+                    "is_correct": true
+                },
+                {
+                    "text": "LDAP-Schnittstellen und DNS-Server-Kommunikation",
+                    "is_correct": false
+                },
+                {
+                    "text": "FTP-Verbindungen und Cloud-Synchronisation",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.5.2-004",
+            "text": "Was MUSS der IT-Betrieb hinsichtlich der NTFS-Berechtigungen für das Exchange-Verzeichnis sicherstellen?",
+            "explanation": "Anforderung APP.5.2.A3 verlangt, dass der IT-Betrieb die Standard-NTFS-Berechtigungen für das Exchange-Verzeichnis so anpassen muss, dass nur autorisierte Administrierende und Systemkonten auf die Daten in diesem Verzeichnis zugreifen können. Lesezugriff für alle Benutzenden oder gemeinsame Nutzung mit anderen Anwendungen ist nicht zulässig.",
+            "quote": "Er MUSS die Standard-NTFS-Berechtigungen für das Exchange-Verzeichnis so anpassen, dass nur autorisierte Administrierende und Systemkonten auf die Daten in diesem Verzeichnis zugreifen können.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Pflichtanpassung der NTFS-Berechtigungen für das Exchange-Verzeichnis beschreiben.",
+            "baustein_id": "APP.5.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Nur autorisierte Administrierende und Systemkonten dürfen auf die Daten zugreifen können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Benutzenden müssen Lesezugriff auf das Exchange-Verzeichnis erhalten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Exchange-Verzeichnis muss mit anderen Anwendungen geteilt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die NTFS-Berechtigungen dürfen nicht verändert werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

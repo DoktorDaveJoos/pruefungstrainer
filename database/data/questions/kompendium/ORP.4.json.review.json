@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "ORP.4 Identitäts- und Berechtigungsmanagement: 4 questions on ORP.4.A2/A8/A23/A10. Quotes match. Correct answers supported (Funktionstrennung, role documentation, password policy, admin-account discipline); distractors (shared admin accounts, verbal role assignment) clearly wrong. Topic `bausteine` fits. Difficulty `basis` throughout — appropriate. Schema clean.",
+    "results": [
+        {
+            "external_id": "kompendium-orp.4-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Benutzendenkennungen und Berechtigungen DÜRFEN NUR aufgrund des tatsächlichen Bedarfs und ...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.4-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Passwörter DÜRFEN NICHT mehrfach verwendet werden. Für jedes IT-System bzw. jede Anwendung...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.4-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-orp.4-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

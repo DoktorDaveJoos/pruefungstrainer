@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "2.2",
+        "chapter_title": "Managementsystem für die Informationssicherheit",
+        "page_start": 11,
+        "page_end": 12
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-2.2-001",
+            "text": "Wer ist laut BSI-Standard 200-2 letztendlich für das zielgerichtete und ordnungsgemäße Funktionieren einer Institution und damit für die Informationssicherheit verantwortlich?",
+            "explanation": "Der Standard stellt klar, dass die oberste Managementebene für das zielgerichtete und ordnungsgemäße Funktionieren einer Institution und damit auch für die Gewährleistung der Informationssicherheit nach innen und außen verantwortlich ist. IT-Abteilung, ISB und Datenschutzbeauftragte sind nicht die gesamtverantwortliche Ebene.",
+            "quote": "Die oberste Managementebene ist verantwortlich für das zielgerichtete und ordnungsgemäße Funktionieren einer Institution und damit auch für die Gewährleistung der Informationssicherheit nach innen und außen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gesamtverantwortung der obersten Managementebene für die Informationssicherheit benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Die oberste Managementebene", "is_correct": true },
+                { "text": "Die IT-Abteilung", "is_correct": false },
+                { "text": "Der Informationssicherheitsbeauftragte allein", "is_correct": false },
+                { "text": "Der Datenschutzbeauftragte", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.2-002",
+            "text": "Welche Aufgaben muss die oberste Managementebene laut BSI-Standard 200-2 im Sicherheitsprozess wahrnehmen?",
+            "explanation": "Der Standard nennt drei untrennbare Führungsaufgaben: Die Leitungsebene muss den Sicherheitsprozess initiieren, steuern und kontrollieren. Die operative Umsetzung technischer Maßnahmen ist keine Aufgabe der Leitungsebene.",
+            "quote": "Daher muss diese den Sicherheitsprozess initiieren, steuern und kontrollieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die drei Führungsaufgaben der Leitungsebene im Sicherheitsprozess benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Initiieren des Sicherheitsprozesses", "is_correct": true },
+                { "text": "Steuern des Sicherheitsprozesses", "is_correct": true },
+                { "text": "Kontrollieren des Sicherheitsprozesses", "is_correct": true },
+                { "text": "Operative Umsetzung der einzelnen technischen Sicherheitsmaßnahmen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.2-003",
+            "text": "Was gehört laut BSI-Standard 200-2 zu den Verantwortlichkeiten der Leitungsebene, um Informationssicherheit in allen Geschäftsprozessen zu erreichen?",
+            "explanation": "Der Standard nennt ausdrücklich strategische Leitaussagen, konzeptionelle Vorgaben, organisatorische Rahmenbedingungen sowie ausreichende Ressourcen als Verantwortung der obersten Managementebene. Die Durchführung von Penetrationstests ist keine im Text genannte Leitungsaufgabe.",
+            "quote": "Dazu gehören strategische Leitaussagen zur Informationssicherheit, konzeptionelle Vorgaben und auch organisatorische Rahmenbedingungen sowie ausreichende Ressourcen, um Informationssicherheit innerhalb aller Geschäftsprozesse erreichen zu können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die erforderlichen Leitungsbeiträge für den Sicherheitsprozess beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Strategische Leitaussagen zur Informationssicherheit", "is_correct": true },
+                { "text": "Konzeptionelle Vorgaben und organisatorische Rahmenbedingungen", "is_correct": true },
+                { "text": "Bereitstellung ausreichender Ressourcen", "is_correct": true },
+                { "text": "Persönliche Durchführung technischer Penetrationstests", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.2-004",
+            "text": "Wie wird der IT-Grundschutz vom BSI bereitgestellt, um die Zusammenarbeit zu unterstützen?",
+            "explanation": "Der BSI-Standard stellt fest, dass alle Informationen rund um den IT-Grundschutz kostenfrei über die Website des BSI abrufbar sind und dass alle Dokumente zur Unterstützung der internationalen Zusammenarbeit auch in englischer Sprache und in elektronischer Form bereitgestellt werden. Eine Kostenpflicht oder Beschränkung auf Bundesbehörden wird im Text nicht erwähnt.",
+            "quote": "Alle Informationen rund um den IT-Grundschutz sind kostenfrei über die Website des BSI abrufbar. • werden alle Dokumente rund um den IT-Grundschutz auch in englischer Sprache und in elektronischer Form zur Verfügung gestellt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Verfügbarkeit und Sprachen der IT-Grundschutz-Dokumente benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 11,
+            "page_end": null,
+            "answers": [
+                { "text": "Kostenfrei über die Website des BSI", "is_correct": true },
+                { "text": "Zusätzlich in englischer Sprache und in elektronischer Form", "is_correct": true },
+                { "text": "Nur kostenpflichtig für zertifizierte Unternehmen", "is_correct": false },
+                { "text": "Ausschließlich für Bundesbehörden zugänglich", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-2.2-005",
+            "text": "Warum ist laut BSI-Standard 200-2 ein geplantes und organisiertes Vorgehen aller Beteiligten bei der Informationssicherheit notwendig?",
+            "explanation": "Der Standard begründet die Notwendigkeit eines geplanten Vorgehens damit, dass immer mehr Geschäftsprozesse über IKT verknüpft werden und dies mit steigender Komplexität der technischen Systeme und einer hohen Abhängigkeit vom korrekten Funktionieren der Technik einhergeht. Gesetzliche Strafvorschriften oder Versicherungen werden als Begründung nicht genannt.",
+            "quote": "Immer mehr Geschäftsprozesse werden über Informations- und Kommunikationstechnik miteinander verknüpft. Dies geht einher mit einer steigenden Komplexität der technischen Systeme und mit einer hohen Abhängigkeit vom korrekten Funktionieren der Technik. Daher ist ein geplantes und organisiertes Vorgehen aller Beteiligten notwendig, um ein angemessenes und ausreichendes Sicherheitsniveau durchzusetzen und aufrechtzuerhalten.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Gründe für ein geplantes und organisiertes Vorgehen zur Informationssicherheit erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 12,
+            "page_end": null,
+            "answers": [
+                { "text": "Wegen steigender Komplexität der Systeme und hoher Abhängigkeit vom korrekten Funktionieren der Technik", "is_correct": true },
+                { "text": "Weil Geschäftsprozesse zunehmend über IKT verknüpft werden", "is_correct": true },
+                { "text": "Weil gesetzliche Strafvorschriften jede manuelle Tätigkeit verbieten", "is_correct": false },
+                { "text": "Weil Versicherungen eine bestimmte Ablauforganisation vorschreiben", "is_correct": false }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "reviewed_at": "2026-04-17T12:30:00Z",
+    "critic_notes": "Section IND.3.2 (3 questions: 3 pass, 0 flag, 0 fail). Correct answers are supported by the baustein Einleitung / 1.1 Beschreibung — dezentrale OT-Infrastruktur mit vielen herstellenden Unternehmen, Package-Units mit integrierten Fernwartungszugängen, OT-Fernwartungs-Lebenszyklen länger als in der IT; distractors are clearly wrong per source; topic 'bausteine' fits; difficulty labels plausible. 3 question(s) annotated with quote_mismatch/info — content verbatim but manifest char-range drift means fragments match only under aggressive normalization against the full source. All 3 questions have anforderung_type=null — acceptable because they cover Einleitung/Beschreibung, not specific Basis/Standard/Hoch Anforderungen.",
+    "results": [
+        {
+            "external_id": "kompendium-ind.3.2-001",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim in the full source)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein Einleitung/Beschreibung (Begründung der Fernwartungszugänge in der OT); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.3.2-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein Einleitung/Beschreibung (Package Units); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-ind.3.2-003",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (manifest char-range drift; content verbatim)."
+                },
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "anforderung_type=null — acceptable for baustein Einleitung/Beschreibung (Lebenszyklen der Fernwartungslösungen); rubric strict interpretation expects basis/standard/hoch."
+                }
+            ]
+        }
+    ]
+}

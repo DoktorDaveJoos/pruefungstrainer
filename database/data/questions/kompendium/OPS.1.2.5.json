@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "OPS.1.2.5",
+        "chapter_title": "Fernwartung",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00+00:00",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-ops.1.2.5-001",
+            "text": "Was MUSS laut OPS.1.2.5.A2 bei der Fernwartung von Desktop-Umgebungen gew\u00e4hrleistet sein?",
+            "explanation": "Die Fernwartungssoftware muss so konfiguriert sein, dass sie eine Verbindung erst nach expliziter Zustimmung der Benutzenden aufbaut.",
+            "quote": "Wird per Fernwartung auf Desktop-Umgebungen von Clients zugegriffen, MUSS die Fernwartungssoftware so konfiguriert sein, dass sie eine Verbindung erst nach expliziter Zustimmung der Benutzenden aufbaut.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zustimmungsanforderung bei der Fernwartung von Clients nach OPS.1.2.5.A2 benennen.",
+            "baustein_id": "OPS.1.2.5.A2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Eine Verbindung darf erst nach expliziter Zustimmung der Benutzenden aufgebaut werden", "is_correct": true},
+                {"text": "Die Verbindung muss automatisch beim Systemstart hergestellt werden", "is_correct": false},
+                {"text": "Der Bildschirminhalt darf w\u00e4hrend der Fernwartung nicht sichtbar sein", "is_correct": false},
+                {"text": "Benutzende m\u00fcssen den Raum w\u00e4hrend der Fernwartung verlassen", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.5-002",
+            "text": "Was MUSS laut OPS.1.2.5.A3 f\u00fcr Fernwartungsverbindungen \u00fcber nicht vertrauensw\u00fcrdige Netze gelten?",
+            "explanation": "Fernwartungsverbindungen \u00fcber nicht vertrauensw\u00fcrdige Netze m\u00fcssen verschl\u00fcsselt werden. Alle Fernwartungsverbindungen m\u00fcssen nach dem Fernzugriff getrennt werden.",
+            "quote": "Fernwartungsverbindungen \u00fcber nicht vertrauensw\u00fcrdige Netze M\u00dcSSEN verschl\u00fcsselt werden. \u2022 Alle Fernwartungsverbindungen M\u00dcSSEN nach dem Fernzugriff getrennt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Verschl\u00fcsselungsanforderungen f\u00fcr Fernwartungsverbindungen nach OPS.1.2.5.A3 erl\u00e4utern.",
+            "baustein_id": "OPS.1.2.5.A3",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Sie m\u00fcssen verschl\u00fcsselt werden und nach dem Fernzugriff getrennt werden", "is_correct": true},
+                {"text": "Sie d\u00fcrfen maximal 30 Minuten dauern", "is_correct": false},
+                {"text": "Sie sind grunds\u00e4tzlich verboten", "is_correct": false},
+                {"text": "Sie ben\u00f6tigen keine besonderen Schutzma\u00dfnahmen", "is_correct": false}
+            ]
+        },
+        {
+            "external_id": "kompendium-ops.1.2.5-003",
+            "text": "Was unterscheidet laut OPS.1.2.5 aktive von passiver Fernwartung?",
+            "explanation": "Bei aktiver Fernwartung werden Tastatur- und Maussignale \u00fcbertragen und die Administrierenden f\u00fchren Aktionen direkt aus. Bei passiver Fernwartung werden nur Bildschirminhalte \u00fcbertragen und die Benutzenden vor Ort f\u00fchren Anweisungen aus.",
+            "quote": "Bei der passiven Fernwartung werden nur die Bildschirminhalte eines IT-Systems zu den Administrierenden \u00fcbertragen. Administrierende erteilen den Benutzenden vor Ort Anweisungen, die von ihnen ausgef\u00fchrt und von den Administrierenden beobachtet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Den Unterschied zwischen aktiver und passiver Fernwartung nach OPS.1.2.5 erkl\u00e4ren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {"text": "Bei passiver Fernwartung werden nur Bildschirminhalte \u00fcbertragen und Benutzende f\u00fchren Anweisungen aus", "is_correct": true},
+                {"text": "Passive Fernwartung erfolgt ausschlie\u00dflich \u00fcber das Telefon", "is_correct": false},
+                {"text": "Aktive Fernwartung bedeutet, dass die Benutzenden die Steuerung \u00fcbernehmen", "is_correct": false},
+                {"text": "Es gibt keinen Unterschied, beide Begriffe sind synonym", "is_correct": false}
+            ]
+        }
+    ]
+}

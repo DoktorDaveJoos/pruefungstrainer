@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.2",
+        "chapter_title": "Rechenzentrum sowie Serverraum",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.2-001",
+            "text": "Wann ist ein IT-Betriebsbereich laut INF.2 als Rechenzentrum zu behandeln?",
+            "explanation": "Laut der Definition in INF.2 sind Bereiche, von deren ordnungsgemäßem Betrieb 50 % und mehr IT-Benutzende abhängig sind oder aus denen 50 % und mehr an Diensten und Daten bereitgestellt werden, als RZ zu behandeln. Auch ein IT-Betriebsbereich für kritische Geschäftsprozesse ist immer als RZ zu behandeln.",
+            "quote": "Des Weiteren sind Bereiche, von deren ordnungsgemäßem Betrieb 50 % und mehr IT-Benutzenden abhängig sind oder aus denen heraus 50 % und mehr an Diensten und Daten (gemessen an der Gesamtheit der Bereiche) bereitgestellt werden, als RZ zu behandeln.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die Kriterien für die Klassifizierung eines IT-Betriebsbereichs als Rechenzentrum benennen.",
+            "baustein_id": "INF.2",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Wenn 50 % oder mehr IT-Benutzende von seinem ordnungsgemäßen Betrieb abhängig sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wenn daraus 50 % oder mehr an Diensten und Daten bereitgestellt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Erst ab einer Fläche von mindestens 100 Quadratmetern",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur wenn mindestens 20 Server betrieben werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.2-002",
+            "text": "Was MUSS laut INF.2.A1 bei der Konzeption eines Rechenzentrums beachtet werden?",
+            "explanation": "INF.2.A1 verlangt, dass ein Rechenzentrum insgesamt als geschlossener Sicherheitsbereich konzipiert werden muss und unterschiedliche Sicherheitszonen aufweisen muss. Verwaltungs-, Logistik-, IT-Betriebs- und Support-Bereiche müssen klar voneinander getrennt werden.",
+            "quote": "Ein Rechenzentrum MUSS insgesamt als geschlossener Sicherheitsbereich konzipiert werden. Es MUSS zudem unterschiedliche Sicherheitszonen aufweisen. Dafür MÜSSEN z. B. Verwaltungs-, Logistik-, IT-Betriebs- und Support-Bereiche klar voneinander getrennt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Grundanforderungen an die Konzeption eines Rechenzentrums nach INF.2.A1 erklären.",
+            "baustein_id": "INF.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es muss als geschlossener Sicherheitsbereich konzipiert werden und unterschiedliche Sicherheitszonen aufweisen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Verwaltungs-, Logistik-, IT-Betriebs- und Support-Bereiche müssen klar voneinander getrennt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle Bereiche des Rechenzentrums dürfen frei zugänglich sein, solange Kameras vorhanden sind",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es genügt, wenn der Serverraum in einem normalen Bürogebäude untergebracht ist",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.2-003",
+            "text": "Was MUSS laut INF.2.A3 für alle betriebsrelevanten Komponenten eines Rechenzentrums installiert werden?",
+            "explanation": "INF.2.A3 verlangt die Installation einer unterbrechungsfreien Stromversorgung (USV) für alle betriebsrelevanten Komponenten des Rechenzentrums. Da der Leistungsbedarf von Klimaanlagen oft zu hoch für eine USV ist, muss mindestens die Steuerung der Anlagen an die USV angeschlossen werden.",
+            "quote": "Für alle betriebsrelevanten Komponenten des Rechenzentrums MUSS eine unterbrechungsfreie Stromversorgung (USV) installiert werden. Da der Leistungsbedarf von Klimaanlagen oft zu hoch für eine USV ist, MUSS mindestens die Steuerung der Anlagen an die unterbrechungsfreie Stromversorgung angeschlossen werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderung an die Stromversorgung im Rechenzentrum nach INF.2.A3 benennen.",
+            "baustein_id": "INF.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Eine unterbrechungsfreie Stromversorgung (USV)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein Notstromaggregat mit Dieselmotor",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich eine redundante Netzanbindung an zwei verschiedene Energieversorger",
+                    "is_correct": false
+                },
+                {
+                    "text": "Eine Solaranlage auf dem Gebäudedach",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

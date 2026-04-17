@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "Section APP.3.2 (4 questions: 3 pass, 1 flag, 0 fail). 1 question(s) annotated with quote_mismatch/info — content verbatim but source has PDF hyphen/line-break or bullet-list layout artifacts. 1 question(s) flagged with quote_mismatch/warning — fragment not locatable even under aggressive normalization; worth a human verbatim check. Correct answers are supported by the quoted passages; distractors are clearly wrong per source; topic 'bausteine' fits; difficulty labels plausible.",
+    "results": [
+        {
+            "external_id": "kompendium-app.3.2-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-app.3.2-002",
+            "verdict": "pass",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment(s) match only under aggressive normalization (PDF hyphen/line-break artifact; content verbatim)."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.2-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Der Webserver MUSS mindestens folgende Ereignisse protokollieren: erfolgreiche Zugriffe auf Ressourcen, fehlgeschlagene Zugriffe auf Ressourcen aufgrund von man...` not found in source under any normalization; likely a PDF column-break / intra-word-space artifact (source splits the word across layout columns). Content appears verbatim on manual inspection — human should confirm."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-app.3.2-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

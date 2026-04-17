@@ -1,0 +1,108 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.10",
+        "chapter_title": "Zusammenspiel mit anderen Organisationseinheiten und Managementdisziplinen",
+        "page_start": 49,
+        "page_end": 50
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.10-001",
+            "text": "Welche Managementdisziplinen bzw. Bereiche nennt der Standard als „Schutz“-verwandt mit dem Informationssicherheitsmanagement?",
+            "explanation": "Die Passage nennt beispielhaft Datenschutz, Objektschutz, Personenschutz, Geheimschutz, Notfallmanagement und Risikomanagement als Bereiche mit ähnlichem Schutzziel. Marketing und Einkauf werden nicht als solche Disziplinen genannt.",
+            "quote": "Beispielsweise gehören hierzu neben dem Informationssicherheitsmanagement die Themenfelder Datenschutz, Objektschutz, Personenschutz, Geheimschutz, Notfallmanagement oder Risikomanagement.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Verwandte Managementdisziplinen der Informationssicherheit benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Datenschutz, Objektschutz, Personenschutz", "is_correct": true },
+                { "text": "Geheimschutz, Notfallmanagement und Risikomanagement", "is_correct": true },
+                { "text": "Marketing und Öffentlichkeitsarbeit", "is_correct": false },
+                { "text": "Einkauf und Lagerlogistik", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.10-002",
+            "text": "Warum müssen laut Passage Sicherheitsmanagement und IT-Betrieb eng zusammenarbeiten?",
+            "explanation": "Der ISB erstellt Vorgaben für den sicheren Betrieb von IT-Systemen und Netzen, der IT-Betrieb muss diese umsetzen. Daher ist eine enge Zusammenarbeit und regelmäßige Abstimmung zu Vorgehensweisen, Gefährdungen und neuen Sicherheitsanforderungen nötig. Eine formale Fusion beider Einheiten oder eine Personalunion aller Rollen ist nicht gemeint.",
+            "quote": "Der ISB erstellt Vorgaben für den sicheren Betrieb von IT-Systemen und Netzen, der IT-Betrieb muss diese umsetzen. Daher müssen das Sicherheitsmanagement und der IT-Betrieb eng zusammenarbeiten und sich regelmäßig über Vorgehensweisen abstimmen, ebenso wie über aktuelle Gefährdungen und neu umzusetzende Sicherheitsanforderungen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Arbeitsteilung zwischen ISB und IT-Betrieb erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Der ISB erstellt Vorgaben, die der IT-Betrieb umsetzen muss", "is_correct": true },
+                { "text": "Eine regelmäßige Abstimmung zu Vorgehensweisen, Gefährdungen und neuen Sicherheitsanforderungen ist erforderlich", "is_correct": true },
+                { "text": "Sicherheitsmanagement und IT-Betrieb müssen formal zu einer Einheit verschmolzen werden", "is_correct": false },
+                { "text": "Alle ISB-Rollen müssen in Personalunion vom Leiter IT-Betrieb wahrgenommen werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.10-003",
+            "text": "Welche Ansprechpartnerrolle kann laut Passage in größeren Institutionen im IT-Betrieb eingerichtet werden?",
+            "explanation": "Die Passage schlägt vor, in größeren Institutionen einen Beauftragten für IT-Sicherheit im IT-Betrieb als Ansprechpartner des ISB zu ernennen, häufig auch als IT-Sicherheitsbeauftragter, IT-Sicherheitsmanager oder IT-Sicherheitskoordinator bezeichnet. Ein externer Auditor oder Datenschutzbeauftragter in dieser Rolle wird nicht genannt.",
+            "quote": "In größeren Institutionen kann es daher sinnvoll sein, als Ansprechpartner des ISB im IT-Betrieb einen Beauftragten für IT-Sicherheit zu ernennen. Dieser wird häufig als IT-Sicherheitsbeauftragter, IT-Sicherheitsmanager oder auch IT-Sicherheitskoordinator bezeichnet.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Rolle des Beauftragten für IT-Sicherheit im IT-Betrieb benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Ein Beauftragter für IT-Sicherheit als Ansprechpartner des ISB im IT-Betrieb", "is_correct": true },
+                { "text": "Bezeichnung auch als IT-Sicherheitsmanager oder IT-Sicherheitskoordinator", "is_correct": true },
+                { "text": "Ein externer Auditor, der im IT-Betrieb residiert", "is_correct": false },
+                { "text": "Ein zweiter Datenschutzbeauftragter ausschließlich für den IT-Betrieb", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.10-004",
+            "text": "Welche Aspekte sollten laut Passage im Vorfeld geklärt werden, wenn eine Person mehrere Rollen übernimmt?",
+            "explanation": "Die Passage nennt: klar definierte und dokumentierte Schnittstellen, eine benannte Klärungsinstanz bei Konflikten (z. B. die Innenrevision) sowie ausreichende Qualifikation und Ressourcen. Eine Gehaltsverdoppelung oder ein 24/7-Bereitschaftsdienst ist nicht genannt.",
+            "quote": "Die Schnittstellen zwischen den verschiedenen Rollen sollten klar definiert und dokumentiert • Beim Eintreten konfliktträchtiger Themen sollte eine Instanz benannt sein, die diese klären kann, z. B. die Innenrevision. • Es muss sichergestellt werden, dass Personen mit mehreren Rollen ausreichend qualifiziert sind und genügend Ressourcen für ihre Aufgaben zur Verfügung haben.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Voraussetzungen für die Wahrnehmung mehrerer Rollen in Personalunion benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Klar definierte und dokumentierte Schnittstellen zwischen den Rollen", "is_correct": true },
+                { "text": "Eine benannte Instanz zur Klärung konfliktträchtiger Themen, z. B. die Innenrevision", "is_correct": true },
+                { "text": "Ausreichende Qualifikation und Ressourcen der Personen mit mehreren Rollen", "is_correct": true },
+                { "text": "Eine automatische Verdoppelung des Gehalts bei Rollenhäufung", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.10-005",
+            "text": "Welche Rollen lassen sich laut Passage nicht ohne Weiteres mit den Aufgaben des Informationssicherheitsmanagements kombinieren?",
+            "explanation": "Die Passage nennt als problematisch z. B. die Rollen des Revisors oder Auditors, weil Kontrollierende nicht überprüfen sollten, was sie selbst konzeptioniert haben. Die Rolle des Notfallbeauftragten wird hingegen ausdrücklich als grundsätzlich mit der ISB-Rolle kombinierbar diskutiert.",
+            "quote": "Es gibt aber auch Rollen, die sich nicht ohne Weiteres mit den Aufgaben des Informationssicherheitsmanagements kombinieren lassen. Dazu können z. B. Rollen wie jene des Revisors oder Auditors gehören, auch das hängt aber immer vom konkreten Aufgabenumfeld ab. Grundsätzlich besteht bei einer kontrollierenden Tätigkeit immer das Problem, dass die Kontrollierenden nichts überprüfen sollten, was sie selbst konzeptioniert haben.",
+            "topic": "methodik",
+            "difficulty": "experte",
+            "learning_objective": "Rollenkonflikte mit dem ISM durch Kontrollfunktionen identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 49,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Rolle des Revisors oder Auditors", "is_correct": true },
+                { "text": "Kontrollierende Tätigkeiten, bei denen selbst Konzeptioniertes überprüft würde", "is_correct": true },
+                { "text": "Die Rolle des Notfallbeauftragten, die strikt ausgeschlossen ist", "is_correct": false },
+                { "text": "Die Rolle des Fachbereichsvertreters im IS-Management-Team", "is_correct": false }
+            ]
+        }
+    ]
+}

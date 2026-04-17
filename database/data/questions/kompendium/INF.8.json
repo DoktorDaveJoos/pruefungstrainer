@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.8",
+        "chapter_title": "Häuslicher Arbeitsplatz",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.8-001",
+            "text": "Was MÜSSEN Mitarbeitende laut INF.8.A1 am häuslichen Arbeitsplatz hinsichtlich dienstlicher Unterlagen sicherstellen?",
+            "explanation": "INF.8.A1 verlangt, dass dienstliche Unterlagen und Datenträger so aufbewahrt werden, dass keine unbefugten Personen darauf zugreifen können. Dafür müssen ausreichend verschließbare Behältnisse vorhanden sein, und alle Mitarbeitenden müssen ihre Arbeitsplätze aufgeräumt hinterlassen.",
+            "quote": "Dienstliche Unterlagen und Datenträger MÜSSEN am häuslichen Arbeitsplatz so aufbewahrt werden, dass keine unbefugten Personen darauf zugreifen können. Daher MÜSSEN ausreichend verschließbare Behältnisse (z. B. abschließbare Rollcontainer oder Schränke) vorhanden sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Aufbewahrung dienstlicher Unterlagen am häuslichen Arbeitsplatz nach INF.8.A1 benennen.",
+            "baustein_id": "INF.8",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie müssen so aufbewahrt werden, dass keine unbefugten Personen darauf zugreifen können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es müssen ausreichend verschließbare Behältnisse vorhanden sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Alle dienstlichen Unterlagen müssen täglich in die Institution zurückgebracht werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Dienstliche Unterlagen dürfen grundsätzlich nicht am häuslichen Arbeitsplatz aufbewahrt werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.8-002",
+            "text": "Wer ist laut INF.8 grundsätzlich zuständig für die Anforderungen am häuslichen Arbeitsplatz?",
+            "explanation": "Laut dem Baustein INF.8 sind die Mitarbeitenden grundsätzlich zuständig, weitere Zuständigkeiten bestehen nicht. Dies unterscheidet den häuslichen Arbeitsplatz von anderen Bausteinen, bei denen typischerweise der ISB oder die Haustechnik grundsätzlich zuständig ist.",
+            "quote": "Grundsätzlich zuständig            Mitarbeitende",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zuständigkeit für den häuslichen Arbeitsplatz nach INF.8 benennen.",
+            "baustein_id": "INF.8",
+            "anforderung_type": null,
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Mitarbeitenden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Haustechnik der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Informationssicherheitsbeauftragte (ISB)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der Datenschutzbeauftragte",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.8-003",
+            "text": "Was MUSS laut INF.8.A3 am häuslichen Arbeitsplatz hinsichtlich unbefugter Personen sichergestellt werden?",
+            "explanation": "INF.8.A3 verlangt, dass sichergestellt werden muss, dass unbefugte Personen zu keiner Zeit den häuslichen Arbeitsplatz betreten und auf dienstliche IT und Unterlagen zugreifen können. Diese Maßnahmen müssen in sinnvollen zeitlichen Abständen überprüft werden, mindestens aber wenn sich die häuslichen Verhältnisse ändern.",
+            "quote": "Es MUSS sichergestellt werden, dass unbefugte Personen zu keiner Zeit den häuslichen Arbeitsplatz betreten und auf dienstliche IT und Unterlagen zugreifen können. Diese Maßnahmen MÜSSEN in sinnvollen zeitlichen Abständen überprüft werden, mindestens aber, wenn sich die häuslichen Verhältnisse ändern.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Zutrittsschutzanforderung am häuslichen Arbeitsplatz nach INF.8.A3 erklären.",
+            "baustein_id": "INF.8",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Unbefugte Personen dürfen zu keiner Zeit den häuslichen Arbeitsplatz betreten und auf dienstliche IT und Unterlagen zugreifen können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Maßnahmen müssen mindestens dann überprüft werden, wenn sich die häuslichen Verhältnisse ändern",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es genügt, wenn ein Familienmitglied die Aufsicht übernimmt",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zutrittsschutz ist nur bei erhöhtem Schutzbedarf erforderlich",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

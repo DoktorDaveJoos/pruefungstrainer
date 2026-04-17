@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Four questions on the four criteria for Sicherheitsmaßnahmen (Eignung, Praktikabilität, Akzeptanz, Wirtschaftlichkeit). All correct answers directly match the source definitions. All distractors are plausible but correctly attributed to a different criterion. Quotes have line-break space artifacts in compound words (Organisationsabläufe, diskriminieren, andererseits). Topic 'modellierung' fits chapter 8.3.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-8.3-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Multiple fragments have line-break space artifacts: 'Organisa tionsabläufe' -> 'Organisationsabläufe', 'dis kriminieren' -> 'diskriminieren', 'an dererseits' -> 'andererseits'. All match under no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.3-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'dis kriminieren' should be 'diskriminieren'. Soft-hyphen line-break artifact."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.3-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'an dererseits' should be 'andererseits'. Soft-hyphen line-break artifact."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.3-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

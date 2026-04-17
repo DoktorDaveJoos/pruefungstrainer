@@ -1,0 +1,51 @@
+{
+    "reviewed_at": "2026-04-16T18:30:00Z",
+    "critic_notes": "Section 4.1 (Aufgaben und Pflichten des Managements) has eight well-grounded questions. Every quote fragment is a verbatim substring of the normalized source (two fragments contain an intra-word space that is the rubric-specified artifact of joining soft-hyphen line breaks: 'Informa tionssicherheitsbeauftragten' and 'Sicher heitsstrategie' — matches source after normalization). Correct answers are supported, distractors are clearly wrong, and pages fall inside 20-22. Two questions are labeled 'experte' (4.1-003 and 4.1-005); both genuinely require joining two sentences (Verantwortung bleibt bei der Leitung vs. Aufgabe wird an ISB delegiert; Querschnittsfunktion vs. Reifegrad-Abhängigkeit), which is acceptable synthesis for experte though arguably on the lighter side — flagging 4.1-003 as borderline but not failing it. Schema null/null correct throughout.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-4.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.1-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.1-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "difficulty_mismatch",
+                    "detail": "Labeled 'experte' but the correct answer is a fairly direct paraphrase of two adjacent source sentences ('Die Verantwortung fuer Informationssicherheit verbleibt dort' + 'Die operative Aufgabe \"Informationssicherheit\" wird allerdings typischerweise an einen ISB delegiert'). It requires joining two statements but not real synthesis across distant context or edge cases. Consider downgrading to 'fortgeschritten' or 'basis'."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-4.1-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.1-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.1-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.1-007",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-4.1-008",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

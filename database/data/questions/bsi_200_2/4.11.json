@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.11",
+        "chapter_title": "Einbindung externer Sicherheitsexperten",
+        "page_start": 50,
+        "page_end": 52
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.11-001",
+            "text": "Wann müssen laut Passage qualifizierte externe Sicherheitsexperten beauftragt werden?",
+            "explanation": "Die Passage fordert externe Beauftragung, wenn wesentliche Rollen wie der ISB nicht durch interne Mitarbeiter wahrgenommen werden können. Externe sind nicht generell verpflichtend und ersetzen auch nicht automatisch alle internen Rollen.",
+            "quote": "Wenn wesentliche Rollen wie der ISB nicht durch interne Mitarbeiter wahrgenommen werden können, müssen hierfür qualifizierte Externe beauftragt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Bedingungen für die Beauftragung externer Sicherheitsexperten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Wenn wesentliche Rollen wie der ISB nicht durch interne Mitarbeiter wahrgenommen werden können", "is_correct": true },
+                { "text": "Grundsätzlich in jeder Institution und für jede Rolle", "is_correct": false },
+                { "text": "Nur wenn die Institution zertifizierungsreif ist", "is_correct": false },
+                { "text": "Nur, wenn die Leitungsebene selbst die Rolle nicht übernehmen will", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.11-002",
+            "text": "Warum kann es laut Passage insbesondere in kleinen Unternehmen oder Behörden zweckmäßig sein, auf einen externen ISB zurückzugreifen?",
+            "explanation": "Die Passage beschreibt, dass es insbesondere in kleinen Unternehmen oder Behörden unter Umständen zweckmäßig sein kann, die Rolle des ISB nicht durch einen eigenen Mitarbeiter zu besetzen, sondern auf die Dienstleistung eines externen ISB zurückzugreifen. Gesetzliche Verbote interner Besetzung oder Zertifizierungsauflagen werden nicht genannt.",
+            "quote": "Insbesondere in kleinen Unternehmen oder Behörden kann es unter Umständen zweckmäßig sein, die Rolle des Informationssicherheitsbeauftragten nicht durch einen eigenen Mitarbeiter zu besetzen, sondern hierfür auf die Dienstleistung eines externen ISB zurückzugreifen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Einsatz eines externen ISB in kleinen Institutionen einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Kleine Institutionen können zweckmäßig auf die Dienstleistung eines externen ISB zurückgreifen", "is_correct": true },
+                { "text": "Gesetze verbieten kleinen Institutionen die interne Besetzung des ISB", "is_correct": false },
+                { "text": "Nur externe ISBs dürfen laut BSI-Zertifizierung interne Prüfungen durchführen", "is_correct": false },
+                { "text": "Kleine Institutionen dürfen gar keinen ISB benennen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.11-003",
+            "text": "Welche praktischen Gründe nennt die Passage für den zusätzlichen Rückgriff auf externe Experten neben internen Sicherheitsexperten?",
+            "explanation": "Die Passage führt an, dass internen Experten häufig die Zeit fehlt, alle sicherheitsrelevanten Einflussfaktoren und Rahmenbedingungen (z. B. gesetzliche Anforderungen oder technische Fragen) zu analysieren; teilweise fehlen ihnen auch die entsprechenden Grundlagen. Kostenersparnis oder Zertifizierungszwang werden nicht als Gründe genannt.",
+            "quote": "In der Praxis fehlt den internen Sicherheitsexperten häufig die Zeit, um alle sicherheitsrelevanten Einflussfaktoren und Rahmenbedingungen (z. B. gesetzliche Anforderungen oder technische Fragen) zu analysieren. Teilweise fehlen ihnen auch die entsprechenden Grundlagen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Gründe für den ergänzenden Einsatz externer Experten benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Internen Experten fehlt häufig die Zeit, alle sicherheitsrelevanten Einflussfaktoren zu analysieren", "is_correct": true },
+                { "text": "Internen Experten fehlen teilweise die entsprechenden Grundlagen", "is_correct": true },
+                { "text": "Externe Experten sind grundsätzlich kostengünstiger als interne", "is_correct": false },
+                { "text": "Die BSI-Zertifizierung verbietet interne Sicherheitsexperten", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.11-004",
+            "text": "Was muss laut Passage geschehen, wenn interne Sicherheitsexperten auf externe Experten zurückgreifen müssen?",
+            "explanation": "Der Bedarf muss durch die internen Sicherheitsexperten dokumentiert werden, damit die Leitungsebene die erforderlichen Ressourcen bereitstellt. Ein Freigabeprozess durch den Betriebsrat oder eine BSI-Registrierung wird nicht gefordert.",
+            "quote": "Dies muss von den internen Sicherheitsexperten dokumentiert werden, damit die Leitungsebene die erforderlichen Ressourcen bereitstellt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Dokumentationspflicht beim Rückgriff auf externe Experten erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 50,
+            "page_end": null,
+            "answers": [
+                { "text": "Die internen Sicherheitsexperten müssen dies dokumentieren, damit die Leitungsebene die Ressourcen bereitstellt", "is_correct": true },
+                { "text": "Der Betriebsrat muss die externe Beauftragung formal freigeben", "is_correct": false },
+                { "text": "Das BSI muss jeden externen Berater vorab registrieren", "is_correct": false },
+                { "text": "Die internen Experten müssen anschließend gekündigt werden", "is_correct": false }
+            ]
+        }
+    ]
+}

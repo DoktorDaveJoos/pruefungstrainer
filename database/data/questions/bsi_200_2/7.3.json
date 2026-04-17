@@ -1,0 +1,230 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "7.3",
+        "chapter_title": "Identifikation und Festlegung der kritischen Assets (Kronjuwelen)",
+        "page_start": 70,
+        "page_end": 72
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-7.3-001",
+            "text": "Was werden im BSI-Standard 200-2 als „Kronjuwelen“ bezeichnet?",
+            "explanation": "Kapitel 7.3 definiert Kronjuwelen als diejenigen Geschäftsprozesse und Informationen, die am wichtigsten für den Erhalt der Institution sind. Explizit werden Dienstleistungen, Anwendungen oder IT-Systeme nicht als Kronjuwelen bezeichnet.",
+            "quote": "Als Kronjuwelen werden diejenigen Geschäftsprozesse und die Informationen bezeichnet, die am wichtigsten für den Erhalt der Institution sind. • Als Kronjuwelen werden Informationen oder Geschäftsprozesse bezeichnet, nicht Dienstleistungen, Anwendungen, IT-Systeme oder ähnliche Objekte.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Definition von Kronjuwelen im Sinne des BSI-Standards 200-2 benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 70,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Geschäftsprozesse und Informationen, die am wichtigsten für den Erhalt der Institution sind",
+                    "is_correct": true
+                },
+                {
+                    "text": "Einzelne Dienstleistungen und Anwendungen der Institution",
+                    "is_correct": false
+                },
+                {
+                    "text": "IT-Systeme mit besonders hoher Verfügbarkeit",
+                    "is_correct": false
+                },
+                {
+                    "text": "Alle Objekte mit Schutzbedarf „normal“",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.3-002",
+            "text": "Welche Rolle trifft typischerweise die Festlegung, welche Assets als Kronjuwelen einzustufen sind?",
+            "explanation": "Laut Kapitel 7.3 erfolgt die Festlegung typischerweise durch die Leitungsebene. Fachverantwortliche oder Sicherheitsbeauftragte können zwar Vorschläge unterbreiten, die letztliche Entscheidung muss jedoch von der Leitungsebene getroffen werden. Ein externer Auditor oder die Zertifizierungsstelle sind nicht zuständig.",
+            "quote": "Fachverantwortliche, Sicherheitsbeauftragte und andere Instanzen können vorschlagen, diese Informationen als Kronjuwelen einzustufen, die Entscheidung muss jedoch letztlich vonseiten der Leitungsebene erfolgen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die Verantwortung der Leitungsebene für die Kronjuwelen-Festlegung erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 71,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Leitungsebene",
+                    "is_correct": true
+                },
+                {
+                    "text": "Der externe Auditor",
+                    "is_correct": false
+                },
+                {
+                    "text": "Der IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Zertifizierungsstelle",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.3-003",
+            "text": "Wie ist der Schutzbedarf der Kronjuwelen und aller damit verknüpften Ressourcen im Informationsverbund mindestens einzuordnen?",
+            "explanation": "Kapitel 7.3 stellt klar, dass der Schutzbedarf der Kronjuwelen und aller damit verknüpften Ressourcen im Informationsverbund mindestens als „hoch“ einzuordnen ist. Eine Einordnung als „normal“ oder ohne Schutzbedarf ist nicht zulässig.",
+            "quote": "Es ist davon auszugehen, dass der Schutzbedarf der Kronjuwelen und aller damit verknüpften Ressourcen im Informationsverbund mindestens als „hoch“ einzuordnen ist.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Mindest-Schutzbedarf von Kronjuwelen und verknüpften Ressourcen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 70,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mindestens „hoch“",
+                    "is_correct": true
+                },
+                {
+                    "text": "„normal“",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kein Schutzbedarf erforderlich",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich „sehr hoch“",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.3-004",
+            "text": "In welchen Formen können Kronjuwelen laut BSI-Standard 200-2 vorliegen?",
+            "explanation": "Kapitel 7.3 nennt explizit einzelne Dateien, Datensammlungen, strukturierte oder unstrukturierte Informationen, handschriftliche Notizen oder Gespräche sowie das Wissen und die Fähigkeiten einzelner Mitarbeiter. Eine Beschränkung auf rein digitale Datenbestände oder ausschließlich Patente widerspricht der Darstellung.",
+            "quote": "Kronjuwelen können auch in Formen vorliegen, die nicht auf den ersten Blick offensichtlich sind: dies mögen einzelne Dateien, Datensammlungen, strukturierte oder unstrukturierte Informationen bis hin zu handschriftlichen Notizen oder Gesprächen sein, kann aber auch das Wissen und die Fähigkeiten einzelner Mitarbeiter betreffen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Die möglichen Erscheinungsformen von Kronjuwelen erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 70,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Einzelne Dateien, Datensammlungen und handschriftliche Notizen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Wissen und Fähigkeiten einzelner Mitarbeiter",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich digital gespeicherte Datenbestände",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur patentierte Verfahren",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.3-005",
+            "text": "Welche Aussagen zur Veränderlichkeit und Einstufung von Kronjuwelen sind gemäß BSI-Standard 200-2 korrekt?",
+            "explanation": "Kapitel 7.3 führt aus, dass sich der Schutzbedarf von Kronjuwelen mit der Zeit verändern kann (z. B. Produktneuerungen, Jahresabschlussberichte) und dass der Schutzbedarf so hoch sein kann, dass selbst Sicherheitsbeauftragte keine Einsichtsberechtigung erhalten, obwohl sie den Schutzauftrag haben. Die anderen Aussagen widersprechen dem Text.",
+            "quote": "Der Schutzbedarf von Kronjuwelen kann sich mit der Zeit verändern. • Der Schutzbedarf von Kronjuwelen kann sogar als so hoch eingestuft werden, dass die Sicherheitsbeauftragten nicht die Berechtigungen bekommen, diese selbst einzusehen, aber den Auftrag haben, sie zu schützen.",
+            "topic": "modellierung",
+            "difficulty": "experte",
+            "learning_objective": "Veränderlichkeit und Einsichtsbeschränkungen bei Kronjuwelen erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 71,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Der Schutzbedarf von Kronjuwelen kann sich mit der Zeit verändern.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sicherheitsbeauftragte können den Schutzauftrag ohne Einsichtsberechtigung haben.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Kronjuwelen haben grundsätzlich einen konstanten Schutzbedarf.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sicherheitsbeauftragte müssen Kronjuwelen stets einsehen können.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.3-006",
+            "text": "Welche Beispiele nennt der BSI-Standard 200-2 ausdrücklich für typische Kronjuwelen aus der Praxis?",
+            "explanation": "Kapitel 7.3 führt u. a. Strategiepapiere für Firmenaufkäufe, Hintergrundmaterial zu Patentanträgen, Standorte geschützter Pflanzen oder gefährdeter Personen, administrative Zugriffsdaten, Kryptomaterial und Baupläne als typische Beispiele auf. Öffentlich zugängliche Pressemitteilungen oder Stellenausschreibungen werden nicht genannt.",
+            "quote": "• Details über anstehende geschäftliche Entscheidungen, z. B. Strategiepapiere für Firmenaufkäufe, Finanzierungspläne. • Details über Produktentwicklungen, z. B. Hintergrundmaterial zu Patentanträgen, Designentwürfen usw. • Informationen über Standorte geschützter Pflanzen, gefährdeter Personen oder geheimer Anlagen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Typische Praxisbeispiele für Kronjuwelen nennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 71,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Strategiepapiere für Firmenaufkäufe und Finanzierungspläne",
+                    "is_correct": true
+                },
+                {
+                    "text": "Standorte geschützter Pflanzen oder gefährdeter Personen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Öffentlich zugängliche Pressemitteilungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Stellenausschreibungen des Unternehmens",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-7.3-007",
+            "text": "Welche Form von Kronjuwelen beschreibt Kapitel 7.3 anhand der Kumulation wichtiger geschäftskritischer Werte?",
+            "explanation": "Der Standard beschreibt, dass Kronjuwelen auch durch die Kumulation wichtiger geschäftskritischer Werte entstehen können, so dass nicht ein einzelner Prozess oder ein einziges Objekt, sondern die Verfügbarkeit ganzer Produktionsketten oder Schutzeinrichtungen abzusichern ist. Ein Beispiel ist die Energieerzeugung in einem Kernkraftwerk. Die anderen Antworten geben dies nicht korrekt wieder.",
+            "quote": "Es kann somit Kronjuwelen geben, bei denen nicht ein einzelner Prozess oder ein einziges Objekt die höchste Verfügbarkeit aufweisen muss, sondern wo die Verfügbarkeit der Produktionskette oder sogar der Schutzeinrichtungen selbst abzusichern ist.",
+            "topic": "modellierung",
+            "difficulty": "experte",
+            "learning_objective": "Die Kumulations-Form von Kronjuwelen erkennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 72,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Die Verfügbarkeit der Produktionskette oder sogar der Schutzeinrichtungen selbst ist abzusichern.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Immer ein einzelner Geschäftsprozess steht im Fokus der Absicherung.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kronjuwelen entstehen nur durch Kompromittierung einzelner Objekte.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kumulation von Werten führt zu einer Herabstufung des Schutzbedarfs.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

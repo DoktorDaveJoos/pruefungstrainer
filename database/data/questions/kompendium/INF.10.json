@@ -1,0 +1,106 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "INF.10",
+        "chapter_title": "Besprechungs-, Veranstaltungs- und Schulungsräume",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-inf.10-001",
+            "text": "Was MUSS laut INF.10.A1 für Besprechungs-, Veranstaltungs- und Schulungsräume unter anderem festgelegt werden?",
+            "explanation": "INF.10.A1 verlangt, dass festgelegt werden muss, ob und unter welchen Bedingungen von externen Personen mitgebrachte IT-Systeme verwendet werden dürfen, und ob und auf welche Netzzugänge und TK-Schnittstellen externe Personen zugreifen dürfen.",
+            "quote": "Es MUSS auch festgelegt werden, ob und unter welchen Bedingungen von externen Personen mitgebrachte IT-Systeme verwenden dürfen. Weiterhin MUSS festgelegt werden, ob und auf welche Netzzugänge und TK-Schnittstellen externen Personen zugreifen dürfen.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Kernregelungen für Besprechungsräume nach INF.10.A1 benennen.",
+            "baustein_id": "INF.10",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Ob und unter welchen Bedingungen externe Personen mitgebrachte IT-Systeme verwenden dürfen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ob und auf welche Netzzugänge und TK-Schnittstellen externe Personen zugreifen dürfen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Welche Getränke in Besprechungsräumen erlaubt sind",
+                    "is_correct": false
+                },
+                {
+                    "text": "Wie viele Personen sich maximal gleichzeitig im Raum aufhalten dürfen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.10-002",
+            "text": "Was SOLLTE laut INF.10.A6 hinsichtlich der Netzzugänge in Besprechungsräumen sichergestellt werden?",
+            "explanation": "INF.10.A6 verlangt, dass sichergestellt werden sollte, dass mitgebrachte IT-Systeme nicht über das Datennetz mit internen IT-Systemen der Institution verbunden werden können. Ein Datennetz für externe Personen sollte vom LAN der Institution getrennt werden.",
+            "quote": "Es SOLLTE sichergestellt werden, dass mitgebrachte IT-Systeme nicht über das Datennetz mit internen IT-Systemen der Institution verbunden werden können. • Ein Datennetz für externe Personen SOLLTE vom LAN der Institution getrennt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an sichere Netzzugänge in Besprechungsräumen nach INF.10.A6 erklären.",
+            "baustein_id": "INF.10",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Mitgebrachte IT-Systeme sollen nicht über das Datennetz mit internen IT-Systemen verbunden werden können",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ein Datennetz für externe Personen soll vom LAN der Institution getrennt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Externe Personen sollen vollen Zugang zum internen LAN erhalten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Netzzugänge sollen in Besprechungsräumen grundsätzlich deaktiviert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-inf.10-003",
+            "text": "Was SOLLTE laut INF.10.A4 bei der Planung von Besprechungsräumen berücksichtigt werden, die oft von externen Personen genutzt werden?",
+            "explanation": "INF.10.A4 empfiehlt, dass Räumlichkeiten, die oft zusammen mit oder ausschließlich von externen Personen genutzt werden, nicht in Gebäudeteilen liegen sollten, in deren Nähe regelmäßig vertrauliche Informationen besprochen und bearbeitet werden.",
+            "quote": "Insbesondere Räumlichkeiten, die oft zusammen mit oder ausschließlich von externen Personen genutzt werden, SOLLTEN NICHT in Gebäudeteilen liegen, in deren Nähe regelmäßig vertrauliche Informationen besprochen und bearbeitet werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Planungsempfehlung für Besprechungsräume mit externen Personen nach INF.10.A4 benennen.",
+            "baustein_id": "INF.10",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie sollten nicht in der Nähe von Bereichen liegen, in denen regelmäßig vertrauliche Informationen besprochen werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie sollten sich im Erdgeschoss mit direktem Zugang von außen befinden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie sollten möglichst nah am Serverraum liegen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie sollten ausschließlich in separaten Gebäuden eingerichtet werden",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

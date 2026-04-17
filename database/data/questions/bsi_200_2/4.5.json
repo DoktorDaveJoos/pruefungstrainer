@@ -1,0 +1,127 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.5",
+        "chapter_title": "Das IS-Management-Team",
+        "page_start": 43,
+        "page_end": 44
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.5-001",
+            "text": "Welche Hauptfunktion hat das IS-Management-Team gegenüber dem Informationssicherheitsbeauftragten?",
+            "explanation": "Das IS-Management-Team unterstützt den ISB; es koordiniert übergreifende Maßnahmen in der Gesamtorganisation, trägt Informationen zusammen und führt Kontrollaufgaben durch. Es ersetzt den ISB nicht und hat auch nicht die operative Verantwortung für den IT-Betrieb oder die alleinige Entscheidungsbefugnis für Budgets.",
+            "quote": "Das IS-Management-Team unterstützt den Informationssicherheitsbeauftragten • Informationen zusammenträgt und Kontrollaufgaben durchführt.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die unterstützende Rolle des IS-Management-Teams gegenüber dem ISB benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 43,
+            "page_end": null,
+            "answers": [
+                { "text": "Es unterstützt den ISB durch Koordination übergreifender Maßnahmen und Kontrollaufgaben", "is_correct": true },
+                { "text": "Es ersetzt den ISB in allen operativen Aufgaben der Informationssicherheit", "is_correct": false },
+                { "text": "Es ist primär für den IT-Betrieb und die Umsetzung technischer Konfigurationen zuständig", "is_correct": false },
+                { "text": "Es hat die alleinige Entscheidungsbefugnis über das Budget der Informationssicherheit", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.5-002",
+            "text": "Wovon hängt laut BSI-Standard die genaue Ausprägung des IS-Management-Teams ab?",
+            "explanation": "Die Ausprägung hängt laut Passage von der Größe der Institution, dem angestrebten Sicherheitsniveau und den vorhandenen Ressourcen ab. Gesetzliche Mindestvorgaben, Branchenzugehörigkeit allein oder die Anzahl externer Dienstleister werden nicht genannt.",
+            "quote": "Die genaue Ausprägung hängt von der Größe der jeweiligen Institution, dem angestrebten Sicherheitsniveau und den vorhandenen Ressourcen ab.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Einflussfaktoren auf die Ausprägung des IS-Management-Teams benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 43,
+            "page_end": null,
+            "answers": [
+                { "text": "Von der Größe der Institution", "is_correct": true },
+                { "text": "Vom angestrebten Sicherheitsniveau und den vorhandenen Ressourcen", "is_correct": true },
+                { "text": "Ausschließlich von gesetzlichen Mindestvorgaben", "is_correct": false },
+                { "text": "Von der Anzahl externer Dienstleister in der Institution", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.5-003",
+            "text": "Aus wie vielen Personen kann das IS-Management-Team im Extremfall bestehen?",
+            "explanation": "Laut Passage besteht das Team im Extremfall nur aus zwei Personen: dem ISB (der dann sämtliche Aufgaben im Sicherheitsprozess übernimmt) und seinem Stellvertreter. Alle anderen genannten Zahlen widersprechen der Passage.",
+            "quote": "Im Extremfall besteht das IS-Management-Team nur aus zwei Personen, dem Informationssicherheitsbeauftragten, dem in diesem Fall sämtliche Aufgaben im Sicherheitsprozess obliegen, und seinem Stellvertreter.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die minimale Besetzung eines IS-Management-Teams kennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 43,
+            "page_end": null,
+            "answers": [
+                { "text": "Aus zwei Personen: dem ISB und seinem Stellvertreter", "is_correct": true },
+                { "text": "Aus mindestens fünf Personen inklusive der Leitungsebene", "is_correct": false },
+                { "text": "Aus einer Person, dem ISB allein", "is_correct": false },
+                { "text": "Aus mindestens drei Personen plus einem externen Auditor", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.5-004",
+            "text": "Welche Aufgaben zählen laut Passage zu den Aufgaben des IS-Management-Teams?",
+            "explanation": "Die Passage listet explizit: Informationssicherheitsziele und -strategien bestimmen sowie die Leitlinie entwickeln; Umsetzung der Sicherheitsleitlinie überprüfen; Mitwirken bei der Erstellung des Sicherheitskonzepts. Die Durchführung externer Penetrationstests wird nicht als Teamaufgabe genannt.",
+            "quote": "Informationssicherheitsziele und -strategien zu bestimmen • die Umsetzung der Sicherheitsleitlinie zu überprüfen, • den Sicherheitsprozess zu initiieren, zu steuern und zu kontrollieren, • bei der Erstellung des Sicherheitskonzepts mitzuwirken,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Kernaufgaben des IS-Management-Teams benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 43,
+            "page_end": null,
+            "answers": [
+                { "text": "Informationssicherheitsziele und -strategien bestimmen sowie die Leitlinie entwickeln", "is_correct": true },
+                { "text": "Den Sicherheitsprozess initiieren, steuern und kontrollieren", "is_correct": true },
+                { "text": "Bei der Erstellung des Sicherheitskonzepts mitwirken", "is_correct": true },
+                { "text": "Externe Penetrationstests eigenständig durchführen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.5-005",
+            "text": "Welche Kenntnisse und Erfahrungen sollten die Mitglieder eines IS-Management-Teams mitbringen?",
+            "explanation": "Die Passage fordert Kenntnisse in Informationssicherheit, technische Kenntnisse über die eingesetzten IT-, ICS- und IoT-Systeme sowie Erfahrungen mit Organisation und Verwaltung. Juristische Fachausbildung oder zertifizierte Auditorentätigkeit werden nicht als Voraussetzungen genannt.",
+            "quote": "Um seine Aufgaben erfüllen zu können, sollte sich das IS-Management-Team aus Personen zusammensetzen, die über Kenntnisse in Informationssicherheit und technische Kenntnisse über die in der Institution eingesetzten IT-, ICS- und IoT-Systeme verfügen sowie Erfahrungen mit Organisation und Verwaltung haben.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Das Qualifikationsprofil der Mitglieder des IS-Management-Teams beschreiben.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 43,
+            "page_end": null,
+            "answers": [
+                { "text": "Kenntnisse in Informationssicherheit sowie technische Kenntnisse über IT-, ICS- und IoT-Systeme", "is_correct": true },
+                { "text": "Erfahrungen mit Organisation und Verwaltung", "is_correct": true },
+                { "text": "Eine juristische Fachausbildung als Mindestvoraussetzung", "is_correct": false },
+                { "text": "Eine BSI-zertifizierte Auditorentätigkeit für jedes Teammitglied", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.5-006",
+            "text": "Welche Rolle übernimmt ein Fachbereichsvertreter in einem IS-Management-Team einer großen Institution?",
+            "explanation": "Der Fachbereichsvertreter nimmt die Vertretung neben seinen Fachaufgaben wahr, bringt Expertise aus dem Fachbereich ein und wird gleichzeitig Ansprechpartner für Sicherheitsfragen der Mitarbeiter aus diesem Bereich. Er wird nicht zum Vollzeit-ISB oder alleinigen Entscheider.",
+            "quote": "In großen Institutionen ist es sinnvoll, wenn die verschiedenen Fachbereiche einer Institution jeweils einen Vertreter im IS-Management-Team haben. Diese Person übernimmt die Vertretung im IS-Management-Team neben ihren Fachaufgaben, bringt die Expertise aus dem Fachbereich ein und wird dadurch gleichzeitig Ansprechpartner für Sicherheitsfragen der Mitarbeiter aus diesem Bereich.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Doppelfunktion eines Fachbereichsvertreters im IS-Management-Team erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 43,
+            "page_end": null,
+            "answers": [
+                { "text": "Er übernimmt die Vertretung neben seinen Fachaufgaben und bringt Fachbereichsexpertise ein", "is_correct": true },
+                { "text": "Er wird Ansprechpartner für Sicherheitsfragen der Mitarbeiter aus seinem Bereich", "is_correct": true },
+                { "text": "Er gibt seine Fachaufgaben ab und arbeitet Vollzeit im IS-Management-Team", "is_correct": false },
+                { "text": "Er ist alleiniger Entscheider über alle Sicherheitsmaßnahmen in seinem Bereich", "is_correct": false }
+            ]
+        }
+    ]
+}

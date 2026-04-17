@@ -1,0 +1,168 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "4.1",
+        "chapter_title": "Integration der Informationssicherheit in organisationsweite Abläufe und Prozesse",
+        "page_start": 36,
+        "page_end": 38
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-4.1-001",
+            "text": "Wie muss das Informationssicherheitsmanagement laut BSI-Standard 200-2 in die Institution eingebunden werden?",
+            "explanation": "Die Passage fordert eine vernünftige Integration in bestehende Organisationsstrukturen, klar festgelegte Ansprechpartner und klar voneinander abgegrenzte Aufgaben und Zuständigkeiten. Eine isolierte Stabsstelle ohne Schnittstellen oder reine Angliederung an die IT-Abteilung widersprechen dieser Integration.",
+            "quote": "Daher muss das Informationssicherheitsmanagement vernünftig in bestehende Organisationsstrukturen integriert und Ansprechpartner festgelegt werden. Aufgaben und Zuständigkeiten müssen klar voneinander abgegrenzt sein.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Integration des Informationssicherheitsmanagements in die Organisation erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Es muss vernünftig in bestehende Organisationsstrukturen integriert werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Aufgaben und Zuständigkeiten müssen klar voneinander abgegrenzt sein",
+                    "is_correct": true
+                },
+                {
+                    "text": "Es muss als isolierte Einheit ohne Schnittstellen zu anderen Bereichen aufgestellt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Es muss vollständig in die IT-Abteilung eingegliedert werden",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.1-002",
+            "text": "Bei welchen Entscheidungen müssen laut BSI-Standard 200-2 die notwendigen Sicherheitsaspekte berücksichtigt werden?",
+            "explanation": "Die Passage verlangt, dass nicht nur bei einzelnen Maßnahmen, sondern bei allen strategischen Entscheidungen Sicherheitsaspekte berücksichtigt werden. Als Beispiele nennt sie Outsourcing, neue elektronische Vertriebskanäle und die Anmietung neuer Räumlichkeiten.",
+            "quote": "Es muss dabei gewährleistet sein, dass nicht nur bei einzelnen Maßnahmen, sondern bei allen strategischen Entscheidungen die notwendigen Sicherheitsaspekte berücksichtigt werden. Dazu gehören zum Beispiel Entscheidungen über Outsourcing oder die Nutzung neuer elektronischer Vertriebskanäle ebenso wie die Anmietung neuer Räumlichkeiten.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Strategische Entscheidungen als Geltungsbereich für Sicherheitsaspekte einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Bei allen strategischen Entscheidungen, z. B. Outsourcing oder neuen Vertriebskanälen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Nur bei technischen Einzelmaßnahmen im IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich bei Entscheidungen über Personalfragen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur bei jährlichen Budgetentscheidungen des Vorstands",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.1-003",
+            "text": "Wann muss die IS-Organisation laut BSI-Standard 200-2 bei Projekten beteiligt werden?",
+            "explanation": "Die Passage verlangt, dass die IS-Organisation bei allen Projekten mit Auswirkungen auf die Informationssicherheit rechtzeitig beteiligt wird. Eine Beteiligung erst nach Projektabschluss, nur bei IT-Projekten oder nur auf schriftliche Anforderung widerspricht dem Text.",
+            "quote": "Daher muss die IS-Organisation bei allen Projekten, die Auswirkungen auf die Informationssicherheit haben könnten, rechtzeitig beteiligt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zeitpunkt der IS-Organisations-Beteiligung in Projekten einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Rechtzeitig bei allen Projekten mit möglichen Auswirkungen auf die Informationssicherheit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Erst nach Projektabschluss im Rahmen einer Abnahmeprüfung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ausschließlich bei reinen IT-Projekten",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur auf schriftliche Anforderung der Projektleitung",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.1-004",
+            "text": "Wie sollen laut BSI-Standard 200-2 Methoden zum Informationssicherheitsmanagement und zum Risikomanagement abgestimmt werden?",
+            "explanation": "Die Passage fordert, dass die Methoden zum Informationssicherheitsmanagement und zum Management von Risiken mit den bereits etablierten Methoden und Managementsystemen abgestimmt werden, da Informationssicherheitsrisiken zu den wichtigsten operationellen Risiken gehören. Der Text verweist explizit auf BSI-Standard 200-3. Eine strikte Trennung oder vollständige Ersetzung bestehender Systeme wird nicht gefordert.",
+            "quote": "Da Informationssicherheitsrisiken ebenso wie IT-Risiken zu den wichtigsten operationellen Risiken gehören, sollten die Methoden zum Informationssicherheitsmanagement und zum Management von Risiken mit den bereits etablierten Methoden und Managementsystemen abgestimmt werden, siehe hierzu auch BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Abstimmung zwischen Informationssicherheits- und Risikomanagement erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie sollten mit den bereits etablierten Methoden und Managementsystemen abgestimmt werden",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie müssen strikt getrennt und unabhängig voneinander betrieben werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das bestehende Risikomanagement muss vollständig durch das ISMS ersetzt werden",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie werden ausschließlich durch externe Dienstleister koordiniert",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-4.1-005",
+            "text": "Zu welcher Kategorie von Risiken gehören laut BSI-Standard 200-2 Informationssicherheitsrisiken?",
+            "explanation": "Die Passage ordnet Informationssicherheitsrisiken ebenso wie IT-Risiken den wichtigsten operationellen Risiken zu. Finanzrisiken, Reputationsrisiken oder Marktrisiken werden in dieser Passage nicht als zutreffende Kategorie genannt.",
+            "quote": "Da Informationssicherheitsrisiken ebenso wie IT-Risiken zu den wichtigsten operationellen Risiken gehören,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Informationssicherheitsrisiken als operationelle Risiken einordnen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 36,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Zu den operationellen Risiken",
+                    "is_correct": true
+                },
+                {
+                    "text": "Zu den Finanzrisiken",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zu den reinen Marktrisiken",
+                    "is_correct": false
+                },
+                {
+                    "text": "Zu den rein strategischen Risiken",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

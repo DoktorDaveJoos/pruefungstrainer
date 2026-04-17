@@ -1,0 +1,89 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.1.2.2",
+        "chapter_title": "Windows Server 2012",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T23:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.1.2.2-001",
+            "text": "Was MUSS laut SYS.1.2.2.A1 bei der Planung von Windows Server 2012 grundsätzlich abgewogen werden?",
+            "explanation": "SYS.1.2.2.A1 fordert, dass die Nutzung von ins Betriebssystem integrierten Cloud-Diensten grundsätzlich abgewogen und geplant werden muss. Wenn nicht benötigt, muss die Einrichtung von Microsoft-Konten auf dem Server blockiert werden. Die Migration auf Linux oder die Installation aller verfügbaren Features werden dort nicht gefordert.",
+            "quote": "Die Nutzung von ins Betriebssystem integrierten Cloud-Diensten MUSS grundsätzlich abgewogen und geplant werden. Wenn nicht benötigt, MUSS die Einrichtung von Microsoft-Konten auf dem Server blockiert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Planungsanforderungen für Cloud-Dienste bei Windows Server 2012 gemäß SYS.1.2.2.A1 benennen.",
+            "baustein_id": "SYS.1.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Nutzung von integrierten Cloud-Diensten muss abgewogen und geplant werden", "is_correct": true },
+                { "text": "Die Einrichtung von Microsoft-Konten muss blockiert werden, wenn nicht benötigt", "is_correct": true },
+                { "text": "Alle verfügbaren Serverrollen und Features müssen installiert werden", "is_correct": false },
+                { "text": "Eine Migration auf ein Linux-basiertes System muss geprüft werden", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.2.2-002",
+            "text": "Welche Variante von Windows Server 2012 MUSS laut SYS.1.2.2.A2 installiert werden, wenn der Funktionsumfang ausreicht?",
+            "explanation": "SYS.1.2.2.A2 fordert, dass die Server-Core-Variante installiert werden muss, wenn sie vom Funktionsumfang her ausreichend ist. Andernfalls muss begründet werden, warum sie nicht genügt. Die Desktop Experience, die Datacenter-Edition oder die Standard-Edition werden dort nicht als bevorzugte Variante genannt.",
+            "quote": "Wenn es vom Funktionsumfang her ausreichend ist, MUSS die Server-Core-Variante installiert werden. Andernfalls MUSS begründet werden, warum die Server-Core-Variante nicht genügt.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die bevorzugte Installationsvariante für Windows Server 2012 gemäß SYS.1.2.2.A2 benennen.",
+            "baustein_id": "SYS.1.2.2",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Die Server-Core-Variante", "is_correct": true },
+                { "text": "Die Desktop-Experience-Variante", "is_correct": false },
+                { "text": "Die Datacenter-Edition", "is_correct": false },
+                { "text": "Die Standard-Edition mit GUI", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.2.2-003",
+            "text": "Welche Sicherheitsgruppe SOLLTE in Windows Server 2012 R2 laut SYS.1.2.2.A6 für Benutzendenkonten verwendet werden?",
+            "explanation": "SYS.1.2.2.A6 empfiehlt, dass alle Konten von Benutzenden Mitglied der Sicherheitsgruppe Geschützte Nutzer sein sollten. Konten für Dienste und Computer sollten hingegen nicht Mitglied dieser Gruppe sein. Die Gruppen Administratoren, Domänen-Benutzer oder Power Users werden dort nicht in diesem Kontext genannt.",
+            "quote": "In Windows Server 2012 R2 SOLLTEN alle Konten von Benutzenden Mitglied der Sicherheitsgruppe \u201eGeschützte Nutzer\u201c sein. Konten für Dienste und Computer SOLLTEN NICHT Mitglied von \u201eGeschützte Nutzer\u201c sein.",
+            "topic": "bausteine",
+            "difficulty": "experte",
+            "learning_objective": "Die empfohlene Sicherheitsgruppe für Benutzendenkonten in Windows Server 2012 R2 gemäß SYS.1.2.2.A6 identifizieren.",
+            "baustein_id": "SYS.1.2.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Geschützte Nutzer", "is_correct": true },
+                { "text": "Administratoren", "is_correct": false },
+                { "text": "Domänen-Benutzer", "is_correct": false },
+                { "text": "Power Users", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.1.2.2-004",
+            "text": "Was SOLLTE laut SYS.1.2.2.A8 zum Schutz der Systemintegrität bei Windows Server 2012 aktiviert werden?",
+            "explanation": "SYS.1.2.2.A8 empfiehlt, dass AppLocker aktiviert und möglichst strikt konfiguriert sein sollte, um die Systemintegrität zu schützen. BitLocker dient der Festplattenverschlüsselung, Windows Defender dem Virenschutz und die Windows-Firewall der Netzfilterung \u2014 keines davon wird in SYS.1.2.2.A8 adressiert.",
+            "quote": "AppLocker SOLLTE aktiviert und möglichst strikt konfiguriert sein.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die empfohlene Maßnahme zum Schutz der Systemintegrität gemäß SYS.1.2.2.A8 benennen.",
+            "baustein_id": "SYS.1.2.2",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "AppLocker", "is_correct": true },
+                { "text": "BitLocker", "is_correct": false },
+                { "text": "Windows Defender", "is_correct": false },
+                { "text": "Windows-Firewall", "is_correct": false }
+            ]
+        }
+    ]
+}

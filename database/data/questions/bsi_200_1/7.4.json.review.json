@@ -1,0 +1,46 @@
+{
+    "reviewed_at": "2026-04-16T19:00:00Z",
+    "critic_notes": "Section 7.4 is strong on substance. All eight quotes verify verbatim against the normalized source despite the known page-break injection mid-section. Notable: 7.4-005 trims the quote at 'Konsequenzen' rather than extending to 'in der Sicherheitsorganisation führen.' Verified this is a correct defensive choice — the raw text splits the word as 'Sicher[soft-hyphen]\\n' followed by a page-number/page-header/document-title block and then 'heitsorganisation', so the normalization rule (which only joins soft-hyphen+newline, not soft-hyphen+multi-line noise) would fail to rejoin. The trimmed quote is still a clean verbatim substring and the answer's paraphrase ('Konsequenzen in der Sicherheitsorganisation führen') is unambiguously supported by the underlying prose. 7.4-007 is correctly labeled topic=check (audit mechanics/independence). 7.4-006 labeled experte is borderline but acceptable — the 'proaktiv' nuance requires reading past the surface. Page ranges fit 30-31 manifest, with 7.4-005 straddling both pages appropriately. Schema correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-1-7.4-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-002",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-003",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-004",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-005",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-006",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-007",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "bsi-200-1-7.4-008",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

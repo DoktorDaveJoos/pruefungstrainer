@@ -1,0 +1,137 @@
+{
+    "source": {
+        "document": "bsi_200_2",
+        "chapter": "3.4",
+        "chapter_title": "Erstellung einer Leitlinie zur Informationssicherheit",
+        "page_start": 34,
+        "page_end": 34
+    },
+    "generated_at": "2026-04-16T00:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-2-3.4-001",
+            "text": "Welche zusätzlichen Inhalte können laut BSI-Standard 200-2 zur Motivation in einer Sicherheitsleitlinie aufgenommen werden?",
+            "explanation": "Die Passage nennt ausdrücklich wichtige Gefährdungen für die Geschäftsprozesse sowie wichtige gesetzliche Regelungen und vertragliche Vereinbarungen als motivierende Ergänzungen. Eine vollständige Liste aller Anwendungen oder technische Konfigurationsdetails gehören nicht zu den motivierenden Inhalten der Leitlinie.",
+            "quote": "Zur Motivation können einige, für die Geschäftsprozesse wichtige Gefährdungen, thematisiert und die wichtigsten gesetzlichen Regelungen und sonstige wichtige Rahmenbedingungen (wie ver tragliche Vereinbarungen) genannt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die motivierenden Zusatzinhalte einer Sicherheitsleitlinie benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Für die Geschäftsprozesse wichtige Gefährdungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die wichtigsten gesetzlichen Regelungen und vertragliche Vereinbarungen",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine vollständige Liste aller in der Institution eingesetzten Anwendungen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Technische Konfigurationsdetails der Firewalls",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.4-002",
+            "text": "Für welche Rollen sollten laut BSI-Standard 200-2 in der Sicherheitsleitlinie wesentliche Aufgaben und Zuständigkeiten aufgezeigt werden?",
+            "explanation": "Die Passage nennt ausdrücklich das IS-Management-Team, den IS-Beauftragten, die Mitarbeiter und den IT-Betrieb als Rollen, für die Aufgaben und Zuständigkeiten in der Leitlinie aufgezeigt werden sollten. Der Betriebsrat und externe Auditoren werden hier nicht genannt.",
+            "quote": "Die wesentlichen Aufgaben und Zuständigkeiten im Sicherheitsprozess sollten aufgezeigt werden (insbesondere für das IS-Management-Team, den IS-Beauftragten, die Mitarbeiter und den IT-Be trieb,",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die in der Sicherheitsleitlinie zu adressierenden Rollen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "IS-Management-Team und IS-Beauftragter",
+                    "is_correct": true
+                },
+                {
+                    "text": "Mitarbeiter und IT-Betrieb",
+                    "is_correct": true
+                },
+                {
+                    "text": "Betriebsrat und Personalvertretung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Externe Auditoren und Zertifizierungsstellen",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.4-003",
+            "text": "Welche Programme können laut BSI-Standard 200-2 in der Sicherheitsleitlinie angekündigt werden?",
+            "explanation": "Die Passage nennt ausdrücklich Schulungs- und Sensibilisierungsmaßnahmen als Förderprogramme, die in der Leitlinie angekündigt werden können. Programme zur Kostensenkung, Outsourcing-Initiativen oder Beschaffungsprogramme werden hier nicht als Leitlinien-Inhalt genannt.",
+            "quote": "Programme zur Förderung der Informationssicherheit durch Schulungs- und Sensibilisierungsmaß nahmen können angekündigt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Förderprogramme als Bestandteil der Sicherheitsleitlinie benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Schulungs- und Sensibilisierungsmaßnahmen zur Förderung der Informationssicherheit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Programme zur Kostensenkung in der IT-Abteilung",
+                    "is_correct": false
+                },
+                {
+                    "text": "Outsourcing-Initiativen für den IT-Betrieb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Beschaffungsprogramme für neue Hardware",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.4-004",
+            "text": "Was sollte laut BSI-Standard 200-2 in der Leitlinie im Zusammenhang mit Ansprechpartnern genannt werden?",
+            "explanation": "Die Passage fordert, dass die Organisationseinheiten oder Rollen benannt werden, die als Ansprechpartner für Sicherheitsfragen fungieren. Konkrete Namen einzelner Mitarbeiter, Telefonnummern oder externe Hotlines werden an dieser Stelle nicht verlangt.",
+            "quote": "Außerdem sollten die Organisationseinheiten oder Rollen benannt werden, die als Ansprechpartner für Sicherheitsfragen fungieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Benennung von Ansprechpartner-Rollen in der Leitlinie erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 34,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Organisationseinheiten oder Rollen, die als Ansprechpartner für Sicherheitsfragen fungieren",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die konkreten Namen aller zuständigen Mitarbeiter mit Telefonnummern",
+                    "is_correct": false
+                },
+                {
+                    "text": "Externe 24/7-Hotlines für Sicherheitsvorfälle",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Privatadressen der Sicherheitsverantwortlichen",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

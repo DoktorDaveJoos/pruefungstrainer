@@ -1,0 +1,230 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "7.1",
+        "chapter_title": "Planung des Sicherheitsprozesses",
+        "page_start": 28,
+        "page_end": 30
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-7.1-001",
+            "text": "Welchen Zweck verfolgt die Schaffung von Informationssicherheit laut BSI-Standard 200-1?",
+            "explanation": "Informationssicherheit ist kein Selbstzweck, sondern dient der Erreichung der Ziele einer Institution und der zuverlässigen Ausführung von Geschäftsprozessen bzw. Aufgaben. Die Darstellung als Selbstzweck oder reine Compliance-Übung widerspricht der im Standard festgelegten Zielausrichtung.",
+            "quote": "Die Schaffung von Informationssicherheit ist kein Selbstzweck, sondern Informationssicherheit trägt dazu bei, dass die Ziele einer Institution erreicht und Geschäftsprozesse bzw. Aufgaben zuverlässig ausgeführt werden können.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den geschäftsorientierten Zweck der Informationssicherheit erklären.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 28,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Sie soll dazu beitragen, die Ziele der Institution zu erreichen und Geschäftsprozesse zuverlässig auszuführen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Sie ist ein Selbstzweck und dient vorrangig der technischen Absicherung.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie dient ausschließlich der Einhaltung gesetzlicher Datenschutzpflichten.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sie hat vor allem das Ziel, die IT-Abteilung organisatorisch aufzuwerten.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-002",
+            "text": "Was ist im Rahmen der Ermittlung von Rahmenbedingungen bei der Umfeldanalyse zu berücksichtigen?",
+            "explanation": "Die Umfeldanalyse betrachtet sowohl interne als auch externe Parteien einschließlich ihrer Sicherheitsanforderungen, ihrer Anforderungen an das ISMS und ihrer gesetzlichen und regulatorischen Anforderungen. Eine rein interne Sichtweise oder die Beschränkung auf technische Aspekte deckt diese Perspektive nicht ab.",
+            "quote": "Die Identifikation der Rahmenbedingungen beinhaltet auch eine Umfeldanalyse, bei der sowohl interne als auch externe Parteien sowie deren Sicherheitsanforderungen, deren Anforderungen an das ISMS und ihre gesetzlichen und regulatorischen Anforderungen berücksichtigt werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Inhalte der Umfeldanalyse benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 28,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Interne und externe Parteien mit ihren Sicherheitsanforderungen sowie gesetzlichen und regulatorischen Anforderungen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich interne Fachabteilungen und deren Schutzbedarfe.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur technische Schnittstellen zu externen Dienstleistern.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Nur die Erwartungen der eigenen Geschäftsführung.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-003",
+            "text": "Warum sollten die Informationssicherheitsziele zu Beginn des Sicherheitsprozesses sorgfältig festgelegt werden?",
+            "explanation": "Werden die Ziele nicht sorgfältig festgelegt, besteht die Gefahr, dass Sicherheitsstrategien und -konzepte an den eigentlichen Anforderungen der Institution vorbei erarbeitet werden. Die übrigen Antworten nennen Zwecke, die im Passus nicht als Begründung angeführt werden.",
+            "quote": "Zu Beginn eines jeden Sicherheitsprozesses sollten die Informationssicherheitsziele sorgfältig festgelegt werden. Anderenfalls besteht die Gefahr, dass Sicherheitsstrategien und -konzepte erarbeitet werden, die die eigentlichen Anforderungen der Institution verfehlen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Begründung für die frühzeitige Festlegung von Sicherheitszielen nennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 28,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Damit Sicherheitsstrategien und -konzepte nicht an den eigentlichen Anforderungen der Institution vorbeigehen.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Damit später keine Änderungen am ISMS mehr nötig sind.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Damit eine Zertifizierung ohne Audit erreicht werden kann.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Damit der ISB keine weiteren Ressourcen anfordern muss.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-004",
+            "text": "Welche Themen sollten bei der Entwicklung der Sicherheitsstrategie mindestens berücksichtigt werden?",
+            "explanation": "Der Standard listet unter anderem gesetzliche Anforderungen (z. B. Datenschutz), Kundenanforderungen und bestehende Verträge sowie globale Bedrohungen der Geschäftstätigkeit durch Sicherheitsrisiken auf. Eine Beschränkung auf die IT-Infrastruktur greift zu kurz.",
+            "quote": "• gesetzliche Anforderungen und Vorschriften, wie z. B. zum Datenschutz, • Kundenanforderungen und bestehende Verträge, • interne Rahmenbedingungen (z. B. organisationsweites Risikomanagement), Umfeldanalyse, • (IT-gestützte) Geschäftsprozesse und Fachaufgaben und • globale Bedrohungen der Geschäftstätigkeit durch Sicherheitsrisiken",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Pflichtthemen der Sicherheitsstrategie identifizieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 28,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Gesetzliche Anforderungen wie der Datenschutz.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Kundenanforderungen und bestehende Verträge.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Globale Bedrohungen der Geschäftstätigkeit durch Sicherheitsrisiken.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Die Marketingstrategie des Unternehmens.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-005",
+            "text": "Welche Aussagen muss die Leitlinie zur Informationssicherheit mindestens enthalten?",
+            "explanation": "Die Leitlinie muss mindestens den Stellenwert der Informationssicherheit, den Bezug der Sicherheitsziele zu den Geschäftszielen, die Sicherheitsziele selbst, eine Durchsetzungszusicherung der Leitung sowie die Beschreibung der Organisationsstruktur des Sicherheitsprozesses enthalten. Detaillierte technische Maßnahmenlisten oder Budgets gehören nicht zu den Mindestinhalten der Leitlinie.",
+            "quote": "Stellenwert der Informationssicherheit und Bedeutung der wesentlichen Informationen • Bezug der Informationssicherheitsziele zu den Geschäftszielen oder Aufgaben der Institution • Zusicherung, dass die Sicherheitsleitlinie von der Institutionsleitung durchgesetzt wird • Beschreibung der für die Umsetzung des Informationssicherheitsprozesses etablierten",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Mindestinhalte einer Leitlinie zur Informationssicherheit bestimmen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 29,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Den Stellenwert der Informationssicherheit für die Aufgabenerfüllung.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine Zusicherung, dass die Leitlinie von der Institutionsleitung durchgesetzt wird.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine Beschreibung der für den Sicherheitsprozess etablierten Organisationsstruktur.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Eine vollständige Liste aller technischen Einzelmaßnahmen mit Jahresbudget.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-006",
+            "text": "Was beschreibt der Begriff „Informationsverbund“ im IT-Grundschutz?",
+            "explanation": "Im IT-Grundschutz bezeichnet „Informationsverbund“ den Geltungsbereich des ISMS und umfasst ausdrücklich auch alle infrastrukturellen, organisatorischen, personellen und technischen Komponenten, die der Aufgabenerfüllung dienen. Eine Beschränkung auf IT-Systeme oder Netzwerke trifft nicht zu.",
+            "quote": "Im Rahmen des IT-Grundschutzes wird für den Geltungsbereich der Begriff „Informationsverbund“ verwendet. Der Informationsverbund umfasst auch alle infrastrukturellen, organisatorischen, personellen und technischen Komponenten, die der Aufgabenerfüllung in diesem Anwendungsbereich der Informationsverarbeitung dienen.",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Den Begriff Informationsverbund und seine Komponenten definieren.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 29,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Den Geltungsbereich samt infrastruktureller, organisatorischer, personeller und technischer Komponenten.",
+                    "is_correct": true
+                },
+                {
+                    "text": "Ausschließlich die IT-Systeme und Server einer Institution.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Das Netzwerk zwischen Rechenzentren und Standorten.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Die Summe der Datenbestände einer Institution ohne personelle Komponenten.",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-7.1-007",
+            "text": "Worauf konzentriert sich die Kern-Absicherung bei der Festlegung des Geltungsbereichs?",
+            "explanation": "Bei der Kern-Absicherung konzentriert man sich auf einige herausragende, besonders geschäftskritische Assets, die auch als „Kronjuwelen“ bezeichnet werden. Basis- und Standard-Absicherung umfassen hingegen häufig die gesamte Institution.",
+            "quote": "Während bei der Basis- und Standard-Absicherung der Geltungsbereich häufig die gesamte Institution umfasst, konzentriert man sich bei der Kern-Absicherung auf einige herausragende, besonders geschäftskritische Assets (sogenannte „Kronjuwelen“).",
+            "topic": "modellierung",
+            "difficulty": "basis",
+            "learning_objective": "Unterschiede der Absicherungsarten im Geltungsbereich benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 29,
+            "page_end": null,
+            "answers": [
+                {
+                    "text": "Auf einige herausragende, besonders geschäftskritische Assets („Kronjuwelen“).",
+                    "is_correct": true
+                },
+                {
+                    "text": "Auf die gesamte Institution einschließlich aller Randprozesse.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf ausschließlich externe Lieferantenbeziehungen.",
+                    "is_correct": false
+                },
+                {
+                    "text": "Auf alle IT-Systeme mit normalem Schutzbedarf.",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

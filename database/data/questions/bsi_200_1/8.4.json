@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "bsi_200_1",
+        "chapter": "8.4",
+        "chapter_title": "Kontinuierliche Verbesserung des Sicherheitskonzepts",
+        "page_start": 38,
+        "page_end": 39
+    },
+    "generated_at": "2026-04-16T18:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "bsi-200-1-8.4-001",
+            "text": "Welches Hauptziel verfolgt laut BSI-Standard 200-1 die regelmäßige Überprüfung des Sicherheitskonzepts?",
+            "explanation": "Der Standard definiert zwei Ziele der regelmäßigen Überprüfung: erkannte Fehler und Schwachstellen abstellen sowie die Sicherheitsmaßnahmen in Bezug auf Effizienz optimieren. Die Erhöhung des Budgets oder Marketing-Effekte sind nicht als Ziele genannt.",
+            "quote": "Die regelmäßige Überprüfung des Sicherheitskonzepts dient dazu, erkannte Fehler und Schwachstellen abzustellen und die Sicherheitsmaßnahmen in Bezug auf Effizienz zu optimieren.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Die Ziele der kontinuierlichen Verbesserung des Sicherheitskonzepts benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Erkannte Fehler und Schwachstellen abstellen und Sicherheitsmaßnahmen in Bezug auf Effizienz optimieren", "is_correct": true },
+                { "text": "Das Budget für Sicherheitstechnik jedes Jahr verdoppeln", "is_correct": false },
+                { "text": "Den Bekanntheitsgrad der Institution am Markt steigern", "is_correct": false },
+                { "text": "Die Zahl der Sicherheitsmitarbeiter regelmäßig zu erhöhen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.4-002",
+            "text": "Warum ist laut BSI-Standard 200-1 die Praxistauglichkeit von technischen Maßnahmen und organisatorischen Abläufen ein wichtiger Verbesserungspunkt?",
+            "explanation": "Der Standard nennt ausdrücklich die Verbesserung der Praxistauglichkeit als wichtigen Punkt, um die Akzeptanz der Sicherheitsmaßnahmen zu erhöhen. Das Ziel ist also die Akzeptanz, nicht etwa Kosteneinsparungen, Compliance oder Zertifizierungsvoraussetzungen.",
+            "quote": "Ein wichtiger Punkt ist die Verbesserung der Praxistauglichkeit von technischen Maßnahmen und organisatorischen Abläufen, um die Akzeptanz der Sicherheitsmaßnahmen zu erhöhen.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Den Zusammenhang zwischen Praxistauglichkeit und Akzeptanz von Sicherheitsmaßnahmen erläutern.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Um die Akzeptanz der Sicherheitsmaßnahmen zu erhöhen", "is_correct": true },
+                { "text": "Um die Lizenzkosten für Sicherheitsprodukte zu reduzieren", "is_correct": false },
+                { "text": "Um Compliance mit Datenschutzvorschriften formal nachzuweisen", "is_correct": false },
+                { "text": "Um die Voraussetzungen für ein ISO-Zertifikat zu erfüllen", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "bsi-200-1-8.4-003",
+            "text": "Welche qualitativen Eigenschaften der Formulierung von Sicherheitsmaßnahmen sollten laut BSI-Standard 200-1 regelmäßig beurteilt und ggf. modifiziert werden?",
+            "explanation": "Der Standard verlangt, dass die Formulierungen geeigneter Sicherheitsmaßnahmen immer wieder auch hinsichtlich ihrer Nachvollziehbarkeit und Verständlichkeit beurteilt und gegebenenfalls modifiziert werden. Aspekte wie Marketingtauglichkeit oder Mehrsprachigkeit werden nicht genannt.",
+            "quote": "Ebenso sollten die Formulierungen geeigneter Sicherheitsmaßnahmen immer wieder auch hinsichtlich ihrer Nachvollziehbarkeit und Verständlichkeit beurteilt und gegebenenfalls modifiziert werden.",
+            "topic": "methodik",
+            "difficulty": "basis",
+            "learning_objective": "Qualitative Kriterien für die Formulierung von Sicherheitsmaßnahmen benennen.",
+            "baustein_id": null,
+            "anforderung_type": null,
+            "page_start": 38,
+            "page_end": null,
+            "answers": [
+                { "text": "Nachvollziehbarkeit und Verständlichkeit", "is_correct": true },
+                { "text": "Marketingtauglichkeit und werbliche Wirkung", "is_correct": false },
+                { "text": "Mehrsprachigkeit und internationale Übersetzbarkeit", "is_correct": false },
+                { "text": "Grafische Gestaltung und Layout der Dokumente", "is_correct": false }
+            ]
+        }
+    ]
+}

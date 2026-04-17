@@ -1,0 +1,36 @@
+{
+    "reviewed_at": "2026-04-16T22:00:00Z",
+    "critic_notes": "Three questions covering Aktionspunkte 8.1.5-8.1.7 on IT/ICS/IoT system inventory. All correct answers are directly supported by source text. All quotes have minor space-in-compound-word artifacts from PDF line-break normalization (beziehungsweise, zuordnen, geeignet rendered with internal spaces), but match under aggressive normalization. Topic 'modellierung' is borderline -- Strukturanalyse is a pre-step to modellierung -- but acceptable since it concerns scope/asset mapping. Schema and page ranges correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-8.1-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'beziehungs weise' should be 'beziehungsweise'; fragment 'zu ordnen' should be 'zuordnen'. Soft-hyphen line-break artifact -- matches under no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.1-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'ge eignet' should be 'geeignet'. Soft-hyphen line-break artifact -- matches under no-space normalization."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-8.1-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment 'zu ordnen' should be 'zuordnen'. Soft-hyphen line-break artifact -- matches under no-space normalization."
+                }
+            ]
+        }
+    ]
+}

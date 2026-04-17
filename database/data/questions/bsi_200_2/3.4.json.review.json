@@ -1,0 +1,41 @@
+{
+    "reviewed_at": "2026-04-16T21:00:00Z",
+    "critic_notes": "All four questions are factually correct and well-constructed. However, three of the four quotes contain residual spaces from soft-hyphen line-break artifacts that were not properly collapsed during generation. After applying the rubric's normalization to BOTH source and quote, fragments like 'IT-Be trieb' (quote) vs 'IT-Betrieb' (normalized source) do not match as substrings. These are flagged as quote_mismatch issues but are clearly minor artifacts, not fabricated quotes. The content is identifiable and correct.",
+    "results": [
+        {
+            "external_id": "bsi-200-2-3.4-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote contains 'ver tragliche Vereinbarungen' with a residual space; normalized source reads 'vertragliche Vereinbarungen'. The intended passage is clearly identifiable."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.4-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote contains 'IT-Be trieb' with a residual space; normalized source reads 'IT-Betrieb'. The intended passage is clearly identifiable."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.4-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "kind": "quote_mismatch",
+                    "detail": "Quote contains 'Sensibilisierungsmaß nahmen' with a residual space; normalized source reads 'Sensibilisierungsmaßnahmen'. The intended passage is clearly identifiable."
+                }
+            ]
+        },
+        {
+            "external_id": "bsi-200-2-3.4-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

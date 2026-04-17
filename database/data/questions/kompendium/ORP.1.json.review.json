@@ -1,0 +1,38 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "ORP.1 Organisation: 4 questions on ORP.1.A3/A4/A16 plus one chapter-intro (003) with null baustein_id. Quotes match cleanly. Topic `bausteine` fits (specific ORP.1 requirement questions, despite overlap with ISMS governance). Correct answers supported; distractors (role-mixing acceptance, ad-hoc role assignment) clearly wrong. `experte` on 004 appropriate — ORP.1.A16 cross-institutional nuances.",
+    "results": [
+        {
+            "external_id": "kompendium-orp.1-001",
+            "verdict": "pass",
+            "issues": []
+        },
+        {
+            "external_id": "kompendium-orp.1-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Die Aufgaben und die hierfür erforderlichen Rollen und Funktionen MÜSSEN so strukturiert s...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.1-003",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.1-004",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}

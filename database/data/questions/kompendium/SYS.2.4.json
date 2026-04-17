@@ -1,0 +1,70 @@
+{
+    "source": {
+        "document": "kompendium",
+        "chapter": "SYS.2.4",
+        "chapter_title": "Clients unter macOS",
+        "page_start": 1,
+        "page_end": null
+    },
+    "generated_at": "2026-04-16T21:00:00Z",
+    "generator_model": "claude-opus-4-6[1m]",
+    "questions": [
+        {
+            "external_id": "kompendium-sys.2.4-001",
+            "text": "Welche integrierten Schutzmechanismen von macOS M\u00dcSSEN laut SYS.2.4 aktiviert sein?",
+            "explanation": "SYS.2.4.A2 fordert, dass System Integrity Protection (SIP), Xprotect und Gatekeeper aktiviert sein m\u00fcssen. Gatekeeper darf nur die Ausf\u00fchrung signierter Programme erlauben. FileVault ist eine Verschl\u00fcsselungsfunktion und geh\u00f6rt zu den Standard-Anforderungen, nicht zu den Basis-Schutzmechanismen.",
+            "quote": "Die in macOS integrierten Schutzmechanismen \u201eSystem Integrity Protection\u201c (SIP), \u201eXprotect\u201c und \u201eGatekeeper\u201c M\u00dcSSEN aktiviert sein. Gatekeeper DARF NUR die Ausf\u00fchrung signierter Programme erlauben, sofern unsignierte Programme nicht zwingend notwendig sind.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die vorgeschriebenen Schutzmechanismen von macOS benennen.",
+            "baustein_id": "SYS.2.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "System Integrity Protection (SIP), Xprotect und Gatekeeper", "is_correct": true },
+                { "text": "Nur FileVault und die Personal Firewall", "is_correct": false },
+                { "text": "Ausschlie\u00dflich Time Machine und iCloud-Backup", "is_correct": false },
+                { "text": "Nur der App Store und die Bildschirmsperre", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.4-002",
+            "text": "Was gilt laut SYS.2.4 f\u00fcr die Kontenverwendung bei macOS?",
+            "explanation": "SYS.2.4.A3 verlangt, dass das bei der Erstkonfiguration angelegte Administratorkonto nur zu administrativen Zwecken verwendet werden darf. F\u00fcr die normale Nutzung muss ein Standard-Konto angelegt werden, und das Gast-Konto muss deaktiviert werden.",
+            "quote": "Das bei der Erstkonfiguration von macOS angelegte Konto hat Administrationsrechte und DARF NUR zu administrativen Zwecken verwendet werden. F\u00fcr die normale Verwendung des Macs MUSS ein Konto mit Standard-Berechtigungen angelegt werden. \u2022 Das Gast-Konto MUSS deaktiviert werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Vorgaben zur Kontenverwendung auf macOS-Clients beschreiben.",
+            "baustein_id": "SYS.2.4",
+            "anforderung_type": "basis",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Administratorkonto darf nur zu administrativen Zwecken genutzt werden.", "is_correct": true },
+                { "text": "F\u00fcr die normale Nutzung muss ein Konto mit Standard-Berechtigungen angelegt werden.", "is_correct": true },
+                { "text": "Das Gast-Konto sollte f\u00fcr Besucher aktiviert bleiben.", "is_correct": false },
+                { "text": "Alle Benutzenden sollten das Administratorkonto f\u00fcr den t\u00e4glichen Gebrauch nutzen.", "is_correct": false }
+            ]
+        },
+        {
+            "external_id": "kompendium-sys.2.4-003",
+            "text": "Was SOLLTE bei Verwendung von FileVault auf macOS beachtet werden?",
+            "explanation": "SYS.2.4.A4 empfiehlt die Festplattenverschl\u00fcsselung insbesondere bei mobilen Macs. Bei Nutzung von FileVault darf das Schl\u00fcsselmaterial nicht online bei Apple gespeichert werden. Der Wiederherstellungsschl\u00fcssel muss an einem sicheren Ort aufbewahrt werden.",
+            "quote": "Wird dazu die in macOS integrierte Funktion FileVault verwendet, DARF das Schl\u00fcsselmaterial NICHT online bei Apple gespeichert werden. Der von FileVault erzeugte Wiederherstellungsschl\u00fcssel MUSS an einem sicheren Ort aufbewahrt werden.",
+            "topic": "bausteine",
+            "difficulty": "basis",
+            "learning_objective": "Die Anforderungen an die Nutzung von FileVault beschreiben.",
+            "baustein_id": "SYS.2.4",
+            "anforderung_type": "standard",
+            "page_start": 1,
+            "page_end": null,
+            "answers": [
+                { "text": "Das Schl\u00fcsselmaterial darf nicht online bei Apple gespeichert werden.", "is_correct": true },
+                { "text": "Der Wiederherstellungsschl\u00fcssel muss an einem sicheren Ort aufbewahrt werden.", "is_correct": true },
+                { "text": "Apple sollte den Wiederherstellungsschl\u00fcssel in iCloud sichern, damit er jederzeit verf\u00fcgbar ist.", "is_correct": false },
+                { "text": "FileVault darf nur auf Desktop-Macs, nicht auf MacBooks, eingesetzt werden.", "is_correct": false }
+            ]
+        }
+    ]
+}

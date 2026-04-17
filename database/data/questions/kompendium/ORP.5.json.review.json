@@ -1,0 +1,33 @@
+{
+    "reviewed_at": "2026-04-17T12:00:00Z",
+    "critic_notes": "ORP.5 Compliance Management: 3 questions on ORP.5.A1/A5 plus one chapter-intro (002) with null baustein_id. Quotes match. Correct answers supported; distractors clearly wrong. Topic `bausteine` fits. `experte` on 003 is borderline. Schema intro-type violation on 002 only (info severity).",
+    "results": [
+        {
+            "external_id": "kompendium-orp.5-001",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "warning",
+                    "kind": "quote_mismatch",
+                    "detail": "Fragment `Alle gesetzlichen, vertraglichen und sonstigen Vorgaben mit Auswirkungen auf das Informati...` contains line-break hyphen artifact from PDF extraction; matches under dehyphenation within section range."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.5-002",
+            "verdict": "flag",
+            "issues": [
+                {
+                    "severity": "info",
+                    "kind": "schema_violation",
+                    "detail": "Chapter-intro/overview question has null baustein_id and null anforderung_type. Semantically acceptable (content is chapter introduction, not a specific requirement) but violates strict kompendium schema."
+                }
+            ]
+        },
+        {
+            "external_id": "kompendium-orp.5-003",
+            "verdict": "pass",
+            "issues": []
+        }
+    ]
+}
