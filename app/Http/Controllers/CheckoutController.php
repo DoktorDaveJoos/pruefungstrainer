@@ -68,32 +68,13 @@ class CheckoutController extends Controller
 
     private function resolveRedirectTo(Request $request, User $user): string
     {
-        // Prefer the attempt ID stashed in the session by ClaimGuestAttempt:
-        // Polar's cross-origin redirect can drop SameSite=Lax cookies in some
-        // browsers, which would leave the processing page unable to locate
-        // the attempt via the cookie. The session survives that roundtrip.
-        $sessionAttemptId = $request->hasSession()
-            ? $request->session()->get(ClaimGuestAttempt::SESSION_KEY)
-            : null;
-
-        if ($sessionAttemptId !== null) {
-            $owned = ExamAttempt::query()
-                ->where('id', $sessionAttemptId)
+        $attemptId = ClaimGuestAttempt::rememberedAttemptId($request)
+            ?? ExamAttempt::query()
                 ->where('user_id', $user->id)
+                ->whereNotNull('claimed_at')
                 ->whereNotNull('submitted_at')
-                ->exists();
-
-            if ($owned) {
-                return route('exam.results', $sessionAttemptId, absolute: false);
-            }
-        }
-
-        $attemptId = ExamAttempt::query()
-            ->where('user_id', $user->id)
-            ->whereNotNull('claimed_at')
-            ->whereNotNull('submitted_at')
-            ->latest('claimed_at')
-            ->value('id');
+                ->latest('claimed_at')
+                ->value('id');
 
         return $attemptId
             ? route('exam.results', $attemptId, absolute: false)

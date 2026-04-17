@@ -2,7 +2,6 @@
 
 namespace App\Actions;
 
-use App\Http\Controllers\CheckoutController;
 use App\Models\ExamAttempt;
 use App\Models\User;
 use App\Services\ExamAttemptFinder;
@@ -14,11 +13,11 @@ use Throwable;
 class ClaimGuestAttempt
 {
     /**
-     * Session key that remembers the most-recently-claimed attempt ID.
-     * Read by {@see CheckoutController::resolveRedirectTo()}
-     * so the post-Polar redirect lands on the exam the user just bought,
-     * even if the `pt_exam_session` cookie is stripped on the roundtrip
-     * through Polar (SameSite, cross-origin redirects, etc.).
+     * Survives Polar's cross-origin roundtrip, which can strip SameSite=Lax
+     * cookies in some browsers and would otherwise leave the processing page
+     * unable to locate the just-claimed attempt via `pt_exam_session`.
+     * Prefer {@see self::rememberedAttemptId()} in production code; the
+     * constant is public so tests can pre-seed the session.
      */
     public const SESSION_KEY = 'claimed_attempt_id';
 
@@ -73,6 +72,17 @@ class ClaimGuestAttempt
 
             return null;
         }
+    }
+
+    public static function rememberedAttemptId(Request $request): ?int
+    {
+        if (! $request->hasSession()) {
+            return null;
+        }
+
+        $id = $request->session()->get(self::SESSION_KEY);
+
+        return $id !== null ? (int) $id : null;
     }
 
     private function rememberInSession(Request $request, ExamAttempt $attempt): void

@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Polar\Checkouts;
+use Polar\Models\Components\Checkout;
+use Polar\Models\Operations\CheckoutsCreateResponse;
+use Polar\Polar;
 use Tests\TestCase;
 
 /*
@@ -44,7 +48,20 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+function mockPolarSdk(string $checkoutUrl = 'https://sandbox.polar.sh/checkout/chk_test'): Polar
 {
-    // ..
+    $checkoutComponent = Mockery::mock(Checkout::class)->makePartial();
+    $checkoutComponent->url = $checkoutUrl;
+
+    $createResponse = Mockery::mock(CheckoutsCreateResponse::class)->makePartial();
+    $createResponse->statusCode = 201;
+    $createResponse->checkout = $checkoutComponent;
+
+    $checkouts = Mockery::mock(Checkouts::class);
+    $checkouts->shouldReceive('create')->andReturn($createResponse);
+
+    $sdk = Mockery::mock(Polar::class)->makePartial();
+    $sdk->checkouts = $checkouts;
+
+    return $sdk;
 }

@@ -7,34 +7,12 @@ use App\Services\ExamAttemptFinder;
 use Danestves\LaravelPolar\LaravelPolar;
 use Danestves\LaravelPolar\Order;
 use Illuminate\Support\Str;
-use Polar\Checkouts;
-use Polar\Models\Components;
-use Polar\Models\Operations;
-use Polar\Polar;
 
 /**
  * End-to-end coverage for: guest takes free exam, submits, opens checkout
  * drawer, registers, is routed through Polar, and on return from Polar lands
  * on the (newly claimed) results page — NOT the dashboard.
  */
-function mockPolarForFullFlow(string $url = 'https://sandbox.polar.sh/checkout/chk_test'): void
-{
-    $checkoutComponent = Mockery::mock(Components\Checkout::class)->makePartial();
-    $checkoutComponent->url = $url;
-
-    $createResponse = Mockery::mock(Operations\CheckoutsCreateResponse::class)->makePartial();
-    $createResponse->statusCode = 201;
-    $createResponse->checkout = $checkoutComponent;
-
-    $checkouts = Mockery::mock(Checkouts::class);
-    $checkouts->shouldReceive('create')->andReturn($createResponse);
-
-    $sdk = Mockery::mock(Polar::class)->makePartial();
-    $sdk->checkouts = $checkouts;
-
-    LaravelPolar::setSdk($sdk);
-}
-
 function simulatePaidWebhookFor(int $userId): void
 {
     Order::factory()->create([
@@ -51,7 +29,7 @@ afterEach(function () {
 });
 
 it('guest → register → checkout → polar webhook → processing lands on the claimed results page, not the dashboard', function () {
-    mockPolarForFullFlow();
+    LaravelPolar::setSdk(mockPolarSdk());
 
     $uuid = Str::uuid()->toString();
     $attempt = ExamAttempt::factory()->submitted(30)->create([
@@ -121,7 +99,7 @@ it('processing trusts the session-stashed claimed attempt id even if the DB clai
 });
 
 it('guest → register → processing lands on claimed results page even if pt_exam_session is missing on return', function () {
-    mockPolarForFullFlow();
+    LaravelPolar::setSdk(mockPolarSdk());
 
     $uuid = Str::uuid()->toString();
     $attempt = ExamAttempt::factory()->submitted(30)->create([

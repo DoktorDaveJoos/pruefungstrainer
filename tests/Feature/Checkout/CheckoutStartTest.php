@@ -7,27 +7,6 @@ use Polar\Models\Components;
 use Polar\Models\Operations;
 use Polar\Polar;
 
-/**
- * Build a minimal mock Polar SDK that returns a checkout URL.
- */
-function mockPolarSdk(string $checkoutUrl = 'https://sandbox.polar.sh/checkout/chk_test'): Polar
-{
-    $checkoutComponent = Mockery::mock(Components\Checkout::class)->makePartial();
-    $checkoutComponent->url = $checkoutUrl;
-
-    $createResponse = Mockery::mock(Operations\CheckoutsCreateResponse::class)->makePartial();
-    $createResponse->statusCode = 201;
-    $createResponse->checkout = $checkoutComponent;
-
-    $checkouts = Mockery::mock(Checkouts::class);
-    $checkouts->shouldReceive('create')->andReturn($createResponse);
-
-    $polarSdk = Mockery::mock(Polar::class)->makePartial();
-    $polarSdk->checkouts = $checkouts;
-
-    return $polarSdk;
-}
-
 afterEach(function () {
     LaravelPolar::resetSdk();
 });
