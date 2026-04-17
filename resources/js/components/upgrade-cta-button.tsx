@@ -17,7 +17,7 @@ export function UpgradeCtaButton({ children, priceLabel, attemptId }: Props) {
     }
 
     if (attemptId !== undefined) {
-        return <CheckoutSheet trigger={children} attemptId={attemptId} priceLabel={priceLabel} />;
+        return <CheckoutSheet trigger={children} priceLabel={priceLabel} />;
     }
 
     return <a href={start.url()}>{children}</a>;

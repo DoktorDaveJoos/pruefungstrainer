@@ -20,7 +20,9 @@ class LoginResponse implements LoginResponseContract
         }
 
         if ($request->query('intent') === 'checkout') {
-            if ($user->hasActiveAccess()) {
+            // Real-order check (not hasActiveAccess) so local users without a
+            // paid order still get routed through Polar.
+            if ($user->hasPaidOrder()) {
                 return redirect()->intended(config('fortify.home'));
             }
 

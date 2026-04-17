@@ -38,14 +38,27 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(PracticeAnswer::class);
     }
 
+    /**
+     * "Can the user see paid content?" — used by results unlock, feature gates,
+     * and post-purchase polling. Honors the local paywall bypass so we can
+     * preview the unlocked UX without a tunnelled Polar webhook.
+     */
     public function hasActiveAccess(): bool
     {
-        // Local dev shortcut: skip the paywall entirely so we don't need a
-        // tunnelled webhook to test the post-purchase UX.
         if (app()->environment('local')) {
             return true;
         }
 
+        return $this->hasPaidOrder();
+    }
+
+    /**
+     * "Does the user have a real paid Order?" — the authoritative commerce
+     * check, with no local bypass. Use this to decide whether to skip the
+     * checkout flow; otherwise local users would never reach Polar.
+     */
+    public function hasPaidOrder(): bool
+    {
         return Order::query()
             ->where('billable_id', $this->id)
             ->where('billable_type', self::class)

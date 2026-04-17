@@ -74,6 +74,44 @@ it('is a no-op when the attempt is already claimed by the same user', function (
         ->and($attempt->claimed_at->lt(now()->subHour()))->toBeTrue();
 });
 
+it('stashes the claimed attempt ID in the session so the post-Polar redirect can find it without the cookie', function () {
+    $uuid = Str::uuid()->toString();
+    $attempt = ExamAttempt::factory()->submitted(30)->create([
+        'user_id' => null,
+        'session_uuid' => $uuid,
+    ]);
+
+    $response = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $uuid)
+        ->post('/register?intent=checkout', [
+            'name' => 'Test',
+            'email' => 'session-key@example.com',
+            'password' => 'password1234',
+            'password_confirmation' => 'password1234',
+        ]);
+
+    $response->assertRedirect('/checkout/start')
+        ->assertSessionHas(ClaimGuestAttempt::SESSION_KEY, $attempt->id);
+});
+
+it('does not stash an in-progress (unsubmitted) attempt in the session', function () {
+    $uuid = Str::uuid()->toString();
+    ExamAttempt::factory()->create([
+        'user_id' => null,
+        'session_uuid' => $uuid,
+        'submitted_at' => null,
+    ]);
+
+    $response = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $uuid)
+        ->post('/register?intent=checkout', [
+            'name' => 'Test',
+            'email' => 'no-session-key@example.com',
+            'password' => 'password1234',
+            'password_confirmation' => 'password1234',
+        ]);
+
+    $response->assertSessionMissing(ClaimGuestAttempt::SESSION_KEY);
+});
+
 it('does not steal an attempt that belongs to a different user and logs a warning', function () {
     $owner = User::factory()->create();
     $intruder = User::factory()->create();

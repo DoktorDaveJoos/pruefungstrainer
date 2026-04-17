@@ -300,7 +300,7 @@ home.form = homeForm
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 export const accessStatus = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -315,7 +315,7 @@ accessStatus.definition = {
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 accessStatus.url = (options?: RouteQueryOptions) => {
@@ -324,7 +324,7 @@ accessStatus.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 accessStatus.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -334,7 +334,7 @@ accessStatus.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 accessStatus.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -344,7 +344,7 @@ accessStatus.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 const accessStatusForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -354,7 +354,7 @@ const accessStatusForm = (options?: RouteQueryOptions): RouteFormDefinition<'get
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 accessStatusForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -364,7 +364,7 @@ accessStatusForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'>
 
 /**
 * @see \App\Http\Controllers\CheckoutController::accessStatus
-* @see app/Http/Controllers/CheckoutController.php:54
+* @see app/Http/Controllers/CheckoutController.php:56
 * @route '/api/access-status'
 */
 accessStatusForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -380,8 +380,8 @@ accessStatusForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'
 accessStatus.form = accessStatusForm
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 export const dashboard = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -395,8 +395,8 @@ dashboard.definition = {
 } satisfies RouteDefinition<["get","head"]>
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 dashboard.url = (options?: RouteQueryOptions) => {
@@ -404,8 +404,8 @@ dashboard.url = (options?: RouteQueryOptions) => {
 }
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 dashboard.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -414,8 +414,8 @@ dashboard.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 dashboard.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -424,8 +424,8 @@ dashboard.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 })
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 const dashboardForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -434,8 +434,8 @@ const dashboardForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> 
 })
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 dashboardForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -444,8 +444,8 @@ dashboardForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> =>
 })
 
 /**
-* @see \Inertia\Controller::__invoke
-* @see vendor/inertiajs/inertia-laravel/src/Controller.php:13
+* @see \App\Http\Controllers\DashboardController::__invoke
+* @see app/Http/Controllers/DashboardController.php:13
 * @route '/dashboard'
 */
 dashboardForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

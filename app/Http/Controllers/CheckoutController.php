@@ -19,7 +19,9 @@ class CheckoutController extends Controller
     {
         $user = $request->user();
 
-        if ($user->hasActiveAccess()) {
+        // Real-order check (not hasActiveAccess) — otherwise the local paywall
+        // bypass would stop us from ever reaching Polar in development.
+        if ($user->hasPaidOrder()) {
             return redirect()->intended(config('fortify.home'));
         }
 
@@ -47,7 +49,7 @@ class CheckoutController extends Controller
 
         return Inertia::render('checkout/processing', [
             'hasAccess' => $hasAccess,
-            'redirectTo' => $hasAccess ? $this->resolveRedirectTo($user) : null,
+            'redirectTo' => $hasAccess ? $this->resolveRedirectTo($request, $user) : null,
         ]);
     }
 
@@ -60,12 +62,32 @@ class CheckoutController extends Controller
 
         return response()->json([
             'hasAccess' => $hasAccess,
-            'redirectTo' => $hasAccess ? $this->resolveRedirectTo($user) : null,
+            'redirectTo' => $hasAccess ? $this->resolveRedirectTo($request, $user) : null,
         ]);
     }
 
-    private function resolveRedirectTo(User $user): string
+    private function resolveRedirectTo(Request $request, User $user): string
     {
+        // Prefer the attempt ID stashed in the session by ClaimGuestAttempt:
+        // Polar's cross-origin redirect can drop SameSite=Lax cookies in some
+        // browsers, which would leave the processing page unable to locate
+        // the attempt via the cookie. The session survives that roundtrip.
+        $sessionAttemptId = $request->hasSession()
+            ? $request->session()->get(ClaimGuestAttempt::SESSION_KEY)
+            : null;
+
+        if ($sessionAttemptId !== null) {
+            $owned = ExamAttempt::query()
+                ->where('id', $sessionAttemptId)
+                ->where('user_id', $user->id)
+                ->whereNotNull('submitted_at')
+                ->exists();
+
+            if ($owned) {
+                return route('exam.results', $sessionAttemptId, absolute: false);
+            }
+        }
+
         $attemptId = ExamAttempt::query()
             ->where('user_id', $user->id)
             ->whereNotNull('claimed_at')

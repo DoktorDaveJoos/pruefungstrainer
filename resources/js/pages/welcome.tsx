@@ -72,7 +72,6 @@ export default function Welcome() {
                                     </Button>
                                     <CheckoutSheet
                                         trigger={<Button>Zugang freischalten</Button>}
-                                        attemptId={freeTier.lastAttemptId}
                                         priceLabel={`${pricing.amount_eur} €`}
                                     />
                                 </CardContent>

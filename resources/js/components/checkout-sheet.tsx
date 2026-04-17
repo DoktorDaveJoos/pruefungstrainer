@@ -14,14 +14,13 @@ import { store as registerStore } from '@/routes/register';
 
 type Props = {
     trigger: React.ReactNode;
-    attemptId: number;
     priceLabel: string;
 };
 
-export function CheckoutSheet({ trigger, attemptId, priceLabel }: Props) {
+export function CheckoutSheet({ trigger, priceLabel }: Props) {
     const [open, setOpen] = useState(false);
 
-    const intentQuery = { query: { intent: 'checkout', attempt: String(attemptId) } };
+    const intentQuery = { query: { intent: 'checkout' } };
 
     return (
         <Sheet open={open} onOpenChange={setOpen}>

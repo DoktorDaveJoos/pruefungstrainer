@@ -46,12 +46,17 @@ class ExamController extends Controller
 
         $sessionUuid = $user ? null : (string) Str::uuid();
 
+        // Local dev shortcut: 3 questions instead of 50 so we can test faster.
+        $isLocal = app()->environment('local');
+
         if ($user) {
-            // Local dev shortcut: 3 questions instead of 50 so we can test faster.
-            $total = app()->environment('local') ? 3 : 50;
+            $total = $isLocal ? 3 : 50;
             $questions = $this->examDraw->drawForUser(userId: $user->id, total: $total);
         } else {
             $questions = $this->examDraw->drawForGuest();
+            if ($isLocal) {
+                $questions = $questions->take(3)->values();
+            }
         }
 
         $attempt = DB::transaction(function () use ($user, $sessionUuid, $questions) {

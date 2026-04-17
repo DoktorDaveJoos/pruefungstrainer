@@ -13,7 +13,7 @@ it('redirects to checkout.start after registration when intent=checkout', functi
     $response->assertRedirect('/checkout/start');
 });
 
-it('redirects to the default location after registration without intent', function () {
+it('redirects to checkout after registration even without intent — the app is paywalled', function () {
     $response = $this->post('/register', [
         'name' => 'Test',
         'email' => 'test@example.com',
@@ -21,7 +21,7 @@ it('redirects to the default location after registration without intent', functi
         'password_confirmation' => 'password1234',
     ]);
 
-    $response->assertRedirect(config('fortify.home'));
+    $response->assertRedirect('/checkout/start');
 });
 
 it('skips checkout and redirects to default if the logging-in user already has active access', function () {
