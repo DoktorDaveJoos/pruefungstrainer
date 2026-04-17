@@ -120,7 +120,6 @@ class ExamController extends Controller
                         ->map(fn ($id) => ['id' => $id, 'text' => $answersById[$id]->text])
                         ->all(),
                     'selected_option_ids' => $ea->selected_option_ids ?? [],
-                    'flagged' => $ea->flagged,
                 ];
             });
 
@@ -159,7 +158,6 @@ class ExamController extends Controller
 
         $examAnswer->update([
             'selected_option_ids' => $request->input('selected_option_ids'),
-            'flagged' => $request->boolean('flagged'),
         ]);
 
         return back();
@@ -232,8 +230,8 @@ class ExamController extends Controller
      *     topic: string,
      *     stem: string,
      *     explanation: string,
-     *     quote: string|null,
-     *     source: string|null,
+     *     quote: string,
+     *     source: string,
      *     options: array<int, array{text: string, isCorrect: bool, isUserChoice: bool}>,
      * }>
      */
@@ -268,7 +266,7 @@ class ExamController extends Controller
                     'stem' => $question->text,
                     'explanation' => $question->explanation,
                     'quote' => $question->quote,
-                    'source' => $question->source,
+                    'source' => $question->source_citation,
                     'options' => $options,
                 ];
             })

@@ -14,7 +14,6 @@ return new class extends Migration
             $table->foreignId('question_id')->constrained()->cascadeOnDelete();
             $table->json('selected_option_ids')->nullable();
             $table->boolean('is_correct')->nullable();
-            $table->boolean('flagged')->default(false);
             $table->unsignedSmallInteger('position');
             $table->timestamps();
 

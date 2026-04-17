@@ -10,7 +10,6 @@ it('creates an in-progress exam answer via factory', function () {
 
     expect($answer->selected_option_ids)->toBeNull()
         ->and($answer->is_correct)->toBeNull()
-        ->and($answer->flagged)->toBeFalse()
         ->and($answer->position)->toBe(1);
 });
 
@@ -19,12 +18,6 @@ it('stores selected option IDs as array', function () {
 
     expect($answer->selected_option_ids)->toBe([1, 3, 5])
         ->and($answer->is_correct)->toBeTrue();
-});
-
-it('supports flagged answers', function () {
-    $answer = ExamAnswer::factory()->flagged()->create();
-
-    expect($answer->flagged)->toBeTrue();
 });
 
 it('belongs to an attempt and a question', function () {

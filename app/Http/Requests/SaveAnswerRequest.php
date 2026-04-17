@@ -16,7 +16,6 @@ class SaveAnswerRequest extends FormRequest
         return [
             'selected_option_ids' => ['present', 'array'],
             'selected_option_ids.*' => ['integer'],
-            'flagged' => ['required', 'boolean'],
         ];
     }
 }

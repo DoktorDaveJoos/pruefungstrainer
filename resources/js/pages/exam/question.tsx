@@ -1,5 +1,5 @@
 import { Head, router, usePage } from '@inertiajs/react';
-import { ArrowLeft, ChevronLeft, ChevronRight, Flag, FlagOff } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import ExamController from '@/actions/App/Http/Controllers/ExamController';
 import { AnswerOption } from '@/components/exam/answer-option';
@@ -26,7 +26,6 @@ type Question = {
     text: string;
     options: Option[];
     selected_option_ids: number[];
-    flagged: boolean;
 };
 
 type Attempt = {
@@ -45,11 +44,10 @@ export default function ExamQuestion({
     const { auth } = usePage().props;
     const [currentPosition, setCurrentPosition] = useState(1);
     const [state, setState] = useState(() =>
-        questions.reduce<Record<number, { selected: number[]; flagged: boolean }>>(
+        questions.reduce<Record<number, { selected: number[] }>>(
             (acc, q) => {
                 acc[q.position] = {
                     selected: q.selected_option_ids,
-                    flagged: q.flagged,
                 };
 
                 return acc;
@@ -61,13 +59,13 @@ export default function ExamQuestion({
     const current = questions.find((q) => q.position === currentPosition)!;
     const currentState = state[currentPosition];
 
-    const save = (nextSelected: number[], nextFlagged: boolean) => {
+    const save = (nextSelected: number[]) => {
         router.patch(
             ExamController.saveAnswer.url({
                 attempt: attempt.id,
                 position: currentPosition,
             }),
-            { selected_option_ids: nextSelected, flagged: nextFlagged },
+            { selected_option_ids: nextSelected },
             { preserveScroll: true, preserveState: true, only: [] },
         );
     };
@@ -79,18 +77,9 @@ export default function ExamQuestion({
 
         setState({
             ...state,
-            [currentPosition]: { ...currentState, selected: nextSelected },
+            [currentPosition]: { selected: nextSelected },
         });
-        save(nextSelected, currentState.flagged);
-    };
-
-    const toggleFlag = () => {
-        const nextFlagged = !currentState.flagged;
-        setState({
-            ...state,
-            [currentPosition]: { ...currentState, flagged: nextFlagged },
-        });
-        save(currentState.selected, nextFlagged);
+        save(nextSelected);
     };
 
     const submit = () => {
@@ -166,29 +155,8 @@ export default function ExamQuestion({
                 <main className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-8 sm:px-6">
                     <Card className="py-8">
                         <CardHeader className="px-8">
-                            <div className="flex items-start justify-between gap-4">
-                                <div className="text-lg leading-relaxed">
-                                    {current.text}
-                                </div>
-                                <Button
-                                    type="button"
-                                    variant={
-                                        currentState.flagged ? 'default' : 'outline'
-                                    }
-                                    size="sm"
-                                    onClick={toggleFlag}
-                                    aria-label={
-                                        currentState.flagged
-                                            ? 'Markierung entfernen'
-                                            : 'Frage markieren'
-                                    }
-                                >
-                                    {currentState.flagged ? (
-                                        <Flag className="size-4" />
-                                    ) : (
-                                        <FlagOff className="size-4" />
-                                    )}
-                                </Button>
+                            <div className="text-lg leading-relaxed">
+                                {current.text}
                             </div>
                         </CardHeader>
                         <CardContent className="flex flex-col gap-3 px-8">

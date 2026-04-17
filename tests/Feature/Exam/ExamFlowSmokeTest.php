@@ -52,7 +52,6 @@ it('walks an anonymous user through start → answer 50 → submit → results',
             ->withHeaders(['X-Inertia' => 'true', 'X-Requested-With' => 'XMLHttpRequest'])
             ->patch("/pruefungssimulation/{$attemptId}/answer/{$examAnswer->position}", [
                 'selected_option_ids' => [$firstOptionId],
-                'flagged' => false,
             ])
             ->assertStatus(303);
     }

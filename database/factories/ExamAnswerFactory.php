@@ -21,14 +21,8 @@ class ExamAnswerFactory extends Factory
             'question_id' => Question::factory(),
             'selected_option_ids' => null,
             'is_correct' => null,
-            'flagged' => false,
             'position' => 1,
         ];
-    }
-
-    public function flagged(): static
-    {
-        return $this->state(fn () => ['flagged' => true]);
     }
 
     public function correct(array $selectedIds): static

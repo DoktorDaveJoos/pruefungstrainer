@@ -22,19 +22,17 @@ beforeEach(function () {
     ]);
 });
 
-it('saves selected_option_ids + flagged and returns a 303 Inertia redirect', function () {
+it('saves selected_option_ids and returns a 303 Inertia redirect', function () {
     $attempt = ExamAttempt::factory()->create(['session_uuid' => $this->sessionUuid]);
     $examAnswer = ExamAnswer::factory()->for($attempt, 'examAttempt')->for($this->question)->create(['position' => 1]);
     $optionIds = $this->question->answers->pluck('id')->take(2)->values()->all();
 
     $response = ($this->inertia)()->patch("/pruefungssimulation/{$attempt->id}/answer/1", [
         'selected_option_ids' => $optionIds,
-        'flagged' => true,
     ]);
 
     $response->assertStatus(303);
     expect($examAnswer->fresh()->selected_option_ids)->toBe($optionIds);
-    expect($examAnswer->fresh()->flagged)->toBeTrue();
 });
 
 it('accepts an empty selection', function () {
@@ -43,7 +41,6 @@ it('accepts an empty selection', function () {
 
     $response = ($this->inertia)()->patch("/pruefungssimulation/{$attempt->id}/answer/1", [
         'selected_option_ids' => [],
-        'flagged' => false,
     ]);
 
     $response->assertStatus(303);
@@ -60,7 +57,6 @@ it('returns 404 when cookie does not match', function () {
         'Cookie' => ExamAttemptFinder::SESSION_COOKIE.'=wrong',
     ])->patch("/pruefungssimulation/{$attempt->id}/answer/1", [
         'selected_option_ids' => [],
-        'flagged' => false,
     ]);
 
     $response->assertStatus(404);
@@ -72,7 +68,6 @@ it('rejects save after timer has expired and auto-submits', function () {
 
     $response = ($this->inertia)()->patch("/pruefungssimulation/{$attempt->id}/answer/1", [
         'selected_option_ids' => [],
-        'flagged' => false,
     ]);
 
     $response->assertStatus(409);
@@ -85,7 +80,6 @@ it('rejects save when attempt is already submitted', function () {
 
     $response = ($this->inertia)()->patch("/pruefungssimulation/{$attempt->id}/answer/1", [
         'selected_option_ids' => [],
-        'flagged' => false,
     ]);
 
     $response->assertStatus(409);
@@ -97,7 +91,6 @@ it('returns 404 when position does not exist in the attempt', function () {
 
     $response = ($this->inertia)()->patch("/pruefungssimulation/{$attempt->id}/answer/99", [
         'selected_option_ids' => [],
-        'flagged' => false,
     ]);
 
     $response->assertStatus(404);

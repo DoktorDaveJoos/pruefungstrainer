@@ -14,7 +14,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
     'selected_option_ids',
     'options_order',
     'is_correct',
-    'flagged',
     'position',
 ])]
 class ExamAnswer extends Model
@@ -28,7 +27,6 @@ class ExamAnswer extends Model
             'selected_option_ids' => 'array',
             'options_order' => 'array',
             'is_correct' => 'boolean',
-            'flagged' => 'boolean',
             'position' => 'integer',
         ];
     }
