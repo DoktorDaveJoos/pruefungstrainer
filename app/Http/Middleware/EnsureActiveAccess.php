@@ -12,8 +12,12 @@ class EnsureActiveAccess
     {
         $user = $request->user();
 
-        if (! $user || ! $user->hasActiveAccess()) {
+        if (! $user) {
             abort(403);
+        }
+
+        if (! $user->hasActiveAccess()) {
+            return redirect()->route('checkout.start');
         }
 
         return $next($request);

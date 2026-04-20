@@ -14,18 +14,18 @@ it('redirects unauthenticated users to login', function () {
     $this->get('/freies-lernen')->assertRedirect('/login');
 });
 
-it('aborts 403 when the user has no access', function () {
+it('redirects to checkout when the user has no access', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user)
         ->get('/freies-lernen')
-        ->assertForbidden();
+        ->assertRedirect(route('checkout.start'));
 });
 
-it('aborts 403 when the user had access but it expired', function () {
+it('redirects to checkout when the user had access but it expired', function () {
     $user = User::factory()->hasExpiredAccess()->create();
 
     $this->actingAs($user)
         ->get('/freies-lernen')
-        ->assertForbidden();
+        ->assertRedirect(route('checkout.start'));
 });

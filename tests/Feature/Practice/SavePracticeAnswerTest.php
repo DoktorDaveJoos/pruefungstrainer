@@ -73,13 +73,13 @@ it('marks wrong when no options are ticked', function () {
     $response->assertJson(['is_correct' => false]);
 });
 
-it('returns 403 for an unpaid user', function () {
+it('redirects unpaid user to checkout', function () {
     $user = User::factory()->create();
 
-    $this->actingAs($user)->postJson('/freies-lernen/answer', [
+    $this->actingAs($user)->post('/freies-lernen/answer', [
         'question_id' => $this->question->id,
         'selected_option_ids' => [$this->correct->id],
-    ])->assertStatus(403);
+    ])->assertRedirect(route('checkout.start'));
 });
 
 it('returns 422 for non-existent question', function () {

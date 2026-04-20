@@ -70,10 +70,10 @@ it('renders an empty state when no question is available', function () {
     );
 });
 
-it('returns 403 for an unpaid user', function () {
+it('redirects unpaid user to checkout', function () {
     $user = User::factory()->create();
 
-    $this->actingAs($user)->get('/freies-lernen')->assertStatus(403);
+    $this->actingAs($user)->get('/freies-lernen')->assertRedirect(route('checkout.start'));
 });
 
 it('redirects unauthenticated user to login', function () {

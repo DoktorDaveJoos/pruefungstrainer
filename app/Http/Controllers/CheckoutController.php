@@ -6,10 +6,12 @@ use App\Actions\ClaimGuestAttempt;
 use App\Models\ExamAttempt;
 use App\Models\User;
 use App\Services\Pricing;
+use Danestves\LaravelPolar\Exceptions\InvalidCustomer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
+use Symfony\Component\HttpFoundation\Response as HttpResponse;
 
 class CheckoutController extends Controller
 {
@@ -51,6 +53,19 @@ class CheckoutController extends Controller
             'hasAccess' => $hasAccess,
             'redirectTo' => $hasAccess ? $this->resolveRedirectTo($request, $user) : null,
         ]);
+    }
+
+    public function portal(Request $request): HttpResponse
+    {
+        $user = $request->user();
+
+        try {
+            $url = $user->customerPortalUrl();
+        } catch (InvalidCustomer) {
+            return redirect()->route('checkout.start');
+        }
+
+        return Inertia::location($url);
     }
 
     public function accessStatus(Request $request): JsonResponse
