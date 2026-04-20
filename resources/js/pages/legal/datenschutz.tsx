@@ -6,8 +6,12 @@ export default function Datenschutz() {
             <section>
                             <h2 className="text-lg font-semibold">1. Verantwortlicher</h2>
                             <p className="mt-2 text-muted-foreground">
-                                Verantwortlicher im Sinne der DSGVO ist [TODO: Name + vollständige Anschrift,
-                                identisch zum Impressum]. Kontakt: [TODO: E-Mail-Adresse für Datenschutzanfragen].
+                                Verantwortlicher im Sinne der DSGVO ist David Joos, Tobel 30, 88285
+                                Bodnegg, Deutschland. Kontakt:{' '}
+                                <a href="mailto:info@davidjoos.de" className="underline">
+                                    info@davidjoos.de
+                                </a>
+                                .
                             </p>
                         </section>
 
@@ -64,12 +68,12 @@ export default function Datenschutz() {
                                     </a>
                                 </li>
                                 <li>
-                                    <strong>[TODO: Hosting-Anbieter, z. B. Hetzner / Forge / DigitalOcean]</strong>{' '}
-                                    — Server-Hosting in der EU. Auftragsverarbeitungsvertrag (AVV) liegt vor.
+                                    <strong>Hetzner Online GmbH</strong>, Industriestr. 25, 91710 Gunzenhausen —
+                                    Server-Hosting in Deutschland. Auftragsverarbeitungsvertrag (AVV) liegt vor.
                                 </li>
                                 <li>
-                                    <strong>[TODO: E-Mail-Versand-Dienstleister, z. B. Mailgun / Postmark]</strong>{' '}
-                                    — Versand transaktionaler E-Mails (Passwort-Reset, Kaufbestätigung).
+                                    <strong>Laravel LLC</strong> (Laravel Forge) — Server-Provisionierung und
+                                    -Verwaltung der bei Hetzner gehosteten Infrastruktur.
                                 </li>
                             </ul>
                         </section>
@@ -117,7 +121,7 @@ export default function Datenschutz() {
                         </section>
 
             <p className="text-xs text-muted-foreground">
-                Stand: [TODO: Datum der letzten Aktualisierung einsetzen]
+                Stand: 20. April 2026
             </p>
         </LegalLayout>
     );

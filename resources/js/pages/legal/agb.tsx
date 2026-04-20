@@ -6,9 +6,13 @@ export default function AGB() {
             <section>
                             <h2 className="text-lg font-semibold">§ 1 Geltungsbereich</h2>
                             <p className="mt-2 text-muted-foreground">
-                                Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen [TODO:
-                                Anbietername laut Impressum] (nachfolgend „Anbieter") und Verbrauchern (§ 13 BGB)
-                                über die Nutzung des Online-Dienstes Prüfungstrainer (erreichbar unter [TODO: Domain]).
+                                Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen David Joos,
+                                Tobel 30, 88285 Bodnegg (nachfolgend „Anbieter") und Verbrauchern (§ 13 BGB)
+                                über die Nutzung des Online-Dienstes Prüfungstrainer (erreichbar unter{' '}
+                                <a href="https://pruefungstrainer.davidjoos.de" className="underline">
+                                    pruefungstrainer.davidjoos.de
+                                </a>
+                                ).
                             </p>
                         </section>
 
@@ -43,9 +47,11 @@ export default function AGB() {
                             <h2 className="text-lg font-semibold">§ 4 Preise und Zahlung</h2>
                             <p className="mt-2 text-muted-foreground">
                                 Der Lifetime-Zugang kostet einmalig den auf der Bestellseite angezeigten Preis
-                                (derzeit 29 € im Founder's Price oder 49 € regulär; alle Preise inklusive der jeweils
-                                gesetzlichen Umsatzsteuer). Die Zahlung erfolgt über Polar Software, Inc., welche
-                                als Merchant of Record auftritt und Rechnungen erstellt.
+                                (derzeit 29 € im Founder's Price oder 49 € regulär). Der Anbieter ist Kleinunternehmer
+                                im Sinne von § 19 UStG und weist selbst keine Umsatzsteuer aus. Die Zahlung erfolgt
+                                über Polar Software, Inc., welche als Merchant of Record auftritt und die Rechnung an
+                                den Kunden ausstellt; etwaige gesetzliche Steuern (z. B. USt/VAT) werden dabei
+                                abhängig vom Land des Kunden durch Polar gesondert ausgewiesen.
                             </p>
                         </section>
 
@@ -108,7 +114,7 @@ export default function AGB() {
                         </section>
 
             <p className="text-xs text-muted-foreground">
-                Stand: [TODO: Datum der letzten Aktualisierung einsetzen]
+                Stand: 20. April 2026
             </p>
         </LegalLayout>
     );

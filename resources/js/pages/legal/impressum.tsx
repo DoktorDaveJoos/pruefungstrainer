@@ -6,11 +6,11 @@ export default function Impressum() {
             <section>
                             <h2 className="text-lg font-semibold">Angaben gemäß § 5 TMG</h2>
                             <p className="mt-2 text-muted-foreground">
-                                [TODO: Vollständiger Name des Anbieters]
+                                David Joos
                                 <br />
-                                [TODO: Straße und Hausnummer]
+                                Tobel 30
                                 <br />
-                                [TODO: PLZ und Ort]
+                                88285 Bodnegg
                                 <br />
                                 Deutschland
                             </p>
@@ -19,11 +19,9 @@ export default function Impressum() {
                         <section>
                             <h2 className="text-lg font-semibold">Kontakt</h2>
                             <p className="mt-2 text-muted-foreground">
-                                Telefon: [TODO: Telefonnummer]
-                                <br />
                                 E-Mail:{' '}
-                                <a href="mailto:[TODO: kontakt@deine-domain.de]" className="underline">
-                                    [TODO: kontakt@deine-domain.de]
+                                <a href="mailto:info@davidjoos.de" className="underline">
+                                    info@davidjoos.de
                                 </a>
                             </p>
                         </section>
@@ -31,24 +29,15 @@ export default function Impressum() {
                         <section>
                             <h2 className="text-lg font-semibold">Umsatzsteuer</h2>
                             <p className="mt-2 text-muted-foreground">
-                                [TODO: Eine der folgenden Optionen — Unzutreffendes löschen]
+                                Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer
+                                berechnet und folglich nicht in Rechnungen ausgewiesen.
                             </p>
-                            <ul className="mt-2 list-disc pl-6 text-muted-foreground">
-                                <li>
-                                    <strong>Wenn umsatzsteuerpflichtig:</strong> Umsatzsteuer-Identifikationsnummer
-                                    gemäß § 27 a UStG: [TODO: USt-IdNr. einsetzen, z. B. DE123456789]
-                                </li>
-                                <li>
-                                    <strong>Wenn Kleinunternehmer:</strong> Gemäß § 19 UStG wird keine Umsatzsteuer
-                                    berechnet.
-                                </li>
-                            </ul>
                         </section>
 
                         <section>
                             <h2 className="text-lg font-semibold">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
                             <p className="mt-2 text-muted-foreground">
-                                [TODO: Name und Adresse, in der Regel identisch mit dem Anbieter oben]
+                                David Joos, Tobel 30, 88285 Bodnegg
                             </p>
                         </section>
 
