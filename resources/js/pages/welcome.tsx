@@ -1,7 +1,8 @@
 import { Head, Link, usePage } from '@inertiajs/react';
-import { Check, ChevronRight, Clock, FileCheck, Lock } from 'lucide-react';
+import { Check, ChevronRight, Clock, FileCheck, Info, Lock } from 'lucide-react';
 import { CheckoutSheet } from '@/components/checkout-sheet';
 import { SiteFooter } from '@/components/site-footer';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -104,7 +105,7 @@ export default function Welcome() {
                                 <CardHeader>
                                     <FileCheck className="size-6 text-muted-foreground" />
                                     <CardTitle className="mt-2 text-base">50 Fragen</CardTitle>
-                                    <CardDescription>Zufall aus über 900 BSI-Prüfungsfragen. 75 % Basis, 25 % Experte.</CardDescription>
+                                    <CardDescription>Zufall aus über 900 prüfungsnahen Fragen auf Basis der BSI-Dokumente. 75 % Basis, 25 % Experte.</CardDescription>
                                 </CardHeader>
                             </Card>
                             <Card>
@@ -135,7 +136,7 @@ export default function Welcome() {
                                 <CardHeader className="items-center text-center">
                                     {pricing.is_founder_price && (
                                         <div className="text-xs font-medium uppercase tracking-wider text-warning">
-                                            Founder's Price · {pricing.spots_remaining} von 100 Plätzen frei
+                                            Einführungspreis · limitiert auf die ersten 100 Zugänge
                                         </div>
                                     )}
                                     <div className="mt-2 text-5xl font-bold tabular-nums">{pricing.amount_eur} €</div>
@@ -241,8 +242,8 @@ export default function Welcome() {
 
                         <div className="mt-6 flex flex-col gap-4">
                             <FaqItem
-                                q="Stimmt die Prüfungssimulation exakt mit dem BSI-Original überein?"
-                                a="Format und Bewertung mirroren das BSI-Original (50 Fragen, 60 Minuten, 60 % Bestehensgrenze, Mehrfachauswahl mit Alles-oder-Nichts-Bewertung). Die Basis/Experte-Einteilung der Fragen basiert auf eigener Klassifikation, da BSI die offizielle Verteilung nicht veröffentlicht."
+                                q="Ist das die offizielle BSI-Prüfung?"
+                                a="Nein. Prüfungstrainer ist ein unabhängiges Lernangebot, weder vom BSI autorisiert noch mit dem BSI in einer Partnerschaft. Die Fragen sind keine Originalfragen der BSI-Prüfung — sie wurden eigenständig auf Basis der öffentlichen BSI-Standards 200-1/-2/-3 und des IT-Grundschutz-Kompendiums entwickelt. Format und Bewertung (50 Fragen, 60 Minuten, 60 % Bestehensgrenze, Mehrfachauswahl mit Alles-oder-Nichts-Bewertung) orientieren sich am offiziellen Prüfungsmuster. Die Basis/Experte-Einteilung basiert auf eigener Klassifikation, da BSI die offizielle Verteilung nicht veröffentlicht."
                             />
                             <FaqItem
                                 q="Kann ich die Simulation vor dem Kauf testen?"
@@ -254,7 +255,7 @@ export default function Welcome() {
                             />
                             <FaqItem
                                 q="Wie viele Fragen sind im Pool?"
-                                a="Derzeit über 900 echte BSI-Prüfungsfragen mit Erklärungen und Quellenverweisen aus den BSI-Standards 200-1, 200-2, 200-3 und dem IT-Grundschutz-Kompendium. Der Pool wächst regelmäßig."
+                                a="Derzeit über 900 prüfungsnahe Fragen mit Erklärungen und Quellenverweisen auf die BSI-Standards 200-1, 200-2, 200-3 und das IT-Grundschutz-Kompendium. Es handelt sich nicht um Originalfragen des BSI. Der Pool wächst regelmäßig."
                             />
                             <FaqItem
                                 q="Kann ich mein Geld zurückbekommen?"
@@ -264,6 +265,34 @@ export default function Welcome() {
                                 q="Muss ich ein Abo abschließen?"
                                 a="Nein. Es ist ein einmaliger Kauf — kein Abo, keine wiederkehrende Gebühr."
                             />
+                        </div>
+                    </section>
+
+                    <section className="border-t border-border bg-muted/30 py-16">
+                        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+                            <Alert>
+                                <Info />
+                                <AlertTitle>Unabhängiges Lernangebot — kein offizielles BSI-Angebot</AlertTitle>
+                                <AlertDescription className="gap-2">
+                                    <p>
+                                        Prüfungstrainer ist eine unabhängige, hochwertige Prüfungssimulation. Wir sind
+                                        weder vom Bundesamt für Sicherheit in der Informationstechnik (BSI) autorisiert
+                                        noch in einer Partnerschaft, Kooperation oder sonstigen Verbindung mit dem BSI.
+                                    </p>
+                                    <p>
+                                        Die Fragen sind <strong className="font-medium">keine Originalfragen</strong>{' '}
+                                        der offiziellen BSI-Prüfung. Sie wurden eigenständig auf Basis öffentlich
+                                        zugänglicher BSI-Dokumente (BSI-Standards 200-1, 200-2, 200-3 und
+                                        IT-Grundschutz-Kompendium) entwickelt. Format und Bewertung orientieren sich
+                                        am offiziellen Prüfungsmuster, um eine realistische Vorbereitung zu ermöglichen.
+                                    </p>
+                                    <p>
+                                        „BSI" und „IT-Grundschutz" sind eingetragene Marken des Bundesamts für
+                                        Sicherheit in der Informationstechnik und werden hier ausschließlich
+                                        beschreibend verwendet.
+                                    </p>
+                                </AlertDescription>
+                            </Alert>
                         </div>
                     </section>
                 </main>
