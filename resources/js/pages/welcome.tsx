@@ -2,6 +2,7 @@ import { Head, Link, usePage } from '@inertiajs/react';
 import { Check, ChevronRight, Clock, FileCheck, Lock } from 'lucide-react';
 import { CheckoutSheet } from '@/components/checkout-sheet';
 import { SiteFooter } from '@/components/site-footer';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { getCsrfToken } from '@/lib/utils';
@@ -103,7 +104,7 @@ export default function Welcome() {
                                 <CardHeader>
                                     <FileCheck className="size-6 text-muted-foreground" />
                                     <CardTitle className="mt-2 text-base">50 Fragen</CardTitle>
-                                    <CardDescription>Zufall aus über 160 BSI-Prüfungsfragen. 75 % Basis, 25 % Experte.</CardDescription>
+                                    <CardDescription>Zufall aus über 900 BSI-Prüfungsfragen. 75 % Basis, 25 % Experte.</CardDescription>
                                 </CardHeader>
                             </Card>
                             <Card>
@@ -187,6 +188,54 @@ export default function Welcome() {
                         </div>
                     </section>
 
+                    <section className="border-t border-border py-16">
+                        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+                            <h2 className="text-center text-xl font-semibold tracking-tight">Mehr Prüfungsmodule folgen</h2>
+                            <p className="mt-2 text-center text-sm text-muted-foreground">
+                                BSI IT-Grundschutz ist erst der Anfang. Dein 12-Monats-Zugang enthält alle kommenden Module automatisch — ohne Aufpreis.
+                            </p>
+
+                            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                                <Card>
+                                    <CardHeader>
+                                        <Badge variant="success">Verfügbar</Badge>
+                                        <CardTitle className="mt-3 text-base">BSI IT-Grundschutz-Praktiker</CardTitle>
+                                        <CardDescription>
+                                            Prüfung nach BSI-Standard 200-1/-2/-3 und IT-Grundschutz-Kompendium.
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                                <Card>
+                                    <CardHeader>
+                                        <Badge variant="secondary">Bald verfügbar</Badge>
+                                        <CardTitle className="mt-3 text-base">ISO 27001 Auditor</CardTitle>
+                                        <CardDescription>
+                                            Auditorenrolle nach ISO/IEC 27001 und ISO 19011.
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                                <Card>
+                                    <CardHeader>
+                                        <Badge variant="secondary">Bald verfügbar</Badge>
+                                        <CardTitle className="mt-3 text-base">ISO 27001 Implementer</CardTitle>
+                                        <CardDescription>
+                                            Aufbau und Betrieb eines ISMS nach ISO/IEC 27001.
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                                <Card>
+                                    <CardHeader>
+                                        <Badge variant="secondary">Bald verfügbar</Badge>
+                                        <CardTitle className="mt-3 text-base">BCM &amp; Notfallvorsorge</CardTitle>
+                                        <CardDescription>
+                                            Business Continuity Management nach BSI-Standard 200-4.
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                            </div>
+                        </div>
+                    </section>
+
                     <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
                         <h2 className="text-xl font-semibold tracking-tight">Häufige Fragen</h2>
 
@@ -205,7 +254,7 @@ export default function Welcome() {
                             />
                             <FaqItem
                                 q="Wie viele Fragen sind im Pool?"
-                                a="Derzeit über 160 echte BSI-Prüfungsfragen mit Erklärungen und Quellenverweisen aus den BSI-Standards 200-1, 200-2, 200-3 und dem IT-Grundschutz-Kompendium. Der Pool wächst regelmäßig."
+                                a="Derzeit über 900 echte BSI-Prüfungsfragen mit Erklärungen und Quellenverweisen aus den BSI-Standards 200-1, 200-2, 200-3 und dem IT-Grundschutz-Kompendium. Der Pool wächst regelmäßig."
                             />
                             <FaqItem
                                 q="Kann ich mein Geld zurückbekommen?"

@@ -1,5 +1,6 @@
 import { Head, Link, router } from '@inertiajs/react';
-import { ChevronRight, FileCheck, GraduationCap } from 'lucide-react';
+import { ChevronRight, Clock, FileCheck, GraduationCap } from 'lucide-react';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -100,6 +101,14 @@ export default function Dashboard({ attempts, runningAttemptId }: DashboardProps
                         </CardContent>
                     </Card>
                 </div>
+
+                <Alert className="mt-8">
+                    <Clock />
+                    <AlertTitle>Bald: weitere Prüfungsmodule</AlertTitle>
+                    <AlertDescription>
+                        ISO 27001 Auditor, ISO 27001 Implementer und BCM &amp; Notfallvorsorge sind in Vorbereitung. Alle kommenden Module sind in deinem 12-Monats-Zugang enthalten — ohne Aufpreis.
+                    </AlertDescription>
+                </Alert>
 
                 <section className="mt-8">
                     <h2 className="text-xl font-semibold tracking-tight">
