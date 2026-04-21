@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\ExamAnswer;
 use App\Models\ExamAttempt;
+use App\Models\PracticeAnswer;
 use App\Models\User;
 
 test('guests are redirected to the login page', function () {
@@ -110,5 +112,120 @@ test('dashboard ignores expired running attempts', function () {
 
     $response->assertInertia(fn ($page) => $page
         ->where('runningAttemptId', null)
+    );
+});
+
+test('totalAnswered sums practice answers and answered exam questions from submitted attempts', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+
+    PracticeAnswer::factory()->count(4)->create(['user_id' => $user->id]);
+
+    $submitted = ExamAttempt::factory()->forUser($user)->submitted(score: 30)->create([
+        'total_questions' => 50,
+    ]);
+    ExamAnswer::factory()->count(3)->correct([1])->create(['exam_attempt_id' => $submitted->id]);
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page->where('totalAnswered', 7));
+});
+
+test('totalAnswered excludes skipped exam questions with null selections', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+
+    $submitted = ExamAttempt::factory()->forUser($user)->submitted(score: 10)->create([
+        'total_questions' => 50,
+    ]);
+    ExamAnswer::factory()->count(2)->correct([1])->create(['exam_attempt_id' => $submitted->id]);
+    ExamAnswer::factory()->count(3)->create(['exam_attempt_id' => $submitted->id]);
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page->where('totalAnswered', 2));
+});
+
+test('totalAnswered excludes answers from unsubmitted exam attempts', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+
+    $running = ExamAttempt::factory()->forUser($user)->create([
+        'submitted_at' => null,
+        'timer_expires_at' => now()->addMinutes(30),
+    ]);
+    ExamAnswer::factory()->count(5)->correct([1])->create(['exam_attempt_id' => $running->id]);
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page->where('totalAnswered', 0));
+});
+
+test('totalAnswered does not leak counts from other users', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+    $other = User::factory()->create();
+
+    PracticeAnswer::factory()->count(3)->create(['user_id' => $other->id]);
+
+    $otherAttempt = ExamAttempt::factory()->forUser($other)->submitted(score: 40)->create([
+        'total_questions' => 50,
+    ]);
+    ExamAnswer::factory()->count(5)->correct([1])->create(['exam_attempt_id' => $otherAttempt->id]);
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page->where('totalAnswered', 0));
+});
+
+test('readinessPercent is null when the user has no submitted attempts', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page
+        ->where('readinessPercent', null)
+        ->where('readinessAttempts', 0)
+    );
+});
+
+test('readinessPercent uses the single attempt when only one exists', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+
+    ExamAttempt::factory()->forUser($user)->submitted(score: 33)->create([
+        'total_questions' => 50,
+        'submitted_at' => now()->subDay(),
+    ]);
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page
+        ->where('readinessPercent', 66)
+        ->where('readinessAttempts', 1)
+    );
+});
+
+test('readinessPercent aggregates the last three submitted attempts', function () {
+    $user = User::factory()->hasActiveAccess()->create();
+
+    ExamAttempt::factory()->forUser($user)->submitted(score: 10)->create([
+        'total_questions' => 50,
+        'submitted_at' => now()->subDays(10),
+    ]);
+
+    ExamAttempt::factory()->forUser($user)->submitted(score: 30)->create([
+        'total_questions' => 50,
+        'submitted_at' => now()->subDays(3),
+    ]);
+    ExamAttempt::factory()->forUser($user)->submitted(score: 33)->create([
+        'total_questions' => 50,
+        'submitted_at' => now()->subDays(2),
+    ]);
+    ExamAttempt::factory()->forUser($user)->submitted(score: 36)->create([
+        'total_questions' => 50,
+        'submitted_at' => now()->subDay(),
+    ]);
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn ($page) => $page
+        ->where('readinessPercent', 66)
+        ->where('readinessAttempts', 3)
     );
 });

@@ -1,10 +1,12 @@
 import { Head, Link, router } from '@inertiajs/react';
 import { ChevronRight, Clock, FileCheck, GraduationCap } from 'lucide-react';
+import type { ReactNode } from 'react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from '@/components/ui/empty';
+import { Separator } from '@/components/ui/separator';
 import {
     Table,
     TableBody,
@@ -13,7 +15,7 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { getCsrfToken } from '@/lib/utils';
+import { cn, getCsrfToken } from '@/lib/utils';
 import exam from '@/routes/exam';
 
 type ExamAttemptRow = {
@@ -27,6 +29,9 @@ type ExamAttemptRow = {
 type DashboardProps = {
     attempts: ExamAttemptRow[];
     runningAttemptId: number | null;
+    totalAnswered: number;
+    readinessPercent: number | null;
+    readinessAttempts: number;
 };
 
 const dateFormatter = new Intl.DateTimeFormat('de-DE', {
@@ -37,6 +42,8 @@ const dateFormatter = new Intl.DateTimeFormat('de-DE', {
     minute: '2-digit',
 });
 
+const numberFormatter = new Intl.NumberFormat('de-DE');
+
 function formatSubmittedAt(iso: string | null): string {
     if (iso === null) {
         return '—';
@@ -44,7 +51,61 @@ function formatSubmittedAt(iso: string | null): string {
     return dateFormatter.format(new Date(iso));
 }
 
-export default function Dashboard({ attempts, runningAttemptId }: DashboardProps) {
+function StatCell({
+    value,
+    label,
+    valueClassName,
+}: {
+    value: ReactNode;
+    label: ReactNode;
+    valueClassName?: string;
+}) {
+    return (
+        <div className="flex flex-1 flex-col gap-2 p-6">
+            <span className={cn('text-2xl font-semibold tabular-nums', valueClassName)}>
+                {value}
+            </span>
+            <span className="text-sm text-muted-foreground">{label}</span>
+        </div>
+    );
+}
+
+function ReadinessCell({
+    percent,
+    windowSize,
+}: {
+    percent: number | null;
+    windowSize: number;
+}) {
+    if (percent === null) {
+        return (
+            <div className="flex flex-1 flex-col gap-2 p-6">
+                <span className="text-sm font-medium">Noch keine Simulation</span>
+                <span className="text-sm text-muted-foreground">
+                    Starte deine erste Prüfungssimulation, um deinen Vorbereitungsgrad zu messen.
+                </span>
+            </div>
+        );
+    }
+
+    const windowLabel = windowSize === 1 ? '1 Simulation' : `${windowSize} Simulationen`;
+
+    return (
+        <StatCell
+            value={`${percent} %`}
+            label={`Vorbereitungsgrad · Ø letzte ${windowLabel}`}
+            valueClassName={percent >= 60 ? 'text-success' : 'text-warning'}
+        />
+    );
+}
+
+export default function Dashboard({
+    attempts,
+    runningAttemptId,
+    totalAnswered,
+    readinessPercent,
+    readinessAttempts,
+}: DashboardProps) {
     return (
         <>
             <Head title="Startseite" />
@@ -55,7 +116,28 @@ export default function Dashboard({ attempts, runningAttemptId }: DashboardProps
                     Wähle einen Modus, um weiterzulernen.
                 </p>
 
-                <div className="mt-8 grid gap-6 md:grid-cols-2">
+                <Card className="mt-8 p-0">
+                    <div className="flex flex-col sm:flex-row">
+                        <StatCell
+                            value={numberFormatter.format(totalAnswered)}
+                            label="Fragen beantwortet"
+                        />
+                        <Separator
+                            orientation="horizontal"
+                            className="sm:hidden"
+                        />
+                        <Separator
+                            orientation="vertical"
+                            className="hidden sm:block"
+                        />
+                        <ReadinessCell
+                            percent={readinessPercent}
+                            windowSize={readinessAttempts}
+                        />
+                    </div>
+                </Card>
+
+                <div className="mt-6 grid gap-6 md:grid-cols-2">
                     <Card>
                         <CardHeader>
                             <FileCheck className="size-7 text-primary" />
