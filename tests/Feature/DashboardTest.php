@@ -9,7 +9,7 @@ test('guests are redirected to the login page', function () {
 });
 
 test('authenticated users can visit the dashboard', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $response = $this
         ->actingAs($user)
@@ -18,8 +18,16 @@ test('authenticated users can visit the dashboard', function () {
     $response->assertOk();
 });
 
-test('dashboard lists submitted attempts for the current user ordered newest first', function () {
+test('authenticated users without paid access are redirected to checkout', function () {
     $user = User::factory()->create();
+
+    $this->actingAs($user)
+        ->get(route('dashboard'))
+        ->assertRedirect(route('checkout.start'));
+});
+
+test('dashboard lists submitted attempts for the current user ordered newest first', function () {
+    $user = User::factory()->hasActiveAccess()->create();
 
     $older = ExamAttempt::factory()
         ->forUser($user)
@@ -52,7 +60,7 @@ test('dashboard lists submitted attempts for the current user ordered newest fir
 });
 
 test('dashboard excludes unsubmitted attempts from the list', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     ExamAttempt::factory()->forUser($user)->create([
         'submitted_at' => null,
@@ -64,7 +72,7 @@ test('dashboard excludes unsubmitted attempts from the list', function () {
 });
 
 test('dashboard does not leak other users attempts', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $other = User::factory()->create();
 
     ExamAttempt::factory()->forUser($other)->submitted(score: 40)->create([
@@ -77,7 +85,7 @@ test('dashboard does not leak other users attempts', function () {
 });
 
 test('dashboard exposes the running attempt id when one exists', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $running = ExamAttempt::factory()->forUser($user)->create([
         'submitted_at' => null,
@@ -92,7 +100,7 @@ test('dashboard exposes the running attempt id when one exists', function () {
 });
 
 test('dashboard ignores expired running attempts', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     ExamAttempt::factory()->forUser($user)->expired()->create([
         'submitted_at' => null,

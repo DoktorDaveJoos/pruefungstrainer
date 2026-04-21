@@ -53,7 +53,7 @@ it('resumes an in-progress guest attempt when the cookie matches', function () {
 });
 
 it('lets authenticated users start regardless of any guest cookie state', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
     $uuid = Str::uuid()->toString();
     ExamAttempt::factory()->submitted(30)->create([
         'user_id' => null,

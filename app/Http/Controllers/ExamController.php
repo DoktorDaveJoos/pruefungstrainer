@@ -42,6 +42,8 @@ class ExamController extends Controller
             if ($state->status === GuestStartStatus::AlreadyDone) {
                 return redirect(route('home'));
             }
+        } elseif (! $user->hasActiveAccess()) {
+            return redirect(route('checkout.start'));
         }
 
         $sessionUuid = $user ? null : (string) Str::uuid();

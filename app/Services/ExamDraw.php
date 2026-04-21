@@ -43,16 +43,20 @@ class ExamDraw
 
     public function drawForGuest(): Collection
     {
+        // Deterministic free-tier set: same 50 questions every time, so clearing the
+        // cookie can't be used to draw fresh questions. Ordered by id for stability.
         $questions = Question::query()
             ->with('answers')
             ->where('is_free_tier', true)
+            ->orderBy('id')
+            ->limit(50)
             ->get();
 
         if ($questions->isEmpty()) {
             throw InsufficientFreeTierQuestionsException::noQuestionsFlagged();
         }
 
-        return $questions->shuffle()->values();
+        return $questions->values();
     }
 
     /**

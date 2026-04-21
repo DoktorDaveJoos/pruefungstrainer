@@ -27,11 +27,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/api/access-status', [CheckoutController::class, 'accessStatus'])->name('access-status');
 });
 
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('dashboard', DashboardController::class)->name('dashboard');
-});
-
 Route::middleware(['auth', 'verified', EnsureActiveAccess::class])->group(function () {
+    Route::get('dashboard', DashboardController::class)->name('dashboard');
     Route::get('/freies-lernen', [PracticeController::class, 'show'])->name('practice.show');
     Route::post('/freies-lernen/answer', [PracticeController::class, 'saveAnswer'])->name('practice.save-answer');
 });

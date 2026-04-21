@@ -33,7 +33,7 @@ it('creates an anonymous attempt with session_uuid + 50 exam_answers and redirec
 });
 
 it('creates an authenticated attempt with user_id (no session_uuid) when logged in', function () {
-    $user = User::factory()->create();
+    $user = User::factory()->hasActiveAccess()->create();
 
     $response = $this->actingAs($user)->post('/pruefungssimulation/start');
 
@@ -47,6 +47,18 @@ it('creates an authenticated attempt with user_id (no session_uuid) when logged 
     $response->assertRedirect("/pruefungssimulation/{$attempt->id}");
 });
 
+it('redirects authenticated users without paid access to checkout instead of drawing paid questions', function () {
+    $user = User::factory()->create();
+
+    $countBefore = ExamAttempt::count();
+
+    $this->actingAs($user)
+        ->post('/pruefungssimulation/start')
+        ->assertRedirect(route('checkout.start'));
+
+    expect(ExamAttempt::count())->toBe($countBefore);
+});
+
 it('assigns unique position 1..50 across exam_answers', function () {
     $this->post('/pruefungssimulation/start');
 
@@ -54,6 +66,19 @@ it('assigns unique position 1..50 across exam_answers', function () {
     $positions = $attempt->examAnswers->pluck('position')->sort()->values()->all();
 
     expect($positions)->toBe(range(1, 50));
+});
+
+it('draws the same 50 guest questions across repeated starts (cookie-clear attackers get no new questions)', function () {
+    $first = $this->post('/pruefungssimulation/start');
+    $firstAttempt = ExamAttempt::latest('id')->first();
+    $firstIds = $firstAttempt->examAnswers->pluck('question_id')->sort()->values()->all();
+
+    // Simulate clearing the cookie and starting over.
+    $second = $this->withUnencryptedCookies([])->post('/pruefungssimulation/start');
+    $secondAttempt = ExamAttempt::latest('id')->first();
+    $secondIds = $secondAttempt->examAnswers->pluck('question_id')->sort()->values()->all();
+
+    expect($secondIds)->toBe($firstIds);
 });
 
 it('sets timer_expires_at to exactly 60 minutes after started_at', function () {

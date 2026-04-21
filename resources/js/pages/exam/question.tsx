@@ -1,9 +1,11 @@
 import { Head, router, usePage } from '@inertiajs/react';
-import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Lock } from 'lucide-react';
 import { useState } from 'react';
 import ExamController from '@/actions/App/Http/Controllers/ExamController';
 import { AnswerOption } from '@/components/exam/answer-option';
 import { ExamTimer } from '@/components/exam-timer';
+import TextLink from '@/components/text-link';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import {
     AlertDialog,
     AlertDialogAction,
@@ -17,7 +19,7 @@ import {
 } from '@/components/ui/alert-dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { dashboard } from '@/routes';
+import { dashboard, register } from '@/routes';
 
 type Option = { id: number; text: string };
 type Question = {
@@ -153,6 +155,28 @@ export default function ExamQuestion({
                 </header>
 
                 <main className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-8 sm:px-6">
+                    {!auth?.user && (
+                        <Alert>
+                            <Lock />
+                            <AlertTitle>
+                                Probedurchlauf — immer dieselben 50 Fragen
+                            </AlertTitle>
+                            <AlertDescription>
+                                <p>
+                                    Zum Ausprobieren bekommst du als Gast ein
+                                    festes Fragenset. Für die echte
+                                    Prüfungssimulation — neue Fragen pro
+                                    Durchlauf, Auswertung pro Themenfeld,
+                                    Freies Lernen und zwölf Monate Zugang —{' '}
+                                    <TextLink href={register()}>
+                                        Konto anlegen und freischalten
+                                    </TextLink>
+                                    .
+                                </p>
+                            </AlertDescription>
+                        </Alert>
+                    )}
+
                     <Card className="py-8">
                         <CardHeader className="px-8">
                             <div className="text-lg leading-relaxed">
