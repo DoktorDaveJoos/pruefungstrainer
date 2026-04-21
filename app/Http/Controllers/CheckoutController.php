@@ -83,6 +83,13 @@ class CheckoutController extends Controller
 
     private function resolveRedirectTo(Request $request, User $user): string
     {
+        // Parallel flow: users pay first, verify later. The verification screen
+        // owns the handoff to their claimed results via the custom
+        // VerifyEmailResponse, so we only need to bounce unverified users here.
+        if (! $user->hasVerifiedEmail()) {
+            return route('verification.notice', absolute: false);
+        }
+
         $attemptId = ClaimGuestAttempt::rememberedAttemptId($request)
             ?? ExamAttempt::query()
                 ->where('user_id', $user->id)

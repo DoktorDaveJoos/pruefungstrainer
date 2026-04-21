@@ -28,7 +28,7 @@ afterEach(function () {
     LaravelPolar::resetSdk();
 });
 
-it('guest → register → checkout → polar webhook → processing lands on the claimed results page, not the dashboard', function () {
+it('guest → register → checkout → polar webhook → processing sends unverified user to email verification, then back to claimed results', function () {
     LaravelPolar::setSdk(mockPolarSdk());
 
     $uuid = Str::uuid()->toString();
@@ -59,7 +59,9 @@ it('guest → register → checkout → polar webhook → processing lands on th
     // 3. Polar webhook fires in the background, creating the paid Order.
     simulatePaidWebhookFor($attempt->fresh()->user_id);
 
-    // 4. Polar redirects the user back to /checkout/processing.
+    // 4. Polar redirects the user back to /checkout/processing. User has paid
+    // but not yet verified their email → processing hands off to the
+    // verification screen instead of the locked results page.
     $processing = $this->withCookie(ExamAttemptFinder::SESSION_COOKIE, $uuid)
         ->get('/checkout/processing?checkout_id=chk_test');
 
@@ -67,7 +69,7 @@ it('guest → register → checkout → polar webhook → processing lands on th
     $processing->assertInertia(fn ($page) => $page
         ->component('checkout/processing')
         ->where('hasAccess', true)
-        ->where('redirectTo', "/pruefungssimulation/{$attempt->id}/ergebnis")
+        ->where('redirectTo', '/email/verify')
     );
 });
 
@@ -98,7 +100,7 @@ it('processing trusts the session-stashed claimed attempt id even if the DB clai
         );
 });
 
-it('guest → register → processing lands on claimed results page even if pt_exam_session is missing on return', function () {
+it('guest → register → processing routes unverified user to email verification even if pt_exam_session is missing on return', function () {
     LaravelPolar::setSdk(mockPolarSdk());
 
     $uuid = Str::uuid()->toString();
@@ -120,14 +122,14 @@ it('guest → register → processing lands on claimed results page even if pt_e
     // Polar webhook arrives during the user's Polar visit.
     simulatePaidWebhookFor($attempt->fresh()->user_id);
 
-    // Return from Polar WITHOUT the pt_exam_session cookie — the claim
-    // already happened on register, so resolveRedirectTo must still find
-    // the attempt by user_id + claimed_at in the DB.
+    // Return from Polar WITHOUT the pt_exam_session cookie. Paid but
+    // unverified → verification screen takes over; the claimed attempt is
+    // handed back to the user after they verify (see VerifyEmailResponse test).
     $processing = $this->get('/checkout/processing?checkout_id=chk_test');
 
     $processing->assertInertia(fn ($page) => $page
         ->component('checkout/processing')
         ->where('hasAccess', true)
-        ->where('redirectTo', "/pruefungssimulation/{$attempt->id}/ergebnis")
+        ->where('redirectTo', '/email/verify')
     );
 });

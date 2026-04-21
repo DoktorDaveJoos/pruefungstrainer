@@ -239,3 +239,16 @@ it('passes an empty reviewItems array for a perfect score', function () {
         ->has('reviewItems', 0)
     );
 });
+
+it('redirects an authenticated, unverified user to the verification notice instead of rendering results', function () {
+    $user = User::factory()->unverified()->create();
+    $attempt = ExamAttempt::factory()->for($user)->create([
+        'total_questions' => 1,
+        'score' => 1,
+        'submitted_at' => now(),
+    ]);
+
+    $response = $this->actingAs($user)->get("/pruefungssimulation/{$attempt->id}/ergebnis");
+
+    $response->assertRedirect(route('verification.notice'));
+});
