@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Actions\ClaimGuestAttempt;
-use App\Models\ExamAttempt;
 use App\Models\User;
 use App\Services\Pricing;
 use Danestves\LaravelPolar\Exceptions\InvalidCustomer;
@@ -83,20 +82,11 @@ class CheckoutController extends Controller
 
     private function resolveRedirectTo(Request $request, User $user): string
     {
-        // Parallel flow: users pay first, verify later. The verification screen
-        // owns the handoff to their claimed results via the custom
-        // VerifyEmailResponse, so we only need to bounce unverified users here.
         if (! $user->hasVerifiedEmail()) {
             return route('verification.notice', absolute: false);
         }
 
-        $attemptId = ClaimGuestAttempt::rememberedAttemptId($request)
-            ?? ExamAttempt::query()
-                ->where('user_id', $user->id)
-                ->whereNotNull('claimed_at')
-                ->whereNotNull('submitted_at')
-                ->latest('claimed_at')
-                ->value('id');
+        $attemptId = ClaimGuestAttempt::resolveClaimedAttemptId($user, $request);
 
         return $attemptId
             ? route('exam.results', $attemptId, absolute: false)

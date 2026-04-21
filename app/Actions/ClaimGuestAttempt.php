@@ -85,6 +85,23 @@ class ClaimGuestAttempt
         return $id !== null ? (int) $id : null;
     }
 
+    /**
+     * Session-remembered first (survives Polar's cross-origin hop), DB
+     * fallback second. Both post-payment and post-verification redirects
+     * go through this, so changes to "which attempt counts as claimed"
+     * stay in one place.
+     */
+    public static function resolveClaimedAttemptId(User $user, Request $request): ?int
+    {
+        return self::rememberedAttemptId($request)
+            ?? ExamAttempt::query()
+                ->where('user_id', $user->id)
+                ->whereNotNull('claimed_at')
+                ->whereNotNull('submitted_at')
+                ->latest('claimed_at')
+                ->value('id');
+    }
+
     private function rememberInSession(Request $request, ExamAttempt $attempt): void
     {
         if (! $attempt->isSubmitted()) {

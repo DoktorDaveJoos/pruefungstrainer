@@ -69,7 +69,7 @@ it('guest → register → checkout → polar webhook → processing sends unver
     $processing->assertInertia(fn ($page) => $page
         ->component('checkout/processing')
         ->where('hasAccess', true)
-        ->where('redirectTo', '/email/verify')
+        ->where('redirectTo', route('verification.notice', absolute: false))
     );
 });
 
@@ -130,6 +130,6 @@ it('guest → register → processing routes unverified user to email verificati
     $processing->assertInertia(fn ($page) => $page
         ->component('checkout/processing')
         ->where('hasAccess', true)
-        ->where('redirectTo', '/email/verify')
+        ->where('redirectTo', route('verification.notice', absolute: false))
     );
 });

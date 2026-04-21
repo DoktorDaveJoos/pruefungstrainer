@@ -206,15 +206,13 @@ class ExamController extends Controller
             return redirect(route('exam.show', $examAttempt->id));
         }
 
+        $this->autoSubmitIfNeeded($examAttempt);
+
         $user = $request->user();
 
-        // Consolidated flow: an authenticated user must verify before they can
-        // see paid review content. Guests stay on the locked preview.
         if ($user !== null && ! $user->hasVerifiedEmail()) {
             return redirect(route('verification.notice'));
         }
-
-        $this->autoSubmitIfNeeded($examAttempt);
 
         $total = $examAttempt->total_questions;
         $score = $examAttempt->score ?? 0;

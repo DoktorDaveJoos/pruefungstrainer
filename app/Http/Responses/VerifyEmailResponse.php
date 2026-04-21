@@ -3,7 +3,6 @@
 namespace App\Http\Responses;
 
 use App\Actions\ClaimGuestAttempt;
-use App\Models\ExamAttempt;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -24,11 +23,6 @@ class VerifyEmailResponse implements VerifyEmailResponseContract
         return redirect()->intended($target);
     }
 
-    /**
-     * If the user registered via the unlock-drawer (or claimed a guest attempt
-     * during checkout), their payment flow paused at verification. Send them
-     * straight back to the results page they were trying to unlock.
-     */
     private function claimedResultsUrl(Request $request): ?string
     {
         $user = $request->user();
@@ -37,13 +31,7 @@ class VerifyEmailResponse implements VerifyEmailResponseContract
             return null;
         }
 
-        $attemptId = ClaimGuestAttempt::rememberedAttemptId($request)
-            ?? ExamAttempt::query()
-                ->where('user_id', $user->id)
-                ->whereNotNull('claimed_at')
-                ->whereNotNull('submitted_at')
-                ->latest('claimed_at')
-                ->value('id');
+        $attemptId = ClaimGuestAttempt::resolveClaimedAttemptId($user, $request);
 
         return $attemptId
             ? route('exam.results', $attemptId, absolute: false).'?verified=1'
