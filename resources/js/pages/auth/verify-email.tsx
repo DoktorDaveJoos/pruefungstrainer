@@ -10,7 +10,7 @@ import { send } from '@/routes/verification';
 export default function VerifyEmail({ status }: { status?: string }) {
     const sentMessage =
         status === 'verification-link-sent'
-            ? 'Ein neuer Bestätigungslink wurde an die bei der Registrierung angegebene E-Mail-Adresse gesendet.'
+            ? 'Ein neuer Bestätigungslink wurde an die bei der Registrierung angegebene E-Mail-Adresse gesendet. Prüfe auch den Spam-Ordner.'
             : undefined;
 
     return (
@@ -43,5 +43,5 @@ export default function VerifyEmail({ status }: { status?: string }) {
 VerifyEmail.layout = {
     title: 'E-Mail-Adresse bestätigen',
     description:
-        'Bitte bestätige deine E-Mail-Adresse, indem du auf den Link in der E-Mail klickst, die wir dir gerade gesendet haben.',
+        'Bitte bestätige deine E-Mail-Adresse, indem du auf den Link in der E-Mail klickst, die wir dir gerade gesendet haben. Prüfe auch den Spam-Ordner.',
 };
