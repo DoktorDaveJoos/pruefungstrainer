@@ -9,6 +9,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Symfony\Component\HttpFoundation\Response;
+use Throwable;
 
 class TrackPageView
 {
@@ -40,13 +41,17 @@ class TrackPageView
             return;
         }
 
-        PageView::create([
-            'visitor_hash' => $this->visitorHash->for($request),
-            'path' => $this->pathNormalizer->forRequest($request),
-            'referrer_host' => $this->referrerHost($request),
-            'user_id' => $request->user()?->id,
-            'created_at' => Carbon::now(),
-        ]);
+        try {
+            PageView::create([
+                'visitor_hash' => $this->visitorHash->for($request),
+                'path' => $this->pathNormalizer->forRequest($request),
+                'referrer_host' => $this->referrerHost($request),
+                'user_id' => $request->user()?->id,
+                'created_at' => Carbon::now(),
+            ]);
+        } catch (Throwable $e) {
+            report($e);
+        }
     }
 
     private function shouldRecord(Request $request, Response $response): bool
