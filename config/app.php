@@ -15,7 +15,10 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'owner_email' => env('APP_OWNER_EMAIL', 'drdavejoos@gmail.com'),
+    'owner_emails' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('APP_OWNER_EMAILS', 'drdavejoos@gmail.com,david_joos15@hotmail.de,info@davidjoos.de'))
+    ))),
 
     /*
     |--------------------------------------------------------------------------

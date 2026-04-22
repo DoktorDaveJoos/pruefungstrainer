@@ -11,9 +11,9 @@ class EnsureOwner
     public function handle(Request $request, Closure $next): Response
     {
         $user = $request->user();
-        $ownerEmail = config('app.owner_email');
+        $ownerEmails = (array) config('app.owner_emails', []);
 
-        if ($user === null || $user->email !== $ownerEmail) {
+        if ($user === null || ! in_array($user->email, $ownerEmails, true)) {
             abort(404);
         }
 

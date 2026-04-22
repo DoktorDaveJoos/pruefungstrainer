@@ -27,7 +27,7 @@ it('skips non-GET requests', function (): void {
 
 it('skips the admin insights path', function (): void {
     $user = User::factory()->create([
-        'email' => config('app.owner_email') ?? 'owner@test.test',
+        'email' => config('app.owner_emails')[0] ?? 'owner@test.test',
     ]);
     $this->actingAs($user)->get('/admin/insights');
 

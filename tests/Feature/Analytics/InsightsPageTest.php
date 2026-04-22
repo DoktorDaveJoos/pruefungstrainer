@@ -33,7 +33,7 @@ it('renders insights for the owner', function (): void {
         'created_at' => now(),
     ]);
 
-    $owner = User::factory()->create(['email' => config('app.owner_email')]);
+    $owner = User::factory()->create(['email' => config('app.owner_emails')[0]]);
 
     $this->actingAs($owner)
         ->get('/admin/insights')
