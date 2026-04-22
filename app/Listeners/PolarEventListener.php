@@ -26,7 +26,7 @@ class PolarEventListener
 
         $this->events->record('paid', metadata: [
             'order_id' => $order->id,
-        ], includeVisitorHash: false);
+        ], includeVisitorHash: false, userId: $user->id);
 
         SendAccessExpiryReminder::dispatch($user, $order->ordered_at)
             ->delay($order->ordered_at->addYear()->subDays(14));
