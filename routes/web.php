@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\InsightsController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ExamController;
@@ -31,6 +32,10 @@ Route::middleware(['auth', 'verified', EnsureActiveAccess::class])->group(functi
     Route::get('dashboard', DashboardController::class)->name('dashboard');
     Route::get('/freies-lernen', [PracticeController::class, 'show'])->name('practice.show');
     Route::post('/freies-lernen/answer', [PracticeController::class, 'saveAnswer'])->name('practice.save-answer');
+});
+
+Route::middleware(['auth', 'owner'])->group(function (): void {
+    Route::get('/admin/insights', InsightsController::class)->name('admin.insights');
 });
 
 require __DIR__.'/settings.php';
