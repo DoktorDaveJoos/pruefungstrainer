@@ -1,8 +1,8 @@
 <?php
 
 use App\Services\Analytics\VisitorHash;
-use Carbon\CarbonImmutable;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -40,13 +40,13 @@ it('rotates daily', function (): void {
     ]);
     $service = app(VisitorHash::class);
 
-    $today = CarbonImmutable::parse('2026-04-22 10:00:00');
-    $tomorrow = $today->addDay();
+    $today = Carbon::parse('2026-04-22 10:00:00');
+    $tomorrow = $today->copy()->addDay();
 
-    CarbonImmutable::setTestNow($today);
+    Carbon::setTestNow($today);
     $a = $service->for($request);
 
-    CarbonImmutable::setTestNow($tomorrow);
+    Carbon::setTestNow($tomorrow);
     $b = $service->for($request);
 
     expect($a)->not->toBe($b);
