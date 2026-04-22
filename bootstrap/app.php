@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\EnsureOwner;
 use App\Http\Middleware\HandleAppearance;
 use App\Http\Middleware\HandleInertiaRequests;
 use App\Http\Middleware\TrackPageView;
@@ -24,6 +25,10 @@ return Application::configure(basePath: dirname(__DIR__))
             HandleInertiaRequests::class,
             AddLinkHeadersForPreloadedAssets::class,
             TrackPageView::class,
+        ]);
+
+        $middleware->alias([
+            'owner' => EnsureOwner::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
