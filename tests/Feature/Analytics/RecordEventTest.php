@@ -35,3 +35,13 @@ it('attaches a visitor hash when an http request is in scope', function (): void
 
     expect(TrackedEvent::first()->visitor_hash)->toMatch('/^[0-9a-f]{64}$/');
 });
+
+it('skips the visitor hash when includeVisitorHash is false', function (): void {
+    $this->get('/');
+
+    app(RecordEvent::class)->record('paid', metadata: ['order_id' => 'xyz'], includeVisitorHash: false);
+
+    $event = TrackedEvent::where('name', 'paid')->first();
+    expect($event->visitor_hash)->toBeNull();
+    expect($event->metadata)->toBe(['order_id' => 'xyz']);
+});

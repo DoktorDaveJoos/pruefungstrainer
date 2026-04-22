@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Jobs\SendAccessExpiryReminder;
 use App\Mail\AccessRefundedMail;
+use App\Services\Analytics\RecordEvent;
 use Danestves\LaravelPolar\Events\OrderCreated;
 use Danestves\LaravelPolar\Events\OrderUpdated;
 use Illuminate\Support\Facades\Mail;
@@ -16,10 +17,16 @@ use Illuminate\Support\Facades\Mail;
  */
 class PolarEventListener
 {
+    public function __construct(private readonly RecordEvent $events) {}
+
     public function handleOrderCreated(OrderCreated $event): void
     {
         $user = $event->billable;
         $order = $event->order;
+
+        $this->events->record('paid', metadata: [
+            'order_id' => $order->id,
+        ], includeVisitorHash: false);
 
         SendAccessExpiryReminder::dispatch($user, $order->ordered_at)
             ->delay($order->ordered_at->addYear()->subDays(14));
