@@ -32,7 +32,7 @@ class RecordEvent
     {
         $request = app('request');
 
-        if (! $request instanceof Request || $request->route() === null) {
+        if (! $request instanceof Request || $request->route() === null || $request->userAgent() === null) {
             return null;
         }
 
