@@ -17,12 +17,12 @@ class RecordEvent
     /**
      * @param  array<string, mixed>|null  $metadata
      */
-    public function record(string $name, ?array $metadata = null, bool $includeVisitorHash = true): void
+    public function record(string $name, ?array $metadata = null, bool $includeVisitorHash = true, ?int $userId = null): void
     {
         TrackedEvent::create([
             'name' => $name,
             'visitor_hash' => $includeVisitorHash ? $this->resolveVisitorHash() : null,
-            'user_id' => $this->auth->id(),
+            'user_id' => $userId ?? $this->auth->id(),
             'metadata' => $metadata,
             'created_at' => Carbon::now(),
         ]);
