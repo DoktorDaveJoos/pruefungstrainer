@@ -2,6 +2,7 @@
 
 use App\Jobs\SendAccessExpiryReminder;
 use App\Mail\AccessRefundedMail;
+use App\Models\TrackedEvent;
 use App\Models\User;
 use Danestves\LaravelPolar\Events\OrderCreated;
 use Danestves\LaravelPolar\Events\OrderUpdated;
@@ -21,6 +22,22 @@ it('schedules expiry reminder jobs on OrderCreated', function () {
     event(new OrderCreated($user, $order, $payload));
 
     Queue::assertPushed(SendAccessExpiryReminder::class, 2);
+});
+
+it('records a paid event attributed to the user with no visitor hash', function () {
+    Queue::fake();
+
+    $user = User::factory()->create();
+    $order = Order::factory()->for($user, 'billable')->create();
+
+    $payload = Mockery::mock(WebhookOrderCreatedPayload::class);
+    event(new OrderCreated($user, $order, $payload));
+
+    $event = TrackedEvent::where('name', 'paid')->first();
+    expect($event)->not->toBeNull();
+    expect($event->user_id)->toBe($user->id);
+    expect($event->visitor_hash)->toBeNull();
+    expect($event->metadata)->toBe(['order_id' => $order->id]);
 });
 
 it('sends a refund confirmation mail on OrderUpdated with isRefunded=true', function () {

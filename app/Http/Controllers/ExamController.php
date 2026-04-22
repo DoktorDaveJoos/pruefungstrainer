@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SaveAnswerRequest;
 use App\Models\ExamAnswer;
 use App\Models\ExamAttempt;
+use App\Services\Analytics\RecordEvent;
 use App\Services\ExamAttemptFinder;
 use App\Services\ExamDraw;
 use App\Services\ExamScorer;
@@ -26,6 +27,7 @@ class ExamController extends Controller
         private readonly ExamDraw $examDraw,
         private readonly ExamAttemptFinder $finder,
         private readonly GuestStartGuard $guestStartGuard,
+        private readonly RecordEvent $events,
     ) {}
 
     public function start(Request $request): RedirectResponse
@@ -83,6 +85,8 @@ class ExamController extends Controller
 
             return $attempt;
         });
+
+        $this->events->record('exam_started', metadata: ['attempt_id' => $attempt->id]);
 
         $response = redirect(route('exam.show', $attempt->id));
 
@@ -294,5 +298,11 @@ class ExamController extends Controller
 
         app(ExamScorer::class)->score($attempt);
         $attempt->update(['submitted_at' => now()]);
+
+        $this->events->record('exam_completed', metadata: [
+            'attempt_id' => $attempt->id,
+            'score' => $attempt->score ?? 0,
+            'total' => $attempt->total_questions,
+        ]);
     }
 }

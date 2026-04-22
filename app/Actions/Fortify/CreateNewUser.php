@@ -5,6 +5,7 @@ namespace App\Actions\Fortify;
 use App\Concerns\PasswordValidationRules;
 use App\Concerns\ProfileValidationRules;
 use App\Models\User;
+use App\Services\Analytics\RecordEvent;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 
@@ -35,6 +36,8 @@ class CreateNewUser implements CreatesNewUsers
         if (app()->environment('local')) {
             $user->forceFill(['email_verified_at' => now()])->save();
         }
+
+        app(RecordEvent::class)->record('registered', userId: $user->id);
 
         return $user;
     }
