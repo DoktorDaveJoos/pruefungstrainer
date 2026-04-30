@@ -11,6 +11,7 @@ class PracticeDraw
     public function next(int $userId, bool $wrongOnly = false, ?int $excludeQuestionId = null): ?Question
     {
         $base = Question::query()
+            ->enabled()
             ->whereNotNull('topic')
             ->when($excludeQuestionId, fn ($q) => $q->where('id', '!=', $excludeQuestionId));
 
@@ -45,7 +46,7 @@ class PracticeDraw
      */
     public function progressFor(int $userId): array
     {
-        $total = Question::whereNotNull('topic')->count();
+        $total = Question::query()->enabled()->whereNotNull('topic')->count();
         $seen = PracticeAnswer::where('user_id', $userId)->distinct('question_id')->count('question_id');
         $correct = $this->latestCorrectQuestionCount($userId);
 

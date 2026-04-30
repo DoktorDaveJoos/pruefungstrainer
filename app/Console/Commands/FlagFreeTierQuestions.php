@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Console\Commands\Questions\Balance;
+use App\Enums\BsiTopic;
 use App\Models\Question;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
@@ -77,6 +78,7 @@ class FlagFreeTierQuestions extends Command
             }
 
             $picked = Question::query()
+                ->enabled()
                 ->where('topic', $topic)
                 ->orderBy('id')
                 ->limit($n)
@@ -90,6 +92,7 @@ class FlagFreeTierQuestions extends Command
 
         if ($shortfall > 0) {
             $fill = Question::query()
+                ->enabled()
                 ->whereNotIn('id', $ids ?: [0])
                 ->orderBy('id')
                 ->limit($shortfall)
@@ -109,7 +112,14 @@ class FlagFreeTierQuestions extends Command
      */
     private function computeAllocation(int $total): array
     {
-        $pct = Balance::REFERENCE_TOPIC_PCT;
+        $disabled = array_map(fn (BsiTopic $t) => $t->value, BsiTopic::disabled());
+        $pct = array_diff_key(Balance::REFERENCE_TOPIC_PCT, array_flip($disabled));
+
+        // Renormalise the remaining percentages so the allocation still targets `$total`.
+        $sum = array_sum($pct);
+        if ($sum > 0 && $sum !== 100) {
+            $pct = array_map(fn (int $p) => $p * 100 / $sum, $pct);
+        }
 
         $floors = [];
         $remainders = [];

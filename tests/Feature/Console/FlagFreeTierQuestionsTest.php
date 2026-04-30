@@ -58,16 +58,15 @@ it('distributes the 50 flagged questions across topics per Balance blueprint', f
 
     $this->artisan('exam:flag-free-tier')->assertSuccessful();
 
-    // Official BSI Prüfungsbedingungen v1.2 distribution:
-    // methodik 32, bausteine 14, standards 14, check 12, risikoanalyse 10,
-    // modellierung 8, siem 6, notfall 4 → exact integer split of 50:
+    // Bausteine is disabled (BsiTopic::disabled()), so its 14% is renormalised across
+    // the remaining seven topics. Largest-remainder split of 50 over 86%:
     $expected = [
-        'methodik' => 16,
-        'bausteine' => 7,
-        'standards' => 7,
-        'check' => 6,
-        'risikoanalyse' => 5,
-        'modellierung' => 4,
+        'methodik' => 19,
+        'bausteine' => 0,
+        'standards' => 8,
+        'check' => 7,
+        'risikoanalyse' => 6,
+        'modellierung' => 5,
         'siem' => 3,
         'notfall' => 2,
     ];

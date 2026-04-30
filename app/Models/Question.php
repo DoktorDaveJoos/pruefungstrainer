@@ -8,6 +8,7 @@ use App\Enums\QuestionDifficulty;
 use App\Enums\SourceDocument;
 use Database\Factories\QuestionFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -58,6 +59,20 @@ class Question extends Model
     public function answers(): HasMany
     {
         return $this->hasMany(Answer::class);
+    }
+
+    /**
+     * Excludes questions whose topic is currently disabled (see BsiTopic::disabled()).
+     */
+    public function scopeEnabled(Builder $query): Builder
+    {
+        $disabled = array_map(fn (BsiTopic $t) => $t->value, BsiTopic::disabled());
+
+        if ($disabled === []) {
+            return $query;
+        }
+
+        return $query->whereNotIn('topic', $disabled);
     }
 
     protected function sourceCitation(): Attribute

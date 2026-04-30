@@ -26,4 +26,21 @@ enum BsiTopic: string
             self::Siem => 'SIEM / Monitoring',
         };
     }
+
+    /**
+     * Topics that are temporarily excluded from exam draws, practice draws, and the
+     * guest free-tier pool. Bausteine questions are too specific (SYS.x/APP.x/etc.) to
+     * realistically appear in the official BSI-Praktiker exam at the asked granularity.
+     *
+     * @return list<self>
+     */
+    public static function disabled(): array
+    {
+        return [self::Bausteine];
+    }
+
+    public function isDisabled(): bool
+    {
+        return in_array($this, self::disabled(), strict: true);
+    }
 }
