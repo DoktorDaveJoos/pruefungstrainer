@@ -28,9 +28,10 @@ enum BsiTopic: string
     }
 
     /**
-     * Topics that are temporarily excluded from exam draws, practice draws, and the
-     * guest free-tier pool. Bausteine questions are too specific (SYS.x/APP.x/etc.) to
-     * realistically appear in the official BSI-Praktiker exam at the asked granularity.
+     * Topics excluded from exam draws, practice draws, and the guest free-tier pool.
+     * Bausteine questions are too specific (SYS.x/APP.x/etc.) to realistically appear
+     * in the official BSI-Praktiker exam at the asked granularity, so they are not
+     * served — they remain in the database for potential reclassification later.
      *
      * @return list<self>
      */

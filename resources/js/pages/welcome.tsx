@@ -105,7 +105,7 @@ export default function Welcome() {
                                 <CardHeader>
                                     <FileCheck className="size-6 text-muted-foreground" />
                                     <CardTitle className="mt-2 text-base">50 Fragen</CardTitle>
-                                    <CardDescription>Zufall aus über 900 prüfungsnahen Fragen auf Basis der BSI-Dokumente. 75 % Basis, 25 % Experte.</CardDescription>
+                                    <CardDescription>Zufall aus über 500 prüfungsnahen Fragen auf Basis der BSI-Dokumente. 75 % Basis, 25 % Experte.</CardDescription>
                                 </CardHeader>
                             </Card>
                             <Card>
@@ -255,7 +255,7 @@ export default function Welcome() {
                             />
                             <FaqItem
                                 q="Wie viele Fragen sind im Pool?"
-                                a="Derzeit über 900 prüfungsnahe Fragen mit Erklärungen und Quellenverweisen auf die BSI-Standards 200-1, 200-2, 200-3 und das IT-Grundschutz-Kompendium. Es handelt sich nicht um Originalfragen des BSI. Der Pool wächst regelmäßig."
+                                a="Derzeit über 500 prüfungsnahe Fragen mit Erklärungen und Quellenverweisen auf die BSI-Standards 200-1, 200-2, 200-3 und das IT-Grundschutz-Kompendium. Es handelt sich nicht um Originalfragen des BSI. Der Pool wächst regelmäßig."
                             />
                             <FaqItem
                                 q="Kann ich mein Geld zurückbekommen?"
